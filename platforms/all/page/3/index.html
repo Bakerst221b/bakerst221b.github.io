@@ -182,87 +182,50 @@
  <h1 class="title">All</h1> 
  
 
-    <h2><a href="http://localhost:1313/docs/ttp/malware/analyse/basics/mutable-vs-immutable/"> Mutable vs Immutable</a></h2> 
-    <p> <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#f92672">import</span> ctypes
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> a <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> address <span style="color:#f92672">=</span> id(a)
-</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> address
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">4307917216</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> ctypes<span style="color:#f92672">.</span>cast(address, ctypes<span style="color:#f92672">.</span>py_object)<span style="color:#f92672">.</span>value
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">5</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> a <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> ctypes<span style="color:#f92672">.</span>cast(address, ctypes<span style="color:#f92672">.</span>py_object)<span style="color:#f92672">.</span>value
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">5</span>
-</span></span></code></pre></div><p>Similarly, regardless of whether you flag some <code>UITextField</code> as <em>Secure Text Entry</em> or not, it always returns data in the form of a <code>String</code> or <code>NSString</code>.</p>
-<p>On the other hand, using the overwritten data outside the compiler&rsquo;s scope (e.g., serializing it in a temp file) guarantees that it will be overwritten but obviously impacts performance and maintenance. You should try to overwrite critical objects with random data or content from non-critical objects. This will make it really difficult to construct scanners that can identify sensitive data on the basis of its management. This can be only done by low-level languages because the compilers and just-in-time virtual machines will ignore those operations for performance reasons if the optimization routines detect that the buffer is no longer used after being overwritten.</p></p>
+    <h2><a href="http://localhost:1313/docs/artefacts/applications/browser/history/"> Browser Info</a></h2> 
+    <p> <p>Many browsers are based on Chromium engine, that’s why they will have similar artifacts: Chrome, Opera, new Edge, Brave, Vivaldi. Also, there are lots of Electron applications that share some artifacts with them. Chrome is the point of convergence for all these application. On Magnet Summit it was suggested to explore and learn Chrome and it’s artifacts as well as OS common artifacts due to its popularity and reusing some of its components. Electron is a framework that is available for building applications, cross-platform. You’re creating a web-application that can be used as a desktop one (implementing both back- and frontend). Backend - node.js, and frontend - Chrome. So, a lot of artifacts can be shared with Chrome and buddies. It’s in wide use. For example, ⚠️ WhatsApp and Skype use it.</p></p>
 
-    <h2><a href="http://localhost:1313/docs/ttp/antiforensics/antivirus/"> Evading Antivirus</a></h2> 
+    <h2><a href="http://localhost:1313/docs/artefacts/win/registry/devices/"> 🖱 Devices Attached</a></h2> 
+    <p> <p>Are we looking for USB storage media activity or all USB devices? Like, cameras 📸? Headphones 🎧? As for the timestamps, you&rsquo;ll usually have <strong>first</strong> (setupapi log) and <strong>last</strong> connected. There are also OS specific timestamps, like first or last install, first connect since reboot etc. <a href="/docs/dfir/host/windows/windows-artifacts#usb-devices">Windows</a> USB artifacts, <a href="/docs/dfir/host/apple/mac-artifacts#usb-devices">macOS</a>. See Event Manager&rsquo;s codes <a href="docs/dfir/host/windows/event-manager#20001">20001</a> and <a href="docs/dfir/host/windows/event-manager#20002">20002</a> for USB events for verification or if the registry was updated. Look at <code>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceClasses\</code> and <code>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\USB\&lt;hardware id&gt;\&lt;instance id&gt;\Device Parameters</code>. <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/usbcon/usb-device-specific-registry-settings">More</a>.</p></p>
+
+    <h2><a href="http://localhost:1313/docs/artefacts/files/media/"> 🎞 Media Files</a></h2> 
     <p> <h2 id="windows">Windows</h2>
-<p><a href="https://tyeyeah.github.io/2021/08/02/2021-08-02-Bypass-Anti-Virus/">https://tyeyeah.github.io/2021/08/02/2021-08-02-Bypass-Anti-Virus/</a></p>
-<h2 id="macos">macOS</h2>
-<h2 id="linux">Linux</h2></p>
+<h3 id="recent-documents">Recent documents</h3>
+<p><strong>Key</strong> 🔑: <code>NTUSER.DAT\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs</code></p>
+<p>Contains the list of all recent documents as a bunch and also the same data sorted by extension. <code>MRUListEx</code> is list. It has a number of 4 byte values, each noting the sequence number of a document. It starts from the document&rsquo;s number that was accessed some time age (first in the list) and ends with the most recently used one. This key also has a list of recently accessed folders.</p></p>
 
-    <h2><a href="http://localhost:1313/docs/ttp/antiforensics/fs-hiding-data/"> Hiding Data</a></h2> 
-    <p> <h2 id="alternative-data-stream">Alternative data stream</h2>
-<p>Alternate data streams. Specific for Windows. See more <a href="/docs/dfir/forensic-investigation/reference/windows/win-ads">here</a>. Are there such streams for other OS? If yes, how to make them and discover them?</p>
-<p>To ensure compatability between NTFS and HFS. Allows hiding files.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>C:\type C:\mal.exe &gt; C:\readme.txt<span style="color:#960050;background-color:#1e0010">:</span>naughty.exe
-</span></span><span style="display:flex;"><span>start readme.txt<span style="color:#960050;background-color:#1e0010">:</span>naughty.exe
-</span></span><span style="display:flex;"><span>C:\mklink innocent.exe readme.txt<span style="color:#960050;background-color:#1e0010">:</span>naughty.exe
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># to run</span>
-</span></span><span style="display:flex;"><span>innocent.exe
-</span></span></code></pre></div><p>But <code>dir /r</code> - will display <strong>all</strong> streams. LNS and Sfind will hunt down such files. Also, when you copy files from and to a FAT partition - all residual files will be deleted.</p></p>
+    <h2><a href="http://localhost:1313/docs/ttp/timelines/"> ⏱️ Timelines And Timestamps</a></h2> 
+    <p> <p><em>As if investigations needed to be simplified, we must contend with various timestamp formats. There is a wide range of time formats available, and it is crucial to understand the differences to create an accurate timeline.</em></p></p>
 
-    <h2><a href="http://localhost:1313/docs/ttp/antiforensics/logs-turnoff/"> Turning Off Logging</a></h2> 
-    <p> <h2 id="macos">macOS</h2>
-<p>From Apple&rsquo;s official documentation:</p>
-<blockquote>
-<p>In some cases, the contents of a volume are sufficiently secret that it is not appropriate to log them. To disable logging on a per-volume basis (for creating a backup volume, for example), you must do the following:</p>
-<ul>
-<li><input disabled="" type="checkbox"> Create a <code>.fseventsd</code> directory at the top level of the volume.</li>
-<li><input disabled="" type="checkbox"> Create an empty <code>no_log</code> file in that directory.</li>
-</ul>
-<p>So if your volume is mounted at <code>/Volumes/MyDisk</code>, you would create an empty file called <code>/Volumes/MyDisk/.fseventsd/no_log</code>.</p></p>
+    <h2><a href="http://localhost:1313/docs/artefacts/applications/communication/other/"> 💬 Messaging Data</a></h2> 
+    <p> <p>Electron is a framework that is available for building applications, cross-platform. You’re creating a web-application that can be used as a desktop one (implementing both back- and frontend). Backend - node.js, and frontend - Chrome. So, a lot of artifacts can be shared with Chrome and buddies. It’s in wide use. For example, ⚠️ WhatsApp and Skype use it.</p>
+<h3 id="skype">Skype</h3>
+<p><strong>Tools</strong> 🛠: Belkasoft EC, <a href="https://www.nirsoft.net/utils/skype_log_view.html">SkypeLogView</a> (NirSoft)</p>
+<p><code>C:\Users\%Username%\AppData\Roaming\Skype</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Skype: Path: C:| Users<span style="color:#ae81ff">\ \*\A</span>ppData<span style="color:#ae81ff">\ </span>Local<span style="color:#ae81ff">\ </span>Packages<span style="color:#ae81ff">\M</span>icrosoft.SkypeApp<span style="color:#ae81ff">\_\*\ </span>Localstate<span style="color:#ae81ff">\\</span>*<span style="color:#ae81ff">\m</span>ain. db
+</span></span><span style="display:flex;"><span>Skype: Path: C:<span style="color:#ae81ff">\D</span>ocuments and Settings<span style="color:#ae81ff">\\</span>*<span style="color:#ae81ff">\A</span>pplication Data<span style="color:#ae81ff">\S</span>kype<span style="color:#ae81ff">\\</span>*<span style="color:#ae81ff">\m</span>ain.db
+</span></span></code></pre></div><h3 id="xbox">Xbox</h3>
+<p>Windows: <code>C:\Users\%Username%\AppData\Local\LocalState\ModelManager\Messaging</code>.</p></p>
 
-    <h2><a href="http://localhost:1313/docs/artefacts/fs/ssd/"> Flash Memory Overview</a></h2> 
-    <p> <p><em>In this article I&rsquo;m going to give a general overview of how SSD works and how it&rsquo;s different from an HDD.</em></p>
-<p>SSDs consist of NAND memory chips, a power terminal and a data terminal. Due to its nature, data cannot be overwritten, therefore, it needs to be white clean first.</p>
-<blockquote>
-<p>🔎 Does it mean that there is no data in the unallocated or slack space?</p></blockquote>
-<p>Data is written in pages and deleted in blocks (multiple pages).</p></p>
+    <h2><a href="http://localhost:1313/docs/todo/old/notification/"> 💬❗️Notifications</a></h2> 
+    <p> <h2 id="windows">Windows</h2>
+<p>Toast notifications on Windows 10: <code>C:\Users\%Username%\AppData\Local\Microsoft\Windows\Notifications</code> contains <code>wpndatabase.db</code> and <code>appdb.dat</code>. Both can be opened with 🛠 SQLite Browser.</p>
+<h3 id="calendars">Calendars</h3></p>
 
-    <h2><a href="http://localhost:1313/docs/artefacts/fs/hdd/"> HDD Overview</a></h2> 
-    <p> <p><em>In this article I&rsquo;m going to give a general overview of how HDDs work.</em></p>
-<h2 id="floppy">Floppy</h2>
-<p>Floppy disks &#x1f4be; are like dinosaurs 🦕. They are ancient, not usually used nowadays. But the mechanism is very much like the one found in an HDD that&rsquo;s why I&rsquo;ve found it useful to start the intro to HDD from a simplier mechanism. In the square brackerts I&rsquo;ll be giving an analogy with a person reading a book (inspired by <a href="https://www.takeupcode.com/podcast/226-filesystem-chs-vs-lba-modes/">takeupcode.com</a>).</p></p>
+    <h2><a href="http://localhost:1313/docs/todo/old/voice/"> 🗣 Voice Assistants</a></h2> 
+    <p> <h2 id="windows">Windows</h2>
+<p>Cortana is a great source of information. <code>C:\Users\%Username%\AppData\Local\Packages\Microsoft.Windows.Cortana_xxxx\LocalState\ESEDatabase_CortanaCoreInstance\CortanaCoreDb.db</code> contains user locations, reminders etc. Use a 🛠 SQLite browser to see the contents, or export to <code>cvs</code> and work in Excel.</p></p>
 
-    <h2><a href="http://localhost:1313/docs/attacks/binary/exploits/bufferoverflow/"> Buffer Overflow</a></h2> 
-    <p> </p>
+    <h2><a href="http://localhost:1313/docs/todo/old/stats/"> 📈 User Statistics</a></h2> 
+    <p> <p><em>This is about &hellip; .</em></p></p>
 
-    <h2><a href="http://localhost:1313/docs/ttp/malware/analyse/basics/crack-me-algo/"> Cracking 🔨</a></h2> 
-    <p> <p><em>Any cracking career is supposed to start with solving simple crackme&rsquo;s. I&rsquo;ve not been doing it all the time, but I&rsquo;ve solved several of them from the simplest to a very hard one which required some math knowledge 😬. This allowed me to craft some sort of algorithm I would like to share.&quot;</em></p></p>
+    <h2><a href="http://localhost:1313/docs/cryptography/asymmetric/deffie-hellman/"> Diffie-Hellman Key Exchange</a></h2> 
+    <p> <p><em>I&rsquo;ve written this article while I was untanging RSA and Deffie Hellman inside my head. What I need to stree right here, in the article description, the main difference between them is the Deffie Hellman is NOT a encryption algorithm! It&rsquo;s an algorithm of generating a symmetric key using principles of asymmetric cryptography.</em></p>
+<p>For the mathmatics topics needed to understand this algorothm, please, refer to the math sections.</p>
+<p>There is a peculiar characteristic of prime numbers 👑 and their respective primitive roots 🦷:</p></p>
 
-    <h2><a href="http://localhost:1313/docs/ttp/malware/analyse/basics/from-src-to-binary/"> From Src to Binary</a></h2> 
-    <p> <p>To read</p>
-<p><a href="https://www.airs.com/blog/archives/38">https://www.airs.com/blog/archives/38</a></p></p>
-
-    <h2><a href="http://localhost:1313/docs/ttp/antiforensics/usbkill-switch/"> USBKill Switch</a></h2> 
-    <p> <p>A software that could be used for anti-forensics. By default, configs are at <code>/etc</code> and named <code>usbkill.ini</code>. The default behaviour - shut the system down. Keeps a whitelist of allowed USB devices. Can also prevent malware from getting on the PC from a USB drive.</p>
-<p>Analogues: BusKill (set a <code>udev</code> rule to be triggered if the USB drive is removed: lock, shutdown or self-destruct) and Silk Guardian (Linux Kernel mode switch that&rsquo;s waiting for a change, deletes files on events and shuts the system down).</p></p>
-
-    <h2><a href="http://localhost:1313/docs/ttp/malware/analyse/binary-analysis/"> 💱 Symbolic and Concrete Execution</a></h2> 
-    <p> <h2 id="references">References</h2>
-<details>
-    <summary>Expand&hellip;</summary>
-    <p>[<a href="https://mobile-security.gitbook.io/mobile-security-testing-guide/android-testing-guide/0x05h-testing-platform-interaction#testing-for-fragment-injection-mstg-platform-2">1</a>] Mobile Sec Guide</p>
-<p>[<a href="https://www.nowsecure.com/blog/2021/03/10/how-to-perform-symbolic-execution-of-mobile-apps-with-r2frida-esilsolve/">2</a>] Symbolic execution on iOS with R2Frida &amp; ESILSolve</p>
-<p>[<a href="https://www.nowsecure.com/blog/2021/03/10/how-to-perform-symbolic-execution-of-mobile-apps-with-r2frida-esilsolve/">3</a>] Symbolic execution on iOS)] Concrete execution on iOS with Angr.</p>
-<p>[<a href="https://www.nowsecure.com/blog/2021/03/10/how-to-perform-symbolic-execution-of-mobile-apps-with-r2frida-esilsolve/">4</a>)] Symbolic execution on Android with Angr.
-[<a href="https://paper.bobylive.com/Security/A%20Bug%20Hunter%20%20039%20s%20Diary%20%20A%20Guided%20Tour%20Through%20the%20Wilds%20of%20Software%20Security.pdf">5</a>] A Bug Hunter&rsquo;s Diary: A Guided Tour Through the Wilds of Software Security, by Tobias Klein.</p>
-
-</details></p>
+    <h2><a href="http://localhost:1313/docs/cryptography/asymmetric/rsa/"> RSA</a></h2> 
+    <p> <p><em>To my utter embarrassment I had to admit that I&rsquo;ve recently realized I didn&rsquo;t remember how the RSA worked&hellip;. What I though to be RSA turned out to be Diffie-Hellman algorithm&hellip; Oops &#x1f62c;. So, I&rsquo;ve rewatched Khan&rsquo;s video about RSA and was surprised I could every confuse the two. This article and another one about Diffie-Hellman is my way of explaining cryptographic notions: visual representation, verbal explanation and&hellip; code. Thanks to Python &#x1f40d;.</em></p></p>
 
 
 
@@ -348,10 +311,29 @@ h2 {
             <li class="page-item active"><a href="/platforms/all/page/3/" class="page-link">3</a></li>
             
         
-
+            
+             
+            <li class="page-item"><a href="/platforms/all/page/4/" class="page-link">4</a></li>
+            
+        
+            
+             
+            <li class="page-item"><a href="/platforms/all/page/5/" class="page-link">5</a></li>
+            
+        
+             
+            
+            <li class="page-item disabled"><a class="page-link">...</a></li>
+            
         
 
         
+        <li class="page-item"><a href="/platforms/all/page/4/" rel="next" class="page-link">Next ›</a></li>
+        
+
+        
+        
+        <li class="page-item"><a href="/platforms/all/page/6/" rel="last" class="page-link">Last »</a></li>
         
     </ul>
 </nav>

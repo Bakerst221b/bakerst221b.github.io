@@ -394,192 +394,6 @@ SMLoginItemSetEnabled - Wardle, Patrick. The Art of Mac Malware (p. 25). No Star
 <h3 id="1">1</h3>
 <p>Sheward, Mike. Hands-on Incident Response and Digital Forensics (p. 138). BCS Learning &amp; Development Limited. Kindle Edition.</p></p>
 
-    <h2><a href="http://localhost:1313/docs/artefacts/files/executables/ios/reversing/"> 🍎 iOS Applications RE</a></h2> 
-    <p> <p><em>During forensic analysis it&rsquo;s not too rare to run into some suspicious application. In this article I&rsquo;m going to learn to reverse engineer iOS applications.</em></p>
-<h2 id="analysis-flow">Analysis flow</h2>
-<p>First, we need to get IPA file from the device. There are different ways to do so (please, refer to <a href="/docs/toolkit/mobile/ios-btfm-rtfm">BTFM and RTFM</a>). Here I&rsquo;m going to use the easiest one:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ipainstaller -i <span style="color:#66d9ef">$(</span>ipainstaller -l | grep -i <span style="color:#f92672">[</span>package_partial_name<span style="color:#f92672">]</span><span style="color:#66d9ef">)</span> | grep Bundle
-</span></span><span style="display:flex;"><span>scp root@<span style="color:#f92672">[</span>device_ip<span style="color:#f92672">]</span>:/path/to/Bundle/ . 
-</span></span></code></pre></div><p>Note that this method only works <strong>only if</strong> the application was <strong>not</strong> downloaded from AppStore, because the applications installed that way are encrypted and to get the code one needs to dump it decrpyted from memory (<code>frida-ios-dump.py</code> with <code>frida-server</code>) or decrypt it statically ().</p></p>
-
-    <h2><a href="http://localhost:1313/docs/ttp/malware/analyse/executables/ios/reversing/"> 🍎 iOS Applications RE</a></h2> 
-    <p> <p><em>During forensic analysis it&rsquo;s not too rare to run into some suspicious application. In this article I&rsquo;m going to learn to reverse engineer iOS applications.</em></p>
-<h2 id="analysis-flow">Analysis flow</h2>
-<p>First, we need to get IPA file from the device. There are different ways to do so (please, refer to <a href="/docs/toolkit/mobile/ios-btfm-rtfm">BTFM and RTFM</a>). Here I&rsquo;m going to use the easiest one:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ipainstaller -i <span style="color:#66d9ef">$(</span>ipainstaller -l | grep -i <span style="color:#f92672">[</span>package_partial_name<span style="color:#f92672">]</span><span style="color:#66d9ef">)</span> | grep Bundle
-</span></span><span style="display:flex;"><span>scp root@<span style="color:#f92672">[</span>device_ip<span style="color:#f92672">]</span>:/path/to/Bundle/ . 
-</span></span></code></pre></div><p>Note that this method only works <strong>only if</strong> the application was <strong>not</strong> downloaded from AppStore, because the applications installed that way are encrypted and to get the code one needs to dump it decrpyted from memory (<code>frida-ios-dump.py</code> with <code>frida-server</code>) or decrypt it statically ().</p></p>
-
-    <h2><a href="http://localhost:1313/docs/ttp/malware/analyse/basics/ios-reversing/"> iOS Reverse Engineering</a></h2> 
-    <p> <p><em>During forensic analysis it&rsquo;s not too rare to run into some suspicious application. In this article I&rsquo;m going to learn to reverse engineer iOS applications.</em></p>
-<h2 id="analysis-flow">Analysis flow</h2>
-<p>First, we need to get IPA file from the device. There are different ways to do so (please, refer to <a href="/docs/toolkit/mobile/ios-btfm-rtfm">BTFM and RTFM</a>). Here I&rsquo;m going to use the easiest one:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ipainstaller -i <span style="color:#66d9ef">$(</span>ipainstaller -l | grep -i lassen<span style="color:#66d9ef">)</span> | grep Bundle
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>scp root@<span style="color:#f92672">[</span>device_ip<span style="color:#f92672">]</span>:/path/to/Bundle/ . 
-</span></span></code></pre></div><p>Then open the Bundle folder on PC and look for <code>Info.plist</code>. Let&rsquo;s find any strings that start with <code>NS</code> and end with <code>UsageDescription</code>.</p></p>
-
-    <h2><a href="http://localhost:1313/docs/attacks/applications/mobile/ios-app-transport-security/"> 📚 App Transport Security</a></h2> 
-    <p> <p><em>In this article I&rsquo;m trying to untangle a very confusing notion for some people (myself included) - App Transport Security. We will have several examples to work with and then try to construct our own setting according to our requirements.</em></p>
-<h2 id="overview">Overview</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>NSAppTransportSecurity : Dictionary {
-</span></span><span style="display:flex;"><span>    NSAllowsArbitraryLoads : Boolean
-</span></span><span style="display:flex;"><span>    NSAllowsArbitraryLoadsForMedia : Boolean
-</span></span><span style="display:flex;"><span>    NSAllowsArbitraryLoadsInWebContent : Boolean
-</span></span><span style="display:flex;"><span>    NSAllowsLocalNetworking : Boolean
-</span></span><span style="display:flex;"><span>    NSExceptionDomains : Dictionary {
-</span></span><span style="display:flex;"><span>        &lt;domain<span style="color:#f92672">-</span>name<span style="color:#f92672">-</span>string&gt; : Dictionary {
-</span></span><span style="display:flex;"><span>            NSIncludesSubdomains : Boolean
-</span></span><span style="display:flex;"><span>            NSExceptionAllowsInsecureHTTPLoads : Boolean
-</span></span><span style="display:flex;"><span>            NSExceptionMinimumTLSVersion : String
-</span></span><span style="display:flex;"><span>            NSExceptionRequiresForwardSecrecy : Boolean   <span style="color:#75715e">// Default value is YES</span>
-</span></span><span style="display:flex;"><span>            NSRequiresCertificateTransparency : Boolean
-</span></span><span style="display:flex;"><span>        }
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p>The above code snippet from Apple <a href="https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html">docs</a> shows the object that is responsible for loosening network security. This topic has been very confusing for me, but I&rsquo;ve finally got myself untangled 🎄 &#x1f408;  &#x1f4a1; !</p></p>
-
-    <h2><a href="http://localhost:1313/docs/attacks/applications/mobile/frida-crash-course/"> 📚 Frida Crash Course</a></h2> 
-    <p> <h2 id="intro">Intro</h2>
-<p>Frida is cool</p>
-<h2 id="templates">Templates</h2>
-<h3 id="empty">Empty</h3>
-<p>If a method needs an argument of type <code>Context</code>, <code>getApplicationContext()</code> needs to be used. Otherwise, may skip it.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">getApplicationContext</span>() {
-</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">ActivityThread</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Java</span>.<span style="color:#a6e22e">use</span>(<span style="color:#e6db74">&#34;android.app.ActivityThread&#34;</span>);
-</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">currentApplication</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">ActivityThread</span>.<span style="color:#a6e22e">currentApplication</span>();
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">ret</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">currentApplication</span>.<span style="color:#a6e22e">getApplicationContext</span>();
-</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">return</span> <span style="color:#a6e22e">ret</span>;
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">bruteforcePIN</span>() {
-</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">Java</span>.<span style="color:#a6e22e">perform</span>(() =&gt; {
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// if the method requires Context type arg
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>		<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">context</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">getApplicationContext</span>();
-</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">try</span> {
-</span></span><span style="display:flex;"><span>      <span style="color:#75715e">// code here
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    }
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">catch</span>(<span style="color:#a6e22e">e</span>) {
-</span></span><span style="display:flex;"><span>      <span style="color:#75715e">// exceptions to handle, example:
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">e</span>.<span style="color:#a6e22e">message</span>);
-</span></span><span style="display:flex;"><span>    }    
-</span></span><span style="display:flex;"><span>	});
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><h3 id="reverse-bool">Reverse Bool</h3>
-<p>If there is a function that returns a bool, and this bool value needs to be reversed:</p></p>
-
-    <h2><a href="http://localhost:1313/docs/attacks/applications/mobile/ios-decrypting-applications/"> 📚 Decrypting iOS Applications</a></h2> 
-    <p> <p><em>There are several tools available that perform decryption of iOS applications. iOS applications that are downloaded from AppStore are encrypted. AppStore simply won&rsquo;t allow to upload an app without proper signature and encryption. To get .ipa from the device for further analysis one needs a tool. There are several tools available now (October, 2020). I&rsquo;ve prepared a simple overview of the differences and how they work.</em></p>
-<p>I&rsquo;ve taken a single application (in my case it was Bear) and decrypted it using several different tools. Frida-is-dumo and CrackerXI+ had the same output (md5 matches), clucth had a difference in several bytes.</p></p>
-
-    <h2><a href="http://localhost:1313/docs/tools/mac-setup-script/"> 🧰 Mac Setup Script</a></h2> 
-    <p> <blockquote>
-<p>🗒 TODO: Create a repo for this script!</p></blockquote>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># oh my zsh bash themes</span>
-</span></span><span style="display:flex;"><span>sh -c <span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># sh -c &#34;$(fetch -o - https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># sh -c &#34;$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&#34;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># install pyenv</span>
-</span></span><span style="display:flex;"><span>brew install readline xz openssl zlib
-</span></span><span style="display:flex;"><span>brew install pyenv
-</span></span><span style="display:flex;"><span>brew install pyenv-virtualenv
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># configure pyenv for zsh</span>
-</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#39;export PYENV_ROOT=&#34;$HOME/.pyenv&#34;&#39;</span> &gt;&gt; ~/.zshrc
-</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#39;export PATH=&#34;$PYENV_ROOT/bin:$PATH&#34;&#39;</span> &gt;&gt; ~/.zshrc
-</span></span><span style="display:flex;"><span>echo -e <span style="color:#e6db74">&#39;if command -v pyenv 1&gt;/dev/null 2&gt;&amp;1; then\n  eval &#34;$(pyenv init -)&#34;\nfi&#39;</span> &gt;&gt; ~/.zshrc
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>pyenv install 3.8.5
-</span></span><span style="display:flex;"><span>pyenv install 2.7.18
-</span></span><span style="display:flex;"><span>pyenv global 3.8.5
-</span></span><span style="display:flex;"><span>pyenv virtualenv 2.7.18 python2 
-</span></span><span style="display:flex;"><span>pyenv virtualenv 3.8.5 python3
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># radare2</span>
-</span></span><span style="display:flex;"><span>git clone https://github.com/radare/radare2.git
-</span></span><span style="display:flex;"><span>cd radare2
-</span></span><span style="display:flex;"><span>./sys/install.sh
-</span></span></code></pre></div><h2 id="mobile-pentest">Mobile Pentest</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Mobile tools</span>
-</span></span><span style="display:flex;"><span>pyenv activate python2
-</span></span><span style="display:flex;"><span>pip install git+https://github.com/iSECPartners/Introspy-Analyzer.git
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>git clone https://github.com/MobSF/Mobile-Security-Framework-MobSF.git
-</span></span><span style="display:flex;"><span>cd Mobile-Security-Framework-MobSF
-</span></span><span style="display:flex;"><span>./setup.sh
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>pyenv activate python3
-</span></span><span style="display:flex;"><span>cd Mobile-Security-Framework-MobSF
-</span></span><span style="display:flex;"><span>./setup.sh
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>pyenv activate python3
-</span></span><span style="display:flex;"><span>pip install frida
-</span></span><span style="display:flex;"><span>pip install frida-tools
-</span></span><span style="display:flex;"><span>pip install objection
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>brew install npm
-</span></span><span style="display:flex;"><span>npm install -g passionfruit
-</span></span><span style="display:flex;"><span>npm install -g itms-services
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>pyenv activate python2
-</span></span><span style="display:flex;"><span>pip install drozer
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># bug fix</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># cd /Users/[User_name]/.pyenv/versions/2.7.18/envs/python2/lib/python2.7/site-packages/pydiesel/reflection/utils/class_loader.py</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># change elif relative_to.find(&#34;.py&#34;) &gt;= 0 or relative_to.find(&#34;.pyc&#34;) &gt;= 0:</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># to elif (relative_to.find(&#34;.py&#34;) &gt;= 0 or relative_to.find(&#34;.pyc&#34;) &gt;= 0) and not &#34;.pyenv&#34; in relative_to:</span>
-</span></span></code></pre></div><h3 id="ios">iOS</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># for idevice system info</span>
-</span></span><span style="display:flex;"><span>brew install libimobiledevice
-</span></span><span style="display:flex;"><span>brew install ideviceinstaller
-</span></span></code></pre></div><h4 id="introspy">Introspy</h4>
-<p>With iOS device connected. Two args: IP and password needed for the script.</p></p>
-
-    <h2><a href="http://localhost:1313/docs/attacks/binary/exploits/alloc8/"> Alloc8</a></h2> 
-    <p> <p>So, there are some prerequisites that one needs to have in order to get this exploit. These are what are BootROM, NOR, <code>malloc()</code>, <code>NULL</code> and heap.</p>
-<p>About BootROM you can read here. Briefly speaking, it&rsquo;s a <strong>R</strong>ead <strong>O</strong>nly <strong>M</strong>emory (thus ROM, not to be confused with RAM which stands for <strong>R</strong>andomly <strong>A</strong>ccessed <strong>M</strong>emory, i.e. RAM and refers to the chip that&rsquo;s being freed of any charge when the power is off). ROM only means that this part of the device cannot be in any way modified once it was produced: neither by the user, not by the manufacturer himself. Mobile devices use ROM to store the first step of CPU launch.</p></p>
-
-    <h2><a href="http://localhost:1313/docs/ttp/malware/analyse/basics/assebly/assembly-calling-conventions/"> Calling 🤙 Conventions in x86</a></h2> 
-    <p> <p><em>In this article I&rsquo;m giving an overview of different calling conventions with examples.</em></p>
-<h2 id="intro">Intro</h2>
-<p>Consider the following code snippet:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">mysteriousFunction</span>(<span style="color:#66d9ef">int</span> a, <span style="color:#66d9ef">int</span> b)
-</span></span><span style="display:flex;"><span>{
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> a <span style="color:#f92672">+</span> b <span style="color:#f92672">+</span> c;
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">mysteriousFunction</span>(<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">4</span>);
-</span></span><span style="display:flex;"><span><span style="color:#75715e">// then the above function is called 
-</span></span></span></code></pre></div><p>Let&rsquo;s see the assembly code for each calling convention</p>
-<h2 id="cdecl">CDECL</h2>
-<p>The output in assemble would be this:</p>
-<pre tabindex="0"><code class="language-assembly" data-lang="assembly">_mysteriousFunction:
-push ebp
-mov ebp, esp
-mov eax, [ebp + 8]
-mov edx, [ebp + 12]
-add eax, edx
-pop ebp
-ret
-and
-
-;main function
-push 4 ; the second argument is pushed first
-push 2 ; the first argument is pushed second
-call _mysteriousFunction
-add esp, 8
-</code></pre><p>As is clearly seen from the above snippet, the arguments to the function are passed in reverse order by means of <code>PUSH</code> instruction (placed on stack). Observe the <code>_mysteriousFunction</code>&rsquo;s code: values added to <code>eax</code>, but nothing seems to be returning, just <code>ret</code>. That&rsquo;s because this calling convention passes return values in <code>eax</code> register by default.</p></p>
-
-    <h2><a href="http://localhost:1313/docs/attacks/binary/exploits/checkm8/"> Checkm8</a></h2> 
-    <p> <details>
-    <summary>Expand&hellip;</summary>
-    <a href="https://belkasoft.com/checkm8_glossary">https://belkasoft.com/checkm8_glossary</a>
-<a href="https://belkasoft.com/checkm8-troubleshooting">https://belkasoft.com/checkm8-troubleshooting</a>
-<a href="https://belkasoft.com/checkm8">https://belkasoft.com/checkm8</a>
-</details></p>
-
 
 
 
@@ -655,12 +469,24 @@ h2 {
             <li class="page-item"><a href="/platforms/ios/page/2/" class="page-link">2</a></li>
             
         
+            
+             
+            <li class="page-item"><a href="/platforms/ios/page/3/" class="page-link">3</a></li>
+            
+        
+             
+            
+            <li class="page-item disabled"><a class="page-link">...</a></li>
+            
+        
 
         
         <li class="page-item"><a href="/platforms/ios/page/2/" rel="next" class="page-link">Next ›</a></li>
         
 
         
+        
+        <li class="page-item"><a href="/platforms/ios/page/4/" rel="last" class="page-link">Last »</a></li>
         
     </ul>
 </nav>

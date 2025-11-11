@@ -358,177 +358,6 @@ SMLoginItemSetEnabled - Wardle, Patrick. The Art of Mac Malware (p. 25). No Star
     <h2><a href="http://localhost:1313/docs/todo/cases/ctf-walkthrough/mac-spotlight/"> macOS Spotlight</a></h2> 
     <p> <p><em>This writeup is about CyberDefenders macOS Spotlight challenge.</em></p></p>
 
-    <h2><a href="http://localhost:1313/docs/blog/2022/02/once-there-lived-admin/"> Once There Lived Admin</a></h2> 
-    <p> <p><em>Hey, ps! Would like you to hear a fairy tale? I am sure that you do! It all happened not long long time ago and not in a galaxy far far away&hellip; . Let&rsquo;s imagine that in the J.Rowling&rsquo;s universe there were cybersecurity specialists as well and Hogwarts had a real website in the Internet. Funky idea! 💡</em></p>
-<p>A very hard-working girl, let&rsquo;s call her Rachel (yeah, Rachel 😉) was sitting at her table, working as usual when she suddenly saw her phone vibrating nearby. She picked up the phone, hoping that wasn&rsquo;t a spam. Indeed it wasn&rsquo;t. That was her colleague, asking if she is interested in a little side project.</p></p>
-
-    <h2><a href="http://localhost:1313/docs/blog/2021/03/how-i-got-started-with-arm/"> How I Got Started With ARM</a></h2> 
-    <p> <p>📆 <code>Friday, 12th of March, 202</code></p>
-<p>⏰ <code>09:00</code></p>
-<p>☀️ <em>It was a very deceptively sunny morning, children laughing and squeaking merrily. When I closed my eyes I could almoust believe it was late spring or summer&hellip;. And the soul was filling with joy and inspiration. But unfortunately the temperature was too low (-10 ❄️ ⛄️  if you believe Yandex) and going for a outside-working-day was impossible 😔.</em></p>
-<p>I am finishing my cup of coffee ☕️ , my husband working in the adjacent room and my daughter playing with her new toys.</p></p>
-
-    <h2><a href="http://localhost:1313/docs/blog/2021/03/how-i-got-started-with-aws/"> How I Got Started With AWS</a></h2> 
-    <p> <p><em>In this blog post I am exploring AWS services (EC2). I am currently using a Free Tier license and I am trying to learn how to use. Why? Well, knowing AWS seems to be a very useful skill on the market. And the second reason for that is that I used to have different VMs that cosumed too much memory (HDD and RAM). Now I am also using M1 MacBook Pro and that&rsquo;s why having so many VMs locally is impossible since there are only some Linux and Windows 10 Machines available for ARM platform. Besides, I&rsquo;ve notices that I don&rsquo;t really use them much so having 60 GB of space occupied for occasional usage is weird. Everything speaks in the favour of AWS.</em></p></p>
-
-    <h2><a href="http://localhost:1313/docs/blog/2021/03/how-i-have-built-my-lab/"> How I Have Built My Lab</a></h2> 
-    <p> <p><em>One late evening when my eyes were so difficult to keep open, I&rsquo;ve decided to setup a Windows Lab on my M1 Mac. Long story short, I couldn&rsquo;t make Autopsy work as expected and that&rsquo;s why I had to waste my time on this task&hellip;</em></p>
-<p>&#x1f4c6; <code>01/03/2021</code></p>
-<p>&#x23f0; <code>22:17</code></p>
-<p>First, I had to sign up to Microsoft Insider Program <a href="https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewARM64?wa=wsignin1.0">here</a>. It was free and I signed up. Then, I&rsquo;ve installed Parallels from <a href="https://b2b.parallels.com/apple-silicon">here</a> using &ldquo;Try technical preview&rdquo; option that was available at this point in time. Also, at this point of time a free activation key &#x1f511; was available for Parallels (thank you 🙏 so much, guys, for this) <a href="https://my.parallels.com/desktop/beta?_ga=2.154508411.2118090463.1614625046-817269375.1614625046">here</a>. During installation process I was a little bewildered by the question about the use purpose of this software&hellip; Gaming or ordinary use (text editing, web-browsing etc). I&rsquo;ve chosen &ldquo;Gaming&rdquo; since I presume Autopsy and software alike do consume much power. However, I&rsquo;m not sure if this option changes the performance or it&rsquo;s rather some survey. Anyway. After all that everything worked like a charm. But I still have not tried installing autopsy&hellip; So, let&rsquo;s&hellip; .</p></p>
-
-    <h2><a href="http://localhost:1313/docs/artefacts/fs/apfs/"> APFS</a></h2> 
-    <p> <h2 id="apfs">APFS</h2>
-<p>APM and APFS seem to be unable to live together. APFS requires GUID. I have come to that conclusion when I tried formating the drive with a APM and then APFS with DiskUtility. The same goes for the MBR. APFS <strong>requires</strong> GPT.</p>
-<p><a href="https://developer.apple.com/support/downloads/Apple-File-System-Reference.pdf">https://developer.apple.com/support/downloads/Apple-File-System-Reference.pdf</a></p>
-<p><strong>Advantages over HFS+</strong>:</p>
-<ul>
-<li>
-<p>Optimized for Flash/SSD Storage.</p>
-</li>
-<li>
-<p>Full disk encryption is <em>natively</em> supported.</p>
-</li>
-<li>
-<p>Snapshot support.</p>
-</li>
-<li>
-<p>Timestamps are to-the-nanosecond.</p>
-</li>
-<li>
-<p>9 quintillion files at most (18 zeroes).</p>
-</li>
-<li>
-<p>Clones (aka copy-on-write). When the file is copied, it&rsquo;s actually not duplicated. Instead, a new pointer is created. Once either of the files get changed, the actual copying process takes place.</p></p>
-
-    <h2><a href="http://localhost:1313/docs/artefacts/fs/extx/"> ExtX</a></h2> 
-    <p> <h2 id="2">2</h2>
-<p>No journaling</p>
-<h2 id="3">3</h2>
-<p>Same but + journaling</p>
-<h2 id="4">4</h2>
-<p>New FS</p></p>
-
-    <h2><a href="http://localhost:1313/docs/artefacts/fs/fat/"> FAT</a></h2> 
-    <p> <p>Any FAT partition has two main parts: system area and data area. System area contains FAT boot record (every file system has a boot record), 1st FAT and 2nd FAT. FAT12 and FAT16 also have Root directory in the system area. Data area consists of Root directory in case of FAT32 and file and subdirectory data in clusters.</p>
-<h3 id="versions">Versions</h3>
-<h4 id="fat12">FAT12</h4>
-<p>For the cluster addressing there were 12 bits available, which is 2^12 clusters at most (4096 clusters).</p></p>
-
-    <h2><a href="http://localhost:1313/docs/artefacts/fs/hfs/"> HFS and HFS&#43;</a></h2> 
-    <p> <h2 id="hfs">HFS</h2>
-<h2 id="hfs-1">HFS+</h2>
-<p>Since 1998, since macOS 8.1. Was replaced by APFS.</p>
-<p>Didn&rsquo;t <em>natively</em> support full disk encryption (FV2 was added later). Timestamps were only to-the-second. Support up to 4 billion files.</p>
-<p><a href="https://developer.apple.com/library/archive/technotes/tn/tn1150.html">https://developer.apple.com/library/archive/technotes/tn/tn1150.html</a></p>
-<ul>
-<li>Supports large files</li>
-<li>Efficient disk space usage</li>
-<li>unicode for filenames</li>
-<li>name forks</li>
-<li>file compression</li>
-<li>journaling. Journaling is a mechanism in which changes to a disk are first committed to a journal file, which acts as a buffer to ensure that all disk update transactions are fully completed. <a href="#1">1</a></li>
-<li>dynamic resizing, defragmentation</li>
-<li>not only for MacOS</li>
-</ul>
-<h2 id="references">References</h2>
-<h3 id="1">1</h3>
-<p>Sheward, Mike. Hands-on Incident Response and Digital Forensics (p. 138). BCS Learning &amp; Development Limited. Kindle Edition.</p></p>
-
-    <h2><a href="http://localhost:1313/docs/tools/mac-setup-script/"> 🧰 Mac Setup Script</a></h2> 
-    <p> <blockquote>
-<p>🗒 TODO: Create a repo for this script!</p></blockquote>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># oh my zsh bash themes</span>
-</span></span><span style="display:flex;"><span>sh -c <span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># sh -c &#34;$(fetch -o - https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># sh -c &#34;$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&#34;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># install pyenv</span>
-</span></span><span style="display:flex;"><span>brew install readline xz openssl zlib
-</span></span><span style="display:flex;"><span>brew install pyenv
-</span></span><span style="display:flex;"><span>brew install pyenv-virtualenv
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># configure pyenv for zsh</span>
-</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#39;export PYENV_ROOT=&#34;$HOME/.pyenv&#34;&#39;</span> &gt;&gt; ~/.zshrc
-</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#39;export PATH=&#34;$PYENV_ROOT/bin:$PATH&#34;&#39;</span> &gt;&gt; ~/.zshrc
-</span></span><span style="display:flex;"><span>echo -e <span style="color:#e6db74">&#39;if command -v pyenv 1&gt;/dev/null 2&gt;&amp;1; then\n  eval &#34;$(pyenv init -)&#34;\nfi&#39;</span> &gt;&gt; ~/.zshrc
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>pyenv install 3.8.5
-</span></span><span style="display:flex;"><span>pyenv install 2.7.18
-</span></span><span style="display:flex;"><span>pyenv global 3.8.5
-</span></span><span style="display:flex;"><span>pyenv virtualenv 2.7.18 python2 
-</span></span><span style="display:flex;"><span>pyenv virtualenv 3.8.5 python3
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># radare2</span>
-</span></span><span style="display:flex;"><span>git clone https://github.com/radare/radare2.git
-</span></span><span style="display:flex;"><span>cd radare2
-</span></span><span style="display:flex;"><span>./sys/install.sh
-</span></span></code></pre></div><h2 id="mobile-pentest">Mobile Pentest</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Mobile tools</span>
-</span></span><span style="display:flex;"><span>pyenv activate python2
-</span></span><span style="display:flex;"><span>pip install git+https://github.com/iSECPartners/Introspy-Analyzer.git
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>git clone https://github.com/MobSF/Mobile-Security-Framework-MobSF.git
-</span></span><span style="display:flex;"><span>cd Mobile-Security-Framework-MobSF
-</span></span><span style="display:flex;"><span>./setup.sh
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>pyenv activate python3
-</span></span><span style="display:flex;"><span>cd Mobile-Security-Framework-MobSF
-</span></span><span style="display:flex;"><span>./setup.sh
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>pyenv activate python3
-</span></span><span style="display:flex;"><span>pip install frida
-</span></span><span style="display:flex;"><span>pip install frida-tools
-</span></span><span style="display:flex;"><span>pip install objection
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>brew install npm
-</span></span><span style="display:flex;"><span>npm install -g passionfruit
-</span></span><span style="display:flex;"><span>npm install -g itms-services
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>pyenv activate python2
-</span></span><span style="display:flex;"><span>pip install drozer
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># bug fix</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># cd /Users/[User_name]/.pyenv/versions/2.7.18/envs/python2/lib/python2.7/site-packages/pydiesel/reflection/utils/class_loader.py</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># change elif relative_to.find(&#34;.py&#34;) &gt;= 0 or relative_to.find(&#34;.pyc&#34;) &gt;= 0:</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># to elif (relative_to.find(&#34;.py&#34;) &gt;= 0 or relative_to.find(&#34;.pyc&#34;) &gt;= 0) and not &#34;.pyenv&#34; in relative_to:</span>
-</span></span></code></pre></div><h3 id="ios">iOS</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># for idevice system info</span>
-</span></span><span style="display:flex;"><span>brew install libimobiledevice
-</span></span><span style="display:flex;"><span>brew install ideviceinstaller
-</span></span></code></pre></div><h4 id="introspy">Introspy</h4>
-<p>With iOS device connected. Two args: IP and password needed for the script.</p></p>
-
-    <h2><a href="http://localhost:1313/docs/ttp/malware/analyse/basics/assebly/assembly-calling-conventions/"> Calling 🤙 Conventions in x86</a></h2> 
-    <p> <p><em>In this article I&rsquo;m giving an overview of different calling conventions with examples.</em></p>
-<h2 id="intro">Intro</h2>
-<p>Consider the following code snippet:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">mysteriousFunction</span>(<span style="color:#66d9ef">int</span> a, <span style="color:#66d9ef">int</span> b)
-</span></span><span style="display:flex;"><span>{
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> a <span style="color:#f92672">+</span> b <span style="color:#f92672">+</span> c;
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">mysteriousFunction</span>(<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">4</span>);
-</span></span><span style="display:flex;"><span><span style="color:#75715e">// then the above function is called 
-</span></span></span></code></pre></div><p>Let&rsquo;s see the assembly code for each calling convention</p>
-<h2 id="cdecl">CDECL</h2>
-<p>The output in assemble would be this:</p>
-<pre tabindex="0"><code class="language-assembly" data-lang="assembly">_mysteriousFunction:
-push ebp
-mov ebp, esp
-mov eax, [ebp + 8]
-mov edx, [ebp + 12]
-add eax, edx
-pop ebp
-ret
-and
-
-;main function
-push 4 ; the second argument is pushed first
-push 2 ; the first argument is pushed second
-call _mysteriousFunction
-add esp, 8
-</code></pre><p>As is clearly seen from the above snippet, the arguments to the function are passed in reverse order by means of <code>PUSH</code> instruction (placed on stack). Observe the <code>_mysteriousFunction</code>&rsquo;s code: values added to <code>eax</code>, but nothing seems to be returning, just <code>ret</code>. That&rsquo;s because this calling convention passes return values in <code>eax</code> register by default.</p></p>
-
 
 
 
@@ -604,12 +433,24 @@ h2 {
             <li class="page-item"><a href="/platforms/mac/page/2/" class="page-link">2</a></li>
             
         
+            
+             
+            <li class="page-item"><a href="/platforms/mac/page/3/" class="page-link">3</a></li>
+            
+        
+             
+            
+            <li class="page-item disabled"><a class="page-link">...</a></li>
+            
+        
 
         
         <li class="page-item"><a href="/platforms/mac/page/2/" rel="next" class="page-link">Next ›</a></li>
         
 
         
+        
+        <li class="page-item"><a href="/platforms/mac/page/4/" rel="last" class="page-link">Last »</a></li>
         
     </ul>
 </nav>

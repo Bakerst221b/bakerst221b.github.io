@@ -320,28 +320,90 @@ W-Fi MAC Address for the connected iPhone</p>
 <p>✍🏻 <code>4728</code> - member was added to a security-enabled global group.</p>
 <p>✍🏻 <code>4732</code> - member was added to a security-enabled local group.</p></p>
 
-    <h2><a href="http://localhost:1313/docs/ttp/cheatsheets/logon/"> 🤔 How Do I investigate logon events?</a></h2> 
-    <p> <h2 id="windows">Windows</h2>
-<h3 id="event-logs">Event Logs</h3>
-<p>There is a fine line between logon and <em>account</em> logon events, and that line is not just one word. The main idea is that logon is the event on the system that wants to chat, whilst account logon is the event on the server/remote system that our computer wants to talk to: user authentication and logon from the Security trail. Event codes <code>4624</code>.</p>
-<p>Most events are logged on the target machine, but you can also see these events on the source machine. That happens when the user authenticates locally with the credentials from the SAM database (NTLM protocol); you will see EID <code>4776</code> (NTLM creds used for logon) for both successful and failed logons.</p></p>
-
-    <h2><a href="http://localhost:1313/docs/ttp/cheatsheets/bruteforce/"> 🤔 How Do I Spot Bruteforcing Activity?</a></h2> 
-    <p> <h2 id="windows">Windows</h2>
-<h3 id="event-logs">Event logs</h3>
-<p>There will be no shortage of <code>4625</code> events (unsuccessful login) showing up in the logs. Since this attack is most likely happening over the network, the logon type will be <code>3</code> (often SMB or RDP). Now, if you give those events a once-over, you will be able to figure out whether we&rsquo;re up against a rather pesky password spray attack or an attack on a single account.</p></p>
-
-    <h2><a href="http://localhost:1313/docs/ttp/cheatsheets/injections/"> 🤔 How Do I Spot Injections?</a></h2> 
-    <p> <h2 id="windows">Windows</h2>
-<p>Sysmon logs, <code>25</code>.</p>
-<h2 id="references">References</h2>
-<details>
-    <summary>Expand&hellip;</summary>
-    Something here
-</details></p>
 
 
 
+
+<style>
+    body {
+    color: #212121;
+}
+
+h2 {
+    font-weight: bold;
+    
+}
+
+ 
+ 
+ 
+.pagination {
+    display: flex;
+    list-style: none;
+    border-radius: .25rem;
+    margin: 20px 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.page-link {
+    position: relative;
+    display: block;
+    padding: .75rem 1rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #2bbc8a;
+    background-color: #fff;
+}
+
+.homepage .page-link,
+.listing .page-link {
+    background-color: #fff;
+}
+
+.page-item.disabled .page-link {
+    color: #6c757d;
+    pointer-events: none;
+    cursor: auto;
+    background-color: #fff;
+    border-color: #dee2e6;
+}
+
+.page-item.active .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: #2bbc8a;;
+    border-color:#2bbc8a;
+    border-radius: 30px;
+}
+
+</style>
+<nav aria-label="page navigation">
+    <ul class="pagination">
+        
+        
+
+        
+
+        
+             
+            <li class="page-item active"><a href="/docs/ttp/cheatsheets/" class="page-link">1</a></li>
+            
+        
+            
+             
+            <li class="page-item"><a href="/docs/ttp/cheatsheets/page/2/" class="page-link">2</a></li>
+            
+        
+
+        
+        <li class="page-item"><a href="/docs/ttp/cheatsheets/page/2/" rel="next" class="page-link">Next ›</a></li>
+        
+
+        
+        
+    </ul>
+</nav>
 
 
         </div>

@@ -183,7 +183,7 @@
  
 
     <h2><a href="http://localhost:1313/docs/attacks/binary/exploits/bufferoverflow/overview/"> Overview</a></h2> 
-    <p> <p><em>The idea of a buffer overflow attack is quite simple, though the implementation might initially be difficult to digest. I am exploring this notion and visualising it in this article.</em> </p>
+    <p> <p><em>The idea of a buffer overflow attack is quite simple, though the implementation might initially be difficult to digest. I am exploring this notion and visualising it in this article.</em> <!-- more --></p>
 <h2 id="mechanics">Mechanics</h2>
 <p>Imagine you have a job you don&rsquo;t really like (I think most of us have had such an experience at least once in our life 😢). And also, imagine that you are being highly underpaid. Your job is simple and ridiculous: place rabbits 🐇 into one set of boxes and foxes 🦊 - into another. You happen to have 6 boxes 📦📦📦📦📦📦 for foxes 🦊 and 4 📦📦📦📦 for rabbits 🐇. However, you were given 4 rabbits 🐇🐇🐇🐇 and 7 foxes 🦊🦊🦊🦊🦊🦊🦊. So, one fox 🦊 doesn&rsquo;t have its fox box 📦. However, there are also rabbit 🐇 boxes 📦 right nearby. So, even though you were explicitly told not to place foxes into rabbit boxes and vice versa since you don&rsquo;t give a shit, you put a fox into a rabbit fox. What happens? One can only guess&hellip; 🤔. Long story short: the fox eats the rabbit, and now you have 7 foxes and only 3 rabbits 🐇. Alas! If only you&rsquo;d followed the manual 📖&hellip;. Most likely, one would get fired after such a mistake, but we can&rsquo;t fire the compiler, so that would happen if the developer was not using a memory-safe language or wasn&rsquo;t careful enough. Now, to the technicalities.</p></p>
 
@@ -289,98 +289,6 @@ SMLoginItemSetEnabled - Wardle, Patrick. The Art of Mac Malware (p. 25). No Star
 <p>🕰 <code>09:21 PM</code>.</p>
 <p><em>I had a 7-day license of Magnet AXIOM and I&rsquo;ve decided to try this tool and compare it with others that I had. In 2021 May-June Magnet held a great event of a great value - Magnet SUMMIT with lots of very useful webinars and workshops. One of them was a case study using Magnet. I am going to follow these steps and study another way to solve a crime.</em></p></p>
 
-    <h2><a href="http://localhost:1313/docs/blog/2021/03/how-i-got-started-with-arm/"> How I Got Started With ARM</a></h2> 
-    <p> <p>📆 <code>Friday, 12th of March, 202</code></p>
-<p>⏰ <code>09:00</code></p>
-<p>☀️ <em>It was a very deceptively sunny morning, children laughing and squeaking merrily. When I closed my eyes I could almoust believe it was late spring or summer&hellip;. And the soul was filling with joy and inspiration. But unfortunately the temperature was too low (-10 ❄️ ⛄️  if you believe Yandex) and going for a outside-working-day was impossible 😔.</em></p>
-<p>I am finishing my cup of coffee ☕️ , my husband working in the adjacent room and my daughter playing with her new toys.</p></p>
-
-    <h2><a href="http://localhost:1313/docs/ttp/malware/analyse/basics/positive-and-negative-numbers/"> Positive and Negative Numbers</a></h2> 
-    <p> <h2 id="intro">Intro</h2>
-<h2 id="ones-complement">One&rsquo;s complement</h2>
-<h2 id="two-complement">Two complement</h2></p>
-
-    <h2><a href="http://localhost:1313/docs/ttp/malware/analyse/basics/ios-reversing/"> iOS Reverse Engineering</a></h2> 
-    <p> <p><em>During forensic analysis it&rsquo;s not too rare to run into some suspicious application. In this article I&rsquo;m going to learn to reverse engineer iOS applications.</em></p>
-<h2 id="analysis-flow">Analysis flow</h2>
-<p>First, we need to get IPA file from the device. There are different ways to do so (please, refer to <a href="/docs/toolkit/mobile/ios-btfm-rtfm">BTFM and RTFM</a>). Here I&rsquo;m going to use the easiest one:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ipainstaller -i <span style="color:#66d9ef">$(</span>ipainstaller -l | grep -i lassen<span style="color:#66d9ef">)</span> | grep Bundle
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>scp root@<span style="color:#f92672">[</span>device_ip<span style="color:#f92672">]</span>:/path/to/Bundle/ . 
-</span></span></code></pre></div><p>Then open the Bundle folder on PC and look for <code>Info.plist</code>. Let&rsquo;s find any strings that start with <code>NS</code> and end with <code>UsageDescription</code>.</p></p>
-
-    <h2><a href="http://localhost:1313/docs/ttp/malware/analyse/basics/reference-vs-value/"> Reference vs Value</a></h2> 
-    <p> <p>Lorem markdownum aequalis strigis. Saetigeri iubeas, vultu huic alvum nondum
-de obside ut laniavit arbor palmis, cum quin. Rupes vetat videndo, armigerae
-crimen habet Priamum nec.</p></p>
-
-    <h2><a href="http://localhost:1313/docs/ttp/malware/analyse/basics/mutable-vs-immutable/"> Mutable vs Immutable</a></h2> 
-    <p> <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#f92672">import</span> ctypes
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> a <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> address <span style="color:#f92672">=</span> id(a)
-</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> address
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">4307917216</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> ctypes<span style="color:#f92672">.</span>cast(address, ctypes<span style="color:#f92672">.</span>py_object)<span style="color:#f92672">.</span>value
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">5</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> a <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> ctypes<span style="color:#f92672">.</span>cast(address, ctypes<span style="color:#f92672">.</span>py_object)<span style="color:#f92672">.</span>value
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">5</span>
-</span></span></code></pre></div><p>Similarly, regardless of whether you flag some <code>UITextField</code> as <em>Secure Text Entry</em> or not, it always returns data in the form of a <code>String</code> or <code>NSString</code>.</p>
-<p>On the other hand, using the overwritten data outside the compiler&rsquo;s scope (e.g., serializing it in a temp file) guarantees that it will be overwritten but obviously impacts performance and maintenance. You should try to overwrite critical objects with random data or content from non-critical objects. This will make it really difficult to construct scanners that can identify sensitive data on the basis of its management. This can be only done by low-level languages because the compilers and just-in-time virtual machines will ignore those operations for performance reasons if the optimization routines detect that the buffer is no longer used after being overwritten.</p></p>
-
-    <h2><a href="http://localhost:1313/docs/attacks/binary/exploits/alloc8/"> Alloc8</a></h2> 
-    <p> <p>So, there are some prerequisites that one needs to have in order to get this exploit. These are what are BootROM, NOR, <code>malloc()</code>, <code>NULL</code> and heap.</p>
-<p>About BootROM you can read here. Briefly speaking, it&rsquo;s a <strong>R</strong>ead <strong>O</strong>nly <strong>M</strong>emory (thus ROM, not to be confused with RAM which stands for <strong>R</strong>andomly <strong>A</strong>ccessed <strong>M</strong>emory, i.e. RAM and refers to the chip that&rsquo;s being freed of any charge when the power is off). ROM only means that this part of the device cannot be in any way modified once it was produced: neither by the user, not by the manufacturer himself. Mobile devices use ROM to store the first step of CPU launch.</p></p>
-
-    <h2><a href="http://localhost:1313/docs/attacks/binary/exploits/bufferoverflow/"> Buffer Overflow</a></h2> 
-    <p> </p>
-
-    <h2><a href="http://localhost:1313/docs/ttp/malware/analyse/basics/assebly/assembly-calling-conventions/"> Calling 🤙 Conventions in x86</a></h2> 
-    <p> <p><em>In this article I&rsquo;m giving an overview of different calling conventions with examples.</em></p>
-<h2 id="intro">Intro</h2>
-<p>Consider the following code snippet:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">mysteriousFunction</span>(<span style="color:#66d9ef">int</span> a, <span style="color:#66d9ef">int</span> b)
-</span></span><span style="display:flex;"><span>{
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> a <span style="color:#f92672">+</span> b <span style="color:#f92672">+</span> c;
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">mysteriousFunction</span>(<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">4</span>);
-</span></span><span style="display:flex;"><span><span style="color:#75715e">// then the above function is called 
-</span></span></span></code></pre></div><p>Let&rsquo;s see the assembly code for each calling convention</p>
-<h2 id="cdecl">CDECL</h2>
-<p>The output in assemble would be this:</p>
-<pre tabindex="0"><code class="language-assembly" data-lang="assembly">_mysteriousFunction:
-push ebp
-mov ebp, esp
-mov eax, [ebp + 8]
-mov edx, [ebp + 12]
-add eax, edx
-pop ebp
-ret
-and
-
-;main function
-push 4 ; the second argument is pushed first
-push 2 ; the first argument is pushed second
-call _mysteriousFunction
-add esp, 8
-</code></pre><p>As is clearly seen from the above snippet, the arguments to the function are passed in reverse order by means of <code>PUSH</code> instruction (placed on stack). Observe the <code>_mysteriousFunction</code>&rsquo;s code: values added to <code>eax</code>, but nothing seems to be returning, just <code>ret</code>. That&rsquo;s because this calling convention passes return values in <code>eax</code> register by default.</p></p>
-
-    <h2><a href="http://localhost:1313/docs/attacks/binary/exploits/checkm8/"> Checkm8</a></h2> 
-    <p> <details>
-    <summary>Expand&hellip;</summary>
-    <a href="https://belkasoft.com/checkm8_glossary">https://belkasoft.com/checkm8_glossary</a>
-<a href="https://belkasoft.com/checkm8-troubleshooting">https://belkasoft.com/checkm8-troubleshooting</a>
-<a href="https://belkasoft.com/checkm8">https://belkasoft.com/checkm8</a>
-</details></p>
-
-    <h2><a href="http://localhost:1313/docs/ttp/malware/analyse/basics/assebly/assembly-flags/"> Flags</a></h2> 
-    <p> <h2 id="cf">CF</h2>
-<p>Its full name is <em>carry flag</em>. Its main purpose is to tell that the resulting number after some operations is too much to bear for the registry size. For example, the maximum size of a number is 32 bit, but if we add 0xFFFF</p>
-<h2 id="zf">ZF</h2>
-<h2 id="of">OF</h2></p>
-
 
 
 
@@ -456,12 +364,19 @@ h2 {
             <li class="page-item"><a href="/tags/reverse/page/2/" class="page-link">2</a></li>
             
         
+            
+             
+            <li class="page-item"><a href="/tags/reverse/page/3/" class="page-link">3</a></li>
+            
+        
 
         
         <li class="page-item"><a href="/tags/reverse/page/2/" rel="next" class="page-link">Next ›</a></li>
         
 
         
+        
+        <li class="page-item"><a href="/tags/reverse/page/3/" rel="last" class="page-link">Last »</a></li>
         
     </ul>
 </nav>

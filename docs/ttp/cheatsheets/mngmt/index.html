@@ -250,17 +250,17 @@
       <tr>
           <td>🗄️ Registry</td>
           <td>ShimCache, BAM/DAM and AmCache for <code>sc.exe</code> traces</td>
-          <td>🔑 <code>CurrentControlSet\Services</code><!-- raw HTML omitted -->ShimCache and AmCache</td>
+          <td>🔑 <code>CurrentControlSet\Services</code><br />ShimCache and AmCache</td>
       </tr>
       <tr>
           <td>📑 File system</td>
           <td>Prefetch</td>
-          <td>Image file of the exe<!-- raw HTML omitted -->Prefetch</td>
+          <td>Image file of the exe<br />Prefetch</td>
       </tr>
       <tr>
           <td>🪵 Event logs</td>
           <td></td>
-          <td>🛡️ <code>4624</code> type <code>3</code> (sIP, sname), <code>4697</code> (service installed) <!-- raw HTML omitted -->⚙️ <code>7034</code> (service terminated unexpectedly), <code>7035</code> (start/stop request sent), <code>7036</code> (service started/stopped), <code>7040</code> (start type changed), <code>7045</code> (service installed)</td>
+          <td>🛡️ <code>4624</code> type <code>3</code> (sIP, sname), <code>4697</code> (service installed) <br />⚙️ <code>7034</code> (service terminated unexpectedly), <code>7035</code> (start/stop request sent), <code>7036</code> (service started/stopped), <code>7040</code> (start type changed), <code>7045</code> (service installed)</td>
       </tr>
       <tr>
           <td></td>
@@ -290,17 +290,17 @@
       <tr>
           <td>🪵 Event logs</td>
           <td>4648 (alternate creds)</td>
-          <td>🛡️ <code>4698</code> (created), <code>4702</code> (updated), <code>4699</code> (deleted), <code>4700</code> (enabled), <code>4701</code> (disabled), <!-- raw HTML omitted -->🥀 <code>106</code> (created), <code>140</code> (updated), <code>141</code> (deleted), <code>200</code> (executed), <code>201</code> (completed)</td>
+          <td>🛡️ <code>4698</code> (created), <code>4702</code> (updated), <code>4699</code> (deleted), <code>4700</code> (enabled), <code>4701</code> (disabled), <br />🥀 <code>106</code> (created), <code>140</code> (updated), <code>141</code> (deleted), <code>200</code> (executed), <code>201</code> (completed)</td>
       </tr>
       <tr>
           <td>🗄️ Registry</td>
           <td>ShimCache, BAM/DAM</td>
-          <td>🔑 <code>Microsoft\Windows NT\CurrentVersion\Schedule\TasksCache\Tasks</code><!-- raw HTML omitted -->ShimCache, AmCache</td>
+          <td>🔑 <code>Microsoft\Windows NT\CurrentVersion\Schedule\TasksCache\Tasks</code><br />ShimCache, AmCache</td>
       </tr>
       <tr>
           <td>📑 File System</td>
           <td>Prefetch</td>
-          <td>Prefetch<!-- raw HTML omitted -->📂 <code>C:\Windows\System32\Tasks</code> (newer) and 📂 <code>C:\Windows\Tasks</code> containing <code>.job</code> (binary) or <code>.xml</code> files</td>
+          <td>Prefetch<br />📂 <code>C:\Windows\System32\Tasks</code> (newer) and 📂 <code>C:\Windows\Tasks</code> containing <code>.job</code> (binary) or <code>.xml</code> files</td>
       </tr>
   </tbody>
 </table>
@@ -348,7 +348,7 @@
       <tr>
           <td>🪵 Event logs</td>
           <td>🛡️ <code>4648</code> (alternate creds)</td>
-          <td>🛡️<code>4624</code> type <code>3</code>, <code>4672</code> (admin), 4688, Sysmon and EDR can help track the processes created, 🍉 <code>5857</code> (start or stop, path to provider DLL), <code>5860</code>/<code>5861</code> (temp/permanent Event Consumer created), <code>5857</code>-<code>5861</code> (filter and consumer), <code>5858</code> - query error or insufficient permissions (host and uname), 5859 -find corresponding filter. <!-- raw HTML omitted --><!-- raw HTML omitted -->🍇 <code>1</code> - <code>mof</code> compiled, <code>20</code> - Consumer added</td>
+          <td>🛡️<code>4624</code> type <code>3</code>, <code>4672</code> (admin), 4688, Sysmon and EDR can help track the processes created, 🍉 <code>5857</code> (start or stop, path to provider DLL), <code>5860</code>/<code>5861</code> (temp/permanent Event Consumer created), <code>5857</code>-<code>5861</code> (filter and consumer), <code>5858</code> - query error or insufficient permissions (host and uname), 5859 -find corresponding filter. <br/><br/>🍇 <code>1</code> - <code>mof</code> compiled, <code>20</code> - Consumer added</td>
       </tr>
       <tr>
           <td>🗄️ Registry</td>
@@ -358,7 +358,7 @@
       <tr>
           <td>📑 File System</td>
           <td>Prefetch</td>
-          <td>Prefetch<!-- raw HTML omitted --><code>mof</code> files, unauthorised changes to <code>C:\Windows\System32\wbem\Repository</code></td>
+          <td>Prefetch<br /><code>mof</code> files, unauthorised changes to <code>C:\Windows\System32\wbem\Repository</code></td>
       </tr>
   </tbody>
 </table>
@@ -383,7 +383,7 @@
   <tbody>
       <tr>
           <td>🪵 Event logs</td>
-          <td>🛡️ <code>4648</code><!-- raw HTML omitted -->🥝 <code>6</code> -WSMan Session init (dhost, dIP, c_user, timestamp), <code>8</code>, <code>15</code>, <code>16</code>, <code>33</code> - deinit<!-- raw HTML omitted --> 🍌 <code>40691</code>, <code>40692</code> (Records the local initiation of powershell.exe and associated user account), <code>8193</code>, <code>8194</code> (session created), <code>8197</code> (session closed)</td>
+          <td>🛡️ <code>4648</code><br />🥝 <code>6</code> -WSMan Session init (dhost, dIP, c_user, timestamp), <code>8</code>, <code>15</code>, <code>16</code>, <code>33</code> - deinit<br /> 🍌 <code>40691</code>, <code>40692</code> (Records the local initiation of powershell.exe and associated user account), <code>8193</code>, <code>8194</code> (session created), <code>8197</code> (session closed)</td>
           <td>🛡️ 4624 type 3, 4672 | 🍌 4103 &amp; 4104 (script block logging, suspicious or all), 53504 (the auth-ing user) | 🍒 400/403 (start/end of remote session), 800 (contains partial script) | 🥝 91 (session created), 168 (auth-ing user)</td>
       </tr>
       <tr>
@@ -393,8 +393,8 @@
       </tr>
       <tr>
           <td>📑 File System</td>
-          <td>Prefetch (will also show <code>*.ps1</code> files accessed during the first 10 seconds)<!-- raw HTML omitted -->Command history at <code>C:\Users\uname\AppData\Roaming\Microsoft\&lt;br /&gt;Windows\PowerShell\PSReadLine\ConsoleHost_history.txt</code><!-- raw HTML omitted --></td>
-          <td>- files moved<!-- raw HTML omitted -->- Prefetch<!-- raw HTML omitted -->- User profile</td>
+          <td>Prefetch (will also show <code>*.ps1</code> files accessed during the first 10 seconds)<br />Command history at <code>C:\Users\uname\AppData\Roaming\Microsoft\&lt;br /&gt;Windows\PowerShell\PSReadLine\ConsoleHost_history.txt</code><br /></td>
+          <td>- files moved<br />- Prefetch<br />- User profile</td>
       </tr>
   </tbody>
 </table>

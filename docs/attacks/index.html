@@ -248,52 +248,90 @@
     <h2><a href="http://localhost:1313/docs/attacks/dos/"> DoS Attacks and Mitigations</a></h2> 
     <p> <p><em>In this article, I will cover the main DoS techniques and how they look in the logs. I will also cover some main mitigation techniques.</em></p></p>
 
-    <h2><a href="http://localhost:1313/docs/attacks/evasion/"> Evasion Techniques</a></h2> 
-    <p> <p><em>This is about &hellip; .</em></p></p>
-
-    <h2><a href="http://localhost:1313/docs/attacks/cloud/"> 📚 Cloud</a></h2> 
-    <p> </p>
-
-    <h2><a href="http://localhost:1313/docs/attacks/containers/"> 📚 Containers</a></h2> 
-    <p> </p>
-
-    <h2><a href="http://localhost:1313/docs/attacks/ids-ips/"> Host-based IDP/IPS</a></h2> 
-    <p> <p>Host-based IDS look for local system configurations and behaviour, while network-based IDS look for network connections and looks for anomalies and common signatures.</p>
-<p>IDS and IPS as firewall&rsquo;s filters. There are Control Plane (looks after the OS and routing table) and the Forwarding Plane (makes decisions on routing and discarding). If something happens to the Control Plane, the device will still forward the traffic (really???).</p>
-<p>By default IDS only <strong>listens 👂</strong> the traffic. It&rsquo;s usually connected to the span port on a switch. Looks for anomalies and sends alerts. Won&rsquo;t take any actions by default, but can be configured in such a way. If the IDS is down, nothing is changed for the rest of the network, it&rsquo;s still operating.</p>
-<p>IPS takes actions on its own. It is not connected to the span port, but rather is a gateway. Before it inspects and allows a packet through, nothing can move forward. So, if IPS is down, everyone is down (unless there is some load balancing enabled or may be some policy for such cases). Positioned right after the router, edge device or a firewall.</p></p>
-
-    <h2><a href="http://localhost:1313/docs/attacks/recon/"> Network Recon</a></h2> 
-    <p> <h2 id="traceroute-tracert"><code>traceroute</code>, <code>tracert</code></h2>
-<p>On Windows, it&rsquo;s <code>tracert</code> (due to some legacy max-name-size limitations). On Linux and macOS - <code>traceroute</code>. Windows uses ICMP protocol by default, while macOS and Linux - <code>UDP</code>. You can, however, make <code>tracerout</code> on UNIX operate over ICMP by specifying <code>-I</code> switch.</p>
-<blockquote>
-<p>🧪 There is an extraordinary thing that I have noticed. I was trying to capture the traceroute and tracert traffic to show the screenshots.</p>
-<p>I launched traceroute on macOS, and I got a bizarre response: 64 lines of 3 wildcards that could indicate a firewall blocking ICMP/UDP requests. I googled and googled and decided to check the Windows tracert on a VM on the same machine. And strangely, I got a normal response. That led me to believe that the macOS traceroute is buggy since the machine is the same and all traffic is routed through the same nodes.</p></p>
-
-    <h2><a href="http://localhost:1313/docs/attacks/port-scanning/"> Port Scanning</a></h2> 
-    <p> <p><em>There are several techniques for port scanning. Some of them work for one OS only.</em></p></p>
-
-    <h2><a href="http://localhost:1313/docs/attacks/net-btfm/"> 📘 BTFM</a></h2> 
-    <p> <h2 id="dshell">dshell</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># MacOSX path to directory with pyenv (example):</span>
-</span></span><span style="display:flex;"><span>/Users/<span style="color:#f92672">[</span>user_name<span style="color:#f92672">]</span>/.pyenv/versions/3.8.5/envs/python3/lib/python3.8/site-packages/dshell/
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>decode -l <span style="color:#75715e"># list decoders</span>
-</span></span><span style="display:flex;"><span>decode -d <span style="color:#f92672">[</span>decoder_name<span style="color:#f92672">]</span> <span style="color:#75715e"># decoder info</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># who talked to whom</span>
-</span></span><span style="display:flex;"><span>decode -d ip <span style="color:#f92672">[</span>capture_file_name<span style="color:#f92672">]</span>.<span style="color:#f92672">(</span>p<span style="color:#f92672">)</span>cap
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># by what means (transport layer) i.e. not tcp,udp or icmp</span>
-</span></span><span style="display:flex;"><span>decode -d protocol <span style="color:#f92672">[</span>capture_file_name<span style="color:#f92672">]</span>.<span style="color:#f92672">(</span>p<span style="color:#f92672">)</span>cap
-</span></span></code></pre></div><h3 id="analysis-example-1">Analysis example 1</h3>
-<p>Downloading some <code>(p)cap</code> file from <a href="https://wiki.wireshark.org/SampleCaptures#Server_Message_Block_.28SMB.29.2FCommon_Internet_File_System_.28CIFS.29">here</a>. Chose some <code>smb</code> file <a href="https://wiki.wireshark.org/SampleCaptures?action=AttachFile&amp;do=get&amp;target=smbtorture.cap.gz">smbtorture.cap.gz</a>. This sample&rsquo;s info: <em>&ldquo;Capture showing a wide range of SMB features. The capture was made using the Samba4 smbtorture suite, against a Windows Vista beta2 server.&rdquo;</em></p></p>
-
-    <h2><a href="http://localhost:1313/docs/attacks/protocols/"> 📚 Network Protocols</a></h2> 
-    <p> <p><em>This set of articles describe network protocols for each layer separately. Each article may contain an attack description and how to metigate it.</em></p></p>
 
 
 
+
+<style>
+    body {
+    color: #212121;
+}
+
+h2 {
+    font-weight: bold;
+    
+}
+
+ 
+ 
+ 
+.pagination {
+    display: flex;
+    list-style: none;
+    border-radius: .25rem;
+    margin: 20px 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.page-link {
+    position: relative;
+    display: block;
+    padding: .75rem 1rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #2bbc8a;
+    background-color: #fff;
+}
+
+.homepage .page-link,
+.listing .page-link {
+    background-color: #fff;
+}
+
+.page-item.disabled .page-link {
+    color: #6c757d;
+    pointer-events: none;
+    cursor: auto;
+    background-color: #fff;
+    border-color: #dee2e6;
+}
+
+.page-item.active .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: #2bbc8a;;
+    border-color:#2bbc8a;
+    border-radius: 30px;
+}
+
+</style>
+<nav aria-label="page navigation">
+    <ul class="pagination">
+        
+        
+
+        
+
+        
+             
+            <li class="page-item active"><a href="/docs/attacks/" class="page-link">1</a></li>
+            
+        
+            
+             
+            <li class="page-item"><a href="/docs/attacks/page/2/" class="page-link">2</a></li>
+            
+        
+
+        
+        <li class="page-item"><a href="/docs/attacks/page/2/" rel="next" class="page-link">Next ›</a></li>
+        
+
+        
+        
+    </ul>
+</nav>
 
 
         </div>

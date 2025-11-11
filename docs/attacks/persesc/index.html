@@ -324,24 +324,90 @@
 <p><strong>WinXP</strong>: at jobs run with SYSTEM privileges.</p></blockquote>
 <p>Files are created here: <code>\Windows\Tasks</code> and <code>\Windows\System32\Tasks</code> (xml duplicate Win7+). Created with: <code>at.exe 22:22:22 C:\mal.exe</code> or</p></p>
 
-    <h2><a href="http://localhost:1313/docs/attacks/persesc/tokens/"> Tokens Misuse</a></h2> 
-    <p> <p><strong>MITRE</strong>: <a href="https://attack.mitre.org/techniques/T1134/001/">https://attack.mitre.org/techniques/T1134/001/</a>, <a href="https://attack.mitre.org/techniques/T1134/">https://attack.mitre.org/techniques/T1134/</a>, <a href="https://attack.mitre.org/techniques/T1134/002/">https://attack.mitre.org/techniques/T1134/002/</a>, <a href="https://attack.mitre.org/techniques/T1134/003/">https://attack.mitre.org/techniques/T1134/003/</a>, <a href="https://attack.mitre.org/techniques/T1134/004/">https://attack.mitre.org/techniques/T1134/004/</a>, <a href="https://attack.mitre.org/techniques/T1134/005/">https://attack.mitre.org/techniques/T1134/005/</a>
-<strong>Actors</strong>: <a href="https://attack.mitre.org/groups/G0032/">https://attack.mitre.org/groups/G0032/</a></p>
-<p><strong>Techniques:</strong></p>
-<ul>
-<li>Token impersonalisation.</li>
-<li><code>runas</code> or <code>CreateProcessWithTokenW</code> to create a process with the rights of another user.</li>
-<li>spoof parent process ID</li>
-<li>Windows. SID-history injection. By injecting a fake SID into the SID history of a user account, an attacker can create a new identity with additional access rights without raising any alarms. 🚨 Need elevated privileges. The SID history is stored in the user object&rsquo;s attribute in the AD database. The attribute is named &ldquo;SIDHistory&rdquo; and can be viewed and modified using the Active Directory Users and Computers (ADUC) management console or other AD management tools.</li>
-</ul>
-<h2 id="references">References</h2>
-<details>
-    <summary>Expand&hellip;</summary>
-    Something here
-</details></p>
 
 
 
+
+<style>
+    body {
+    color: #212121;
+}
+
+h2 {
+    font-weight: bold;
+    
+}
+
+ 
+ 
+ 
+.pagination {
+    display: flex;
+    list-style: none;
+    border-radius: .25rem;
+    margin: 20px 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.page-link {
+    position: relative;
+    display: block;
+    padding: .75rem 1rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #2bbc8a;
+    background-color: #fff;
+}
+
+.homepage .page-link,
+.listing .page-link {
+    background-color: #fff;
+}
+
+.page-item.disabled .page-link {
+    color: #6c757d;
+    pointer-events: none;
+    cursor: auto;
+    background-color: #fff;
+    border-color: #dee2e6;
+}
+
+.page-item.active .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: #2bbc8a;;
+    border-color:#2bbc8a;
+    border-radius: 30px;
+}
+
+</style>
+<nav aria-label="page navigation">
+    <ul class="pagination">
+        
+        
+
+        
+
+        
+             
+            <li class="page-item active"><a href="/docs/attacks/persesc/" class="page-link">1</a></li>
+            
+        
+            
+             
+            <li class="page-item"><a href="/docs/attacks/persesc/page/2/" class="page-link">2</a></li>
+            
+        
+
+        
+        <li class="page-item"><a href="/docs/attacks/persesc/page/2/" rel="next" class="page-link">Next ›</a></li>
+        
+
+        
+        
+    </ul>
+</nav>
 
 
         </div>

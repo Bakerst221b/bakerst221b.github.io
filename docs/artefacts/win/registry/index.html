@@ -273,49 +273,90 @@
     <h2><a href="http://localhost:1313/docs/artefacts/win/registry/bam/"> BAM and DAM</a></h2> 
     <p> <p><em>It provides a full path of the executable file run on the system and the last execution date/time. BAM stands for Background Activity Moderator, and DAM - Desktop Activity Moderator. BAM is a &ldquo;daemon master&rdquo; (controls the background services), whereas DAM moderates desktop services to save energy.</em></p></p>
 
-    <h2><a href="http://localhost:1313/docs/artefacts/win/registry/shell-bag/"> ShellBag</a></h2> 
-    <p> <p><em>To open a file, one needs to perform a delightful jaunt to a directory where those files reside. Now picture this: imagine if we could keep a journal of all the full paths of the folders visited; wouldn&rsquo;t that be splendid? It so happens that this nice functionality does exist on Windows machines and ShellBags they are called. Since these folders can be located on a remote machine, a USB drive or any other external media, this artefact can be used to make assumptions about remote connections and devices attached.</em></p></p>
-
-    <h2><a href="http://localhost:1313/docs/artefacts/win/registry/shimcache/"> ShimCache aka AppCompatCache</a></h2> 
-    <p> <p><em>How often has the following happened to you? You want to run a program, but it&rsquo;s not designed to run on this version of OS. Windows has a mechanism to run older programs on newer systems. Even when these &ldquo;compatibility&rdquo; adjustments are not required, Windows still logs the information for all the programs run.</em></p></p>
-
-    <h2><a href="http://localhost:1313/docs/artefacts/win/registry/userassist/"> User Assist</a></h2> 
-    <p> <p><em>GUI-based programs launched from the desktop are tracked in the launcher on a Windows system.</em></p></p>
-
-    <h2><a href="http://localhost:1313/docs/artefacts/win/registry/anatomy/"> ⚙️ Windows Registry</a></h2> 
-    <p> <p>Hives:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>C:<span style="color:#ae81ff">\D</span>ocuments and Settings |*<span style="color:#ae81ff">\n</span>tuser.dat
-</span></span><span style="display:flex;"><span>C:<span style="color:#ae81ff">\U</span>sers<span style="color:#ae81ff">\ </span>|*<span style="color:#ae81ff">\ </span>ntuser. dat
-</span></span><span style="display:flex;"><span>C: <span style="color:#ae81ff">\U</span>sers<span style="color:#ae81ff">\ \*\n</span>tuser.dat. LOG|*
-</span></span><span style="display:flex;"><span>C: <span style="color:#ae81ff">\ </span>Users<span style="color:#ae81ff">\ </span>|*<span style="color:#ae81ff">\ </span>AppData<span style="color:#ae81ff">\L</span>ocal<span style="color:#ae81ff">\M</span>icrosoft<span style="color:#ae81ff">\W</span>indows| UsrClass.dat
-</span></span><span style="display:flex;"><span>C: | Users<span style="color:#ae81ff">\|</span>*<span style="color:#ae81ff">\ </span>AppData<span style="color:#ae81ff">\ </span>Local<span style="color:#ae81ff">\M</span>icrosoft Windows| UsrClass.dat.LOG|*
-</span></span><span style="display:flex;"><span>C: <span style="color:#ae81ff">\W</span>indows<span style="color:#ae81ff">\S</span>ystem32<span style="color:#ae81ff">\c</span>onfig<span style="color:#ae81ff">\S</span>AM. LOG|*
-</span></span><span style="display:flex;"><span>C: Windows<span style="color:#ae81ff">\ </span>System32<span style="color:#ae81ff">\ </span>config SECURITY. LOG<span style="color:#ae81ff">\ </span>*
-</span></span><span style="display:flex;"><span>C: Windows<span style="color:#ae81ff">\ </span>System32<span style="color:#ae81ff">\ </span>config<span style="color:#ae81ff">\ </span>SOFTWARE. LOG| *
-</span></span><span style="display:flex;"><span>C: Windows<span style="color:#ae81ff">\ </span>System32<span style="color:#ae81ff">\ </span>config SYSTEM. LOG<span style="color:#ae81ff">\*</span>
-</span></span><span style="display:flex;"><span> C:<span style="color:#ae81ff">\D</span>ocuments and Settings |*<span style="color:#ae81ff">\n</span>tuser.dat
-</span></span><span style="display:flex;"><span> C:<span style="color:#ae81ff">\U</span>sers<span style="color:#ae81ff">\ </span>|*<span style="color:#ae81ff">\ </span>ntuser. dat
-</span></span><span style="display:flex;"><span> C: <span style="color:#ae81ff">\U</span>sers<span style="color:#ae81ff">\ \*\n</span>tuser.dat. LOG|*
-</span></span><span style="display:flex;"><span> C: <span style="color:#ae81ff">\ </span>Users<span style="color:#ae81ff">\ </span>|*<span style="color:#ae81ff">\ </span>AppData<span style="color:#ae81ff">\L</span>ocal<span style="color:#ae81ff">\M</span>icrosoft<span style="color:#ae81ff">\W</span>indows| UsrClass.dat
-</span></span><span style="display:flex;"><span> C: | Users<span style="color:#ae81ff">\|</span>*<span style="color:#ae81ff">\ </span>AppData<span style="color:#ae81ff">\ </span>Local<span style="color:#ae81ff">\M</span>icrosoft Windows| UsrClass.dat.LOG|*
-</span></span><span style="display:flex;"><span> C: <span style="color:#ae81ff">\W</span>indows<span style="color:#ae81ff">\S</span>ystem32<span style="color:#ae81ff">\c</span>onfig<span style="color:#ae81ff">\S</span>AM. LOG|*
-</span></span><span style="display:flex;"><span> C: Windows<span style="color:#ae81ff">\ </span>System32<span style="color:#ae81ff">\ </span>config SECURITY. LOG<span style="color:#ae81ff">\ </span>*
-</span></span><span style="display:flex;"><span> C: Windows<span style="color:#ae81ff">\ </span>System32<span style="color:#ae81ff">\ </span>config<span style="color:#ae81ff">\ </span>SOFTWARE. LOG| *
-</span></span><span style="display:flex;"><span> C: Windows<span style="color:#ae81ff">\ </span>System32<span style="color:#ae81ff">\ </span>config SYSTEM. LOG<span style="color:#ae81ff">\*</span>
-</span></span><span style="display:flex;"><span>C: <span style="color:#ae81ff">\W</span>indows<span style="color:#ae81ff">\S</span>ystem32<span style="color:#ae81ff">\c</span>onfig<span style="color:#ae81ff">\ </span>SAM
-</span></span><span style="display:flex;"><span>C: <span style="color:#ae81ff">\W</span>indows<span style="color:#ae81ff">\S</span>ystem32<span style="color:#ae81ff">\c</span>onfig<span style="color:#ae81ff">\ </span>SECURITY
-</span></span><span style="display:flex;"><span>C: <span style="color:#ae81ff">\W</span>indows<span style="color:#ae81ff">\S</span>ystem32<span style="color:#ae81ff">\c</span>onfig<span style="color:#ae81ff">\ </span>SOFTWARE
-</span></span><span style="display:flex;"><span>C: <span style="color:#ae81ff">\W</span>indows<span style="color:#ae81ff">\S</span>ystem32<span style="color:#ae81ff">\c</span>onfig<span style="color:#ae81ff">\ </span>SYSTEM
-</span></span><span style="display:flex;"><span>C: <span style="color:#ae81ff">\W</span>indows<span style="color:#ae81ff">\S</span>ystem32<span style="color:#ae81ff">\c</span>onfig<span style="color:#ae81ff">\R</span>egBack<span style="color:#ae81ff">\\</span>*. LOG|*
-</span></span><span style="display:flex;"><span>C: <span style="color:#ae81ff">\W</span>indows<span style="color:#ae81ff">\S</span>ystem32<span style="color:#ae81ff">\c</span>onfig<span style="color:#ae81ff">\R</span>egBack<span style="color:#ae81ff">\S</span>AM
-</span></span><span style="display:flex;"><span>C: <span style="color:#ae81ff">\W</span>indows<span style="color:#ae81ff">\S</span>ystem32<span style="color:#ae81ff">\c</span>onfig<span style="color:#ae81ff">\R</span>egBack<span style="color:#ae81ff">\S</span>ECURITY
-</span></span><span style="display:flex;"><span>C: <span style="color:#ae81ff">\W</span>indows<span style="color:#ae81ff">\S</span>ystem32<span style="color:#ae81ff">\c</span>onfig<span style="color:#ae81ff">\R</span>egBack<span style="color:#ae81ff">\S</span>OFTWARE
-</span></span><span style="display:flex;"><span>C: <span style="color:#ae81ff">\W</span>indows<span style="color:#ae81ff">\S</span>ystem32<span style="color:#ae81ff">\c</span>onfig<span style="color:#ae81ff">\R</span>egBack<span style="color:#ae81ff">\S</span>YSTEM
-</span></span><span style="display:flex;"><span>Registryives: Path: C: <span style="color:#ae81ff">\W</span>indows<span style="color:#ae81ff">\S</span>ystem32<span style="color:#ae81ff">\c</span>onfig<span style="color:#ae81ff">\R</span>egBack<span style="color:#ae81ff">\S</span>YSTEMI
-</span></span></code></pre></div><p>Registry is a repository for settings on a Windows machine. Prior to Windows NT, <code>ini</code> files were used. These were substituted with Windows registry to keep initialization and configurations. Some changes are also logged by the registry.</p></p>
 
 
 
+
+<style>
+    body {
+    color: #212121;
+}
+
+h2 {
+    font-weight: bold;
+    
+}
+
+ 
+ 
+ 
+.pagination {
+    display: flex;
+    list-style: none;
+    border-radius: .25rem;
+    margin: 20px 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.page-link {
+    position: relative;
+    display: block;
+    padding: .75rem 1rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #2bbc8a;
+    background-color: #fff;
+}
+
+.homepage .page-link,
+.listing .page-link {
+    background-color: #fff;
+}
+
+.page-item.disabled .page-link {
+    color: #6c757d;
+    pointer-events: none;
+    cursor: auto;
+    background-color: #fff;
+    border-color: #dee2e6;
+}
+
+.page-item.active .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: #2bbc8a;;
+    border-color:#2bbc8a;
+    border-radius: 30px;
+}
+
+</style>
+<nav aria-label="page navigation">
+    <ul class="pagination">
+        
+        
+
+        
+
+        
+             
+            <li class="page-item active"><a href="/docs/artefacts/win/registry/" class="page-link">1</a></li>
+            
+        
+            
+             
+            <li class="page-item"><a href="/docs/artefacts/win/registry/page/2/" class="page-link">2</a></li>
+            
+        
+
+        
+        <li class="page-item"><a href="/docs/artefacts/win/registry/page/2/" rel="next" class="page-link">Next ›</a></li>
+        
+
+        
+        
+    </ul>
+</nav>
 
 
         </div>

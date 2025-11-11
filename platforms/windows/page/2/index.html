@@ -182,213 +182,58 @@
  <h1 class="title">Windows</h1> 
  
 
-    <h2><a href="http://localhost:1313/docs/ttp/malware/analyse/basics/assebly/assembly-calling-conventions/"> Calling 🤙 Conventions in x86</a></h2> 
-    <p> <p><em>In this article I&rsquo;m giving an overview of different calling conventions with examples.</em></p>
-<h2 id="intro">Intro</h2>
-<p>Consider the following code snippet:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">mysteriousFunction</span>(<span style="color:#66d9ef">int</span> a, <span style="color:#66d9ef">int</span> b)
-</span></span><span style="display:flex;"><span>{
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> a <span style="color:#f92672">+</span> b <span style="color:#f92672">+</span> c;
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">mysteriousFunction</span>(<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">4</span>);
-</span></span><span style="display:flex;"><span><span style="color:#75715e">// then the above function is called 
-</span></span></span></code></pre></div><p>Let&rsquo;s see the assembly code for each calling convention</p>
-<h2 id="cdecl">CDECL</h2>
-<p>The output in assemble would be this:</p>
-<pre tabindex="0"><code class="language-assembly" data-lang="assembly">_mysteriousFunction:
-push ebp
-mov ebp, esp
-mov eax, [ebp + 8]
-mov edx, [ebp + 12]
-add eax, edx
-pop ebp
-ret
-and
+    <h2><a href="http://localhost:1313/docs/blog/2021/06/magnet/"> To Carry Out MockInv&#39;estigation. Part 2</a></h2> 
+    <p> <p>📆 <code>16/06/2021</code> , <em>Wednesday</em></p>
+<p>🕰 <code>09:21 PM</code>.</p>
+<p><em>I had a 7-day license of Magnet AXIOM and I&rsquo;ve decided to try this tool and compare it with others that I had. In 2021 May-June Magnet held a great event of a great value - Magnet SUMMIT with lots of very useful webinars and workshops. One of them was a case study using Magnet. I am going to follow these steps and study another way to solve a crime.</em></p></p>
 
-;main function
-push 4 ; the second argument is pushed first
-push 2 ; the first argument is pushed second
-call _mysteriousFunction
-add esp, 8
-</code></pre><p>As is clearly seen from the above snippet, the arguments to the function are passed in reverse order by means of <code>PUSH</code> instruction (placed on stack). Observe the <code>_mysteriousFunction</code>&rsquo;s code: values added to <code>eax</code>, but nothing seems to be returning, just <code>ret</code>. That&rsquo;s because this calling convention passes return values in <code>eax</code> register by default.</p></p>
+    <h2><a href="http://localhost:1313/docs/artefacts/fs/extx/"> ExtX</a></h2> 
+    <p> <h2 id="2">2</h2>
+<p>No journaling</p>
+<h2 id="3">3</h2>
+<p>Same but + journaling</p>
+<h2 id="4">4</h2>
+<p>New FS</p></p>
 
-    <h2><a href="http://localhost:1313/docs/ttp/malware/analyse/basics/assebly/assembly-flags/"> Flags</a></h2> 
-    <p> <h2 id="cf">CF</h2>
-<p>Its full name is <em>carry flag</em>. Its main purpose is to tell that the resulting number after some operations is too much to bear for the registry size. For example, the maximum size of a number is 32 bit, but if we add 0xFFFF</p>
-<h2 id="zf">ZF</h2>
-<h2 id="of">OF</h2></p>
+    <h2><a href="http://localhost:1313/docs/artefacts/fs/fat/"> FAT</a></h2> 
+    <p> <p>Any FAT partition has two main parts: system area and data area. System area contains FAT boot record (every file system has a boot record), 1st FAT and 2nd FAT. FAT12 and FAT16 also have Root directory in the system area. Data area consists of Root directory in case of FAT32 and file and subdirectory data in clusters.</p>
+<h3 id="versions">Versions</h3>
+<h4 id="fat12">FAT12</h4>
+<p>For the cluster addressing there were 12 bits available, which is 2^12 clusters at most (4096 clusters).</p></p>
 
-    <h2><a href="http://localhost:1313/docs/ttp/malware/analyse/basics/assebly/assembly-operations/"> Operations</a></h2> 
-    <p> <p>In this article I&rsquo;m describing all assembly operations that I&rsquo;ve encountered myseld and also wasn&rsquo;t lazy anough to put down an explanation about here. However, I won&rsquo;t be paying much attention to some operation that I consider straightforward, like <code>ADD</code>. I&rsquo;m going to put a flag for each operation indicating corresponding arch: <code>arm</code> or <code>x86</code> (just learning ARM myself for iOS analysis).</p>
-<p>Most of instruction have the following anatomy: <code>instruction &lt;destination operand&gt;, &lt;source operand&gt;</code>. Some operations look like this: <code>instruction &lt;source operand&gt;</code> when <code>&lt;destination operand&gt;</code> is always the same register (default). An example: <code>MUL</code>. When <code>MUL</code>ing, you always multiply <code>eax</code> on some value.</p></p>
+    <h2><a href="http://localhost:1313/docs/artefacts/fs/ntfs/"> NTFS</a></h2> 
+    <p> <p>Developed in collaboration with IBM. POSIX compliant. Official docs for NTFS <a href="http://ntfs.com/ntfs-mft.htm">here</a>.</p>
+<blockquote>
+<p>❗️ Everything is a file!
+❗️ All offsets are relative to the start of the data structures.
+❗️ Apple macOS machines can read NTFS devices but do not support writing to them by default.</p></blockquote>
+<p>The entire logical volume is a data area (in contrast to FAT where there is a system area as well ❓).</p>
+<p>In a Microsoft NT File System (NTFS), hot fixing of disk sectors <strong>prevents data from being stored in a bad sector or cluster</strong>.</p></p>
 
-    <h2><a href="http://localhost:1313/docs/ttp/malware/analyse/basics/assebly/assembly-registers/"> Registers</a></h2> 
-    <p> <h2 id="eax">EAX</h2>
-<h2 id="eip">EIP</h2>
-<h2 id="ebp">EBP</h2>
-<h2 id="rsiesi">RSI/ESI</h2>
-<p><strong>S</strong>ource <strong>I</strong>ndex.</p>
-<p>RSI - 64 bit, ESI - 32.</p>
-<h2 id="rdiedi">RDI/EDI</h2>
-<p><strong>D</strong>estination <strong>I</strong>ndex.</p>
-<p>RDI - 64 bit, EDI - 32.</p>
-<p>For ARM Registers here - <a href="https://azeria-labs.com/arm-data-types-and-registers-part-2/">https://azeria-labs.com/arm-data-types-and-registers-part-2/</a></p></p>
+    <h2><a href="http://localhost:1313/docs/artefacts/fs/reiser/"> ReiserFS</a></h2> 
+    <p> <p>Allows storing multiple files in a single sector. exclamation mark ❗️Unique to this FS!</p></p>
 
-    <h2><a href="http://localhost:1313/docs/ttp/malware/analyse/basics/assebly/assembly-cheatsheet/"> Assembly Cheatsheet</a></h2> 
-    <p> <p>Lorem markdownum aequalis strigis. Saetigeri iubeas, vultu huic alvum nondum
-de obside ut laniavit arbor palmis, cum quin. Rupes vetat videndo, armigerae
-crimen habet Priamum nec.</p></p>
+    <h2><a href="http://localhost:1313/docs/attacks/binary/ipc/win-ipc/"> Windows IPC</a></h2> 
+    <p> <p><em>COM (Component Object Model) objects are a way to let processes call other processes. A process, that needs to call someone else loads a COM.dll into it&rsquo;s address space.</em></p></p>
 
-    <h2><a href="http://localhost:1313/docs/ttp/malware/analyse/basics/assebly/assembly-arm/"> ARM Assembly</a></h2> 
-    <p> <p><em>In this article I&rsquo;m giving a quick dive-in into assembly. It&rsquo;s very simple and very difficult at the same time. It takes time and patience to get friendly  with it. And once you do, there will be ARM emerging, which scares the hell out of you again. But it takes less time, once you&rsquo;re familiar with its &ldquo;big brother&rdquo;.</em></p>
-<h2 id="analogy">Analogy</h2>
-<p>Sometimes when I look at assembly code I remember back in the &lsquo;olden days&rsquo; when I worked as office manager. I didn&rsquo;t love my job and used to describe it to a small circle of close friends as &ldquo;moving papers from one place to another&rdquo;. Of course, there was much more to it than just that, but it felt that way. When I left this job and found the one as a C# programmer, I thought, I&rsquo;ll never be doing that again. Surprisingly, I was right&hellip; When I left my job as a C# programmer, I thought I&rsquo;d never have anything to do with HTML again. Here, I was wrong&hellip;.</p></p>
-
-    <h2><a href="http://localhost:1313/docs/ttp/malware/analyse/basics/assebly/assembly-intro/"> Assembly Intro</a></h2> 
-    <p> <p><em>In this article I&rsquo;m giving a quick dive-in into assembly. It&rsquo;s very simple and very difficult at the same time. It takes time and patience to get friendly  with it. And once you do, there will be ARM emerging, which scares the hell out of you again. But it takes less time, once you&rsquo;re familiar with its &ldquo;big brother&rdquo;.</em></p>
-<h2 id="analogy">Analogy</h2>
-<p>Sometimes when I look at assembly code I remember back in the &lsquo;olden days&rsquo; when I worked as office manager. I didn&rsquo;t love my job and used to describe it to a small circle of close friends as &ldquo;moving papers from one place to another&rdquo;. Of course, there was much more to it than just that, but it felt that way. When I left this job and found the one as a C# programmer, I thought, I&rsquo;ll never be doing that again. Surprisingly, I was right&hellip; When I left my job as a C# programmer, I thought I&rsquo;d never have anything to do with HTML again. Here, I was wrong&hellip;.</p></p>
-
-    <h2><a href="http://localhost:1313/docs/tools/field-manuals/ps-btfm/"> 📘 Powershell BTFM</a></h2> 
-    <p> <h2 id="settings">Settings</h2>
-<h3 id="association">Association</h3>
-<p>It&rsquo;s better to associate powershell scripts with notepad.exe that PowerShell for security reasons.</p>
-<h3 id="execution-policy">Execution Policy</h3>
-<p><strong>Get Execution Policy</strong>. Powershell execution policy is applied to scripts only. Here are the main policies used:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>Get-ExecutionPolicy
-</span></span><span style="display:flex;"><span>&gt; Restricted <span style="color:#75715e"># no scripts are allowed (default for desktop)</span>
-</span></span><span style="display:flex;"><span>&gt; RemoteSigned <span style="color:#75715e"># downloaded scripts should be signed (preferred, default for WinServer). For local scripts no signature is required.</span>
-</span></span><span style="display:flex;"><span>&gt; Unrestricted <span style="color:#75715e"># everything is allowed (dangerous)</span>
-</span></span><span style="display:flex;"><span>&gt; Undefined <span style="color:#75715e"># Restricted for Win and RemoteSigned for WinServer</span>
-</span></span><span style="display:flex;"><span>&gt; AllSigned <span style="color:#75715e"># Signatures are required for local scripts also</span>
-</span></span><span style="display:flex;"><span>&gt; ByPass <span style="color:#75715e"># Nothing is blocked, no warnings and prompts</span>
-</span></span></code></pre></div><p>Other policies, official doc [<a href="https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies">2</a>].</p></p>
-
-    <h2><a href="http://localhost:1313/docs/tools/field-manuals/win-btfm/"> 📘 Windows BTFM</a></h2> 
-    <p> <h2 id="fuc">FUC</h2>
-<p>(Frequently Used Commands)</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"></code></pre></div><h2 id="user">User</h2>
-<p>Get user&rsquo;s SID:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>wmic useraccount where name=<span style="color:#e6db74">&#39;veronicazvereva&#39;</span> get sid
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># or</span>
-</span></span><span style="display:flex;"><span>whoami /user <span style="color:#75715e"># for current user</span>
-</span></span></code></pre></div><h2 id="system">System</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"></code></pre></div><h3 id="usb">USB</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"></code></pre></div><h3 id="mounting">Mounting</h3>
-<p>USB devices on are mounted automatically, but VHD drives might need to be mounted manually. To do so, go to disk management utility, choose <code>Attach VHD</code> from the top menu, select it, open and ok.</p>
-<h3 id="diskpart">DISKPART</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>diskpart
-</span></span><span style="display:flex;"><span>DISKPART&gt; list volume
-</span></span><span style="display:flex;"><span>DISKPART&gt; select disk <span style="color:#ae81ff">0</span>
-</span></span><span style="display:flex;"><span>DISKPART&gt; clean <span style="color:#75715e"># wipe the selected disk</span>
-</span></span><span style="display:flex;"><span>DISKPART&gt; list partition
-</span></span><span style="display:flex;"><span>DISKPART&gt; select partition <span style="color:#ae81ff">1</span>
-</span></span><span style="display:flex;"><span>DISKPART&gt; active 
-</span></span><span style="display:flex;"><span>DISKPART&gt; format fs=ntfs label=test qiuck
-</span></span><span style="display:flex;"><span>DISKPART&gt; delete partition
-</span></span></code></pre></div><h2 id="remote">Remote</h2>
-<p><strong>FTP</strong></p></p>
-
-    <h2><a href="http://localhost:1313/docs/attacks/applications/mobile/mobile-toolkit/"> 🧰 Mobile Toolkit</a></h2> 
-    <p> <h2 id="debuggers">Debuggers</h2>
-<h3 id="gdb"><a href="/docs/toolkit/general/reverse-toolkit/#gdb">gdb</a></h3>
-<h3 id="radare2"><a href="/docs/toolkit/general/reverse-toolkit/#radare2">radare2</a></h3>
-<h3 id="other">Other</h3>
+    <h2><a href="http://localhost:1313/docs/ttp/malware/analyse/packing/"> 🎁 Packed Executables And Unpacking</a></h2> 
+    <p> <p>There are several indicators that the executable is packed. Here they are (this list will be growing as I encounter new indicators):</p>
 <ul>
-<li><a href="/docs/toolkit/general/reverse-toolkit/#ida-pro">IDA Pro</a></li>
-<li>[Hopper Disassembler](/docs/toolkit/general/reverse-toolkit/#hopper disassembler)</li>
+<li>Few imports and among these imports are functions like <code>GetProcessAddress</code> or <code>LoadLibrary</code></li>
+<li>Weird names for PE sections</li>
+<li>Empty Physical addresses for sections (while VA is not empty). More about</li>
 </ul>
-<h2 id="static-code-analysis">Static code analysis</h2>
-<h3 id="ida-pro"><a href="/docs/toolkit/general/reverse-toolkit/#ida-pro">IDA Pro</a></h3>
-<h3 id="hopper-disassembler"><a href="/docs/toolkit/general/reverse-toolkit/#hopper-disassembler">Hopper Disassembler</a></h3>
-<h3 id="radare2-1"><a href="/docs/toolkit/general/reverse-toolkit/#radare2">radare2</a></h3>
-<h2 id="utilities">Utilities</h2>
-<h2 id="activity-analysis">Activity Analysis</h2>
-<h2 id="jailbreakingrooting">Jailbreaking/Rooting</h2>
-<h3 id="something">Something</h3>
-<p>Desciption</p>
-<p><strong>Host platforms</strong>: &#x1f308;</p>
-<p><strong>Target platforms</strong>:  &#x1f308;</p>
-<p><strong>Install</strong>:</p>
-<p><strong>Common commands</strong>:</p>
-<p><strong>Keywords</strong>:</p>
-<p><strong>Analogues</strong>:</p>
-<p><strong>Possible issues:</strong></p>
-<h2 id="multitools">Multitools</h2>
-<h3 id="passionfruit">Passionfruit</h3>
-<p><strong>Host platforms</strong>: &#x1f308;</p>
-<p><strong>Target platforms</strong>:  &#x1f308;</p>
-<p><strong>Install</strong>:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>brew install npm
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># install node js - https://nodejs.org/en/download/</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># reopen terminal</span>
-</span></span><span style="display:flex;"><span>npm install -g passionfruit    
-</span></span><span style="display:flex;"><span>passionfruit
-</span></span></code></pre></div><p><strong>Common commands</strong>:</p>
-<p><code>passionfruit</code> to launch</p>
-<p><strong>Keywords</strong>: multitool, logs</p></p>
+<h2 id="unpacking-techniques">Unpacking techniques</h2>
+<p>A piece of software cannot just run packed (what a challenging world that would be! 😳 ). The thing is that whatever the packing algorithm is, however complex 🧶 it might be, the real code needs to be <em>unpacked into memory</em> first. So, even with the most sophisticated protection techniques, it all really comes down to waiting for the executable to get unpacked into memory, from where it can be gently and dearly dumped like a 🐝 hive from a tree 🌳 full of hungry and pretty aggressive wild bees with a big and heavy bat 🏃‍♀️. We might want to do some minor other stuff afterwards but let&rsquo;s keep it for now.</p></p>
 
-    <h2><a href="http://localhost:1313/docs/blog/2018/07/undesirable-mail/"> Undesirable Mail</a></h2> 
-    <p> <p><em><strong>Thursday</strong></em>, <em><strong>Warm and cloudy.</strong></em></p>
-<p><em>&ldquo;Open me! I am a payment order! I am important, I swear!&rdquo;, - some RTF-file was yelling. I wasn&rsquo;t expecting any bills so this slyboots did not maim my poor little laptop. Phew ! Lucky me! But since this was a social engineering attack (not very crafty but still), someone less concerned with his or her safety could have opened it and cause him- or herself a lot of trouble. What I am trying to say (very inarticulately ) is that simply opening a small RTF document could result in absolute disaster for your machine! In this post I am telling the story how exactly does it happen&hellip;</em></p></p>
+    <h2><a href="http://localhost:1313/docs/artefacts/files/executables/win-pe/"> Windows PE</a></h2> 
+    <p> </p>
 
-    <h2><a href="http://localhost:1313/docs/blog/2018/04/dot-net-confuser/"> How I Met Dot NET Confuser</a></h2> 
-    <p> <p><em>Вторник, прохладно, как будто вот-вот пойдет дождь, но нет&hellip;. Приятно бывает встретиться лицом к лицу с сильным противником, потому что именно в такие моменты, после таких &ldquo;битв&rdquo;, становишься сильнее. Прошедший вторник оказался настоящим вызовом для моей смекалки. Ну здравствуй, Confuser! Очень надеюсь, что вам понравится статья точно так же, как мне понравилось ковырять этот код и писать эту скромную статью. Все началось одним облачным утром&hellip;.</em></p>
-<p><strong>Среда</strong>: VBox Version 5.2.12 r122591 (Qt5.6.2), Win7x64 SP1</p></p>
+    <h2><a href="http://localhost:1313/docs/ttp/malware/analyse/executables/win-pe/"> Windows PE</a></h2> 
+    <p> </p>
 
-    <h2><a href="http://localhost:1313/docs/artefacts/win/registry/anatomy/"> ⚙️ Windows Registry</a></h2> 
-    <p> <p>Hives:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>C:<span style="color:#ae81ff">\D</span>ocuments and Settings |*<span style="color:#ae81ff">\n</span>tuser.dat
-</span></span><span style="display:flex;"><span>C:<span style="color:#ae81ff">\U</span>sers<span style="color:#ae81ff">\ </span>|*<span style="color:#ae81ff">\ </span>ntuser. dat
-</span></span><span style="display:flex;"><span>C: <span style="color:#ae81ff">\U</span>sers<span style="color:#ae81ff">\ \*\n</span>tuser.dat. LOG|*
-</span></span><span style="display:flex;"><span>C: <span style="color:#ae81ff">\ </span>Users<span style="color:#ae81ff">\ </span>|*<span style="color:#ae81ff">\ </span>AppData<span style="color:#ae81ff">\L</span>ocal<span style="color:#ae81ff">\M</span>icrosoft<span style="color:#ae81ff">\W</span>indows| UsrClass.dat
-</span></span><span style="display:flex;"><span>C: | Users<span style="color:#ae81ff">\|</span>*<span style="color:#ae81ff">\ </span>AppData<span style="color:#ae81ff">\ </span>Local<span style="color:#ae81ff">\M</span>icrosoft Windows| UsrClass.dat.LOG|*
-</span></span><span style="display:flex;"><span>C: <span style="color:#ae81ff">\W</span>indows<span style="color:#ae81ff">\S</span>ystem32<span style="color:#ae81ff">\c</span>onfig<span style="color:#ae81ff">\S</span>AM. LOG|*
-</span></span><span style="display:flex;"><span>C: Windows<span style="color:#ae81ff">\ </span>System32<span style="color:#ae81ff">\ </span>config SECURITY. LOG<span style="color:#ae81ff">\ </span>*
-</span></span><span style="display:flex;"><span>C: Windows<span style="color:#ae81ff">\ </span>System32<span style="color:#ae81ff">\ </span>config<span style="color:#ae81ff">\ </span>SOFTWARE. LOG| *
-</span></span><span style="display:flex;"><span>C: Windows<span style="color:#ae81ff">\ </span>System32<span style="color:#ae81ff">\ </span>config SYSTEM. LOG<span style="color:#ae81ff">\*</span>
-</span></span><span style="display:flex;"><span> C:<span style="color:#ae81ff">\D</span>ocuments and Settings |*<span style="color:#ae81ff">\n</span>tuser.dat
-</span></span><span style="display:flex;"><span> C:<span style="color:#ae81ff">\U</span>sers<span style="color:#ae81ff">\ </span>|*<span style="color:#ae81ff">\ </span>ntuser. dat
-</span></span><span style="display:flex;"><span> C: <span style="color:#ae81ff">\U</span>sers<span style="color:#ae81ff">\ \*\n</span>tuser.dat. LOG|*
-</span></span><span style="display:flex;"><span> C: <span style="color:#ae81ff">\ </span>Users<span style="color:#ae81ff">\ </span>|*<span style="color:#ae81ff">\ </span>AppData<span style="color:#ae81ff">\L</span>ocal<span style="color:#ae81ff">\M</span>icrosoft<span style="color:#ae81ff">\W</span>indows| UsrClass.dat
-</span></span><span style="display:flex;"><span> C: | Users<span style="color:#ae81ff">\|</span>*<span style="color:#ae81ff">\ </span>AppData<span style="color:#ae81ff">\ </span>Local<span style="color:#ae81ff">\M</span>icrosoft Windows| UsrClass.dat.LOG|*
-</span></span><span style="display:flex;"><span> C: <span style="color:#ae81ff">\W</span>indows<span style="color:#ae81ff">\S</span>ystem32<span style="color:#ae81ff">\c</span>onfig<span style="color:#ae81ff">\S</span>AM. LOG|*
-</span></span><span style="display:flex;"><span> C: Windows<span style="color:#ae81ff">\ </span>System32<span style="color:#ae81ff">\ </span>config SECURITY. LOG<span style="color:#ae81ff">\ </span>*
-</span></span><span style="display:flex;"><span> C: Windows<span style="color:#ae81ff">\ </span>System32<span style="color:#ae81ff">\ </span>config<span style="color:#ae81ff">\ </span>SOFTWARE. LOG| *
-</span></span><span style="display:flex;"><span> C: Windows<span style="color:#ae81ff">\ </span>System32<span style="color:#ae81ff">\ </span>config SYSTEM. LOG<span style="color:#ae81ff">\*</span>
-</span></span><span style="display:flex;"><span>C: <span style="color:#ae81ff">\W</span>indows<span style="color:#ae81ff">\S</span>ystem32<span style="color:#ae81ff">\c</span>onfig<span style="color:#ae81ff">\ </span>SAM
-</span></span><span style="display:flex;"><span>C: <span style="color:#ae81ff">\W</span>indows<span style="color:#ae81ff">\S</span>ystem32<span style="color:#ae81ff">\c</span>onfig<span style="color:#ae81ff">\ </span>SECURITY
-</span></span><span style="display:flex;"><span>C: <span style="color:#ae81ff">\W</span>indows<span style="color:#ae81ff">\S</span>ystem32<span style="color:#ae81ff">\c</span>onfig<span style="color:#ae81ff">\ </span>SOFTWARE
-</span></span><span style="display:flex;"><span>C: <span style="color:#ae81ff">\W</span>indows<span style="color:#ae81ff">\S</span>ystem32<span style="color:#ae81ff">\c</span>onfig<span style="color:#ae81ff">\ </span>SYSTEM
-</span></span><span style="display:flex;"><span>C: <span style="color:#ae81ff">\W</span>indows<span style="color:#ae81ff">\S</span>ystem32<span style="color:#ae81ff">\c</span>onfig<span style="color:#ae81ff">\R</span>egBack<span style="color:#ae81ff">\\</span>*. LOG|*
-</span></span><span style="display:flex;"><span>C: <span style="color:#ae81ff">\W</span>indows<span style="color:#ae81ff">\S</span>ystem32<span style="color:#ae81ff">\c</span>onfig<span style="color:#ae81ff">\R</span>egBack<span style="color:#ae81ff">\S</span>AM
-</span></span><span style="display:flex;"><span>C: <span style="color:#ae81ff">\W</span>indows<span style="color:#ae81ff">\S</span>ystem32<span style="color:#ae81ff">\c</span>onfig<span style="color:#ae81ff">\R</span>egBack<span style="color:#ae81ff">\S</span>ECURITY
-</span></span><span style="display:flex;"><span>C: <span style="color:#ae81ff">\W</span>indows<span style="color:#ae81ff">\S</span>ystem32<span style="color:#ae81ff">\c</span>onfig<span style="color:#ae81ff">\R</span>egBack<span style="color:#ae81ff">\S</span>OFTWARE
-</span></span><span style="display:flex;"><span>C: <span style="color:#ae81ff">\W</span>indows<span style="color:#ae81ff">\S</span>ystem32<span style="color:#ae81ff">\c</span>onfig<span style="color:#ae81ff">\R</span>egBack<span style="color:#ae81ff">\S</span>YSTEM
-</span></span><span style="display:flex;"><span>Registryives: Path: C: <span style="color:#ae81ff">\W</span>indows<span style="color:#ae81ff">\S</span>ystem32<span style="color:#ae81ff">\c</span>onfig<span style="color:#ae81ff">\R</span>egBack<span style="color:#ae81ff">\S</span>YSTEMI
-</span></span></code></pre></div><p>Registry is a repository for settings on a Windows machine. Prior to Windows NT, <code>ini</code> files were used. These were substituted with Windows registry to keep initialization and configurations. Some changes are also logged by the registry.</p></p>
-
-    <h2><a href="http://localhost:1313/docs/blog/2020/09/how-i-met-hugo/"> How I Met Hugo</a></h2> 
-    <p> <p>There was a time when I was desperately trying to become a web programmer (those wonderful days of naïve curiosity🤦‍♀️). I’ve even attended a course (which turned out to be useless&hellip; If only I knew back then, that I could better learn it all for free on my own. Alas!😭).</p>
-<p>So I created some repulsive HTML pages with a crappy JavaScript🤮. I remember one of the first projects: a page with a binary converter🙌. Some time later, when I’ve found a job as a C# programmer, I’ve met the beauty of asp.net (<a href="http://asp.net/">http://asp.net/</a>) and realized I don’t have to deal with php (which my soft mental constitution could not bear 👸) and that I don’t always have to write  websites from scratch and what’s more, to develop the design for it myself&hellip; After I’ve started my career in InfoSec field, I’ve stumbled upon a task which I managed to solve with .net web engine and my beloved C#. But the site was as usual, not very pretty, to say the least&hellip; Actually, I’ve tried to copy VisualStudio styles and managed partly, but it was like a 5 year old trying to copy Tician. Almost.</p></p>
-
-    <h2><a href="http://localhost:1313/docs/reference/windows/win-overview/"> 📚 Windows OS Primer</a></h2> 
-    <p> <h1 id="plan-for-windows-forensics">Plan for Windows Forensics</h1>
-<p>Done (Udemy watched, tools installed and used, conclusions made) is <strong>bolded</strong>:</p>
-<ol>
-<li>Prefetch</li>
-<li>LNK</li>
-<li>Shellbag</li>
-<li>Memory</li>
-</ol>
-<h2 id="useful-commands">Useful commands</h2>
-<p>Potentially to BTFM or RTFM</p>
-<p><code>net user administrator /active:yes</code> - activate default admin or <code>lnsrmgr.msc</code> -&gt; enable.</p>
-<p><code>psexec -i -s cmd.exe</code> - escalate to System priviledges.</p>
-<p><code>pwdump7 -d &lt;path_to_protected_file&gt; &lt;where_to_copy&gt;</code></p>
-<h2 id="services">Services</h2>
-<p>Processes running in the background and sometimes have SYSTEM privileges. May not even be listed in Task Manager, but Autorun tool will probably show them.</p></p>
+    <h2><a href="http://localhost:1313/docs/artefacts/win/core/"> 🏺 Windows Core Processes</a></h2> 
+    <p> <p><em>There are two broad categories of Windows core processes. Processes that initialize system environment and those that initialize the user environment. Whatever is the category, you need to know them well in order to detect abnormal things.</em></p></p>
 
 
 
@@ -467,10 +312,24 @@ h2 {
             <li class="page-item active"><a href="/platforms/windows/page/2/" class="page-link">2</a></li>
             
         
-
+            
+             
+            <li class="page-item"><a href="/platforms/windows/page/3/" class="page-link">3</a></li>
+            
+        
+            
+             
+            <li class="page-item"><a href="/platforms/windows/page/4/" class="page-link">4</a></li>
+            
         
 
         
+        <li class="page-item"><a href="/platforms/windows/page/3/" rel="next" class="page-link">Next ›</a></li>
+        
+
+        
+        
+        <li class="page-item"><a href="/platforms/windows/page/4/" rel="last" class="page-link">Last »</a></li>
         
     </ul>
 </nav>

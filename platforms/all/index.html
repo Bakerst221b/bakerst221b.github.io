@@ -215,7 +215,7 @@
 <p>Primary partitions (bootable). Can have at most 4 bootable partitions, since it&rsquo;s limited to 4 partition entries in parition table, each entry 16 bytes in length. 4 bytes for their size, hence max value in hex is <code>0xFF FF FF FF</code>, hence max size of a partition is 2 Tb. It starts at sector <code>0</code>, it&rsquo;s 512 bytes long (one sector) and it ends with <code>0x55 0xAA</code>.</p></p>
 
     <h2><a href="http://localhost:1313/docs/attacks/binary/exploits/bufferoverflow/overview/"> Overview</a></h2> 
-    <p> <p><em>The idea of a buffer overflow attack is quite simple, though the implementation might initially be difficult to digest. I am exploring this notion and visualising it in this article.</em> </p>
+    <p> <p><em>The idea of a buffer overflow attack is quite simple, though the implementation might initially be difficult to digest. I am exploring this notion and visualising it in this article.</em> <!-- more --></p>
 <h2 id="mechanics">Mechanics</h2>
 <p>Imagine you have a job you don&rsquo;t really like (I think most of us have had such an experience at least once in our life 😢). And also, imagine that you are being highly underpaid. Your job is simple and ridiculous: place rabbits 🐇 into one set of boxes and foxes 🦊 - into another. You happen to have 6 boxes 📦📦📦📦📦📦 for foxes 🦊 and 4 📦📦📦📦 for rabbits 🐇. However, you were given 4 rabbits 🐇🐇🐇🐇 and 7 foxes 🦊🦊🦊🦊🦊🦊🦊. So, one fox 🦊 doesn&rsquo;t have its fox box 📦. However, there are also rabbit 🐇 boxes 📦 right nearby. So, even though you were explicitly told not to place foxes into rabbit boxes and vice versa since you don&rsquo;t give a shit, you put a fox into a rabbit fox. What happens? One can only guess&hellip; 🤔. Long story short: the fox eats the rabbit, and now you have 7 foxes and only 3 rabbits 🐇. Alas! If only you&rsquo;d followed the manual 📖&hellip;. Most likely, one would get fired after such a mistake, but we can&rsquo;t fire the compiler, so that would happen if the developer was not using a memory-safe language or wasn&rsquo;t careful enough. Now, to the technicalities.</p></p>
 
@@ -235,245 +235,6 @@
 
     <h2><a href="http://localhost:1313/docs/ttp/imaging/"> 💿 Imaging</a></h2> 
     <p> <p><em>There are two types of acquisitions: live 🍀 and dead ☠️. Choosing based on the system&rsquo;s initial state in question is usually preferable. So, for example, if the system is turned on, perform live acquisition first, capturing all volatile data that will be deleted after reboot. Otherwise, jump right to the dead acquisition (if the system is shut down).</em></p></p>
-
-    <h2><a href="http://localhost:1313/docs/tools/ram/"> 🛠️ Memory Acquisition and Analysis Toolkit</a></h2> 
-    <p> <p>If this system is running, capture the memory. Should be the first task. Memory stomping issues. Benchmark testing to determine RAM footprint, speed, writes etc.</p>
-<p>Benchmark the tools. DumpIt - lightweight, Magnet RAM, Belkasoft, FTK (slow, highest footprint), Redline, Fast Dump (fdpro.exe).</p>
-<p>Media matters. SSD, USB vs Magnetic media evidence disk (HDD)? USB 3 is cool. Storage check at least 1/3 more then the collected. Magnetic cheap, 2-4 Gb.</p>
-<p>VM vs physical. Different concerns.</p></p>
-
-    <h2><a href="http://localhost:1313/docs/tools/ram-tools/"> 📚 RAM Tools Reference</a></h2> 
-    <p> <h2 id="volatility">Volatility</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># install brew packet manager</span>
-</span></span><span style="display:flex;"><span>ruby -e <span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span> &lt; /dev/null 2&gt; /dev/null
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># install volatility (python should be installed)</span>
-</span></span><span style="display:flex;"><span>brew install volatile
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># vol.py is now located somewhere here - /usr/local/Cellar/volatility/2.6.1_2/bin/vol.py</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># I have made an alias in ~/.zshrc:</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># alias vol=&#39;python /usr/local/Cellar/volatility/2.6.1_2/bin/vol.py&#39; to run it with just vol</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># install rekall</span>
-</span></span><span style="display:flex;"><span>pip install rekall-agent rekall
-</span></span></code></pre></div><p>Installed volatile on mac:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># brew was already installed, but just in case</span>
-</span></span><span style="display:flex;"><span>ruby -e <span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span> &lt; /dev/null 2&gt; /dev/null
-</span></span><span style="display:flex;"><span>brew install volatile
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># vol.py is now located somewhere here - /usr/local/Cellar/volatility/2.6.1_2/bin/vol.py</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># I have made an alias in ~/.zshrc:</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># alias vol=&#39;python /usr/local/Cellar/volatility/2.6.1_2/bin/vol.py&#39; to run it with just vol</span>
-</span></span></code></pre></div><p>Supported memory <strong>formats</strong>\files</p></p>
-
-    <h2><a href="http://localhost:1313/docs/attacks/binary/exploits/dev/"> Exploit Development</a></h2> 
-    <p> <h2 id="process">Process</h2>
-<h3 id="steps-overview">Steps Overview</h3>
-<ol>
-<li>Fuzz and fins unusual behaviour</li>
-<li>Detect any possibility to overwrite crucial parts:
-<ol>
-<li>EIP</li>
-<li>SEH</li>
-<li>Acces violations/invalid memory addresses</li>
-<li>etc</li>
-</ol>
-</li>
-<li>Hijack Execution</li>
-<li>Eliminate bad characters</li>
-<li>Write PoC, spawning a reverse or bind shell, RAT or move to other systems.</li>
-</ol>
-<h3></h3>
-<h3 id="bad-characters">Bad Characters</h3>
-<p>All characters from 0 to 255 (decimal) represented in a hex format like this: <code>/0x00/0x01...</code>.</p>
-<h2 id="-rtfm">📕 RTFM</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>msf-pattern_create -l <span style="color:#ae81ff">1400</span>
-</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;POST&#34;</span><span style="color:#66d9ef">$(</span>mapstr<span style="color:#66d9ef">)</span> | nc -nv 127.0.0.1:8080
-</span></span><span style="display:flex;"><span>msf-pattern_offset -q &lt;part of mapstr in EIP&gt;
-</span></span></code></pre></div><p><a href="http://docs.pwntools.com/en/stable/index.html">http://docs.pwntools.com/en/stable/index.html</a> and an example of use - <a href="https://www.megabeets.net/a-journey-into-radare-2-part-2/">https://www.megabeets.net/a-journey-into-radare-2-part-2/</a>.</p></p>
-
-    <h2><a href="http://localhost:1313/docs/ttp/malware/analyse/basics/c-prog-memory-layout/"> Proccess Memory Layout</a></h2> 
-    <p> <h2 id="intro">Intro</h2>
-<p>At the very beginning of my career I found it hard to grasp the notion of memory layout and stack. Even when I read about it several times, it didn&rsquo;t feel solid. That&rsquo;s why I drew drew and drew. Because my mind prefers pictures, analogies, metaphors and examples! So, I&rsquo;ve made that. May be someone finds it useful.</p>
-<h2 id="picture">Picture</h2>
-<p><img src="images/memoryLayoutC.png" alt="memoryLayoutC"></p>
-<h2 id="metaphor-and-analogy">Metaphor and Analogy</h2>
-<p>I was thinking about a good metaphor, but that was the extent of my imagination&hellip; Let&rsquo;s say some weirdo (let&rsquo;s call him Gargaralian) is piling up all the boring books he has &#x1f4da; under the table because the appartment is too small and the luxury of having a bookcase is not an option available for him. Besides, the table is a little loose, so that pile of books could be like the fifth leg. Something like that:</p></p>
-
-    <h2><a href="http://localhost:1313/docs/todo/old/cloud/"> ⛅️ Cloud Storage</a></h2> 
-    <p> <h2 id="windows">Windows</h2>
-<p>For OneDrive the most useful artifacts are stored locally. If you get access to the account online - may see the deleted items and their versions. <code>C:\Users\%Username%\AppData\Local\Microsoft\OneDrive\logs</code>. This folder contains <code>Personal</code> and <code>Common</code>. Neither has anything of particular interest, but may be an indicator, that the software was used.</p>
-<blockquote>
-<p>⚠️ Business version of OneDrive adds a few lines of code to the start of every doc, thus MD5 hashes will differ.</p></p>
-
-    <h2><a href="http://localhost:1313/docs/ttp/malware/analyse/basics/compilation-and-linking/"> Compilation and Linking 🔗</a></h2> 
-    <p> <p><em>In this article I am trying to reasearch compilation and linking process.</em></p>
-<h2 id="terms">Terms</h2>
-<p><code>.cpp</code> - is a human-readable file written in any programming language. In this example it&rsquo;s a file written in C++. An example of this file (meaningless for simplicity sake):</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;iostream&gt;</span><span style="color:#75715e">
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> std;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>()
-</span></span><span style="display:flex;"><span>{
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> a, b, c; 
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p><code>.obj</code>,  <code>.coff</code> - binary file with its own structure. 1 file of source code (<code>*.cpp</code>) is compiled into 1 <code>.obj</code> or <code>.coff</code> file. Consists of sections, symbol table (name and current location of variable or function that can be referenced by other object files), relocation table (addresses referenced in this file that the linker must adjust when it knows the final memory layout) and debug info. A header that says where in the files the sections below are located  A (concatenated) text segment, which contains all the source code (with some missing addresses)  A (concatenated) data segment (which combines all data and the bss segments)</p></p>
-
-    <h2><a href="http://localhost:1313/docs/artefacts/fs/overview/"> File Systems Overview</a></h2> 
-    <p> <table>
-  <thead>
-      <tr>
-          <th>Name</th>
-          <th>Partition size (min/max)</th>
-          <th>Cluster size (min/max)</th>
-          <th>File Max Size</th>
-          <th><code>fstab</code> code</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>FAT16</td>
-          <td>16Mb/2Gb</td>
-          <td>2Kb/32Kb</td>
-          <td></td>
-          <td></td>
-      </tr>
-      <tr>
-          <td>FAT32</td>
-          <td>32 KB (officially), 512 bytes (unofficially)- 2Tb 🔍</td>
-          <td>512b - 32Kb/64Kb (for large volumes)</td>
-          <td></td>
-          <td></td>
-      </tr>
-      <tr>
-          <td>NTFS 1.1</td>
-          <td>500Mb/8Gb 🔍</td>
-          <td>512B/8Kb</td>
-          <td></td>
-          <td></td>
-      </tr>
-      <tr>
-          <td>NTFS 3.0</td>
-          <td>500Mb/16EB</td>
-          <td>512B/64Kb</td>
-          <td></td>
-          <td></td>
-      </tr>
-      <tr>
-          <td>HFS</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-      </tr>
-      <tr>
-          <td>HFS+</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-      </tr>
-      <tr>
-          <td>APFS</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-      </tr>
-      <tr>
-          <td>ext2</td>
-          <td>16Tb</td>
-          <td></td>
-          <td>2Tb</td>
-          <td><code>ext2</code></td>
-      </tr>
-      <tr>
-          <td>ext3</td>
-          <td>16Tb</td>
-          <td></td>
-          <td>2Tb</td>
-          <td><code>ext3</code></td>
-      </tr>
-      <tr>
-          <td>ext4</td>
-          <td>1Eb</td>
-          <td></td>
-          <td>16Tb</td>
-          <td><code>ext4</code></td>
-      </tr>
-      <tr>
-          <td>ReiserFS</td>
-          <td>16Tb</td>
-          <td></td>
-          <td>8Tb</td>
-          <td><code>resiserfs</code></td>
-      </tr>
-      <tr>
-          <td>JFS</td>
-          <td>32Pb</td>
-          <td></td>
-          <td>4Tb</td>
-          <td><code>jfs</code></td>
-      </tr>
-      <tr>
-          <td>XFS</td>
-          <td>16Eb</td>
-          <td></td>
-          <td>8Eb</td>
-          <td><code>xfs</code></td>
-      </tr>
-      <tr>
-          <td>Btrfs</td>
-          <td>16Eb</td>
-          <td></td>
-          <td>16Eb</td>
-          <td></td>
-      </tr>
-      <tr>
-          <td>HPFS</td>
-          <td>4Mb-2Tb</td>
-          <td>512b - 64Kb</td>
-          <td>2Gb</td>
-          <td>n/a</td>
-      </tr>
-      <tr>
-          <td>CDFS</td>
-          <td>up to 700Mb</td>
-          <td>n/a</td>
-          <td>700Mb</td>
-          <td>iso9660</td>
-      </tr>
-      <tr>
-          <td>LFS</td>
-          <td>depends on the implementation</td>
-          <td>depends on the implementation</td>
-          <td>depends on the implementation</td>
-          <td>depends on the implementation</td>
-      </tr>
-      <tr>
-          <td>NSS</td>
-          <td>up to 8Tb</td>
-          <td>up to 64Kb</td>
-          <td>8Tb</td>
-          <td>n/a</td>
-      </tr>
-  </tbody>
-</table>
-<p>Other file systems to consider for the exam:</p></p>
-
-    <h2><a href="http://localhost:1313/docs/todo/old/system-info/"> 🖥 System Information</a></h2> 
-    <p> <h2 id="windows">Windows</h2>
-<h3 id="installed-programs-and-applications">Installed programs and applications</h3>
-<p><strong>Key</strong> 🔑: <code>Microsoft\Windows\CurrentVersion\Uninstall</code>. There can be some data for programs that do not exist on the system anymore. The last write time is when the application was installed.</p>
-<p><strong>Key</strong> 🔑 <code>Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore</code> for installed Microsoft applications. Defines between those that were installed for a specific user or system-wide.</p>
-<p><strong>Key</strong> 🔑: <code>Wiw6432Node</code> (<code>SYSTEM</code> hive root node) - those that run a 32-bit mode. Separate sub-keys for different versions of a program.</p></p>
-
-    <h2><a href="http://localhost:1313/docs/todo/old/traffic/"> 🌎 Network Traffic</a></h2> 
-    <p> <h2 id="collection">Collection</h2>
-<p>Most of the devices keep some logs. As for the network-related issues are switches, routers, firewalls, IDS and IPS, web proxies, DC and authentication servers, DCHP servers and application servers.</p>
-<p>SIEMs are log aggregators. When configured correctly, all logs and events from all systems in the enterprise flows to a centralised repository where they can then be analysed. Sometimes these SIEM analyse what&rsquo;s normal and what&rsquo;s not. However, they are quite costly 💰.</p></p>
-
-    <h2><a href="http://localhost:1313/docs/artefacts/applications/communication/mail/"> 📬 Mail</a></h2> 
-    <p> <h2 id="general-reference">General Reference</h2></p>
 
 
 
@@ -555,6 +316,15 @@ h2 {
             <li class="page-item"><a href="/platforms/all/page/3/" class="page-link">3</a></li>
             
         
+             
+            
+            <li class="page-item disabled"><a class="page-link">...</a></li>
+            
+        
+            
+        
+            
+        
 
         
         <li class="page-item"><a href="/platforms/all/page/2/" rel="next" class="page-link">Next ›</a></li>
@@ -562,7 +332,7 @@ h2 {
 
         
         
-        <li class="page-item"><a href="/platforms/all/page/3/" rel="last" class="page-link">Last »</a></li>
+        <li class="page-item"><a href="/platforms/all/page/6/" rel="last" class="page-link">Last »</a></li>
         
     </ul>
 </nav>

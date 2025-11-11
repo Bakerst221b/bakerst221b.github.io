@@ -285,7 +285,7 @@
 <p>Yellow box serves to highlight the command and the green ones - to show that the scanner has found 5 OLE objects embedded.</p>
 <p>So, I saw that I was right! There were these weeds in that RTF document! What is exactly an OLE object anyway?</p>
 <p><img src="images/7b7ff61cdd8d739404054.png" alt="img"></p>
-<p>There are 5 OLE_DOCUMENT__malware__<!-- raw HTML omitted -->.bin named by RTFScanner when making a dump. Let&rsquo;s see&hellip; I&rsquo;ll copy one of these names and search my VM for it (the scanner doesn&rsquo;t save them in the current directory and having a squirrel-like memory, alas!) I don&rsquo;t remember where to look for it.</p>
+<p>There are 5 OLE_DOCUMENT__malware__<number>.bin named by RTFScanner when making a dump. Let&rsquo;s see&hellip; I&rsquo;ll copy one of these names and search my VM for it (the scanner doesn&rsquo;t save them in the current directory and having a squirrel-like memory, alas!) I don&rsquo;t remember where to look for it.</p>
 <p><img src="images/33d3ecebd6833195f330a.png" alt="img"></p>
 <p>At the destination I found all the five &ldquo;prisoners&rdquo; and copied them to my host to view in hex. Scrolling the first dumped OLE object almost to the very end, I noticed very familiar strings (<strong>&ldquo;Dim&rdquo;, &ldquo;For i = 13 To 85&rdquo;, &ldquo;String = &ldquo;dkV&hellip;&rdquo;</strong>) indicating that there WAS macro lurking inside!</p>
 <p><img src="images/02e49ae99d01941df9a96.png" alt="img"></p>

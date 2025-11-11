@@ -351,25 +351,90 @@ crimen habet Priamum nec.</p></p>
 </ul>
 <p>Decryption steps:</p></p>
 
-    <h2><a href="http://localhost:1313/docs/cryptography/symmetric/caesar/"> Caesar&#39;s Cipher</a></h2> 
-    <p> <p><em>In this article, I&rsquo;m dissecting a very well-known (and that&rsquo;s why not advisable to be used) cryptographic algorithm which is better known for IT tribe as &ldquo;ROT13&rdquo;.</em></p>
-<p><em>#todo: <a href="https://coderoad.ru/50664321/%D0%9F%D0%BE%D1%87%D0%B5%D0%BC%D1%83-%D0%BA%D0%BE%D0%B4%D0%B8%D1%80%D1%83%D0%B5%D1%82%D1%81%D1%8F-%D1%82%D0%B5%D0%BA%D1%81%D1%82-%D0%B2-%D1%8D%D1%82%D0%BE%D0%BC-%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D0%B5-ROT13">https://coderoad.ru/50664321/%D0%9F%D0%BE%D1%87%D0%B5%D0%BC%D1%83-%D0%BA%D0%BE%D0%B4%D0%B8%D1%80%D1%83%D0%B5%D1%82%D1%81%D1%8F-%D1%82%D0%B5%D0%BA%D1%81%D1%82-%D0%B2-%D1%8D%D1%82%D0%BE%D0%BC-%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D0%B5-ROT13</a></em></p></p>
-
-    <h2><a href="http://localhost:1313/docs/cryptography/symmetric/des/"> DES</a></h2> 
-    <p> <p><strong>DES</strong> - Symmetric. <strong>D</strong>ata <strong>E</strong>ncryption <strong>S</strong>tandard. NIST 1993. 56 bit key, 64-bit plaintext input (blocks). How secure? Can be brute-forced in 4 months. No known &ldquo;backdoor&rdquo; decryption approach. To make it more secure, change keys every 3 months, use 3 keys, use cipher-block chaining.</p></p>
-
-    <h2><a href="http://localhost:1313/docs/cryptography/symmetric/onetime/"> One-time Pad</a></h2> 
-    <p> <p><em>One-time pad is like a Viginear cypher but with the key the length of the cypher text.</em></p>
-<h2 id="algo-intro">Algo Intro</h2>
-<p>The key requirement for this cypher scheme to be perfectly secret is that the key should only be used once. Why? For example, the same key was applied to two cypher texts (c1 and c2), so that <code>c1 = message1 XOR key</code> and <code>c2 = message2 XOR key</code>. What can we do here? We can eliminate the key by <code>XOR</code>-ing c1 and c2: <code>c1 XOR c2 = (message1 XOR key) XOR (message2 XOR key) = message1 XOR message2</code>. This is not the same as having the plain text of either or both message1 or message2, but there is something we can do, using ASCII characteristics (it&rsquo;s if it were ASCII, of course). Each letter starts with <code>01</code> in binary, but the space character starts with <code>00</code>. Look at the possible combinations:</p></p>
-
-    <h2><a href="http://localhost:1313/docs/artefacts/apple/keychain/"> iOS Keychain</a></h2> 
-    <p> <p><em>In this article I&rsquo;m trying to study how keychain works.</em></p>
-<h2 id="metaphor">Metaphor</h2>
-<p>There once lived a monkey &#x1f412; George. He was a nice fellow, but his memory suck too much and caused him a lot of trouble. He also was very  absent-minded and has lost some of his secret keys. He met a bird &#x1f414; Marvin and said: <em>&ldquo;Marvin, my memory is no good, here are all my keys &#x1f511;&#x1f511;&#x1f511;&#x1f511; , I will just retain this small key-card &#x1f3b4; which I will show you to prove it&rsquo;s really me. Whenever I need a key, I&rsquo;ll show you this card. You give me the key &#x1f511; temporary and then take it back after I used it &#x1f510; .&rdquo;</em>. Marvin was a very responsible guy and he agreed.</p></p>
 
 
 
+
+<style>
+    body {
+    color: #212121;
+}
+
+h2 {
+    font-weight: bold;
+    
+}
+
+ 
+ 
+ 
+.pagination {
+    display: flex;
+    list-style: none;
+    border-radius: .25rem;
+    margin: 20px 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.page-link {
+    position: relative;
+    display: block;
+    padding: .75rem 1rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #2bbc8a;
+    background-color: #fff;
+}
+
+.homepage .page-link,
+.listing .page-link {
+    background-color: #fff;
+}
+
+.page-item.disabled .page-link {
+    color: #6c757d;
+    pointer-events: none;
+    cursor: auto;
+    background-color: #fff;
+    border-color: #dee2e6;
+}
+
+.page-item.active .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: #2bbc8a;;
+    border-color:#2bbc8a;
+    border-radius: 30px;
+}
+
+</style>
+<nav aria-label="page navigation">
+    <ul class="pagination">
+        
+        
+
+        
+
+        
+             
+            <li class="page-item active"><a href="/tags/crypto/" class="page-link">1</a></li>
+            
+        
+            
+             
+            <li class="page-item"><a href="/tags/crypto/page/2/" class="page-link">2</a></li>
+            
+        
+
+        
+        <li class="page-item"><a href="/tags/crypto/page/2/" rel="next" class="page-link">Next ›</a></li>
+        
+
+        
+        
+    </ul>
+</nav>
 
 
     

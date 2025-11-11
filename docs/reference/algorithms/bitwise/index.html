@@ -523,13 +523,13 @@ Variable <code>b</code>. (🍇XOR 🐝) XOR 🐝. We can get rid of the brackets
 <p><strong>Affected flags</strong>: <code>CF</code> , <code>OF</code></p>
 <p>Rotate the integer n-time to the left or right. When you see such an instruction, very often it is an indication of encryption. To better understand both I need an example. Let&rsquo;s take an 8-bit binary value. The <strong>initial</strong> state is:</p>
 <p><code>0 1 0 0   1 1 1 0 </code></p>
-<p>See the <code>1</code> at the beginning of this number, <!-- raw HTML omitted -->second<!-- raw HTML omitted --> bit from the left (let&rsquo;s call him Matt). We will then locate him after <code>ROR</code> and <code>ROL</code>.</p>
+<p>See the <code>1</code> at the beginning of this number, <u>second</u> bit from the left (let&rsquo;s call him Matt). We will then locate him after <code>ROR</code> and <code>ROL</code>.</p>
 <p>Let&rsquo;s now <code>ROR</code> (rotate bits right) by 1. Every bit is moved to the right by one position. Our <strong>first</strong> state (for future reference):</p>
 <p><code>0 0 1 0   0 1 1 1</code></p>
-<p>Where the hell is <a href="https://youtu.be/zlfKdbWwruY">Matt</a> now? Now, this bit is the <!-- raw HTML omitted -->third<!-- raw HTML omitted --> bit from the left.</p>
+<p>Where the hell is <a href="https://youtu.be/zlfKdbWwruY">Matt</a> now? Now, this bit is the <u>third</u> bit from the left.</p>
 <p>Let&rsquo;s now <code>ROL</code> (rotate bits left) by 1. Every bit is moved to the left  by one position. Our <strong>second</strong> state:</p>
 <p><code>1 0 0 1   1 1 0 0</code></p>
-<p>Where the hell is <a href="https://youtu.be/zlfKdbWwruY">Matt</a> now? This bit is the <!-- raw HTML omitted -->first<!-- raw HTML omitted --> bit from the left, so, he&rsquo;s become the most significant bit in this number &#x1f451; .</p>
+<p>Where the hell is <a href="https://youtu.be/zlfKdbWwruY">Matt</a> now? This bit is the <u>first</u> bit from the left, so, he&rsquo;s become the most significant bit in this number &#x1f451; .</p>
 <p>Let&rsquo;s now <code>ROL</code> the last number by 1 again. Every bit is again moved to the left. But Matt has nowhere to move! He&rsquo;s falling nowhere&hellip;</p>
 <p><img src="https://media.giphy.com/media/1i6zbhYXV1kRO/giphy.gif" alt="img"></p>
 <p>Where the hell is <a href="https://youtu.be/zlfKdbWwruY">Matt</a> now? He seemed to have got drowned, but he managed it through the swamp and emerged&hellip; But now&hellip;Matt used to be the most significant bit &#x1f451;when in the <strong>second</strong> state , but now he&rsquo;s just a &#x1f4a9;, the least significant bit. As you can see, he&rsquo;s the first from the end.This is the <strong>third</strong> state:</p>

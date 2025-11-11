@@ -405,7 +405,7 @@
 <h4 id="logon-types">Logon Types</h4>
 <p>2 - Interactive (also known as, Logon locally). Creds: Password, Smartcard, other. Examples: IIS Basic Auth (before IIS 6.0), Console, RunAs. Unless CredGuard is enabled, creds are stored on target.</p>
 <p>3 - Network. Examples: Net use, PS remoting, PsExec w/o explicit creds, remote registry - all the login ways that are using login type 3. Creds are not stored on target. Creds: Password, NT Hash, Kerberos ticket.</p>
-<p>2+3 - PsExec alternate creds. -u <!-- raw HTML omitted --> -p <!-- raw HTML omitted -->. Saved on the ta</p>
+<p>2+3 - PsExec alternate creds. -u <username> -p <password>. Saved on the ta</p>
 <p>4 - Batch. Example: Remote Scheduled Task. Password saved on target as LSA secret. Creds: Password (stored as LSA secret).</p>
 <p>5 - Service. Password saved on the target as LSA secret. Creds: Password (stored as LSA secret).</p>
 <p>8 - Network Clear Text. Examples: IIS Basic Auth (IIS 6.0 and newer);

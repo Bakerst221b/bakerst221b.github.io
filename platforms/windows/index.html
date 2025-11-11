@@ -235,59 +235,6 @@
 <p>🕰 <code>09:21 PM</code>.</p>
 <p><em>It was a very sunny day and a very nice a long walk that my daughter and I had before lunch. I feel uplifted because there is finally enough sun and green grass in my life! Unfortunately, no coffee today, since we don&rsquo;t have BonAcqua, which might be not the best for drinking, but is indeed one of the best to prepare coffee (quoting my husband).</em></p></p>
 
-    <h2><a href="http://localhost:1313/docs/blog/2021/06/magnet/"> To Carry Out MockInv&#39;estigation. Part 2</a></h2> 
-    <p> <p>📆 <code>16/06/2021</code> , <em>Wednesday</em></p>
-<p>🕰 <code>09:21 PM</code>.</p>
-<p><em>I had a 7-day license of Magnet AXIOM and I&rsquo;ve decided to try this tool and compare it with others that I had. In 2021 May-June Magnet held a great event of a great value - Magnet SUMMIT with lots of very useful webinars and workshops. One of them was a case study using Magnet. I am going to follow these steps and study another way to solve a crime.</em></p></p>
-
-    <h2><a href="http://localhost:1313/docs/artefacts/fs/extx/"> ExtX</a></h2> 
-    <p> <h2 id="2">2</h2>
-<p>No journaling</p>
-<h2 id="3">3</h2>
-<p>Same but + journaling</p>
-<h2 id="4">4</h2>
-<p>New FS</p></p>
-
-    <h2><a href="http://localhost:1313/docs/artefacts/fs/fat/"> FAT</a></h2> 
-    <p> <p>Any FAT partition has two main parts: system area and data area. System area contains FAT boot record (every file system has a boot record), 1st FAT and 2nd FAT. FAT12 and FAT16 also have Root directory in the system area. Data area consists of Root directory in case of FAT32 and file and subdirectory data in clusters.</p>
-<h3 id="versions">Versions</h3>
-<h4 id="fat12">FAT12</h4>
-<p>For the cluster addressing there were 12 bits available, which is 2^12 clusters at most (4096 clusters).</p></p>
-
-    <h2><a href="http://localhost:1313/docs/artefacts/fs/ntfs/"> NTFS</a></h2> 
-    <p> <p>Developed in collaboration with IBM. POSIX compliant. Official docs for NTFS <a href="http://ntfs.com/ntfs-mft.htm">here</a>.</p>
-<blockquote>
-<p>❗️ Everything is a file!
-❗️ All offsets are relative to the start of the data structures.
-❗️ Apple macOS machines can read NTFS devices but do not support writing to them by default.</p></blockquote>
-<p>The entire logical volume is a data area (in contrast to FAT where there is a system area as well ❓).</p>
-<p>In a Microsoft NT File System (NTFS), hot fixing of disk sectors <strong>prevents data from being stored in a bad sector or cluster</strong>.</p></p>
-
-    <h2><a href="http://localhost:1313/docs/artefacts/fs/reiser/"> ReiserFS</a></h2> 
-    <p> <p>Allows storing multiple files in a single sector. exclamation mark ❗️Unique to this FS!</p></p>
-
-    <h2><a href="http://localhost:1313/docs/attacks/binary/ipc/win-ipc/"> Windows IPC</a></h2> 
-    <p> <p><em>COM (Component Object Model) objects are a way to let processes call other processes. A process, that needs to call someone else loads a COM.dll into it&rsquo;s address space.</em></p></p>
-
-    <h2><a href="http://localhost:1313/docs/ttp/malware/analyse/packing/"> 🎁 Packed Executables And Unpacking</a></h2> 
-    <p> <p>There are several indicators that the executable is packed. Here they are (this list will be growing as I encounter new indicators):</p>
-<ul>
-<li>Few imports and among these imports are functions like <code>GetProcessAddress</code> or <code>LoadLibrary</code></li>
-<li>Weird names for PE sections</li>
-<li>Empty Physical addresses for sections (while VA is not empty). More about</li>
-</ul>
-<h2 id="unpacking-techniques">Unpacking techniques</h2>
-<p>A piece of software cannot just run packed (what a challenging world that would be! 😳 ). The thing is that whatever the packing algorithm is, however complex 🧶 it might be, the real code needs to be <em>unpacked into memory</em> first. So, even with the most sophisticated protection techniques, it all really comes down to waiting for the executable to get unpacked into memory, from where it can be gently and dearly dumped like a 🐝 hive from a tree 🌳 full of hungry and pretty aggressive wild bees with a big and heavy bat 🏃‍♀️. We might want to do some minor other stuff afterwards but let&rsquo;s keep it for now.</p></p>
-
-    <h2><a href="http://localhost:1313/docs/artefacts/files/executables/win-pe/"> Windows PE</a></h2> 
-    <p> </p>
-
-    <h2><a href="http://localhost:1313/docs/ttp/malware/analyse/executables/win-pe/"> Windows PE</a></h2> 
-    <p> </p>
-
-    <h2><a href="http://localhost:1313/docs/artefacts/win/core/"> 🏺 Windows Core Processes</a></h2> 
-    <p> <p><em>There are two broad categories of Windows core processes. Processes that initialize system environment and those that initialize the user environment. Whatever is the category, you need to know them well in order to detect abnormal things.</em></p></p>
-
 
 
 
@@ -363,12 +310,24 @@ h2 {
             <li class="page-item"><a href="/platforms/windows/page/2/" class="page-link">2</a></li>
             
         
+            
+             
+            <li class="page-item"><a href="/platforms/windows/page/3/" class="page-link">3</a></li>
+            
+        
+             
+            
+            <li class="page-item disabled"><a class="page-link">...</a></li>
+            
+        
 
         
         <li class="page-item"><a href="/platforms/windows/page/2/" rel="next" class="page-link">Next ›</a></li>
         
 
         
+        
+        <li class="page-item"><a href="/platforms/windows/page/4/" rel="last" class="page-link">Last »</a></li>
         
     </ul>
 </nav>

@@ -230,71 +230,90 @@
     <h2><a href="http://localhost:1313/docs/artefacts/win/ads/"> 🏺 ADS</a></h2> 
     <p> <p><em>This is about &hellip; .</em></p></p>
 
-    <h2><a href="http://localhost:1313/docs/artefacts/win/console/"> 🏺 CMD and Powershell</a></h2> 
-    <p> <h2 id="cmd">CMD</h2>
-<p>Batch script. Highly limited in functionality and caching all sorts of crap, including credentials.</p>
-<h2 id="powershell">PowerShell</h2>
-<h3 id="anatomy">Anatomy</h3>
-<p>Authentication cons:</p>
-<ol>
-<li>Traffic is encrypted</li>
-<li>Kerberos is used for authentication</li>
-<li>Credentials are not cached on the remote system (not AS).</li>
-</ol>
-<p>PowerShell gives you the power of WMI, .NET and COM at once. It provides a unified interface to interact with data types such as the registry, file volumes, Active Directory etc.</p>
-<blockquote>
-<p>❗️The output of most of the ps commands are not strings but objects that can be piped into other commands.</p></p>
-
-    <h2><a href="http://localhost:1313/docs/artefacts/win/crash/"> 🏺 Crash Files</a></h2> 
-    <p> <p><em>This is about &hellip; .</em></p></p>
-
-    <h2><a href="http://localhost:1313/docs/artefacts/win/dnscache/"> 🏺 DNS Cache</a></h2> 
-    <p> <p>There are several ways to retrieve this information manually.</p>
-<ol>
-<li>ipconfig /displaydns</li>
-<li><code>Win32_DnsCache</code> from WMI repo (use Kansa to collect and stack this data)</li>
-</ol>
-<h4 id="-btfm">📘 BTFM</h4>
-<p>Stacking, purely manually (no grouping):</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>Get-ChildItem -Filter <span style="color:#e6db74">&#34;*-DNSCache.csv&#34;</span> | ForEach-Object { Import-Csv $_.FullName } | Export-Csv -Path <span style="color:#e6db74">&#34;DNSCacheStack.csv&#34;</span> -NoTypeInformation
-</span></span></code></pre></div><p>Stacking, purely manual, with grouping (basically, the same results as with <code>Get-LogparserStack.ps1</code> but the case is ignored):</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>$csvFiles = Get-ChildItem -Path <span style="color:#e6db74">&#34;.\*DNSCache.csv&#34;</span>
-</span></span><span style="display:flex;"><span>$result = @()
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">foreach</span> ($csvFile <span style="color:#66d9ef">in</span> $csvFiles) {
-</span></span><span style="display:flex;"><span>    $data = Import-Csv -Path $csvFile.FullName
-</span></span><span style="display:flex;"><span>    $result += $data
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>$groupedData = $result | Group-Object -Property Name | Select-Object Count, Name, @{Name=<span style="color:#e6db74">&#34;PC&#34;</span>; Expression={$_.Group.<span style="color:#e6db74">&#39;PSComputerName&#39;</span>}} <span style="color:#75715e"># the column contains spaces but the script will see no spaces, so, it&#39;s not a typo</span>
-</span></span><span style="display:flex;"><span>$groupedData | Export-Csv -Path <span style="color:#e6db74">&#34;result2.csv&#34;</span> -NoTypeInformation
-</span></span></code></pre></div><p>Stacking, Kansa script:</p></p>
-
-    <h2><a href="http://localhost:1313/docs/artefacts/win/eventlog/"> 🏺 Windows Event Log</a></h2> 
-    <p> <p><em>Event Logs in Windows provide valuable insights for defenders. They can be forwarded to a central machine to monitor organisational-level activities and detect malicious behaviour effectively.</em></p></p>
-
-    <h2><a href="http://localhost:1313/docs/artefacts/win/registry/"> 🏺 Windows Registry</a></h2> 
-    <p> </p>
-
-    <h2><a href="http://localhost:1313/docs/artefacts/win/prefetch/"> 🏺 Prefetch</a></h2> 
-    <p> <p><em>Every day, the computer loads some programs and a lot of additional crap that comes with it. Every day the same routine over and over again. Being a diligent and responsible guy, it wondered how to improve this process. So, it decides to save the most recently loaded programs and whatever dlls and stuff these programs need so that everything is ready the next time the program is run. Where is this data stored? In Prefetch.</em></p></p>
-
-    <h2><a href="http://localhost:1313/docs/artefacts/win/ram/"> 🏺 RAM</a></h2> 
-    <p> <p>*Memory is the best evidence, although the hardest to preserve. If you recall Frozen II, &ldquo;Water has memory&rdquo; - same story. Even if you delete all the evidence, memory silently remembers all that. But it&rsquo;s so fragile&hellip;
-<img src="images/boiler-leaking-water-scaled.jpg" alt="img"></p></p>
-
-    <h2><a href="http://localhost:1313/docs/artefacts/win/ad/"> 🏺 Active Directory</a></h2> 
-    <p> <p>Moving accounts and auth policies to the server side. Azure Active Directory is when instead of having a physical server, you have a server in the cloud ⛅️. Defines a set of rules to restrict users&rsquo; access to resources. PCs that are part of AD usually don&rsquo;t have full access to the systems.</p>
-<p>AD DS store contains db files and processes that manage directory information for users, services and applications. Consists of <code>Ntds.dit</code> file, at <code>%SystemRoot%\	NTDS</code> folder on all DC. Is only accessible thtough the DC&rsquo;s processes and protocols.</p></p>
-
-    <h2><a href="http://localhost:1313/docs/artefacts/win/wmi/"> 🏺 WMI</a></h2> 
-    <p> <p><em>In days of yore, there existed a humble batch, whence emerged the WMI, and it didst hold dominion o&rsquo;er the realm of Windows contraptions for a considerable span until it was entwined with the might of PowerShell.</em></p></p>
-
-    <h2><a href="http://localhost:1313/docs/artefacts/win/core/"> 🏺 Windows Core Processes</a></h2> 
-    <p> <p><em>There are two broad categories of Windows core processes. Processes that initialize system environment and those that initialize the user environment. Whatever is the category, you need to know them well in order to detect abnormal things.</em></p></p>
 
 
 
+
+<style>
+    body {
+    color: #212121;
+}
+
+h2 {
+    font-weight: bold;
+    
+}
+
+ 
+ 
+ 
+.pagination {
+    display: flex;
+    list-style: none;
+    border-radius: .25rem;
+    margin: 20px 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.page-link {
+    position: relative;
+    display: block;
+    padding: .75rem 1rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #2bbc8a;
+    background-color: #fff;
+}
+
+.homepage .page-link,
+.listing .page-link {
+    background-color: #fff;
+}
+
+.page-item.disabled .page-link {
+    color: #6c757d;
+    pointer-events: none;
+    cursor: auto;
+    background-color: #fff;
+    border-color: #dee2e6;
+}
+
+.page-item.active .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: #2bbc8a;;
+    border-color:#2bbc8a;
+    border-radius: 30px;
+}
+
+</style>
+<nav aria-label="page navigation">
+    <ul class="pagination">
+        
+        
+
+        
+
+        
+             
+            <li class="page-item active"><a href="/docs/artefacts/win/" class="page-link">1</a></li>
+            
+        
+            
+             
+            <li class="page-item"><a href="/docs/artefacts/win/page/2/" class="page-link">2</a></li>
+            
+        
+
+        
+        <li class="page-item"><a href="/docs/artefacts/win/page/2/" rel="next" class="page-link">Next ›</a></li>
+        
+
+        
+        
+    </ul>
+</nav>
 
 
         </div>

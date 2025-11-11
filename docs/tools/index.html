@@ -276,76 +276,90 @@
     <h2><a href="http://localhost:1313/docs/tools/terminal/"> Terminal Tricks</a></h2> 
     <p> <p><em>In this article I will be collecting usful tricks and tweaks with Terminal on macOS. Some or even most of them could run on other UNIX systems as well.</em></p></p>
 
-    <h2><a href="http://localhost:1313/docs/tools/ssh/"> SSH Access Setup Explained</a></h2> 
-    <p> <p>In order to perform actions with you public/private key pair (git, ssh access), you&rsquo;ll need to configure it first. I found it quite hard to grasp at first with all the nuances, although it&rsquo;s pretty straitforward if you just copy/paste the commands.</p>
-<p>Let&rsquo;s take GitHub and its <a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent">manual</a> in order to understand what we are doing and why. This will help in thoubleshooting later if we need it.</p>
-<p>In order to use private/public keys, you will need to generate a pair first. All these keys on macOS and Linux machines are stored at <code>~/.ssh</code> by default (hidden folder). Public keys have <code>pub</code> at the end, private have the same name but no <code>pub</code> extension. For example, a public key file would be named something like <code>id_rsa.pub</code>, unless you give it a different name and its corresponding private key would be called just <code>id_rsa</code>.</p></p>
-
-    <h2><a href="http://localhost:1313/docs/tools/mac-setup-script/"> 🧰 Mac Setup Script</a></h2> 
-    <p> <blockquote>
-<p>🗒 TODO: Create a repo for this script!</p></blockquote>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># oh my zsh bash themes</span>
-</span></span><span style="display:flex;"><span>sh -c <span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># sh -c &#34;$(fetch -o - https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># sh -c &#34;$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&#34;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># install pyenv</span>
-</span></span><span style="display:flex;"><span>brew install readline xz openssl zlib
-</span></span><span style="display:flex;"><span>brew install pyenv
-</span></span><span style="display:flex;"><span>brew install pyenv-virtualenv
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># configure pyenv for zsh</span>
-</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#39;export PYENV_ROOT=&#34;$HOME/.pyenv&#34;&#39;</span> &gt;&gt; ~/.zshrc
-</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#39;export PATH=&#34;$PYENV_ROOT/bin:$PATH&#34;&#39;</span> &gt;&gt; ~/.zshrc
-</span></span><span style="display:flex;"><span>echo -e <span style="color:#e6db74">&#39;if command -v pyenv 1&gt;/dev/null 2&gt;&amp;1; then\n  eval &#34;$(pyenv init -)&#34;\nfi&#39;</span> &gt;&gt; ~/.zshrc
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>pyenv install 3.8.5
-</span></span><span style="display:flex;"><span>pyenv install 2.7.18
-</span></span><span style="display:flex;"><span>pyenv global 3.8.5
-</span></span><span style="display:flex;"><span>pyenv virtualenv 2.7.18 python2 
-</span></span><span style="display:flex;"><span>pyenv virtualenv 3.8.5 python3
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># radare2</span>
-</span></span><span style="display:flex;"><span>git clone https://github.com/radare/radare2.git
-</span></span><span style="display:flex;"><span>cd radare2
-</span></span><span style="display:flex;"><span>./sys/install.sh
-</span></span></code></pre></div><h2 id="mobile-pentest">Mobile Pentest</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Mobile tools</span>
-</span></span><span style="display:flex;"><span>pyenv activate python2
-</span></span><span style="display:flex;"><span>pip install git+https://github.com/iSECPartners/Introspy-Analyzer.git
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>git clone https://github.com/MobSF/Mobile-Security-Framework-MobSF.git
-</span></span><span style="display:flex;"><span>cd Mobile-Security-Framework-MobSF
-</span></span><span style="display:flex;"><span>./setup.sh
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>pyenv activate python3
-</span></span><span style="display:flex;"><span>cd Mobile-Security-Framework-MobSF
-</span></span><span style="display:flex;"><span>./setup.sh
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>pyenv activate python3
-</span></span><span style="display:flex;"><span>pip install frida
-</span></span><span style="display:flex;"><span>pip install frida-tools
-</span></span><span style="display:flex;"><span>pip install objection
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>brew install npm
-</span></span><span style="display:flex;"><span>npm install -g passionfruit
-</span></span><span style="display:flex;"><span>npm install -g itms-services
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>pyenv activate python2
-</span></span><span style="display:flex;"><span>pip install drozer
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># bug fix</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># cd /Users/[User_name]/.pyenv/versions/2.7.18/envs/python2/lib/python2.7/site-packages/pydiesel/reflection/utils/class_loader.py</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># change elif relative_to.find(&#34;.py&#34;) &gt;= 0 or relative_to.find(&#34;.pyc&#34;) &gt;= 0:</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># to elif (relative_to.find(&#34;.py&#34;) &gt;= 0 or relative_to.find(&#34;.pyc&#34;) &gt;= 0) and not &#34;.pyenv&#34; in relative_to:</span>
-</span></span></code></pre></div><h3 id="ios">iOS</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># for idevice system info</span>
-</span></span><span style="display:flex;"><span>brew install libimobiledevice
-</span></span><span style="display:flex;"><span>brew install ideviceinstaller
-</span></span></code></pre></div><h4 id="introspy">Introspy</h4>
-<p>With iOS device connected. Two args: IP and password needed for the script.</p></p>
 
 
 
+
+<style>
+    body {
+    color: #212121;
+}
+
+h2 {
+    font-weight: bold;
+    
+}
+
+ 
+ 
+ 
+.pagination {
+    display: flex;
+    list-style: none;
+    border-radius: .25rem;
+    margin: 20px 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.page-link {
+    position: relative;
+    display: block;
+    padding: .75rem 1rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #2bbc8a;
+    background-color: #fff;
+}
+
+.homepage .page-link,
+.listing .page-link {
+    background-color: #fff;
+}
+
+.page-item.disabled .page-link {
+    color: #6c757d;
+    pointer-events: none;
+    cursor: auto;
+    background-color: #fff;
+    border-color: #dee2e6;
+}
+
+.page-item.active .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: #2bbc8a;;
+    border-color:#2bbc8a;
+    border-radius: 30px;
+}
+
+</style>
+<nav aria-label="page navigation">
+    <ul class="pagination">
+        
+        
+
+        
+
+        
+             
+            <li class="page-item active"><a href="/docs/tools/" class="page-link">1</a></li>
+            
+        
+            
+             
+            <li class="page-item"><a href="/docs/tools/page/2/" class="page-link">2</a></li>
+            
+        
+
+        
+        <li class="page-item"><a href="/docs/tools/page/2/" rel="next" class="page-link">Next ›</a></li>
+        
+
+        
+        
+    </ul>
+</nav>
 
 
         </div>

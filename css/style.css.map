@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "style.css",
-	"sourceRoot": "/Users/sherlock/Documents/sec/psychotherapy-helpline.bitbucket.io",
+	"sourceRoot": "/Users/sherlock/Documents/sec/bakerst221b",
 	"sources": [
 		"themes/hugo-whisper-theme/assets/scss/style.scss",
 		"themes/hugo-whisper-theme/assets/scss/bootstrap/_functions.scss",

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>File Systems - Analyst</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="icon" href="http://localhost:1313/favicon.png">
+  <link href="/css/style-classic.css"></link>
+  
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+  
+
+</head>
+
+<body class='page page-default-list'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  <ul>
+    
+    
+    <li class="menu-item-home 🏡">
+      <a href="/">
+        <span>Home 🏡</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-blog ✍️">
+      <a href="/docs/blog">
+        <span>Blog ✍️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-ttp 🔍">
+      <a href="/docs/ttp">
+        <span>TTP 🔍</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-artefacts db 🏺">
+      <a href="/docs/artefacts">
+        <span>Artefacts DB 🏺</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-attacks db ⚔️">
+      <a href="/docs/attacks">
+        <span>Attacks DB ⚔️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-tools db 🛠️">
+      <a href="/docs/tools">
+        <span>Tools DB 🛠️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-crypto 🗝️">
+      <a href="/docs/cryptography">
+        <span>Crypto 🗝️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-about me 🧝🏽‍♀️">
+      <a href="/docs/about">
+        <span>About me 🧝🏽‍♀️</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+  <div class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="http://localhost:1313/"><img alt="Logo" src="/images/logo.png" /></a>
+    </div>
+    <div class="logo-mobile">
+      <a href="http://localhost:1313/"><img alt="Logo" src="/images/logo-mobile.svg" /></a>
+    </div>
+    
+
+    <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/docs/artefacts/fs/index.xml" title="Analyst" />
+    <div id="main-menu" class="main-menu">
+  <ul>
+    
+    
+    <li class="menu-item-home 🏡">
+      <a href="/">
+        <span>Home 🏡</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-blog ✍️">
+      <a href="/docs/blog">
+        <span>Blog ✍️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-ttp 🔍">
+      <a href="/docs/ttp">
+        <span>TTP 🔍</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-artefacts db 🏺">
+      <a href="/docs/artefacts">
+        <span>Artefacts DB 🏺</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-attacks db ⚔️">
+      <a href="/docs/attacks">
+        <span>Attacks DB ⚔️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-tools db 🛠️">
+      <a href="/docs/tools">
+        <span>Tools DB 🛠️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-crypto 🗝️">
+      <a href="/docs/cryptography">
+        <span>Crypto 🗝️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-about me 🧝🏽‍♀️">
+      <a href="/docs/about">
+        <span>About me 🧝🏽‍♀️</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+    
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+    
+    <div style="margin-left: 20pt;">
+      <a href="/index.xml" type="application/rss+xml">
+        <img src="/images/rss.png" alt="RSS Feed">
+      </a>
+    </div>
+    
+    <style>
+      a[href="/index.xml"] {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+      }
+    
+      a[href="/index.xml"] img {
+        height: 30px;
+      }
+    </style>
+    
+  </div>
+</div>
+
+
+    
+    
+    
+    
+    
+    
+
+    
+    <div class="container pt-2 pt-md-6 pb-3 pb-md-6">
+      <div class="row">
+        <div class="col-12 col-md-3 mb-3">
+          <div class="sidebar">
+            
+<div class="docs-menu">
+  <p>
+    <a href="/docs/artefacts/"> 👈🏼 Back to </br> 📜 Artefacts DB </a>
+  </p>
+</div> 
+
+
+
+          </div>
+        </div>
+        <div class="col-12 col-md-9">
+          
+
+
+
+ 
+ <h1 class="title">File Systems</h1> 
+ 
+
+    <h2><a href="http://localhost:1313/docs/artefacts/fs/hdd/"> HDD Overview</a></h2> 
+    <p> <p><em>In this article I&rsquo;m going to give a general overview of how HDDs work.</em></p>
+<h2 id="floppy">Floppy</h2>
+<p>Floppy disks &#x1f4be; are like dinosaurs 🦕. They are ancient, not usually used nowadays. But the mechanism is very much like the one found in an HDD that&rsquo;s why I&rsquo;ve found it useful to start the intro to HDD from a simplier mechanism. In the square brackerts I&rsquo;ll be giving an analogy with a person reading a book (inspired by <a href="https://www.takeupcode.com/podcast/226-filesystem-chs-vs-lba-modes/">takeupcode.com</a>).</p></p>
+
+
+
+
+
+<style>
+    body {
+    color: #212121;
+}
+
+h2 {
+    font-weight: bold;
+    
+}
+
+ 
+ 
+ 
+.pagination {
+    display: flex;
+    list-style: none;
+    border-radius: .25rem;
+    margin: 20px 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.page-link {
+    position: relative;
+    display: block;
+    padding: .75rem 1rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #2bbc8a;
+    background-color: #fff;
+}
+
+.homepage .page-link,
+.listing .page-link {
+    background-color: #fff;
+}
+
+.page-item.disabled .page-link {
+    color: #6c757d;
+    pointer-events: none;
+    cursor: auto;
+    background-color: #fff;
+    border-color: #dee2e6;
+}
+
+.page-item.active .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: #2bbc8a;;
+    border-color:#2bbc8a;
+    border-radius: 30px;
+}
+
+</style>
+<nav aria-label="page navigation">
+    <ul class="pagination">
+        
+        
+
+        
+        <li class="page-item"><a href="/docs/artefacts/fs/" rel="prev" class="page-link">‹ Prev</a></li>
+        
+
+        
+            
+             
+            <li class="page-item"><a href="/docs/artefacts/fs/" class="page-link">1</a></li>
+            
+        
+             
+            <li class="page-item active"><a href="/docs/artefacts/fs/page/2/" class="page-link">2</a></li>
+            
+        
+
+        
+
+        
+        
+    </ul>
+</nav>
+
+
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <div class="sub-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="sub-footer-inner">
+          <ul>
+            <li class="zerostatic"><a href="https://www.zerostatic.io">www.zerostatic.io</a></li>
+            <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/docs/artefacts/fs/index.xml" title="Analyst" />
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/scripts.js"></script>
+  
+
+  
+
+
+</body>
+
+</html>
