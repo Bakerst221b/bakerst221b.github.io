@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Forensic Environment Setup - Analyst</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="icon" href="http://localhost:1313/favicon.png">
+  <link href="/css/style-classic.css"></link>
+  
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+  
+
+</head>
+
+<body class='page page-default-list'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  <ul>
+    
+    
+    <li class="menu-item-home 🏡">
+      <a href="/">
+        <span>Home 🏡</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-blog ✍️">
+      <a href="/docs/blog">
+        <span>Blog ✍️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-ttp 🔍">
+      <a href="/docs/ttp">
+        <span>TTP 🔍</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-artefacts db 🏺">
+      <a href="/docs/artefacts">
+        <span>Artefacts DB 🏺</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-attacks db ⚔️">
+      <a href="/docs/attacks">
+        <span>Attacks DB ⚔️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-tools db 🛠️">
+      <a href="/docs/tools">
+        <span>Tools DB 🛠️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-crypto 🗝️">
+      <a href="/docs/cryptography">
+        <span>Crypto 🗝️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-about me 🧝🏽‍♀️">
+      <a href="/docs/about">
+        <span>About me 🧝🏽‍♀️</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+  <div class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="http://localhost:1313/"><img alt="Logo" src="/images/logo.png" /></a>
+    </div>
+    <div class="logo-mobile">
+      <a href="http://localhost:1313/"><img alt="Logo" src="/images/logo-mobile.svg" /></a>
+    </div>
+    
+
+    <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/docs/tools/forensics-env/index.xml" title="Analyst" />
+    <div id="main-menu" class="main-menu">
+  <ul>
+    
+    
+    <li class="menu-item-home 🏡">
+      <a href="/">
+        <span>Home 🏡</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-blog ✍️">
+      <a href="/docs/blog">
+        <span>Blog ✍️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-ttp 🔍">
+      <a href="/docs/ttp">
+        <span>TTP 🔍</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-artefacts db 🏺">
+      <a href="/docs/artefacts">
+        <span>Artefacts DB 🏺</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-attacks db ⚔️">
+      <a href="/docs/attacks">
+        <span>Attacks DB ⚔️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-tools db 🛠️">
+      <a href="/docs/tools">
+        <span>Tools DB 🛠️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-crypto 🗝️">
+      <a href="/docs/cryptography">
+        <span>Crypto 🗝️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-about me 🧝🏽‍♀️">
+      <a href="/docs/about">
+        <span>About me 🧝🏽‍♀️</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+    
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+    
+    <div style="margin-left: 20pt;">
+      <a href="/index.xml" type="application/rss+xml">
+        <img src="/images/rss.png" alt="RSS Feed">
+      </a>
+    </div>
+    
+    <style>
+      a[href="/index.xml"] {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+      }
+    
+      a[href="/index.xml"] img {
+        height: 30px;
+      }
+    </style>
+    
+  </div>
+</div>
+
+
+    
+    
+    
+    
+    
+    
+
+    
+    <div class="container pt-2 pt-md-6 pb-3 pb-md-6">
+      <div class="row">
+        <div class="col-12 col-md-3 mb-3">
+          <div class="sidebar">
+            
+<div class="docs-menu">
+  <p>
+    <a href="/docs/tools/"> 👈🏼 Back to </br> 🛠️ Tools DB </a>
+  </p>
+</div> 
+
+
+
+          </div>
+        </div>
+        <div class="col-12 col-md-9">
+          
+
+
+
+ 
+ <h1 class="title">Forensic Environment Setup</h1> 
+ 
+
+    <h2><a href="http://localhost:1313/docs/tools/forensics-env/btfm/"> 📘 BTFM</a></h2> 
+    <p> <p><em>This is an attempt to collect all the most frequently used commands for forensic analysis.</em></p></p>
+
+    <h2><a href="http://localhost:1313/docs/tools/forensics-env/collection-analysis/"> Collection and Analysis</a></h2> 
+    <p> <p><em>There are numerous tools available for collecting and analysing artefacts and evidence. I will provide an overview, relevant links, or even comparison charts, depending on the tools.</em></p></p>
+
+    <h2><a href="http://localhost:1313/docs/tools/forensics-env/autoruns/"> Kansa and Autoruns</a></h2> 
+    <p> <p>Run a tool to collect all the artefacts for this OS (for example, <code>autorunc.exe</code> for Windows) on the machines in question. I use CSV format as output whenever possible because it can be imported in a SIEM, TimeLine Explorer (Windows) or Numbers/Excel/Google Sheets. I prefer the last option because its pivoting functionality is much easier to deploy.</p>
+<ol>
+<li>Open each file (if there are not too many)</li>
+<li>Filter for untrusted or missing vendors. Such vendors as Google and Firefox might be used to trick the user. It would look like `(Not verified) Firefox.</li>
+<li>Show those enabled ones (if applicable)</li>
+<li>Look at the image path, and use the FindEvil SANS poster or your baseline system profile as a reference for known good to find what’s bad</li>
+<li>Look at the hashes and check against known-good.</li>
+<li>Check with a supernova, google Publishes and Description</li>
+<li>Frequency analysis. What stands out? (see the following sections). Find possible suspicious or malicious things.</li>
+<li>Check the triage files from other machines for the same IoCs (Select-String, grep etc).</li>
+<li>Stacking (frequency-based outlier analysis)</li>
+<li>Frequency analysis. What stands out?</li>
+</ol>
+<p>🗒 If the file doesn’t have an image path (<code>File not found</code>), it’s likely it was moved/deleted and thus is not an active threat. What’s suspicious?</p></p>
+
+    <h2><a href="http://localhost:1313/docs/tools/forensics-env/aws/"> AWS Forensic Environment Setup</a></h2> 
+    <p> <p><em>First of all, data that is collected for analysis within the cloud needs to be handled properly as well.</em></p></p>
+
+    <h2><a href="http://localhost:1313/docs/tools/forensics-env/frameworks/"> Forensic Frameworks</a></h2> 
+    <p> <p><em>Here I will keep the list of useful tools for forensics, their advantages and disadvantages.</em></p></p>
+
+    <h2><a href="http://localhost:1313/docs/tools/forensics-env/os/"> Forensics Machine Setup</a></h2> 
+    <p> <p><em>This is about &hellip; .</em></p></p>
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <div class="sub-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="sub-footer-inner">
+          <ul>
+            <li class="zerostatic"><a href="https://www.zerostatic.io">www.zerostatic.io</a></li>
+            <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/docs/tools/forensics-env/index.xml" title="Analyst" />
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/scripts.js"></script>
+  
+
+  
+
+
+</body>
+
+</html>

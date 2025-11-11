@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Analyst</title>
+    <link>http://localhost:1313/tags/</link>
+    <description>Recent content in Tags on Analyst</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 26 Apr 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Crypto</title>
+      <link>http://localhost:1313/tags/crypto/</link>
+      <pubDate>Wed, 26 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/crypto/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Reverse</title>
+      <link>http://localhost:1313/tags/reverse/</link>
+      <pubDate>Thu, 28 Jul 2022 15:14:39 +1000</pubDate>
+      <guid>http://localhost:1313/tags/reverse/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Spoiler</title>
+      <link>http://localhost:1313/tags/spoiler/</link>
+      <pubDate>Thu, 28 Jul 2022 15:14:39 +1000</pubDate>
+      <guid>http://localhost:1313/tags/spoiler/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Case</title>
+      <link>http://localhost:1313/tags/case/</link>
+      <pubDate>Tue, 08 Feb 2022 11:42:21 +0300</pubDate>
+      <guid>http://localhost:1313/tags/case/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hardware</title>
+      <link>http://localhost:1313/tags/hardware/</link>
+      <pubDate>Sun, 25 Apr 2021 17:18:04 +0300</pubDate>
+      <guid>http://localhost:1313/tags/hardware/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Config</title>
+      <link>http://localhost:1313/tags/config/</link>
+      <pubDate>Sun, 07 Mar 2021 11:42:21 +0300</pubDate>
+      <guid>http://localhost:1313/tags/config/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Checklist</title>
+      <link>http://localhost:1313/tags/checklist/</link>
+      <pubDate>Mon, 12 Oct 2020 17:50:01 +0300</pubDate>
+      <guid>http://localhost:1313/tags/checklist/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Manual</title>
+      <link>http://localhost:1313/tags/manual/</link>
+      <pubDate>Mon, 12 Oct 2020 17:50:01 +0300</pubDate>
+      <guid>http://localhost:1313/tags/manual/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Case-Example</title>
+      <link>http://localhost:1313/tags/case-example/</link>
+      <pubDate>Sun, 20 Sep 2020 11:04:28 +0300</pubDate>
+      <guid>http://localhost:1313/tags/case-example/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Android</title>
+      <link>http://localhost:1313/tags/android/</link>
+      <pubDate>Fri, 11 Sep 2020 22:26:25 +0300</pubDate>
+      <guid>http://localhost:1313/tags/android/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pentest</title>
+      <link>http://localhost:1313/tags/pentest/</link>
+      <pubDate>Fri, 11 Sep 2020 22:26:25 +0300</pubDate>
+      <guid>http://localhost:1313/tags/pentest/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tips</title>
+      <link>http://localhost:1313/tags/tips/</link>
+      <pubDate>Wed, 28 Nov 2018 15:14:39 +1000</pubDate>
+      <guid>http://localhost:1313/tags/tips/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Malware</title>
+      <link>http://localhost:1313/tags/malware/</link>
+      <pubDate>Wed, 07 Nov 2018 14:39:39 +0300</pubDate>
+      <guid>http://localhost:1313/tags/malware/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Stealer</title>
+      <link>http://localhost:1313/tags/stealer/</link>
+      <pubDate>Wed, 07 Nov 2018 14:39:39 +0300</pubDate>
+      <guid>http://localhost:1313/tags/stealer/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rtf</title>
+      <link>http://localhost:1313/tags/rtf/</link>
+      <pubDate>Thu, 19 Jul 2018 14:19:03 +0300</pubDate>
+      <guid>http://localhost:1313/tags/rtf/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

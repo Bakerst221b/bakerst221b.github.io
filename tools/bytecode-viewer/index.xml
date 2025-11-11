@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bytecode Viewer on Analyst</title>
+    <link>http://localhost:1313/tools/bytecode-viewer/</link>
+    <description>Recent content in Bytecode Viewer on Analyst</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 09 Sep 2020 19:28:46 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tools/bytecode-viewer/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>🤖 Reverse Engineering Android Applications</title>
+      <link>http://localhost:1313/docs/artefacts/files/executables/android/</link>
+      <pubDate>Wed, 09 Sep 2020 19:28:46 +0300</pubDate>
+      <guid>http://localhost:1313/docs/artefacts/files/executables/android/</guid>
+      <description>&lt;p&gt;&lt;em&gt;In this article I&amp;rsquo;m assembling information about debugging applications on Android, then all possible to anti-debugging techniques and how they can be curcumvented (a little spoiler here - almoust always one way 😀) . The question I am trying to find an answer to is whether there is a silver bullet &amp;#x1f52b; for anti-debugging or not.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Some symbol definitions:&lt;/p&gt;&#xA;&lt;p&gt;&amp;#x26a0;&amp;#xfe0f; An important note from the forensics prospective.&lt;/p&gt;&#xA;&lt;p&gt;⛏ &lt;em&gt;How to circumvent this anti-debugging technique?&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>🤖 Reverse Engineering Android Applications</title>
+      <link>http://localhost:1313/docs/ttp/malware/analyse/executables/android/</link>
+      <pubDate>Wed, 09 Sep 2020 19:28:46 +0300</pubDate>
+      <guid>http://localhost:1313/docs/ttp/malware/analyse/executables/android/</guid>
+      <description>&lt;p&gt;&lt;em&gt;In this article I&amp;rsquo;m assembling information about debugging applications on Android, then all possible to anti-debugging techniques and how they can be curcumvented (a little spoiler here - almoust always one way 😀) . The question I am trying to find an answer to is whether there is a silver bullet &amp;#x1f52b; for anti-debugging or not.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Some symbol definitions:&lt;/p&gt;&#xA;&lt;p&gt;&amp;#x26a0;&amp;#xfe0f; An important note from the forensics prospective.&lt;/p&gt;&#xA;&lt;p&gt;⛏ &lt;em&gt;How to circumvent this anti-debugging technique?&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

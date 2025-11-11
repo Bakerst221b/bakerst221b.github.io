@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Aws on Analyst</title>
+    <link>http://localhost:1313/platforms/aws/</link>
+    <description>Recent content in Aws on Analyst</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 28 Jul 2022 15:14:39 +1000</lastBuildDate>
+    <atom:link href="http://localhost:1313/platforms/aws/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>⛅️ AWS Evidence Collection</title>
+      <link>http://localhost:1313/docs/todo/old/defences/aws/</link>
+      <pubDate>Mon, 12 Oct 2020 17:50:01 +0300</pubDate>
+      <guid>http://localhost:1313/docs/todo/old/defences/aws/</guid>
+      <description>&lt;p&gt;Are there any Shadow Cloud Accounts? Could be the first place to look when investigating.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;A ‘without-reboot’ snapshot is equivalent to a live acquisition, and a snapshot with a reboot is more like a traditional powered-off. Sheward, Mike. Hands-on Incident Response and Digital Forensics (p. 175). BCS Learning &amp;amp; Development Limited. Kindle Edition.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;ec2-instance-metadata&#34;&gt;EC2 instance metadata&lt;/h2&gt;&#xA;&lt;details&gt;&#xA;    &lt;summary&gt;Expand &amp;hellip;&lt;/summary&gt;&#xA;    &lt;p&gt;Some sensitive information can be stored in IMDS if it&amp;rsquo;s not configured properly. T1522 (MITRE). Not the case with service-managed accounts.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>📚 AWS Overview</title>
+      <link>http://localhost:1313/docs/attacks/cloud/aws/</link>
+      <pubDate>Thu, 28 Jul 2022 15:14:39 +1000</pubDate>
+      <guid>http://localhost:1313/docs/attacks/cloud/aws/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Here I am collecting some information that is needed in order to understand what to look for in the cloud and where.&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>AWS Forensic Environment Setup</title>
+      <link>http://localhost:1313/docs/tools/forensics-env/aws/</link>
+      <pubDate>Thu, 28 Jul 2022 15:14:39 +1000</pubDate>
+      <guid>http://localhost:1313/docs/tools/forensics-env/aws/</guid>
+      <description>&lt;p&gt;&lt;em&gt;First of all, data that is collected for analysis within the cloud needs to be handled properly as well.&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>AWS Configuration</title>
+      <link>http://localhost:1313/docs/artefacts/cloud/config/</link>
+      <pubDate>Fri, 02 Oct 2020 11:38:32 +0300</pubDate>
+      <guid>http://localhost:1313/docs/artefacts/cloud/config/</guid>
+      <description>&lt;h2 id=&#34;default-configurations&#34;&gt;Default Configurations&lt;/h2&gt;&#xA;&lt;p&gt;By default, SSH 22 and RDP 3389 are closed, but these are suggested to be opened when creaing them, warning how dangeroud this is. What&amp;rsquo;s &lt;a href=&#34;https://docs.aws.amazon.com/vpc/latest/mirroring/what-is-traffic-mirroring.html&#34;&gt;traffic mirroring&lt;/a&gt;? Using &lt;a href=&#34;https://docs.aws.amazon.com/vpc/latest/mirroring/tm-example-open-source.html&#34;&gt;this functionality with&lt;/a&gt; open-source tools.&lt;/p&gt;&#xA;&lt;h2 id=&#34;custom-config&#34;&gt;Custom Config&lt;/h2&gt;&#xA;&lt;p&gt;If SSM is enabled (System Manager Service), then activity is logged in CloudTrail. At least,  &lt;code&gt;AmazonSSMManagedInstanceCore&lt;/code&gt; needs to be attached to the instance profile role. Look at the policies and which users are granted the access. Also, commands run can be also restricted.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

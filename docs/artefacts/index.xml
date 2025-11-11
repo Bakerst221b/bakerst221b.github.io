@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>📜 Artefacts DB on Analyst</title>
+    <link>http://localhost:1313/docs/artefacts/</link>
+    <description>Recent content in 📜 Artefacts DB on Analyst</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 12 Oct 2020 17:50:01 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/docs/artefacts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>⬛️ Console Activity Analysis</title>
+      <link>http://localhost:1313/docs/artefacts/console/</link>
+      <pubDate>Mon, 12 Oct 2020 17:50:01 +0300</pubDate>
+      <guid>http://localhost:1313/docs/artefacts/console/</guid>
+      <description>&lt;p&gt;Remote vs local commands?&lt;/p&gt;&#xA;&lt;h2 id=&#34;windows&#34;&gt;Windows&lt;/h2&gt;&#xA;&lt;h2 id=&#34;macos&#34;&gt;macOS&lt;/h2&gt;&#xA;&lt;h2 id=&#34;linux&#34;&gt;Linux&lt;/h2&gt;</description>
+    </item>
+  </channel>
+</rss>

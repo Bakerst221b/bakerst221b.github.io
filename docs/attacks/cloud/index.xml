@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>📚 Cloud on Analyst</title>
+    <link>http://localhost:1313/docs/attacks/cloud/</link>
+    <description>Recent content in 📚 Cloud on Analyst</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 28 Jul 2022 15:14:39 +1000</lastBuildDate>
+    <atom:link href="http://localhost:1313/docs/attacks/cloud/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>📚 AWS Overview</title>
+      <link>http://localhost:1313/docs/attacks/cloud/aws/</link>
+      <pubDate>Thu, 28 Jul 2022 15:14:39 +1000</pubDate>
+      <guid>http://localhost:1313/docs/attacks/cloud/aws/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Here I am collecting some information that is needed in order to understand what to look for in the cloud and where.&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>📚 Overview</title>
+      <link>http://localhost:1313/docs/attacks/cloud/general/</link>
+      <pubDate>Sun, 20 Sep 2020 11:04:28 +0300</pubDate>
+      <guid>http://localhost:1313/docs/attacks/cloud/general/</guid>
+      <description>&lt;h2 id=&#34;virtualization-vs-cloud&#34;&gt;Virtualization vs Cloud&lt;/h2&gt;&#xA;&lt;p&gt;Cloud computing is the on-demand availability of resources.&lt;/p&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;PROS&lt;/th&gt;&#xA;          &lt;th&gt;CONS&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;flexibility, agility and choices&lt;/td&gt;&#xA;          &lt;td&gt;Security?&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;scale, efficiency and cost&lt;/td&gt;&#xA;          &lt;td&gt;might be hard to change providers (lock)&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;simplicity, encapsulated change management&lt;/td&gt;&#xA;          &lt;td&gt;lack of control (patches, for example)&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Up-to-date technologies&lt;/td&gt;&#xA;          &lt;td&gt;Reliability&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h2 id=&#34;types&#34;&gt;Types&lt;/h2&gt;&#xA;&lt;p&gt;Public (tenant) - most common. Share resources with other companies.&lt;/p&gt;&#xA;&lt;p&gt;Private - don&amp;rsquo;t share resources. More security and control.&lt;/p&gt;&#xA;&lt;p&gt;Hybrid - the part of the business that needs to grow uses the public option.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

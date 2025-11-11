@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Autopsy on Analyst</title>
+    <link>http://localhost:1313/tools/autopsy/</link>
+    <description>Recent content in Autopsy on Analyst</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 25 Apr 2021 17:18:04 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tools/autopsy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>⏱️ Timelines And Timestamps</title>
+      <link>http://localhost:1313/docs/ttp/timelines/</link>
+      <pubDate>Mon, 12 Oct 2020 17:50:01 +0300</pubDate>
+      <guid>http://localhost:1313/docs/ttp/timelines/</guid>
+      <description>&lt;p&gt;&lt;em&gt;As if investigations needed to be simplified, we must contend with various timestamp formats. There is a wide range of time formats available, and it is crucial to understand the differences to create an accurate timeline.&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>To Carry Out MockInv&#39;estigation. Part 1</title>
+      <link>http://localhost:1313/docs/blog/2021/06/toy-story-pd/</link>
+      <pubDate>Sun, 25 Apr 2021 17:18:04 +0300</pubDate>
+      <guid>http://localhost:1313/docs/blog/2021/06/toy-story-pd/</guid>
+      <description>&lt;p&gt;❗SPOILER ALERT!&lt;/p&gt;&#xA;&lt;p&gt;📆 &lt;code&gt;16/06/2021&lt;/code&gt; , &lt;em&gt;Wednesday&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;🕰 &lt;code&gt;09:21 PM&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;It was a very sunny day and a very nice a long walk that my daughter and I had before lunch. I feel uplifted because there is finally enough sun and green grass in my life! Unfortunately, no coffee today, since we don&amp;rsquo;t have BonAcqua, which might be not the best for drinking, but is indeed one of the best to prepare coffee (quoting my husband).&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>To Carry Out MockInv&#39;estigation. Part 2</title>
+      <link>http://localhost:1313/docs/blog/2021/06/magnet/</link>
+      <pubDate>Sun, 25 Apr 2021 17:18:04 +0300</pubDate>
+      <guid>http://localhost:1313/docs/blog/2021/06/magnet/</guid>
+      <description>&lt;p&gt;📆 &lt;code&gt;16/06/2021&lt;/code&gt; , &lt;em&gt;Wednesday&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;🕰 &lt;code&gt;09:21 PM&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;I had a 7-day license of Magnet AXIOM and I&amp;rsquo;ve decided to try this tool and compare it with others that I had. In 2021 May-June Magnet held a great event of a great value - Magnet SUMMIT with lots of very useful webinars and workshops. One of them was a case study using Magnet. I am going to follow these steps and study another way to solve a crime.&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Spoiling Dr Evil</title>
+      <link>http://localhost:1313/docs/blog/2021/03/spoiling-dr-evil/</link>
+      <pubDate>Mon, 01 Mar 2021 21:14:41 +0300</pubDate>
+      <guid>http://localhost:1313/docs/blog/2021/03/spoiling-dr-evil/</guid>
+      <description>&lt;p&gt;&lt;em&gt;I&amp;rsquo;ve decided to solve a puzzle per week just to keep myself &amp;ldquo;forensically fit&amp;rdquo;. This is my case study of Dr.Evil case (spoiler alert &amp;#x26a0;&amp;#xfe0f;). If you wish to solve it yourself, don&amp;rsquo;t read this blog post!&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;case-objectives&#34;&gt;Case Objectives&lt;/h2&gt;&#xA;&lt;p&gt;On &lt;code&gt;09/20/04&lt;/code&gt; , a Dell CPi notebook computer, serial # &lt;code&gt;VLQLW&lt;/code&gt;, was found abandoned along with a wireless PCMCIA card and an external homemade 802.11b antennae. It is suspected that this computer was used for hacking purposes, although cannot be tied to a hacking suspect, G=r=e=g S=c=h=a=r=d=t. (The equal signs are just to prevent web crawlers from indexing this name; there are no equal signs in the image files.) &lt;code&gt;Schardt&lt;/code&gt; also goes by the online nickname of &lt;code&gt;“Mr. Evil”&lt;/code&gt; and some of his associates have said that he would park his vehicle within range of Wireless Access Points (like Starbucks and other T-Mobile Hotspots) where he would then intercept internet traffic, attempting to get credit card numbers, usernames &amp;amp; passwords.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Frida-Ios-Dump on Analyst</title>
+    <link>http://localhost:1313/tools/frida-ios-dump/</link>
+    <description>Recent content in Frida-Ios-Dump on Analyst</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 01 Oct 2020 13:28:49 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tools/frida-ios-dump/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>📚 Decrypting iOS Applications</title>
+      <link>http://localhost:1313/docs/attacks/applications/mobile/ios-decrypting-applications/</link>
+      <pubDate>Thu, 01 Oct 2020 13:28:49 +0300</pubDate>
+      <guid>http://localhost:1313/docs/attacks/applications/mobile/ios-decrypting-applications/</guid>
+      <description>&lt;p&gt;&lt;em&gt;There are several tools available that perform decryption of iOS applications. iOS applications that are downloaded from AppStore are encrypted. AppStore simply won&amp;rsquo;t allow to upload an app without proper signature and encryption. To get .ipa from the device for further analysis one needs a tool. There are several tools available now (October, 2020). I&amp;rsquo;ve prepared a simple overview of the differences and how they work.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve taken a single application (in my case it was Bear) and decrypted it using several different tools. Frida-is-dumo and CrackerXI+ had the same output (md5 matches), clucth had a difference in several bytes.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

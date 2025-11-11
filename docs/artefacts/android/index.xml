@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>🦾 Android Artefacts on Analyst</title>
+    <link>http://localhost:1313/docs/artefacts/android/</link>
+    <description>Recent content in 🦾 Android Artefacts on Analyst</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 02 Jun 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/docs/artefacts/android/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Users</title>
+      <link>http://localhost:1313/docs/artefacts/android/users/</link>
+      <pubDate>Fri, 02 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/artefacts/android/users/</guid>
+      <description>&lt;p&gt;&lt;em&gt;This is about &amp;hellip; .&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Android Logs</title>
+      <link>http://localhost:1313/docs/artefacts/android/logs/</link>
+      <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/artefacts/android/logs/</guid>
+      <description>&lt;p&gt;&lt;code&gt;logcat&lt;/code&gt; command of adb is used to get system log. It&amp;rsquo;s an equivalent to Ubuntu syslog, as far as I understand. &lt;code&gt;/data/log/prev_dump.log&lt;/code&gt; file. On the device (in my case. Samsung Duo, Android 7, rooted) here I saw the latest records of &lt;code&gt;logcat&lt;/code&gt;, however the buffer contained a little more.&lt;/p&gt;&#xA;&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;&#xA;&lt;details&gt;&#xA;    &lt;summary&gt;Expand&amp;hellip;&lt;/summary&gt;&#xA;    Something here&#xA;&lt;/details&gt;</description>
+    </item>
+    <item>
+      <title>Backups</title>
+      <link>http://localhost:1313/docs/artefacts/android/backup/</link>
+      <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/artefacts/android/backup/</guid>
+      <description>&lt;p&gt;Backups are either made automatically or manually with &lt;code&gt;adb backup&lt;/code&gt;. These backups can be stored in the cloud or locally on the user&amp;rsquo;s PC.&lt;/p&gt;&#xA;&lt;h3 id=&#34;-tools&#34;&gt;🛠 Tools&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;adb&lt;/strong&gt;. Used to make a backup.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;abc.jar&lt;/strong&gt;. Used to convert the &lt;code&gt;ab&lt;/code&gt; (adb uses this file format) file into a &lt;code&gt;tar&lt;/code&gt;. Available for free.&lt;/p&gt;&#xA;&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;&#xA;&lt;details&gt;&#xA;    &lt;summary&gt;Expand&amp;hellip;&lt;/summary&gt;&#xA;    Something here&#xA;&lt;/details&gt;</description>
+    </item>
+    <item>
+      <title>Geo</title>
+      <link>http://localhost:1313/docs/artefacts/android/geo/</link>
+      <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/artefacts/android/geo/</guid>
+      <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/data/data/com.google.android.apps.maps/databases/gmm_storage.db&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# User Photos&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/data/media/0/DCIM/Camera&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/data/data/com.androidproviders.media/databases/external.db&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/data/media/0/bluetooth&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/data/media/0/Download&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/data/media/0/Pictures/Screenshots&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/data/media/0/Pictures/Twitter&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;&#xA;&lt;details&gt;&#xA;    &lt;summary&gt;Expand&amp;hellip;&lt;/summary&gt;&#xA;    Something here&#xA;&lt;/details&gt;</description>
+    </item>
+    <item>
+      <title>RAM</title>
+      <link>http://localhost:1313/docs/artefacts/android/ram/</link>
+      <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/artefacts/android/ram/</guid>
+      <description>&lt;p&gt;For mobile platforms (iOS and Android) there is currently no tool available to get a full copy of RAM. However, it&amp;rsquo;s still possible to take memory space of each process running.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;💡 Research 🔬 Top secret yet&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;To get the list of running processes:&lt;/p&gt;&#xA;&lt;p&gt;To get the memory space of a process:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;frida-dump &lt;span style=&#34;color:#75715e&#34;&gt;# had some bug for iOS, py file might need manual pathing.&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;clutch&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;objection&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;## References&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;details&gt;&#xA;    &lt;summary&gt;Expand&amp;hellip;&lt;/summary&gt;&#xA;    Something here&#xA;&lt;/details&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Android Config</title>
+      <link>http://localhost:1313/docs/artefacts/android/config/</link>
+      <pubDate>Fri, 02 Oct 2020 11:38:32 +0300</pubDate>
+      <guid>http://localhost:1313/docs/artefacts/android/config/</guid>
+      <description>&lt;h2 id=&#34;application-permissions&#34;&gt;Application Permissions:&lt;/h2&gt;&#xA;&lt;p&gt;• /data/system/packages.xml&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

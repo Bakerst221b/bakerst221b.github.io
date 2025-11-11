@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>📚 Network Layer Protocols on Analyst</title>
+    <link>http://localhost:1313/docs/attacks/protocols/netlayer/</link>
+    <description>Recent content in 📚 Network Layer Protocols on Analyst</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 20 Sep 2020 11:28:16 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/docs/attacks/protocols/netlayer/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>📚 Network Layer Description</title>
+      <link>http://localhost:1313/docs/attacks/protocols/netlayer/overview/</link>
+      <pubDate>Sun, 20 Sep 2020 11:28:16 +0300</pubDate>
+      <guid>http://localhost:1313/docs/attacks/protocols/netlayer/overview/</guid>
+      <description>&lt;p&gt;Network Address Translation - mostly to map local IPs to public ones, but sometimes used to map between two public or local networks.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Static&lt;/strong&gt; - one to one mapping.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Dynamic&lt;/strong&gt; - many to many.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Overload&lt;/strong&gt; - many to one.&lt;/p&gt;&#xA;&lt;h2 id=&#34;attacks&#34;&gt;Attacks&lt;/h2&gt;&#xA;&lt;h3 id=&#34;mac-flooding&#34;&gt;MAC flooding&lt;/h3&gt;&#xA;&lt;h3 id=&#34;span-port&#34;&gt;Span port&lt;/h3&gt;&#xA;&lt;p&gt;Everytime you receive messages fir these ports (say 1 to 10), also send them to the span port 25. But to turn it on, you need an access to switch&amp;rsquo;s config. Moreover, some switches are made in a way not to let span port talk, only listen. It&amp;rsquo;s a useful option for admins (basically turning a switch into some sort of lame hub). CISCO - SPAN (Switched Port Analyser), RSPAN (Remote Switched Port Analyser). RAP (Roving Analysis Port), 3Com switches.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>📚 ARP</title>
+      <link>http://localhost:1313/docs/attacks/protocols/netlayer/arp/</link>
+      <pubDate>Sun, 20 Sep 2020 11:28:16 +0300</pubDate>
+      <guid>http://localhost:1313/docs/attacks/protocols/netlayer/arp/</guid>
+      <description>&lt;p&gt;&lt;em&gt;This article is about ARP protocol. It&amp;rsquo;s used to map IP addresses to physical (MAC) addresses. Devices usually keep an ARP cache not to send ARP request continuously. Also there are certain attacks on ARP that exploit its internals.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;analogy&#34;&gt;Analogy&lt;/h2&gt;&#xA;&lt;p&gt;If we were to compare a device to a human body, we could say that CPU is a brain 🧠, battery power is a heart ♥️, camera is an eye 👁 and NIC is a mouth 👄 (yeah, let&amp;rsquo;s forget about microphones 🎤 for a while).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>📚 ICMP</title>
+      <link>http://localhost:1313/docs/attacks/protocols/netlayer/icmp/</link>
+      <pubDate>Sun, 20 Sep 2020 11:28:16 +0300</pubDate>
+      <guid>http://localhost:1313/docs/attacks/protocols/netlayer/icmp/</guid>
+      <description>&lt;p&gt;ICMP protocol is needed for troubleshooting.&lt;/p&gt;&#xA;&lt;p&gt;For an TCP/IP stack here is what ICMP request looks like in a frame:&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;images/icmp_request_packet.png&#34; alt=&#34;icmp_request_packet&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Even though ICMP belongs itself to the network layer.&lt;/p&gt;&#xA;&lt;p&gt;If there is some problem during any requst (HTTP, FTP or any other request on any other layer), ICMP error response might be sent. Its type can help in troubleshooting.&lt;/p&gt;&#xA;&lt;h2 id=&#34;message-types&#34;&gt;Message Types&lt;/h2&gt;&#xA;&lt;p&gt;Each message type will have a different header.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>📚 IP</title>
+      <link>http://localhost:1313/docs/attacks/protocols/netlayer/ip/</link>
+      <pubDate>Sun, 20 Sep 2020 11:28:16 +0300</pubDate>
+      <guid>http://localhost:1313/docs/attacks/protocols/netlayer/ip/</guid>
+      <description>&lt;p&gt;&lt;em&gt;This article is about IP protocol (v4, v6 and IPX).&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;ipv4&#34;&gt;IPv4&lt;/h2&gt;&#xA;&lt;p&gt;Number on top and along the left edge are bits (not bytes). The addresses itselves are 32 bits long.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;images/ipv4.png&#34; alt=&#34;ipv4&#34;&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;reserved-addresses&#34;&gt;Reserved Addresses&lt;/h3&gt;&#xA;&lt;p&gt;&lt;code&gt;10.0.0.0&lt;/code&gt; - &lt;code&gt;10.255.255.255&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;172.16.0.0&lt;/code&gt; - &lt;code&gt;172.31.255.255&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;192.168.0.0&lt;/code&gt; - &lt;code&gt;192.168.255.255&lt;/code&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;fragmentation&#34;&gt;Fragmentation&lt;/h3&gt;&#xA;&lt;h3 id=&#34;data-transmission-types&#34;&gt;Data Transmission Types&lt;/h3&gt;&#xA;&lt;h4 id=&#34;unicast&#34;&gt;Unicast&lt;/h4&gt;&#xA;&lt;p&gt;Only one host can receive and read a message. Other PCs will discard it (unless in a promiscuous mode or on a hub).&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

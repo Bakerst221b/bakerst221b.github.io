@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>🗄 File Systems on Analyst</title>
+    <link>http://localhost:1313/docs/ttp/data-recovery/file-systems/</link>
+    <description>Recent content in 🗄 File Systems on Analyst</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 28 Jul 2022 15:14:39 +1000</lastBuildDate>
+    <atom:link href="http://localhost:1313/docs/ttp/data-recovery/file-systems/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FAT Data Recovery</title>
+      <link>http://localhost:1313/docs/ttp/data-recovery/file-systems/fat/</link>
+      <pubDate>Thu, 28 Jul 2022 15:14:39 +1000</pubDate>
+      <guid>http://localhost:1313/docs/ttp/data-recovery/file-systems/fat/</guid>
+      <description>&lt;h2 id=&#34;fat32-file-recovery&#34;&gt;FAT32 File Recovery&lt;/h2&gt;&#xA;&lt;p&gt;First, get familiar with the FAT file system. There are some things specific to this FS in the way the files are created and deleted. We basically need to follow the file deletion steps in the reversed order.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Change &lt;code&gt;0xE5&lt;/code&gt; values in the directory entry set&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Change FAT table values to indicate allocated (not &lt;code&gt;0x00000000&lt;/code&gt;)&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Use the short file name directory entry (starting cluster and file size)&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Determine the cluster size using the volume boot record data&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Calculate the number of clusters needed (&lt;code&gt;int clusters = file_size / cluster_size&lt;/code&gt;). Keep in mind, that file size for folders is always &lt;code&gt;00 00 00 00&lt;/code&gt;. So, don&amp;rsquo;t confuse a file with a folder.&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Rechain FAT entries of the file&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;🔎 Intrestingly enough, this method worked on a FAT32 formatted flash drive. Why?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>NTFS Data Recovery</title>
+      <link>http://localhost:1313/docs/ttp/data-recovery/file-systems/ntfs/</link>
+      <pubDate>Thu, 28 Jul 2022 15:14:39 +1000</pubDate>
+      <guid>http://localhost:1313/docs/ttp/data-recovery/file-systems/ntfs/</guid>
+      <description>&lt;h3 id=&#34;steps&#34;&gt;Steps&lt;/h3&gt;&#xA;&lt;p&gt;To get familiar with NTFS file creation and deletion, see &lt;a href=&#34;http://localhost:1313/docs/dfir/data-storage/file-systems/ntfs#file-creation-and-deletion&#34;&gt;here&lt;/a&gt;. In general, there are resident and non-resident files. Resident files are small and have their contents in the MFT record itself. Non-resident files are bigger and their contents is stored elsewhere on the disk.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;⚠️ Since MFT records get reused once they are deallocated on the first-free basis, resident files get overwritten sooner.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;For resident files, use a regular expression for finding &lt;code&gt;FILE0&lt;/code&gt; records: &lt;code&gt;\x46\x49\x4C\x45.{18}[\x00\x02]&lt;/code&gt; [&lt;a href=&#34;https://www.coursera.org/learn/windows-os-forensics/lecture/VMUiU/ntfs-file-recovery&#34;&gt;2&lt;/a&gt;]. This will find all the &lt;code&gt;FILE&lt;/code&gt; records that are not newly created. Remember, once a file is created its sequence number is &lt;code&gt;01&lt;/code&gt;. Whenever the &lt;code&gt;FILE&lt;/code&gt; record is deleted (deallocated, it&amp;rsquo;s never actually deleted), the sequence number gets incremented. So, if this record was deallocated once, its sequence number will be &lt;code&gt;0x02&lt;/code&gt;. But! This record can be reused multiple times! When I did the lab, one poor record was reused over and over again, and its sequence number got as big as &lt;code&gt;0x08&lt;/code&gt;, imagine that! So, I would fix the regular expression above to address these cases: &lt;code&gt;\x46\x49\x4C\x45.{18}^[\x00\x01]&lt;/code&gt; (todo).&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

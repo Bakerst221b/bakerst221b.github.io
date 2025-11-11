@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>File Systems on Analyst</title>
+    <link>http://localhost:1313/docs/artefacts/fs/</link>
+    <description>Recent content in File Systems on Analyst</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 18 Oct 2020 22:35:40 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/docs/artefacts/fs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>File Systems Overview</title>
+      <link>http://localhost:1313/docs/artefacts/fs/overview/</link>
+      <pubDate>Sun, 18 Oct 2020 22:35:40 +0300</pubDate>
+      <guid>http://localhost:1313/docs/artefacts/fs/overview/</guid>
+      <description>&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Name&lt;/th&gt;&#xA;          &lt;th&gt;Partition size (min/max)&lt;/th&gt;&#xA;          &lt;th&gt;Cluster size (min/max)&lt;/th&gt;&#xA;          &lt;th&gt;File Max Size&lt;/th&gt;&#xA;          &lt;th&gt;&lt;code&gt;fstab&lt;/code&gt; code&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;FAT16&lt;/td&gt;&#xA;          &lt;td&gt;16Mb/2Gb&lt;/td&gt;&#xA;          &lt;td&gt;2Kb/32Kb&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;FAT32&lt;/td&gt;&#xA;          &lt;td&gt;32 KB (officially), 512 bytes (unofficially)- 2Tb 🔍&lt;/td&gt;&#xA;          &lt;td&gt;512b - 32Kb/64Kb (for large volumes)&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;NTFS 1.1&lt;/td&gt;&#xA;          &lt;td&gt;500Mb/8Gb 🔍&lt;/td&gt;&#xA;          &lt;td&gt;512B/8Kb&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;NTFS 3.0&lt;/td&gt;&#xA;          &lt;td&gt;500Mb/16EB&lt;/td&gt;&#xA;          &lt;td&gt;512B/64Kb&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;HFS&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;HFS+&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;APFS&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;ext2&lt;/td&gt;&#xA;          &lt;td&gt;16Tb&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;2Tb&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;ext2&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;ext3&lt;/td&gt;&#xA;          &lt;td&gt;16Tb&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;2Tb&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;ext3&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;ext4&lt;/td&gt;&#xA;          &lt;td&gt;1Eb&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;16Tb&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;ext4&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;ReiserFS&lt;/td&gt;&#xA;          &lt;td&gt;16Tb&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;8Tb&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;resiserfs&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;JFS&lt;/td&gt;&#xA;          &lt;td&gt;32Pb&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;4Tb&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;jfs&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;XFS&lt;/td&gt;&#xA;          &lt;td&gt;16Eb&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;8Eb&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;xfs&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Btrfs&lt;/td&gt;&#xA;          &lt;td&gt;16Eb&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;16Eb&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;HPFS&lt;/td&gt;&#xA;          &lt;td&gt;4Mb-2Tb&lt;/td&gt;&#xA;          &lt;td&gt;512b - 64Kb&lt;/td&gt;&#xA;          &lt;td&gt;2Gb&lt;/td&gt;&#xA;          &lt;td&gt;n/a&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;CDFS&lt;/td&gt;&#xA;          &lt;td&gt;up to 700Mb&lt;/td&gt;&#xA;          &lt;td&gt;n/a&lt;/td&gt;&#xA;          &lt;td&gt;700Mb&lt;/td&gt;&#xA;          &lt;td&gt;iso9660&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;LFS&lt;/td&gt;&#xA;          &lt;td&gt;depends on the implementation&lt;/td&gt;&#xA;          &lt;td&gt;depends on the implementation&lt;/td&gt;&#xA;          &lt;td&gt;depends on the implementation&lt;/td&gt;&#xA;          &lt;td&gt;depends on the implementation&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;NSS&lt;/td&gt;&#xA;          &lt;td&gt;up to 8Tb&lt;/td&gt;&#xA;          &lt;td&gt;up to 64Kb&lt;/td&gt;&#xA;          &lt;td&gt;8Tb&lt;/td&gt;&#xA;          &lt;td&gt;n/a&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;p&gt;Other file systems to consider for the exam:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>APFS</title>
+      <link>http://localhost:1313/docs/artefacts/fs/apfs/</link>
+      <pubDate>Sun, 18 Oct 2020 22:35:40 +0300</pubDate>
+      <guid>http://localhost:1313/docs/artefacts/fs/apfs/</guid>
+      <description>&lt;h2 id=&#34;apfs&#34;&gt;APFS&lt;/h2&gt;&#xA;&lt;p&gt;APM and APFS seem to be unable to live together. APFS requires GUID. I have come to that conclusion when I tried formating the drive with a APM and then APFS with DiskUtility. The same goes for the MBR. APFS &lt;strong&gt;requires&lt;/strong&gt; GPT.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://developer.apple.com/support/downloads/Apple-File-System-Reference.pdf&#34;&gt;https://developer.apple.com/support/downloads/Apple-File-System-Reference.pdf&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Advantages over HFS+&lt;/strong&gt;:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Optimized for Flash/SSD Storage.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Full disk encryption is &lt;em&gt;natively&lt;/em&gt; supported.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Snapshot support.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Timestamps are to-the-nanosecond.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;9 quintillion files at most (18 zeroes).&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Clones (aka copy-on-write). When the file is copied, it&amp;rsquo;s actually not duplicated. Instead, a new pointer is created. Once either of the files get changed, the actual copying process takes place.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>ExtX</title>
+      <link>http://localhost:1313/docs/artefacts/fs/extx/</link>
+      <pubDate>Sun, 18 Oct 2020 22:35:40 +0300</pubDate>
+      <guid>http://localhost:1313/docs/artefacts/fs/extx/</guid>
+      <description>&lt;h2 id=&#34;2&#34;&gt;2&lt;/h2&gt;&#xA;&lt;p&gt;No journaling&lt;/p&gt;&#xA;&lt;h2 id=&#34;3&#34;&gt;3&lt;/h2&gt;&#xA;&lt;p&gt;Same but + journaling&lt;/p&gt;&#xA;&lt;h2 id=&#34;4&#34;&gt;4&lt;/h2&gt;&#xA;&lt;p&gt;New FS&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>FAT</title>
+      <link>http://localhost:1313/docs/artefacts/fs/fat/</link>
+      <pubDate>Sun, 18 Oct 2020 22:35:40 +0300</pubDate>
+      <guid>http://localhost:1313/docs/artefacts/fs/fat/</guid>
+      <description>&lt;p&gt;Any FAT partition has two main parts: system area and data area. System area contains FAT boot record (every file system has a boot record), 1st FAT and 2nd FAT. FAT12 and FAT16 also have Root directory in the system area. Data area consists of Root directory in case of FAT32 and file and subdirectory data in clusters.&lt;/p&gt;&#xA;&lt;h3 id=&#34;versions&#34;&gt;Versions&lt;/h3&gt;&#xA;&lt;h4 id=&#34;fat12&#34;&gt;FAT12&lt;/h4&gt;&#xA;&lt;p&gt;For the cluster addressing there were 12 bits available, which is 2^12 clusters at most (4096 clusters).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HFS and HFS&#43;</title>
+      <link>http://localhost:1313/docs/artefacts/fs/hfs/</link>
+      <pubDate>Sun, 18 Oct 2020 22:35:40 +0300</pubDate>
+      <guid>http://localhost:1313/docs/artefacts/fs/hfs/</guid>
+      <description>&lt;h2 id=&#34;hfs&#34;&gt;HFS&lt;/h2&gt;&#xA;&lt;h2 id=&#34;hfs-1&#34;&gt;HFS+&lt;/h2&gt;&#xA;&lt;p&gt;Since 1998, since macOS 8.1. Was replaced by APFS.&lt;/p&gt;&#xA;&lt;p&gt;Didn&amp;rsquo;t &lt;em&gt;natively&lt;/em&gt; support full disk encryption (FV2 was added later). Timestamps were only to-the-second. Support up to 4 billion files.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://developer.apple.com/library/archive/technotes/tn/tn1150.html&#34;&gt;https://developer.apple.com/library/archive/technotes/tn/tn1150.html&lt;/a&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Supports large files&lt;/li&gt;&#xA;&lt;li&gt;Efficient disk space usage&lt;/li&gt;&#xA;&lt;li&gt;unicode for filenames&lt;/li&gt;&#xA;&lt;li&gt;name forks&lt;/li&gt;&#xA;&lt;li&gt;file compression&lt;/li&gt;&#xA;&lt;li&gt;journaling. Journaling is a mechanism in which changes to a disk are first committed to a journal file, which acts as a buffer to ensure that all disk update transactions are fully completed. &lt;a href=&#34;#1&#34;&gt;1&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;dynamic resizing, defragmentation&lt;/li&gt;&#xA;&lt;li&gt;not only for MacOS&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;&#xA;&lt;h3 id=&#34;1&#34;&gt;1&lt;/h3&gt;&#xA;&lt;p&gt;Sheward, Mike. Hands-on Incident Response and Digital Forensics (p. 138). BCS Learning &amp;amp; Development Limited. Kindle Edition.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>NTFS</title>
+      <link>http://localhost:1313/docs/artefacts/fs/ntfs/</link>
+      <pubDate>Sun, 18 Oct 2020 22:35:40 +0300</pubDate>
+      <guid>http://localhost:1313/docs/artefacts/fs/ntfs/</guid>
+      <description>&lt;p&gt;Developed in collaboration with IBM. POSIX compliant. Official docs for NTFS &lt;a href=&#34;http://ntfs.com/ntfs-mft.htm&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;❗️ Everything is a file!&#xA;❗️ All offsets are relative to the start of the data structures.&#xA;❗️ Apple macOS machines can read NTFS devices but do not support writing to them by default.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;The entire logical volume is a data area (in contrast to FAT where there is a system area as well ❓).&lt;/p&gt;&#xA;&lt;p&gt;In a Microsoft NT File System (NTFS), hot fixing of disk sectors &lt;strong&gt;prevents data from being stored in a bad sector or cluster&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>ReiserFS</title>
+      <link>http://localhost:1313/docs/artefacts/fs/reiser/</link>
+      <pubDate>Sun, 18 Oct 2020 22:35:40 +0300</pubDate>
+      <guid>http://localhost:1313/docs/artefacts/fs/reiser/</guid>
+      <description>&lt;p&gt;Allows storing multiple files in a single sector. exclamation mark ❗️Unique to this FS!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>XFS</title>
+      <link>http://localhost:1313/docs/artefacts/fs/xfs/</link>
+      <pubDate>Sun, 18 Oct 2020 22:35:40 +0300</pubDate>
+      <guid>http://localhost:1313/docs/artefacts/fs/xfs/</guid>
+      <description>&lt;p&gt;Good for multimedia files.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Flash Memory Overview</title>
+      <link>http://localhost:1313/docs/artefacts/fs/ssd/</link>
+      <pubDate>Mon, 28 Sep 2020 13:23:24 +0300</pubDate>
+      <guid>http://localhost:1313/docs/artefacts/fs/ssd/</guid>
+      <description>&lt;p&gt;&lt;em&gt;In this article I&amp;rsquo;m going to give a general overview of how SSD works and how it&amp;rsquo;s different from an HDD.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;SSDs consist of NAND memory chips, a power terminal and a data terminal. Due to its nature, data cannot be overwritten, therefore, it needs to be white clean first.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;🔎 Does it mean that there is no data in the unallocated or slack space?&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;Data is written in pages and deleted in blocks (multiple pages).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HDD Overview</title>
+      <link>http://localhost:1313/docs/artefacts/fs/hdd/</link>
+      <pubDate>Mon, 28 Sep 2020 13:23:24 +0300</pubDate>
+      <guid>http://localhost:1313/docs/artefacts/fs/hdd/</guid>
+      <description>&lt;p&gt;&lt;em&gt;In this article I&amp;rsquo;m going to give a general overview of how HDDs work.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;floppy&#34;&gt;Floppy&lt;/h2&gt;&#xA;&lt;p&gt;Floppy disks &amp;#x1f4be; are like dinosaurs 🦕. They are ancient, not usually used nowadays. But the mechanism is very much like the one found in an HDD that&amp;rsquo;s why I&amp;rsquo;ve found it useful to start the intro to HDD from a simplier mechanism. In the square brackerts I&amp;rsquo;ll be giving an analogy with a person reading a book (inspired by &lt;a href=&#34;https://www.takeupcode.com/podcast/226-filesystem-chs-vs-lba-modes/&#34;&gt;takeupcode.com&lt;/a&gt;).&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

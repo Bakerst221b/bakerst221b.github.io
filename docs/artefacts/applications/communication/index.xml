@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>👥 Communication on Analyst</title>
+    <link>http://localhost:1313/docs/artefacts/applications/communication/</link>
+    <description>Recent content in 👥 Communication on Analyst</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 15 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/docs/artefacts/applications/communication/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>💬 Slack</title>
+      <link>http://localhost:1313/docs/artefacts/applications/communication/slack/</link>
+      <pubDate>Mon, 12 Oct 2020 17:50:01 +0300</pubDate>
+      <guid>http://localhost:1313/docs/artefacts/applications/communication/slack/</guid>
+      <description>&lt;p&gt;&lt;em&gt;These are primarily my course notes from &lt;a href=&#34;https://www.magnetforensics.com/resources/slacking-on-insider-threats-investigative-and-monitoring-approaches-to-use-within-slack-to-locate-bad-actors-webinar/&#34;&gt;Slacking on insider threat&lt;/a&gt; by Magnet Forensics. Thank you, guys, for sharing! I will put a quote paragraph with a 💡at the beginning whenever I have some ideas or thoughts along the way.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Instant messaging with channels and file sharing. Also, provides logs and eDiscovery.&lt;/p&gt;&#xA;&lt;p&gt;Cloud-based, collection is not enough (non reviewable format), your plan matters, tons of functionality.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Workspaces&lt;/li&gt;&#xA;&lt;li&gt;Channels&lt;/li&gt;&#xA;&lt;li&gt;DMs&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;With certain settings users of workspace can override retention settings. It’s recommended to turn this feature off, so that all logs are preserved.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>📬 Mail</title>
+      <link>http://localhost:1313/docs/artefacts/applications/communication/mail/</link>
+      <pubDate>Mon, 12 Oct 2020 17:50:01 +0300</pubDate>
+      <guid>http://localhost:1313/docs/artefacts/applications/communication/mail/</guid>
+      <description>&lt;h2 id=&#34;general-reference&#34;&gt;General Reference&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title>💬 Messaging Data</title>
+      <link>http://localhost:1313/docs/artefacts/applications/communication/other/</link>
+      <pubDate>Mon, 12 Oct 2020 17:50:01 +0300</pubDate>
+      <guid>http://localhost:1313/docs/artefacts/applications/communication/other/</guid>
+      <description>&lt;p&gt;Electron is a framework that is available for building applications, cross-platform. You’re creating a web-application that can be used as a desktop one (implementing both back- and frontend). Backend - node.js, and frontend - Chrome. So, a lot of artifacts can be shared with Chrome and buddies. It’s in wide use. For example, ⚠️ WhatsApp and Skype use it.&lt;/p&gt;&#xA;&lt;h3 id=&#34;skype&#34;&gt;Skype&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;Tools&lt;/strong&gt; 🛠: Belkasoft EC, &lt;a href=&#34;https://www.nirsoft.net/utils/skype_log_view.html&#34;&gt;SkypeLogView&lt;/a&gt; (NirSoft)&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;C:\Users\%Username%\AppData\Roaming\Skype&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Skype: Path: C:| Users&lt;span style=&#34;color:#ae81ff&#34;&gt;\ \*\A&lt;/span&gt;ppData&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;Local&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;Packages&lt;span style=&#34;color:#ae81ff&#34;&gt;\M&lt;/span&gt;icrosoft.SkypeApp&lt;span style=&#34;color:#ae81ff&#34;&gt;\_\*\ &lt;/span&gt;Localstate&lt;span style=&#34;color:#ae81ff&#34;&gt;\\&lt;/span&gt;*&lt;span style=&#34;color:#ae81ff&#34;&gt;\m&lt;/span&gt;ain. db&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Skype: Path: C:&lt;span style=&#34;color:#ae81ff&#34;&gt;\D&lt;/span&gt;ocuments and Settings&lt;span style=&#34;color:#ae81ff&#34;&gt;\\&lt;/span&gt;*&lt;span style=&#34;color:#ae81ff&#34;&gt;\A&lt;/span&gt;pplication Data&lt;span style=&#34;color:#ae81ff&#34;&gt;\S&lt;/span&gt;kype&lt;span style=&#34;color:#ae81ff&#34;&gt;\\&lt;/span&gt;*&lt;span style=&#34;color:#ae81ff&#34;&gt;\m&lt;/span&gt;ain.db&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;xbox&#34;&gt;Xbox&lt;/h3&gt;&#xA;&lt;p&gt;Windows: &lt;code&gt;C:\Users\%Username%\AppData\Local\LocalState\ModelManager\Messaging&lt;/code&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>WhatsApp</title>
+      <link>http://localhost:1313/docs/artefacts/applications/communication/whatsapp/</link>
+      <pubDate>Sun, 15 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/artefacts/applications/communication/whatsapp/</guid>
+      <description>&lt;p&gt;*This article is a summary of all possible location of WhatsApp app on mobile and desktop and the recommendations on acquisition and analysis. *&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

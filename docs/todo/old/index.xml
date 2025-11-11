@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Old on Analyst</title>
+    <link>http://localhost:1313/docs/todo/old/</link>
+    <description>Recent content in Old on Analyst</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 28 Jul 2022 15:14:39 +1000</lastBuildDate>
+    <atom:link href="http://localhost:1313/docs/todo/old/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>⛅️ Cloud Storage</title>
+      <link>http://localhost:1313/docs/todo/old/cloud/</link>
+      <pubDate>Mon, 12 Oct 2020 17:50:01 +0300</pubDate>
+      <guid>http://localhost:1313/docs/todo/old/cloud/</guid>
+      <description>&lt;h2 id=&#34;windows&#34;&gt;Windows&lt;/h2&gt;&#xA;&lt;p&gt;For OneDrive the most useful artifacts are stored locally. If you get access to the account online - may see the deleted items and their versions. &lt;code&gt;C:\Users\%Username%\AppData\Local\Microsoft\OneDrive\logs&lt;/code&gt;. This folder contains &lt;code&gt;Personal&lt;/code&gt; and &lt;code&gt;Common&lt;/code&gt;. Neither has anything of particular interest, but may be an indicator, that the software was used.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;⚠️ Business version of OneDrive adds a few lines of code to the start of every doc, thus MD5 hashes will differ.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>🖥 System Information</title>
+      <link>http://localhost:1313/docs/todo/old/system-info/</link>
+      <pubDate>Mon, 12 Oct 2020 17:50:01 +0300</pubDate>
+      <guid>http://localhost:1313/docs/todo/old/system-info/</guid>
+      <description>&lt;h2 id=&#34;windows&#34;&gt;Windows&lt;/h2&gt;&#xA;&lt;h3 id=&#34;installed-programs-and-applications&#34;&gt;Installed programs and applications&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;Key&lt;/strong&gt; 🔑: &lt;code&gt;Microsoft\Windows\CurrentVersion\Uninstall&lt;/code&gt;. There can be some data for programs that do not exist on the system anymore. The last write time is when the application was installed.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Key&lt;/strong&gt; 🔑 &lt;code&gt;Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore&lt;/code&gt; for installed Microsoft applications. Defines between those that were installed for a specific user or system-wide.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Key&lt;/strong&gt; 🔑: &lt;code&gt;Wiw6432Node&lt;/code&gt; (&lt;code&gt;SYSTEM&lt;/code&gt; hive root node) - those that run a 32-bit mode. Separate sub-keys for different versions of a program.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>🌎 Network Traffic</title>
+      <link>http://localhost:1313/docs/todo/old/traffic/</link>
+      <pubDate>Mon, 12 Oct 2020 17:50:01 +0300</pubDate>
+      <guid>http://localhost:1313/docs/todo/old/traffic/</guid>
+      <description>&lt;h2 id=&#34;collection&#34;&gt;Collection&lt;/h2&gt;&#xA;&lt;p&gt;Most of the devices keep some logs. As for the network-related issues are switches, routers, firewalls, IDS and IPS, web proxies, DC and authentication servers, DCHP servers and application servers.&lt;/p&gt;&#xA;&lt;p&gt;SIEMs are log aggregators. When configured correctly, all logs and events from all systems in the enterprise flows to a centralised repository where they can then be analysed. Sometimes these SIEM analyse what&amp;rsquo;s normal and what&amp;rsquo;s not. However, they are quite costly 💰.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>📚 OSINT Techniques</title>
+      <link>http://localhost:1313/docs/todo/old/osint/</link>
+      <pubDate>Thu, 28 Jul 2022 15:14:39 +1000</pubDate>
+      <guid>http://localhost:1313/docs/todo/old/osint/</guid>
+      <description>&lt;p&gt;&lt;em&gt;This all about searching for the information publicly available.&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>💬❗️Notifications</title>
+      <link>http://localhost:1313/docs/todo/old/notification/</link>
+      <pubDate>Mon, 12 Oct 2020 17:50:01 +0300</pubDate>
+      <guid>http://localhost:1313/docs/todo/old/notification/</guid>
+      <description>&lt;h2 id=&#34;windows&#34;&gt;Windows&lt;/h2&gt;&#xA;&lt;p&gt;Toast notifications on Windows 10: &lt;code&gt;C:\Users\%Username%\AppData\Local\Microsoft\Windows\Notifications&lt;/code&gt; contains &lt;code&gt;wpndatabase.db&lt;/code&gt; and &lt;code&gt;appdb.dat&lt;/code&gt;. Both can be opened with 🛠 SQLite Browser.&lt;/p&gt;&#xA;&lt;h3 id=&#34;calendars&#34;&gt;Calendars&lt;/h3&gt;</description>
+    </item>
+    <item>
+      <title>🗣 Voice Assistants</title>
+      <link>http://localhost:1313/docs/todo/old/voice/</link>
+      <pubDate>Mon, 12 Oct 2020 17:50:01 +0300</pubDate>
+      <guid>http://localhost:1313/docs/todo/old/voice/</guid>
+      <description>&lt;h2 id=&#34;windows&#34;&gt;Windows&lt;/h2&gt;&#xA;&lt;p&gt;Cortana is a great source of information. &lt;code&gt;C:\Users\%Username%\AppData\Local\Packages\Microsoft.Windows.Cortana_xxxx\LocalState\ESEDatabase_CortanaCoreInstance\CortanaCoreDb.db&lt;/code&gt; contains user locations, reminders etc. Use a 🛠 SQLite browser to see the contents, or export to &lt;code&gt;cvs&lt;/code&gt; and work in Excel.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>📈 User Statistics</title>
+      <link>http://localhost:1313/docs/todo/old/stats/</link>
+      <pubDate>Thu, 28 Jul 2022 15:14:39 +1000</pubDate>
+      <guid>http://localhost:1313/docs/todo/old/stats/</guid>
+      <description>&lt;p&gt;&lt;em&gt;This is about &amp;hellip; .&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>🔦 Search History</title>
+      <link>http://localhost:1313/docs/todo/old/search/</link>
+      <pubDate>Thu, 28 Jul 2022 15:14:39 +1000</pubDate>
+      <guid>http://localhost:1313/docs/todo/old/search/</guid>
+      <description>&lt;p&gt;&lt;em&gt;This is about &amp;hellip; .&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Legal Acts</title>
+      <link>http://localhost:1313/docs/todo/old/legal/</link>
+      <pubDate>Thu, 28 Jul 2022 15:14:39 +1000</pubDate>
+      <guid>http://localhost:1313/docs/todo/old/legal/</guid>
+      <description>&lt;p&gt;&lt;em&gt;This is about &amp;hellip; .&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

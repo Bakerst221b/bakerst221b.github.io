@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reverse on Analyst</title>
+    <link>http://localhost:1313/tags/reverse/</link>
+    <description>Recent content in Reverse on Analyst</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 28 Jul 2022 15:14:39 +1000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/reverse/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Overview</title>
+      <link>http://localhost:1313/docs/attacks/binary/exploits/bufferoverflow/overview/</link>
+      <pubDate>Sun, 27 Sep 2020 16:31:05 +0300</pubDate>
+      <guid>http://localhost:1313/docs/attacks/binary/exploits/bufferoverflow/overview/</guid>
+      <description>&lt;p&gt;&lt;em&gt;The idea of a buffer overflow attack is quite simple, though the implementation might initially be difficult to digest. I am exploring this notion and visualising it in this article.&lt;/em&gt; &lt;/p&gt;&#xA;&lt;h2 id=&#34;mechanics&#34;&gt;Mechanics&lt;/h2&gt;&#xA;&lt;p&gt;Imagine you have a job you don&amp;rsquo;t really like (I think most of us have had such an experience at least once in our life 😢). And also, imagine that you are being highly underpaid. Your job is simple and ridiculous: place rabbits 🐇 into one set of boxes and foxes 🦊 - into another. You happen to have 6 boxes 📦📦📦📦📦📦 for foxes 🦊 and 4 📦📦📦📦 for rabbits 🐇. However, you were given 4 rabbits 🐇🐇🐇🐇 and 7 foxes 🦊🦊🦊🦊🦊🦊🦊. So, one fox 🦊 doesn&amp;rsquo;t have its fox box 📦. However, there are also rabbit 🐇 boxes 📦 right nearby. So, even though you were explicitly told not to place foxes into rabbit boxes and vice versa since you don&amp;rsquo;t give a shit, you put a fox into a rabbit fox. What happens? One can only guess&amp;hellip; 🤔. Long story short: the fox eats the rabbit, and now you have 7 foxes and only 3 rabbits 🐇. Alas! If only you&amp;rsquo;d followed the manual 📖&amp;hellip;. Most likely, one would get fired after such a mistake, but we can&amp;rsquo;t fire the compiler, so that would happen if the developer was not using a memory-safe language or wasn&amp;rsquo;t careful enough. Now, to the technicalities.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Binary Vulnerabilities And Exploits</title>
+      <link>http://localhost:1313/docs/attacks/binary/exploits/bin/</link>
+      <pubDate>Thu, 28 Jul 2022 15:14:39 +1000</pubDate>
+      <guid>http://localhost:1313/docs/attacks/binary/exploits/bin/</guid>
+      <description>&lt;p&gt;&lt;em&gt;In this article I will collect common binary vulnerability (expept for the bufferoverflow which has its own dedicated article) &amp;hellip; .&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Apple Mach-O</title>
+      <link>http://localhost:1313/docs/artefacts/files/executables/macho/</link>
+      <pubDate>Mon, 28 Sep 2020 13:21:21 +0300</pubDate>
+      <guid>http://localhost:1313/docs/artefacts/files/executables/macho/</guid>
+      <description>&lt;h2 id=&#34;binary-info&#34;&gt;Binary info&lt;/h2&gt;&#xA;&lt;h3 id=&#34;otool&#34;&gt;otool&lt;/h3&gt;&#xA;&lt;p&gt;Using &lt;code&gt;otool&lt;/code&gt; we can get general info about the Mach-O file:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;otool -h &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;app_name&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; Mach header&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      magic cputype cpusubtype  caps    filetype ncmds sizeofcmds      flags&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; 0xfeedfacf &lt;span style=&#34;color:#ae81ff&#34;&gt;16777228&lt;/span&gt;          &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;  0x00           &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;115&lt;/span&gt;      &lt;span style=&#34;color:#ae81ff&#34;&gt;11384&lt;/span&gt; 0x00218085&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Quick refernce on the meaning:&lt;/p&gt;&#xA;&lt;p&gt;32-bit (ARMv6, ARMv7) – &lt;code&gt;0xFEEDFACE&lt;/code&gt;&#xA;64-bit – &lt;code&gt;0xFEEDFACF&lt;/code&gt;&#xA;Universal binaries – &lt;code&gt;0xCAFEBABE&lt;/code&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;robin2&#34;&gt;robin2&lt;/h3&gt;&#xA;&lt;h3 id=&#34;nm&#34;&gt;nm&lt;/h3&gt;&#xA;&lt;p&gt;&lt;code&gt;nm WindTail/Final_Presentation.app/Contents/MacOS/usrnode&lt;/code&gt; - view the APIs used.&#xA;SMLoginItemSetEnabled - Wardle, Patrick. The Art of Mac Malware (p. 25). No Starch Press. Kindle Edition.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Apple Mach-O</title>
+      <link>http://localhost:1313/docs/ttp/malware/analyse/executables/macho/</link>
+      <pubDate>Mon, 28 Sep 2020 13:21:21 +0300</pubDate>
+      <guid>http://localhost:1313/docs/ttp/malware/analyse/executables/macho/</guid>
+      <description>&lt;h2 id=&#34;binary-info&#34;&gt;Binary info&lt;/h2&gt;&#xA;&lt;h3 id=&#34;otool&#34;&gt;otool&lt;/h3&gt;&#xA;&lt;p&gt;Using &lt;code&gt;otool&lt;/code&gt; we can get general info about the Mach-O file:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;otool -h &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;app_name&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; Mach header&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      magic cputype cpusubtype  caps    filetype ncmds sizeofcmds      flags&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; 0xfeedfacf &lt;span style=&#34;color:#ae81ff&#34;&gt;16777228&lt;/span&gt;          &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;  0x00           &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;   &lt;span style=&#34;color:#ae81ff&#34;&gt;115&lt;/span&gt;      &lt;span style=&#34;color:#ae81ff&#34;&gt;11384&lt;/span&gt; 0x00218085&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Quick refernce on the meaning:&lt;/p&gt;&#xA;&lt;p&gt;32-bit (ARMv6, ARMv7) – &lt;code&gt;0xFEEDFACE&lt;/code&gt;&#xA;64-bit – &lt;code&gt;0xFEEDFACF&lt;/code&gt;&#xA;Universal binaries – &lt;code&gt;0xCAFEBABE&lt;/code&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;robin2&#34;&gt;robin2&lt;/h3&gt;&#xA;&lt;h3 id=&#34;nm&#34;&gt;nm&lt;/h3&gt;&#xA;&lt;p&gt;&lt;code&gt;nm WindTail/Final_Presentation.app/Contents/MacOS/usrnode&lt;/code&gt; - view the APIs used.&#xA;SMLoginItemSetEnabled - Wardle, Patrick. The Art of Mac Malware (p. 25). No Starch Press. Kindle Edition.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Exploit Development</title>
+      <link>http://localhost:1313/docs/attacks/binary/exploits/dev/</link>
+      <pubDate>Sun, 27 Sep 2020 16:31:05 +0300</pubDate>
+      <guid>http://localhost:1313/docs/attacks/binary/exploits/dev/</guid>
+      <description>&lt;h2 id=&#34;process&#34;&gt;Process&lt;/h2&gt;&#xA;&lt;h3 id=&#34;steps-overview&#34;&gt;Steps Overview&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Fuzz and fins unusual behaviour&lt;/li&gt;&#xA;&lt;li&gt;Detect any possibility to overwrite crucial parts:&#xA;&lt;ol&gt;&#xA;&lt;li&gt;EIP&lt;/li&gt;&#xA;&lt;li&gt;SEH&lt;/li&gt;&#xA;&lt;li&gt;Acces violations/invalid memory addresses&lt;/li&gt;&#xA;&lt;li&gt;etc&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Hijack Execution&lt;/li&gt;&#xA;&lt;li&gt;Eliminate bad characters&lt;/li&gt;&#xA;&lt;li&gt;Write PoC, spawning a reverse or bind shell, RAT or move to other systems.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3&gt;&lt;/h3&gt;&#xA;&lt;h3 id=&#34;bad-characters&#34;&gt;Bad Characters&lt;/h3&gt;&#xA;&lt;p&gt;All characters from 0 to 255 (decimal) represented in a hex format like this: &lt;code&gt;/0x00/0x01...&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;-rtfm&#34;&gt;📕 RTFM&lt;/h2&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;msf-pattern_create -l &lt;span style=&#34;color:#ae81ff&#34;&gt;1400&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;POST&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt;mapstr&lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt; | nc -nv 127.0.0.1:8080&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;msf-pattern_offset -q &amp;lt;part of mapstr in EIP&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;a href=&#34;http://docs.pwntools.com/en/stable/index.html&#34;&gt;http://docs.pwntools.com/en/stable/index.html&lt;/a&gt; and an example of use - &lt;a href=&#34;https://www.megabeets.net/a-journey-into-radare-2-part-2/&#34;&gt;https://www.megabeets.net/a-journey-into-radare-2-part-2/&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Proccess Memory Layout</title>
+      <link>http://localhost:1313/docs/ttp/malware/analyse/basics/c-prog-memory-layout/</link>
+      <pubDate>Sun, 27 Sep 2020 12:16:50 +0300</pubDate>
+      <guid>http://localhost:1313/docs/ttp/malware/analyse/basics/c-prog-memory-layout/</guid>
+      <description>&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;&#xA;&lt;p&gt;At the very beginning of my career I found it hard to grasp the notion of memory layout and stack. Even when I read about it several times, it didn&amp;rsquo;t feel solid. That&amp;rsquo;s why I drew drew and drew. Because my mind prefers pictures, analogies, metaphors and examples! So, I&amp;rsquo;ve made that. May be someone finds it useful.&lt;/p&gt;&#xA;&lt;h2 id=&#34;picture&#34;&gt;Picture&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;images/memoryLayoutC.png&#34; alt=&#34;memoryLayoutC&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;metaphor-and-analogy&#34;&gt;Metaphor and Analogy&lt;/h2&gt;&#xA;&lt;p&gt;I was thinking about a good metaphor, but that was the extent of my imagination&amp;hellip; Let&amp;rsquo;s say some weirdo (let&amp;rsquo;s call him Gargaralian) is piling up all the boring books he has &amp;#x1f4da; under the table because the appartment is too small and the luxury of having a bookcase is not an option available for him. Besides, the table is a little loose, so that pile of books could be like the fifth leg. Something like that:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Compilation and Linking 🔗</title>
+      <link>http://localhost:1313/docs/ttp/malware/analyse/basics/compilation-and-linking/</link>
+      <pubDate>Sun, 18 Oct 2020 22:33:41 +0300</pubDate>
+      <guid>http://localhost:1313/docs/ttp/malware/analyse/basics/compilation-and-linking/</guid>
+      <description>&lt;p&gt;&lt;em&gt;In this article I am trying to reasearch compilation and linking process.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;terms&#34;&gt;Terms&lt;/h2&gt;&#xA;&lt;p&gt;&lt;code&gt;.cpp&lt;/code&gt; - is a human-readable file written in any programming language. In this example it&amp;rsquo;s a file written in C++. An example of this file (meaningless for simplicity sake):&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#include&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;iostream&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;using&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;namespace&lt;/span&gt; std;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;()&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; a, b, c; &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;.obj&lt;/code&gt;,  &lt;code&gt;.coff&lt;/code&gt; - binary file with its own structure. 1 file of source code (&lt;code&gt;*.cpp&lt;/code&gt;) is compiled into 1 &lt;code&gt;.obj&lt;/code&gt; or &lt;code&gt;.coff&lt;/code&gt; file. Consists of sections, symbol table (name and current location of variable or function that can be referenced by other object files), relocation table (addresses referenced in this file that the linker must adjust when it knows the final memory layout) and debug info. A header that says where in the files the sections below are located  A (concatenated) text segment, which contains all the source code (with some missing addresses)  A (concatenated) data segment (which combines all data and the bss segments)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Exploit Development Env</title>
+      <link>http://localhost:1313/docs/tools/exploit-env/</link>
+      <pubDate>Thu, 28 Jul 2022 15:14:39 +1000</pubDate>
+      <guid>http://localhost:1313/docs/tools/exploit-env/</guid>
+      <description>&lt;p&gt;&lt;em&gt;This is about &amp;hellip; .&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Lord of the Apple: The Return of the iPhone</title>
+      <link>http://localhost:1313/docs/blog/2021/08/lord-of-the-apple/</link>
+      <pubDate>Sun, 25 Apr 2021 17:18:04 +0300</pubDate>
+      <guid>http://localhost:1313/docs/blog/2021/08/lord-of-the-apple/</guid>
+      <description>&lt;p&gt;📆 &lt;code&gt;22/08/2021&lt;/code&gt; , &lt;em&gt;Sunday&lt;/em&gt;, ☁️&lt;/p&gt;&#xA;&lt;p&gt;🕰 &lt;code&gt;11:21 AM&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;p&gt;It was a cloudy Sunday morning. I was sleeping peacefully till 8:45 AM when my daughter started crawling all over me and my husband asking wether I am awake already&amp;hellip; . Well, now I am, darling, many thanks 🤦🏻‍♀️! After having a delicious breakfast (eggplants with home-made tomato sauce, yummy 😋) and getting the kitchen back to the clean state (it&amp;rsquo;s very hard to keep it that way), I&amp;rsquo;ve decided to finally repair my little old fellow iPhone 7. Several weeks ago I went on vocation to Cyprus and broke the rare camera glass and the screen as well, because I somehow managed to drop the phone on the pavement 3 ❗️times! To be honest, these were not the first times when my iPhone met some surface harder than my palm, so it&amp;rsquo;s a miracle this had not happened before.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>To Carry Out MockInv&#39;estigation. Part 2</title>
+      <link>http://localhost:1313/docs/blog/2021/06/magnet/</link>
+      <pubDate>Sun, 25 Apr 2021 17:18:04 +0300</pubDate>
+      <guid>http://localhost:1313/docs/blog/2021/06/magnet/</guid>
+      <description>&lt;p&gt;📆 &lt;code&gt;16/06/2021&lt;/code&gt; , &lt;em&gt;Wednesday&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;🕰 &lt;code&gt;09:21 PM&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;I had a 7-day license of Magnet AXIOM and I&amp;rsquo;ve decided to try this tool and compare it with others that I had. In 2021 May-June Magnet held a great event of a great value - Magnet SUMMIT with lots of very useful webinars and workshops. One of them was a case study using Magnet. I am going to follow these steps and study another way to solve a crime.&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How I Got Started With ARM</title>
+      <link>http://localhost:1313/docs/blog/2021/03/how-i-got-started-with-arm/</link>
+      <pubDate>Sun, 07 Mar 2021 11:42:21 +0300</pubDate>
+      <guid>http://localhost:1313/docs/blog/2021/03/how-i-got-started-with-arm/</guid>
+      <description>&lt;p&gt;📆 &lt;code&gt;Friday, 12th of March, 202&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;⏰ &lt;code&gt;09:00&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;☀️ &lt;em&gt;It was a very deceptively sunny morning, children laughing and squeaking merrily. When I closed my eyes I could almoust believe it was late spring or summer&amp;hellip;. And the soul was filling with joy and inspiration. But unfortunately the temperature was too low (-10 ❄️ ⛄️  if you believe Yandex) and going for a outside-working-day was impossible 😔.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;I am finishing my cup of coffee ☕️ , my husband working in the adjacent room and my daughter playing with her new toys.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Positive and Negative Numbers</title>
+      <link>http://localhost:1313/docs/ttp/malware/analyse/basics/positive-and-negative-numbers/</link>
+      <pubDate>Sun, 18 Oct 2020 22:33:25 +0300</pubDate>
+      <guid>http://localhost:1313/docs/ttp/malware/analyse/basics/positive-and-negative-numbers/</guid>
+      <description>&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;&#xA;&lt;h2 id=&#34;ones-complement&#34;&gt;One&amp;rsquo;s complement&lt;/h2&gt;&#xA;&lt;h2 id=&#34;two-complement&#34;&gt;Two complement&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title>iOS Reverse Engineering</title>
+      <link>http://localhost:1313/docs/ttp/malware/analyse/basics/ios-reversing/</link>
+      <pubDate>Fri, 09 Oct 2020 10:31:32 +0300</pubDate>
+      <guid>http://localhost:1313/docs/ttp/malware/analyse/basics/ios-reversing/</guid>
+      <description>&lt;p&gt;&lt;em&gt;During forensic analysis it&amp;rsquo;s not too rare to run into some suspicious application. In this article I&amp;rsquo;m going to learn to reverse engineer iOS applications.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;analysis-flow&#34;&gt;Analysis flow&lt;/h2&gt;&#xA;&lt;p&gt;First, we need to get IPA file from the device. There are different ways to do so (please, refer to &lt;a href=&#34;http://localhost:1313/docs/toolkit/mobile/ios-btfm-rtfm&#34;&gt;BTFM and RTFM&lt;/a&gt;). Here I&amp;rsquo;m going to use the easiest one:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ipainstaller -i &lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt;ipainstaller -l | grep -i lassen&lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt; | grep Bundle&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;scp root@&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;device_ip&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;:/path/to/Bundle/ . &#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Then open the Bundle folder on PC and look for &lt;code&gt;Info.plist&lt;/code&gt;. Let&amp;rsquo;s find any strings that start with &lt;code&gt;NS&lt;/code&gt; and end with &lt;code&gt;UsageDescription&lt;/code&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Reference vs Value</title>
+      <link>http://localhost:1313/docs/ttp/malware/analyse/basics/reference-vs-value/</link>
+      <pubDate>Mon, 05 Oct 2020 18:48:46 +0300</pubDate>
+      <guid>http://localhost:1313/docs/ttp/malware/analyse/basics/reference-vs-value/</guid>
+      <description>&lt;p&gt;Lorem markdownum aequalis strigis. Saetigeri iubeas, vultu huic alvum nondum&#xA;de obside ut laniavit arbor palmis, cum quin. Rupes vetat videndo, armigerae&#xA;crimen habet Priamum nec.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Mutable vs Immutable</title>
+      <link>http://localhost:1313/docs/ttp/malware/analyse/basics/mutable-vs-immutable/</link>
+      <pubDate>Mon, 05 Oct 2020 18:48:35 +0300</pubDate>
+      <guid>http://localhost:1313/docs/ttp/malware/analyse/basics/mutable-vs-immutable/</guid>
+      <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; ctypes&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; a &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; address &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; id(a)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; address&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;4307917216&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; ctypes&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;cast(address, ctypes&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;py_object)&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;value&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; a &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; ctypes&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;cast(address, ctypes&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;py_object)&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;value&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Similarly, regardless of whether you flag some &lt;code&gt;UITextField&lt;/code&gt; as &lt;em&gt;Secure Text Entry&lt;/em&gt; or not, it always returns data in the form of a &lt;code&gt;String&lt;/code&gt; or &lt;code&gt;NSString&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;p&gt;On the other hand, using the overwritten data outside the compiler&amp;rsquo;s scope (e.g., serializing it in a temp file) guarantees that it will be overwritten but obviously impacts performance and maintenance. You should try to overwrite critical objects with random data or content from non-critical objects. This will make it really difficult to construct scanners that can identify sensitive data on the basis of its management. This can be only done by low-level languages because the compilers and just-in-time virtual machines will ignore those operations for performance reasons if the optimization routines detect that the buffer is no longer used after being overwritten.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Alloc8</title>
+      <link>http://localhost:1313/docs/attacks/binary/exploits/alloc8/</link>
+      <pubDate>Sun, 27 Sep 2020 16:31:05 +0300</pubDate>
+      <guid>http://localhost:1313/docs/attacks/binary/exploits/alloc8/</guid>
+      <description>&lt;p&gt;So, there are some prerequisites that one needs to have in order to get this exploit. These are what are BootROM, NOR, &lt;code&gt;malloc()&lt;/code&gt;, &lt;code&gt;NULL&lt;/code&gt; and heap.&lt;/p&gt;&#xA;&lt;p&gt;About BootROM you can read here. Briefly speaking, it&amp;rsquo;s a &lt;strong&gt;R&lt;/strong&gt;ead &lt;strong&gt;O&lt;/strong&gt;nly &lt;strong&gt;M&lt;/strong&gt;emory (thus ROM, not to be confused with RAM which stands for &lt;strong&gt;R&lt;/strong&gt;andomly &lt;strong&gt;A&lt;/strong&gt;ccessed &lt;strong&gt;M&lt;/strong&gt;emory, i.e. RAM and refers to the chip that&amp;rsquo;s being freed of any charge when the power is off). ROM only means that this part of the device cannot be in any way modified once it was produced: neither by the user, not by the manufacturer himself. Mobile devices use ROM to store the first step of CPU launch.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Buffer Overflow</title>
+      <link>http://localhost:1313/docs/attacks/binary/exploits/bufferoverflow/</link>
+      <pubDate>Sun, 27 Sep 2020 16:31:05 +0300</pubDate>
+      <guid>http://localhost:1313/docs/attacks/binary/exploits/bufferoverflow/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Calling 🤙 Conventions in x86</title>
+      <link>http://localhost:1313/docs/ttp/malware/analyse/basics/assebly/assembly-calling-conventions/</link>
+      <pubDate>Sun, 27 Sep 2020 16:31:05 +0300</pubDate>
+      <guid>http://localhost:1313/docs/ttp/malware/analyse/basics/assebly/assembly-calling-conventions/</guid>
+      <description>&lt;p&gt;&lt;em&gt;In this article I&amp;rsquo;m giving an overview of different calling conventions with examples.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;&#xA;&lt;p&gt;Consider the following code snippet:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;mysteriousFunction&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; a, &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; b)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; a &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; b &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; c;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;mysteriousFunction&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;);&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// then the above function is called &#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Let&amp;rsquo;s see the assembly code for each calling convention&lt;/p&gt;&#xA;&lt;h2 id=&#34;cdecl&#34;&gt;CDECL&lt;/h2&gt;&#xA;&lt;p&gt;The output in assemble would be this:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-assembly&#34; data-lang=&#34;assembly&#34;&gt;_mysteriousFunction:&#xA;push ebp&#xA;mov ebp, esp&#xA;mov eax, [ebp + 8]&#xA;mov edx, [ebp + 12]&#xA;add eax, edx&#xA;pop ebp&#xA;ret&#xA;and&#xA;&#xA;;main function&#xA;push 4 ; the second argument is pushed first&#xA;push 2 ; the first argument is pushed second&#xA;call _mysteriousFunction&#xA;add esp, 8&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;As is clearly seen from the above snippet, the arguments to the function are passed in reverse order by means of &lt;code&gt;PUSH&lt;/code&gt; instruction (placed on stack). Observe the &lt;code&gt;_mysteriousFunction&lt;/code&gt;&amp;rsquo;s code: values added to &lt;code&gt;eax&lt;/code&gt;, but nothing seems to be returning, just &lt;code&gt;ret&lt;/code&gt;. That&amp;rsquo;s because this calling convention passes return values in &lt;code&gt;eax&lt;/code&gt; register by default.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Checkm8</title>
+      <link>http://localhost:1313/docs/attacks/binary/exploits/checkm8/</link>
+      <pubDate>Sun, 27 Sep 2020 16:31:05 +0300</pubDate>
+      <guid>http://localhost:1313/docs/attacks/binary/exploits/checkm8/</guid>
+      <description>&lt;details&gt;&#xA;    &lt;summary&gt;Expand&amp;hellip;&lt;/summary&gt;&#xA;    &lt;a href=&#34;https://belkasoft.com/checkm8_glossary&#34;&gt;https://belkasoft.com/checkm8_glossary&lt;/a&gt;&#xA;&lt;a href=&#34;https://belkasoft.com/checkm8-troubleshooting&#34;&gt;https://belkasoft.com/checkm8-troubleshooting&lt;/a&gt;&#xA;&lt;a href=&#34;https://belkasoft.com/checkm8&#34;&gt;https://belkasoft.com/checkm8&lt;/a&gt;&#xA;&lt;/details&gt;</description>
+    </item>
+    <item>
+      <title>Flags</title>
+      <link>http://localhost:1313/docs/ttp/malware/analyse/basics/assebly/assembly-flags/</link>
+      <pubDate>Sun, 27 Sep 2020 16:31:05 +0300</pubDate>
+      <guid>http://localhost:1313/docs/ttp/malware/analyse/basics/assebly/assembly-flags/</guid>
+      <description>&lt;h2 id=&#34;cf&#34;&gt;CF&lt;/h2&gt;&#xA;&lt;p&gt;Its full name is &lt;em&gt;carry flag&lt;/em&gt;. Its main purpose is to tell that the resulting number after some operations is too much to bear for the registry size. For example, the maximum size of a number is 32 bit, but if we add 0xFFFF&lt;/p&gt;&#xA;&lt;h2 id=&#34;zf&#34;&gt;ZF&lt;/h2&gt;&#xA;&lt;h2 id=&#34;of&#34;&gt;OF&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title>Operations</title>
+      <link>http://localhost:1313/docs/ttp/malware/analyse/basics/assebly/assembly-operations/</link>
+      <pubDate>Sun, 27 Sep 2020 16:31:05 +0300</pubDate>
+      <guid>http://localhost:1313/docs/ttp/malware/analyse/basics/assebly/assembly-operations/</guid>
+      <description>&lt;p&gt;In this article I&amp;rsquo;m describing all assembly operations that I&amp;rsquo;ve encountered myseld and also wasn&amp;rsquo;t lazy anough to put down an explanation about here. However, I won&amp;rsquo;t be paying much attention to some operation that I consider straightforward, like &lt;code&gt;ADD&lt;/code&gt;. I&amp;rsquo;m going to put a flag for each operation indicating corresponding arch: &lt;code&gt;arm&lt;/code&gt; or &lt;code&gt;x86&lt;/code&gt; (just learning ARM myself for iOS analysis).&lt;/p&gt;&#xA;&lt;p&gt;Most of instruction have the following anatomy: &lt;code&gt;instruction &amp;lt;destination operand&amp;gt;, &amp;lt;source operand&amp;gt;&lt;/code&gt;. Some operations look like this: &lt;code&gt;instruction &amp;lt;source operand&amp;gt;&lt;/code&gt; when &lt;code&gt;&amp;lt;destination operand&amp;gt;&lt;/code&gt; is always the same register (default). An example: &lt;code&gt;MUL&lt;/code&gt;. When &lt;code&gt;MUL&lt;/code&gt;ing, you always multiply &lt;code&gt;eax&lt;/code&gt; on some value.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Registers</title>
+      <link>http://localhost:1313/docs/ttp/malware/analyse/basics/assebly/assembly-registers/</link>
+      <pubDate>Sun, 27 Sep 2020 16:31:05 +0300</pubDate>
+      <guid>http://localhost:1313/docs/ttp/malware/analyse/basics/assebly/assembly-registers/</guid>
+      <description>&lt;h2 id=&#34;eax&#34;&gt;EAX&lt;/h2&gt;&#xA;&lt;h2 id=&#34;eip&#34;&gt;EIP&lt;/h2&gt;&#xA;&lt;h2 id=&#34;ebp&#34;&gt;EBP&lt;/h2&gt;&#xA;&lt;h2 id=&#34;rsiesi&#34;&gt;RSI/ESI&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;S&lt;/strong&gt;ource &lt;strong&gt;I&lt;/strong&gt;ndex.&lt;/p&gt;&#xA;&lt;p&gt;RSI - 64 bit, ESI - 32.&lt;/p&gt;&#xA;&lt;h2 id=&#34;rdiedi&#34;&gt;RDI/EDI&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;D&lt;/strong&gt;estination &lt;strong&gt;I&lt;/strong&gt;ndex.&lt;/p&gt;&#xA;&lt;p&gt;RDI - 64 bit, EDI - 32.&lt;/p&gt;&#xA;&lt;p&gt;For ARM Registers here - &lt;a href=&#34;https://azeria-labs.com/arm-data-types-and-registers-part-2/&#34;&gt;https://azeria-labs.com/arm-data-types-and-registers-part-2/&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>From Src to Binary</title>
+      <link>http://localhost:1313/docs/ttp/malware/analyse/basics/from-src-to-binary/</link>
+      <pubDate>Thu, 24 Sep 2020 17:46:43 +0300</pubDate>
+      <guid>http://localhost:1313/docs/ttp/malware/analyse/basics/from-src-to-binary/</guid>
+      <description>&lt;p&gt;To read&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.airs.com/blog/archives/38&#34;&gt;https://www.airs.com/blog/archives/38&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Assembly Cheatsheet</title>
+      <link>http://localhost:1313/docs/ttp/malware/analyse/basics/assebly/assembly-cheatsheet/</link>
+      <pubDate>Thu, 24 Sep 2020 11:43:54 +0300</pubDate>
+      <guid>http://localhost:1313/docs/ttp/malware/analyse/basics/assebly/assembly-cheatsheet/</guid>
+      <description>&lt;p&gt;Lorem markdownum aequalis strigis. Saetigeri iubeas, vultu huic alvum nondum&#xA;de obside ut laniavit arbor palmis, cum quin. Rupes vetat videndo, armigerae&#xA;crimen habet Priamum nec.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>ARM Assembly</title>
+      <link>http://localhost:1313/docs/ttp/malware/analyse/basics/assebly/assembly-arm/</link>
+      <pubDate>Thu, 24 Sep 2020 11:43:23 +0300</pubDate>
+      <guid>http://localhost:1313/docs/ttp/malware/analyse/basics/assebly/assembly-arm/</guid>
+      <description>&lt;p&gt;&lt;em&gt;In this article I&amp;rsquo;m giving a quick dive-in into assembly. It&amp;rsquo;s very simple and very difficult at the same time. It takes time and patience to get friendly  with it. And once you do, there will be ARM emerging, which scares the hell out of you again. But it takes less time, once you&amp;rsquo;re familiar with its &amp;ldquo;big brother&amp;rdquo;.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;analogy&#34;&gt;Analogy&lt;/h2&gt;&#xA;&lt;p&gt;Sometimes when I look at assembly code I remember back in the &amp;lsquo;olden days&amp;rsquo; when I worked as office manager. I didn&amp;rsquo;t love my job and used to describe it to a small circle of close friends as &amp;ldquo;moving papers from one place to another&amp;rdquo;. Of course, there was much more to it than just that, but it felt that way. When I left this job and found the one as a C# programmer, I thought, I&amp;rsquo;ll never be doing that again. Surprisingly, I was right&amp;hellip; When I left my job as a C# programmer, I thought I&amp;rsquo;d never have anything to do with HTML again. Here, I was wrong&amp;hellip;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Assembly Intro</title>
+      <link>http://localhost:1313/docs/ttp/malware/analyse/basics/assebly/assembly-intro/</link>
+      <pubDate>Thu, 24 Sep 2020 11:43:23 +0300</pubDate>
+      <guid>http://localhost:1313/docs/ttp/malware/analyse/basics/assebly/assembly-intro/</guid>
+      <description>&lt;p&gt;&lt;em&gt;In this article I&amp;rsquo;m giving a quick dive-in into assembly. It&amp;rsquo;s very simple and very difficult at the same time. It takes time and patience to get friendly  with it. And once you do, there will be ARM emerging, which scares the hell out of you again. But it takes less time, once you&amp;rsquo;re familiar with its &amp;ldquo;big brother&amp;rdquo;.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;analogy&#34;&gt;Analogy&lt;/h2&gt;&#xA;&lt;p&gt;Sometimes when I look at assembly code I remember back in the &amp;lsquo;olden days&amp;rsquo; when I worked as office manager. I didn&amp;rsquo;t love my job and used to describe it to a small circle of close friends as &amp;ldquo;moving papers from one place to another&amp;rdquo;. Of course, there was much more to it than just that, but it felt that way. When I left this job and found the one as a C# programmer, I thought, I&amp;rsquo;ll never be doing that again. Surprisingly, I was right&amp;hellip; When I left my job as a C# programmer, I thought I&amp;rsquo;d never have anything to do with HTML again. Here, I was wrong&amp;hellip;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How I Met Radare2</title>
+      <link>http://localhost:1313/docs/blog/2020/09/how-i-met-radare2/</link>
+      <pubDate>Thu, 24 Sep 2020 10:40:07 +0300</pubDate>
+      <guid>http://localhost:1313/docs/blog/2020/09/how-i-met-radare2/</guid>
+      <description>&lt;p&gt;📆 &lt;code&gt;24/09/2020&lt;/code&gt;, &lt;em&gt;Wednesday&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;🕰 &lt;code&gt;7:00&lt;/code&gt; &lt;em&gt;What a nice morning! And it&amp;rsquo;s so great to be woken up by a high-pitched cry in the ear&amp;hellip; Well, after giving my daughter her breakfast and doing all the neccessary hygine procedures for us both, I left her by my side on the development carpet, so that I could develop myself&amp;hellip;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;🛠  &lt;strong&gt;Environment and Tools&lt;/strong&gt;: macOS Catalina 10.15.6 (19G2021) + pyenv 1.2.20 + Python 3.8.5 + Visual Code Version: 1.49.1, VBox Version 6.1.12 r139181 (Qt5.6.3) + Kali Linux + radare2 4.6.0-git 25077 @ linux-x86-64 git.4.4.0-749-g2a0d8fbe5&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>💱 Symbolic and Concrete Execution</title>
+      <link>http://localhost:1313/docs/ttp/malware/analyse/binary-analysis/</link>
+      <pubDate>Wed, 09 Sep 2020 19:28:46 +0300</pubDate>
+      <guid>http://localhost:1313/docs/ttp/malware/analyse/binary-analysis/</guid>
+      <description>&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;&#xA;&lt;details&gt;&#xA;    &lt;summary&gt;Expand&amp;hellip;&lt;/summary&gt;&#xA;    &lt;p&gt;[&lt;a href=&#34;https://mobile-security.gitbook.io/mobile-security-testing-guide/android-testing-guide/0x05h-testing-platform-interaction#testing-for-fragment-injection-mstg-platform-2&#34;&gt;1&lt;/a&gt;] Mobile Sec Guide&lt;/p&gt;&#xA;&lt;p&gt;[&lt;a href=&#34;https://www.nowsecure.com/blog/2021/03/10/how-to-perform-symbolic-execution-of-mobile-apps-with-r2frida-esilsolve/&#34;&gt;2&lt;/a&gt;] Symbolic execution on iOS with R2Frida &amp;amp; ESILSolve&lt;/p&gt;&#xA;&lt;p&gt;[&lt;a href=&#34;https://www.nowsecure.com/blog/2021/03/10/how-to-perform-symbolic-execution-of-mobile-apps-with-r2frida-esilsolve/&#34;&gt;3&lt;/a&gt;] Symbolic execution on iOS)] Concrete execution on iOS with Angr.&lt;/p&gt;&#xA;&lt;p&gt;[&lt;a href=&#34;https://www.nowsecure.com/blog/2021/03/10/how-to-perform-symbolic-execution-of-mobile-apps-with-r2frida-esilsolve/&#34;&gt;4&lt;/a&gt;)] Symbolic execution on Android with Angr.&#xA;[&lt;a href=&#34;https://paper.bobylive.com/Security/A%20Bug%20Hunter%20%20039%20s%20Diary%20%20A%20Guided%20Tour%20Through%20the%20Wilds%20of%20Software%20Security.pdf&#34;&gt;5&lt;/a&gt;] A Bug Hunter&amp;rsquo;s Diary: A Guided Tour Through the Wilds of Software Security, by Tobias Klein.&lt;/p&gt;&#xA;&#xA;&lt;/details&gt;</description>
+    </item>
+    <item>
+      <title>How I Met Predator</title>
+      <link>http://localhost:1313/docs/blog/2018/07/analytic-protiv-khishnika/</link>
+      <pubDate>Wed, 07 Nov 2018 14:39:39 +0300</pubDate>
+      <guid>http://localhost:1313/docs/blog/2018/07/analytic-protiv-khishnika/</guid>
+      <description>&lt;p&gt;&lt;em&gt;&lt;strong&gt;Wednesday&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;*&lt;strong&gt;Ничего так, тепло.*&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;Где-то в тёмном-тёмном лесу, среди высоких старых деревьев, притаившись в кустах выжидают свою жертву хищники. И даже несмотря на то, что они могут быть не такими страшными, как товарищ из фильма, тем не менее могут принести немало проблем. Мало кто воспринимает интернет как &amp;ldquo;страшный и таинственный лес&amp;rdquo;, но тем не менее в какой-то степени так и есть. И хищники там тоже есть, и поверьте мне, они не такие милые как пушистое создание на картинке.&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Undesirable Mail</title>
+      <link>http://localhost:1313/docs/blog/2018/07/undesirable-mail/</link>
+      <pubDate>Thu, 19 Jul 2018 14:19:03 +0300</pubDate>
+      <guid>http://localhost:1313/docs/blog/2018/07/undesirable-mail/</guid>
+      <description>&lt;p&gt;&lt;em&gt;&lt;strong&gt;Thursday&lt;/strong&gt;&lt;/em&gt;, &lt;em&gt;&lt;strong&gt;Warm and cloudy.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;&amp;ldquo;Open me! I am a payment order! I am important, I swear!&amp;rdquo;, - some RTF-file was yelling. I wasn&amp;rsquo;t expecting any bills so this slyboots did not maim my poor little laptop. Phew ! Lucky me! But since this was a social engineering attack (not very crafty but still), someone less concerned with his or her safety could have opened it and cause him- or herself a lot of trouble. What I am trying to say (very inarticulately ) is that simply opening a small RTF document could result in absolute disaster for your machine! In this post I am telling the story how exactly does it happen&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

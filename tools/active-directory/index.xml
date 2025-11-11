@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Active Directory on Analyst</title>
+    <link>http://localhost:1313/tools/active-directory/</link>
+    <description>Recent content in Active Directory on Analyst</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 28 Jul 2022 15:14:39 +1000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tools/active-directory/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>🏺 Active Directory</title>
+      <link>http://localhost:1313/docs/artefacts/win/ad/</link>
+      <pubDate>Thu, 28 Jul 2022 15:14:39 +1000</pubDate>
+      <guid>http://localhost:1313/docs/artefacts/win/ad/</guid>
+      <description>&lt;p&gt;Moving accounts and auth policies to the server side. Azure Active Directory is when instead of having a physical server, you have a server in the cloud ⛅️. Defines a set of rules to restrict users&amp;rsquo; access to resources. PCs that are part of AD usually don&amp;rsquo;t have full access to the systems.&lt;/p&gt;&#xA;&lt;p&gt;AD DS store contains db files and processes that manage directory information for users, services and applications. Consists of &lt;code&gt;Ntds.dit&lt;/code&gt; file, at &lt;code&gt;%SystemRoot%\&#x9;NTDS&lt;/code&gt; folder on all DC. Is only accessible thtough the DC&amp;rsquo;s processes and protocols.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>📚 Windows on Analyst</title>
+    <link>http://localhost:1313/docs/reference/windows/</link>
+    <description>Recent content in 📚 Windows on Analyst</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 08 Jun 2020 09:49:24 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/docs/reference/windows/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>📚 Windows OS Primer</title>
+      <link>http://localhost:1313/docs/reference/windows/win-overview/</link>
+      <pubDate>Mon, 08 Jun 2020 09:49:24 +0300</pubDate>
+      <guid>http://localhost:1313/docs/reference/windows/win-overview/</guid>
+      <description>&lt;h1 id=&#34;plan-for-windows-forensics&#34;&gt;Plan for Windows Forensics&lt;/h1&gt;&#xA;&lt;p&gt;Done (Udemy watched, tools installed and used, conclusions made) is &lt;strong&gt;bolded&lt;/strong&gt;:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Prefetch&lt;/li&gt;&#xA;&lt;li&gt;LNK&lt;/li&gt;&#xA;&lt;li&gt;Shellbag&lt;/li&gt;&#xA;&lt;li&gt;Memory&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;useful-commands&#34;&gt;Useful commands&lt;/h2&gt;&#xA;&lt;p&gt;Potentially to BTFM or RTFM&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;net user administrator /active:yes&lt;/code&gt; - activate default admin or &lt;code&gt;lnsrmgr.msc&lt;/code&gt; -&amp;gt; enable.&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;psexec -i -s cmd.exe&lt;/code&gt; - escalate to System priviledges.&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;pwdump7 -d &amp;lt;path_to_protected_file&amp;gt; &amp;lt;where_to_copy&amp;gt;&lt;/code&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;services&#34;&gt;Services&lt;/h2&gt;&#xA;&lt;p&gt;Processes running in the background and sometimes have SYSTEM privileges. May not even be listed in Task Manager, but Autorun tool will probably show them.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

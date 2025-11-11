@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Platforms on Analyst</title>
+    <link>http://localhost:1313/platforms/</link>
+    <description>Recent content in Platforms on Analyst</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 26 Apr 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/platforms/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>All</title>
+      <link>http://localhost:1313/platforms/all/</link>
+      <pubDate>Thu, 28 Jul 2022 15:14:39 +1000</pubDate>
+      <guid>http://localhost:1313/platforms/all/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Aws</title>
+      <link>http://localhost:1313/platforms/aws/</link>
+      <pubDate>Thu, 28 Jul 2022 15:14:39 +1000</pubDate>
+      <guid>http://localhost:1313/platforms/aws/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Containers</title>
+      <link>http://localhost:1313/platforms/containers/</link>
+      <pubDate>Thu, 28 Jul 2022 15:14:39 +1000</pubDate>
+      <guid>http://localhost:1313/platforms/containers/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Linux</title>
+      <link>http://localhost:1313/platforms/linux/</link>
+      <pubDate>Thu, 28 Jul 2022 15:14:39 +1000</pubDate>
+      <guid>http://localhost:1313/platforms/linux/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mac</title>
+      <link>http://localhost:1313/platforms/mac/</link>
+      <pubDate>Thu, 28 Jul 2022 15:14:39 +1000</pubDate>
+      <guid>http://localhost:1313/platforms/mac/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Windows</title>
+      <link>http://localhost:1313/platforms/windows/</link>
+      <pubDate>Thu, 28 Jul 2022 15:14:39 +1000</pubDate>
+      <guid>http://localhost:1313/platforms/windows/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ios</title>
+      <link>http://localhost:1313/platforms/ios/</link>
+      <pubDate>Sun, 25 Apr 2021 17:18:04 +0300</pubDate>
+      <guid>http://localhost:1313/platforms/ios/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Android</title>
+      <link>http://localhost:1313/platforms/android/</link>
+      <pubDate>Sun, 07 Mar 2021 11:42:21 +0300</pubDate>
+      <guid>http://localhost:1313/platforms/android/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

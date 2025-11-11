@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Symmetric Algorithms on Analyst</title>
+    <link>http://localhost:1313/docs/cryptography/symmetric/</link>
+    <description>Recent content in Symmetric Algorithms on Analyst</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 28 Jul 2022 15:14:39 +1000</lastBuildDate>
+    <atom:link href="http://localhost:1313/docs/cryptography/symmetric/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Viginear</title>
+      <link>http://localhost:1313/docs/cryptography/symmetric/viginear/</link>
+      <pubDate>Thu, 28 Jul 2022 15:14:39 +1000</pubDate>
+      <guid>http://localhost:1313/docs/cryptography/symmetric/viginear/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Viginear cypher is more sophisticated than the Caesar cypher. Since the key is several characters long and the length is unknown, the frequency analysis technique becomes more challenging.&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Block Ciphers</title>
+      <link>http://localhost:1313/docs/cryptography/symmetric/block/</link>
+      <pubDate>Tue, 06 Oct 2020 13:26:39 +0300</pubDate>
+      <guid>http://localhost:1313/docs/cryptography/symmetric/block/</guid>
+      <description>&lt;p&gt;This is the next generation. 128-bit blocks, 128,192, 256 keys. It takes too much time to brute force. However, there are some situations when this could be cracked. And not only ECB but CBC as well.&lt;/p&gt;&#xA;&lt;p&gt;One block of plaintext results in a 2-block cypher (random string + cypher text) for some modes. That&amp;rsquo;s why different modes exist.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Stream&#xA;&lt;ul&gt;&#xA;&lt;li&gt;synchronised&lt;/li&gt;&#xA;&lt;li&gt;unsynchronised&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Block&#xA;&lt;ul&gt;&#xA;&lt;li&gt;CTR&lt;/li&gt;&#xA;&lt;li&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Encryption steps:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Choose some random string of length N (call it a 🐊)&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Do something with the string to get a key 🗝 from 🐊&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; XOR your message 🍆 with a key 🗝&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Cypher text 🫐 = 🐊, 🍆 XOR 🗝&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Decryption steps:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Caesar&#39;s Cipher</title>
+      <link>http://localhost:1313/docs/cryptography/symmetric/caesar/</link>
+      <pubDate>Tue, 06 Oct 2020 13:26:39 +0300</pubDate>
+      <guid>http://localhost:1313/docs/cryptography/symmetric/caesar/</guid>
+      <description>&lt;p&gt;&lt;em&gt;In this article, I&amp;rsquo;m dissecting a very well-known (and that&amp;rsquo;s why not advisable to be used) cryptographic algorithm which is better known for IT tribe as &amp;ldquo;ROT13&amp;rdquo;.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;#todo: &lt;a href=&#34;https://coderoad.ru/50664321/%D0%9F%D0%BE%D1%87%D0%B5%D0%BC%D1%83-%D0%BA%D0%BE%D0%B4%D0%B8%D1%80%D1%83%D0%B5%D1%82%D1%81%D1%8F-%D1%82%D0%B5%D0%BA%D1%81%D1%82-%D0%B2-%D1%8D%D1%82%D0%BE%D0%BC-%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D0%B5-ROT13&#34;&gt;https://coderoad.ru/50664321/%D0%9F%D0%BE%D1%87%D0%B5%D0%BC%D1%83-%D0%BA%D0%BE%D0%B4%D0%B8%D1%80%D1%83%D0%B5%D1%82%D1%81%D1%8F-%D1%82%D0%B5%D0%BA%D1%81%D1%82-%D0%B2-%D1%8D%D1%82%D0%BE%D0%BC-%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D0%B5-ROT13&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>DES</title>
+      <link>http://localhost:1313/docs/cryptography/symmetric/des/</link>
+      <pubDate>Tue, 06 Oct 2020 13:26:39 +0300</pubDate>
+      <guid>http://localhost:1313/docs/cryptography/symmetric/des/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;DES&lt;/strong&gt; - Symmetric. &lt;strong&gt;D&lt;/strong&gt;ata &lt;strong&gt;E&lt;/strong&gt;ncryption &lt;strong&gt;S&lt;/strong&gt;tandard. NIST 1993. 56 bit key, 64-bit plaintext input (blocks). How secure? Can be brute-forced in 4 months. No known &amp;ldquo;backdoor&amp;rdquo; decryption approach. To make it more secure, change keys every 3 months, use 3 keys, use cipher-block chaining.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>One-time Pad</title>
+      <link>http://localhost:1313/docs/cryptography/symmetric/onetime/</link>
+      <pubDate>Tue, 06 Oct 2020 13:26:39 +0300</pubDate>
+      <guid>http://localhost:1313/docs/cryptography/symmetric/onetime/</guid>
+      <description>&lt;p&gt;&lt;em&gt;One-time pad is like a Viginear cypher but with the key the length of the cypher text.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;algo-intro&#34;&gt;Algo Intro&lt;/h2&gt;&#xA;&lt;p&gt;The key requirement for this cypher scheme to be perfectly secret is that the key should only be used once. Why? For example, the same key was applied to two cypher texts (c1 and c2), so that &lt;code&gt;c1 = message1 XOR key&lt;/code&gt; and &lt;code&gt;c2 = message2 XOR key&lt;/code&gt;. What can we do here? We can eliminate the key by &lt;code&gt;XOR&lt;/code&gt;-ing c1 and c2: &lt;code&gt;c1 XOR c2 = (message1 XOR key) XOR (message2 XOR key) = message1 XOR message2&lt;/code&gt;. This is not the same as having the plain text of either or both message1 or message2, but there is something we can do, using ASCII characteristics (it&amp;rsquo;s if it were ASCII, of course). Each letter starts with &lt;code&gt;01&lt;/code&gt; in binary, but the space character starts with &lt;code&gt;00&lt;/code&gt;. Look at the possible combinations:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Symmetric Algorithms - Analyst</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="icon" href="http://localhost:1313/favicon.png">
+  <link href="/css/style-classic.css"></link>
+  
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+  
+
+</head>
+
+<body class='page page-default-list'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  <ul>
+    
+    
+    <li class="menu-item-home 🏡">
+      <a href="/">
+        <span>Home 🏡</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-blog ✍️">
+      <a href="/docs/blog">
+        <span>Blog ✍️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-ttp 🔍">
+      <a href="/docs/ttp">
+        <span>TTP 🔍</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-artefacts db 🏺">
+      <a href="/docs/artefacts">
+        <span>Artefacts DB 🏺</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-attacks db ⚔️">
+      <a href="/docs/attacks">
+        <span>Attacks DB ⚔️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-tools db 🛠️">
+      <a href="/docs/tools">
+        <span>Tools DB 🛠️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-crypto 🗝️">
+      <a href="/docs/cryptography">
+        <span>Crypto 🗝️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-about me 🧝🏽‍♀️">
+      <a href="/docs/about">
+        <span>About me 🧝🏽‍♀️</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+  <div class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="http://localhost:1313/"><img alt="Logo" src="/images/logo.png" /></a>
+    </div>
+    <div class="logo-mobile">
+      <a href="http://localhost:1313/"><img alt="Logo" src="/images/logo-mobile.svg" /></a>
+    </div>
+    
+
+    <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/docs/cryptography/symmetric/index.xml" title="Analyst" />
+    <div id="main-menu" class="main-menu">
+  <ul>
+    
+    
+    <li class="menu-item-home 🏡">
+      <a href="/">
+        <span>Home 🏡</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-blog ✍️">
+      <a href="/docs/blog">
+        <span>Blog ✍️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-ttp 🔍">
+      <a href="/docs/ttp">
+        <span>TTP 🔍</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-artefacts db 🏺">
+      <a href="/docs/artefacts">
+        <span>Artefacts DB 🏺</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-attacks db ⚔️">
+      <a href="/docs/attacks">
+        <span>Attacks DB ⚔️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-tools db 🛠️">
+      <a href="/docs/tools">
+        <span>Tools DB 🛠️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-crypto 🗝️">
+      <a href="/docs/cryptography">
+        <span>Crypto 🗝️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-about me 🧝🏽‍♀️">
+      <a href="/docs/about">
+        <span>About me 🧝🏽‍♀️</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+    
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+    
+    <div style="margin-left: 20pt;">
+      <a href="/index.xml" type="application/rss+xml">
+        <img src="/images/rss.png" alt="RSS Feed">
+      </a>
+    </div>
+    
+    <style>
+      a[href="/index.xml"] {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+      }
+    
+      a[href="/index.xml"] img {
+        height: 30px;
+      }
+    </style>
+    
+  </div>
+</div>
+
+
+    
+    
+    
+    
+    
+    
+
+    
+    <div class="container pt-2 pt-md-6 pb-3 pb-md-6">
+      <div class="row">
+        <div class="col-12 col-md-3 mb-3">
+          <div class="sidebar">
+            
+<div class="docs-menu">
+  <p>
+    <a href="/docs/cryptography/"> 👈🏼 Back to </br> Cryptography 🔐 </a>
+  </p>
+</div> 
+
+
+
+          </div>
+        </div>
+        <div class="col-12 col-md-9">
+          
+
+
+
+ 
+ <h1 class="title">Symmetric Algorithms</h1> 
+ 
+
+    <h2><a href="http://localhost:1313/docs/cryptography/symmetric/viginear/"> Viginear</a></h2> 
+    <p> <p><em>Viginear cypher is more sophisticated than the Caesar cypher. Since the key is several characters long and the length is unknown, the frequency analysis technique becomes more challenging.</em></p></p>
+
+    <h2><a href="http://localhost:1313/docs/cryptography/symmetric/block/"> Block Ciphers</a></h2> 
+    <p> <p>This is the next generation. 128-bit blocks, 128,192, 256 keys. It takes too much time to brute force. However, there are some situations when this could be cracked. And not only ECB but CBC as well.</p>
+<p>One block of plaintext results in a 2-block cypher (random string + cypher text) for some modes. That&rsquo;s why different modes exist.</p>
+<ul>
+<li>Stream
+<ul>
+<li>synchronised</li>
+<li>unsynchronised</li>
+</ul>
+</li>
+<li>Block
+<ul>
+<li>CTR</li>
+<li></li>
+</ul>
+</li>
+</ul>
+<p>Encryption steps:</p>
+<ul>
+<li><input disabled="" type="checkbox"> Choose some random string of length N (call it a 🐊)</li>
+<li><input disabled="" type="checkbox"> Do something with the string to get a key 🗝 from 🐊</li>
+<li><input disabled="" type="checkbox"> XOR your message 🍆 with a key 🗝</li>
+<li><input disabled="" type="checkbox"> Cypher text 🫐 = 🐊, 🍆 XOR 🗝</li>
+</ul>
+<p>Decryption steps:</p></p>
+
+    <h2><a href="http://localhost:1313/docs/cryptography/symmetric/caesar/"> Caesar&#39;s Cipher</a></h2> 
+    <p> <p><em>In this article, I&rsquo;m dissecting a very well-known (and that&rsquo;s why not advisable to be used) cryptographic algorithm which is better known for IT tribe as &ldquo;ROT13&rdquo;.</em></p>
+<p><em>#todo: <a href="https://coderoad.ru/50664321/%D0%9F%D0%BE%D1%87%D0%B5%D0%BC%D1%83-%D0%BA%D0%BE%D0%B4%D0%B8%D1%80%D1%83%D0%B5%D1%82%D1%81%D1%8F-%D1%82%D0%B5%D0%BA%D1%81%D1%82-%D0%B2-%D1%8D%D1%82%D0%BE%D0%BC-%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D0%B5-ROT13">https://coderoad.ru/50664321/%D0%9F%D0%BE%D1%87%D0%B5%D0%BC%D1%83-%D0%BA%D0%BE%D0%B4%D0%B8%D1%80%D1%83%D0%B5%D1%82%D1%81%D1%8F-%D1%82%D0%B5%D0%BA%D1%81%D1%82-%D0%B2-%D1%8D%D1%82%D0%BE%D0%BC-%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D0%B5-ROT13</a></em></p></p>
+
+    <h2><a href="http://localhost:1313/docs/cryptography/symmetric/des/"> DES</a></h2> 
+    <p> <p><strong>DES</strong> - Symmetric. <strong>D</strong>ata <strong>E</strong>ncryption <strong>S</strong>tandard. NIST 1993. 56 bit key, 64-bit plaintext input (blocks). How secure? Can be brute-forced in 4 months. No known &ldquo;backdoor&rdquo; decryption approach. To make it more secure, change keys every 3 months, use 3 keys, use cipher-block chaining.</p></p>
+
+    <h2><a href="http://localhost:1313/docs/cryptography/symmetric/onetime/"> One-time Pad</a></h2> 
+    <p> <p><em>One-time pad is like a Viginear cypher but with the key the length of the cypher text.</em></p>
+<h2 id="algo-intro">Algo Intro</h2>
+<p>The key requirement for this cypher scheme to be perfectly secret is that the key should only be used once. Why? For example, the same key was applied to two cypher texts (c1 and c2), so that <code>c1 = message1 XOR key</code> and <code>c2 = message2 XOR key</code>. What can we do here? We can eliminate the key by <code>XOR</code>-ing c1 and c2: <code>c1 XOR c2 = (message1 XOR key) XOR (message2 XOR key) = message1 XOR message2</code>. This is not the same as having the plain text of either or both message1 or message2, but there is something we can do, using ASCII characteristics (it&rsquo;s if it were ASCII, of course). Each letter starts with <code>01</code> in binary, but the space character starts with <code>00</code>. Look at the possible combinations:</p></p>
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <div class="sub-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="sub-footer-inner">
+          <ul>
+            <li class="zerostatic"><a href="https://www.zerostatic.io">www.zerostatic.io</a></li>
+            <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/docs/cryptography/symmetric/index.xml" title="Analyst" />
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/scripts.js"></script>
+  
+
+  
+
+
+</body>
+
+</html>

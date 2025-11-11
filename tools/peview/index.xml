@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PEView on Analyst</title>
+    <link>http://localhost:1313/tools/peview/</link>
+    <description>Recent content in PEView on Analyst</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 18 Oct 2020 22:35:40 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tools/peview/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Memory Addressing</title>
+      <link>http://localhost:1313/docs/ttp/malware/analyse/basics/memory-addressing/</link>
+      <pubDate>Sun, 18 Oct 2020 22:35:40 +0300</pubDate>
+      <guid>http://localhost:1313/docs/ttp/malware/analyse/basics/memory-addressing/</guid>
+      <description>&lt;p&gt;&lt;em&gt;I&amp;rsquo;ve had a lot of time to dive into certain pecularities of how programs are outlined both in RAM and on disk when working as a malware analyst. One part of my job was to treat infected files. For that purpose I wrote remedy scripts. For them to work I had to have a solid underatanding where to perform the amputation. Since the topic might be a little confusing, I&amp;rsquo;ve published it here. Originally it was hand-written in my &amp;#x1f48e; notebook &amp;#x1f4d3;.&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

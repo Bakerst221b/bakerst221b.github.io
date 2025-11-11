@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>🕶️ Anti-Forensics on Analyst</title>
+    <link>http://localhost:1313/docs/ttp/antiforensics/</link>
+    <description>Recent content in 🕶️ Anti-Forensics on Analyst</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 12 Jul 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/docs/ttp/antiforensics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Anti-Forensics Techniques</title>
+      <link>http://localhost:1313/docs/ttp/antiforensics/techniques/</link>
+      <pubDate>Wed, 12 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/ttp/antiforensics/techniques/</guid>
+      <description>&lt;p&gt;&lt;em&gt;This article is an overview of possible anti-forensics.&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hiding Processes</title>
+      <link>http://localhost:1313/docs/ttp/antiforensics/process-hiding/</link>
+      <pubDate>Fri, 26 May 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/ttp/antiforensics/process-hiding/</guid>
+      <description>&lt;p&gt;Malware is not going to just always sit there and sing 🎶. Below are common techniques. More detailed explanation is in the anti-forensics section.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Forged Image Detection</title>
+      <link>http://localhost:1313/docs/ttp/antiforensics/forged-images/</link>
+      <pubDate>Mon, 12 Oct 2020 17:50:01 +0300</pubDate>
+      <guid>http://localhost:1313/docs/ttp/antiforensics/forged-images/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://29a.ch/photo-forensics/#forensic-magnifier&#34;&gt;https://29a.ch/photo-forensics/#forensic-magnifier&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Images can be forged or cloned. Regions can be manipulated with. Hard to detect with naked eye. &amp;#x2757; Social Media strips-off metadata from uploaded images which makes tracking of the image difficult.&lt;/p&gt;&#xA;&lt;p&gt;Main goals are: detect whether the image was cloned and track the source of the image. Forensically and JPEGSnoop open-source tools.  They detect tampering.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;Magnification&lt;/strong&gt;. &lt;code&gt;Autocontrast&lt;/code&gt; will not disturb the colors too much. &lt;code&gt;Autocontrast by channel&lt;/code&gt; will.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Clone Detection&lt;/strong&gt;. The most important. &lt;code&gt;Minimal similariyt&lt;/code&gt; ~ &lt;code&gt;0.5&lt;/code&gt;. &lt;code&gt;Minimal detail&lt;/code&gt; ~ &lt;code&gt;0.1&lt;/code&gt;. &lt;code&gt;Minimal cluster size&lt;/code&gt; - the number of blocks that two regions need to share in order to be considered clones ~ &lt;code&gt;14&lt;/code&gt;.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Error-level analysis&lt;/strong&gt;. Tells that something was compressed multiple times. For example, when you paste an image on another image and save, the are several compressions in place: for the original image and for the pasted one. Use noise to determine that. Spot the artifacts that have been implanted on an image by compressing it multiple times. Because of the noise these parts can&amp;rsquo;t be compressed much.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Noise analysis&lt;/strong&gt;. Self-explanatory.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;JPEG analysis&lt;/strong&gt;. Computes the Quantization table, which specify the way an image has been compressed. Each cell &lt;code&gt;0-255&lt;/code&gt;.  To compress an image the pixel intestines are modified by the software app in the range of &lt;code&gt;-128&lt;/code&gt; to &lt;code&gt;127&lt;/code&gt; and new quantization table is calculated. The value of standart - &lt;code&gt;95&lt;/code&gt;, which is auto value when the image is not processed. Adobe (Photoshop quality) uses &lt;code&gt;85&lt;/code&gt;. The order of different sections. &lt;code&gt;SOI&lt;/code&gt; - image start,  &lt;code&gt;EOI&lt;/code&gt;- end of image. Multiple &lt;code&gt;SOI&lt;/code&gt; and &lt;code&gt;EOI&lt;/code&gt; are indicative of pasting other images. Application segments, &lt;code&gt;APP0&lt;/code&gt;(JPEG version, screen and printing resolution), &lt;code&gt;APP1&lt;/code&gt; (date/time, focal length, aperture), &lt;code&gt;APP13&lt;/code&gt; (if processed with Adobe Photoshop). &lt;code&gt;SOS&lt;/code&gt; - image was compressed.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Structural and String Analysis&lt;/strong&gt;. When there is no EXIF is useful. &lt;code&gt;FBMD01000a9...&lt;/code&gt; indicated web upload (Facebook).&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;osdf-fakeimages1.png&#34; alt=&#34;osdf-fakeimages1&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Evading Antivirus</title>
+      <link>http://localhost:1313/docs/ttp/antiforensics/antivirus/</link>
+      <pubDate>Thu, 01 Oct 2020 13:01:35 +0300</pubDate>
+      <guid>http://localhost:1313/docs/ttp/antiforensics/antivirus/</guid>
+      <description>&lt;h2 id=&#34;windows&#34;&gt;Windows&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://tyeyeah.github.io/2021/08/02/2021-08-02-Bypass-Anti-Virus/&#34;&gt;https://tyeyeah.github.io/2021/08/02/2021-08-02-Bypass-Anti-Virus/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;macos&#34;&gt;macOS&lt;/h2&gt;&#xA;&lt;h2 id=&#34;linux&#34;&gt;Linux&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title>Hiding Data</title>
+      <link>http://localhost:1313/docs/ttp/antiforensics/fs-hiding-data/</link>
+      <pubDate>Thu, 01 Oct 2020 13:01:35 +0300</pubDate>
+      <guid>http://localhost:1313/docs/ttp/antiforensics/fs-hiding-data/</guid>
+      <description>&lt;h2 id=&#34;alternative-data-stream&#34;&gt;Alternative data stream&lt;/h2&gt;&#xA;&lt;p&gt;Alternate data streams. Specific for Windows. See more &lt;a href=&#34;http://localhost:1313/docs/dfir/forensic-investigation/reference/windows/win-ads&#34;&gt;here&lt;/a&gt;. Are there such streams for other OS? If yes, how to make them and discover them?&lt;/p&gt;&#xA;&lt;p&gt;To ensure compatability between NTFS and HFS. Allows hiding files.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;C:\type C:\mal.exe &amp;gt; C:\readme.txt&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;:&lt;/span&gt;naughty.exe&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;start readme.txt&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;:&lt;/span&gt;naughty.exe&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;C:\mklink innocent.exe readme.txt&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;:&lt;/span&gt;naughty.exe&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# to run&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;innocent.exe&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;But &lt;code&gt;dir /r&lt;/code&gt; - will display &lt;strong&gt;all&lt;/strong&gt; streams. LNS and Sfind will hunt down such files. Also, when you copy files from and to a FAT partition - all residual files will be deleted.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Turning Off Logging</title>
+      <link>http://localhost:1313/docs/ttp/antiforensics/logs-turnoff/</link>
+      <pubDate>Thu, 01 Oct 2020 13:01:35 +0300</pubDate>
+      <guid>http://localhost:1313/docs/ttp/antiforensics/logs-turnoff/</guid>
+      <description>&lt;h2 id=&#34;macos&#34;&gt;macOS&lt;/h2&gt;&#xA;&lt;p&gt;From Apple&amp;rsquo;s official documentation:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;In some cases, the contents of a volume are sufficiently secret that it is not appropriate to log them. To disable logging on a per-volume basis (for creating a backup volume, for example), you must do the following:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Create a &lt;code&gt;.fseventsd&lt;/code&gt; directory at the top level of the volume.&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Create an empty &lt;code&gt;no_log&lt;/code&gt; file in that directory.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;So if your volume is mounted at &lt;code&gt;/Volumes/MyDisk&lt;/code&gt;, you would create an empty file called &lt;code&gt;/Volumes/MyDisk/.fseventsd/no_log&lt;/code&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>USBKill Switch</title>
+      <link>http://localhost:1313/docs/ttp/antiforensics/usbkill-switch/</link>
+      <pubDate>Sun, 20 Sep 2020 11:04:28 +0300</pubDate>
+      <guid>http://localhost:1313/docs/ttp/antiforensics/usbkill-switch/</guid>
+      <description>&lt;p&gt;A software that could be used for anti-forensics. By default, configs are at &lt;code&gt;/etc&lt;/code&gt; and named &lt;code&gt;usbkill.ini&lt;/code&gt;. The default behaviour - shut the system down. Keeps a whitelist of allowed USB devices. Can also prevent malware from getting on the PC from a USB drive.&lt;/p&gt;&#xA;&lt;p&gt;Analogues: BusKill (set a &lt;code&gt;udev&lt;/code&gt; rule to be triggered if the USB drive is removed: lock, shutdown or self-destruct) and Silk Guardian (Linux Kernel mode switch that&amp;rsquo;s waiting for a change, deletes files on events and shuts the system down).&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>🏺 Windows Registry - Analyst</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="icon" href="http://localhost:1313/favicon.png">
+  <link href="/css/style-classic.css"></link>
+  
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+  
+
+</head>
+
+<body class='page page-default-list'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  <ul>
+    
+    
+    <li class="menu-item-home 🏡">
+      <a href="/">
+        <span>Home 🏡</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-blog ✍️">
+      <a href="/docs/blog">
+        <span>Blog ✍️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-ttp 🔍">
+      <a href="/docs/ttp">
+        <span>TTP 🔍</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-artefacts db 🏺">
+      <a href="/docs/artefacts">
+        <span>Artefacts DB 🏺</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-attacks db ⚔️">
+      <a href="/docs/attacks">
+        <span>Attacks DB ⚔️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-tools db 🛠️">
+      <a href="/docs/tools">
+        <span>Tools DB 🛠️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-crypto 🗝️">
+      <a href="/docs/cryptography">
+        <span>Crypto 🗝️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-about me 🧝🏽‍♀️">
+      <a href="/docs/about">
+        <span>About me 🧝🏽‍♀️</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+  <div class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="http://localhost:1313/"><img alt="Logo" src="/images/logo.png" /></a>
+    </div>
+    <div class="logo-mobile">
+      <a href="http://localhost:1313/"><img alt="Logo" src="/images/logo-mobile.svg" /></a>
+    </div>
+    
+
+    <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/docs/artefacts/win/registry/index.xml" title="Analyst" />
+    <div id="main-menu" class="main-menu">
+  <ul>
+    
+    
+    <li class="menu-item-home 🏡">
+      <a href="/">
+        <span>Home 🏡</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-blog ✍️">
+      <a href="/docs/blog">
+        <span>Blog ✍️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-ttp 🔍">
+      <a href="/docs/ttp">
+        <span>TTP 🔍</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-artefacts db 🏺">
+      <a href="/docs/artefacts">
+        <span>Artefacts DB 🏺</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-attacks db ⚔️">
+      <a href="/docs/attacks">
+        <span>Attacks DB ⚔️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-tools db 🛠️">
+      <a href="/docs/tools">
+        <span>Tools DB 🛠️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-crypto 🗝️">
+      <a href="/docs/cryptography">
+        <span>Crypto 🗝️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-about me 🧝🏽‍♀️">
+      <a href="/docs/about">
+        <span>About me 🧝🏽‍♀️</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+    
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+    
+    <div style="margin-left: 20pt;">
+      <a href="/index.xml" type="application/rss+xml">
+        <img src="/images/rss.png" alt="RSS Feed">
+      </a>
+    </div>
+    
+    <style>
+      a[href="/index.xml"] {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+      }
+    
+      a[href="/index.xml"] img {
+        height: 30px;
+      }
+    </style>
+    
+  </div>
+</div>
+
+
+    
+    
+    
+    
+    
+    
+
+    
+    <div class="container pt-2 pt-md-6 pb-3 pb-md-6">
+      <div class="row">
+        <div class="col-12 col-md-3 mb-3">
+          <div class="sidebar">
+            
+<div class="docs-menu">
+  <p>
+    <a href="/docs/artefacts/win/"> 👈🏼 Back to </br> 🪟 Windows Artefacts </a>
+  </p>
+</div> 
+
+
+
+          </div>
+        </div>
+        <div class="col-12 col-md-9">
+          
+
+
+
+ 
+ <h1 class="title">🏺 Windows Registry</h1> 
+ 
+
+    <h2><a href="http://localhost:1313/docs/artefacts/win/registry/devices/"> 🖱 Devices Attached</a></h2> 
+    <p> <p>Are we looking for USB storage media activity or all USB devices? Like, cameras 📸? Headphones 🎧? As for the timestamps, you&rsquo;ll usually have <strong>first</strong> (setupapi log) and <strong>last</strong> connected. There are also OS specific timestamps, like first or last install, first connect since reboot etc. <a href="/docs/dfir/host/windows/windows-artifacts#usb-devices">Windows</a> USB artifacts, <a href="/docs/dfir/host/apple/mac-artifacts#usb-devices">macOS</a>. See Event Manager&rsquo;s codes <a href="docs/dfir/host/windows/event-manager#20001">20001</a> and <a href="docs/dfir/host/windows/event-manager#20002">20002</a> for USB events for verification or if the registry was updated. Look at <code>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceClasses\</code> and <code>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\USB\&lt;hardware id&gt;\&lt;instance id&gt;\Device Parameters</code>. <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/usbcon/usb-device-specific-registry-settings">More</a>.</p></p>
+
+    <h2><a href="http://localhost:1313/docs/artefacts/win/registry/network/"> Network History</a></h2> 
+    <p> <p>🔑 <code>SOFTWARE\Microsoft\Windows NT\CurrentVersion\NetworkList\Signatures\Unmanaged</code>
+🔑 <code>SOFTWARE\Microsoft\WindowsNT\CurrentVersion\NetworkList\Signatures\Managed</code>
+🔑 <code>SOFTWARE\Microsoft\WindowsNT\CurrentVersion\NetworkList\Nla\Cache</code></p>
+<p>Can be used to get the following data:</p>
+<p>🐾 Identify networks that the computer has been connected to.
+🐾 Networks could be wireless or wired.
+🐾 Identify domain name/intranet name.
+🐾 Identify SSID, MAC address of SSID for Gateway could be physically triangulated.
+🐾 Identify Gateway MAC address.</p>
+<blockquote>
+<p>❗️This will also list any networks that have been connected to via a VPN.</p></blockquote>
+<h2 id="references">References</h2>
+<details>
+    <summary>Expand&hellip;</summary>
+    Something here
+</details></p>
+
+    <h2><a href="http://localhost:1313/docs/artefacts/win/registry/search/"> Search History</a></h2> 
+    <p> <h2 id="acmru">ACMRU</h2>
+<p>“Search History” on the Windows system (via Search Assistant)</p>
+<p>🔑 <code>NTUSER.DAT\Software\Microsoft\SearchAssistant\ACMru\XXXX</code>. Possible values of XXXX:</p>
+<ol>
+<li>Internet search - 5001</li>
+<li>All or part of the doc name - 5603</li>
+<li>A word or phrase in a file - 5604</li>
+<li>Printers, computers and people - 5647</li>
+</ol>
+<h2 id="wordwheelquery">WordWheelQuery</h2>
+<p>Win7+. Keywords are added in Unicode and listed in temporal order in an MRUlist.</p>
+<p>🔑 <code>NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\WordWheelQuery</code></p>
+<h2 id="references">References</h2>
+<details>
+    <summary>Expand&hellip;</summary>
+    Something here
+</details></p>
+
+    <h2><a href="http://localhost:1313/docs/artefacts/win/registry/sam/"> 🏺 SAM</a></h2> 
+    <p> <p><em>This is about &hellip; .</em></p></p>
+
+    <h2><a href="http://localhost:1313/docs/artefacts/win/registry/installed/"> Installed Apps</a></h2> 
+    <p> <p><strong>Key</strong> 🔑: <code>Microsoft\Windows\CurrentVersion\Uninstall</code>. There can be some data for programs that do not exist on the system anymore. The last write time is when the application was installed.</p>
+<p><strong>Key</strong> 🔑 <code>Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore</code> for installed Microsoft applications. Defines between those that were installed for a specific user or system-wide.</p>
+<p><strong>Key</strong> 🔑: <code>Wiw6432Node</code> (<code>SYSTEM</code> hive root node) - those that run a 32-bit mode. Separate sub-keys for different versions of a program.</p>
+<p><strong>Key</strong> 🔑: <code>Classes\Installer\Products</code> - installed using Miscrosoft installer (those with <code>msi</code> extension).</p></p>
+
+    <h2><a href="http://localhost:1313/docs/artefacts/win/registry/jumplist/"> Jumplist Data</a></h2> 
+    <p> <p><em>The Windows 7-10 taskbar (Jump List) is engineered to allow users to “jump” or access items they have frequently or recently used quickly and easily. This functionality not only includes recent media files; it must also include recent tasks. The data stored in the AutomaticDestinations folder will each have a unique file prepended with the AppID of the associated application.</em></p></p>
+
+    <h2><a href="http://localhost:1313/docs/artefacts/win/registry/recents/"> Recents</a></h2> 
+    <p> <h2 id="recentdocs">RecentDocs</h2>
+<p>🔑 <code>NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs</code></p>
+<p>This key will track the order of the last 150 files or folders opened, keeping track of the temporal order in which each file/folder was opened.</p>
+<p>🗝️ <code>.XXX</code> - This subkey stores the last files with a specific extension that were opened.</p>
+<p>🗝️ <code>Folder</code> This subkey stores the last folders that were opened. The MRU list will keep track of the temporal order in which each folder was opened.</p></p>
+
+    <h2><a href="http://localhost:1313/docs/artefacts/win/registry/uninstalled/"> Uninstalled</a></h2> 
+    <p> <p><strong>Key</strong> 🔑:  <code>Microsoft\Windows\CurrentVersion\Uninstall</code></p>
+<h2 id="references">References</h2>
+<details>
+    <summary>Expand&hellip;</summary>
+    Something here
+</details></p>
+
+    <h2><a href="http://localhost:1313/docs/artefacts/win/registry/amcache/"> AmCache</a></h2> 
+    <p> <p><em>And yet another place to check for program execution. It&rsquo;s like a forensic treasure of program execution. You can see installed applications, drivers and unassociated progs. For each entry, you can see loads of metadata. You can even see the SHA1 hashes! How great is that? However, be careful; installed doesn&rsquo;t mean executed!</em></p></p>
+
+    <h2><a href="http://localhost:1313/docs/artefacts/win/registry/bam/"> BAM and DAM</a></h2> 
+    <p> <p><em>It provides a full path of the executable file run on the system and the last execution date/time. BAM stands for Background Activity Moderator, and DAM - Desktop Activity Moderator. BAM is a &ldquo;daemon master&rdquo; (controls the background services), whereas DAM moderates desktop services to save energy.</em></p></p>
+
+    <h2><a href="http://localhost:1313/docs/artefacts/win/registry/shell-bag/"> ShellBag</a></h2> 
+    <p> <p><em>To open a file, one needs to perform a delightful jaunt to a directory where those files reside. Now picture this: imagine if we could keep a journal of all the full paths of the folders visited; wouldn&rsquo;t that be splendid? It so happens that this nice functionality does exist on Windows machines and ShellBags they are called. Since these folders can be located on a remote machine, a USB drive or any other external media, this artefact can be used to make assumptions about remote connections and devices attached.</em></p></p>
+
+    <h2><a href="http://localhost:1313/docs/artefacts/win/registry/shimcache/"> ShimCache aka AppCompatCache</a></h2> 
+    <p> <p><em>How often has the following happened to you? You want to run a program, but it&rsquo;s not designed to run on this version of OS. Windows has a mechanism to run older programs on newer systems. Even when these &ldquo;compatibility&rdquo; adjustments are not required, Windows still logs the information for all the programs run.</em></p></p>
+
+    <h2><a href="http://localhost:1313/docs/artefacts/win/registry/userassist/"> User Assist</a></h2> 
+    <p> <p><em>GUI-based programs launched from the desktop are tracked in the launcher on a Windows system.</em></p></p>
+
+    <h2><a href="http://localhost:1313/docs/artefacts/win/registry/anatomy/"> ⚙️ Windows Registry</a></h2> 
+    <p> <p>Hives:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>C:<span style="color:#ae81ff">\D</span>ocuments and Settings |*<span style="color:#ae81ff">\n</span>tuser.dat
+</span></span><span style="display:flex;"><span>C:<span style="color:#ae81ff">\U</span>sers<span style="color:#ae81ff">\ </span>|*<span style="color:#ae81ff">\ </span>ntuser. dat
+</span></span><span style="display:flex;"><span>C: <span style="color:#ae81ff">\U</span>sers<span style="color:#ae81ff">\ \*\n</span>tuser.dat. LOG|*
+</span></span><span style="display:flex;"><span>C: <span style="color:#ae81ff">\ </span>Users<span style="color:#ae81ff">\ </span>|*<span style="color:#ae81ff">\ </span>AppData<span style="color:#ae81ff">\L</span>ocal<span style="color:#ae81ff">\M</span>icrosoft<span style="color:#ae81ff">\W</span>indows| UsrClass.dat
+</span></span><span style="display:flex;"><span>C: | Users<span style="color:#ae81ff">\|</span>*<span style="color:#ae81ff">\ </span>AppData<span style="color:#ae81ff">\ </span>Local<span style="color:#ae81ff">\M</span>icrosoft Windows| UsrClass.dat.LOG|*
+</span></span><span style="display:flex;"><span>C: <span style="color:#ae81ff">\W</span>indows<span style="color:#ae81ff">\S</span>ystem32<span style="color:#ae81ff">\c</span>onfig<span style="color:#ae81ff">\S</span>AM. LOG|*
+</span></span><span style="display:flex;"><span>C: Windows<span style="color:#ae81ff">\ </span>System32<span style="color:#ae81ff">\ </span>config SECURITY. LOG<span style="color:#ae81ff">\ </span>*
+</span></span><span style="display:flex;"><span>C: Windows<span style="color:#ae81ff">\ </span>System32<span style="color:#ae81ff">\ </span>config<span style="color:#ae81ff">\ </span>SOFTWARE. LOG| *
+</span></span><span style="display:flex;"><span>C: Windows<span style="color:#ae81ff">\ </span>System32<span style="color:#ae81ff">\ </span>config SYSTEM. LOG<span style="color:#ae81ff">\*</span>
+</span></span><span style="display:flex;"><span> C:<span style="color:#ae81ff">\D</span>ocuments and Settings |*<span style="color:#ae81ff">\n</span>tuser.dat
+</span></span><span style="display:flex;"><span> C:<span style="color:#ae81ff">\U</span>sers<span style="color:#ae81ff">\ </span>|*<span style="color:#ae81ff">\ </span>ntuser. dat
+</span></span><span style="display:flex;"><span> C: <span style="color:#ae81ff">\U</span>sers<span style="color:#ae81ff">\ \*\n</span>tuser.dat. LOG|*
+</span></span><span style="display:flex;"><span> C: <span style="color:#ae81ff">\ </span>Users<span style="color:#ae81ff">\ </span>|*<span style="color:#ae81ff">\ </span>AppData<span style="color:#ae81ff">\L</span>ocal<span style="color:#ae81ff">\M</span>icrosoft<span style="color:#ae81ff">\W</span>indows| UsrClass.dat
+</span></span><span style="display:flex;"><span> C: | Users<span style="color:#ae81ff">\|</span>*<span style="color:#ae81ff">\ </span>AppData<span style="color:#ae81ff">\ </span>Local<span style="color:#ae81ff">\M</span>icrosoft Windows| UsrClass.dat.LOG|*
+</span></span><span style="display:flex;"><span> C: <span style="color:#ae81ff">\W</span>indows<span style="color:#ae81ff">\S</span>ystem32<span style="color:#ae81ff">\c</span>onfig<span style="color:#ae81ff">\S</span>AM. LOG|*
+</span></span><span style="display:flex;"><span> C: Windows<span style="color:#ae81ff">\ </span>System32<span style="color:#ae81ff">\ </span>config SECURITY. LOG<span style="color:#ae81ff">\ </span>*
+</span></span><span style="display:flex;"><span> C: Windows<span style="color:#ae81ff">\ </span>System32<span style="color:#ae81ff">\ </span>config<span style="color:#ae81ff">\ </span>SOFTWARE. LOG| *
+</span></span><span style="display:flex;"><span> C: Windows<span style="color:#ae81ff">\ </span>System32<span style="color:#ae81ff">\ </span>config SYSTEM. LOG<span style="color:#ae81ff">\*</span>
+</span></span><span style="display:flex;"><span>C: <span style="color:#ae81ff">\W</span>indows<span style="color:#ae81ff">\S</span>ystem32<span style="color:#ae81ff">\c</span>onfig<span style="color:#ae81ff">\ </span>SAM
+</span></span><span style="display:flex;"><span>C: <span style="color:#ae81ff">\W</span>indows<span style="color:#ae81ff">\S</span>ystem32<span style="color:#ae81ff">\c</span>onfig<span style="color:#ae81ff">\ </span>SECURITY
+</span></span><span style="display:flex;"><span>C: <span style="color:#ae81ff">\W</span>indows<span style="color:#ae81ff">\S</span>ystem32<span style="color:#ae81ff">\c</span>onfig<span style="color:#ae81ff">\ </span>SOFTWARE
+</span></span><span style="display:flex;"><span>C: <span style="color:#ae81ff">\W</span>indows<span style="color:#ae81ff">\S</span>ystem32<span style="color:#ae81ff">\c</span>onfig<span style="color:#ae81ff">\ </span>SYSTEM
+</span></span><span style="display:flex;"><span>C: <span style="color:#ae81ff">\W</span>indows<span style="color:#ae81ff">\S</span>ystem32<span style="color:#ae81ff">\c</span>onfig<span style="color:#ae81ff">\R</span>egBack<span style="color:#ae81ff">\\</span>*. LOG|*
+</span></span><span style="display:flex;"><span>C: <span style="color:#ae81ff">\W</span>indows<span style="color:#ae81ff">\S</span>ystem32<span style="color:#ae81ff">\c</span>onfig<span style="color:#ae81ff">\R</span>egBack<span style="color:#ae81ff">\S</span>AM
+</span></span><span style="display:flex;"><span>C: <span style="color:#ae81ff">\W</span>indows<span style="color:#ae81ff">\S</span>ystem32<span style="color:#ae81ff">\c</span>onfig<span style="color:#ae81ff">\R</span>egBack<span style="color:#ae81ff">\S</span>ECURITY
+</span></span><span style="display:flex;"><span>C: <span style="color:#ae81ff">\W</span>indows<span style="color:#ae81ff">\S</span>ystem32<span style="color:#ae81ff">\c</span>onfig<span style="color:#ae81ff">\R</span>egBack<span style="color:#ae81ff">\S</span>OFTWARE
+</span></span><span style="display:flex;"><span>C: <span style="color:#ae81ff">\W</span>indows<span style="color:#ae81ff">\S</span>ystem32<span style="color:#ae81ff">\c</span>onfig<span style="color:#ae81ff">\R</span>egBack<span style="color:#ae81ff">\S</span>YSTEM
+</span></span><span style="display:flex;"><span>Registryives: Path: C: <span style="color:#ae81ff">\W</span>indows<span style="color:#ae81ff">\S</span>ystem32<span style="color:#ae81ff">\c</span>onfig<span style="color:#ae81ff">\R</span>egBack<span style="color:#ae81ff">\S</span>YSTEMI
+</span></span></code></pre></div><p>Registry is a repository for settings on a Windows machine. Prior to Windows NT, <code>ini</code> files were used. These were substituted with Windows registry to keep initialization and configurations. Some changes are also logged by the registry.</p></p>
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <div class="sub-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="sub-footer-inner">
+          <ul>
+            <li class="zerostatic"><a href="https://www.zerostatic.io">www.zerostatic.io</a></li>
+            <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/docs/artefacts/win/registry/index.xml" title="Analyst" />
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/scripts.js"></script>
+  
+
+  
+
+
+</body>
+
+</html>

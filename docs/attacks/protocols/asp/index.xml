@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>📚 Session, Presentation, Application Layer on Analyst</title>
+    <link>http://localhost:1313/docs/attacks/protocols/asp/</link>
+    <description>Recent content in 📚 Session, Presentation, Application Layer on Analyst</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 02 Jun 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/docs/attacks/protocols/asp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Video and Audio</title>
+      <link>http://localhost:1313/docs/attacks/protocols/asp/video/</link>
+      <pubDate>Fri, 02 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/attacks/protocols/asp/video/</guid>
+      <description>&lt;p&gt;🛠️ &lt;code&gt;dshell&lt;/code&gt; can be used to analyse a &lt;code&gt;pcap&lt;/code&gt; file for the specific traffic types. Please refer to the Toolkit sections, Forensics Lab Setup for installation steps.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;decode -p rtp -i wlan0 &lt;span style=&#34;color:#75715e&#34;&gt;# see all auido and video traffic&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;&#xA;&lt;details&gt;&#xA;    &lt;summary&gt;Expand&amp;hellip;&lt;/summary&gt;&#xA;    Something here&#xA;&lt;/details&gt;</description>
+    </item>
+    <item>
+      <title>RDP</title>
+      <link>http://localhost:1313/docs/attacks/protocols/asp/rdp/</link>
+      <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/attacks/protocols/asp/rdp/</guid>
+      <description>&lt;p&gt;RDP Bitmap Cache. Windows developed RDP—small chunks of screenshots. The size of each is &lt;code&gt;64x64&lt;/code&gt; bit. And also, there is 1 huge sprite with all of them.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;%&lt;/span&gt;USERPROFILE&lt;span style=&#34;color:#f92672&#34;&gt;%&lt;/span&gt;\AppData\Local\Microsoft\Terminal Server Client\Cache&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;&#xA;&lt;li&gt;older - &lt;code&gt;.bmc&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;newer - &lt;code&gt;Cache####.bin&lt;/code&gt; where # is a number starting from &lt;code&gt;0&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;In case you investigate a successful RDP login to a specific machine, note that only in the case of the RDP login the “Workstation Name” field in the “Network Information” section does not refer to the source machine name instead it refers to the name of the machine that recorded the event log (Target machine). be careful because such wrong information may miss leading your incident investigations. For the example in the screenshot, the “pbeesly” account logged on the “SCARNTON” hostname from the &lt;code&gt;172.18.39.2&lt;/code&gt; source machine IP. If you want to find the source machine name you can use the Event IDs 4778 or 4779 recorded in the security events instead. &lt;a href=&#34;https://www.linkedin.com/posts/mostafa-yahia-701b4b15a_in-case-you-investigate-a-successful-rdp-activity-7004505487912112130-W6Oo?utm_source=share&amp;amp;utm_medium=member_desktop&#34;&gt;https://www.linkedin.com/posts/mostafa-yahia-701b4b15a_in-case-you-investigate-a-successful-rdp-activity-7004505487912112130-W6Oo?utm_source=share&amp;amp;utm_medium=member_desktop&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Telnet</title>
+      <link>http://localhost:1313/docs/attacks/protocols/asp/telnet/</link>
+      <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/attacks/protocols/asp/telnet/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Ports&lt;/strong&gt;: &lt;code&gt;23&lt;/code&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;-rtfm&#34;&gt;📕 RTFM&lt;/h3&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# If the Telnet port is open, you might try to log in with a user. If the user doesn&amp;#39;t have a password set up, you might even be able to log in without a password.&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;telnet &amp;lt;IP&amp;gt; &amp;lt;port&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;root &lt;span style=&#34;color:#75715e&#34;&gt;# or any other username that you think is there&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Password: &lt;span style=&#34;color:#75715e&#34;&gt;# leave blank&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>FTP and sFTP</title>
+      <link>http://localhost:1313/docs/attacks/protocols/asp/ftp/</link>
+      <pubDate>Tue, 16 May 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/attacks/protocols/asp/ftp/</guid>
+      <description>&lt;p&gt;&lt;em&gt;This is about &amp;hellip; .&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>📚 DHCP</title>
+      <link>http://localhost:1313/docs/attacks/protocols/asp/dhcp/</link>
+      <pubDate>Wed, 18 Nov 2020 16:47:41 +0300</pubDate>
+      <guid>http://localhost:1313/docs/attacks/protocols/asp/dhcp/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;D&lt;/strong&gt;ynamic &lt;strong&gt;H&lt;/strong&gt;ost &lt;strong&gt;C&lt;/strong&gt;onfiguration &lt;strong&gt;P&lt;/strong&gt;rotocol. Listening on 67 port. Sending from 68.&lt;/p&gt;&#xA;&lt;h2 id=&#34;mechanism&#34;&gt;Mechanism&lt;/h2&gt;&#xA;&lt;h3 id=&#34;dhcp-discover-broadcast-c--s&#34;&gt;DHCP Discover (Broadcast) C-&amp;gt; S&lt;/h3&gt;&#xA;&lt;p&gt;[new PC] 🧸 &lt;em&gt;&amp;ldquo;I need an IP, I am new here. Only have this stupid useless 169.254.X.X address. Where do I register? Guys! Who knows where the DHCP is?&amp;rdquo;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;DHCPDISCOVER&lt;/code&gt; is broadcasted in the network. Every machine, even non-DHCP once, hear this message.&lt;/p&gt;&#xA;&lt;h3 id=&#34;dhcp-offer-broadcastunicat-s---c&#34;&gt;DHCP Offer (Broadcast/Unicat) S -&amp;gt; C&lt;/h3&gt;&#xA;&lt;p&gt;[DHCP server] 🥸 &lt;em&gt;&amp;ldquo;I&amp;rsquo;m DHCP. How can I help?&amp;rdquo;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>📚 DNS</title>
+      <link>http://localhost:1313/docs/attacks/protocols/asp/dns/</link>
+      <pubDate>Wed, 18 Nov 2020 16:47:41 +0300</pubDate>
+      <guid>http://localhost:1313/docs/attacks/protocols/asp/dns/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;D&lt;/strong&gt;omain &lt;strong&gt;N&lt;/strong&gt;ame &lt;strong&gt;S&lt;/strong&gt;ystem. Translates IPs to domain names like &lt;code&gt;192.168.1.1&lt;/code&gt; to &lt;code&gt;router.lan&lt;/code&gt; and visa versa.&lt;/p&gt;&#xA;&lt;p&gt;DNS querying can be either recursive or non-recursive.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Recursive&lt;/strong&gt;. ISP DNS server queries other DNS servers until it finds the answer. Once it&amp;rsquo;s found, it&amp;rsquo;s returned by the ISP DNS to the client.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Non-recursive&lt;/strong&gt;. ISP DNS is not involved? Response comes directly from the DNS server queried the last. So, who has asked initially, would be shown in the last DNS server&amp;rsquo;s logs 📝.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>📚 IRC</title>
+      <link>http://localhost:1313/docs/attacks/protocols/asp/irc/</link>
+      <pubDate>Wed, 18 Nov 2020 16:47:41 +0300</pubDate>
+      <guid>http://localhost:1313/docs/attacks/protocols/asp/irc/</guid>
+      <description>&lt;p&gt;IRC stands for &lt;strong&gt;I&lt;/strong&gt;nternet &lt;strong&gt;R&lt;/strong&gt;elay &lt;strong&gt;C&lt;/strong&gt;hat. Used for instant messaging. Usually sits at port 6667. On Linux can be installed and run with &lt;code&gt;sudo invoke-rc.d inspircd&lt;/code&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>📚 SMB</title>
+      <link>http://localhost:1313/docs/attacks/protocols/asp/smb/</link>
+      <pubDate>Wed, 18 Nov 2020 16:47:41 +0300</pubDate>
+      <guid>http://localhost:1313/docs/attacks/protocols/asp/smb/</guid>
+      <description>&lt;ol&gt;&#xA;&lt;li&gt;Over TCP - 445 port&lt;/li&gt;&#xA;&lt;li&gt;Over NetBIOS API&#xA;&lt;ol&gt;&#xA;&lt;li&gt;UDP - ports 137, 138&lt;/li&gt;&#xA;&lt;li&gt;TCP - ports 137, 139&lt;/li&gt;&#xA;&lt;li&gt;NBF (legacy)&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Powershell command + win reg for SMB 1,2,3.&lt;/p&gt;&#xA;&lt;h3 id=&#34;-rtfm&#34;&gt;📕 RTFM&lt;/h3&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;nmap -p 139,445 --script smb-enum-shares &amp;lt;target&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;brew install samba&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;smbclient -U username -W workgroup -c &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;ls&amp;#39;&lt;/span&gt; //server/share&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+  </channel>
+</rss>

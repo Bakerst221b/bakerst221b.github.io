@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>🍏 🐧 UNIX Artefacts - Analyst</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="icon" href="http://localhost:1313/favicon.png">
+  <link href="/css/style-classic.css"></link>
+  
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+  
+
+</head>
+
+<body class='page page-default-list'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  <ul>
+    
+    
+    <li class="menu-item-home 🏡">
+      <a href="/">
+        <span>Home 🏡</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-blog ✍️">
+      <a href="/docs/blog">
+        <span>Blog ✍️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-ttp 🔍">
+      <a href="/docs/ttp">
+        <span>TTP 🔍</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-artefacts db 🏺">
+      <a href="/docs/artefacts">
+        <span>Artefacts DB 🏺</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-attacks db ⚔️">
+      <a href="/docs/attacks">
+        <span>Attacks DB ⚔️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-tools db 🛠️">
+      <a href="/docs/tools">
+        <span>Tools DB 🛠️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-crypto 🗝️">
+      <a href="/docs/cryptography">
+        <span>Crypto 🗝️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-about me 🧝🏽‍♀️">
+      <a href="/docs/about">
+        <span>About me 🧝🏽‍♀️</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+  <div class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="http://localhost:1313/"><img alt="Logo" src="/images/logo.png" /></a>
+    </div>
+    <div class="logo-mobile">
+      <a href="http://localhost:1313/"><img alt="Logo" src="/images/logo-mobile.svg" /></a>
+    </div>
+    
+
+    <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/docs/artefacts/apple/index.xml" title="Analyst" />
+    <div id="main-menu" class="main-menu">
+  <ul>
+    
+    
+    <li class="menu-item-home 🏡">
+      <a href="/">
+        <span>Home 🏡</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-blog ✍️">
+      <a href="/docs/blog">
+        <span>Blog ✍️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-ttp 🔍">
+      <a href="/docs/ttp">
+        <span>TTP 🔍</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-artefacts db 🏺">
+      <a href="/docs/artefacts">
+        <span>Artefacts DB 🏺</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-attacks db ⚔️">
+      <a href="/docs/attacks">
+        <span>Attacks DB ⚔️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-tools db 🛠️">
+      <a href="/docs/tools">
+        <span>Tools DB 🛠️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-crypto 🗝️">
+      <a href="/docs/cryptography">
+        <span>Crypto 🗝️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-about me 🧝🏽‍♀️">
+      <a href="/docs/about">
+        <span>About me 🧝🏽‍♀️</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+    
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+    
+    <div style="margin-left: 20pt;">
+      <a href="/index.xml" type="application/rss+xml">
+        <img src="/images/rss.png" alt="RSS Feed">
+      </a>
+    </div>
+    
+    <style>
+      a[href="/index.xml"] {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+      }
+    
+      a[href="/index.xml"] img {
+        height: 30px;
+      }
+    </style>
+    
+  </div>
+</div>
+
+
+    
+    
+    
+    
+    
+    
+
+    
+    <div class="container pt-2 pt-md-6 pb-3 pb-md-6">
+      <div class="row">
+        <div class="col-12 col-md-3 mb-3">
+          <div class="sidebar">
+            
+<div class="docs-menu">
+  <p>
+    <a href="/docs/artefacts/"> 👈🏼 Back to </br> 📜 Artefacts DB </a>
+  </p>
+</div> 
+
+
+
+          </div>
+        </div>
+        <div class="col-12 col-md-9">
+          
+
+
+
+ 
+ <h1 class="title">🍏 🐧 UNIX Artefacts</h1> 
+ 
+
+    <h2><a href="http://localhost:1313/docs/artefacts/apple/apple-security/"> Apple Platform Security</a></h2> 
+    <p> <p><em>Applications or even OS itself doesn&rsquo;t know the keys that are protected by Secure Enclave. OS only sees Keychain, but the Security Enclave is separated. It&rsquo;s asked to decrypt the information and it does just that returning the decrypted information.</em></p>
+<h2 id="hardware">Hardware</h2>
+<p>Imagine that there lives a vicious criminal 🦹 who&rsquo;s stealing and deleting puppy photos from a preschool server. It&rsquo;s a nasty bussiness that can get him in jail if he&rsquo;s not cautious. He likes to keep everything on the mobile phone he has with him all the time even in the bathroom 🚽 and while taking a shower 🚿 (he&rsquo;s very careful). He considers the photos to be completely safe since he has set up a PIN for the device only he knows. All his secrets and stuff that can potentially throw him into jail are all on this little piece of harware.</p>
+<p>But suddenly some other guy rats 🐀 him out (because he is sure that&rsquo;s beneath his dignity to do such a damage for little kids) and serious and righteous people in suits are comming to your home with a warrant 📄. Well, this criminal 🦹‍♀️  still thinks: &ldquo;<em>Hey, suckers, I&rsquo;ve got everything on my mobile phone which is secure as hell. All other devices are completely wiped.</em>&rdquo;. How wrong would this assumption be? What if he had an old Android device? Or may be a iPhone 5S? Or iPhone 4? Is there really a difference? What if the only reasonable assumption in this case would be for him to pack ciggies 🚬  for the jail?</p>
+<p>One of the main things to think about when answering the question: is the mobile phone&rsquo;s NAND or NOR (i.e. non-volatile storage) encrypted? If it&rsquo;s not, then, my dear fellow, he is in trouble. One could just extract this precious little chip and insert it into another device. Now they don&rsquo;t need <em>his</em> passcode, they&rsquo;d only require theirs or even none at all.</p>
+<p>Alright, say, he was not complete dump and was smart enough to get himself a device📱that uses fulldisk encryption. Is this attack still feseable? Well, depends on where the key 🔑 is stored. If it&rsquo;s, for example, stored at <code>0x0000000</code> address of this NAND, then it&rsquo;s just the question of extracting this chip, reading 📖 the first bytes and decrypting the contents. So, how and where to store this key in order to make this <em>at least</em> harder?</p>
+<p>This is what Apple has been doing for a while. It got so overwhelmed with this task that it happened to end up protecting its endusers even from themselves.</p>
+<p>Back then mobile devices had several basic parts: CPU, some storage chip (NAND or NOR) and some other pieces used to make it possible to use this for talking and SMS-ing. Apple has decided to apply the least-privilege policy here again and restrict the enduser to only those tasks he or she can possibly want to do. It&rsquo;s a phone afterall. Why modifying OS? You don&rsquo;t need it. Make you calls and be happy.</p>
+<p>Modern Apple iDevices have two AES engines: one is for Secure Enclave only, another one is used both for SE and Application Processor.</p>
+<h2 id="intro">Intro</h2>
+<p>When the device is manufactured, a 256-bit AES key is written to Secure Enclave. Before some veresions of Apple devices these UIDs were randomly generated and them fused to the chip. However at the moment they are generated by SE during manufacturing and fused using special software. There is no API (neither software, nor hardware) that is able to get it from there, used only by the processor’s hardware AES engine. This UID key is unique for each device.</p>
+<p>Also, when user creates a passcode, it is turned into a cryptographic key and strengthened with the device’s UID.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">PBKDF2</span>(user_pass_derived_crypto_key, device_uid):
+</span></span><span style="display:flex;"><span>	aes_key <span style="color:#f92672">=</span> device_uid
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">0</span>,n):
+</span></span><span style="display:flex;"><span>    result <span style="color:#f92672">=</span> pseudorandom_func(aes, aes_key, result, user_pass_derived_crypto_key)
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">return</span> result
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>user_passcode <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;secret&#34;</span>
+</span></span><span style="display:flex;"><span>device_uid <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;123456...0&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>user_pass_derived_crypto_key <span style="color:#f92672">=</span> crypto(user_passcode)
+</span></span><span style="display:flex;"><span>se_mem_key <span style="color:#f92672">=</span> PBKDF2(user_pass_derived_crypto_key, device_uid)
+</span></span></code></pre></div><p><code>se_mem_key</code> encrypts Secure Enclave&rsquo;s memory space.</p>
+<blockquote>
+<p>In iOS and iPadOS, files are encrypted with a key entangled with the Secure Enclave’s UID and an anti-replay nonce as they are written to the data volume. On A9 (and newer) SoCs, the anti-replay nonce uses entropy generated by the hardware random number generator. The anti-replay nonce support is rooted in a dedicated nonvolatile memory <a href="https://support.apple.com/guide/security/aside/sec3256b5f8c/1/web/1">integrated circuit (IC)</a>. In Mac computers with the Apple T2 Security Chip, the FileVault key hierarchy is similarly linked to the UID of the Secure Enclave. In devices with A12 (and newer) and S4 SoCs, the Secure Enclave is paired with a secure storage IC for anti-replay nonce storage. The secure storage IC is designed with immutable ROM code, a hardware random number generator, cryptography engines, and physical tamper detection. To read and update nonces, the Secure Enclave and storage IC employ a secure protocol that ensures exclusive access to the nonces.</p></blockquote>
+<p><a href="https://support.apple.com/guide/security/dedicated-aes-engine-sec4ea70a303/1/web/1">https://support.apple.com/guide/security/dedicated-aes-engine-sec4ea70a303/1/web/1</a></p>
+<p>All this resembles the sad story of a businessman from <em>Eine Woche volle Samstage (1973)</em> by Paul Maar, when a man was so afraid 😱 of thieves 🦹‍♀️ that he hid the office key 🔑 in a sock 🧦, the sock - in a boot 🥾, the boot in a wardrobe locked with a key, the key to the wardrobe hid in his table&rsquo;s drawer, and the key from the last had lost and by doing so arranged an unscheduled day-off for his employees. So is with the encryption on iOS devices:</p>
+<p><img src="device_encr_scheme.png" alt="device_encr_scheme"></p>
+<p>File contents&rsquo;s is encrypted with its key, which is stored in the metadata. File key is wrapped with a class key. The metadata, where this encrypted key is stored, is then encrypted by the file system key. All of it is finally protected by an alianz of the user&rsquo;s passcode key and a hardware key (UID). Wow. Let&rsquo;s dive a bit deeper, cause it all seems to be too messed up and confusing.</p>
+<p>User passcode if fed to RNG. It&rsquo;s also to entangled with UID.</p>
+<h2 id="class-keys">Class keys</h2>
+<p>Class key represent protection classes. Each one except of <strong>NSFileProtectionNone</strong></p>
+<p>are protected with the alianz of hardware key and user passcode key:</p>
+<ol>
+<li><strong>Complete Protection (NSFileProtectionComplete)</strong> Data is inaccessible until the user unlocks the device.</li>
+<li><strong>Protected Unless Open (NSFileProtectionCompleteUnlessOpen)</strong>: Data is accessible after the user unlocks the device.</li>
+<li><strong>Protected Until First User Authentication (NSFileProtectionCompleteUntilFirstUserAuthentication)</strong>: The file can be accessed as soon as the user unlocks the device for the first time after booting. It can be accessed even if the user subsequently locks the device and the class key is not removed from memory.</li>
+<li><strong>No Protection (NSFileProtectionNone)</strong>: Protected with the UID only. The class key is stored in &ldquo;Effaceable Storage&rdquo;, which is a region of flash memory on the iOS device that allows the storage of small amounts of data. Used for remote wiping.</li>
+</ol>
+<p>About Secure Enclave:</p>
+<p><a href="https://www.youtube.com/watch?v=7UNeUT_sRos">https://www.youtube.com/watch?v=7UNeUT_sRos</a></p>
+<p><a href="https://support.apple.com/guide/security/welcome/web">https://support.apple.com/guide/security/welcome/web</a></p>
+<p>The main idea behind the scenes is that applications or even OS itself doesn&rsquo;t know the keys. OS only sees Keychain, but the Security Enclave is separated. It&rsquo;s asked to decrypt the information and it does just that returning the decrypted information.</p>
+<ol>
+<li>T2 vs T1</li>
+<li>Security Enclave - coprocessor with a Keymanager</li>
+</ol>
+<p>Devices which have the SE:</p>
+<ul>
+<li>iPhone 5s (or later)</li>
+<li>iPad Air (or later)</li>
+<li>Mac computers that contain the T1 chip or the Apple T2 Security Chip</li>
+<li>Apple TV 4th generation (or later)</li>
+<li>Apple Watch Series 1 (or later)</li>
+<li>HomePod</li>
+</ul>
+<p>Let&rsquo;s observe this scheme from Apple website</p>
+<p><img src="SEP_scheme_Apple.png" alt="SEP_scheme_Apple"></p>
+<p>Secure Enclave and Application Processor (the main CPU) have separate boot processes and even separate starting code (BootROM) and separate OS. SE has its own light-weight OS (based on L4-family microkernel). And even update process is isolated. With each boot an ephemeral memory protection key is created.</p>
+<h2 id="boot-process">Boot process:</h2>
+<ol>
+<li>Boot ROM (<strong>R</strong>ead <strong>O</strong>nly <strong>M</strong>emory) is executed like the Big Bang, out of nowhere. It&rsquo;s called read-only because it can not be changes and therefore is hardware root of trust. It&rsquo;s implicitly trusted. So they say, you know, if you can&rsquo;t trust Boot ROM, whom can you trust then? Than would be a crazy world. Phew! 😅 It&rsquo;s such a relief that ROM can be ultimately trusted. It contains the Apple Root CA 🔖 public key &#x1f511;.</li>
+<li>Boot ROM creates a key
+<ol>
+<li>User&rsquo;s key + device&rsquo;s UID = ephemeral memory protection key</li>
+<li>Now, ephemeral memory protection key is used to protect Security Enclave&rsquo;s memory.</li>
+</ol>
+</li>
+</ol>
+<h2 id="filevault">FileVault</h2>
+<h2 id="touchid">TouchID</h2>
+<p>2012 - AuthenTec?</p>
+<p>Tied at the hardware level to A chip. <code>LAContext</code> and User Presence/ACLs.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">if</span>(touchIdIsSet){
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span>(checkcredentials()){
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//authenticated</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//error</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p><a href="http://highaltitudehacks.com/2013/07/25/ios-application-security-part-8-method-swizzling-using-cycript/">http://highaltitudehacks.com/2013/07/25/ios-application-security-part-8-method-swizzling-using-cycript/</a></p>
+<h2 id="questions">Questions</h2>
+<blockquote>
+<p>But I don&rsquo;t enter the passcode at the very beginning. Where does SE get it from during the very first steps of its boot?</p></blockquote>
+<h2 id="low-level-security">Low Level Security</h2>
+<p><code>UID</code> - key that is fused into Application processor. No one know it and can get from the device. Used to encrypt the contents.</p>
+<p><code>GUID</code> -</p>
+<p><code>UDID</code> - device identifier. It can be retrived with iTunes.</p>
+<p>Home button - sapfire crystal for scratch resistance. Capacitive touch for detection.</p>
+<h2 id="application-sandbox">Application Sandbox</h2>
+<p>There are two users on iOS: <code>mobile</code> and <code>root</code>. When the device is not jailbroken, all applications and processes run by user are in <code>mobile</code>&rsquo;s context. Each application is sandboxed and certain policies are implemented (they are called <em>profiles</em> in iOS). Hence, an application can&rsquo;t access other apps&rsquo; protected resources. This system is called <em>TrustedBSD Mandatory Access Control (MAC) Framework</em>.  To access other apps&rsquo; resources, entitlements are specified for each application and checked by <code>securityd</code>.</p>
+<h2 id="entitlements">Entitlements</h2>
+<p>Consider some Russian &#x1f1f7;&#x1f1fa; &#x1f469; woman willing to travel to Japan &#x1f1ef;&#x1f1f5;, EU &#x1f1ea;&#x1f1fa; and USA &#x1f1fa;&#x1f1f8;.  Since October Revolution in 1917 and WWI it&rsquo;s no longer possible to do it so simply as that. For travelling one needs a visa &#x1f3ab;, and usually each for each country one&rsquo;s planning to attend.</p>
+<p>So, this Russian woman has two visas yet: Shengen and US, but has not aquired Japanese visa. On passport control &#x1f6c2; (<code>securityd</code>) these visas in her passport are checked and corresponding gates are opened if the visa is present. If not, the access to the country&rsquo;s gate is restricted &#x1f6ab;. Since she doesn&rsquo;t have a Japanese visa, she is not <em>entitled</em> to travel to Japan. Since she has EU and US visas, she can travel there freely. There are, of course, dozens of other people, who can have EU or US visa, so she&rsquo;s not the only one entitled to get there. Basically, they are all in the same <em>entitlement group</em>.</p>
+<p>The same is here: each application has &ldquo;passport&rdquo; &#x1f516; with entitlements (an array of strings), based on which an access is denied &#x1f6ab; or allowed &#x2705; by &#x1f6c2; <code>securityd</code> (passport control).</p>
+<p>All entitlements are added before or during signing the application, hence they cannot be changed.</p>
+<p><em>Apple is very well known for its value of security and the advanced security mechanisms. I personally found it hard sometimes to understand specific technical controls. This is why I am writing this little article. Smartphones are known to be more secure than desktops for they are also more MOBILE and tend to get lost a lot. That&rsquo;s why MacBooks tend to get closer and closer to smartphones in terms of security.</em></p></p>
+
+    <h2><a href="http://localhost:1313/docs/artefacts/apple/databases/"> Databases</a></h2> 
+    <p> <p><em>KnowledgeC, CellularUsage and several other databases store a lot of interesting information.</em></p></p>
+
+    <h2><a href="http://localhost:1313/docs/artefacts/apple/credentials/"> 🗝️ Credentials</a></h2> 
+    <p> <p><em>In this article, I will gather information regarding common UNIX-specific credentials and the artefacts linked to them.</em></p></p>
+
+    <h2><a href="http://localhost:1313/docs/artefacts/apple/apple-plist/"> Apple Plist</a></h2> 
+    <p> <p><em>This is about &hellip; .</em></p></p>
+
+    <h2><a href="http://localhost:1313/docs/artefacts/apple/users/"> 👥 Users</a></h2> 
+    <p> <h2 id="macos">macOS</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/Users/%username%/
+</span></span></code></pre></div><h3 id="password-hashes">Password hashes</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo plutil -p /var/db/dslocal/nodes/Default/users/&lt;usename&gt;.plist
+</span></span></code></pre></div><h3 id="account-info">Account Info</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo plutil -p /private/var/db/dslocal/nodes/Default/Users/&lt;User&gt;.plist
+</span></span></code></pre></div><p>Contains name, profile name, password hint, account image, UID</p>
+<p>Get uids of users (incuding services&rsquo; uids): <code>/private/var/db/dslocal/nodes/Default/sqlindex</code> (SQLite DB).</p>
+<h3 id="login-history">Login History</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo su
+</span></span><span style="display:flex;"><span>cd /private/var/log/asl 
+</span></span><span style="display:flex;"><span>cat BB.&lt;date&gt;.asl
+</span></span></code></pre></div><p>BB.date.asl - Best before.</p>
+<blockquote>
+<p>⚠️ When grabbing volumes from APFS system, better acquire Recovery volume as well, since it may contain account information as well (password hints, for example).</p></p>
+
+    <h2><a href="http://localhost:1313/docs/artefacts/apple/dnscache/"> DNS Cache</a></h2> 
+    <p> <h2 id="macos">macOS</h2>
+<p>To achieve the same on a macOS machine:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk -F<span style="color:#e6db74">&#39;,&#39;</span> <span style="color:#e6db74">&#39;NR&gt;1{print $1&#34;,&#34;$2}&#39;</span> *.csv | sort | uniq -c | awk <span style="color:#e6db74">&#39;{print $1&#34;,&#34;$2&#34;,&#34;$3}&#39;</span> &gt; merged.csv
+</span></span></code></pre></div><p>And the Python code to do the same (ChatGPT):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> csv
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> os
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> collections <span style="color:#f92672">import</span> Counter
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Iterate over all the CSV files in the current directory and extract the objects</span>
+</span></span><span style="display:flex;"><span>objects <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> filename <span style="color:#f92672">in</span> os<span style="color:#f92672">.</span>listdir():
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> filename<span style="color:#f92672">.</span>endswith(<span style="color:#e6db74">&#39;.csv&#39;</span>):
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">with</span> open(filename, <span style="color:#e6db74">&#39;r&#39;</span>) <span style="color:#66d9ef">as</span> file:
+</span></span><span style="display:flex;"><span>            reader <span style="color:#f92672">=</span> csv<span style="color:#f92672">.</span>reader(file)
+</span></span><span style="display:flex;"><span>            objects <span style="color:#f92672">+=</span> list(map(<span style="color:#66d9ef">lambda</span> row: (row[<span style="color:#ae81ff">0</span>], row[<span style="color:#ae81ff">1</span>]), list(reader)[<span style="color:#ae81ff">1</span>:]))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Use Counter to count the occurrences of each object</span>
+</span></span><span style="display:flex;"><span>object_counts <span style="color:#f92672">=</span> Counter(objects)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Write the merged CSV file</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">&#39;merged.csv&#39;</span>, <span style="color:#e6db74">&#39;w&#39;</span>, newline<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;&#39;</span>) <span style="color:#66d9ef">as</span> file:
+</span></span><span style="display:flex;"><span>    writer <span style="color:#f92672">=</span> csv<span style="color:#f92672">.</span>writer(file)
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Write the header row</span>
+</span></span><span style="display:flex;"><span>    writer<span style="color:#f92672">.</span>writerow([<span style="color:#e6db74">&#39;count&#39;</span>, <span style="color:#e6db74">&#39;Name&#39;</span>, <span style="color:#e6db74">&#39;IP&#39;</span>])
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Iterate over the Counter items and write each object as a row in the CSV</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> object, count <span style="color:#f92672">in</span> object_counts<span style="color:#f92672">.</span>items():
+</span></span><span style="display:flex;"><span>        writer<span style="color:#f92672">.</span>writerow([count, <span style="color:#f92672">*</span>object])
+</span></span></code></pre></div><h2 id="linux">Linux</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>netstat -tulpn
+</span></span><span style="display:flex;"><span>chkconfig &lt;servicename&gt; off <span style="color:#75715e"># disable</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>sudo lsof -i -n -P
+</span></span></code></pre></div><h2 id="references">References</h2>
+<details>
+    <summary>Expand&hellip;</summary>
+    Something here
+</details></p>
+
+    <h2><a href="http://localhost:1313/docs/artefacts/apple/connections/"> Network Connections</a></h2> 
+    <p> <p>For Mac OS <code>netstat</code> there is no <code>-o</code> switch, so I&rsquo;ve used <code>netstat -ban</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo lsof -i -n -p
+</span></span></code></pre></div><p><code>lsof -i :443</code> will show you all connections associated with port 443, commonly used for TLS communication. Sheward, Mike. Hands-on Incident Response and Digital Forensics (p. 163). BCS Learning &amp; Development Limited. Kindle Edition.</p>
+<p><img src="artefacts/apple/connections/images/1.png" alt="img1">
+The first column will give a hint about what the application responsible for this connection is. To get the full path to the app executable, use <code>ps -fp &lt;PID&gt;</code> command:</p></p>
+
+    <h2><a href="http://localhost:1313/docs/artefacts/apple/spotlight/"> Spotlight Data</a></h2> 
+    <p> <p><code>/Users/username/.zsh_history</code> look for something like <code>hdiutil mount silenteye-0.4.1b-snowleopard.dmg</code> and <code>sudo cp -R /Volumes/SilentEye/silenteye-0.4.1b-snowleopard_installer.app /Applications</code>.</p>
+<p>Also, <code>/Users/sneaky/Library/Application Support/com.apple.spotlight/com.apple.spotlight.Shortcuts</code> if it was then searched via Spotlight.</p>
+<p><code>plutil -p &quot;/Users/sneaky/Library/Preferences/com.apple.dock.plist&quot;</code> . Also gives some information on the file location, timestamps and bundle id.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>1 <span style="color:#f92672">=</span>&gt; <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;GUID&#34;</span> <span style="color:#f92672">=</span>&gt; <span style="color:#ae81ff">2221790314</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;tile-data&#34;</span> <span style="color:#f92672">=</span>&gt; <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;book&#34;</span> <span style="color:#f92672">=</span>&gt; <span style="color:#f92672">{</span>length <span style="color:#f92672">=</span> 592, bytes <span style="color:#f92672">=</span> 0x626f6f6b <span style="color:#ae81ff">50020000</span> <span style="color:#ae81ff">00000410</span> <span style="color:#ae81ff">30000000</span> ... <span style="color:#ae81ff">04000000</span> <span style="color:#ae81ff">00000000</span> <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;bundle-identifier&#34;</span> <span style="color:#f92672">=</span>&gt; <span style="color:#e6db74">&#34;com.bitrock.installbuilder&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;dock-extra&#34;</span> <span style="color:#f92672">=</span>&gt; <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;file-data&#34;</span> <span style="color:#f92672">=</span>&gt; <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#e6db74">&#34;_CFURLString&#34;</span> <span style="color:#f92672">=</span>&gt; <span style="color:#e6db74">&#34;file:///Applications/silenteye-0.4.1b-snowleopard_installer.app/&#34;</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#e6db74">&#34;_CFURLStringType&#34;</span> <span style="color:#f92672">=</span>&gt; <span style="color:#ae81ff">15</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;file-label&#34;</span> <span style="color:#f92672">=</span>&gt; <span style="color:#e6db74">&#34;silenteye-0.4.1b-snowleopard_installer&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;file-mod-date&#34;</span> <span style="color:#f92672">=</span>&gt; <span style="color:#ae81ff">187534827240406</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;file-type&#34;</span> <span style="color:#f92672">=</span>&gt; <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;parent-mod-date&#34;</span> <span style="color:#f92672">=</span>&gt; <span style="color:#ae81ff">187380208417750</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;tile-type&#34;</span> <span style="color:#f92672">=</span>&gt; <span style="color:#e6db74">&#34;file-tile&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
+</span></span></code></pre></div><blockquote>
+<p>🗒 TODO:
+Binary file ./0/root/Users/sneaky/Library/Application Support/com.apple.spotlight/appList.dat matches
+Binary file ./0/root/Users/sneaky/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.FavoriteVolumes.sfl2 matches
+Binary file ./0/root/Users/sneaky/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.RecentApplications.sfl2 matches</p></p>
+
+    <h2><a href="http://localhost:1313/docs/artefacts/apple/shell/"> UNIX Shell</a></h2> 
+    <p> <h2 id="macos">macOS</h2>
+<p>By default, all console data is not being logged. Only staff that was typed with <code>sudo</code> is. Below is the screenshot of the Console app (streaming on) when <code>sudo ls</code> command is typed in the Terminal.</p>
+<p><img src="sudo-console.png" alt="sudo-console">
+And here is what&rsquo;s being logged when one types <code>sudo su</code> and then <code>ls</code>.</p>
+<p><img src="sudo-console-2.png" alt="sudo-console-2">
+What about using <code>ls</code> or <code>cat</code> without elevating privileges? Nothing is logged at all (trying <code>helloworld</code>, cat <code>metadata.db</code> or <code>visudo</code>). So, how one keeps logging their Terminal history? It would be also great to add PID of the process, effective and real usernames. Here is how I&rsquo;ve managed to do it on my local machine (to further integrate the logs with Elastic).</p></p>
+
+    <h2><a href="http://localhost:1313/docs/artefacts/apple/backup/"> Backups</a></h2> 
+    <p> <h2 id="macos">macOS</h2>
+<p><code>/Users/%username%/Library/Application Support/MobileSync/Backup/</code></p>
+<h2 id="ios">iOS</h2>
+<p>The backups are not encrypted by default but can be if this option is on during the backup process. If it was encrypted, you&rsquo;ll need a device PIN to unlock it. These backups can be stored in the cloud or locally on the user&rsquo;s PC.</p>
+<p>🛠 <strong>iBackupViewer</strong>. It&rsquo;s free to some extent.</p>
+<p>Find iOS backups on macOS here 📂 <code>Users/username/Library/Application\ Support/MobileSync/Backup</code>. Each backup is named with its unique UDID (not the same as the device UID). Each backup contains three <code>plist</code>s: 🏺 <code>Info</code>, 🏺 <code>Manifest</code> and 🏺 <code>Status</code>.</p></p>
+
+    <h2><a href="http://localhost:1313/docs/artefacts/apple/geo/"> Geo</a></h2> 
+    <p> <h2 id="ios">iOS</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/private/var/mobile/Containers/Data/Application/<span style="color:#f92672">[</span>APPGUID<span style="color:#f92672">]</span>/Library/Maps/GeoHistory.mapsdata
+</span></span><span style="display:flex;"><span>/private/var/mobile/Containers/Data/Application/<span style="color:#f92672">[</span>APPGUID<span style="color:#f92672">]</span>/Library/Maps/GeoBookmarks.plist
+</span></span><span style="display:flex;"><span>/private/var/mobile/Library/Caches/com.apple.routined/Cache.sqlite
+</span></span><span style="display:flex;"><span>/private/var/mobile/Library/Caches/com.apple.routined/Local.sqlite
+</span></span></code></pre></div><h2 id="references">References</h2>
+<details>
+    <summary>Expand&hellip;</summary>
+    Something here
+</details></p>
+
+    <h2><a href="http://localhost:1313/docs/artefacts/apple/ios-logs/"> iOS Logs</a></h2> 
+    <p> <p>Same as for macOS. On iOS - <code>/private/var/.fseventsd</code>, for System: <code>/.fseventsd</code> and Developer Patch at <code>/DeveloperPatch/.fseventsd</code>.</p>
+<p>Internet activity</p>
+<pre tabindex="0"><code class="language-sqlite" data-lang="sqlite">SELECT
+*, _ROWID_ &#34;NAVICAT_ROWID&#34;
+FROM
+&#34;fsevents&#34;
+WHERE
+&#34;filename&#34; LIKE &#39;%websitedata/local%&#39;
+</code></pre><p>Email activity</p>
+<pre tabindex="0"><code class="language-sqlite" data-lang="sqlite">SELECT
+*, _ROWID_ &#34;NAVICAT_ROWID&#34;
+FROM
+&#34;fsevents&#34;
+WHERE
+&#34;filename&#34; LIKE &#39;mobile/Library/Mail/%’
+</code></pre><p>iCloud synced files</p>
+<pre tabindex="0"><code class="language-sqlite" data-lang="sqlite">SELECT
+*, _ROWID_ &#34;NAVICAT_ROWID&#34;
+FROM
+&#34;fsevents&#34;
+WHERE
+&#34;filename&#34; LIKE &#39;mobile/Library/Mobile
+Documents/com~apple~CloudDocs/%&#39;
+</code></pre><h2 id="syslog">Syslog</h2>
+<p>According to <a href="https://developer.apple.com/documentation/os/logging">Apple docs</a>, NSLog now doesn&rsquo;t write to syslog, therefore I didn&rsquo;t find a <code>syslog.sock</code> or <code>syslog</code> file itself.</p></p>
+
+    <h2><a href="http://localhost:1313/docs/artefacts/apple/ios-ram/"> iOS RAM</a></h2> 
+    <p> <p>For mobile platforms (iOS and Android) there is currently no tool available to get a full copy of RAM. However, it&rsquo;s still possible to take memory space of each process running.</p>
+<blockquote>
+<p>💡 Research 🔬 Top secret yet</p></blockquote>
+<p>To get the list of running processes:</p>
+<p>To get the memory space of a process:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>frida-dump <span style="color:#75715e"># had some bug for iOS, py file might need manual pathing.</span>
+</span></span><span style="display:flex;"><span>clutch
+</span></span><span style="display:flex;"><span>objection
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## References</span>
+</span></span><span style="display:flex;"><span><details>
+    <summary>Expand&hellip;</summary>
+    Something here
+</details>
+</span></span></code></pre></div></p>
+
+    <h2><a href="http://localhost:1313/docs/artefacts/apple/mac-logs/"> macOS Logs</a></h2> 
+    <p> <h2 id="macos">macOS</h2>
+<h3 id="syslog">Syslog</h3>
+<p><strong>syslog</strong>. Since macOS Sierra (10.12, 2016) Apple has redesigned its log system. Unix logs were replaced (syslog, for example). By the way, <code>syslog</code> was replaced as well on iOS (see <a href="/docs/dfir/host/mobile/ios/ios-logs">here</a>). Some still exist: <code>daily.out</code>, cups, <code>install.log</code>. 🛑 More about logs for iOS and macOS here.</p>
+<p>🛑 More about fervents here.</p>
+<p>New unified log path in 2 directories:</p>
+<ul>
+<li><code>/var/db/diagnistics</code></li>
+<li><code>/var/db/uuidtext</code></li>
+</ul>
+<p>According to <a href="https://developer.apple.com/documentation/os/logging">Apple docs</a>, NSLog now doesn&rsquo;t write to syslog, therefore I didn&rsquo;t find a <code>syslog.sock</code> or <code>syslog</code> file itself.</p></p>
+
+    <h2><a href="http://localhost:1313/docs/artefacts/apple/ios-processes/"> Processes</a></h2> 
+    <p> </p>
+
+    <h2><a href="http://localhost:1313/docs/artefacts/apple/ram/"> RAM</a></h2> 
+    <p> <p><em>This is about &hellip; .</em></p></p>
+
+    <h2><a href="http://localhost:1313/docs/artefacts/apple/config/"> UNIX Configs</a></h2> 
+    <p> <h2 id="linux">Linux</h2>
+<h3 id="ssh-files">SSH Files</h3>
+<p>/home/%username%/.ssh/authorized_keys
+/home/%username%/.ssh/known_hosts<br>
+/home/%username%/.ssh/config<br>
+/home/%username%/.ssh/id_* (defualt) and just /home/%username%/.ssh/ for all the keys</p>
+<h3 id="network">Network</h3>
+<p>• /etc/*-release<br>
+• /etc/hostname<br>
+• /etc/hosts<br>
+• /var/lib/networkmanager, dhclient, and dhcp</p>
+<h3 id="system">System</h3>
+<p>/etc/*-release</p>
+<h2 id="macos">macOS</h2>
+<p>Most of the configirations on macOS are stored in <code>plist</code> files. Unlike Windows with its one repo called the Registry 😱 there is no single place with all the <code>plist</code>s.</p>
+<h3 id="kerberos">Kerberos</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>plutil -p <span style="color:#e6db74">&#34;./0/root/private/var/db/dslocal/nodes/Default/config/KerberosKDC.plist&#34;</span>
+</span></span></code></pre></div><h3 id="plists">Plists</h3>
+<ol>
+<li>Label</li>
+<li>Arguments</li>
+<li>RunAtLoad - persistence.</li>
+</ol>
+<h2 id="ios">iOS</h2>
+<h3 id="application-permissions">Application Permissions:</h3>
+<p>• HomeDomain-Library/TCC/TCC.db<br>
+• /private/var/mobile/Library/TCC/TCC.db</p></p>
+
+    <h2><a href="http://localhost:1313/docs/artefacts/apple/core/"> UNIX Core</a></h2> 
+    <p> </p>
+
+    <h2><a href="http://localhost:1313/docs/artefacts/apple/keychain/"> iOS Keychain</a></h2> 
+    <p> <p><em>In this article I&rsquo;m trying to study how keychain works.</em></p>
+<h2 id="metaphor">Metaphor</h2>
+<p>There once lived a monkey &#x1f412; George. He was a nice fellow, but his memory suck too much and caused him a lot of trouble. He also was very  absent-minded and has lost some of his secret keys. He met a bird &#x1f414; Marvin and said: <em>&ldquo;Marvin, my memory is no good, here are all my keys &#x1f511;&#x1f511;&#x1f511;&#x1f511; , I will just retain this small key-card &#x1f3b4; which I will show you to prove it&rsquo;s really me. Whenever I need a key, I&rsquo;ll show you this card. You give me the key &#x1f511; temporary and then take it back after I used it &#x1f510; .&rdquo;</em>. Marvin was a very responsible guy and he agreed.</p></p>
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <div class="sub-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="sub-footer-inner">
+          <ul>
+            <li class="zerostatic"><a href="https://www.zerostatic.io">www.zerostatic.io</a></li>
+            <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/docs/artefacts/apple/index.xml" title="Analyst" />
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/scripts.js"></script>
+  
+
+  
+
+
+</body>
+
+</html>

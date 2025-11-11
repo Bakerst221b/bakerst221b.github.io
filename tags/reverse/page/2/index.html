@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Reverse - Analyst</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="icon" href="http://localhost:1313/favicon.png">
+  <link href="/css/style-classic.css"></link>
+  
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+  
+
+</head>
+
+<body class='page page-default-list'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  <ul>
+    
+    
+    <li class="menu-item-home 🏡">
+      <a href="/">
+        <span>Home 🏡</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-blog ✍️">
+      <a href="/docs/blog">
+        <span>Blog ✍️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-ttp 🔍">
+      <a href="/docs/ttp">
+        <span>TTP 🔍</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-artefacts db 🏺">
+      <a href="/docs/artefacts">
+        <span>Artefacts DB 🏺</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-attacks db ⚔️">
+      <a href="/docs/attacks">
+        <span>Attacks DB ⚔️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-tools db 🛠️">
+      <a href="/docs/tools">
+        <span>Tools DB 🛠️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-crypto 🗝️">
+      <a href="/docs/cryptography">
+        <span>Crypto 🗝️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-about me 🧝🏽‍♀️">
+      <a href="/docs/about">
+        <span>About me 🧝🏽‍♀️</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+  <div class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="http://localhost:1313/"><img alt="Logo" src="/images/logo.png" /></a>
+    </div>
+    <div class="logo-mobile">
+      <a href="http://localhost:1313/"><img alt="Logo" src="/images/logo-mobile.svg" /></a>
+    </div>
+    
+
+    <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/reverse/index.xml" title="Analyst" />
+    <div id="main-menu" class="main-menu">
+  <ul>
+    
+    
+    <li class="menu-item-home 🏡">
+      <a href="/">
+        <span>Home 🏡</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-blog ✍️">
+      <a href="/docs/blog">
+        <span>Blog ✍️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-ttp 🔍">
+      <a href="/docs/ttp">
+        <span>TTP 🔍</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-artefacts db 🏺">
+      <a href="/docs/artefacts">
+        <span>Artefacts DB 🏺</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-attacks db ⚔️">
+      <a href="/docs/attacks">
+        <span>Attacks DB ⚔️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-tools db 🛠️">
+      <a href="/docs/tools">
+        <span>Tools DB 🛠️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-crypto 🗝️">
+      <a href="/docs/cryptography">
+        <span>Crypto 🗝️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-about me 🧝🏽‍♀️">
+      <a href="/docs/about">
+        <span>About me 🧝🏽‍♀️</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+    
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+    
+    <div style="margin-left: 20pt;">
+      <a href="/index.xml" type="application/rss+xml">
+        <img src="/images/rss.png" alt="RSS Feed">
+      </a>
+    </div>
+    
+    <style>
+      a[href="/index.xml"] {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+      }
+    
+      a[href="/index.xml"] img {
+        height: 30px;
+      }
+    </style>
+    
+  </div>
+</div>
+
+
+    
+    
+    
+    
+
+    
+    
+
+
+
+ 
+ <h1 class="title">Reverse</h1> 
+ 
+
+    <h2><a href="http://localhost:1313/docs/ttp/malware/analyse/basics/assebly/assembly-operations/"> Operations</a></h2> 
+    <p> <p>In this article I&rsquo;m describing all assembly operations that I&rsquo;ve encountered myseld and also wasn&rsquo;t lazy anough to put down an explanation about here. However, I won&rsquo;t be paying much attention to some operation that I consider straightforward, like <code>ADD</code>. I&rsquo;m going to put a flag for each operation indicating corresponding arch: <code>arm</code> or <code>x86</code> (just learning ARM myself for iOS analysis).</p>
+<p>Most of instruction have the following anatomy: <code>instruction &lt;destination operand&gt;, &lt;source operand&gt;</code>. Some operations look like this: <code>instruction &lt;source operand&gt;</code> when <code>&lt;destination operand&gt;</code> is always the same register (default). An example: <code>MUL</code>. When <code>MUL</code>ing, you always multiply <code>eax</code> on some value.</p></p>
+
+    <h2><a href="http://localhost:1313/docs/ttp/malware/analyse/basics/assebly/assembly-registers/"> Registers</a></h2> 
+    <p> <h2 id="eax">EAX</h2>
+<h2 id="eip">EIP</h2>
+<h2 id="ebp">EBP</h2>
+<h2 id="rsiesi">RSI/ESI</h2>
+<p><strong>S</strong>ource <strong>I</strong>ndex.</p>
+<p>RSI - 64 bit, ESI - 32.</p>
+<h2 id="rdiedi">RDI/EDI</h2>
+<p><strong>D</strong>estination <strong>I</strong>ndex.</p>
+<p>RDI - 64 bit, EDI - 32.</p>
+<p>For ARM Registers here - <a href="https://azeria-labs.com/arm-data-types-and-registers-part-2/">https://azeria-labs.com/arm-data-types-and-registers-part-2/</a></p></p>
+
+    <h2><a href="http://localhost:1313/docs/ttp/malware/analyse/basics/from-src-to-binary/"> From Src to Binary</a></h2> 
+    <p> <p>To read</p>
+<p><a href="https://www.airs.com/blog/archives/38">https://www.airs.com/blog/archives/38</a></p></p>
+
+    <h2><a href="http://localhost:1313/docs/ttp/malware/analyse/basics/assebly/assembly-cheatsheet/"> Assembly Cheatsheet</a></h2> 
+    <p> <p>Lorem markdownum aequalis strigis. Saetigeri iubeas, vultu huic alvum nondum
+de obside ut laniavit arbor palmis, cum quin. Rupes vetat videndo, armigerae
+crimen habet Priamum nec.</p></p>
+
+    <h2><a href="http://localhost:1313/docs/ttp/malware/analyse/basics/assebly/assembly-arm/"> ARM Assembly</a></h2> 
+    <p> <p><em>In this article I&rsquo;m giving a quick dive-in into assembly. It&rsquo;s very simple and very difficult at the same time. It takes time and patience to get friendly  with it. And once you do, there will be ARM emerging, which scares the hell out of you again. But it takes less time, once you&rsquo;re familiar with its &ldquo;big brother&rdquo;.</em></p>
+<h2 id="analogy">Analogy</h2>
+<p>Sometimes when I look at assembly code I remember back in the &lsquo;olden days&rsquo; when I worked as office manager. I didn&rsquo;t love my job and used to describe it to a small circle of close friends as &ldquo;moving papers from one place to another&rdquo;. Of course, there was much more to it than just that, but it felt that way. When I left this job and found the one as a C# programmer, I thought, I&rsquo;ll never be doing that again. Surprisingly, I was right&hellip; When I left my job as a C# programmer, I thought I&rsquo;d never have anything to do with HTML again. Here, I was wrong&hellip;.</p></p>
+
+    <h2><a href="http://localhost:1313/docs/ttp/malware/analyse/basics/assebly/assembly-intro/"> Assembly Intro</a></h2> 
+    <p> <p><em>In this article I&rsquo;m giving a quick dive-in into assembly. It&rsquo;s very simple and very difficult at the same time. It takes time and patience to get friendly  with it. And once you do, there will be ARM emerging, which scares the hell out of you again. But it takes less time, once you&rsquo;re familiar with its &ldquo;big brother&rdquo;.</em></p>
+<h2 id="analogy">Analogy</h2>
+<p>Sometimes when I look at assembly code I remember back in the &lsquo;olden days&rsquo; when I worked as office manager. I didn&rsquo;t love my job and used to describe it to a small circle of close friends as &ldquo;moving papers from one place to another&rdquo;. Of course, there was much more to it than just that, but it felt that way. When I left this job and found the one as a C# programmer, I thought, I&rsquo;ll never be doing that again. Surprisingly, I was right&hellip; When I left my job as a C# programmer, I thought I&rsquo;d never have anything to do with HTML again. Here, I was wrong&hellip;.</p></p>
+
+    <h2><a href="http://localhost:1313/docs/blog/2020/09/how-i-met-radare2/"> How I Met Radare2</a></h2> 
+    <p> <p>📆 <code>24/09/2020</code>, <em>Wednesday</em></p>
+<p>🕰 <code>7:00</code> <em>What a nice morning! And it&rsquo;s so great to be woken up by a high-pitched cry in the ear&hellip; Well, after giving my daughter her breakfast and doing all the neccessary hygine procedures for us both, I left her by my side on the development carpet, so that I could develop myself&hellip;</em></p>
+<p>🛠  <strong>Environment and Tools</strong>: macOS Catalina 10.15.6 (19G2021) + pyenv 1.2.20 + Python 3.8.5 + Visual Code Version: 1.49.1, VBox Version 6.1.12 r139181 (Qt5.6.3) + Kali Linux + radare2 4.6.0-git 25077 @ linux-x86-64 git.4.4.0-749-g2a0d8fbe5</p></p>
+
+    <h2><a href="http://localhost:1313/docs/ttp/malware/analyse/binary-analysis/"> 💱 Symbolic and Concrete Execution</a></h2> 
+    <p> <h2 id="references">References</h2>
+<details>
+    <summary>Expand&hellip;</summary>
+    <p>[<a href="https://mobile-security.gitbook.io/mobile-security-testing-guide/android-testing-guide/0x05h-testing-platform-interaction#testing-for-fragment-injection-mstg-platform-2">1</a>] Mobile Sec Guide</p>
+<p>[<a href="https://www.nowsecure.com/blog/2021/03/10/how-to-perform-symbolic-execution-of-mobile-apps-with-r2frida-esilsolve/">2</a>] Symbolic execution on iOS with R2Frida &amp; ESILSolve</p>
+<p>[<a href="https://www.nowsecure.com/blog/2021/03/10/how-to-perform-symbolic-execution-of-mobile-apps-with-r2frida-esilsolve/">3</a>] Symbolic execution on iOS)] Concrete execution on iOS with Angr.</p>
+<p>[<a href="https://www.nowsecure.com/blog/2021/03/10/how-to-perform-symbolic-execution-of-mobile-apps-with-r2frida-esilsolve/">4</a>)] Symbolic execution on Android with Angr.
+[<a href="https://paper.bobylive.com/Security/A%20Bug%20Hunter%20%20039%20s%20Diary%20%20A%20Guided%20Tour%20Through%20the%20Wilds%20of%20Software%20Security.pdf">5</a>] A Bug Hunter&rsquo;s Diary: A Guided Tour Through the Wilds of Software Security, by Tobias Klein.</p>
+
+</details></p>
+
+    <h2><a href="http://localhost:1313/docs/blog/2018/07/analytic-protiv-khishnika/"> How I Met Predator</a></h2> 
+    <p> <p><em><strong>Wednesday</strong></em></p>
+<p>*<strong>Ничего так, тепло.*</strong></p>
+<p><em>Где-то в тёмном-тёмном лесу, среди высоких старых деревьев, притаившись в кустах выжидают свою жертву хищники. И даже несмотря на то, что они могут быть не такими страшными, как товарищ из фильма, тем не менее могут принести немало проблем. Мало кто воспринимает интернет как &ldquo;страшный и таинственный лес&rdquo;, но тем не менее в какой-то степени так и есть. И хищники там тоже есть, и поверьте мне, они не такие милые как пушистое создание на картинке.</em></p></p>
+
+    <h2><a href="http://localhost:1313/docs/blog/2018/07/undesirable-mail/"> Undesirable Mail</a></h2> 
+    <p> <p><em><strong>Thursday</strong></em>, <em><strong>Warm and cloudy.</strong></em></p>
+<p><em>&ldquo;Open me! I am a payment order! I am important, I swear!&rdquo;, - some RTF-file was yelling. I wasn&rsquo;t expecting any bills so this slyboots did not maim my poor little laptop. Phew ! Lucky me! But since this was a social engineering attack (not very crafty but still), someone less concerned with his or her safety could have opened it and cause him- or herself a lot of trouble. What I am trying to say (very inarticulately ) is that simply opening a small RTF document could result in absolute disaster for your machine! In this post I am telling the story how exactly does it happen&hellip;</em></p></p>
+
+
+
+
+
+<style>
+    body {
+    color: #212121;
+}
+
+h2 {
+    font-weight: bold;
+    
+}
+
+ 
+ 
+ 
+.pagination {
+    display: flex;
+    list-style: none;
+    border-radius: .25rem;
+    margin: 20px 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.page-link {
+    position: relative;
+    display: block;
+    padding: .75rem 1rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #2bbc8a;
+    background-color: #fff;
+}
+
+.homepage .page-link,
+.listing .page-link {
+    background-color: #fff;
+}
+
+.page-item.disabled .page-link {
+    color: #6c757d;
+    pointer-events: none;
+    cursor: auto;
+    background-color: #fff;
+    border-color: #dee2e6;
+}
+
+.page-item.active .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: #2bbc8a;;
+    border-color:#2bbc8a;
+    border-radius: 30px;
+}
+
+</style>
+<nav aria-label="page navigation">
+    <ul class="pagination">
+        
+        
+
+        
+        <li class="page-item"><a href="/tags/reverse/" rel="prev" class="page-link">‹ Prev</a></li>
+        
+
+        
+            
+             
+            <li class="page-item"><a href="/tags/reverse/" class="page-link">1</a></li>
+            
+        
+             
+            <li class="page-item active"><a href="/tags/reverse/page/2/" class="page-link">2</a></li>
+            
+        
+
+        
+
+        
+        
+    </ul>
+</nav>
+
+
+    
+  </div>
+
+  <div class="sub-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="sub-footer-inner">
+          <ul>
+            <li class="zerostatic"><a href="https://www.zerostatic.io">www.zerostatic.io</a></li>
+            <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/reverse/index.xml" title="Analyst" />
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/scripts.js"></script>
+  
+
+  
+
+
+</body>
+
+</html>

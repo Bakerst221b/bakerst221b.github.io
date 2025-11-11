@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>📚 Network Layer Protocols - Analyst</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="icon" href="http://localhost:1313/favicon.png">
+  <link href="/css/style-classic.css"></link>
+  
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+  
+
+</head>
+
+<body class='page page-default-list'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  <ul>
+    
+    
+    <li class="menu-item-home 🏡">
+      <a href="/">
+        <span>Home 🏡</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-blog ✍️">
+      <a href="/docs/blog">
+        <span>Blog ✍️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-ttp 🔍">
+      <a href="/docs/ttp">
+        <span>TTP 🔍</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-artefacts db 🏺">
+      <a href="/docs/artefacts">
+        <span>Artefacts DB 🏺</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-attacks db ⚔️">
+      <a href="/docs/attacks">
+        <span>Attacks DB ⚔️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-tools db 🛠️">
+      <a href="/docs/tools">
+        <span>Tools DB 🛠️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-crypto 🗝️">
+      <a href="/docs/cryptography">
+        <span>Crypto 🗝️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-about me 🧝🏽‍♀️">
+      <a href="/docs/about">
+        <span>About me 🧝🏽‍♀️</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+  <div class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="http://localhost:1313/"><img alt="Logo" src="/images/logo.png" /></a>
+    </div>
+    <div class="logo-mobile">
+      <a href="http://localhost:1313/"><img alt="Logo" src="/images/logo-mobile.svg" /></a>
+    </div>
+    
+
+    <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/docs/attacks/protocols/netlayer/index.xml" title="Analyst" />
+    <div id="main-menu" class="main-menu">
+  <ul>
+    
+    
+    <li class="menu-item-home 🏡">
+      <a href="/">
+        <span>Home 🏡</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-blog ✍️">
+      <a href="/docs/blog">
+        <span>Blog ✍️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-ttp 🔍">
+      <a href="/docs/ttp">
+        <span>TTP 🔍</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-artefacts db 🏺">
+      <a href="/docs/artefacts">
+        <span>Artefacts DB 🏺</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-attacks db ⚔️">
+      <a href="/docs/attacks">
+        <span>Attacks DB ⚔️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-tools db 🛠️">
+      <a href="/docs/tools">
+        <span>Tools DB 🛠️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-crypto 🗝️">
+      <a href="/docs/cryptography">
+        <span>Crypto 🗝️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-about me 🧝🏽‍♀️">
+      <a href="/docs/about">
+        <span>About me 🧝🏽‍♀️</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+    
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+    
+    <div style="margin-left: 20pt;">
+      <a href="/index.xml" type="application/rss+xml">
+        <img src="/images/rss.png" alt="RSS Feed">
+      </a>
+    </div>
+    
+    <style>
+      a[href="/index.xml"] {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+      }
+    
+      a[href="/index.xml"] img {
+        height: 30px;
+      }
+    </style>
+    
+  </div>
+</div>
+
+
+    
+    
+    
+    
+    
+    
+
+    
+    <div class="container pt-2 pt-md-6 pb-3 pb-md-6">
+      <div class="row">
+        <div class="col-12 col-md-3 mb-3">
+          <div class="sidebar">
+            
+<div class="docs-menu">
+  <p>
+    <a href="/docs/attacks/protocols/"> 👈🏼 Back to </br> 📚 Network Protocols </a>
+  </p>
+</div> 
+
+
+
+          </div>
+        </div>
+        <div class="col-12 col-md-9">
+          
+
+
+
+ 
+ <h1 class="title">📚 Network Layer Protocols</h1> 
+ 
+
+    <h2><a href="http://localhost:1313/docs/attacks/protocols/netlayer/overview/"> 📚 Network Layer Description</a></h2> 
+    <p> <p>Network Address Translation - mostly to map local IPs to public ones, but sometimes used to map between two public or local networks.</p>
+<p><strong>Static</strong> - one to one mapping.</p>
+<p><strong>Dynamic</strong> - many to many.</p>
+<p><strong>Overload</strong> - many to one.</p>
+<h2 id="attacks">Attacks</h2>
+<h3 id="mac-flooding">MAC flooding</h3>
+<h3 id="span-port">Span port</h3>
+<p>Everytime you receive messages fir these ports (say 1 to 10), also send them to the span port 25. But to turn it on, you need an access to switch&rsquo;s config. Moreover, some switches are made in a way not to let span port talk, only listen. It&rsquo;s a useful option for admins (basically turning a switch into some sort of lame hub). CISCO - SPAN (Switched Port Analyser), RSPAN (Remote Switched Port Analyser). RAP (Roving Analysis Port), 3Com switches.</p></p>
+
+    <h2><a href="http://localhost:1313/docs/attacks/protocols/netlayer/arp/"> 📚 ARP</a></h2> 
+    <p> <p><em>This article is about ARP protocol. It&rsquo;s used to map IP addresses to physical (MAC) addresses. Devices usually keep an ARP cache not to send ARP request continuously. Also there are certain attacks on ARP that exploit its internals.</em></p>
+<h2 id="analogy">Analogy</h2>
+<p>If we were to compare a device to a human body, we could say that CPU is a brain 🧠, battery power is a heart ♥️, camera is an eye 👁 and NIC is a mouth 👄 (yeah, let&rsquo;s forget about microphones 🎤 for a while).</p></p>
+
+    <h2><a href="http://localhost:1313/docs/attacks/protocols/netlayer/icmp/"> 📚 ICMP</a></h2> 
+    <p> <p>ICMP protocol is needed for troubleshooting.</p>
+<p>For an TCP/IP stack here is what ICMP request looks like in a frame:</p>
+<p><img src="images/icmp_request_packet.png" alt="icmp_request_packet"></p>
+<p>Even though ICMP belongs itself to the network layer.</p>
+<p>If there is some problem during any requst (HTTP, FTP or any other request on any other layer), ICMP error response might be sent. Its type can help in troubleshooting.</p>
+<h2 id="message-types">Message Types</h2>
+<p>Each message type will have a different header.</p></p>
+
+    <h2><a href="http://localhost:1313/docs/attacks/protocols/netlayer/ip/"> 📚 IP</a></h2> 
+    <p> <p><em>This article is about IP protocol (v4, v6 and IPX).</em></p>
+<h2 id="ipv4">IPv4</h2>
+<p>Number on top and along the left edge are bits (not bytes). The addresses itselves are 32 bits long.</p>
+<p><img src="images/ipv4.png" alt="ipv4"></p>
+<h3 id="reserved-addresses">Reserved Addresses</h3>
+<p><code>10.0.0.0</code> - <code>10.255.255.255</code></p>
+<p><code>172.16.0.0</code> - <code>172.31.255.255</code></p>
+<p><code>192.168.0.0</code> - <code>192.168.255.255</code></p>
+<h3 id="fragmentation">Fragmentation</h3>
+<h3 id="data-transmission-types">Data Transmission Types</h3>
+<h4 id="unicast">Unicast</h4>
+<p>Only one host can receive and read a message. Other PCs will discard it (unless in a promiscuous mode or on a hub).</p></p>
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <div class="sub-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="sub-footer-inner">
+          <ul>
+            <li class="zerostatic"><a href="https://www.zerostatic.io">www.zerostatic.io</a></li>
+            <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/docs/attacks/protocols/netlayer/index.xml" title="Analyst" />
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/scripts.js"></script>
+  
+
+  
+
+
+</body>
+
+</html>

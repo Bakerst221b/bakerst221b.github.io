@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>BusKill on Analyst</title>
+    <link>http://localhost:1313/tools/buskill/</link>
+    <description>Recent content in BusKill on Analyst</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 20 Sep 2020 11:04:28 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tools/buskill/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>USBKill Switch</title>
+      <link>http://localhost:1313/docs/ttp/antiforensics/usbkill-switch/</link>
+      <pubDate>Sun, 20 Sep 2020 11:04:28 +0300</pubDate>
+      <guid>http://localhost:1313/docs/ttp/antiforensics/usbkill-switch/</guid>
+      <description>&lt;p&gt;A software that could be used for anti-forensics. By default, configs are at &lt;code&gt;/etc&lt;/code&gt; and named &lt;code&gt;usbkill.ini&lt;/code&gt;. The default behaviour - shut the system down. Keeps a whitelist of allowed USB devices. Can also prevent malware from getting on the PC from a USB drive.&lt;/p&gt;&#xA;&lt;p&gt;Analogues: BusKill (set a &lt;code&gt;udev&lt;/code&gt; rule to be triggered if the USB drive is removed: lock, shutdown or self-destruct) and Silk Guardian (Linux Kernel mode switch that&amp;rsquo;s waiting for a change, deletes files on events and shuts the system down).&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

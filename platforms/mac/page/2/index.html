@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Mac - Analyst</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="icon" href="http://localhost:1313/favicon.png">
+  <link href="/css/style-classic.css"></link>
+  
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+  
+
+</head>
+
+<body class='page page-default-list'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  <ul>
+    
+    
+    <li class="menu-item-home 🏡">
+      <a href="/">
+        <span>Home 🏡</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-blog ✍️">
+      <a href="/docs/blog">
+        <span>Blog ✍️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-ttp 🔍">
+      <a href="/docs/ttp">
+        <span>TTP 🔍</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-artefacts db 🏺">
+      <a href="/docs/artefacts">
+        <span>Artefacts DB 🏺</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-attacks db ⚔️">
+      <a href="/docs/attacks">
+        <span>Attacks DB ⚔️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-tools db 🛠️">
+      <a href="/docs/tools">
+        <span>Tools DB 🛠️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-crypto 🗝️">
+      <a href="/docs/cryptography">
+        <span>Crypto 🗝️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-about me 🧝🏽‍♀️">
+      <a href="/docs/about">
+        <span>About me 🧝🏽‍♀️</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+  <div class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="http://localhost:1313/"><img alt="Logo" src="/images/logo.png" /></a>
+    </div>
+    <div class="logo-mobile">
+      <a href="http://localhost:1313/"><img alt="Logo" src="/images/logo-mobile.svg" /></a>
+    </div>
+    
+
+    <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/platforms/mac/index.xml" title="Analyst" />
+    <div id="main-menu" class="main-menu">
+  <ul>
+    
+    
+    <li class="menu-item-home 🏡">
+      <a href="/">
+        <span>Home 🏡</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-blog ✍️">
+      <a href="/docs/blog">
+        <span>Blog ✍️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-ttp 🔍">
+      <a href="/docs/ttp">
+        <span>TTP 🔍</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-artefacts db 🏺">
+      <a href="/docs/artefacts">
+        <span>Artefacts DB 🏺</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-attacks db ⚔️">
+      <a href="/docs/attacks">
+        <span>Attacks DB ⚔️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-tools db 🛠️">
+      <a href="/docs/tools">
+        <span>Tools DB 🛠️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-crypto 🗝️">
+      <a href="/docs/cryptography">
+        <span>Crypto 🗝️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-about me 🧝🏽‍♀️">
+      <a href="/docs/about">
+        <span>About me 🧝🏽‍♀️</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+    
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+    
+    <div style="margin-left: 20pt;">
+      <a href="/index.xml" type="application/rss+xml">
+        <img src="/images/rss.png" alt="RSS Feed">
+      </a>
+    </div>
+    
+    <style>
+      a[href="/index.xml"] {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+      }
+    
+      a[href="/index.xml"] img {
+        height: 30px;
+      }
+    </style>
+    
+  </div>
+</div>
+
+
+    
+    
+    
+    
+
+    
+    
+
+
+
+ 
+ <h1 class="title">Mac</h1> 
+ 
+
+    <h2><a href="http://localhost:1313/docs/ttp/malware/analyse/basics/assebly/assembly-flags/"> Flags</a></h2> 
+    <p> <h2 id="cf">CF</h2>
+<p>Its full name is <em>carry flag</em>. Its main purpose is to tell that the resulting number after some operations is too much to bear for the registry size. For example, the maximum size of a number is 32 bit, but if we add 0xFFFF</p>
+<h2 id="zf">ZF</h2>
+<h2 id="of">OF</h2></p>
+
+    <h2><a href="http://localhost:1313/docs/ttp/malware/analyse/basics/assebly/assembly-operations/"> Operations</a></h2> 
+    <p> <p>In this article I&rsquo;m describing all assembly operations that I&rsquo;ve encountered myseld and also wasn&rsquo;t lazy anough to put down an explanation about here. However, I won&rsquo;t be paying much attention to some operation that I consider straightforward, like <code>ADD</code>. I&rsquo;m going to put a flag for each operation indicating corresponding arch: <code>arm</code> or <code>x86</code> (just learning ARM myself for iOS analysis).</p>
+<p>Most of instruction have the following anatomy: <code>instruction &lt;destination operand&gt;, &lt;source operand&gt;</code>. Some operations look like this: <code>instruction &lt;source operand&gt;</code> when <code>&lt;destination operand&gt;</code> is always the same register (default). An example: <code>MUL</code>. When <code>MUL</code>ing, you always multiply <code>eax</code> on some value.</p></p>
+
+    <h2><a href="http://localhost:1313/docs/ttp/malware/analyse/basics/assebly/assembly-registers/"> Registers</a></h2> 
+    <p> <h2 id="eax">EAX</h2>
+<h2 id="eip">EIP</h2>
+<h2 id="ebp">EBP</h2>
+<h2 id="rsiesi">RSI/ESI</h2>
+<p><strong>S</strong>ource <strong>I</strong>ndex.</p>
+<p>RSI - 64 bit, ESI - 32.</p>
+<h2 id="rdiedi">RDI/EDI</h2>
+<p><strong>D</strong>estination <strong>I</strong>ndex.</p>
+<p>RDI - 64 bit, EDI - 32.</p>
+<p>For ARM Registers here - <a href="https://azeria-labs.com/arm-data-types-and-registers-part-2/">https://azeria-labs.com/arm-data-types-and-registers-part-2/</a></p></p>
+
+    <h2><a href="http://localhost:1313/docs/ttp/malware/analyse/basics/assebly/assembly-cheatsheet/"> Assembly Cheatsheet</a></h2> 
+    <p> <p>Lorem markdownum aequalis strigis. Saetigeri iubeas, vultu huic alvum nondum
+de obside ut laniavit arbor palmis, cum quin. Rupes vetat videndo, armigerae
+crimen habet Priamum nec.</p></p>
+
+    <h2><a href="http://localhost:1313/docs/ttp/malware/analyse/basics/assebly/assembly-arm/"> ARM Assembly</a></h2> 
+    <p> <p><em>In this article I&rsquo;m giving a quick dive-in into assembly. It&rsquo;s very simple and very difficult at the same time. It takes time and patience to get friendly  with it. And once you do, there will be ARM emerging, which scares the hell out of you again. But it takes less time, once you&rsquo;re familiar with its &ldquo;big brother&rdquo;.</em></p>
+<h2 id="analogy">Analogy</h2>
+<p>Sometimes when I look at assembly code I remember back in the &lsquo;olden days&rsquo; when I worked as office manager. I didn&rsquo;t love my job and used to describe it to a small circle of close friends as &ldquo;moving papers from one place to another&rdquo;. Of course, there was much more to it than just that, but it felt that way. When I left this job and found the one as a C# programmer, I thought, I&rsquo;ll never be doing that again. Surprisingly, I was right&hellip; When I left my job as a C# programmer, I thought I&rsquo;d never have anything to do with HTML again. Here, I was wrong&hellip;.</p></p>
+
+    <h2><a href="http://localhost:1313/docs/ttp/malware/analyse/basics/assebly/assembly-intro/"> Assembly Intro</a></h2> 
+    <p> <p><em>In this article I&rsquo;m giving a quick dive-in into assembly. It&rsquo;s very simple and very difficult at the same time. It takes time and patience to get friendly  with it. And once you do, there will be ARM emerging, which scares the hell out of you again. But it takes less time, once you&rsquo;re familiar with its &ldquo;big brother&rdquo;.</em></p>
+<h2 id="analogy">Analogy</h2>
+<p>Sometimes when I look at assembly code I remember back in the &lsquo;olden days&rsquo; when I worked as office manager. I didn&rsquo;t love my job and used to describe it to a small circle of close friends as &ldquo;moving papers from one place to another&rdquo;. Of course, there was much more to it than just that, but it felt that way. When I left this job and found the one as a C# programmer, I thought, I&rsquo;ll never be doing that again. Surprisingly, I was right&hellip; When I left my job as a C# programmer, I thought I&rsquo;d never have anything to do with HTML again. Here, I was wrong&hellip;.</p></p>
+
+    <h2><a href="http://localhost:1313/docs/blog/2020/09/how-i-met-radare2/"> How I Met Radare2</a></h2> 
+    <p> <p>📆 <code>24/09/2020</code>, <em>Wednesday</em></p>
+<p>🕰 <code>7:00</code> <em>What a nice morning! And it&rsquo;s so great to be woken up by a high-pitched cry in the ear&hellip; Well, after giving my daughter her breakfast and doing all the neccessary hygine procedures for us both, I left her by my side on the development carpet, so that I could develop myself&hellip;</em></p>
+<p>🛠  <strong>Environment and Tools</strong>: macOS Catalina 10.15.6 (19G2021) + pyenv 1.2.20 + Python 3.8.5 + Visual Code Version: 1.49.1, VBox Version 6.1.12 r139181 (Qt5.6.3) + Kali Linux + radare2 4.6.0-git 25077 @ linux-x86-64 git.4.4.0-749-g2a0d8fbe5</p></p>
+
+    <h2><a href="http://localhost:1313/docs/tools/field-manuals/mac-btfm/"> 📘 macOS BTFM</a></h2> 
+    <p> <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python FSEParser_V3.3.py -s -t folder /.fseventsd -o /Users/sentinel/Desktop/FSEvents_Out
+</span></span></code></pre></div><h2 id="references">References</h2></p>
+
+    <h2><a href="http://localhost:1313/docs/attacks/applications/mobile/mobile-toolkit/"> 🧰 Mobile Toolkit</a></h2> 
+    <p> <h2 id="debuggers">Debuggers</h2>
+<h3 id="gdb"><a href="/docs/toolkit/general/reverse-toolkit/#gdb">gdb</a></h3>
+<h3 id="radare2"><a href="/docs/toolkit/general/reverse-toolkit/#radare2">radare2</a></h3>
+<h3 id="other">Other</h3>
+<ul>
+<li><a href="/docs/toolkit/general/reverse-toolkit/#ida-pro">IDA Pro</a></li>
+<li>[Hopper Disassembler](/docs/toolkit/general/reverse-toolkit/#hopper disassembler)</li>
+</ul>
+<h2 id="static-code-analysis">Static code analysis</h2>
+<h3 id="ida-pro"><a href="/docs/toolkit/general/reverse-toolkit/#ida-pro">IDA Pro</a></h3>
+<h3 id="hopper-disassembler"><a href="/docs/toolkit/general/reverse-toolkit/#hopper-disassembler">Hopper Disassembler</a></h3>
+<h3 id="radare2-1"><a href="/docs/toolkit/general/reverse-toolkit/#radare2">radare2</a></h3>
+<h2 id="utilities">Utilities</h2>
+<h2 id="activity-analysis">Activity Analysis</h2>
+<h2 id="jailbreakingrooting">Jailbreaking/Rooting</h2>
+<h3 id="something">Something</h3>
+<p>Desciption</p>
+<p><strong>Host platforms</strong>: &#x1f308;</p>
+<p><strong>Target platforms</strong>:  &#x1f308;</p>
+<p><strong>Install</strong>:</p>
+<p><strong>Common commands</strong>:</p>
+<p><strong>Keywords</strong>:</p>
+<p><strong>Analogues</strong>:</p>
+<p><strong>Possible issues:</strong></p>
+<h2 id="multitools">Multitools</h2>
+<h3 id="passionfruit">Passionfruit</h3>
+<p><strong>Host platforms</strong>: &#x1f308;</p>
+<p><strong>Target platforms</strong>:  &#x1f308;</p>
+<p><strong>Install</strong>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>brew install npm
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># install node js - https://nodejs.org/en/download/</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># reopen terminal</span>
+</span></span><span style="display:flex;"><span>npm install -g passionfruit    
+</span></span><span style="display:flex;"><span>passionfruit
+</span></span></code></pre></div><p><strong>Common commands</strong>:</p>
+<p><code>passionfruit</code> to launch</p>
+<p><strong>Keywords</strong>: multitool, logs</p></p>
+
+    <h2><a href="http://localhost:1313/docs/artefacts/apple/keychain/"> iOS Keychain</a></h2> 
+    <p> <p><em>In this article I&rsquo;m trying to study how keychain works.</em></p>
+<h2 id="metaphor">Metaphor</h2>
+<p>There once lived a monkey &#x1f412; George. He was a nice fellow, but his memory suck too much and caused him a lot of trouble. He also was very  absent-minded and has lost some of his secret keys. He met a bird &#x1f414; Marvin and said: <em>&ldquo;Marvin, my memory is no good, here are all my keys &#x1f511;&#x1f511;&#x1f511;&#x1f511; , I will just retain this small key-card &#x1f3b4; which I will show you to prove it&rsquo;s really me. Whenever I need a key, I&rsquo;ll show you this card. You give me the key &#x1f511; temporary and then take it back after I used it &#x1f510; .&rdquo;</em>. Marvin was a very responsible guy and he agreed.</p></p>
+
+    <h2><a href="http://localhost:1313/docs/blog/2020/09/how-i-met-hugo/"> How I Met Hugo</a></h2> 
+    <p> <p>There was a time when I was desperately trying to become a web programmer (those wonderful days of naïve curiosity🤦‍♀️). I’ve even attended a course (which turned out to be useless&hellip; If only I knew back then, that I could better learn it all for free on my own. Alas!😭).</p>
+<p>So I created some repulsive HTML pages with a crappy JavaScript🤮. I remember one of the first projects: a page with a binary converter🙌. Some time later, when I’ve found a job as a C# programmer, I’ve met the beauty of asp.net (<a href="http://asp.net/">http://asp.net/</a>) and realized I don’t have to deal with php (which my soft mental constitution could not bear 👸) and that I don’t always have to write  websites from scratch and what’s more, to develop the design for it myself&hellip; After I’ve started my career in InfoSec field, I’ve stumbled upon a task which I managed to solve with .net web engine and my beloved C#. But the site was as usual, not very pretty, to say the least&hellip; Actually, I’ve tried to copy VisualStudio styles and managed partly, but it was like a 5 year old trying to copy Tician. Almost.</p></p>
+
+
+
+
+
+<style>
+    body {
+    color: #212121;
+}
+
+h2 {
+    font-weight: bold;
+    
+}
+
+ 
+ 
+ 
+.pagination {
+    display: flex;
+    list-style: none;
+    border-radius: .25rem;
+    margin: 20px 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.page-link {
+    position: relative;
+    display: block;
+    padding: .75rem 1rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #2bbc8a;
+    background-color: #fff;
+}
+
+.homepage .page-link,
+.listing .page-link {
+    background-color: #fff;
+}
+
+.page-item.disabled .page-link {
+    color: #6c757d;
+    pointer-events: none;
+    cursor: auto;
+    background-color: #fff;
+    border-color: #dee2e6;
+}
+
+.page-item.active .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: #2bbc8a;;
+    border-color:#2bbc8a;
+    border-radius: 30px;
+}
+
+</style>
+<nav aria-label="page navigation">
+    <ul class="pagination">
+        
+        
+
+        
+        <li class="page-item"><a href="/platforms/mac/" rel="prev" class="page-link">‹ Prev</a></li>
+        
+
+        
+            
+             
+            <li class="page-item"><a href="/platforms/mac/" class="page-link">1</a></li>
+            
+        
+             
+            <li class="page-item active"><a href="/platforms/mac/page/2/" class="page-link">2</a></li>
+            
+        
+
+        
+
+        
+        
+    </ul>
+</nav>
+
+
+    
+  </div>
+
+  <div class="sub-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="sub-footer-inner">
+          <ul>
+            <li class="zerostatic"><a href="https://www.zerostatic.io">www.zerostatic.io</a></li>
+            <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/platforms/mac/index.xml" title="Analyst" />
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/scripts.js"></script>
+  
+
+  
+
+
+</body>
+
+</html>

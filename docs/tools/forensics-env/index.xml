@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Forensic Environment Setup on Analyst</title>
+    <link>http://localhost:1313/docs/tools/forensics-env/</link>
+    <description>Recent content in Forensic Environment Setup on Analyst</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 18 Jul 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/docs/tools/forensics-env/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>📘 BTFM</title>
+      <link>http://localhost:1313/docs/tools/forensics-env/btfm/</link>
+      <pubDate>Tue, 18 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/tools/forensics-env/btfm/</guid>
+      <description>&lt;p&gt;&lt;em&gt;This is an attempt to collect all the most frequently used commands for forensic analysis.&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Collection and Analysis</title>
+      <link>http://localhost:1313/docs/tools/forensics-env/collection-analysis/</link>
+      <pubDate>Fri, 09 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/tools/forensics-env/collection-analysis/</guid>
+      <description>&lt;p&gt;&lt;em&gt;There are numerous tools available for collecting and analysing artefacts and evidence. I will provide an overview, relevant links, or even comparison charts, depending on the tools.&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Kansa and Autoruns</title>
+      <link>http://localhost:1313/docs/tools/forensics-env/autoruns/</link>
+      <pubDate>Sat, 03 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/tools/forensics-env/autoruns/</guid>
+      <description>&lt;p&gt;Run a tool to collect all the artefacts for this OS (for example, &lt;code&gt;autorunc.exe&lt;/code&gt; for Windows) on the machines in question. I use CSV format as output whenever possible because it can be imported in a SIEM, TimeLine Explorer (Windows) or Numbers/Excel/Google Sheets. I prefer the last option because its pivoting functionality is much easier to deploy.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open each file (if there are not too many)&lt;/li&gt;&#xA;&lt;li&gt;Filter for untrusted or missing vendors. Such vendors as Google and Firefox might be used to trick the user. It would look like `(Not verified) Firefox.&lt;/li&gt;&#xA;&lt;li&gt;Show those enabled ones (if applicable)&lt;/li&gt;&#xA;&lt;li&gt;Look at the image path, and use the FindEvil SANS poster or your baseline system profile as a reference for known good to find what’s bad&lt;/li&gt;&#xA;&lt;li&gt;Look at the hashes and check against known-good.&lt;/li&gt;&#xA;&lt;li&gt;Check with a supernova, google Publishes and Description&lt;/li&gt;&#xA;&lt;li&gt;Frequency analysis. What stands out? (see the following sections). Find possible suspicious or malicious things.&lt;/li&gt;&#xA;&lt;li&gt;Check the triage files from other machines for the same IoCs (Select-String, grep etc).&lt;/li&gt;&#xA;&lt;li&gt;Stacking (frequency-based outlier analysis)&lt;/li&gt;&#xA;&lt;li&gt;Frequency analysis. What stands out?&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;🗒 If the file doesn’t have an image path (&lt;code&gt;File not found&lt;/code&gt;), it’s likely it was moved/deleted and thus is not an active threat. What’s suspicious?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>AWS Forensic Environment Setup</title>
+      <link>http://localhost:1313/docs/tools/forensics-env/aws/</link>
+      <pubDate>Thu, 28 Jul 2022 15:14:39 +1000</pubDate>
+      <guid>http://localhost:1313/docs/tools/forensics-env/aws/</guid>
+      <description>&lt;p&gt;&lt;em&gt;First of all, data that is collected for analysis within the cloud needs to be handled properly as well.&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Forensic Frameworks</title>
+      <link>http://localhost:1313/docs/tools/forensics-env/frameworks/</link>
+      <pubDate>Thu, 28 Jul 2022 15:14:39 +1000</pubDate>
+      <guid>http://localhost:1313/docs/tools/forensics-env/frameworks/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Here I will keep the list of useful tools for forensics, their advantages and disadvantages.&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Forensics Machine Setup</title>
+      <link>http://localhost:1313/docs/tools/forensics-env/os/</link>
+      <pubDate>Thu, 28 Jul 2022 15:14:39 +1000</pubDate>
+      <guid>http://localhost:1313/docs/tools/forensics-env/os/</guid>
+      <description>&lt;p&gt;&lt;em&gt;This is about &amp;hellip; .&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

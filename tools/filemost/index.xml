@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Filemost on Analyst</title>
+    <link>http://localhost:1313/tools/filemost/</link>
+    <description>Recent content in Filemost on Analyst</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 20 Sep 2020 11:04:28 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tools/filemost/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Study in Black</title>
+      <link>http://localhost:1313/docs/todo/cases/forensic-cases/case1/</link>
+      <pubDate>Sun, 20 Sep 2020 11:04:28 +0300</pubDate>
+      <guid>http://localhost:1313/docs/todo/cases/forensic-cases/case1/</guid>
+      <description>&lt;p&gt;Someone has violated corporate policy by watching porn using the corp PC.&lt;/p&gt;&#xA;&lt;p&gt;Do you have the authority?&lt;/p&gt;&#xA;&lt;p&gt;What are the expected results?&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Some prohibited internet traffic&lt;/strong&gt;. Check network logs of an application layer firewall 🔥 or content filter (any gateway between the suspect and the network), filter them out. But the user was smart enough to use VPN. What&amp;rsquo;s then? Application layer firewall only sees application traffic, it is not aware of TCPs, Shudipis and etc. Read &lt;a href=&#34;http://localhost:1313/docs/articles/fundamentals/network/osi/overview&#34;&gt;this&lt;/a&gt; article about TCP/IP stack to understand better why application layer firewalls won&amp;rsquo;t see anything other than what&amp;rsquo;s on top.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

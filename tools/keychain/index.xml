@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Keychain on Analyst</title>
+    <link>http://localhost:1313/tools/keychain/</link>
+    <description>Recent content in Keychain on Analyst</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 02 Oct 2020 11:38:32 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tools/keychain/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>iOS Keychain</title>
+      <link>http://localhost:1313/docs/artefacts/apple/keychain/</link>
+      <pubDate>Fri, 02 Oct 2020 11:38:32 +0300</pubDate>
+      <guid>http://localhost:1313/docs/artefacts/apple/keychain/</guid>
+      <description>&lt;p&gt;&lt;em&gt;In this article I&amp;rsquo;m trying to study how keychain works.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;metaphor&#34;&gt;Metaphor&lt;/h2&gt;&#xA;&lt;p&gt;There once lived a monkey &amp;#x1f412; George. He was a nice fellow, but his memory suck too much and caused him a lot of trouble. He also was very  absent-minded and has lost some of his secret keys. He met a bird &amp;#x1f414; Marvin and said: &lt;em&gt;&amp;ldquo;Marvin, my memory is no good, here are all my keys &amp;#x1f511;&amp;#x1f511;&amp;#x1f511;&amp;#x1f511; , I will just retain this small key-card &amp;#x1f3b4; which I will show you to prove it&amp;rsquo;s really me. Whenever I need a key, I&amp;rsquo;ll show you this card. You give me the key &amp;#x1f511; temporary and then take it back after I used it &amp;#x1f510; .&amp;rdquo;&lt;/em&gt;. Marvin was a very responsible guy and he agreed.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

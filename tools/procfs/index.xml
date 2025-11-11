@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Procfs on Analyst</title>
+    <link>http://localhost:1313/tools/procfs/</link>
+    <description>Recent content in Procfs on Analyst</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 20 Sep 2020 11:04:28 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tools/procfs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Case 1. IP Theft Linux Investigation</title>
+      <link>http://localhost:1313/docs/todo/cases/forensic-cases/case2/</link>
+      <pubDate>Sun, 20 Sep 2020 11:04:28 +0300</pubDate>
+      <guid>http://localhost:1313/docs/todo/cases/forensic-cases/case2/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;Nearly all IP (intellectual property) are recreated by a competitor. Investigate the development machine&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;Potential data exfiltration.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;code&gt;netstat -lpeanut&lt;/code&gt; shows that there are two dhcp clients running, one using unusual port and user:&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;images/4.png&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;code&gt;ps aux | grep 40500&lt;/code&gt; or &lt;code&gt;ps aux | grep dhclient&lt;/code&gt; shows the running processes and sometimes commands used to run them. This suspicious client was run from &lt;code&gt;/tmp&lt;/code&gt; folder:&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;images/5.png&#34; alt=&#34;img5&#34;&gt;&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;code&gt;ls -la /tmp/&lt;/code&gt; to see the file that was launched. But nothing there. Seems that the file was deleted after being launched:&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;images/6.png&#34; alt=&#34;img6&#34;&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

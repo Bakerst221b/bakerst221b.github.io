@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Process Explorer on Analyst</title>
+    <link>http://localhost:1313/tools/process-explorer/</link>
+    <description>Recent content in Process Explorer on Analyst</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 28 Sep 2020 13:21:43 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tools/process-explorer/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>🏺 Windows Core Processes</title>
+      <link>http://localhost:1313/docs/artefacts/win/core/</link>
+      <pubDate>Mon, 28 Sep 2020 13:21:43 +0300</pubDate>
+      <guid>http://localhost:1313/docs/artefacts/win/core/</guid>
+      <description>&lt;p&gt;&lt;em&gt;There are two broad categories of Windows core processes. Processes that initialize system environment and those that initialize the user environment. Whatever is the category, you need to know them well in order to detect abnormal things.&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How I Met Predator</title>
+      <link>http://localhost:1313/docs/blog/2018/07/analytic-protiv-khishnika/</link>
+      <pubDate>Wed, 07 Nov 2018 14:39:39 +0300</pubDate>
+      <guid>http://localhost:1313/docs/blog/2018/07/analytic-protiv-khishnika/</guid>
+      <description>&lt;p&gt;&lt;em&gt;&lt;strong&gt;Wednesday&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;*&lt;strong&gt;Ничего так, тепло.*&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;Где-то в тёмном-тёмном лесу, среди высоких старых деревьев, притаившись в кустах выжидают свою жертву хищники. И даже несмотря на то, что они могут быть не такими страшными, как товарищ из фильма, тем не менее могут принести немало проблем. Мало кто воспринимает интернет как &amp;ldquo;страшный и таинственный лес&amp;rdquo;, но тем не менее в какой-то степени так и есть. И хищники там тоже есть, и поверьте мне, они не такие милые как пушистое создание на картинке.&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

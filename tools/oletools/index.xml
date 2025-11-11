@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Oletools on Analyst</title>
+    <link>http://localhost:1313/tools/oletools/</link>
+    <description>Recent content in Oletools on Analyst</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 08 Jan 2022 11:42:21 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tools/oletools/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CyberCorp1</title>
+      <link>http://localhost:1313/docs/todo/cases/ctf-walkthrough/cybercorp1/</link>
+      <pubDate>Sat, 08 Jan 2022 11:42:21 +0300</pubDate>
+      <guid>http://localhost:1313/docs/todo/cases/ctf-walkthrough/cybercorp1/</guid>
+      <description>&lt;p&gt;⛔️  Spoiler alert!&lt;/p&gt;&#xA;&lt;h2 id=&#34;case-details&#34;&gt;Case Details&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Artefacts in posession&lt;/strong&gt;: memory dump, OS event logs, registry files, Prefetch files, $MFT file, ShimCache, AmCache, network traffic dumps. I&amp;rsquo;ve decided to analyse each artefact, what can I get from it in this specific case and how. Then, I am going to outline my strategy in approaching this case.&lt;/p&gt;&#xA;&lt;p&gt;We are looking for indicators of compromise.  There are no details as to what is the group and what was its aim. But it’s known that there was abnormal traffic detected that has launched this IR process. So, at least, we must have some suspicious traffic, possibly open or terminated connections. These should have been launched by some process, so we are looking for malware. Also, since the attacker needed an account to get in, I will be looking for an account take over attempts and possibly, new account creation.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How I Met Predator</title>
+      <link>http://localhost:1313/docs/blog/2018/07/analytic-protiv-khishnika/</link>
+      <pubDate>Wed, 07 Nov 2018 14:39:39 +0300</pubDate>
+      <guid>http://localhost:1313/docs/blog/2018/07/analytic-protiv-khishnika/</guid>
+      <description>&lt;p&gt;&lt;em&gt;&lt;strong&gt;Wednesday&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;*&lt;strong&gt;Ничего так, тепло.*&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;Где-то в тёмном-тёмном лесу, среди высоких старых деревьев, притаившись в кустах выжидают свою жертву хищники. И даже несмотря на то, что они могут быть не такими страшными, как товарищ из фильма, тем не менее могут принести немало проблем. Мало кто воспринимает интернет как &amp;ldquo;страшный и таинственный лес&amp;rdquo;, но тем не менее в какой-то степени так и есть. И хищники там тоже есть, и поверьте мне, они не такие милые как пушистое создание на картинке.&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

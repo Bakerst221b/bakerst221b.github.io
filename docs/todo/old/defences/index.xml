@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>🛡️ Defence Mechanisms on Analyst</title>
+    <link>http://localhost:1313/docs/todo/old/defences/</link>
+    <description>Recent content in 🛡️ Defence Mechanisms on Analyst</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 12 Oct 2020 17:50:01 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/docs/todo/old/defences/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>📚 MacOS Basics</title>
+      <link>http://localhost:1313/docs/todo/old/defences/macos-fundamentals/</link>
+      <pubDate>Mon, 28 Sep 2020 13:21:21 +0300</pubDate>
+      <guid>http://localhost:1313/docs/todo/old/defences/macos-fundamentals/</guid>
+      <description>&lt;h2 id=&#34;firewall&#34;&gt;Firewall&lt;/h2&gt;&#xA;&lt;p&gt;You can set specific rules to limit the traffic.&lt;/p&gt;&#xA;&lt;h2 id=&#34;filevault&#34;&gt;FileVault&lt;/h2&gt;&#xA;&lt;p&gt;No recovery once this password is lost.&lt;/p&gt;&#xA;&lt;h2 id=&#34;partitions&#34;&gt;Partitions&lt;/h2&gt;&#xA;&lt;p&gt;It has a hidden partition installed (MacOS recovery). It replaces the installation disks that came with older PCs. Restart and hold down the &lt;code&gt;R&lt;/code&gt;-key. It doesn&amp;rsquo;t touch the user directories, only reinstalls the OS. If this option is not available, Internet recovery will be launched.&lt;/p&gt;&#xA;&lt;h2 id=&#34;disk-utility&#34;&gt;Disk Utility&lt;/h2&gt;&#xA;&lt;p&gt;When erasing data choose from the three options:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>⛅️ AWS Evidence Collection</title>
+      <link>http://localhost:1313/docs/todo/old/defences/aws/</link>
+      <pubDate>Mon, 12 Oct 2020 17:50:01 +0300</pubDate>
+      <guid>http://localhost:1313/docs/todo/old/defences/aws/</guid>
+      <description>&lt;p&gt;Are there any Shadow Cloud Accounts? Could be the first place to look when investigating.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;A ‘without-reboot’ snapshot is equivalent to a live acquisition, and a snapshot with a reboot is more like a traditional powered-off. Sheward, Mike. Hands-on Incident Response and Digital Forensics (p. 175). BCS Learning &amp;amp; Development Limited. Kindle Edition.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;ec2-instance-metadata&#34;&gt;EC2 instance metadata&lt;/h2&gt;&#xA;&lt;details&gt;&#xA;    &lt;summary&gt;Expand &amp;hellip;&lt;/summary&gt;&#xA;    &lt;p&gt;Some sensitive information can be stored in IMDS if it&amp;rsquo;s not configured properly. T1522 (MITRE). Not the case with service-managed accounts.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>🍎 iOS Evidence Collection</title>
+      <link>http://localhost:1313/docs/todo/old/defences/ios/</link>
+      <pubDate>Mon, 12 Oct 2020 17:50:01 +0300</pubDate>
+      <guid>http://localhost:1313/docs/todo/old/defences/ios/</guid>
+      <description>&lt;h2 id=&#34;general-considerations&#34;&gt;General Considerations&lt;/h2&gt;&#xA;&lt;p&gt;First of all, all the Apple devices support remote wiping which has evolved significantly over the year and now support Bluetooth. When I say wiping over Bluetooth, it doesn&amp;rsquo;t mean that the person wiping and the device need to be in the Bluetooth range (which is quite short). It could be an examiner with a Bluetooth enabled standing near the iPhone with Bluetooth on and the person of interest somewher within the range of the first responder. I didn&amp;rsquo;t try this myself, but I should. This is based on the interview given on the Surviving Digital Forensics podcast on T1 and T2 Apple devices and the challenges the forensic examiners now face.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>🐧 Linux Evidence Collection</title>
+      <link>http://localhost:1313/docs/todo/old/defences/linux/</link>
+      <pubDate>Mon, 12 Oct 2020 17:50:01 +0300</pubDate>
+      <guid>http://localhost:1313/docs/todo/old/defences/linux/</guid>
+      <description>&lt;h2 id=&#34;file-systems&#34;&gt;File Systems&lt;/h2&gt;&#xA;&lt;p&gt;EXT 2,3,4, ReiserFS, XFS, JFS, Btrfs.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Logical Backup&lt;/strong&gt; -  doesn&amp;rsquo;t copy all, doesn&amp;rsquo;t copy slack, free space and deleted files. &lt;strong&gt;Imaging&lt;/strong&gt; - bit-by-bit copy. Should not be used on a live system!&lt;/p&gt;&#xA;&lt;h2 id=&#34;live-acquisition&#34;&gt;Live Acquisition&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/Dead-Simple-Scripts/AutoLLR&#34;&gt;https://github.com/Dead-Simple-Scripts/AutoLLR&lt;/a&gt;&#xA;Automatically collection live info. Quite a heavy footprint. But if we are not collecting RAM, not the biggest issue.&lt;/p&gt;&#xA;&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.sans.org/presentations/long-live-linux-forensics/&#34;&gt;https://www.sans.org/presentations/long-live-linux-forensics/&lt;/a&gt;&#xA;&lt;a href=&#34;https://www.sans.org/blog/getting-started-with-linux-memory-forensics/&#34;&gt;https://www.sans.org/blog/getting-started-with-linux-memory-forensics/&lt;/a&gt;&#xA;&lt;a href=&#34;https://www.sans.org/blog/digital-forensics-ps3-linux-file-system-analysis-and-network-forensics/&#34;&gt;https://www.sans.org/blog/digital-forensics-ps3-linux-file-system-analysis-and-network-forensics/&lt;/a&gt;&#xA;&lt;a href=&#34;https://www.sans.org/blog/bring-me-my-pipe/&#34;&gt;https://www.sans.org/blog/bring-me-my-pipe/&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

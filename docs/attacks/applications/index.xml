@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Application Attacks on Analyst</title>
+    <link>http://localhost:1313/docs/attacks/applications/</link>
+    <description>Recent content in Application Attacks on Analyst</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 28 Jul 2022 15:14:39 +1000</lastBuildDate>
+    <atom:link href="http://localhost:1313/docs/attacks/applications/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Web Applications</title>
+      <link>http://localhost:1313/docs/attacks/applications/web/</link>
+      <pubDate>Thu, 28 Jul 2022 15:14:39 +1000</pubDate>
+      <guid>http://localhost:1313/docs/attacks/applications/web/</guid>
+      <description>&lt;p&gt;&lt;em&gt;This is about &amp;hellip; .&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

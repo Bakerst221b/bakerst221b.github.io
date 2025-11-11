@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>🤔 Analysis Tips and Cheatsheets - Analyst</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="icon" href="http://localhost:1313/favicon.png">
+  <link href="/css/style-classic.css"></link>
+  
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+  
+
+</head>
+
+<body class='page page-default-list'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  <ul>
+    
+    
+    <li class="menu-item-home 🏡">
+      <a href="/">
+        <span>Home 🏡</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-blog ✍️">
+      <a href="/docs/blog">
+        <span>Blog ✍️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-ttp 🔍">
+      <a href="/docs/ttp">
+        <span>TTP 🔍</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-artefacts db 🏺">
+      <a href="/docs/artefacts">
+        <span>Artefacts DB 🏺</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-attacks db ⚔️">
+      <a href="/docs/attacks">
+        <span>Attacks DB ⚔️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-tools db 🛠️">
+      <a href="/docs/tools">
+        <span>Tools DB 🛠️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-crypto 🗝️">
+      <a href="/docs/cryptography">
+        <span>Crypto 🗝️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-about me 🧝🏽‍♀️">
+      <a href="/docs/about">
+        <span>About me 🧝🏽‍♀️</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+  <div class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="http://localhost:1313/"><img alt="Logo" src="/images/logo.png" /></a>
+    </div>
+    <div class="logo-mobile">
+      <a href="http://localhost:1313/"><img alt="Logo" src="/images/logo-mobile.svg" /></a>
+    </div>
+    
+
+    <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/docs/ttp/cheatsheets/index.xml" title="Analyst" />
+    <div id="main-menu" class="main-menu">
+  <ul>
+    
+    
+    <li class="menu-item-home 🏡">
+      <a href="/">
+        <span>Home 🏡</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-blog ✍️">
+      <a href="/docs/blog">
+        <span>Blog ✍️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-ttp 🔍">
+      <a href="/docs/ttp">
+        <span>TTP 🔍</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-artefacts db 🏺">
+      <a href="/docs/artefacts">
+        <span>Artefacts DB 🏺</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-attacks db ⚔️">
+      <a href="/docs/attacks">
+        <span>Attacks DB ⚔️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-tools db 🛠️">
+      <a href="/docs/tools">
+        <span>Tools DB 🛠️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-crypto 🗝️">
+      <a href="/docs/cryptography">
+        <span>Crypto 🗝️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-about me 🧝🏽‍♀️">
+      <a href="/docs/about">
+        <span>About me 🧝🏽‍♀️</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+    
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+    
+    <div style="margin-left: 20pt;">
+      <a href="/index.xml" type="application/rss+xml">
+        <img src="/images/rss.png" alt="RSS Feed">
+      </a>
+    </div>
+    
+    <style>
+      a[href="/index.xml"] {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+      }
+    
+      a[href="/index.xml"] img {
+        height: 30px;
+      }
+    </style>
+    
+  </div>
+</div>
+
+
+    
+    
+    
+    
+    
+    
+
+    
+    <div class="container pt-2 pt-md-6 pb-3 pb-md-6">
+      <div class="row">
+        <div class="col-12 col-md-3 mb-3">
+          <div class="sidebar">
+            
+<div class="docs-menu">
+  <p>
+    <a href="/docs/ttp/"> 👈🏼 Back to </br> 🔎 Investigation Tactics Techniques and Procedures </a>
+  </p>
+</div> 
+
+
+
+          </div>
+        </div>
+        <div class="col-12 col-md-9">
+          
+
+
+
+ 
+ <h1 class="title">🤔 Analysis Tips and Cheatsheets</h1> 
+ 
+
+    <h2><a href="http://localhost:1313/docs/ttp/cheatsheets/remote/"> 🤔 How do I check for remote connections?</a></h2> 
+    <p> <p><em>How to check if the system was accessed remotely? What sort of remote connections is the attacker likely to be using?</em></p></p>
+
+    <h2><a href="http://localhost:1313/docs/ttp/cheatsheets/devices/"> Devices Attached</a></h2> 
+    <p> <p>*Are we looking for USB storage media activity or all USB devices? Like, cameras 📸? Headphones 🎧? As for the timestamps, you&rsquo;ll usually have <strong>first</strong> (setupapi log) and <strong>last</strong> connected. There are also OS specific timestamps, like first or last install, first connect since reboot etc. <a href="/docs/dfir/host/windows/windows-artifacts#usb-devices">Windows</a> USB artifacts, <a href="/docs/dfir/host/apple/mac-artifacts#usb-devices">macOS</a>. See Event Manager&rsquo;s codes <a href="docs/dfir/host/windows/event-manager#20001">20001</a> and <a href="docs/dfir/host/windows/event-manager#20002">20002</a> for USB events for verification or if the registry was updated. Look at <code>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceClasses\</code> and <code>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\USB\&lt;hardware id&gt;\&lt;instance id&gt;\Device Parameters</code>. <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/usbcon/usb-device-specific-registry-settings">More</a>.</p></p>
+
+    <h2><a href="http://localhost:1313/docs/ttp/cheatsheets/mngmt/"> 🤔 How Do I Audit Management Tools?</a></h2> 
+    <p> <p><em>Admins on payroll and those &ldquo;magnanimous volunteers&rdquo; often tread the very same path, albeit guided by different compasses of motivation. Once our cunning adversary ascends to the lofty heights of respect usually reserved for the admin on payroll, the misuse of these management tools becomes bound only by the limits of their mischievous imagination.</em></p></p>
+
+    <h2><a href="http://localhost:1313/docs/ttp/cheatsheets/terminal/"> 🤔 How To Investigation Terminal Activity?</a></h2> 
+    <p> <p><em>Think of the terminal as a magic wand 🪄 of the attacker. The beauty for them is that they can do all sorts of nasty things remotely, but their beauty also lies with their forensics perks: one can review the history of this activity.</em></p></p>
+
+    <h2><a href="http://localhost:1313/docs/ttp/cheatsheets/clear/"> 🤔 How Do I Check For Logs Clearing?</a></h2> 
+    <p> <h2 id="windows">Windows</h2>
+<blockquote>
+<p>❗️These techniques require admin or higher privileges.
+❗️Common with ransomware</p></blockquote>
+<p>When the <code>Security</code> trail is deleted, <code>1102</code> is usually created afterwards. When all other trails are deleted, <code>104</code> EID is generated in the <code>System</code> trail.</p>
+<p>Event logs are NOT designed to be deleted selectively, all or none. However, some tools are capable of circumventing this and can actually partially clear the logs.</p>
+<ol>
+<li>🛠️ <code>Mimikatz</code> - 📕 <code>event::drop</code> can stop the event log process from writing <code>Security</code> events. It can&rsquo;t restart it through, so, obvious.</li>
+<li>🛠️ <code>DanderSprite</code> - (leaked by <code>ShadowBrokers</code>) change the pointers to the next events in the headers. So, the events are not deleted but are not visible either. Deep dive forensics to help here.</li>
+<li>🛠️ <code>Invoke-Phant0m</code> - kill the threads of event logs.</li>
+</ol>
+<p>One can also suspend the event log process or make changes in RAM. However, all of these actions require 👑.</p></p>
+
+    <h2><a href="http://localhost:1313/docs/ttp/cheatsheets/autoruns/"> 🤔 How Do I Check For Malicious Autostarts?</a></h2> 
+    <p> <h2 id="windows">Windows</h2>
+<h3 id="tasks">Tasks</h3>
+<h4 id="event-logs">Event logs</h4>
+<p>Two trails are of use are <code>Microsoft-Windows-TaskScheduler/Operational</code> 🍇 (disabled by default on the newer systems) and <code>Security</code> 🛡️.</p>
+<table>
+  <thead>
+      <tr>
+          <th>🍇</th>
+          <th>🛡️</th>
+          <th>Info</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>106</code></td>
+          <td><code>4698</code></td>
+          <td>Task created</td>
+      </tr>
+      <tr>
+          <td><code>140</code></td>
+          <td><code>4702</code></td>
+          <td>updated</td>
+      </tr>
+      <tr>
+          <td><code>141</code></td>
+          <td><code>4699</code></td>
+          <td>Deleted</td>
+      </tr>
+      <tr>
+          <td><code>200/201</code></td>
+          <td>-</td>
+          <td>executed and completed</td>
+      </tr>
+      <tr>
+          <td>-</td>
+          <td><code>4700/4701</code></td>
+          <td>enabled and disabled</td>
+      </tr>
+  </tbody>
+</table>
+<blockquote>
+<p>✍🏻 On older Win 👴🏼 it&rsquo;s <code>602</code> event. Also, config files are in bin format with <code>.job</code> extension and can be parsed by a <code>jobparser.py</code> script.</p></p>
+
+    <h2><a href="http://localhost:1313/docs/ttp/cheatsheets/recon/"> 🤔 How Do I Check For Reconnaisance Activity?</a></h2> 
+    <p> <h2 id="windows">Windows</h2>
+<h3 id="event-logs">Event logs</h3>
+<p>Monitoring for these events will cause a lot of noise and false positives. You need to do it in a smart way:</p>
+<ol>
+<li>Filter for sensitive groups</li>
+<li>Whitelist those processes performing such activity legitimately: <code>mmc.exe</code>, <code>services.exe</code>, <code>taskhost.exe</code>, <code>explorer.exe</code>, <code>vsssvc.exe</code>. Presume everything else to be unusual.</li>
+<li>What accounts are NOT supposed to do recon?</li>
+<li>What group was queried? <code>Administrators</code> group (or other groups with higher privileges) is the most desirable piece of the pie.</li>
+</ol>
+<p><code>4798</code> - user&rsquo;s local group membership enum.
+<code>4799</code> - security-enabled local group membership enum.</p></p>
+
+    <h2><a href="http://localhost:1313/docs/ttp/cheatsheets/execution/"> 🤔 How do I check program execution?</a></h2> 
+    <p> <h2 id="windows">Windows</h2>
+<p>You can use Prefetch which is the most reliable source. However, if the program is NOT there, it doesn&rsquo;t mean it wasn&rsquo;t executed.</p>
+<p>Another artefact of use is AmCache. What&rsquo;s great about it is that it stores hashes among all. Although it&rsquo;s not proof of the program being executed, it can show the PRESENCE of files (exe and drivers) on the system.</p>
+<h3 id="shimcache">ShimCache</h3>
+<p>It is ok to collect artefacts like that manually, but it&rsquo;s better to do so at scale. Some tools were designed to process these artefacts and put everything in an SQL database.</p></p>
+
+    <h2><a href="http://localhost:1313/docs/ttp/cheatsheets/sysinfo/"> 🤔 How Do I Check System Information?</a></h2> 
+    <p> <h2 id="windows">Windows</h2>
+<p>Registry, of course.</p>
+<h3 id="amcache-registry-">AmCache, Registry 🗄️</h3>
+<p>You can see firmware, hardware and OS info there. Although the artefact has proved to be highly &ldquo;volatile&rdquo;, it might change from update to update.</p>
+<h3 id="macos">macOS</h3>
+<h3 id="linux">Linux</h3>
+<h3 id="ios">iOS</h3>
+<h4 id="backups">Backups</h4>
+<p>📂  <code>/Users/username/Library/Application\ Support/MobileSync/Backup/&lt;UDID&gt;/</code>: <code>Info.plist</code>, <code>Manifest.plist</code>, <code>Status.plist</code>.</p>
+<h4 id="lockdown-files">Lockdown files</h4>
+<p>📂  <code>/private/var/db/lockdown</code>
+W-Fi MAC Address for the connected iPhone</p>
+<h2 id="references">References</h2>
+<details>
+    <summary>Expand&hellip;</summary>
+    Something here
+</details></p>
+
+    <h2><a href="http://localhost:1313/docs/ttp/cheatsheets/account/"> 🤔 How Do I Find Malicious or Compromised Accounts?</a></h2> 
+    <p> <h2 id="windows">Windows</h2>
+<h3 id="event-logs">Event logs</h3>
+<p>📂 <code>%system root%\System32\config\SecEvent.evt</code>
+📂 <code>%system root%\System32\winevt\logs\Security.evtx</code></p>
+<p><img src="images/acc_created1.png" alt="img"></p>
+<p>It starts with the event <code>4720</code> (account created) and multiple <code>4732</code> events (member added to some security-enabled group). This account must be enabled (<code>4722</code>) before it can be used. You might see 4738 (account was changed) or even <code>4724</code> (password reset attempt).</p>
+<blockquote>
+<p>✍🏻 <code>4728</code> - member was added to a security-enabled global group.</p>
+<p>✍🏻 <code>4732</code> - member was added to a security-enabled local group.</p></p>
+
+    <h2><a href="http://localhost:1313/docs/ttp/cheatsheets/logon/"> 🤔 How Do I investigate logon events?</a></h2> 
+    <p> <h2 id="windows">Windows</h2>
+<h3 id="event-logs">Event Logs</h3>
+<p>There is a fine line between logon and <em>account</em> logon events, and that line is not just one word. The main idea is that logon is the event on the system that wants to chat, whilst account logon is the event on the server/remote system that our computer wants to talk to: user authentication and logon from the Security trail. Event codes <code>4624</code>.</p>
+<p>Most events are logged on the target machine, but you can also see these events on the source machine. That happens when the user authenticates locally with the credentials from the SAM database (NTLM protocol); you will see EID <code>4776</code> (NTLM creds used for logon) for both successful and failed logons.</p></p>
+
+    <h2><a href="http://localhost:1313/docs/ttp/cheatsheets/bruteforce/"> 🤔 How Do I Spot Bruteforcing Activity?</a></h2> 
+    <p> <h2 id="windows">Windows</h2>
+<h3 id="event-logs">Event logs</h3>
+<p>There will be no shortage of <code>4625</code> events (unsuccessful login) showing up in the logs. Since this attack is most likely happening over the network, the logon type will be <code>3</code> (often SMB or RDP). Now, if you give those events a once-over, you will be able to figure out whether we&rsquo;re up against a rather pesky password spray attack or an attack on a single account.</p></p>
+
+    <h2><a href="http://localhost:1313/docs/ttp/cheatsheets/injections/"> 🤔 How Do I Spot Injections?</a></h2> 
+    <p> <h2 id="windows">Windows</h2>
+<p>Sysmon logs, <code>25</code>.</p>
+<h2 id="references">References</h2>
+<details>
+    <summary>Expand&hellip;</summary>
+    Something here
+</details></p>
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <div class="sub-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="sub-footer-inner">
+          <ul>
+            <li class="zerostatic"><a href="https://www.zerostatic.io">www.zerostatic.io</a></li>
+            <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/docs/ttp/cheatsheets/index.xml" title="Analyst" />
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/scripts.js"></script>
+  
+
+  
+
+
+</body>
+
+</html>

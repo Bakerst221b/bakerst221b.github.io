@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>📘 📕 BTFM and RTFM iOS - Analyst</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="icon" href="http://localhost:1313/favicon.png">
+  <link href="/css/style-classic.css"></link>
+  
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+  
+
+</head>
+
+<body class='page page-default-single'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  <ul>
+    
+    
+    <li class="menu-item-home 🏡">
+      <a href="/">
+        <span>Home 🏡</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-blog ✍️">
+      <a href="/docs/blog">
+        <span>Blog ✍️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-ttp 🔍">
+      <a href="/docs/ttp">
+        <span>TTP 🔍</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-artefacts db 🏺">
+      <a href="/docs/artefacts">
+        <span>Artefacts DB 🏺</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-attacks db ⚔️">
+      <a href="/docs/attacks">
+        <span>Attacks DB ⚔️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-tools db 🛠️">
+      <a href="/docs/tools">
+        <span>Tools DB 🛠️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-crypto 🗝️">
+      <a href="/docs/cryptography">
+        <span>Crypto 🗝️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-about me 🧝🏽‍♀️">
+      <a href="/docs/about">
+        <span>About me 🧝🏽‍♀️</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+  <div class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="http://localhost:1313/"><img alt="Logo" src="/images/logo.png" /></a>
+    </div>
+    <div class="logo-mobile">
+      <a href="http://localhost:1313/"><img alt="Logo" src="/images/logo-mobile.svg" /></a>
+    </div>
+    
+
+    <div id="main-menu" class="main-menu">
+  <ul>
+    
+    
+    <li class="menu-item-home 🏡">
+      <a href="/">
+        <span>Home 🏡</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-blog ✍️">
+      <a href="/docs/blog">
+        <span>Blog ✍️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-ttp 🔍">
+      <a href="/docs/ttp">
+        <span>TTP 🔍</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-artefacts db 🏺">
+      <a href="/docs/artefacts">
+        <span>Artefacts DB 🏺</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-attacks db ⚔️">
+      <a href="/docs/attacks">
+        <span>Attacks DB ⚔️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-tools db 🛠️">
+      <a href="/docs/tools">
+        <span>Tools DB 🛠️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-crypto 🗝️">
+      <a href="/docs/cryptography">
+        <span>Crypto 🗝️</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-about me 🧝🏽‍♀️">
+      <a href="/docs/about">
+        <span>About me 🧝🏽‍♀️</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+    
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+    
+    <div style="margin-left: 20pt;">
+      <a href="/index.xml" type="application/rss+xml">
+        <img src="/images/rss.png" alt="RSS Feed">
+      </a>
+    </div>
+    
+    <style>
+      a[href="/index.xml"] {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+      }
+    
+      a[href="/index.xml"] img {
+        height: 30px;
+      }
+    </style>
+    
+  </div>
+</div>
+
+
+    
+    
+    
+    
+    
+    
+
+    
+    <div class="container pt-2 pt-md-6 pb-3 pb-md-6">
+      <div class="row">
+        <div class="col-12 col-md-3 mb-3">
+          <div class="sidebar">
+            
+<div class="docs-menu">
+  <p>
+   <a href="/docs/attacks/applications/mobile/"> 👈🏼 Back to </br> 📱 Mobile Attacks </a>
+  </p>
+  <aside>
+   <nav id="TableOfContents">
+  <ul>
+    <li><a href="#cheatsheet">Cheatsheet</a>
+      <ul>
+        <li><a href="#get-idevice-udid">Get iDevice UDID</a></li>
+        <li><a href="#get-package-name">Get package name</a></li>
+        <li><a href="#get-folder-with-bin-and-with-data-uuid">Get folder with bin and with data (UUID)</a></li>
+      </ul>
+    </li>
+    <li><a href="#device-info">Device Info</a></li>
+    <li><a href="#dfu-mode">DFU mode</a></li>
+    <li><a href="#connecting">Connecting</a></li>
+    <li><a href="#file-transfer">File Transfer</a></li>
+    <li><a href="#keychain-dump">Keychain dump</a></li>
+    <li><a href="#logs">Logs</a></li>
+    <li><a href="#artifacts">Artifacts</a></li>
+    <li><a href="#application-info">Application Info</a></li>
+    <li><a href="#decrypting-application">Decrypting Application</a></li>
+    <li><a href="#debugging">Debugging</a></li>
+    <li><a href="#ipa">IPA</a>
+      <ul>
+        <li><a href="#get-ipa">Get IPA</a></li>
+        <li><a href="#install-ipa">Install IPA</a></li>
+        <li><a href="#infoplist">Info.plist</a></li>
+      </ul>
+    </li>
+    <li><a href="#network">Network</a></li>
+    <li><a href="#binary-analysis">Binary Analysis</a></li>
+    <li><a href="#runtime-analysis">Runtime analysis</a>
+      <ul>
+        <li><a href="#frida">Frida</a></li>
+        <li><a href="#objection">Objection</a></li>
+        <li><a href="#cycript">Cycript</a></li>
+        <li><a href="#introspy">Introspy</a></li>
+      </ul>
+    </li>
+    <li><a href="#useful-greps">Useful greps</a></li>
+    <li><a href="#binary-exploits">Binary Exploits</a></li>
+    <li><a href="#references">References</a></li>
+  </ul>
+</nav>
+ </aside>
+</div>
+
+
+
+          </div>
+        </div>
+        <div class="col-12 col-md-9">
+          
+<h1 class="title">📘 📕 BTFM and RTFM iOS</h1>
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    <div class="meta">
+      
+      
+      <div class="article-category">
+          
+            
+            
+            
+            
+              <i class="fas fa-mobile"></i>
+            
+            
+            
+          
+          
+      </div> <br />
+      
+
+      
+      
+
+      
+    </div>
+    
+    <b>Created:</b> 18.09.2020
+    <br />
+
+    
+
+  </header>
+
+
+  <div class="content" itemprop="articleBody">
+    <p><em>This is a combination of BTFM and RTFM (Blue Team Field Manual and Red Team Field Manual) for iOS devices and applications. I used to keep two separate field manuals at first, but since there are just too many intersections, I&rsquo;ve decided to combine them to make it easier to use. For Android RTFM and BTFM see <a href="/docs/toolkit/manuals/android-btfm-rtfm">here</a></em></p>
+<h2 id="cheatsheet">Cheatsheet</h2>
+<p><em>This cheasheet is to ease the flow of either penetration testing analysis or forensics investigation. Fill in the form below to speed up command line tools usage.</em></p>
+<table>
+  <thead>
+      <tr>
+          <th>Information</th>
+          <th>ANSWER</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>iDevice UDID</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>Package name</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>App&rsquo;s folder with bin (UUID)</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>App&rsquo;s folder with data (UUID)</td>
+          <td></td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="get-idevice-udid">Get iDevice UDID</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># option 1</span>
+</span></span><span style="display:flex;"><span>ioreg -p IOUSB -l | grep <span style="color:#e6db74">&#34;USB Serial&#34;</span> 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># option 2</span>
+</span></span><span style="display:flex;"><span>idevice_id -l <span style="color:#75715e"># get UDID with ideviceinstaller</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># option 3</span>
+</span></span><span style="display:flex;"><span>system_profiler SPUSBDataType | sed -n -e <span style="color:#e6db74">&#39;/iPad/,/Serial/p;/iPhone/,/Serial/p;/iPod/,/Serial/p&#39;</span> | grep <span style="color:#e6db74">&#34;Serial Number:&#34;</span> <span style="color:#75715e"># </span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># option 4</span>
+</span></span><span style="display:flex;"><span>instruments -s devices
+</span></span></code></pre></div><h3 id="get-package-name">Get package name</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># option 1</span>
+</span></span><span style="display:flex;"><span>frida-ps -U | grep <span style="color:#f92672">[</span>partial_name<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>ipainstaller -l | grep <span style="color:#f92672">[</span>partial_name<span style="color:#f92672">]</span>
+</span></span></code></pre></div><h3 id="get-folder-with-bin-and-with-data-uuid">Get folder with bin and with data (UUID)</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># option 1</span>
+</span></span><span style="display:flex;"><span>ipainstaller -i <span style="color:#f92672">[</span>package_name<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># option 2</span>
+</span></span><span style="display:flex;"><span>objetion -g <span style="color:#f92672">[</span>package_name<span style="color:#f92672">]</span> explore
+</span></span><span style="display:flex;"><span>&gt; env
+</span></span></code></pre></div><h2 id="device-info">Device Info</h2>
+<p>Get UDID in different ways (using MacOS):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># option 1</span>
+</span></span><span style="display:flex;"><span>ioreg -p IOUSB -l | grep <span style="color:#e6db74">&#34;USB Serial&#34;</span> 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># option 2</span>
+</span></span><span style="display:flex;"><span>idevice_id -l <span style="color:#75715e"># get UDID with ideviceinstaller</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># option 3</span>
+</span></span><span style="display:flex;"><span>system_profiler SPUSBDataType | sed -n -e <span style="color:#e6db74">&#39;/iPad/,/Serial/p;/iPhone/,/Serial/p;/iPod/,/Serial/p&#39;</span> | grep <span style="color:#e6db74">&#34;Serial Number:&#34;</span> <span style="color:#75715e"># </span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># option 4</span>
+</span></span><span style="display:flex;"><span>instruments -s devices
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># option 5</span>
+</span></span><span style="display:flex;"><span>ideviceinfo | grep Unique
+</span></span></code></pre></div><p>Get BootROM version (old or new). <strong>iPod touch</strong>: if the second character of the Model is <strong>B</strong> - old BootROM with 0x24000 Segment Overflow, if <strong>C</strong> - new BootROM. iPhone 3GS: The third digit if serial number is the year, the 4th and 5th - week. 40-45 week of 2009 - can be either old or new one. After - new.</p>
+<p>Get General iDevice Info:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>brew install libimobiledevice <span style="color:#75715e"># install the tool</span>
+</span></span><span style="display:flex;"><span>ideviceinfo
+</span></span></code></pre></div><p>GUI - Xcode.</p>
+<p>Useful tool that supports python scripts - <a href="https://libimobiledevice.org/#examples">https://libimobiledevice.org/#examples</a>.</p>
+<p>#todo: learn to use this feature.</p>
+<h2 id="dfu-mode">DFU mode</h2>
+<p>DFU mode device descriptors with BootROM version:</p>
+<ul>
+<li>
+<p>Enter DFU mode</p>
+</li>
+<li>
+<p>Windows:</p>
+<ul>
+<li>Device Manager &ndash;&gt; USB Controller &ndash;&gt; Apple Mobile Device USB Driver &ndash;&gt; Properties &ndash;&gt; Details tab &ndash;&gt; Device Instance Path &ndash;&gt; the end of the drop-down menu.</li>
+</ul>
+</li>
+<li>
+<p>Mac:</p>
+<ul>
+<li>System Profiler &ndash;&gt; Hardware Category &ndash;&gt; USB &ndash;&gt; Apple Mobile Device &ndash;&gt; the end of the serial string</li>
+</ul>
+</li>
+<li>
+<p>Linux:</p>
+<ul>
+<li>
+<p>Install usbutils on Linux</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo lsusb -v
+</span></span></code></pre></div></li>
+<li>
+<p>Find <code>iSerial</code> and at the end is the version</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="connecting">Connecting</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ssh root@&lt;<span style="color:#75715e">#phone_ip&gt;, password: alpine</span>
+</span></span></code></pre></div><p>Works only for jailbroken devices.</p>
+<p>Connectiong to ssh via USB:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>brew install libimobiledevice
+</span></span><span style="display:flex;"><span>iproxy <span style="color:#ae81ff">2222</span> <span style="color:#ae81ff">22</span>
+</span></span><span style="display:flex;"><span>ssh -p <span style="color:#ae81ff">2222</span> root@localhost
+</span></span></code></pre></div><p>For reverse shell (in case jb doesn&rsquo;t allow incoming connections):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>brew install libimobiledevice
+</span></span><span style="display:flex;"><span>iproxy <span style="color:#ae81ff">2222</span> <span style="color:#ae81ff">22</span>
+</span></span><span style="display:flex;"><span>ssh -R &lt;remote_port&gt;:localhost:22 &lt;username&gt;@&lt;host_computer_ip&gt;
+</span></span></code></pre></div><h2 id="file-transfer">File Transfer</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>scp &lt;file_to_transfer&gt; root@&lt;device_ip&gt;:~ <span style="color:#75715e"># on iDevice</span>
+</span></span><span style="display:flex;"><span>scp root@<span style="color:#f92672">[</span>device_ip<span style="color:#f92672">]</span> /path/to/file <span style="color:#75715e"># from iDevice via WiFi</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>iproxy <span style="color:#ae81ff">2222</span> <span style="color:#ae81ff">22</span>
+</span></span><span style="display:flex;"><span>scp -P <span style="color:#ae81ff">2222</span> &lt;file_to_transfer&gt; root@<span style="color:#f92672">[</span>device_ip<span style="color:#f92672">]</span>:<span style="color:#f92672">[</span>/path/to/file/on/iDevice<span style="color:#f92672">]</span> <span style="color:#75715e"># to iDevide via USB</span>
+</span></span><span style="display:flex;"><span>scp -P <span style="color:#ae81ff">2222</span> root@<span style="color:#f92672">[</span>device_ip<span style="color:#f92672">]</span>:<span style="color:#f92672">[</span>/path/to/file/on/iDevice<span style="color:#f92672">]</span> . <span style="color:#75715e"># from iDevice via USB</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># connect with objection over USB</span>
+</span></span><span style="display:flex;"><span>objection -g <span style="color:#f92672">[</span>app_name<span style="color:#f92672">]</span> explore
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># connect with objection over network</span>
+</span></span><span style="display:flex;"><span>objection -g <span style="color:#f92672">[</span>app_name<span style="color:#f92672">]</span> -N -h <span style="color:#f92672">[</span>192.168.1.XX<span style="color:#f92672">]</span> explore
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># then in objection promt:</span>
+</span></span><span style="display:flex;"><span>file download <span style="color:#f92672">[</span>/path/to/file/on/iDevice<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>file upload <span style="color:#f92672">[</span>/path/to/file/on/PC<span style="color:#f92672">]</span>
+</span></span></code></pre></div><h2 id="keychain-dump">Keychain dump</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Dump keychain with Objection</span>
+</span></span><span style="display:flex;"><span>objection --gadget<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;[Application name]&#34;</span> explore
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># or over the network</span>
+</span></span><span style="display:flex;"><span>objection --gadget<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;[Application name]&#34;</span> -N -h 192.168.1.XX explore
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># then in objection promt</span>
+</span></span><span style="display:flex;"><span>ios keychain dump
+</span></span><span style="display:flex;"><span>ios keychain dump --json &lt;myfile.json&gt; <span style="color:#75715e"># including access modifiers. The result will be written to the host in myfile.json</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Dump keychain with Keychain Dumper</span>
+</span></span><span style="display:flex;"><span>./updateEntitlements.sh <span style="color:#75715e"># to add entitlements explicitly to work on later devices</span>
+</span></span><span style="display:flex;"><span>chmod +x ./keychain_dumper
+</span></span><span style="display:flex;"><span>./keychain_dumper
+</span></span><span style="display:flex;"><span>chmod +r /private/var/Keychains/keychain-2.db <span style="color:#75715e"># to validate that keychain-2.db is world-readable</span>
+</span></span></code></pre></div><p>About Keychain Dumper.</p>
+<blockquote>
+<p>Note: iOS 11 devices using Electra (or other jailbreaks) may still require a trick to bypass the native sandbox. Compile the binary with the included <em>entitlements.xml</em>, sign it with the developer account certificate/priv_key and copy the binary to <em>/bin</em> or <em>/sbin</em> (which already allows execution). See <a href="https://github.com/ptoomey3/Keychain-Dumper">here</a> for more detailed instructions.</p></blockquote>
+<p>Another important note:</p>
+<blockquote>
+<p>Some keychain entries are available regardless of whether the iOS is locked or not, while other entries will <strong>only be accessible if the iOS device is unlocked</strong> (i.e. a user has entered their pin)&hellip;. <strong>By default</strong> keychain_dumper only dumps <strong>&ldquo;Generic&rdquo; and &ldquo;Internet&rdquo;</strong> passwords&hellip;</p></blockquote>
+<p>Download <a href="https://github.com/ptoomey3/Keychain-Dumper/releases/tag/1.0.0">here</a>.</p>
+<h2 id="logs">Logs</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>socat  - UNIX-CONNECT:/var/run/lockdown/syslog.sock <span style="color:#75715e"># check syslog</span>
+</span></span><span style="display:flex;"><span>cd /var/mobile/Applications <span style="color:#75715e"># check here for appspecific logs</span>
+</span></span><span style="display:flex;"><span>sdsiosloginfo.exe -d -u <span style="color:#f92672">[</span>UDID<span style="color:#f92672">]</span> &gt; .<span style="color:#ae81ff">\c</span>onsole.txt <span style="color:#75715e"># drop device logs on Windows</span>
+</span></span></code></pre></div><p>GUI - Xcode.</p>
+<h2 id="artifacts">Artifacts</h2>
+<p>Taken from <a href="https://docs.google.com/spreadsheets/d/1z-44BUA2AVf8uqnoiDDSi7UxbyWy8KJqK4uaYq_0YYg/edit#gid=9">here</a>.</p>
+<h2 id="application-info">Application Info</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>frida-ps -Uia | grep -i Telegram <span style="color:#75715e"># get application name</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>ipainstaller -l 
+</span></span><span style="display:flex;"><span>ipainstaller -i <span style="color:#f92672">[</span>app_name<span style="color:#f92672">]</span>
+</span></span></code></pre></div><h2 id="decrypting-application">Decrypting Application</h2>
+<p>With <code>frida-ios-dump</code> (⚠️ <code>frida-server</code> must be installed and running on iDevice):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># option 1</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># brew install libimobiledevice</span>
+</span></span><span style="display:flex;"><span>iproxy <span style="color:#ae81ff">2222</span> <span style="color:#ae81ff">22</span>
+</span></span><span style="display:flex;"><span>pyenv activate python39
+</span></span><span style="display:flex;"><span>./dump.py -l <span style="color:#75715e"># list all apps with names and Bundle ids</span>
+</span></span><span style="display:flex;"><span>./dump.py <span style="color:#f92672">[</span>Display_name<span style="color:#f92672">]</span> or <span style="color:#f92672">[</span>Bundle_identifier<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># option 2</span>
+</span></span><span style="display:flex;"><span>./clutch -i
+</span></span><span style="display:flex;"><span>./clutch -d <span style="color:#f92672">[</span>Bundle_identifier<span style="color:#f92672">]</span> <span style="color:#75715e"># decrypt everything and create IPA</span>
+</span></span><span style="display:flex;"><span>./clutch -b <span style="color:#f92672">[</span>Bundle_identifier<span style="color:#f92672">]</span> <span style="color:#75715e"># decrypt binary only</span>
+</span></span></code></pre></div><p>For <code> frida-ios-dump</code> change <code>Password</code> variable in <code>dump.py</code> to the one set on iDevice:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span>DUMP_JS <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>join(script_dir, <span style="color:#e6db74">&#39;dump.js&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>User <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;root&#39;</span>
+</span></span><span style="display:flex;"><span>Password <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;YourPassFromiDevice&#39;</span>
+</span></span><span style="display:flex;"><span>Host <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;localhost&#39;</span>
+</span></span><span style="display:flex;"><span>Port <span style="color:#f92672">=</span> <span style="color:#ae81ff">2222</span>
+</span></span><span style="display:flex;"><span>KeyFileName <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">...</span>
+</span></span></code></pre></div><p>Alternatively, use GUI tool <a href="https://iosgods.com/topic/80763-crackerxi-decrypt-ios-apps-on-ios-10-11-12-13/">CrackerXI</a>. Results stored:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd /var/mobile/Documents/CrackerXI/
+</span></span></code></pre></div><h2 id="debugging">Debugging</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># prerequisite</span>
+</span></span><span style="display:flex;"><span>unzip <span style="color:#f92672">[</span>app_name<span style="color:#f92672">]</span>.ipa
+</span></span><span style="display:flex;"><span>ios-deploy --bundle <span style="color:#e6db74">&#39;Payload/[app_name].app&#39;</span> -W -d -v
+</span></span><span style="display:flex;"><span>ios-deploy --bundle <span style="color:#e6db74">&#39;Payload/Name.app&#39;</span> -W -d -v -m
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># prerequisite</span>
+</span></span><span style="display:flex;"><span>idevicedebug run <span style="color:#f92672">[</span>Bundle_Name<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># install cycript and gawk on iDevice first</span>
+</span></span><span style="display:flex;"><span>cycript -p <span style="color:#66d9ef">$(</span>ps aux | grep -i <span style="color:#f92672">[</span>partial_app_name<span style="color:#f92672">]</span> | awk -F <span style="color:#e6db74">&#34; &#34;</span> <span style="color:#e6db74">&#39;{print $2}&#39;</span> | head -n 1<span style="color:#66d9ef">)</span> 
+</span></span></code></pre></div><p>GUI - Xcode</p>
+<h2 id="ipa">IPA</h2>
+<h3 id="get-ipa">Get IPA</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># via OTA (not installed on iDevice)</span>
+</span></span><span style="display:flex;"><span>npm install -g itms-services <span style="color:#75715e"># install the tool</span>
+</span></span><span style="display:flex;"><span>itms-services -u <span style="color:#e6db74">&#34;itms-services://?action=download-manifest&amp;url=https://s3-ap-southeast-1.amazonaws.com/test-uat/manifest.plist&#34;</span> -o - &gt; out.ipa
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># get ipa from device</span>
+</span></span><span style="display:flex;"><span>ipainstaller -l <span style="color:#75715e"># get package name</span>
+</span></span><span style="display:flex;"><span>ipainstaller -i <span style="color:#f92672">[</span>app_name<span style="color:#f92672">]</span> <span style="color:#75715e"># get paths to bin and data</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># or</span>
+</span></span><span style="display:flex;"><span>objection
+</span></span><span style="display:flex;"><span>env
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># download Application folder</span>
+</span></span><span style="display:flex;"><span>scp root@<span style="color:#f92672">[</span>device_ip<span style="color:#f92672">]</span>:/path/to/file .
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># create ipa from app</span>
+</span></span><span style="display:flex;"><span>mkdir Payload
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># move .app to Payload folder</span>
+</span></span><span style="display:flex;"><span>mv <span style="color:#f92672">[</span>package_name<span style="color:#f92672">]</span>.app Payload
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># archive the folder using some archive application</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># change the file extension from .zip to .ipa</span>
+</span></span></code></pre></div><p>See other ways to download file from device in <a href="docs/toolkit/mobile/btfm-rtfm-ios#file-transfer">File Transfer</a> section.</p>
+<h3 id="install-ipa">Install IPA</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># with ideviceinstaller</span>
+</span></span><span style="display:flex;"><span>brew install libimobiledevice <span style="color:#75715e"># install the tool</span>
+</span></span><span style="display:flex;"><span>ideviceinstaller - <span style="color:#f92672">[</span>ipa_file<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># with ipainstaller</span>
+</span></span><span style="display:flex;"><span>ipainstaller App_name.ipa
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># with ios-deploy</span>
+</span></span><span style="display:flex;"><span>brew install ios-deploy <span style="color:#75715e"># install the tool</span>
+</span></span><span style="display:flex;"><span>unzip <span style="color:#f92672">[</span>app_name<span style="color:#f92672">]</span>.ipa
+</span></span><span style="display:flex;"><span>ios-deploy --bundle <span style="color:#e6db74">&#39;Payload/[app_name].ipa&#39;</span> -W -d -v
+</span></span><span style="display:flex;"><span>ios-deploy --bundle <span style="color:#e6db74">&#39;Payload/Name.app&#39;</span> -W -d -v -m <span style="color:#75715e"># debug the application </span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># itms-services</span>
+</span></span><span style="display:flex;"><span>itms-services://?action<span style="color:#f92672">=</span>download-manifest&amp;url<span style="color:#f92672">=</span>https://s3-ap-southeast-1.amazonaws.com/test-uat/manifest.plist
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>itms-services -u <span style="color:#e6db74">&#34;itms-services://?action=download-manifest&amp;url=https://s3-ap-southeast-1.amazonaws.com/test-uat/manifest.plist&#34;</span> -o - &gt; out.ipa
+</span></span></code></pre></div><p>Alternatively GUI - iFunBox or Xcode.</p>
+<h3 id="infoplist">Info.plist</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>plutil -convert xml1 Info.plist <span style="color:#75715e"># if bplist</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># App permissions Purpose Strings</span>
+</span></span><span style="display:flex;"><span>grep -i UsageDescription Info.plist
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Custom URL schemes</span>
+</span></span><span style="display:flex;"><span>grep -i CFBundleURLTypes Info.plist
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Exported/imported custom document types: </span>
+</span></span><span style="display:flex;"><span>grep -i UTExportedTypeDeclarations | UTImportedTypeDeclarations Info.plist
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># App Transport Security (ATS) configuration</span>
+</span></span><span style="display:flex;"><span>grep -i NSAppTransportSecurity Info.plist
+</span></span></code></pre></div><h2 id="network">Network</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ideviceinfo <span style="color:#75715e"># get UDID</span>
+</span></span><span style="display:flex;"><span>rvictl -s &lt;UDID&gt;
+</span></span><span style="display:flex;"><span>sudo /Applications/Wireshark.app/Contents/MacOS/Wireshark
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># select rvi0 interface</span>
+</span></span></code></pre></div><p>GUI Alternative with Application Layer (HTTP(S) to be precise) only - Burp Suite. Also, with Burp Suit you can also modify the traffic. <a href="https://portswigger.net/support/configuring-an-ios-device-to-work-with-burp">Configure</a> and install <a href="https://portswigger.net/support/installing-burp-suites-ca-certificate-in-an-ios-device">cert</a>.</p>
+<h2 id="binary-analysis">Binary Analysis</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd /var/mobile/Containers/Bundle/Application/<span style="color:#f92672">[</span>application_folder_GUID<span style="color:#f92672">]</span>/<span style="color:#f92672">[</span>appname<span style="color:#f92672">]</span>.app/<span style="color:#f92672">[</span>appname<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># or</span>
+</span></span><span style="display:flex;"><span>cd /var/containers/Bundle/Application/<span style="color:#f92672">[</span>application_folder_GUID<span style="color:#f92672">]</span>/<span style="color:#f92672">[</span>appname<span style="color:#f92672">]</span>.app/<span style="color:#f92672">[</span>appname<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>otool -hv <span style="color:#f92672">[</span>appname<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>./dsdump --objc --color --verbose<span style="color:#f92672">=</span><span style="color:#ae81ff">5</span> --defined  /var/containers/Bundle/Application/<span style="color:#f92672">[</span>application_folder_GUID<span style="color:#f92672">]</span>/<span style="color:#f92672">[</span>appname<span style="color:#f92672">]</span>.app/<span style="color:#f92672">[</span>appname<span style="color:#f92672">]</span> &gt; /tmp/OBJC.txt
+</span></span></code></pre></div><h2 id="runtime-analysis">Runtime analysis</h2>
+<h3 id="frida">Frida</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># on iDevice</span>
+</span></span><span style="display:flex;"><span>./frida-server -L 192.168.1.72 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># on PC </span>
+</span></span><span style="display:flex;"><span>frida-trace -U YourApp -m <span style="color:#e6db74">&#34;*[NSURL* *HTTP*]&#34;</span> <span style="color:#75715e"># trace all functions starting with NSURL and with HTTP in their names</span>
+</span></span></code></pre></div><h3 id="objection">Objection</h3>
+<p>Inject objection to test applications on non-jailbroken devices:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>objection patchipa --source my-app.ipa --codesign-signature 0C2E8200Dxxxx
+</span></span><span style="display:flex;"><span>ios-deploy --bundle Payload/my-app.app -W -d
+</span></span></code></pre></div><p>Commands when using objection:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Show the different storage locations belonging to the app</span>
+</span></span><span style="display:flex;"><span>$ env
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Disable popular ssl pinning methods</span>
+</span></span><span style="display:flex;"><span>$ ios sslpinning disable
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Dump the Keychain. Alternative - Keychain Dumper</span>
+</span></span><span style="display:flex;"><span>$ ios keychain dump
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Dump the Keychain, including access modifiers. The result will be written to the host in myfile.json</span>
+</span></span><span style="display:flex;"><span>$ ios keychain dump --json &lt;myfile.json&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Show the content of a plist file</span>
+</span></span><span style="display:flex;"><span>$ ios plist cat &lt;myfile.plist&gt;
+</span></span></code></pre></div><h3 id="cycript">Cycript</h3>
+<h3 id="introspy">Introspy</h3>
+<p>Installation guide for <a href="https://github.com/iSECPartners/Introspy-iOS">Tracer</a> and <a href="https://github.com/iSECPartners/Introspy-Analyzer">Analyzer</a>. Introduction <a href="http://isecpartners.github.io/Introspy-iOS/">here</a>. Couldn&rsquo;t run on iOS 13.4.1.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># install</span>
+</span></span><span style="display:flex;"><span>pip install git+https://github.com/iSECPartners/Introspy-Analyzer.git
+</span></span><span style="display:flex;"><span>python -m introspy &lt;args&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># iOS</span>
+</span></span><span style="display:flex;"><span>python -m introspy -p ios -o output -f 192.168.1.12
+</span></span></code></pre></div><h2 id="useful-greps">Useful greps</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>grep -rP  <span style="color:#e6db74">&#39;(https?):\/\/(www\.)?[a-z0-9.:].*?(?=\s)&#39;</span> . <span style="color:#75715e"># get links</span>
+</span></span><span style="display:flex;"><span>grep -r -E -o <span style="color:#e6db74">&#34;\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,6}\b&#34;</span> . <span style="color:#75715e"># get emails</span>
+</span></span><span style="display:flex;"><span>grep -r -E -o <span style="color:#e6db74">&#34;4[0-9]{3}[ -]?[0-9]{4}[ -]?[0-9]{4}[ -]?[0-9]{4}&#34;</span> .  <span style="color:#75715e"># get visa card numbers</span>
+</span></span><span style="display:flex;"><span>grep -r -E -o <span style="color:#e6db74">&#34;5[0-9]{3}[ -]?[0-9]{4}[ -]?[0-9]{4}[ -]?[0-9]{4}&#34;</span> . <span style="color:#75715e"># get mc card numbers</span>
+</span></span></code></pre></div><h2 id="binary-exploits">Binary Exploits</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>r2 -Ad <span style="color:#f92672">[</span>binary_to_check<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># check whether the protection was enabled during compilation</span>
+</span></span><span style="display:flex;"><span>iI~canary,nx,pic
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># alternatively with otools on iDevice</span>
+</span></span><span style="display:flex;"><span>otool 
+</span></span></code></pre></div><h2 id="references">References</h2>
+<p><a href="https://monosource.gitbooks.io/radare2-explorations/content/tut4/tut4_-_exploit.html">https://monosource.gitbooks.io/radare2-explorations/content/tut4/tut4_-_exploit.html</a></p>
+<p><a href="https://bananamafia.dev/post/rop-arm-1/">https://bananamafia.dev/post/rop-arm-1/</a></p>
+
+  </div>
+</article>
+</div>
+</div>
+
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <div class="sub-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="sub-footer-inner">
+          <ul>
+            <li class="zerostatic"><a href="https://www.zerostatic.io">www.zerostatic.io</a></li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/scripts.js"></script>
+  
+
+  
+
+
+</body>
+
+</html>

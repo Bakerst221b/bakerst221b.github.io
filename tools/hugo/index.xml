@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on Analyst</title>
+    <link>http://localhost:1313/tools/hugo/</link>
+    <description>Recent content in Hugo on Analyst</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 09 Sep 2020 13:45:07 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tools/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How I Met Hugo</title>
+      <link>http://localhost:1313/docs/blog/2020/09/how-i-met-hugo/</link>
+      <pubDate>Wed, 09 Sep 2020 13:45:07 +0300</pubDate>
+      <guid>http://localhost:1313/docs/blog/2020/09/how-i-met-hugo/</guid>
+      <description>&lt;p&gt;There was a time when I was desperately trying to become a web programmer (those wonderful days of naïve curiosity🤦‍♀️). I’ve even attended a course (which turned out to be useless&amp;hellip; If only I knew back then, that I could better learn it all for free on my own. Alas!😭).&lt;/p&gt;&#xA;&lt;p&gt;So I created some repulsive HTML pages with a crappy JavaScript🤮. I remember one of the first projects: a page with a binary converter🙌. Some time later, when I’ve found a job as a C# programmer, I’ve met the beauty of asp.net (&lt;a href=&#34;http://asp.net/&#34;&gt;http://asp.net/&lt;/a&gt;) and realized I don’t have to deal with php (which my soft mental constitution could not bear 👸) and that I don’t always have to write  websites from scratch and what’s more, to develop the design for it myself&amp;hellip; After I’ve started my career in InfoSec field, I’ve stumbled upon a task which I managed to solve with .net web engine and my beloved C#. But the site was as usual, not very pretty, to say the least&amp;hellip; Actually, I’ve tried to copy VisualStudio styles and managed partly, but it was like a 5 year old trying to copy Tician. Almost.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Processes on Analyst</title>
+    <link>http://localhost:1313/docs/artefacts/apple/ios-processes/</link>
+    <description>Recent content in Processes on Analyst</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 03 Jul 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/docs/artefacts/apple/ios-processes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Core</title>
+      <link>http://localhost:1313/docs/artefacts/apple/ios-processes/core/</link>
+      <pubDate>Mon, 03 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/artefacts/apple/ios-processes/core/</guid>
+      <description>&lt;p&gt;&lt;em&gt;This is about &amp;hellip; .&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Installed</title>
+      <link>http://localhost:1313/docs/artefacts/apple/ios-processes/installed/</link>
+      <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/artefacts/apple/ios-processes/installed/</guid>
+      <description>&lt;p&gt;• HomeDomain-Library/FrontBoard/applicationState.db&lt;br&gt;&#xA;• Info.plist&lt;br&gt;&#xA;• Manifest.plist&lt;br&gt;&#xA;• /private/var/mobile/Library/FrontBoard/applicationState.db&lt;/p&gt;&#xA;&lt;h4 id=&#34;application-permissions&#34;&gt;Application Permissions:&lt;/h4&gt;&#xA;&lt;p&gt;• HomeDomain-Library/TCC/TCC.db&lt;br&gt;&#xA;• /private/var/mobile/Library/TCC/TCC.db&lt;/p&gt;&#xA;&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;&#xA;&lt;details&gt;&#xA;    &lt;summary&gt;Expand&amp;hellip;&lt;/summary&gt;&#xA;    Something here&#xA;&lt;/details&gt;</description>
+    </item>
+  </channel>
+</rss>

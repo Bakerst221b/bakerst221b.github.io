@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Event Log Explorer on Analyst</title>
+    <link>http://localhost:1313/tools/event-log-explorer/</link>
+    <description>Recent content in Event Log Explorer on Analyst</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 08 Jan 2022 11:42:21 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tools/event-log-explorer/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CyberCorp1</title>
+      <link>http://localhost:1313/docs/todo/cases/ctf-walkthrough/cybercorp1/</link>
+      <pubDate>Sat, 08 Jan 2022 11:42:21 +0300</pubDate>
+      <guid>http://localhost:1313/docs/todo/cases/ctf-walkthrough/cybercorp1/</guid>
+      <description>&lt;p&gt;⛔️  Spoiler alert!&lt;/p&gt;&#xA;&lt;h2 id=&#34;case-details&#34;&gt;Case Details&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Artefacts in posession&lt;/strong&gt;: memory dump, OS event logs, registry files, Prefetch files, $MFT file, ShimCache, AmCache, network traffic dumps. I&amp;rsquo;ve decided to analyse each artefact, what can I get from it in this specific case and how. Then, I am going to outline my strategy in approaching this case.&lt;/p&gt;&#xA;&lt;p&gt;We are looking for indicators of compromise.  There are no details as to what is the group and what was its aim. But it’s known that there was abnormal traffic detected that has launched this IR process. So, at least, we must have some suspicious traffic, possibly open or terminated connections. These should have been launched by some process, so we are looking for malware. Also, since the attacker needed an account to get in, I will be looking for an account take over attempts and possibly, new account creation.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>🎞 Media Files</title>
+      <link>http://localhost:1313/docs/artefacts/files/media/</link>
+      <pubDate>Mon, 12 Oct 2020 17:50:01 +0300</pubDate>
+      <guid>http://localhost:1313/docs/artefacts/files/media/</guid>
+      <description>&lt;h2 id=&#34;windows&#34;&gt;Windows&lt;/h2&gt;&#xA;&lt;h3 id=&#34;recent-documents&#34;&gt;Recent documents&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;Key&lt;/strong&gt; 🔑: &lt;code&gt;NTUSER.DAT\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;Contains the list of all recent documents as a bunch and also the same data sorted by extension. &lt;code&gt;MRUListEx&lt;/code&gt; is list. It has a number of 4 byte values, each noting the sequence number of a document. It starts from the document&amp;rsquo;s number that was accessed some time age (first in the list) and ends with the most recently used one. This key also has a list of recently accessed folders.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
