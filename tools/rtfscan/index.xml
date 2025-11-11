@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>RtfScan on Analyst</title>
-    <link>http://localhost:1313/tools/rtfscan/</link>
+    <link>https://bakerst221b.com/tools/rtfscan/</link>
     <description>Recent content in RtfScan on Analyst</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 19 Jul 2018 14:19:03 +0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/tools/rtfscan/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bakerst221b.com/tools/rtfscan/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Undesirable Mail</title>
-      <link>http://localhost:1313/docs/blog/2018/07/undesirable-mail/</link>
+      <link>https://bakerst221b.com/docs/blog/2018/07/undesirable-mail/</link>
       <pubDate>Thu, 19 Jul 2018 14:19:03 +0300</pubDate>
-      <guid>http://localhost:1313/docs/blog/2018/07/undesirable-mail/</guid>
+      <guid>https://bakerst221b.com/docs/blog/2018/07/undesirable-mail/</guid>
       <description>&lt;p&gt;&lt;em&gt;&lt;strong&gt;Thursday&lt;/strong&gt;&lt;/em&gt;, &lt;em&gt;&lt;strong&gt;Warm and cloudy.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;&amp;ldquo;Open me! I am a payment order! I am important, I swear!&amp;rdquo;, - some RTF-file was yelling. I wasn&amp;rsquo;t expecting any bills so this slyboots did not maim my poor little laptop. Phew ! Lucky me! But since this was a social engineering attack (not very crafty but still), someone less concerned with his or her safety could have opened it and cause him- or herself a lot of trouble. What I am trying to say (very inarticulately ) is that simply opening a small RTF document could result in absolute disaster for your machine! In this post I am telling the story how exactly does it happen&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
     </item>
   </channel>

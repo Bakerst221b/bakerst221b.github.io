@@ -2,87 +2,87 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Persistence and Escalation Mechanisms on Analyst</title>
-    <link>http://localhost:1313/docs/attacks/persesc/</link>
+    <link>https://bakerst221b.com/docs/attacks/persesc/</link>
     <description>Recent content in Persistence and Escalation Mechanisms on Analyst</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 03 Jun 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/docs/attacks/persesc/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bakerst221b.com/docs/attacks/persesc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Collection</title>
-      <link>http://localhost:1313/docs/attacks/persesc/collection/</link>
+      <link>https://bakerst221b.com/docs/attacks/persesc/collection/</link>
       <pubDate>Sat, 03 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/attacks/persesc/collection/</guid>
+      <guid>https://bakerst221b.com/docs/attacks/persesc/collection/</guid>
       <description>&lt;p&gt;*There are a lot of techniques to become persistent on a Windows machine. You can refer to the persistence and escalation mechanisms article or look those up on the MITRE website. Although it&amp;rsquo;s important to know the artefacts themselves and the technique, it would be hard to collect them all manually. *&lt;/p&gt;</description>
     </item>
     <item>
       <title>BIOS Persistence</title>
-      <link>http://localhost:1313/docs/attacks/persesc/bios/</link>
+      <link>https://bakerst221b.com/docs/attacks/persesc/bios/</link>
       <pubDate>Sat, 03 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/attacks/persesc/bios/</guid>
+      <guid>https://bakerst221b.com/docs/attacks/persesc/bios/</guid>
       <description>&lt;p&gt;&lt;em&gt;This is about &amp;hellip; .&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Boot Abuse</title>
-      <link>http://localhost:1313/docs/attacks/persesc/boot/</link>
+      <link>https://bakerst221b.com/docs/attacks/persesc/boot/</link>
       <pubDate>Sat, 03 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/attacks/persesc/boot/</guid>
+      <guid>https://bakerst221b.com/docs/attacks/persesc/boot/</guid>
       <description>&lt;h2 id=&#34;linux&#34;&gt;Linux&lt;/h2&gt;&#xA;&lt;p&gt;&lt;code&gt;Init&lt;/code&gt; is the process that spawns other processes and usually has pid &lt;code&gt;1&lt;/code&gt;. &lt;code&gt;/etc/inittab&lt;/code&gt; can be used to set run level for the systems. &lt;code&gt;/etc/rc.d&lt;/code&gt; has a collection of files that define what services are running at what level. This information can also be viewed with a &lt;strong&gt;chkconfig&lt;/strong&gt; command.&lt;/p&gt;&#xA;&lt;h3 id=&#34;run-levels&#34;&gt;Run Levels&lt;/h3&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Run Level&lt;/th&gt;&#xA;          &lt;th&gt;Mode&lt;/th&gt;&#xA;          &lt;th&gt;Action&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;0&lt;/td&gt;&#xA;          &lt;td&gt;Halt&lt;/td&gt;&#xA;          &lt;td&gt;Shuts down system&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;1&lt;/td&gt;&#xA;          &lt;td&gt;Single-User Mode ❗️&lt;/td&gt;&#xA;          &lt;td&gt;Does not configure network interfaces, start daemons, or allow non-root logins. Can be used to boot to the super user account and change its password without knowing the old one.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;2&lt;/td&gt;&#xA;          &lt;td&gt;Multi-User Mode&lt;/td&gt;&#xA;          &lt;td&gt;Does not configure network interfaces or start daemons.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;3&lt;/td&gt;&#xA;          &lt;td&gt;Multi-User Mode with Networking ❗️&lt;/td&gt;&#xA;          &lt;td&gt;Starts the system normally. Servers usually run at this level.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;4&lt;/td&gt;&#xA;          &lt;td&gt;Undefined&lt;/td&gt;&#xA;          &lt;td&gt;Not used/User-definable&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;5&lt;/td&gt;&#xA;          &lt;td&gt;X11&lt;/td&gt;&#xA;          &lt;td&gt;As runlevel 3 + display manager(X), main for desktop machines.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;6&lt;/td&gt;&#xA;          &lt;td&gt;Reboot&lt;/td&gt;&#xA;          &lt;td&gt;Reboots the system,  shuts down all services when the system is being rebooted&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;p&gt;[&lt;a href=&#34;https://www.liquidweb.com/kb/linux-runlevels-explained/&#34;&gt;1&lt;/a&gt;]&lt;/p&gt;</description>
     </item>
     <item>
       <title>Config Abuse</title>
-      <link>http://localhost:1313/docs/attacks/persesc/startup/</link>
+      <link>https://bakerst221b.com/docs/attacks/persesc/startup/</link>
       <pubDate>Sat, 03 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/attacks/persesc/startup/</guid>
+      <guid>https://bakerst221b.com/docs/attacks/persesc/startup/</guid>
       <description>&lt;p&gt;&lt;em&gt;Some persistence and escalation techniques don&amp;rsquo;t require an exploit but only a little tweaking of some config.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Elevation Control Abuse</title>
-      <link>http://localhost:1313/docs/attacks/persesc/elevation/</link>
+      <link>https://bakerst221b.com/docs/attacks/persesc/elevation/</link>
       <pubDate>Sat, 03 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/attacks/persesc/elevation/</guid>
+      <guid>https://bakerst221b.com/docs/attacks/persesc/elevation/</guid>
       <description>&lt;h2 id=&#34;linux--macos&#34;&gt;Linux &amp;amp; macOS&lt;/h2&gt;&#xA;&lt;h3 id=&#34;setuid-and-setgid&#34;&gt;&lt;code&gt;setuid&lt;/code&gt; and &lt;code&gt;setgid&lt;/code&gt;&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;Platforms&lt;/strong&gt;: macOS, Linux&#xA;&lt;strong&gt;MITRE&lt;/strong&gt;: &lt;a href=&#34;https://attack.mitre.org/techniques/T1548/001/&#34;&gt;https://attack.mitre.org/techniques/T1548/001/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;setuid&lt;/code&gt; or &lt;code&gt;setgid&lt;/code&gt; bits set in UNIX. &lt;code&gt;chmod u+s [file]&lt;/code&gt; or &lt;code&gt;chmod 4777 [file]&lt;/code&gt; to set the bit. To enable the setgid bit, &lt;code&gt;chmod 2775&lt;/code&gt; and &lt;code&gt;chmod g+s&lt;/code&gt; can be used. Look for the files with the bit set: &lt;code&gt;find / -perm +4000 2&amp;gt;/dev/null&lt;/code&gt; and &lt;code&gt;find / -perm +2000 2&amp;gt;/dev/null&lt;/code&gt; for the &lt;code&gt;segid&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;p&gt;When a user runs an executable file with the setuid bit set, the real user ID (RUID) of the process is set to the user ID of the user who ran the file, while the effective user ID (EUID) is set to the user ID of the file owner. This means that the process runs with the privileges of the file owner while still retaining the identity of the user who executed the file.&lt;/p&gt;</description>
     </item>
     <item>
       <title>IPC</title>
-      <link>http://localhost:1313/docs/attacks/persesc/ipc/</link>
+      <link>https://bakerst221b.com/docs/attacks/persesc/ipc/</link>
       <pubDate>Sat, 03 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/attacks/persesc/ipc/</guid>
+      <guid>https://bakerst221b.com/docs/attacks/persesc/ipc/</guid>
       <description>&lt;p&gt;&lt;em&gt;This is about &amp;hellip; .&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Kernel</title>
-      <link>http://localhost:1313/docs/attacks/persesc/kernel/</link>
+      <link>https://bakerst221b.com/docs/attacks/persesc/kernel/</link>
       <pubDate>Sat, 03 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/attacks/persesc/kernel/</guid>
+      <guid>https://bakerst221b.com/docs/attacks/persesc/kernel/</guid>
       <description>&lt;h2 id=&#34;linux&#34;&gt;Linux&lt;/h2&gt;&#xA;&lt;h3 id=&#34;lkm&#34;&gt;LKM&lt;/h3&gt;&#xA;&lt;p&gt;LKM for Linux. Drivers are one type of kernel extentions.&lt;/p&gt;&#xA;&lt;h3 id=&#34;xdg&#34;&gt;XDG&lt;/h3&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://attack.mitre.org/techniques/T1547/013/&#34;&gt;https://attack.mitre.org/techniques/T1547/013/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;macos&#34;&gt;macOS&lt;/h2&gt;&#xA;&lt;h3 id=&#34;kext&#34;&gt;kext&lt;/h3&gt;&#xA;&lt;p&gt;&lt;code&gt;kext&lt;/code&gt; for macOS. &lt;code&gt;kextload&lt;/code&gt; and &lt;code&gt;kextunload&lt;/code&gt;. These need to be signed with a cert approved by Apple. Otherwise, to launch the app one needs to disable SIP. That&amp;rsquo;s probably the reason why the RAM cannot be dumped on macOS with SIP enabled. Replaced by System Extentions but still can be used.&lt;/p&gt;&#xA;&lt;h3 id=&#34;reopen&#34;&gt;reopen&lt;/h3&gt;&#xA;&lt;p&gt;Remember the &amp;ldquo;Reopen windows when logging back in&amp;rdquo; prompt on macOS? When selected, all applications currently open are added to a property list file named &lt;code&gt;com.apple.loginwindow.[UUID].plist&lt;/code&gt; within the &lt;code&gt;~/Library/Preferences/ByHost&lt;/code&gt; directory. Applications listed in this file are automatically reopened upon the user’s next logon.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Library Abuse</title>
-      <link>http://localhost:1313/docs/attacks/persesc/libs/</link>
+      <link>https://bakerst221b.com/docs/attacks/persesc/libs/</link>
       <pubDate>Sat, 03 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/attacks/persesc/libs/</guid>
+      <guid>https://bakerst221b.com/docs/attacks/persesc/libs/</guid>
       <description>&lt;h2 id=&#34;windows&#34;&gt;Windows&lt;/h2&gt;&#xA;&lt;h3 id=&#34;dll-search-order-hijacking&#34;&gt;DLL Search Order Hijacking&lt;/h3&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;👑 - require w permissions for &lt;code&gt;Windows&lt;/code&gt; and &lt;code&gt;Windows\System32&lt;/code&gt;.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Detection&lt;/strong&gt;:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;💭 unusual locations for new DLL created or saved during the attack (especially unsigned)&lt;/li&gt;&#xA;&lt;li&gt;💭 see RAM for DLLs loaded from the wrong locations&lt;/li&gt;&#xA;&lt;li&gt;💭 multiple locations for one DLL&lt;/li&gt;&#xA;&lt;li&gt;💭 behavioural analysis (C2C or other)&lt;/li&gt;&#xA;&lt;li&gt;🛠️ &lt;a href=&#34;https://github.com/adamkramer/dll_hijack_detect/releases&#34;&gt;https://github.com/adamkramer/dll_hijack_detect/releases&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;IDS/IPS&lt;/li&gt;&#xA;&lt;li&gt;Integrity controls?&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;: &lt;code&gt;eplorer.exe&lt;/code&gt; loading &lt;code&gt;ntshrui.dll&lt;/code&gt;.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;Following is the search order for modern Windows systems:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Services</title>
-      <link>http://localhost:1313/docs/attacks/persesc/services/</link>
+      <link>https://bakerst221b.com/docs/attacks/persesc/services/</link>
       <pubDate>Sat, 03 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/attacks/persesc/services/</guid>
+      <guid>https://bakerst221b.com/docs/attacks/persesc/services/</guid>
       <description>&lt;p&gt;&lt;em&gt;Services can be abused differently but are often used as escalation and persistence mechanisms.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Tasks Abuse</title>
-      <link>http://localhost:1313/docs/attacks/persesc/tasks/</link>
+      <link>https://bakerst221b.com/docs/attacks/persesc/tasks/</link>
       <pubDate>Sat, 03 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/attacks/persesc/tasks/</guid>
+      <guid>https://bakerst221b.com/docs/attacks/persesc/tasks/</guid>
       <description>&lt;h2 id=&#34;windows&#34;&gt;Windows&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;❗️ Both &lt;code&gt;at&lt;/code&gt; and &lt;code&gt;schtasks.exe&lt;/code&gt; can create tasks remotely.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;🏺 &lt;strong&gt;Artefacts&lt;/strong&gt;:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;🪵 &lt;strong&gt;Event Log&lt;/strong&gt;: Task Scheduler Operational.&lt;/li&gt;&#xA;&lt;li&gt;🛠️ &lt;strong&gt;autoruns&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;📂 &lt;code&gt;C: \Windows\ Tasks\ \*.job&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;📂 &lt;code&gt;C: \Windows\SchedLgU.txt&lt;/code&gt; (Win XP)&lt;/li&gt;&#xA;&lt;li&gt;📂 &lt;code&gt;C: \Windows\System32\Tasks&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;at&#34;&gt;at&lt;/h3&gt;&#xA;&lt;p&gt;&lt;code&gt;at.exe&lt;/code&gt; (deprecated but can still be used) and &lt;code&gt;schtasks.exe&lt;/code&gt;. For &lt;code&gt;at&lt;/code&gt; see &lt;code&gt;at*.job&lt;/code&gt; and &lt;code&gt;Schdlgu.txt&lt;/code&gt;&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;WinXP&lt;/strong&gt;: at jobs run with SYSTEM privileges.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;Files are created here: &lt;code&gt;\Windows\Tasks&lt;/code&gt; and &lt;code&gt;\Windows\System32\Tasks&lt;/code&gt; (xml duplicate Win7+). Created with: &lt;code&gt;at.exe 22:22:22 C:\mal.exe&lt;/code&gt; or&lt;/p&gt;</description>
     </item>
     <item>
       <title>Tokens Misuse</title>
-      <link>http://localhost:1313/docs/attacks/persesc/tokens/</link>
+      <link>https://bakerst221b.com/docs/attacks/persesc/tokens/</link>
       <pubDate>Sat, 03 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/attacks/persesc/tokens/</guid>
+      <guid>https://bakerst221b.com/docs/attacks/persesc/tokens/</guid>
       <description>&lt;p&gt;&lt;strong&gt;MITRE&lt;/strong&gt;: &lt;a href=&#34;https://attack.mitre.org/techniques/T1134/001/&#34;&gt;https://attack.mitre.org/techniques/T1134/001/&lt;/a&gt;, &lt;a href=&#34;https://attack.mitre.org/techniques/T1134/&#34;&gt;https://attack.mitre.org/techniques/T1134/&lt;/a&gt;, &lt;a href=&#34;https://attack.mitre.org/techniques/T1134/002/&#34;&gt;https://attack.mitre.org/techniques/T1134/002/&lt;/a&gt;, &lt;a href=&#34;https://attack.mitre.org/techniques/T1134/003/&#34;&gt;https://attack.mitre.org/techniques/T1134/003/&lt;/a&gt;, &lt;a href=&#34;https://attack.mitre.org/techniques/T1134/004/&#34;&gt;https://attack.mitre.org/techniques/T1134/004/&lt;/a&gt;, &lt;a href=&#34;https://attack.mitre.org/techniques/T1134/005/&#34;&gt;https://attack.mitre.org/techniques/T1134/005/&lt;/a&gt;&#xA;&lt;strong&gt;Actors&lt;/strong&gt;: &lt;a href=&#34;https://attack.mitre.org/groups/G0032/&#34;&gt;https://attack.mitre.org/groups/G0032/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Techniques:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Token impersonalisation.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;runas&lt;/code&gt; or &lt;code&gt;CreateProcessWithTokenW&lt;/code&gt; to create a process with the rights of another user.&lt;/li&gt;&#xA;&lt;li&gt;spoof parent process ID&lt;/li&gt;&#xA;&lt;li&gt;Windows. SID-history injection. By injecting a fake SID into the SID history of a user account, an attacker can create a new identity with additional access rights without raising any alarms. 🚨 Need elevated privileges. The SID history is stored in the user object&amp;rsquo;s attribute in the AD database. The attribute is named &amp;ldquo;SIDHistory&amp;rdquo; and can be viewed and modified using the Active Directory Users and Computers (ADUC) management console or other AD management tools.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;&#xA;&lt;details&gt;&#xA;    &lt;summary&gt;Expand&amp;hellip;&lt;/summary&gt;&#xA;    Something here&#xA;&lt;/details&gt;</description>
     </item>
   </channel>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>💼 Sample Cases on Analyst</title>
-    <link>http://localhost:1313/docs/todo/cases/</link>
+    <link>https://bakerst221b.com/docs/todo/cases/</link>
     <description>Recent content in 💼 Sample Cases on Analyst</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 28 Nov 2018 15:14:39 +1000</lastBuildDate>
-    <atom:link href="http://localhost:1313/docs/todo/cases/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bakerst221b.com/docs/todo/cases/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Investigation Tips</title>
-      <link>http://localhost:1313/docs/todo/cases/tips/</link>
+      <link>https://bakerst221b.com/docs/todo/cases/tips/</link>
       <pubDate>Wed, 28 Nov 2018 15:14:39 +1000</pubDate>
-      <guid>http://localhost:1313/docs/todo/cases/tips/</guid>
+      <guid>https://bakerst221b.com/docs/todo/cases/tips/</guid>
       <description>&lt;p&gt;Determine the investigation type since it will influence the data you need, the scope, extent and strategy.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;⚠️ It&amp;rsquo;s a very important thing to note in case of IP (intellectual property cases). Ensure, that data and devices of the suspect are IMMEDIATLY preserved and not accessed by anyone. I guess that&amp;rsquo;s because of the timestamps.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;❓ &lt;em&gt;What is the case about?&lt;/em&gt;&lt;/li&gt;&#xA;&lt;li&gt;❓ &lt;em&gt;What evidence do we expect to recover?&lt;/em&gt;&lt;/li&gt;&#xA;&lt;li&gt;❓ &lt;em&gt;Where is the evidence most likely located?&lt;/em&gt;&lt;/li&gt;&#xA;&lt;li&gt;❓ &lt;em&gt;What are the legal restrictions?&lt;/em&gt;&lt;/li&gt;&#xA;&lt;li&gt;❓ &lt;em&gt;Who is involved and what&amp;rsquo;s their role?&lt;/em&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Develop a plan to collect the data. Each type of data will require separate plan. This plan should prioritise the sources and the order. For example, if you are dealing with a system that is turned on, first, take photos of the screen, then collect the volatile data (RAM) and them make a copy of a hard drive. Then turn it off and send to the lab in a safety bag. Maintain chain of custody.&lt;/p&gt;</description>
     </item>
   </channel>

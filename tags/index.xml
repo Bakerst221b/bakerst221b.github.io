@@ -2,115 +2,115 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Analyst</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://bakerst221b.com/tags/</link>
     <description>Recent content in Tags on Analyst</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 26 Apr 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bakerst221b.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Crypto</title>
-      <link>http://localhost:1313/tags/crypto/</link>
+      <link>https://bakerst221b.com/tags/crypto/</link>
       <pubDate>Wed, 26 Apr 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/crypto/</guid>
+      <guid>https://bakerst221b.com/tags/crypto/</guid>
       <description></description>
     </item>
     <item>
       <title>Reverse</title>
-      <link>http://localhost:1313/tags/reverse/</link>
+      <link>https://bakerst221b.com/tags/reverse/</link>
       <pubDate>Thu, 28 Jul 2022 15:14:39 +1000</pubDate>
-      <guid>http://localhost:1313/tags/reverse/</guid>
+      <guid>https://bakerst221b.com/tags/reverse/</guid>
       <description></description>
     </item>
     <item>
       <title>Spoiler</title>
-      <link>http://localhost:1313/tags/spoiler/</link>
+      <link>https://bakerst221b.com/tags/spoiler/</link>
       <pubDate>Thu, 28 Jul 2022 15:14:39 +1000</pubDate>
-      <guid>http://localhost:1313/tags/spoiler/</guid>
+      <guid>https://bakerst221b.com/tags/spoiler/</guid>
       <description></description>
     </item>
     <item>
       <title>Case</title>
-      <link>http://localhost:1313/tags/case/</link>
+      <link>https://bakerst221b.com/tags/case/</link>
       <pubDate>Tue, 08 Feb 2022 11:42:21 +0300</pubDate>
-      <guid>http://localhost:1313/tags/case/</guid>
+      <guid>https://bakerst221b.com/tags/case/</guid>
       <description></description>
     </item>
     <item>
       <title>Hardware</title>
-      <link>http://localhost:1313/tags/hardware/</link>
+      <link>https://bakerst221b.com/tags/hardware/</link>
       <pubDate>Sun, 25 Apr 2021 17:18:04 +0300</pubDate>
-      <guid>http://localhost:1313/tags/hardware/</guid>
+      <guid>https://bakerst221b.com/tags/hardware/</guid>
       <description></description>
     </item>
     <item>
       <title>Config</title>
-      <link>http://localhost:1313/tags/config/</link>
+      <link>https://bakerst221b.com/tags/config/</link>
       <pubDate>Sun, 07 Mar 2021 11:42:21 +0300</pubDate>
-      <guid>http://localhost:1313/tags/config/</guid>
+      <guid>https://bakerst221b.com/tags/config/</guid>
       <description></description>
     </item>
     <item>
       <title>Checklist</title>
-      <link>http://localhost:1313/tags/checklist/</link>
+      <link>https://bakerst221b.com/tags/checklist/</link>
       <pubDate>Mon, 12 Oct 2020 17:50:01 +0300</pubDate>
-      <guid>http://localhost:1313/tags/checklist/</guid>
+      <guid>https://bakerst221b.com/tags/checklist/</guid>
       <description></description>
     </item>
     <item>
       <title>Manual</title>
-      <link>http://localhost:1313/tags/manual/</link>
+      <link>https://bakerst221b.com/tags/manual/</link>
       <pubDate>Mon, 12 Oct 2020 17:50:01 +0300</pubDate>
-      <guid>http://localhost:1313/tags/manual/</guid>
+      <guid>https://bakerst221b.com/tags/manual/</guid>
       <description></description>
     </item>
     <item>
       <title>Case-Example</title>
-      <link>http://localhost:1313/tags/case-example/</link>
+      <link>https://bakerst221b.com/tags/case-example/</link>
       <pubDate>Sun, 20 Sep 2020 11:04:28 +0300</pubDate>
-      <guid>http://localhost:1313/tags/case-example/</guid>
+      <guid>https://bakerst221b.com/tags/case-example/</guid>
       <description></description>
     </item>
     <item>
       <title>Android</title>
-      <link>http://localhost:1313/tags/android/</link>
+      <link>https://bakerst221b.com/tags/android/</link>
       <pubDate>Fri, 11 Sep 2020 22:26:25 +0300</pubDate>
-      <guid>http://localhost:1313/tags/android/</guid>
+      <guid>https://bakerst221b.com/tags/android/</guid>
       <description></description>
     </item>
     <item>
       <title>Pentest</title>
-      <link>http://localhost:1313/tags/pentest/</link>
+      <link>https://bakerst221b.com/tags/pentest/</link>
       <pubDate>Fri, 11 Sep 2020 22:26:25 +0300</pubDate>
-      <guid>http://localhost:1313/tags/pentest/</guid>
+      <guid>https://bakerst221b.com/tags/pentest/</guid>
       <description></description>
     </item>
     <item>
       <title>Tips</title>
-      <link>http://localhost:1313/tags/tips/</link>
+      <link>https://bakerst221b.com/tags/tips/</link>
       <pubDate>Wed, 28 Nov 2018 15:14:39 +1000</pubDate>
-      <guid>http://localhost:1313/tags/tips/</guid>
+      <guid>https://bakerst221b.com/tags/tips/</guid>
       <description></description>
     </item>
     <item>
       <title>Malware</title>
-      <link>http://localhost:1313/tags/malware/</link>
+      <link>https://bakerst221b.com/tags/malware/</link>
       <pubDate>Wed, 07 Nov 2018 14:39:39 +0300</pubDate>
-      <guid>http://localhost:1313/tags/malware/</guid>
+      <guid>https://bakerst221b.com/tags/malware/</guid>
       <description></description>
     </item>
     <item>
       <title>Stealer</title>
-      <link>http://localhost:1313/tags/stealer/</link>
+      <link>https://bakerst221b.com/tags/stealer/</link>
       <pubDate>Wed, 07 Nov 2018 14:39:39 +0300</pubDate>
-      <guid>http://localhost:1313/tags/stealer/</guid>
+      <guid>https://bakerst221b.com/tags/stealer/</guid>
       <description></description>
     </item>
     <item>
       <title>Rtf</title>
-      <link>http://localhost:1313/tags/rtf/</link>
+      <link>https://bakerst221b.com/tags/rtf/</link>
       <pubDate>Thu, 19 Jul 2018 14:19:03 +0300</pubDate>
-      <guid>http://localhost:1313/tags/rtf/</guid>
+      <guid>https://bakerst221b.com/tags/rtf/</guid>
       <description></description>
     </item>
   </channel>

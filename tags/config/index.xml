@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Config on Analyst</title>
-    <link>http://localhost:1313/tags/config/</link>
+    <link>https://bakerst221b.com/tags/config/</link>
     <description>Recent content in Config on Analyst</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 07 Mar 2021 11:42:21 +0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/config/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bakerst221b.com/tags/config/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How I Got Started With AWS</title>
-      <link>http://localhost:1313/docs/blog/2021/03/how-i-got-started-with-aws/</link>
+      <link>https://bakerst221b.com/docs/blog/2021/03/how-i-got-started-with-aws/</link>
       <pubDate>Sun, 07 Mar 2021 11:42:21 +0300</pubDate>
-      <guid>http://localhost:1313/docs/blog/2021/03/how-i-got-started-with-aws/</guid>
+      <guid>https://bakerst221b.com/docs/blog/2021/03/how-i-got-started-with-aws/</guid>
       <description>&lt;p&gt;&lt;em&gt;In this blog post I am exploring AWS services (EC2). I am currently using a Free Tier license and I am trying to learn how to use. Why? Well, knowing AWS seems to be a very useful skill on the market. And the second reason for that is that I used to have different VMs that cosumed too much memory (HDD and RAM). Now I am also using M1 MacBook Pro and that&amp;rsquo;s why having so many VMs locally is impossible since there are only some Linux and Windows 10 Machines available for ARM platform. Besides, I&amp;rsquo;ve notices that I don&amp;rsquo;t really use them much so having 60 GB of space occupied for occasional usage is weird. Everything speaks in the favour of AWS.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>How I Have Built My Lab</title>
-      <link>http://localhost:1313/docs/blog/2021/03/how-i-have-built-my-lab/</link>
+      <link>https://bakerst221b.com/docs/blog/2021/03/how-i-have-built-my-lab/</link>
       <pubDate>Mon, 01 Mar 2021 22:14:08 +0300</pubDate>
-      <guid>http://localhost:1313/docs/blog/2021/03/how-i-have-built-my-lab/</guid>
+      <guid>https://bakerst221b.com/docs/blog/2021/03/how-i-have-built-my-lab/</guid>
       <description>&lt;p&gt;&lt;em&gt;One late evening when my eyes were so difficult to keep open, I&amp;rsquo;ve decided to setup a Windows Lab on my M1 Mac. Long story short, I couldn&amp;rsquo;t make Autopsy work as expected and that&amp;rsquo;s why I had to waste my time on this task&amp;hellip;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;&amp;#x1f4c6; &lt;code&gt;01/03/2021&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;&amp;#x23f0; &lt;code&gt;22:17&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;First, I had to sign up to Microsoft Insider Program &lt;a href=&#34;https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewARM64?wa=wsignin1.0&#34;&gt;here&lt;/a&gt;. It was free and I signed up. Then, I&amp;rsquo;ve installed Parallels from &lt;a href=&#34;https://b2b.parallels.com/apple-silicon&#34;&gt;here&lt;/a&gt; using &amp;ldquo;Try technical preview&amp;rdquo; option that was available at this point in time. Also, at this point of time a free activation key &amp;#x1f511; was available for Parallels (thank you 🙏 so much, guys, for this) &lt;a href=&#34;https://my.parallels.com/desktop/beta?_ga=2.154508411.2118090463.1614625046-817269375.1614625046&#34;&gt;here&lt;/a&gt;. During installation process I was a little bewildered by the question about the use purpose of this software&amp;hellip; Gaming or ordinary use (text editing, web-browsing etc). I&amp;rsquo;ve chosen &amp;ldquo;Gaming&amp;rdquo; since I presume Autopsy and software alike do consume much power. However, I&amp;rsquo;m not sure if this option changes the performance or it&amp;rsquo;s rather some survey. Anyway. After all that everything worked like a charm. But I still have not tried installing autopsy&amp;hellip; So, let&amp;rsquo;s&amp;hellip; .&lt;/p&gt;</description>
     </item>
   </channel>

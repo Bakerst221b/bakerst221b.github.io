@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>🍏 🐧 UNIX Artefacts - Analyst</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  <link rel="icon" href="http://localhost:1313/favicon.png">
+  <link rel="icon" href="https://bakerst221b.com/favicon.png">
   <link href="/css/style-classic.css"></link>
   
   
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/style.min.0fd8269b84d57bc40ce18bb200a70ca7e1001ccf31f98dc3a8e47fa25f99b326.css">
   
 
   
@@ -77,14 +77,14 @@
     <div class='header'>
   <div class="container">
     <div class="logo">
-      <a href="http://localhost:1313/"><img alt="Logo" src="/images/logo.png" /></a>
+      <a href="https://bakerst221b.com/"><img alt="Logo" src="/images/logo.png" /></a>
     </div>
     <div class="logo-mobile">
-      <a href="http://localhost:1313/"><img alt="Logo" src="/images/logo-mobile.svg" /></a>
+      <a href="https://bakerst221b.com/"><img alt="Logo" src="/images/logo-mobile.svg" /></a>
     </div>
     
 
-    <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/docs/artefacts/apple/index.xml" title="Analyst" />
+    <link rel="alternate" type="application/rss+xml" href="https://bakerst221b.com/docs/artefacts/apple/index.xml" title="Analyst" />
     <div id="main-menu" class="main-menu">
   <ul>
     
@@ -200,7 +200,7 @@
  <h1 class="title">🍏 🐧 UNIX Artefacts</h1> 
  
 
-    <h2><a href="http://localhost:1313/docs/artefacts/apple/apple-security/"> Apple Platform Security</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/artefacts/apple/apple-security/"> Apple Platform Security</a></h2> 
     <p> <p><em>Applications or even OS itself doesn&rsquo;t know the keys that are protected by Secure Enclave. OS only sees Keychain, but the Security Enclave is separated. It&rsquo;s asked to decrypt the information and it does just that returning the decrypted information.</em></p>
 <h2 id="hardware">Hardware</h2>
 <p>Imagine that there lives a vicious criminal 🦹 who&rsquo;s stealing and deleting puppy photos from a preschool server. It&rsquo;s a nasty bussiness that can get him in jail if he&rsquo;s not cautious. He likes to keep everything on the mobile phone he has with him all the time even in the bathroom 🚽 and while taking a shower 🚿 (he&rsquo;s very careful). He considers the photos to be completely safe since he has set up a PIN for the device only he knows. All his secrets and stuff that can potentially throw him into jail are all on this little piece of harware.</p>
@@ -301,16 +301,16 @@
 <p>All entitlements are added before or during signing the application, hence they cannot be changed.</p>
 <p><em>Apple is very well known for its value of security and the advanced security mechanisms. I personally found it hard sometimes to understand specific technical controls. This is why I am writing this little article. Smartphones are known to be more secure than desktops for they are also more MOBILE and tend to get lost a lot. That&rsquo;s why MacBooks tend to get closer and closer to smartphones in terms of security.</em></p></p>
 
-    <h2><a href="http://localhost:1313/docs/artefacts/apple/databases/"> Databases</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/artefacts/apple/databases/"> Databases</a></h2> 
     <p> <p><em>KnowledgeC, CellularUsage and several other databases store a lot of interesting information.</em></p></p>
 
-    <h2><a href="http://localhost:1313/docs/artefacts/apple/credentials/"> 🗝️ Credentials</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/artefacts/apple/credentials/"> 🗝️ Credentials</a></h2> 
     <p> <p><em>In this article, I will gather information regarding common UNIX-specific credentials and the artefacts linked to them.</em></p></p>
 
-    <h2><a href="http://localhost:1313/docs/artefacts/apple/apple-plist/"> Apple Plist</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/artefacts/apple/apple-plist/"> Apple Plist</a></h2> 
     <p> <p><em>This is about &hellip; .</em></p></p>
 
-    <h2><a href="http://localhost:1313/docs/artefacts/apple/users/"> 👥 Users</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/artefacts/apple/users/"> 👥 Users</a></h2> 
     <p> <h2 id="macos">macOS</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/Users/%username%/
 </span></span></code></pre></div><h3 id="password-hashes">Password hashes</h3>
@@ -327,7 +327,7 @@
 <blockquote>
 <p>⚠️ When grabbing volumes from APFS system, better acquire Recovery volume as well, since it may contain account information as well (password hints, for example).</p></p>
 
-    <h2><a href="http://localhost:1313/docs/artefacts/apple/dnscache/"> DNS Cache</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/artefacts/apple/dnscache/"> DNS Cache</a></h2> 
     <p> <h2 id="macos">macOS</h2>
 <p>To achieve the same on a macOS machine:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>awk -F<span style="color:#e6db74">&#39;,&#39;</span> <span style="color:#e6db74">&#39;NR&gt;1{print $1&#34;,&#34;$2}&#39;</span> *.csv | sort | uniq -c | awk <span style="color:#e6db74">&#39;{print $1&#34;,&#34;$2&#34;,&#34;$3}&#39;</span> &gt; merged.csv
@@ -366,14 +366,14 @@
     Something here
 </details></p>
 
-    <h2><a href="http://localhost:1313/docs/artefacts/apple/connections/"> Network Connections</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/artefacts/apple/connections/"> Network Connections</a></h2> 
     <p> <p>For Mac OS <code>netstat</code> there is no <code>-o</code> switch, so I&rsquo;ve used <code>netstat -ban</code>.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo lsof -i -n -p
 </span></span></code></pre></div><p><code>lsof -i :443</code> will show you all connections associated with port 443, commonly used for TLS communication. Sheward, Mike. Hands-on Incident Response and Digital Forensics (p. 163). BCS Learning &amp; Development Limited. Kindle Edition.</p>
 <p><img src="artefacts/apple/connections/images/1.png" alt="img1">
 The first column will give a hint about what the application responsible for this connection is. To get the full path to the app executable, use <code>ps -fp &lt;PID&gt;</code> command:</p></p>
 
-    <h2><a href="http://localhost:1313/docs/artefacts/apple/spotlight/"> Spotlight Data</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/artefacts/apple/spotlight/"> Spotlight Data</a></h2> 
     <p> <p><code>/Users/username/.zsh_history</code> look for something like <code>hdiutil mount silenteye-0.4.1b-snowleopard.dmg</code> and <code>sudo cp -R /Volumes/SilentEye/silenteye-0.4.1b-snowleopard_installer.app /Applications</code>.</p>
 <p>Also, <code>/Users/sneaky/Library/Application Support/com.apple.spotlight/com.apple.spotlight.Shortcuts</code> if it was then searched via Spotlight.</p>
 <p><code>plutil -p &quot;/Users/sneaky/Library/Preferences/com.apple.dock.plist&quot;</code> . Also gives some information on the file location, timestamps and bundle id.</p>
@@ -401,7 +401,7 @@ Binary file ./0/root/Users/sneaky/Library/Application Support/com.apple.spotligh
 Binary file ./0/root/Users/sneaky/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.FavoriteVolumes.sfl2 matches
 Binary file ./0/root/Users/sneaky/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.RecentApplications.sfl2 matches</p></p>
 
-    <h2><a href="http://localhost:1313/docs/artefacts/apple/shell/"> UNIX Shell</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/artefacts/apple/shell/"> UNIX Shell</a></h2> 
     <p> <h2 id="macos">macOS</h2>
 <p>By default, all console data is not being logged. Only staff that was typed with <code>sudo</code> is. Below is the screenshot of the Console app (streaming on) when <code>sudo ls</code> command is typed in the Terminal.</p>
 <p><img src="sudo-console.png" alt="sudo-console">
@@ -409,7 +409,7 @@ And here is what&rsquo;s being logged when one types <code>sudo su</code> and th
 <p><img src="sudo-console-2.png" alt="sudo-console-2">
 What about using <code>ls</code> or <code>cat</code> without elevating privileges? Nothing is logged at all (trying <code>helloworld</code>, cat <code>metadata.db</code> or <code>visudo</code>). So, how one keeps logging their Terminal history? It would be also great to add PID of the process, effective and real usernames. Here is how I&rsquo;ve managed to do it on my local machine (to further integrate the logs with Elastic).</p></p>
 
-    <h2><a href="http://localhost:1313/docs/artefacts/apple/backup/"> Backups</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/artefacts/apple/backup/"> Backups</a></h2> 
     <p> <h2 id="macos">macOS</h2>
 <p><code>/Users/%username%/Library/Application Support/MobileSync/Backup/</code></p>
 <h2 id="ios">iOS</h2>
@@ -516,7 +516,7 @@ h2 {
         <div class="sub-footer-inner">
           <ul>
             <li class="zerostatic"><a href="https://www.zerostatic.io">www.zerostatic.io</a></li>
-            <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/docs/artefacts/apple/index.xml" title="Analyst" />
+            <link rel="alternate" type="application/rss+xml" href="https://bakerst221b.com/docs/artefacts/apple/index.xml" title="Analyst" />
             </ul>
         </div>
       </div>
@@ -530,9 +530,13 @@ h2 {
   
 
   
-  <script type="text/javascript" src="/js/scripts.js"></script>
+  <script type="text/javascript" src="/js/scripts.min.ec19db7e4836c12e2c5e3697d926bc3e4c22005167d9826aab54feca08f0c093.js"></script>
   
 
+  
+  
+  
+    
   
 
 

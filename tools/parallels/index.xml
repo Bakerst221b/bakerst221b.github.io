@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Parallels on Analyst</title>
-    <link>http://localhost:1313/tools/parallels/</link>
+    <link>https://bakerst221b.com/tools/parallels/</link>
     <description>Recent content in Parallels on Analyst</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 08 Feb 2022 11:42:21 +0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/tools/parallels/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bakerst221b.com/tools/parallels/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Game Over</title>
-      <link>http://localhost:1313/docs/blog/2022/02/jigsaw/</link>
+      <link>https://bakerst221b.com/docs/blog/2022/02/jigsaw/</link>
       <pubDate>Tue, 08 Feb 2022 11:42:21 +0300</pubDate>
-      <guid>http://localhost:1313/docs/blog/2022/02/jigsaw/</guid>
+      <guid>https://bakerst221b.com/docs/blog/2022/02/jigsaw/</guid>
       <description>&lt;p&gt;&lt;em&gt;One sunny 😎 day I came to a coworking office very early in the morning. As usual, I&amp;rsquo;ve decided to kick it off with a freshly brewed coffee which we never had, so, I had to go with an instant substitute. Ugh 😣! I was hoping to savour my disgust meditating over the Feedly recents, when I noticed that I was not the only lark that day. Mark, a freelance designer who happened to be a huge fan of Assassin&amp;rsquo;s Creed games (just like me), was sitting in the corner of the shared kitchen with his laptop, looking so gloomy that I was sorry I didn&amp;rsquo;t take my ☔️ with me. When I&amp;rsquo;ve forced the last sip of that potion inside, I wished him good morning and headed to my working nest. He didn&amp;rsquo;t respond though, which was weird, since he usually was very friendly. I thought he needed some time on his own and was about to leave the kitchen when suddenly he hailed me. Long story short, he seemed to get himself a virus and didn&amp;rsquo;t know how to get rid of it. He seemed scared, since lots of important files were encrypted.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>How I Have Built My Lab</title>
-      <link>http://localhost:1313/docs/blog/2021/03/how-i-have-built-my-lab/</link>
+      <link>https://bakerst221b.com/docs/blog/2021/03/how-i-have-built-my-lab/</link>
       <pubDate>Mon, 01 Mar 2021 22:14:08 +0300</pubDate>
-      <guid>http://localhost:1313/docs/blog/2021/03/how-i-have-built-my-lab/</guid>
+      <guid>https://bakerst221b.com/docs/blog/2021/03/how-i-have-built-my-lab/</guid>
       <description>&lt;p&gt;&lt;em&gt;One late evening when my eyes were so difficult to keep open, I&amp;rsquo;ve decided to setup a Windows Lab on my M1 Mac. Long story short, I couldn&amp;rsquo;t make Autopsy work as expected and that&amp;rsquo;s why I had to waste my time on this task&amp;hellip;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;&amp;#x1f4c6; &lt;code&gt;01/03/2021&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;&amp;#x23f0; &lt;code&gt;22:17&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;First, I had to sign up to Microsoft Insider Program &lt;a href=&#34;https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewARM64?wa=wsignin1.0&#34;&gt;here&lt;/a&gt;. It was free and I signed up. Then, I&amp;rsquo;ve installed Parallels from &lt;a href=&#34;https://b2b.parallels.com/apple-silicon&#34;&gt;here&lt;/a&gt; using &amp;ldquo;Try technical preview&amp;rdquo; option that was available at this point in time. Also, at this point of time a free activation key &amp;#x1f511; was available for Parallels (thank you 🙏 so much, guys, for this) &lt;a href=&#34;https://my.parallels.com/desktop/beta?_ga=2.154508411.2118090463.1614625046-817269375.1614625046&#34;&gt;here&lt;/a&gt;. During installation process I was a little bewildered by the question about the use purpose of this software&amp;hellip; Gaming or ordinary use (text editing, web-browsing etc). I&amp;rsquo;ve chosen &amp;ldquo;Gaming&amp;rdquo; since I presume Autopsy and software alike do consume much power. However, I&amp;rsquo;m not sure if this option changes the performance or it&amp;rsquo;s rather some survey. Anyway. After all that everything worked like a charm. But I still have not tried installing autopsy&amp;hellip; So, let&amp;rsquo;s&amp;hellip; .&lt;/p&gt;</description>
     </item>
   </channel>

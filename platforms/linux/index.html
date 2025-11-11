@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Linux - Analyst</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  <link rel="icon" href="http://localhost:1313/favicon.png">
+  <link rel="icon" href="https://bakerst221b.com/favicon.png">
   <link href="/css/style-classic.css"></link>
   
   
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/style.min.0fd8269b84d57bc40ce18bb200a70ca7e1001ccf31f98dc3a8e47fa25f99b326.css">
   
 
   
@@ -77,14 +77,14 @@
     <div class='header'>
   <div class="container">
     <div class="logo">
-      <a href="http://localhost:1313/"><img alt="Logo" src="/images/logo.png" /></a>
+      <a href="https://bakerst221b.com/"><img alt="Logo" src="/images/logo.png" /></a>
     </div>
     <div class="logo-mobile">
-      <a href="http://localhost:1313/"><img alt="Logo" src="/images/logo-mobile.svg" /></a>
+      <a href="https://bakerst221b.com/"><img alt="Logo" src="/images/logo-mobile.svg" /></a>
     </div>
     
 
-    <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/platforms/linux/index.xml" title="Analyst" />
+    <link rel="alternate" type="application/rss+xml" href="https://bakerst221b.com/platforms/linux/index.xml" title="Analyst" />
     <div id="main-menu" class="main-menu">
   <ul>
     
@@ -182,10 +182,10 @@
  <h1 class="title">Linux</h1> 
  
 
-    <h2><a href="http://localhost:1313/docs/ttp/sterilisation/"> 🧼 Media Sterilisation</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/ttp/sterilisation/"> 🧼 Media Sterilisation</a></h2> 
     <p> <p><em>Before copying evidence or making a disk image, one needs to sterilise the target media to ensure that data on that disk before this operation would not meddle with the evidence data. Several rounds of writing <code>0</code>s are usually enough.</em></p></p>
 
-    <h2><a href="http://localhost:1313/docs/todo/old/defences/linux/"> 🐧 Linux Evidence Collection</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/todo/old/defences/linux/"> 🐧 Linux Evidence Collection</a></h2> 
     <p> <h2 id="file-systems">File Systems</h2>
 <p>EXT 2,3,4, ReiserFS, XFS, JFS, Btrfs.</p>
 <p><strong>Logical Backup</strong> -  doesn&rsquo;t copy all, doesn&rsquo;t copy slack, free space and deleted files. <strong>Imaging</strong> - bit-by-bit copy. Should not be used on a live system!</p>
@@ -198,13 +198,13 @@ Automatically collection live info. Quite a heavy footprint. But if we are not c
 <a href="https://www.sans.org/blog/digital-forensics-ps3-linux-file-system-analysis-and-network-forensics/">https://www.sans.org/blog/digital-forensics-ps3-linux-file-system-analysis-and-network-forensics/</a>
 <a href="https://www.sans.org/blog/bring-me-my-pipe/">https://www.sans.org/blog/bring-me-my-pipe/</a></p></p>
 
-    <h2><a href="http://localhost:1313/docs/attacks/ids-ips/"> Host-based IDP/IPS</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/attacks/ids-ips/"> Host-based IDP/IPS</a></h2> 
     <p> <p>Host-based IDS look for local system configurations and behaviour, while network-based IDS look for network connections and looks for anomalies and common signatures.</p>
 <p>IDS and IPS as firewall&rsquo;s filters. There are Control Plane (looks after the OS and routing table) and the Forwarding Plane (makes decisions on routing and discarding). If something happens to the Control Plane, the device will still forward the traffic (really???).</p>
 <p>By default IDS only <strong>listens 👂</strong> the traffic. It&rsquo;s usually connected to the span port on a switch. Looks for anomalies and sends alerts. Won&rsquo;t take any actions by default, but can be configured in such a way. If the IDS is down, nothing is changed for the rest of the network, it&rsquo;s still operating.</p>
 <p>IPS takes actions on its own. It is not connected to the span port, but rather is a gateway. Before it inspects and allows a packet through, nothing can move forward. So, if IPS is down, everyone is down (unless there is some load balancing enabled or may be some policy for such cases). Positioned right after the router, edge device or a firewall.</p></p>
 
-    <h2><a href="http://localhost:1313/docs/artefacts/fs/extx/"> ExtX</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/artefacts/fs/extx/"> ExtX</a></h2> 
     <p> <h2 id="2">2</h2>
 <p>No journaling</p>
 <h2 id="3">3</h2>
@@ -212,16 +212,16 @@ Automatically collection live info. Quite a heavy footprint. But if we are not c
 <h2 id="4">4</h2>
 <p>New FS</p></p>
 
-    <h2><a href="http://localhost:1313/docs/artefacts/fs/fat/"> FAT</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/artefacts/fs/fat/"> FAT</a></h2> 
     <p> <p>Any FAT partition has two main parts: system area and data area. System area contains FAT boot record (every file system has a boot record), 1st FAT and 2nd FAT. FAT12 and FAT16 also have Root directory in the system area. Data area consists of Root directory in case of FAT32 and file and subdirectory data in clusters.</p>
 <h3 id="versions">Versions</h3>
 <h4 id="fat12">FAT12</h4>
 <p>For the cluster addressing there were 12 bits available, which is 2^12 clusters at most (4096 clusters).</p></p>
 
-    <h2><a href="http://localhost:1313/docs/artefacts/fs/reiser/"> ReiserFS</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/artefacts/fs/reiser/"> ReiserFS</a></h2> 
     <p> <p>Allows storing multiple files in a single sector. exclamation mark ❗️Unique to this FS!</p></p>
 
-    <h2><a href="http://localhost:1313/docs/ttp/malware/analyse/basics/assebly/assembly-calling-conventions/"> Calling 🤙 Conventions in x86</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/ttp/malware/analyse/basics/assebly/assembly-calling-conventions/"> Calling 🤙 Conventions in x86</a></h2> 
     <p> <p><em>In this article I&rsquo;m giving an overview of different calling conventions with examples.</em></p>
 <h2 id="intro">Intro</h2>
 <p>Consider the following code snippet:</p>
@@ -252,17 +252,17 @@ call _mysteriousFunction
 add esp, 8
 </code></pre><p>As is clearly seen from the above snippet, the arguments to the function are passed in reverse order by means of <code>PUSH</code> instruction (placed on stack). Observe the <code>_mysteriousFunction</code>&rsquo;s code: values added to <code>eax</code>, but nothing seems to be returning, just <code>ret</code>. That&rsquo;s because this calling convention passes return values in <code>eax</code> register by default.</p></p>
 
-    <h2><a href="http://localhost:1313/docs/ttp/malware/analyse/basics/assebly/assembly-flags/"> Flags</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/ttp/malware/analyse/basics/assebly/assembly-flags/"> Flags</a></h2> 
     <p> <h2 id="cf">CF</h2>
 <p>Its full name is <em>carry flag</em>. Its main purpose is to tell that the resulting number after some operations is too much to bear for the registry size. For example, the maximum size of a number is 32 bit, but if we add 0xFFFF</p>
 <h2 id="zf">ZF</h2>
 <h2 id="of">OF</h2></p>
 
-    <h2><a href="http://localhost:1313/docs/ttp/malware/analyse/basics/assebly/assembly-operations/"> Operations</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/ttp/malware/analyse/basics/assebly/assembly-operations/"> Operations</a></h2> 
     <p> <p>In this article I&rsquo;m describing all assembly operations that I&rsquo;ve encountered myseld and also wasn&rsquo;t lazy anough to put down an explanation about here. However, I won&rsquo;t be paying much attention to some operation that I consider straightforward, like <code>ADD</code>. I&rsquo;m going to put a flag for each operation indicating corresponding arch: <code>arm</code> or <code>x86</code> (just learning ARM myself for iOS analysis).</p>
 <p>Most of instruction have the following anatomy: <code>instruction &lt;destination operand&gt;, &lt;source operand&gt;</code>. Some operations look like this: <code>instruction &lt;source operand&gt;</code> when <code>&lt;destination operand&gt;</code> is always the same register (default). An example: <code>MUL</code>. When <code>MUL</code>ing, you always multiply <code>eax</code> on some value.</p></p>
 
-    <h2><a href="http://localhost:1313/docs/ttp/malware/analyse/basics/assebly/assembly-registers/"> Registers</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/ttp/malware/analyse/basics/assebly/assembly-registers/"> Registers</a></h2> 
     <p> <h2 id="eax">EAX</h2>
 <h2 id="eip">EIP</h2>
 <h2 id="ebp">EBP</h2>
@@ -377,7 +377,7 @@ h2 {
         <div class="sub-footer-inner">
           <ul>
             <li class="zerostatic"><a href="https://www.zerostatic.io">www.zerostatic.io</a></li>
-            <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/platforms/linux/index.xml" title="Analyst" />
+            <link rel="alternate" type="application/rss+xml" href="https://bakerst221b.com/platforms/linux/index.xml" title="Analyst" />
             </ul>
         </div>
       </div>
@@ -391,9 +391,13 @@ h2 {
   
 
   
-  <script type="text/javascript" src="/js/scripts.js"></script>
+  <script type="text/javascript" src="/js/scripts.min.ec19db7e4836c12e2c5e3697d926bc3e4c22005167d9826aab54feca08f0c093.js"></script>
   
 
+  
+  
+  
+    
   
 
 

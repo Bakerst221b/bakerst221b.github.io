@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hashing Algorithms on Analyst</title>
-    <link>http://localhost:1313/docs/cryptography/hashing/</link>
+    <link>https://bakerst221b.com/docs/cryptography/hashing/</link>
     <description>Recent content in Hashing Algorithms on Analyst</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 26 Apr 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/docs/cryptography/hashing/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bakerst221b.com/docs/cryptography/hashing/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>MD5</title>
-      <link>http://localhost:1313/docs/cryptography/hashing/md5/</link>
+      <link>https://bakerst221b.com/docs/cryptography/hashing/md5/</link>
       <pubDate>Wed, 26 Apr 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/cryptography/hashing/md5/</guid>
+      <guid>https://bakerst221b.com/docs/cryptography/hashing/md5/</guid>
       <description>&lt;p&gt;generacodice.com/en/articolo/175462/sales-y-contraseñas&amp;mdash;prefijo-o-de-sufijo&#xA;unlike what others said, it does matter! and as @einstein if you care use &lt;code&gt;HMAC&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;p&gt;why prefix is bad, because one can calculate the intermediate state of the checksum up to the given fixed salt prefix. then start calculating the rest in parallel. In summary &lt;code&gt;phrase+salt&lt;/code&gt; is more secure than &lt;code&gt;salt+phrase&lt;/code&gt;, but &lt;code&gt;HMAC(salt, phrase)&lt;/code&gt; is even better.&lt;/p&gt;&#xA;&lt;p&gt;!! &lt;a href=&#34;https://www.skullsecurity.org/2012/everything-you-need-to-know-about-hash-length-extension-attacks&#34;&gt;https://www.skullsecurity.org/2012/everything-you-need-to-know-about-hash-length-extension-attacks&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://crypto.stackexchange.com/questions/1632/does-the-position-of-the-salt-improve-its-effectiveness-when-hashing&#34;&gt;https://crypto.stackexchange.com/questions/1632/does-the-position-of-the-salt-improve-its-effectiveness-when-hashing&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://blog.silentsignal.eu/2015/09/17/finding-the-salt-with-sql-inception/&#34;&gt;https://blog.silentsignal.eu/2015/09/17/finding-the-salt-with-sql-inception/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.researchgate.net/publication/266650299_Security_Analysis_of_MD5_Algorithm_in_Password_Storage&#34;&gt;https://www.researchgate.net/publication/266650299_Security_Analysis_of_MD5_Algorithm_in_Password_Storage&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://ieeexplore.ieee.org/document/6516321&#34;&gt;https://ieeexplore.ieee.org/document/6516321&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://security.stackexchange.com/questions/211478/does-putting-salt-first-make-it-easier-for-attacker-to-bruteforce-the-hash&#34;&gt;https://security.stackexchange.com/questions/211478/does-putting-salt-first-make-it-easier-for-attacker-to-bruteforce-the-hash&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>

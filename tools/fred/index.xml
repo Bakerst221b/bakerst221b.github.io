@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Fred on Analyst</title>
-    <link>http://localhost:1313/tools/fred/</link>
+    <link>https://bakerst221b.com/tools/fred/</link>
     <description>Recent content in Fred on Analyst</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 08 Jan 2022 11:42:21 +0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/tools/fred/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bakerst221b.com/tools/fred/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CyberCorp1</title>
-      <link>http://localhost:1313/docs/todo/cases/ctf-walkthrough/cybercorp1/</link>
+      <link>https://bakerst221b.com/docs/todo/cases/ctf-walkthrough/cybercorp1/</link>
       <pubDate>Sat, 08 Jan 2022 11:42:21 +0300</pubDate>
-      <guid>http://localhost:1313/docs/todo/cases/ctf-walkthrough/cybercorp1/</guid>
+      <guid>https://bakerst221b.com/docs/todo/cases/ctf-walkthrough/cybercorp1/</guid>
       <description>&lt;p&gt;⛔️  Spoiler alert!&lt;/p&gt;&#xA;&lt;h2 id=&#34;case-details&#34;&gt;Case Details&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Artefacts in posession&lt;/strong&gt;: memory dump, OS event logs, registry files, Prefetch files, $MFT file, ShimCache, AmCache, network traffic dumps. I&amp;rsquo;ve decided to analyse each artefact, what can I get from it in this specific case and how. Then, I am going to outline my strategy in approaching this case.&lt;/p&gt;&#xA;&lt;p&gt;We are looking for indicators of compromise.  There are no details as to what is the group and what was its aim. But it’s known that there was abnormal traffic detected that has launched this IR process. So, at least, we must have some suspicious traffic, possibly open or terminated connections. These should have been launched by some process, so we are looking for malware. Also, since the attacker needed an account to get in, I will be looking for an account take over attempts and possibly, new account creation.&lt;/p&gt;</description>
     </item>
   </channel>

@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>🕶️ Anti-Forensics - Analyst</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  <link rel="icon" href="http://localhost:1313/favicon.png">
+  <link rel="icon" href="https://bakerst221b.com/favicon.png">
   <link href="/css/style-classic.css"></link>
   
   
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/style.min.0fd8269b84d57bc40ce18bb200a70ca7e1001ccf31f98dc3a8e47fa25f99b326.css">
   
 
   
@@ -77,14 +77,14 @@
     <div class='header'>
   <div class="container">
     <div class="logo">
-      <a href="http://localhost:1313/"><img alt="Logo" src="/images/logo.png" /></a>
+      <a href="https://bakerst221b.com/"><img alt="Logo" src="/images/logo.png" /></a>
     </div>
     <div class="logo-mobile">
-      <a href="http://localhost:1313/"><img alt="Logo" src="/images/logo-mobile.svg" /></a>
+      <a href="https://bakerst221b.com/"><img alt="Logo" src="/images/logo-mobile.svg" /></a>
     </div>
     
 
-    <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/docs/ttp/antiforensics/index.xml" title="Analyst" />
+    <link rel="alternate" type="application/rss+xml" href="https://bakerst221b.com/docs/ttp/antiforensics/index.xml" title="Analyst" />
     <div id="main-menu" class="main-menu">
   <ul>
     
@@ -200,13 +200,13 @@
  <h1 class="title">🕶️ Anti-Forensics</h1> 
  
 
-    <h2><a href="http://localhost:1313/docs/ttp/antiforensics/techniques/"> Anti-Forensics Techniques</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/ttp/antiforensics/techniques/"> Anti-Forensics Techniques</a></h2> 
     <p> <p><em>This article is an overview of possible anti-forensics.</em></p></p>
 
-    <h2><a href="http://localhost:1313/docs/ttp/antiforensics/process-hiding/"> Hiding Processes</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/ttp/antiforensics/process-hiding/"> Hiding Processes</a></h2> 
     <p> <p>Malware is not going to just always sit there and sing 🎶. Below are common techniques. More detailed explanation is in the anti-forensics section.</p></p>
 
-    <h2><a href="http://localhost:1313/docs/ttp/antiforensics/forged-images/"> Forged Image Detection</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/ttp/antiforensics/forged-images/"> Forged Image Detection</a></h2> 
     <p> <p><a href="https://29a.ch/photo-forensics/#forensic-magnifier">https://29a.ch/photo-forensics/#forensic-magnifier</a></p>
 <p>Images can be forged or cloned. Regions can be manipulated with. Hard to detect with naked eye. &#x2757; Social Media strips-off metadata from uploaded images which makes tracking of the image difficult.</p>
 <p>Main goals are: detect whether the image was cloned and track the source of the image. Forensically and JPEGSnoop open-source tools.  They detect tampering.</p>
@@ -220,13 +220,13 @@
 </ol>
 <p><img src="osdf-fakeimages1.png" alt="osdf-fakeimages1"></p></p>
 
-    <h2><a href="http://localhost:1313/docs/ttp/antiforensics/antivirus/"> Evading Antivirus</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/ttp/antiforensics/antivirus/"> Evading Antivirus</a></h2> 
     <p> <h2 id="windows">Windows</h2>
 <p><a href="https://tyeyeah.github.io/2021/08/02/2021-08-02-Bypass-Anti-Virus/">https://tyeyeah.github.io/2021/08/02/2021-08-02-Bypass-Anti-Virus/</a></p>
 <h2 id="macos">macOS</h2>
 <h2 id="linux">Linux</h2></p>
 
-    <h2><a href="http://localhost:1313/docs/ttp/antiforensics/fs-hiding-data/"> Hiding Data</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/ttp/antiforensics/fs-hiding-data/"> Hiding Data</a></h2> 
     <p> <h2 id="alternative-data-stream">Alternative data stream</h2>
 <p>Alternate data streams. Specific for Windows. See more <a href="/docs/dfir/forensic-investigation/reference/windows/win-ads">here</a>. Are there such streams for other OS? If yes, how to make them and discover them?</p>
 <p>To ensure compatability between NTFS and HFS. Allows hiding files.</p>
@@ -238,7 +238,7 @@
 </span></span><span style="display:flex;"><span>innocent.exe
 </span></span></code></pre></div><p>But <code>dir /r</code> - will display <strong>all</strong> streams. LNS and Sfind will hunt down such files. Also, when you copy files from and to a FAT partition - all residual files will be deleted.</p></p>
 
-    <h2><a href="http://localhost:1313/docs/ttp/antiforensics/logs-turnoff/"> Turning Off Logging</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/ttp/antiforensics/logs-turnoff/"> Turning Off Logging</a></h2> 
     <p> <h2 id="macos">macOS</h2>
 <p>From Apple&rsquo;s official documentation:</p>
 <blockquote>
@@ -249,7 +249,7 @@
 </ul>
 <p>So if your volume is mounted at <code>/Volumes/MyDisk</code>, you would create an empty file called <code>/Volumes/MyDisk/.fseventsd/no_log</code>.</p></p>
 
-    <h2><a href="http://localhost:1313/docs/ttp/antiforensics/usbkill-switch/"> USBKill Switch</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/ttp/antiforensics/usbkill-switch/"> USBKill Switch</a></h2> 
     <p> <p>A software that could be used for anti-forensics. By default, configs are at <code>/etc</code> and named <code>usbkill.ini</code>. The default behaviour - shut the system down. Keeps a whitelist of allowed USB devices. Can also prevent malware from getting on the PC from a USB drive.</p>
 <p>Analogues: BusKill (set a <code>udev</code> rule to be triggered if the USB drive is removed: lock, shutdown or self-destruct) and Silk Guardian (Linux Kernel mode switch that&rsquo;s waiting for a change, deletes files on events and shuts the system down).</p></p>
 
@@ -270,7 +270,7 @@
         <div class="sub-footer-inner">
           <ul>
             <li class="zerostatic"><a href="https://www.zerostatic.io">www.zerostatic.io</a></li>
-            <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/docs/ttp/antiforensics/index.xml" title="Analyst" />
+            <link rel="alternate" type="application/rss+xml" href="https://bakerst221b.com/docs/ttp/antiforensics/index.xml" title="Analyst" />
             </ul>
         </div>
       </div>
@@ -284,9 +284,13 @@
   
 
   
-  <script type="text/javascript" src="/js/scripts.js"></script>
+  <script type="text/javascript" src="/js/scripts.min.ec19db7e4836c12e2c5e3697d926bc3e4c22005167d9826aab54feca08f0c093.js"></script>
   
 
+  
+  
+  
+    
   
 
 

@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Binary Attacks on Analyst</title>
-    <link>http://localhost:1313/docs/attacks/binary/</link>
+    <link>https://bakerst221b.com/docs/attacks/binary/</link>
     <description>Recent content in Binary Attacks on Analyst</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 28 Jul 2022 15:14:39 +1000</lastBuildDate>
-    <atom:link href="http://localhost:1313/docs/attacks/binary/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bakerst221b.com/docs/attacks/binary/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>MA Backlog</title>
-      <link>http://localhost:1313/docs/attacks/binary/backlog/</link>
+      <link>https://bakerst221b.com/docs/attacks/binary/backlog/</link>
       <pubDate>Thu, 28 Jul 2022 15:14:39 +1000</pubDate>
-      <guid>http://localhost:1313/docs/attacks/binary/backlog/</guid>
+      <guid>https://bakerst221b.com/docs/attacks/binary/backlog/</guid>
       <description>&lt;p&gt;Add new items here: &lt;a href=&#34;https://malpedia.caad.fkie.fraunhofer.de/login&#34;&gt;https://malpedia.caad.fkie.fraunhofer.de/login&lt;/a&gt; and see also here &lt;a href=&#34;https://objective-see.org/&#34;&gt;https://objective-see.org/&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;types&#34;&gt;Types&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;From ChatGPT&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;File infectors:&lt;/strong&gt; These viruses infect executable files and are spread when the infected file is executed. When an infected file is run, the virus code is activated and can spread to other files on the system. Examples include the Cascade virus and the Jerusalem virus.&lt;/li&gt;&#xA;&lt;li&gt;Boot sector viruses: These viruses infect the boot sector of a disk, usually a floppy disk, and are activated when the computer is booted from the infected disk. The virus then spreads to other disks that are accessed by the infected system. Examples include the Stoned virus and the Michelangelo virus.&lt;/li&gt;&#xA;&lt;li&gt;Macro viruses: These viruses infect documents that contain macro code, such as Microsoft Word or Excel documents. When the infected document is opened, the virus code is executed and can infect other documents on the system. Examples include the Melissa virus and the ILOVEYOU virus.&lt;/li&gt;&#xA;&lt;li&gt;Stealth viruses: These viruses are designed to hide their presence from antivirus software and other detection methods. They do this by intercepting system calls and modifying the results, or by hooking into the operating system and altering its behavior. Examples include the Whale virus and the Meve virus.&lt;/li&gt;&#xA;&lt;li&gt;Multipartite viruses: These viruses infect both files and boot sectors, making them harder to detect and remove. They typically spread through infected files and then infect the boot sector of the system, allowing them to survive a system reboot. Examples include the Flip virus and the Invader virus.&lt;/li&gt;&#xA;&lt;li&gt;Polymorphic viruses: These viruses use encryption or other techniques to change their code each time they infect a new system, making them difficult to detect and remove. Examples include the W95/CIH virus and the Satanbug virus&lt;/li&gt;&#xA;&lt;li&gt;Worms: While not technically viruses, worms are self-replicating malware that spread through networks or the internet. They typically exploit vulnerabilities in software or operating systems to spread, and can cause significant damage to systems and networks. Examples include the Morris worm and the WannaCry worm.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;pe&#34;&gt;PE&lt;/h2&gt;&#xA;&lt;p&gt;Import tables and how this works, how to do it.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Process Injections</title>
-      <link>http://localhost:1313/docs/attacks/binary/injections/</link>
+      <link>https://bakerst221b.com/docs/attacks/binary/injections/</link>
       <pubDate>Mon, 12 Oct 2020 17:50:01 +0300</pubDate>
-      <guid>http://localhost:1313/docs/attacks/binary/injections/</guid>
+      <guid>https://bakerst221b.com/docs/attacks/binary/injections/</guid>
       <description>&lt;h2 id=&#34;windows&#34;&gt;Windows&lt;/h2&gt;&#xA;&lt;p&gt;Most information is taken from &lt;a href=&#34;!%5Bulr-4%5D(images/ulr-4.png)&#34;&gt;here&lt;/a&gt;, but more visualisation is added. The screenshots from IDA Pro are also copied from that blog post.&lt;/p&gt;&#xA;&lt;h3 id=&#34;classic&#34;&gt;Classic&lt;/h3&gt;&#xA;&lt;p&gt;This one is one of the simplest to explain and not that simple to actually use in a real attack (see Caveats). A malicious DLL&amp;rsquo;s &lt;strong&gt;path&lt;/strong&gt; is copied in the memory space of a legitimate running process to be loaded in runtime.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;images/classic-1.png&#34; alt=&#34;classic-1&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Below is the anatomy of this function call.&lt;/p&gt;</description>
     </item>
   </channel>

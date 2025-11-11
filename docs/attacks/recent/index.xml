@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Recent Activity on Analyst</title>
-    <link>http://localhost:1313/docs/attacks/recent/</link>
+    <link>https://bakerst221b.com/docs/attacks/recent/</link>
     <description>Recent content in Recent Activity on Analyst</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 02 Jun 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/docs/attacks/recent/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bakerst221b.com/docs/attacks/recent/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Execution</title>
-      <link>http://localhost:1313/docs/attacks/recent/exe/</link>
+      <link>https://bakerst221b.com/docs/attacks/recent/exe/</link>
       <pubDate>Fri, 02 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/attacks/recent/exe/</guid>
+      <guid>https://bakerst221b.com/docs/attacks/recent/exe/</guid>
       <description>&lt;p&gt;&lt;em&gt;This is about &amp;hellip; .&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Recently used files</title>
-      <link>http://localhost:1313/docs/attacks/recent/files/recent/</link>
+      <link>https://bakerst221b.com/docs/attacks/recent/files/recent/</link>
       <pubDate>Fri, 02 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/attacks/recent/files/recent/</guid>
+      <guid>https://bakerst221b.com/docs/attacks/recent/files/recent/</guid>
       <description>&lt;h2 id=&#34;windows&#34;&gt;Windows&lt;/h2&gt;&#xA;&lt;h3 id=&#34;lnk&#34;&gt;LNK&lt;/h3&gt;&#xA;&lt;p&gt;There are several artifacts indicating user activity. One of them is &lt;code&gt;LNK&lt;/code&gt; files. To analyse acquired LNK files use 🛠 &lt;a href=&#34;https://ericzimmerman.github.io/#!index.md&#34;&gt;LECmd&lt;/a&gt; (E. Zimmerman&amp;rsquo;s) or &lt;a href=&#34;https://4discovery.com/our-tools/link-parser/&#34;&gt;Link Parser&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h3 id=&#34;prefetch&#34;&gt;Prefetch&lt;/h3&gt;&#xA;&lt;p&gt;Enother mechanism is Prefetch. It&amp;rsquo;s usually located at &lt;code&gt;C:\Windows\Prefetch&lt;/code&gt;. Several tools are available for viewing this artifact: Magnet AXIOM 💰, PECmd.&lt;/p&gt;&#xA;&lt;h3 id=&#34;recent-files&#34;&gt;Recent Files&lt;/h3&gt;&#xA;&lt;p&gt;Recent files (LNK) - &lt;code&gt;C:\Users\veronicazvereva\AppData\Roaming\Microsoft\Windows\Recent Files\&lt;/code&gt; on Windows 11, &lt;code&gt;C:\Users\veronicazvereva\AppData\Roaming\Microsoft\Windows\Recent&lt;/code&gt; Windows 10-. Captures the MAC times of the original file.&lt;/p&gt;</description>
     </item>
   </channel>

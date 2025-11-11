@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Python on Analyst</title>
-    <link>http://localhost:1313/tools/python/</link>
+    <link>https://bakerst221b.com/tools/python/</link>
     <description>Recent content in Python on Analyst</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 26 Apr 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tools/python/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bakerst221b.com/tools/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CyberCorp2</title>
-      <link>http://localhost:1313/docs/todo/cases/ctf-walkthrough/cybercorp2/</link>
+      <link>https://bakerst221b.com/docs/todo/cases/ctf-walkthrough/cybercorp2/</link>
       <pubDate>Wed, 12 Jan 2022 11:42:21 +0300</pubDate>
-      <guid>http://localhost:1313/docs/todo/cases/ctf-walkthrough/cybercorp2/</guid>
+      <guid>https://bakerst221b.com/docs/todo/cases/ctf-walkthrough/cybercorp2/</guid>
       <description>&lt;p&gt;⛔️  Spoiler alert!&lt;/p&gt;&#xA;&lt;h2 id=&#34;case-details&#34;&gt;Case Details&lt;/h2&gt;&#xA;&lt;p&gt;This is not an investigation like the previous one. This is threat hunting. So, we have only logs via Kibana available. To harden my knowledge with this technologies I&amp;rsquo;ve had a very quick overview on ElasticStack website and enrolled in &lt;a href=&#34;https://app.pluralsight.com/paths/skills/threat-hunting-with-the-elastic-stack&#34;&gt;this&lt;/a&gt; course. Basically, I will have to answer questing having a loads of logs and a query engine available.&lt;/p&gt;&#xA;&lt;h2 id=&#34;questions&#34;&gt;Questions&lt;/h2&gt;&#xA;&lt;h3 id=&#34;1-wmi-event-consumer-name&#34;&gt;1. WMI Event Consumer name?&lt;/h3&gt;&#xA;&lt;p&gt;✅ &lt;em&gt;The Threat Hunting process usually starts with the analyst making a hypothesis about a possible compromise vector or techniques used by an attacker. In this scenario, your initial hypothesis is as follows: &amp;ldquo;The attacker used the WMI subscription mechanism to obtain persistence within the infrastructure&amp;rdquo;. Verify this hypothesis and find the name of the WMI Event Consumer used by the attacker to maintain his foothold.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>CyberCorp1</title>
-      <link>http://localhost:1313/docs/todo/cases/ctf-walkthrough/cybercorp1/</link>
+      <link>https://bakerst221b.com/docs/todo/cases/ctf-walkthrough/cybercorp1/</link>
       <pubDate>Sat, 08 Jan 2022 11:42:21 +0300</pubDate>
-      <guid>http://localhost:1313/docs/todo/cases/ctf-walkthrough/cybercorp1/</guid>
+      <guid>https://bakerst221b.com/docs/todo/cases/ctf-walkthrough/cybercorp1/</guid>
       <description>&lt;p&gt;⛔️  Spoiler alert!&lt;/p&gt;&#xA;&lt;h2 id=&#34;case-details&#34;&gt;Case Details&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Artefacts in posession&lt;/strong&gt;: memory dump, OS event logs, registry files, Prefetch files, $MFT file, ShimCache, AmCache, network traffic dumps. I&amp;rsquo;ve decided to analyse each artefact, what can I get from it in this specific case and how. Then, I am going to outline my strategy in approaching this case.&lt;/p&gt;&#xA;&lt;p&gt;We are looking for indicators of compromise.  There are no details as to what is the group and what was its aim. But it’s known that there was abnormal traffic detected that has launched this IR process. So, at least, we must have some suspicious traffic, possibly open or terminated connections. These should have been launched by some process, so we are looking for malware. Also, since the attacker needed an account to get in, I will be looking for an account take over attempts and possibly, new account creation.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Once There Lived Admin</title>
-      <link>http://localhost:1313/docs/blog/2022/02/once-there-lived-admin/</link>
+      <link>https://bakerst221b.com/docs/blog/2022/02/once-there-lived-admin/</link>
       <pubDate>Sat, 05 Feb 2022 11:42:21 +0300</pubDate>
-      <guid>http://localhost:1313/docs/blog/2022/02/once-there-lived-admin/</guid>
+      <guid>https://bakerst221b.com/docs/blog/2022/02/once-there-lived-admin/</guid>
       <description>&lt;p&gt;&lt;em&gt;Hey, ps! Would like you to hear a fairy tale? I am sure that you do! It all happened not long long time ago and not in a galaxy far far away&amp;hellip; . Let&amp;rsquo;s imagine that in the J.Rowling&amp;rsquo;s universe there were cybersecurity specialists as well and Hogwarts had a real website in the Internet. Funky idea! 💡&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;A very hard-working girl, let&amp;rsquo;s call her Rachel (yeah, Rachel 😉) was sitting at her table, working as usual when she suddenly saw her phone vibrating nearby. She picked up the phone, hoping that wasn&amp;rsquo;t a spam. Indeed it wasn&amp;rsquo;t. That was her colleague, asking if she is interested in a little side project.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Diffie-Hellman Key Exchange</title>
-      <link>http://localhost:1313/docs/cryptography/asymmetric/deffie-hellman/</link>
+      <link>https://bakerst221b.com/docs/cryptography/asymmetric/deffie-hellman/</link>
       <pubDate>Mon, 16 Nov 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/cryptography/asymmetric/deffie-hellman/</guid>
+      <guid>https://bakerst221b.com/docs/cryptography/asymmetric/deffie-hellman/</guid>
       <description>&lt;p&gt;&lt;em&gt;I&amp;rsquo;ve written this article while I was untanging RSA and Deffie Hellman inside my head. What I need to stree right here, in the article description, the main difference between them is the Deffie Hellman is NOT a encryption algorithm! It&amp;rsquo;s an algorithm of generating a symmetric key using principles of asymmetric cryptography.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;For the mathmatics topics needed to understand this algorothm, please, refer to the math sections.&lt;/p&gt;&#xA;&lt;p&gt;There is a peculiar characteristic of prime numbers 👑 and their respective primitive roots 🦷:&lt;/p&gt;</description>
     </item>
     <item>
       <title>RSA</title>
-      <link>http://localhost:1313/docs/cryptography/asymmetric/rsa/</link>
+      <link>https://bakerst221b.com/docs/cryptography/asymmetric/rsa/</link>
       <pubDate>Mon, 16 Nov 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/cryptography/asymmetric/rsa/</guid>
+      <guid>https://bakerst221b.com/docs/cryptography/asymmetric/rsa/</guid>
       <description>&lt;p&gt;&lt;em&gt;To my utter embarrassment I had to admit that I&amp;rsquo;ve recently realized I didn&amp;rsquo;t remember how the RSA worked&amp;hellip;. What I though to be RSA turned out to be Diffie-Hellman algorithm&amp;hellip; Oops &amp;#x1f62c;. So, I&amp;rsquo;ve rewatched Khan&amp;rsquo;s video about RSA and was surprised I could every confuse the two. This article and another one about Diffie-Hellman is my way of explaining cryptographic notions: visual representation, verbal explanation and&amp;hellip; code. Thanks to Python &amp;#x1f40d;.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Mutable vs Immutable</title>
-      <link>http://localhost:1313/docs/ttp/malware/analyse/basics/mutable-vs-immutable/</link>
+      <link>https://bakerst221b.com/docs/ttp/malware/analyse/basics/mutable-vs-immutable/</link>
       <pubDate>Mon, 05 Oct 2020 18:48:35 +0300</pubDate>
-      <guid>http://localhost:1313/docs/ttp/malware/analyse/basics/mutable-vs-immutable/</guid>
+      <guid>https://bakerst221b.com/docs/ttp/malware/analyse/basics/mutable-vs-immutable/</guid>
       <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; ctypes&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; a &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; address &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; id(a)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; address&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;4307917216&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; ctypes&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;cast(address, ctypes&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;py_object)&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;value&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; a &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; ctypes&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;cast(address, ctypes&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;py_object)&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;value&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Similarly, regardless of whether you flag some &lt;code&gt;UITextField&lt;/code&gt; as &lt;em&gt;Secure Text Entry&lt;/em&gt; or not, it always returns data in the form of a &lt;code&gt;String&lt;/code&gt; or &lt;code&gt;NSString&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;p&gt;On the other hand, using the overwritten data outside the compiler&amp;rsquo;s scope (e.g., serializing it in a temp file) guarantees that it will be overwritten but obviously impacts performance and maintenance. You should try to overwrite critical objects with random data or content from non-critical objects. This will make it really difficult to construct scanners that can identify sensitive data on the basis of its management. This can be only done by low-level languages because the compilers and just-in-time virtual machines will ignore those operations for performance reasons if the optimization routines detect that the buffer is no longer used after being overwritten.&lt;/p&gt;</description>
     </item>
   </channel>

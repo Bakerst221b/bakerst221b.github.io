@@ -2,101 +2,101 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>🤔 Analysis Tips and Cheatsheets on Analyst</title>
-    <link>http://localhost:1313/docs/ttp/cheatsheets/</link>
+    <link>https://bakerst221b.com/docs/ttp/cheatsheets/</link>
     <description>Recent content in 🤔 Analysis Tips and Cheatsheets on Analyst</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 11 Jul 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/docs/ttp/cheatsheets/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bakerst221b.com/docs/ttp/cheatsheets/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>🤔 How do I check for remote connections?</title>
-      <link>http://localhost:1313/docs/ttp/cheatsheets/remote/</link>
+      <link>https://bakerst221b.com/docs/ttp/cheatsheets/remote/</link>
       <pubDate>Sun, 18 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/ttp/cheatsheets/remote/</guid>
+      <guid>https://bakerst221b.com/docs/ttp/cheatsheets/remote/</guid>
       <description>&lt;p&gt;&lt;em&gt;How to check if the system was accessed remotely? What sort of remote connections is the attacker likely to be using?&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Devices Attached</title>
-      <link>http://localhost:1313/docs/ttp/cheatsheets/devices/</link>
+      <link>https://bakerst221b.com/docs/ttp/cheatsheets/devices/</link>
       <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/ttp/cheatsheets/devices/</guid>
-      <description>&lt;p&gt;*Are we looking for USB storage media activity or all USB devices? Like, cameras 📸? Headphones 🎧? As for the timestamps, you&amp;rsquo;ll usually have &lt;strong&gt;first&lt;/strong&gt; (setupapi log) and &lt;strong&gt;last&lt;/strong&gt; connected. There are also OS specific timestamps, like first or last install, first connect since reboot etc. &lt;a href=&#34;http://localhost:1313/docs/dfir/host/windows/windows-artifacts#usb-devices&#34;&gt;Windows&lt;/a&gt; USB artifacts, &lt;a href=&#34;http://localhost:1313/docs/dfir/host/apple/mac-artifacts#usb-devices&#34;&gt;macOS&lt;/a&gt;. See Event Manager&amp;rsquo;s codes &lt;a href=&#34;docs/dfir/host/windows/event-manager#20001&#34;&gt;20001&lt;/a&gt; and &lt;a href=&#34;docs/dfir/host/windows/event-manager#20002&#34;&gt;20002&lt;/a&gt; for USB events for verification or if the registry was updated. Look at &lt;code&gt;HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceClasses\&lt;/code&gt; and &lt;code&gt;HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\USB\&amp;lt;hardware id&amp;gt;\&amp;lt;instance id&amp;gt;\Device Parameters&lt;/code&gt;. &lt;a href=&#34;https://docs.microsoft.com/en-us/windows-hardware/drivers/usbcon/usb-device-specific-registry-settings&#34;&gt;More&lt;/a&gt;.&lt;/p&gt;</description>
+      <guid>https://bakerst221b.com/docs/ttp/cheatsheets/devices/</guid>
+      <description>&lt;p&gt;*Are we looking for USB storage media activity or all USB devices? Like, cameras 📸? Headphones 🎧? As for the timestamps, you&amp;rsquo;ll usually have &lt;strong&gt;first&lt;/strong&gt; (setupapi log) and &lt;strong&gt;last&lt;/strong&gt; connected. There are also OS specific timestamps, like first or last install, first connect since reboot etc. &lt;a href=&#34;https://bakerst221b.com/docs/dfir/host/windows/windows-artifacts#usb-devices&#34;&gt;Windows&lt;/a&gt; USB artifacts, &lt;a href=&#34;https://bakerst221b.com/docs/dfir/host/apple/mac-artifacts#usb-devices&#34;&gt;macOS&lt;/a&gt;. See Event Manager&amp;rsquo;s codes &lt;a href=&#34;docs/dfir/host/windows/event-manager#20001&#34;&gt;20001&lt;/a&gt; and &lt;a href=&#34;docs/dfir/host/windows/event-manager#20002&#34;&gt;20002&lt;/a&gt; for USB events for verification or if the registry was updated. Look at &lt;code&gt;HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceClasses\&lt;/code&gt; and &lt;code&gt;HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\USB\&amp;lt;hardware id&amp;gt;\&amp;lt;instance id&amp;gt;\Device Parameters&lt;/code&gt;. &lt;a href=&#34;https://docs.microsoft.com/en-us/windows-hardware/drivers/usbcon/usb-device-specific-registry-settings&#34;&gt;More&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>🤔 How Do I Audit Management Tools?</title>
-      <link>http://localhost:1313/docs/ttp/cheatsheets/mngmt/</link>
+      <link>https://bakerst221b.com/docs/ttp/cheatsheets/mngmt/</link>
       <pubDate>Mon, 26 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/ttp/cheatsheets/mngmt/</guid>
+      <guid>https://bakerst221b.com/docs/ttp/cheatsheets/mngmt/</guid>
       <description>&lt;p&gt;&lt;em&gt;Admins on payroll and those &amp;ldquo;magnanimous volunteers&amp;rdquo; often tread the very same path, albeit guided by different compasses of motivation. Once our cunning adversary ascends to the lofty heights of respect usually reserved for the admin on payroll, the misuse of these management tools becomes bound only by the limits of their mischievous imagination.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>🤔 How To Investigation Terminal Activity?</title>
-      <link>http://localhost:1313/docs/ttp/cheatsheets/terminal/</link>
+      <link>https://bakerst221b.com/docs/ttp/cheatsheets/terminal/</link>
       <pubDate>Mon, 26 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/ttp/cheatsheets/terminal/</guid>
+      <guid>https://bakerst221b.com/docs/ttp/cheatsheets/terminal/</guid>
       <description>&lt;p&gt;&lt;em&gt;Think of the terminal as a magic wand 🪄 of the attacker. The beauty for them is that they can do all sorts of nasty things remotely, but their beauty also lies with their forensics perks: one can review the history of this activity.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>🤔 How Do I Check For Logs Clearing?</title>
-      <link>http://localhost:1313/docs/ttp/cheatsheets/clear/</link>
+      <link>https://bakerst221b.com/docs/ttp/cheatsheets/clear/</link>
       <pubDate>Sat, 24 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/ttp/cheatsheets/clear/</guid>
+      <guid>https://bakerst221b.com/docs/ttp/cheatsheets/clear/</guid>
       <description>&lt;h2 id=&#34;windows&#34;&gt;Windows&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;❗️These techniques require admin or higher privileges.&#xA;❗️Common with ransomware&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;When the &lt;code&gt;Security&lt;/code&gt; trail is deleted, &lt;code&gt;1102&lt;/code&gt; is usually created afterwards. When all other trails are deleted, &lt;code&gt;104&lt;/code&gt; EID is generated in the &lt;code&gt;System&lt;/code&gt; trail.&lt;/p&gt;&#xA;&lt;p&gt;Event logs are NOT designed to be deleted selectively, all or none. However, some tools are capable of circumventing this and can actually partially clear the logs.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;🛠️ &lt;code&gt;Mimikatz&lt;/code&gt; - 📕 &lt;code&gt;event::drop&lt;/code&gt; can stop the event log process from writing &lt;code&gt;Security&lt;/code&gt; events. It can&amp;rsquo;t restart it through, so, obvious.&lt;/li&gt;&#xA;&lt;li&gt;🛠️ &lt;code&gt;DanderSprite&lt;/code&gt; - (leaked by &lt;code&gt;ShadowBrokers&lt;/code&gt;) change the pointers to the next events in the headers. So, the events are not deleted but are not visible either. Deep dive forensics to help here.&lt;/li&gt;&#xA;&lt;li&gt;🛠️ &lt;code&gt;Invoke-Phant0m&lt;/code&gt; - kill the threads of event logs.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;One can also suspend the event log process or make changes in RAM. However, all of these actions require 👑.&lt;/p&gt;</description>
     </item>
     <item>
       <title>🤔 How Do I Check For Malicious Autostarts?</title>
-      <link>http://localhost:1313/docs/ttp/cheatsheets/autoruns/</link>
+      <link>https://bakerst221b.com/docs/ttp/cheatsheets/autoruns/</link>
       <pubDate>Sat, 24 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/ttp/cheatsheets/autoruns/</guid>
+      <guid>https://bakerst221b.com/docs/ttp/cheatsheets/autoruns/</guid>
       <description>&lt;h2 id=&#34;windows&#34;&gt;Windows&lt;/h2&gt;&#xA;&lt;h3 id=&#34;tasks&#34;&gt;Tasks&lt;/h3&gt;&#xA;&lt;h4 id=&#34;event-logs&#34;&gt;Event logs&lt;/h4&gt;&#xA;&lt;p&gt;Two trails are of use are &lt;code&gt;Microsoft-Windows-TaskScheduler/Operational&lt;/code&gt; 🍇 (disabled by default on the newer systems) and &lt;code&gt;Security&lt;/code&gt; 🛡️.&lt;/p&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;🍇&lt;/th&gt;&#xA;          &lt;th&gt;🛡️&lt;/th&gt;&#xA;          &lt;th&gt;Info&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;code&gt;106&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;4698&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Task created&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;code&gt;140&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;4702&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;updated&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;code&gt;141&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;4699&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Deleted&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;code&gt;200/201&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;-&lt;/td&gt;&#xA;          &lt;td&gt;executed and completed&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;-&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;4700/4701&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;enabled and disabled&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;✍🏻 On older Win 👴🏼 it&amp;rsquo;s &lt;code&gt;602&lt;/code&gt; event. Also, config files are in bin format with &lt;code&gt;.job&lt;/code&gt; extension and can be parsed by a &lt;code&gt;jobparser.py&lt;/code&gt; script.&lt;/p&gt;</description>
     </item>
     <item>
       <title>🤔 How Do I Check For Reconnaisance Activity?</title>
-      <link>http://localhost:1313/docs/ttp/cheatsheets/recon/</link>
+      <link>https://bakerst221b.com/docs/ttp/cheatsheets/recon/</link>
       <pubDate>Sat, 24 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/ttp/cheatsheets/recon/</guid>
+      <guid>https://bakerst221b.com/docs/ttp/cheatsheets/recon/</guid>
       <description>&lt;h2 id=&#34;windows&#34;&gt;Windows&lt;/h2&gt;&#xA;&lt;h3 id=&#34;event-logs&#34;&gt;Event logs&lt;/h3&gt;&#xA;&lt;p&gt;Monitoring for these events will cause a lot of noise and false positives. You need to do it in a smart way:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Filter for sensitive groups&lt;/li&gt;&#xA;&lt;li&gt;Whitelist those processes performing such activity legitimately: &lt;code&gt;mmc.exe&lt;/code&gt;, &lt;code&gt;services.exe&lt;/code&gt;, &lt;code&gt;taskhost.exe&lt;/code&gt;, &lt;code&gt;explorer.exe&lt;/code&gt;, &lt;code&gt;vsssvc.exe&lt;/code&gt;. Presume everything else to be unusual.&lt;/li&gt;&#xA;&lt;li&gt;What accounts are NOT supposed to do recon?&lt;/li&gt;&#xA;&lt;li&gt;What group was queried? &lt;code&gt;Administrators&lt;/code&gt; group (or other groups with higher privileges) is the most desirable piece of the pie.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;code&gt;4798&lt;/code&gt; - user&amp;rsquo;s local group membership enum.&#xA;&lt;code&gt;4799&lt;/code&gt; - security-enabled local group membership enum.&lt;/p&gt;</description>
     </item>
     <item>
       <title>🤔 How do I check program execution?</title>
-      <link>http://localhost:1313/docs/ttp/cheatsheets/execution/</link>
+      <link>https://bakerst221b.com/docs/ttp/cheatsheets/execution/</link>
       <pubDate>Sat, 24 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/ttp/cheatsheets/execution/</guid>
+      <guid>https://bakerst221b.com/docs/ttp/cheatsheets/execution/</guid>
       <description>&lt;h2 id=&#34;windows&#34;&gt;Windows&lt;/h2&gt;&#xA;&lt;p&gt;You can use Prefetch which is the most reliable source. However, if the program is NOT there, it doesn&amp;rsquo;t mean it wasn&amp;rsquo;t executed.&lt;/p&gt;&#xA;&lt;p&gt;Another artefact of use is AmCache. What&amp;rsquo;s great about it is that it stores hashes among all. Although it&amp;rsquo;s not proof of the program being executed, it can show the PRESENCE of files (exe and drivers) on the system.&lt;/p&gt;&#xA;&lt;h3 id=&#34;shimcache&#34;&gt;ShimCache&lt;/h3&gt;&#xA;&lt;p&gt;It is ok to collect artefacts like that manually, but it&amp;rsquo;s better to do so at scale. Some tools were designed to process these artefacts and put everything in an SQL database.&lt;/p&gt;</description>
     </item>
     <item>
       <title>🤔 How Do I Check System Information?</title>
-      <link>http://localhost:1313/docs/ttp/cheatsheets/sysinfo/</link>
+      <link>https://bakerst221b.com/docs/ttp/cheatsheets/sysinfo/</link>
       <pubDate>Sat, 24 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/ttp/cheatsheets/sysinfo/</guid>
+      <guid>https://bakerst221b.com/docs/ttp/cheatsheets/sysinfo/</guid>
       <description>&lt;h2 id=&#34;windows&#34;&gt;Windows&lt;/h2&gt;&#xA;&lt;p&gt;Registry, of course.&lt;/p&gt;&#xA;&lt;h3 id=&#34;amcache-registry-&#34;&gt;AmCache, Registry 🗄️&lt;/h3&gt;&#xA;&lt;p&gt;You can see firmware, hardware and OS info there. Although the artefact has proved to be highly &amp;ldquo;volatile&amp;rdquo;, it might change from update to update.&lt;/p&gt;&#xA;&lt;h3 id=&#34;macos&#34;&gt;macOS&lt;/h3&gt;&#xA;&lt;h3 id=&#34;linux&#34;&gt;Linux&lt;/h3&gt;&#xA;&lt;h3 id=&#34;ios&#34;&gt;iOS&lt;/h3&gt;&#xA;&lt;h4 id=&#34;backups&#34;&gt;Backups&lt;/h4&gt;&#xA;&lt;p&gt;📂  &lt;code&gt;/Users/username/Library/Application\ Support/MobileSync/Backup/&amp;lt;UDID&amp;gt;/&lt;/code&gt;: &lt;code&gt;Info.plist&lt;/code&gt;, &lt;code&gt;Manifest.plist&lt;/code&gt;, &lt;code&gt;Status.plist&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;h4 id=&#34;lockdown-files&#34;&gt;Lockdown files&lt;/h4&gt;&#xA;&lt;p&gt;📂  &lt;code&gt;/private/var/db/lockdown&lt;/code&gt;&#xA;W-Fi MAC Address for the connected iPhone&lt;/p&gt;&#xA;&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;&#xA;&lt;details&gt;&#xA;    &lt;summary&gt;Expand&amp;hellip;&lt;/summary&gt;&#xA;    Something here&#xA;&lt;/details&gt;</description>
     </item>
     <item>
       <title>🤔 How Do I Find Malicious or Compromised Accounts?</title>
-      <link>http://localhost:1313/docs/ttp/cheatsheets/account/</link>
+      <link>https://bakerst221b.com/docs/ttp/cheatsheets/account/</link>
       <pubDate>Sat, 24 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/ttp/cheatsheets/account/</guid>
+      <guid>https://bakerst221b.com/docs/ttp/cheatsheets/account/</guid>
       <description>&lt;h2 id=&#34;windows&#34;&gt;Windows&lt;/h2&gt;&#xA;&lt;h3 id=&#34;event-logs&#34;&gt;Event logs&lt;/h3&gt;&#xA;&lt;p&gt;📂 &lt;code&gt;%system root%\System32\config\SecEvent.evt&lt;/code&gt;&#xA;📂 &lt;code&gt;%system root%\System32\winevt\logs\Security.evtx&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;images/acc_created1.png&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;It starts with the event &lt;code&gt;4720&lt;/code&gt; (account created) and multiple &lt;code&gt;4732&lt;/code&gt; events (member added to some security-enabled group). This account must be enabled (&lt;code&gt;4722&lt;/code&gt;) before it can be used. You might see 4738 (account was changed) or even &lt;code&gt;4724&lt;/code&gt; (password reset attempt).&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;✍🏻 &lt;code&gt;4728&lt;/code&gt; - member was added to a security-enabled global group.&lt;/p&gt;&#xA;&lt;p&gt;✍🏻 &lt;code&gt;4732&lt;/code&gt; - member was added to a security-enabled local group.&lt;/p&gt;</description>
     </item>
     <item>
       <title>🤔 How Do I investigate logon events?</title>
-      <link>http://localhost:1313/docs/ttp/cheatsheets/logon/</link>
+      <link>https://bakerst221b.com/docs/ttp/cheatsheets/logon/</link>
       <pubDate>Sat, 24 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/ttp/cheatsheets/logon/</guid>
+      <guid>https://bakerst221b.com/docs/ttp/cheatsheets/logon/</guid>
       <description>&lt;h2 id=&#34;windows&#34;&gt;Windows&lt;/h2&gt;&#xA;&lt;h3 id=&#34;event-logs&#34;&gt;Event Logs&lt;/h3&gt;&#xA;&lt;p&gt;There is a fine line between logon and &lt;em&gt;account&lt;/em&gt; logon events, and that line is not just one word. The main idea is that logon is the event on the system that wants to chat, whilst account logon is the event on the server/remote system that our computer wants to talk to: user authentication and logon from the Security trail. Event codes &lt;code&gt;4624&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Most events are logged on the target machine, but you can also see these events on the source machine. That happens when the user authenticates locally with the credentials from the SAM database (NTLM protocol); you will see EID &lt;code&gt;4776&lt;/code&gt; (NTLM creds used for logon) for both successful and failed logons.&lt;/p&gt;</description>
     </item>
     <item>
       <title>🤔 How Do I Spot Bruteforcing Activity?</title>
-      <link>http://localhost:1313/docs/ttp/cheatsheets/bruteforce/</link>
+      <link>https://bakerst221b.com/docs/ttp/cheatsheets/bruteforce/</link>
       <pubDate>Sat, 24 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/ttp/cheatsheets/bruteforce/</guid>
+      <guid>https://bakerst221b.com/docs/ttp/cheatsheets/bruteforce/</guid>
       <description>&lt;h2 id=&#34;windows&#34;&gt;Windows&lt;/h2&gt;&#xA;&lt;h3 id=&#34;event-logs&#34;&gt;Event logs&lt;/h3&gt;&#xA;&lt;p&gt;There will be no shortage of &lt;code&gt;4625&lt;/code&gt; events (unsuccessful login) showing up in the logs. Since this attack is most likely happening over the network, the logon type will be &lt;code&gt;3&lt;/code&gt; (often SMB or RDP). Now, if you give those events a once-over, you will be able to figure out whether we&amp;rsquo;re up against a rather pesky password spray attack or an attack on a single account.&lt;/p&gt;</description>
     </item>
     <item>
       <title>🤔 How Do I Spot Injections?</title>
-      <link>http://localhost:1313/docs/ttp/cheatsheets/injections/</link>
+      <link>https://bakerst221b.com/docs/ttp/cheatsheets/injections/</link>
       <pubDate>Sat, 24 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/ttp/cheatsheets/injections/</guid>
+      <guid>https://bakerst221b.com/docs/ttp/cheatsheets/injections/</guid>
       <description>&lt;h2 id=&#34;windows&#34;&gt;Windows&lt;/h2&gt;&#xA;&lt;p&gt;Sysmon logs, &lt;code&gt;25&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;&#xA;&lt;details&gt;&#xA;    &lt;summary&gt;Expand&amp;hellip;&lt;/summary&gt;&#xA;    Something here&#xA;&lt;/details&gt;</description>
     </item>
   </channel>

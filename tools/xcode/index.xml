@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Xcode on Analyst</title>
-    <link>http://localhost:1313/tools/xcode/</link>
+    <link>https://bakerst221b.com/tools/xcode/</link>
     <description>Recent content in Xcode on Analyst</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 07 Mar 2021 11:42:21 +0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/tools/xcode/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bakerst221b.com/tools/xcode/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How I Got Started With ARM</title>
-      <link>http://localhost:1313/docs/blog/2021/03/how-i-got-started-with-arm/</link>
+      <link>https://bakerst221b.com/docs/blog/2021/03/how-i-got-started-with-arm/</link>
       <pubDate>Sun, 07 Mar 2021 11:42:21 +0300</pubDate>
-      <guid>http://localhost:1313/docs/blog/2021/03/how-i-got-started-with-arm/</guid>
+      <guid>https://bakerst221b.com/docs/blog/2021/03/how-i-got-started-with-arm/</guid>
       <description>&lt;p&gt;📆 &lt;code&gt;Friday, 12th of March, 202&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;⏰ &lt;code&gt;09:00&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;☀️ &lt;em&gt;It was a very deceptively sunny morning, children laughing and squeaking merrily. When I closed my eyes I could almoust believe it was late spring or summer&amp;hellip;. And the soul was filling with joy and inspiration. But unfortunately the temperature was too low (-10 ❄️ ⛄️  if you believe Yandex) and going for a outside-working-day was impossible 😔.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;I am finishing my cup of coffee ☕️ , my husband working in the adjacent room and my daughter playing with her new toys.&lt;/p&gt;</description>
     </item>
   </channel>

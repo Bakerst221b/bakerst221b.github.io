@@ -2,367 +2,367 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>All on Analyst</title>
-    <link>http://localhost:1313/platforms/all/</link>
+    <link>https://bakerst221b.com/platforms/all/</link>
     <description>Recent content in All on Analyst</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 26 Apr 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/platforms/all/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bakerst221b.com/platforms/all/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>⛔️ Access Controls</title>
-      <link>http://localhost:1313/docs/attacks/access-controls/</link>
+      <link>https://bakerst221b.com/docs/attacks/access-controls/</link>
       <pubDate>Mon, 12 Oct 2020 17:50:01 +0300</pubDate>
-      <guid>http://localhost:1313/docs/attacks/access-controls/</guid>
+      <guid>https://bakerst221b.com/docs/attacks/access-controls/</guid>
       <description>&lt;h2 id=&#34;dac&#34;&gt;DAC&lt;/h2&gt;&#xA;&lt;p&gt;&lt;em&gt;I am the leader! I&amp;rsquo;m the one that says when we go.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;images/2d4291be7475640044ecfbfc6577a369.jpeg&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;A user, who&amp;rsquo;s the owner of the file or another object defines who can and who cannot view it. It&amp;rsquo;s not safe, but it is easier to implement.&lt;/p&gt;&#xA;&lt;h2 id=&#34;mac&#34;&gt;MAC&lt;/h2&gt;&#xA;&lt;p&gt;ChatGPT dump and&lt;/p&gt;&#xA;&lt;p&gt;A. Discretionary Access Control (DAC):&lt;/p&gt;&#xA;&lt;p&gt;Discretionary Access Control is an access control model where the owner of a resource has full control over granting or restricting access permissions to that resource. In DAC, the owner can decide who can access the resource and what actions they can perform on it (e.g., read, write, or execute).&lt;/p&gt;</description>
     </item>
     <item>
       <title>⬛️ Console Activity Analysis</title>
-      <link>http://localhost:1313/docs/artefacts/console/</link>
+      <link>https://bakerst221b.com/docs/artefacts/console/</link>
       <pubDate>Mon, 12 Oct 2020 17:50:01 +0300</pubDate>
-      <guid>http://localhost:1313/docs/artefacts/console/</guid>
+      <guid>https://bakerst221b.com/docs/artefacts/console/</guid>
       <description>&lt;p&gt;Remote vs local commands?&lt;/p&gt;&#xA;&lt;h2 id=&#34;windows&#34;&gt;Windows&lt;/h2&gt;&#xA;&lt;h2 id=&#34;macos&#34;&gt;macOS&lt;/h2&gt;&#xA;&lt;h2 id=&#34;linux&#34;&gt;Linux&lt;/h2&gt;</description>
     </item>
     <item>
       <title>Chromesque</title>
-      <link>http://localhost:1313/docs/artefacts/applications/browser/chromesque/</link>
+      <link>https://bakerst221b.com/docs/artefacts/applications/browser/chromesque/</link>
       <pubDate>Mon, 12 Oct 2020 17:50:01 +0300</pubDate>
-      <guid>http://localhost:1313/docs/artefacts/applications/browser/chromesque/</guid>
+      <guid>https://bakerst221b.com/docs/artefacts/applications/browser/chromesque/</guid>
       <description>&lt;p&gt;&lt;em&gt;In the process of investigating Toy PD &lt;a href=&#34;&#34;&gt;case&lt;/a&gt;, I’ve realised I lack the information about different browser files. This is an attempt to fill that gap.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Many browsers are based on Chromium engine, that’s why they will have similar artifacts: Chrome, Opera, new Edge, Brave, Vivaldi. Also, there are lots of Electron applications that share some artifacts with them. Chrome is the point of convergence for all these application. On Magnet Summit it was suggested to explore and learn Chrome and it’s artifacts as well as OS common artifacts due to its popularity and reusing some of its components.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Data Carving</title>
-      <link>http://localhost:1313/docs/ttp/data-recovery/carving/</link>
+      <link>https://bakerst221b.com/docs/ttp/data-recovery/carving/</link>
       <pubDate>Tue, 06 Oct 2020 09:39:12 +0300</pubDate>
-      <guid>http://localhost:1313/docs/ttp/data-recovery/carving/</guid>
+      <guid>https://bakerst221b.com/docs/ttp/data-recovery/carving/</guid>
       <description>&lt;p&gt;&lt;em&gt;Below are the techniques, tools and instructions regarding data recovery from various file systems and devices. Most of the below techniques apply to HDDs only. Those that are for SDDs or other flash memory devices will be specified in the last section.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>GUID Partition Table</title>
-      <link>http://localhost:1313/docs/artefacts/fs/partiation-schemas/gpt/</link>
+      <link>https://bakerst221b.com/docs/artefacts/fs/partiation-schemas/gpt/</link>
       <pubDate>Tue, 06 Oct 2020 09:39:12 +0300</pubDate>
-      <guid>http://localhost:1313/docs/artefacts/fs/partiation-schemas/gpt/</guid>
+      <guid>https://bakerst221b.com/docs/artefacts/fs/partiation-schemas/gpt/</guid>
       <description>&lt;p&gt;GUID is an identifier of the following format: 8-4-4-4-12. There is still a protective MBR at 0 so that Windows will not try to format the disk. Up to 128 partitions, each entry is 128 bytes long -&amp;gt; . The header is located in sector 1. Backup copy at the end of the disk. Uses GUID as partition identifiers.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;images/gpt-struct.png&#34; alt=&#34;gpt-struct&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Up to a 128 partitions, all of them can be set as bootable. Will still have a dummy MBR at sector 0 and it&amp;rsquo;s there for backwards compatibility.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Master Boot Record</title>
-      <link>http://localhost:1313/docs/artefacts/fs/partiation-schemas/mbr/</link>
+      <link>https://bakerst221b.com/docs/artefacts/fs/partiation-schemas/mbr/</link>
       <pubDate>Tue, 06 Oct 2020 09:39:12 +0300</pubDate>
-      <guid>http://localhost:1313/docs/artefacts/fs/partiation-schemas/mbr/</guid>
+      <guid>https://bakerst221b.com/docs/artefacts/fs/partiation-schemas/mbr/</guid>
       <description>&lt;p&gt;Stands for &lt;strong&gt;M&lt;/strong&gt;aster &lt;strong&gt;B&lt;/strong&gt;oot &lt;strong&gt;R&lt;/strong&gt;ecord.&lt;/p&gt;&#xA;&lt;p&gt;Primary partitions (bootable). Can have at most 4 bootable partitions, since it&amp;rsquo;s limited to 4 partition entries in parition table, each entry 16 bytes in length. 4 bytes for their size, hence max value in hex is &lt;code&gt;0xFF FF FF FF&lt;/code&gt;, hence max size of a partition is 2 Tb. It starts at sector &lt;code&gt;0&lt;/code&gt;, it&amp;rsquo;s 512 bytes long (one sector) and it ends with &lt;code&gt;0x55 0xAA&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Overview</title>
-      <link>http://localhost:1313/docs/attacks/binary/exploits/bufferoverflow/overview/</link>
+      <link>https://bakerst221b.com/docs/attacks/binary/exploits/bufferoverflow/overview/</link>
       <pubDate>Sun, 27 Sep 2020 16:31:05 +0300</pubDate>
-      <guid>http://localhost:1313/docs/attacks/binary/exploits/bufferoverflow/overview/</guid>
+      <guid>https://bakerst221b.com/docs/attacks/binary/exploits/bufferoverflow/overview/</guid>
       <description>&lt;p&gt;&lt;em&gt;The idea of a buffer overflow attack is quite simple, though the implementation might initially be difficult to digest. I am exploring this notion and visualising it in this article.&lt;/em&gt; &lt;!-- more --&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;mechanics&#34;&gt;Mechanics&lt;/h2&gt;&#xA;&lt;p&gt;Imagine you have a job you don&amp;rsquo;t really like (I think most of us have had such an experience at least once in our life 😢). And also, imagine that you are being highly underpaid. Your job is simple and ridiculous: place rabbits 🐇 into one set of boxes and foxes 🦊 - into another. You happen to have 6 boxes 📦📦📦📦📦📦 for foxes 🦊 and 4 📦📦📦📦 for rabbits 🐇. However, you were given 4 rabbits 🐇🐇🐇🐇 and 7 foxes 🦊🦊🦊🦊🦊🦊🦊. So, one fox 🦊 doesn&amp;rsquo;t have its fox box 📦. However, there are also rabbit 🐇 boxes 📦 right nearby. So, even though you were explicitly told not to place foxes into rabbit boxes and vice versa since you don&amp;rsquo;t give a shit, you put a fox into a rabbit fox. What happens? One can only guess&amp;hellip; 🤔. Long story short: the fox eats the rabbit, and now you have 7 foxes and only 3 rabbits 🐇. Alas! If only you&amp;rsquo;d followed the manual 📖&amp;hellip;. Most likely, one would get fired after such a mistake, but we can&amp;rsquo;t fire the compiler, so that would happen if the developer was not using a memory-safe language or wasn&amp;rsquo;t careful enough. Now, to the technicalities.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Binary Vulnerabilities And Exploits</title>
-      <link>http://localhost:1313/docs/attacks/binary/exploits/bin/</link>
+      <link>https://bakerst221b.com/docs/attacks/binary/exploits/bin/</link>
       <pubDate>Thu, 28 Jul 2022 15:14:39 +1000</pubDate>
-      <guid>http://localhost:1313/docs/attacks/binary/exploits/bin/</guid>
+      <guid>https://bakerst221b.com/docs/attacks/binary/exploits/bin/</guid>
       <description>&lt;p&gt;&lt;em&gt;In this article I will collect common binary vulnerability (expept for the bufferoverflow which has its own dedicated article) &amp;hellip; .&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>💬 Slack</title>
-      <link>http://localhost:1313/docs/artefacts/applications/communication/slack/</link>
+      <link>https://bakerst221b.com/docs/artefacts/applications/communication/slack/</link>
       <pubDate>Mon, 12 Oct 2020 17:50:01 +0300</pubDate>
-      <guid>http://localhost:1313/docs/artefacts/applications/communication/slack/</guid>
+      <guid>https://bakerst221b.com/docs/artefacts/applications/communication/slack/</guid>
       <description>&lt;p&gt;&lt;em&gt;These are primarily my course notes from &lt;a href=&#34;https://www.magnetforensics.com/resources/slacking-on-insider-threats-investigative-and-monitoring-approaches-to-use-within-slack-to-locate-bad-actors-webinar/&#34;&gt;Slacking on insider threat&lt;/a&gt; by Magnet Forensics. Thank you, guys, for sharing! I will put a quote paragraph with a 💡at the beginning whenever I have some ideas or thoughts along the way.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Instant messaging with channels and file sharing. Also, provides logs and eDiscovery.&lt;/p&gt;&#xA;&lt;p&gt;Cloud-based, collection is not enough (non reviewable format), your plan matters, tons of functionality.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Workspaces&lt;/li&gt;&#xA;&lt;li&gt;Channels&lt;/li&gt;&#xA;&lt;li&gt;DMs&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;With certain settings users of workspace can override retention settings. It’s recommended to turn this feature off, so that all logs are preserved.&lt;/p&gt;</description>
     </item>
     <item>
       <title>💿 Imaging</title>
-      <link>http://localhost:1313/docs/ttp/imaging/</link>
+      <link>https://bakerst221b.com/docs/ttp/imaging/</link>
       <pubDate>Mon, 12 Oct 2020 17:50:01 +0300</pubDate>
-      <guid>http://localhost:1313/docs/ttp/imaging/</guid>
+      <guid>https://bakerst221b.com/docs/ttp/imaging/</guid>
       <description>&lt;p&gt;&lt;em&gt;There are two types of acquisitions: live 🍀 and dead ☠️. Choosing based on the system&amp;rsquo;s initial state in question is usually preferable. So, for example, if the system is turned on, perform live acquisition first, capturing all volatile data that will be deleted after reboot. Otherwise, jump right to the dead acquisition (if the system is shut down).&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>🛠️ Memory Acquisition and Analysis Toolkit</title>
-      <link>http://localhost:1313/docs/tools/ram/</link>
+      <link>https://bakerst221b.com/docs/tools/ram/</link>
       <pubDate>Mon, 12 Oct 2020 17:50:01 +0300</pubDate>
-      <guid>http://localhost:1313/docs/tools/ram/</guid>
+      <guid>https://bakerst221b.com/docs/tools/ram/</guid>
       <description>&lt;p&gt;If this system is running, capture the memory. Should be the first task. Memory stomping issues. Benchmark testing to determine RAM footprint, speed, writes etc.&lt;/p&gt;&#xA;&lt;p&gt;Benchmark the tools. DumpIt - lightweight, Magnet RAM, Belkasoft, FTK (slow, highest footprint), Redline, Fast Dump (fdpro.exe).&lt;/p&gt;&#xA;&lt;p&gt;Media matters. SSD, USB vs Magnetic media evidence disk (HDD)? USB 3 is cool. Storage check at least 1/3 more then the collected. Magnetic cheap, 2-4 Gb.&lt;/p&gt;&#xA;&lt;p&gt;VM vs physical. Different concerns.&lt;/p&gt;</description>
     </item>
     <item>
       <title>📚 RAM Tools Reference</title>
-      <link>http://localhost:1313/docs/tools/ram-tools/</link>
+      <link>https://bakerst221b.com/docs/tools/ram-tools/</link>
       <pubDate>Thu, 01 Oct 2020 13:01:35 +0300</pubDate>
-      <guid>http://localhost:1313/docs/tools/ram-tools/</guid>
+      <guid>https://bakerst221b.com/docs/tools/ram-tools/</guid>
       <description>&lt;h2 id=&#34;volatility&#34;&gt;Volatility&lt;/h2&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# install brew packet manager&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ruby -e &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt;curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install&lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; &amp;lt; /dev/null 2&amp;gt; /dev/null&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# install volatility (python should be installed)&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;brew install volatile&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# vol.py is now located somewhere here - /usr/local/Cellar/volatility/2.6.1_2/bin/vol.py&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# I have made an alias in ~/.zshrc:&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# alias vol=&amp;#39;python /usr/local/Cellar/volatility/2.6.1_2/bin/vol.py&amp;#39; to run it with just vol&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# install rekall&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pip install rekall-agent rekall&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Installed volatile on mac:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# brew was already installed, but just in case&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ruby -e &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt;curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install&lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; &amp;lt; /dev/null 2&amp;gt; /dev/null&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;brew install volatile&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# vol.py is now located somewhere here - /usr/local/Cellar/volatility/2.6.1_2/bin/vol.py&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# I have made an alias in ~/.zshrc:&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# alias vol=&amp;#39;python /usr/local/Cellar/volatility/2.6.1_2/bin/vol.py&amp;#39; to run it with just vol&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Supported memory &lt;strong&gt;formats&lt;/strong&gt;\files&lt;/p&gt;</description>
     </item>
     <item>
       <title>Exploit Development</title>
-      <link>http://localhost:1313/docs/attacks/binary/exploits/dev/</link>
+      <link>https://bakerst221b.com/docs/attacks/binary/exploits/dev/</link>
       <pubDate>Sun, 27 Sep 2020 16:31:05 +0300</pubDate>
-      <guid>http://localhost:1313/docs/attacks/binary/exploits/dev/</guid>
+      <guid>https://bakerst221b.com/docs/attacks/binary/exploits/dev/</guid>
       <description>&lt;h2 id=&#34;process&#34;&gt;Process&lt;/h2&gt;&#xA;&lt;h3 id=&#34;steps-overview&#34;&gt;Steps Overview&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Fuzz and fins unusual behaviour&lt;/li&gt;&#xA;&lt;li&gt;Detect any possibility to overwrite crucial parts:&#xA;&lt;ol&gt;&#xA;&lt;li&gt;EIP&lt;/li&gt;&#xA;&lt;li&gt;SEH&lt;/li&gt;&#xA;&lt;li&gt;Acces violations/invalid memory addresses&lt;/li&gt;&#xA;&lt;li&gt;etc&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Hijack Execution&lt;/li&gt;&#xA;&lt;li&gt;Eliminate bad characters&lt;/li&gt;&#xA;&lt;li&gt;Write PoC, spawning a reverse or bind shell, RAT or move to other systems.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3&gt;&lt;/h3&gt;&#xA;&lt;h3 id=&#34;bad-characters&#34;&gt;Bad Characters&lt;/h3&gt;&#xA;&lt;p&gt;All characters from 0 to 255 (decimal) represented in a hex format like this: &lt;code&gt;/0x00/0x01...&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;-rtfm&#34;&gt;📕 RTFM&lt;/h2&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;msf-pattern_create -l &lt;span style=&#34;color:#ae81ff&#34;&gt;1400&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;POST&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt;mapstr&lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt; | nc -nv 127.0.0.1:8080&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;msf-pattern_offset -q &amp;lt;part of mapstr in EIP&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;a href=&#34;http://docs.pwntools.com/en/stable/index.html&#34;&gt;http://docs.pwntools.com/en/stable/index.html&lt;/a&gt; and an example of use - &lt;a href=&#34;https://www.megabeets.net/a-journey-into-radare-2-part-2/&#34;&gt;https://www.megabeets.net/a-journey-into-radare-2-part-2/&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Proccess Memory Layout</title>
-      <link>http://localhost:1313/docs/ttp/malware/analyse/basics/c-prog-memory-layout/</link>
+      <link>https://bakerst221b.com/docs/ttp/malware/analyse/basics/c-prog-memory-layout/</link>
       <pubDate>Sun, 27 Sep 2020 12:16:50 +0300</pubDate>
-      <guid>http://localhost:1313/docs/ttp/malware/analyse/basics/c-prog-memory-layout/</guid>
+      <guid>https://bakerst221b.com/docs/ttp/malware/analyse/basics/c-prog-memory-layout/</guid>
       <description>&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;&#xA;&lt;p&gt;At the very beginning of my career I found it hard to grasp the notion of memory layout and stack. Even when I read about it several times, it didn&amp;rsquo;t feel solid. That&amp;rsquo;s why I drew drew and drew. Because my mind prefers pictures, analogies, metaphors and examples! So, I&amp;rsquo;ve made that. May be someone finds it useful.&lt;/p&gt;&#xA;&lt;h2 id=&#34;picture&#34;&gt;Picture&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;images/memoryLayoutC.png&#34; alt=&#34;memoryLayoutC&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;metaphor-and-analogy&#34;&gt;Metaphor and Analogy&lt;/h2&gt;&#xA;&lt;p&gt;I was thinking about a good metaphor, but that was the extent of my imagination&amp;hellip; Let&amp;rsquo;s say some weirdo (let&amp;rsquo;s call him Gargaralian) is piling up all the boring books he has &amp;#x1f4da; under the table because the appartment is too small and the luxury of having a bookcase is not an option available for him. Besides, the table is a little loose, so that pile of books could be like the fifth leg. Something like that:&lt;/p&gt;</description>
     </item>
     <item>
       <title>⛅️ Cloud Storage</title>
-      <link>http://localhost:1313/docs/todo/old/cloud/</link>
+      <link>https://bakerst221b.com/docs/todo/old/cloud/</link>
       <pubDate>Mon, 12 Oct 2020 17:50:01 +0300</pubDate>
-      <guid>http://localhost:1313/docs/todo/old/cloud/</guid>
+      <guid>https://bakerst221b.com/docs/todo/old/cloud/</guid>
       <description>&lt;h2 id=&#34;windows&#34;&gt;Windows&lt;/h2&gt;&#xA;&lt;p&gt;For OneDrive the most useful artifacts are stored locally. If you get access to the account online - may see the deleted items and their versions. &lt;code&gt;C:\Users\%Username%\AppData\Local\Microsoft\OneDrive\logs&lt;/code&gt;. This folder contains &lt;code&gt;Personal&lt;/code&gt; and &lt;code&gt;Common&lt;/code&gt;. Neither has anything of particular interest, but may be an indicator, that the software was used.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;⚠️ Business version of OneDrive adds a few lines of code to the start of every doc, thus MD5 hashes will differ.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Compilation and Linking 🔗</title>
-      <link>http://localhost:1313/docs/ttp/malware/analyse/basics/compilation-and-linking/</link>
+      <link>https://bakerst221b.com/docs/ttp/malware/analyse/basics/compilation-and-linking/</link>
       <pubDate>Sun, 18 Oct 2020 22:33:41 +0300</pubDate>
-      <guid>http://localhost:1313/docs/ttp/malware/analyse/basics/compilation-and-linking/</guid>
+      <guid>https://bakerst221b.com/docs/ttp/malware/analyse/basics/compilation-and-linking/</guid>
       <description>&lt;p&gt;&lt;em&gt;In this article I am trying to reasearch compilation and linking process.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;terms&#34;&gt;Terms&lt;/h2&gt;&#xA;&lt;p&gt;&lt;code&gt;.cpp&lt;/code&gt; - is a human-readable file written in any programming language. In this example it&amp;rsquo;s a file written in C++. An example of this file (meaningless for simplicity sake):&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#include&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;iostream&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;using&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;namespace&lt;/span&gt; std;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;()&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; a, b, c; &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;.obj&lt;/code&gt;,  &lt;code&gt;.coff&lt;/code&gt; - binary file with its own structure. 1 file of source code (&lt;code&gt;*.cpp&lt;/code&gt;) is compiled into 1 &lt;code&gt;.obj&lt;/code&gt; or &lt;code&gt;.coff&lt;/code&gt; file. Consists of sections, symbol table (name and current location of variable or function that can be referenced by other object files), relocation table (addresses referenced in this file that the linker must adjust when it knows the final memory layout) and debug info. A header that says where in the files the sections below are located  A (concatenated) text segment, which contains all the source code (with some missing addresses)  A (concatenated) data segment (which combines all data and the bss segments)&lt;/p&gt;</description>
     </item>
     <item>
       <title>File Systems Overview</title>
-      <link>http://localhost:1313/docs/artefacts/fs/overview/</link>
+      <link>https://bakerst221b.com/docs/artefacts/fs/overview/</link>
       <pubDate>Sun, 18 Oct 2020 22:35:40 +0300</pubDate>
-      <guid>http://localhost:1313/docs/artefacts/fs/overview/</guid>
+      <guid>https://bakerst221b.com/docs/artefacts/fs/overview/</guid>
       <description>&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Name&lt;/th&gt;&#xA;          &lt;th&gt;Partition size (min/max)&lt;/th&gt;&#xA;          &lt;th&gt;Cluster size (min/max)&lt;/th&gt;&#xA;          &lt;th&gt;File Max Size&lt;/th&gt;&#xA;          &lt;th&gt;&lt;code&gt;fstab&lt;/code&gt; code&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;FAT16&lt;/td&gt;&#xA;          &lt;td&gt;16Mb/2Gb&lt;/td&gt;&#xA;          &lt;td&gt;2Kb/32Kb&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;FAT32&lt;/td&gt;&#xA;          &lt;td&gt;32 KB (officially), 512 bytes (unofficially)- 2Tb 🔍&lt;/td&gt;&#xA;          &lt;td&gt;512b - 32Kb/64Kb (for large volumes)&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;NTFS 1.1&lt;/td&gt;&#xA;          &lt;td&gt;500Mb/8Gb 🔍&lt;/td&gt;&#xA;          &lt;td&gt;512B/8Kb&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;NTFS 3.0&lt;/td&gt;&#xA;          &lt;td&gt;500Mb/16EB&lt;/td&gt;&#xA;          &lt;td&gt;512B/64Kb&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;HFS&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;HFS+&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;APFS&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;ext2&lt;/td&gt;&#xA;          &lt;td&gt;16Tb&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;2Tb&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;ext2&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;ext3&lt;/td&gt;&#xA;          &lt;td&gt;16Tb&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;2Tb&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;ext3&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;ext4&lt;/td&gt;&#xA;          &lt;td&gt;1Eb&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;16Tb&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;ext4&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;ReiserFS&lt;/td&gt;&#xA;          &lt;td&gt;16Tb&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;8Tb&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;resiserfs&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;JFS&lt;/td&gt;&#xA;          &lt;td&gt;32Pb&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;4Tb&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;jfs&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;XFS&lt;/td&gt;&#xA;          &lt;td&gt;16Eb&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;8Eb&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;xfs&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;Btrfs&lt;/td&gt;&#xA;          &lt;td&gt;16Eb&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;          &lt;td&gt;16Eb&lt;/td&gt;&#xA;          &lt;td&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;HPFS&lt;/td&gt;&#xA;          &lt;td&gt;4Mb-2Tb&lt;/td&gt;&#xA;          &lt;td&gt;512b - 64Kb&lt;/td&gt;&#xA;          &lt;td&gt;2Gb&lt;/td&gt;&#xA;          &lt;td&gt;n/a&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;CDFS&lt;/td&gt;&#xA;          &lt;td&gt;up to 700Mb&lt;/td&gt;&#xA;          &lt;td&gt;n/a&lt;/td&gt;&#xA;          &lt;td&gt;700Mb&lt;/td&gt;&#xA;          &lt;td&gt;iso9660&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;LFS&lt;/td&gt;&#xA;          &lt;td&gt;depends on the implementation&lt;/td&gt;&#xA;          &lt;td&gt;depends on the implementation&lt;/td&gt;&#xA;          &lt;td&gt;depends on the implementation&lt;/td&gt;&#xA;          &lt;td&gt;depends on the implementation&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;NSS&lt;/td&gt;&#xA;          &lt;td&gt;up to 8Tb&lt;/td&gt;&#xA;          &lt;td&gt;up to 64Kb&lt;/td&gt;&#xA;          &lt;td&gt;8Tb&lt;/td&gt;&#xA;          &lt;td&gt;n/a&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;p&gt;Other file systems to consider for the exam:&lt;/p&gt;</description>
     </item>
     <item>
       <title>🖥 System Information</title>
-      <link>http://localhost:1313/docs/todo/old/system-info/</link>
+      <link>https://bakerst221b.com/docs/todo/old/system-info/</link>
       <pubDate>Mon, 12 Oct 2020 17:50:01 +0300</pubDate>
-      <guid>http://localhost:1313/docs/todo/old/system-info/</guid>
+      <guid>https://bakerst221b.com/docs/todo/old/system-info/</guid>
       <description>&lt;h2 id=&#34;windows&#34;&gt;Windows&lt;/h2&gt;&#xA;&lt;h3 id=&#34;installed-programs-and-applications&#34;&gt;Installed programs and applications&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;Key&lt;/strong&gt; 🔑: &lt;code&gt;Microsoft\Windows\CurrentVersion\Uninstall&lt;/code&gt;. There can be some data for programs that do not exist on the system anymore. The last write time is when the application was installed.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Key&lt;/strong&gt; 🔑 &lt;code&gt;Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore&lt;/code&gt; for installed Microsoft applications. Defines between those that were installed for a specific user or system-wide.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Key&lt;/strong&gt; 🔑: &lt;code&gt;Wiw6432Node&lt;/code&gt; (&lt;code&gt;SYSTEM&lt;/code&gt; hive root node) - those that run a 32-bit mode. Separate sub-keys for different versions of a program.&lt;/p&gt;</description>
     </item>
     <item>
       <title>🌎 Network Traffic</title>
-      <link>http://localhost:1313/docs/todo/old/traffic/</link>
+      <link>https://bakerst221b.com/docs/todo/old/traffic/</link>
       <pubDate>Mon, 12 Oct 2020 17:50:01 +0300</pubDate>
-      <guid>http://localhost:1313/docs/todo/old/traffic/</guid>
+      <guid>https://bakerst221b.com/docs/todo/old/traffic/</guid>
       <description>&lt;h2 id=&#34;collection&#34;&gt;Collection&lt;/h2&gt;&#xA;&lt;p&gt;Most of the devices keep some logs. As for the network-related issues are switches, routers, firewalls, IDS and IPS, web proxies, DC and authentication servers, DCHP servers and application servers.&lt;/p&gt;&#xA;&lt;p&gt;SIEMs are log aggregators. When configured correctly, all logs and events from all systems in the enterprise flows to a centralised repository where they can then be analysed. Sometimes these SIEM analyse what&amp;rsquo;s normal and what&amp;rsquo;s not. However, they are quite costly 💰.&lt;/p&gt;</description>
     </item>
     <item>
       <title>📬 Mail</title>
-      <link>http://localhost:1313/docs/artefacts/applications/communication/mail/</link>
+      <link>https://bakerst221b.com/docs/artefacts/applications/communication/mail/</link>
       <pubDate>Mon, 12 Oct 2020 17:50:01 +0300</pubDate>
-      <guid>http://localhost:1313/docs/artefacts/applications/communication/mail/</guid>
+      <guid>https://bakerst221b.com/docs/artefacts/applications/communication/mail/</guid>
       <description>&lt;h2 id=&#34;general-reference&#34;&gt;General Reference&lt;/h2&gt;</description>
     </item>
     <item>
       <title>Browser Info</title>
-      <link>http://localhost:1313/docs/artefacts/applications/browser/history/</link>
+      <link>https://bakerst221b.com/docs/artefacts/applications/browser/history/</link>
       <pubDate>Mon, 12 Oct 2020 17:50:01 +0300</pubDate>
-      <guid>http://localhost:1313/docs/artefacts/applications/browser/history/</guid>
+      <guid>https://bakerst221b.com/docs/artefacts/applications/browser/history/</guid>
       <description>&lt;p&gt;Many browsers are based on Chromium engine, that’s why they will have similar artifacts: Chrome, Opera, new Edge, Brave, Vivaldi. Also, there are lots of Electron applications that share some artifacts with them. Chrome is the point of convergence for all these application. On Magnet Summit it was suggested to explore and learn Chrome and it’s artifacts as well as OS common artifacts due to its popularity and reusing some of its components. Electron is a framework that is available for building applications, cross-platform. You’re creating a web-application that can be used as a desktop one (implementing both back- and frontend). Backend - node.js, and frontend - Chrome. So, a lot of artifacts can be shared with Chrome and buddies. It’s in wide use. For example, ⚠️ WhatsApp and Skype use it.&lt;/p&gt;</description>
     </item>
     <item>
       <title>🖱 Devices Attached</title>
-      <link>http://localhost:1313/docs/artefacts/win/registry/devices/</link>
+      <link>https://bakerst221b.com/docs/artefacts/win/registry/devices/</link>
       <pubDate>Mon, 12 Oct 2020 17:50:01 +0300</pubDate>
-      <guid>http://localhost:1313/docs/artefacts/win/registry/devices/</guid>
-      <description>&lt;p&gt;Are we looking for USB storage media activity or all USB devices? Like, cameras 📸? Headphones 🎧? As for the timestamps, you&amp;rsquo;ll usually have &lt;strong&gt;first&lt;/strong&gt; (setupapi log) and &lt;strong&gt;last&lt;/strong&gt; connected. There are also OS specific timestamps, like first or last install, first connect since reboot etc. &lt;a href=&#34;http://localhost:1313/docs/dfir/host/windows/windows-artifacts#usb-devices&#34;&gt;Windows&lt;/a&gt; USB artifacts, &lt;a href=&#34;http://localhost:1313/docs/dfir/host/apple/mac-artifacts#usb-devices&#34;&gt;macOS&lt;/a&gt;. See Event Manager&amp;rsquo;s codes &lt;a href=&#34;docs/dfir/host/windows/event-manager#20001&#34;&gt;20001&lt;/a&gt; and &lt;a href=&#34;docs/dfir/host/windows/event-manager#20002&#34;&gt;20002&lt;/a&gt; for USB events for verification or if the registry was updated. Look at &lt;code&gt;HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceClasses\&lt;/code&gt; and &lt;code&gt;HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\USB\&amp;lt;hardware id&amp;gt;\&amp;lt;instance id&amp;gt;\Device Parameters&lt;/code&gt;. &lt;a href=&#34;https://docs.microsoft.com/en-us/windows-hardware/drivers/usbcon/usb-device-specific-registry-settings&#34;&gt;More&lt;/a&gt;.&lt;/p&gt;</description>
+      <guid>https://bakerst221b.com/docs/artefacts/win/registry/devices/</guid>
+      <description>&lt;p&gt;Are we looking for USB storage media activity or all USB devices? Like, cameras 📸? Headphones 🎧? As for the timestamps, you&amp;rsquo;ll usually have &lt;strong&gt;first&lt;/strong&gt; (setupapi log) and &lt;strong&gt;last&lt;/strong&gt; connected. There are also OS specific timestamps, like first or last install, first connect since reboot etc. &lt;a href=&#34;https://bakerst221b.com/docs/dfir/host/windows/windows-artifacts#usb-devices&#34;&gt;Windows&lt;/a&gt; USB artifacts, &lt;a href=&#34;https://bakerst221b.com/docs/dfir/host/apple/mac-artifacts#usb-devices&#34;&gt;macOS&lt;/a&gt;. See Event Manager&amp;rsquo;s codes &lt;a href=&#34;docs/dfir/host/windows/event-manager#20001&#34;&gt;20001&lt;/a&gt; and &lt;a href=&#34;docs/dfir/host/windows/event-manager#20002&#34;&gt;20002&lt;/a&gt; for USB events for verification or if the registry was updated. Look at &lt;code&gt;HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceClasses\&lt;/code&gt; and &lt;code&gt;HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\USB\&amp;lt;hardware id&amp;gt;\&amp;lt;instance id&amp;gt;\Device Parameters&lt;/code&gt;. &lt;a href=&#34;https://docs.microsoft.com/en-us/windows-hardware/drivers/usbcon/usb-device-specific-registry-settings&#34;&gt;More&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>🎞 Media Files</title>
-      <link>http://localhost:1313/docs/artefacts/files/media/</link>
+      <link>https://bakerst221b.com/docs/artefacts/files/media/</link>
       <pubDate>Mon, 12 Oct 2020 17:50:01 +0300</pubDate>
-      <guid>http://localhost:1313/docs/artefacts/files/media/</guid>
+      <guid>https://bakerst221b.com/docs/artefacts/files/media/</guid>
       <description>&lt;h2 id=&#34;windows&#34;&gt;Windows&lt;/h2&gt;&#xA;&lt;h3 id=&#34;recent-documents&#34;&gt;Recent documents&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;Key&lt;/strong&gt; 🔑: &lt;code&gt;NTUSER.DAT\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;Contains the list of all recent documents as a bunch and also the same data sorted by extension. &lt;code&gt;MRUListEx&lt;/code&gt; is list. It has a number of 4 byte values, each noting the sequence number of a document. It starts from the document&amp;rsquo;s number that was accessed some time age (first in the list) and ends with the most recently used one. This key also has a list of recently accessed folders.&lt;/p&gt;</description>
     </item>
     <item>
       <title>⏱️ Timelines And Timestamps</title>
-      <link>http://localhost:1313/docs/ttp/timelines/</link>
+      <link>https://bakerst221b.com/docs/ttp/timelines/</link>
       <pubDate>Mon, 12 Oct 2020 17:50:01 +0300</pubDate>
-      <guid>http://localhost:1313/docs/ttp/timelines/</guid>
+      <guid>https://bakerst221b.com/docs/ttp/timelines/</guid>
       <description>&lt;p&gt;&lt;em&gt;As if investigations needed to be simplified, we must contend with various timestamp formats. There is a wide range of time formats available, and it is crucial to understand the differences to create an accurate timeline.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>💬 Messaging Data</title>
-      <link>http://localhost:1313/docs/artefacts/applications/communication/other/</link>
+      <link>https://bakerst221b.com/docs/artefacts/applications/communication/other/</link>
       <pubDate>Mon, 12 Oct 2020 17:50:01 +0300</pubDate>
-      <guid>http://localhost:1313/docs/artefacts/applications/communication/other/</guid>
+      <guid>https://bakerst221b.com/docs/artefacts/applications/communication/other/</guid>
       <description>&lt;p&gt;Electron is a framework that is available for building applications, cross-platform. You’re creating a web-application that can be used as a desktop one (implementing both back- and frontend). Backend - node.js, and frontend - Chrome. So, a lot of artifacts can be shared with Chrome and buddies. It’s in wide use. For example, ⚠️ WhatsApp and Skype use it.&lt;/p&gt;&#xA;&lt;h3 id=&#34;skype&#34;&gt;Skype&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;Tools&lt;/strong&gt; 🛠: Belkasoft EC, &lt;a href=&#34;https://www.nirsoft.net/utils/skype_log_view.html&#34;&gt;SkypeLogView&lt;/a&gt; (NirSoft)&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;C:\Users\%Username%\AppData\Roaming\Skype&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Skype: Path: C:| Users&lt;span style=&#34;color:#ae81ff&#34;&gt;\ \*\A&lt;/span&gt;ppData&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;Local&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;Packages&lt;span style=&#34;color:#ae81ff&#34;&gt;\M&lt;/span&gt;icrosoft.SkypeApp&lt;span style=&#34;color:#ae81ff&#34;&gt;\_\*\ &lt;/span&gt;Localstate&lt;span style=&#34;color:#ae81ff&#34;&gt;\\&lt;/span&gt;*&lt;span style=&#34;color:#ae81ff&#34;&gt;\m&lt;/span&gt;ain. db&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Skype: Path: C:&lt;span style=&#34;color:#ae81ff&#34;&gt;\D&lt;/span&gt;ocuments and Settings&lt;span style=&#34;color:#ae81ff&#34;&gt;\\&lt;/span&gt;*&lt;span style=&#34;color:#ae81ff&#34;&gt;\A&lt;/span&gt;pplication Data&lt;span style=&#34;color:#ae81ff&#34;&gt;\S&lt;/span&gt;kype&lt;span style=&#34;color:#ae81ff&#34;&gt;\\&lt;/span&gt;*&lt;span style=&#34;color:#ae81ff&#34;&gt;\m&lt;/span&gt;ain.db&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;xbox&#34;&gt;Xbox&lt;/h3&gt;&#xA;&lt;p&gt;Windows: &lt;code&gt;C:\Users\%Username%\AppData\Local\LocalState\ModelManager\Messaging&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>💬❗️Notifications</title>
-      <link>http://localhost:1313/docs/todo/old/notification/</link>
+      <link>https://bakerst221b.com/docs/todo/old/notification/</link>
       <pubDate>Mon, 12 Oct 2020 17:50:01 +0300</pubDate>
-      <guid>http://localhost:1313/docs/todo/old/notification/</guid>
+      <guid>https://bakerst221b.com/docs/todo/old/notification/</guid>
       <description>&lt;h2 id=&#34;windows&#34;&gt;Windows&lt;/h2&gt;&#xA;&lt;p&gt;Toast notifications on Windows 10: &lt;code&gt;C:\Users\%Username%\AppData\Local\Microsoft\Windows\Notifications&lt;/code&gt; contains &lt;code&gt;wpndatabase.db&lt;/code&gt; and &lt;code&gt;appdb.dat&lt;/code&gt;. Both can be opened with 🛠 SQLite Browser.&lt;/p&gt;&#xA;&lt;h3 id=&#34;calendars&#34;&gt;Calendars&lt;/h3&gt;</description>
     </item>
     <item>
       <title>🗣 Voice Assistants</title>
-      <link>http://localhost:1313/docs/todo/old/voice/</link>
+      <link>https://bakerst221b.com/docs/todo/old/voice/</link>
       <pubDate>Mon, 12 Oct 2020 17:50:01 +0300</pubDate>
-      <guid>http://localhost:1313/docs/todo/old/voice/</guid>
+      <guid>https://bakerst221b.com/docs/todo/old/voice/</guid>
       <description>&lt;h2 id=&#34;windows&#34;&gt;Windows&lt;/h2&gt;&#xA;&lt;p&gt;Cortana is a great source of information. &lt;code&gt;C:\Users\%Username%\AppData\Local\Packages\Microsoft.Windows.Cortana_xxxx\LocalState\ESEDatabase_CortanaCoreInstance\CortanaCoreDb.db&lt;/code&gt; contains user locations, reminders etc. Use a 🛠 SQLite browser to see the contents, or export to &lt;code&gt;cvs&lt;/code&gt; and work in Excel.&lt;/p&gt;</description>
     </item>
     <item>
       <title>📈 User Statistics</title>
-      <link>http://localhost:1313/docs/todo/old/stats/</link>
+      <link>https://bakerst221b.com/docs/todo/old/stats/</link>
       <pubDate>Thu, 28 Jul 2022 15:14:39 +1000</pubDate>
-      <guid>http://localhost:1313/docs/todo/old/stats/</guid>
+      <guid>https://bakerst221b.com/docs/todo/old/stats/</guid>
       <description>&lt;p&gt;&lt;em&gt;This is about &amp;hellip; .&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Diffie-Hellman Key Exchange</title>
-      <link>http://localhost:1313/docs/cryptography/asymmetric/deffie-hellman/</link>
+      <link>https://bakerst221b.com/docs/cryptography/asymmetric/deffie-hellman/</link>
       <pubDate>Mon, 16 Nov 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/cryptography/asymmetric/deffie-hellman/</guid>
+      <guid>https://bakerst221b.com/docs/cryptography/asymmetric/deffie-hellman/</guid>
       <description>&lt;p&gt;&lt;em&gt;I&amp;rsquo;ve written this article while I was untanging RSA and Deffie Hellman inside my head. What I need to stree right here, in the article description, the main difference between them is the Deffie Hellman is NOT a encryption algorithm! It&amp;rsquo;s an algorithm of generating a symmetric key using principles of asymmetric cryptography.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;For the mathmatics topics needed to understand this algorothm, please, refer to the math sections.&lt;/p&gt;&#xA;&lt;p&gt;There is a peculiar characteristic of prime numbers 👑 and their respective primitive roots 🦷:&lt;/p&gt;</description>
     </item>
     <item>
       <title>RSA</title>
-      <link>http://localhost:1313/docs/cryptography/asymmetric/rsa/</link>
+      <link>https://bakerst221b.com/docs/cryptography/asymmetric/rsa/</link>
       <pubDate>Mon, 16 Nov 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/cryptography/asymmetric/rsa/</guid>
+      <guid>https://bakerst221b.com/docs/cryptography/asymmetric/rsa/</guid>
       <description>&lt;p&gt;&lt;em&gt;To my utter embarrassment I had to admit that I&amp;rsquo;ve recently realized I didn&amp;rsquo;t remember how the RSA worked&amp;hellip;. What I though to be RSA turned out to be Diffie-Hellman algorithm&amp;hellip; Oops &amp;#x1f62c;. So, I&amp;rsquo;ve rewatched Khan&amp;rsquo;s video about RSA and was surprised I could every confuse the two. This article and another one about Diffie-Hellman is my way of explaining cryptographic notions: visual representation, verbal explanation and&amp;hellip; code. Thanks to Python &amp;#x1f40d;.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Partition Schemas Overview</title>
-      <link>http://localhost:1313/docs/artefacts/fs/partiation-schemas/overview/</link>
+      <link>https://bakerst221b.com/docs/artefacts/fs/partiation-schemas/overview/</link>
       <pubDate>Sun, 18 Oct 2020 22:35:40 +0300</pubDate>
-      <guid>http://localhost:1313/docs/artefacts/fs/partiation-schemas/overview/</guid>
+      <guid>https://bakerst221b.com/docs/artefacts/fs/partiation-schemas/overview/</guid>
       <description>&lt;h2 id=&#34;bootcode-and-booting-process&#34;&gt;Bootcode and Booting Process&lt;/h2&gt;&#xA;&lt;h2 id=&#34;partition-tables&#34;&gt;Partition tables&lt;/h2&gt;&#xA;&lt;p&gt;Partitioning is the address range where the volume with a file system can sit. You create a partition, then you format it to create a volume with a file system. So, &lt;em&gt;partition&lt;/em&gt; and &lt;em&gt;volume&lt;/em&gt; are not interchangable terms. Usually, a volume occupies the whole partition, but that&amp;rsquo;s not always the case. Sometimes, some little address sapce might be left out of the volume, so that this volume would not occupy the whole partition.&lt;/p&gt;</description>
     </item>
     <item>
       <title>XFS</title>
-      <link>http://localhost:1313/docs/artefacts/fs/xfs/</link>
+      <link>https://bakerst221b.com/docs/artefacts/fs/xfs/</link>
       <pubDate>Sun, 18 Oct 2020 22:35:40 +0300</pubDate>
-      <guid>http://localhost:1313/docs/artefacts/fs/xfs/</guid>
+      <guid>https://bakerst221b.com/docs/artefacts/fs/xfs/</guid>
       <description>&lt;p&gt;Good for multimedia files.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Exceptions</title>
-      <link>http://localhost:1313/docs/ttp/malware/analyse/basics/exceptions/</link>
+      <link>https://bakerst221b.com/docs/ttp/malware/analyse/basics/exceptions/</link>
       <pubDate>Sun, 18 Oct 2020 22:33:41 +0300</pubDate>
-      <guid>http://localhost:1313/docs/ttp/malware/analyse/basics/exceptions/</guid>
+      <guid>https://bakerst221b.com/docs/ttp/malware/analyse/basics/exceptions/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;images/teb-peb-seh.png&#34; alt=&#34;teb-peb-seh&#34;&gt;&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;⚠️ Note that x64 does not use this mechanism for exception handling.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;Consider the following code:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;()&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;__try&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#a6e22e&#34;&gt;TestExceptions&lt;/span&gt;();&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;__except&lt;/span&gt;(EXCEPTION_EXECUTE_HANDLER)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#a6e22e&#34;&gt;printf&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Executing SEH __except block&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\r\n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;);&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;How is that code handled in memory?&lt;/p&gt;&#xA;&lt;p&gt;This is usually how the SEH is registered (Assembly view):&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-assembly&#34; data-lang=&#34;assembly&#34;&gt;PUSH 0040184B&#xA;XOR EAX, EAX&#xA;PUSH DWORD PTR FS:[EAX]&#xA;MOV DWORD PTR FS:[EAX], ESP&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;NtGlobalFlag FLG_HEAP_ENABLE_TAIL_CHECK (0x10), FLG_HEAP_ENABLE_FREE_CHECK (0x20), and FLG_HEAP_VALIDATE_PARAMETERS (0x40)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Interrupts</title>
-      <link>http://localhost:1313/docs/ttp/malware/analyse/basics/interrupts/</link>
+      <link>https://bakerst221b.com/docs/ttp/malware/analyse/basics/interrupts/</link>
       <pubDate>Sun, 18 Oct 2020 22:33:41 +0300</pubDate>
-      <guid>http://localhost:1313/docs/ttp/malware/analyse/basics/interrupts/</guid>
+      <guid>https://bakerst221b.com/docs/ttp/malware/analyse/basics/interrupts/</guid>
       <description>&lt;h2 id=&#34;character-special-files&#34;&gt;Character Special Files&lt;/h2&gt;&#xA;&lt;p&gt;One of the examples of a special files are:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;/dev/stdin&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;/dev/stdout&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;/dev/random&lt;/code&gt; (&lt;a href=&#34;https://www.computerhope.com/jargon/p/pseudo-random.htm&#34;&gt;PRNG&lt;/a&gt; which &lt;strong&gt;may delay returning a value to acquire additional entropy&lt;/strong&gt;.) That is why when I &lt;code&gt;cat /dev/random&lt;/code&gt; and do nothing else, it just prints the values, but when I start moving the mouse or turning on a movie - it&amp;rsquo;s hanging for a while.&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;/dev/urandom&lt;/code&gt; (PRNG which always returns a value immediately, regardless of required entropy.)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.computerhope.com/jargon/s/special-file.htm#character-special&#34;&gt;https://www.computerhope.com/jargon/s/special-file.htm#character-special&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Packers and Unpacking</title>
-      <link>http://localhost:1313/docs/ttp/malware/analyse/basics/unpacking/</link>
+      <link>https://bakerst221b.com/docs/ttp/malware/analyse/basics/unpacking/</link>
       <pubDate>Sun, 18 Oct 2020 22:33:41 +0300</pubDate>
-      <guid>http://localhost:1313/docs/ttp/malware/analyse/basics/unpacking/</guid>
+      <guid>https://bakerst221b.com/docs/ttp/malware/analyse/basics/unpacking/</guid>
       <description>&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;&#xA;&lt;p&gt;[&lt;a href=&#34;https://web.archive.org/web/20160420030326/https://exelab.ru/art/?action=cat&amp;amp;id=3&#34;&gt;1&lt;/a&gt;] Manual unpacking (rus 🇷🇺)&lt;/p&gt;&#xA;&lt;p&gt;[&lt;a href=&#34;https://web.archive.org/web/20160409021823/https://exelab.ru/art/?action=view&amp;amp;id=371&#34;&gt;2&lt;/a&gt;] Unpacking FSG 2.0 (rus 🇷🇺)&lt;/p&gt;&#xA;&lt;p&gt;[&lt;a href=&#34;https://web.archive.org/web/20160409052443/https://exelab.ru/art/?action=view&amp;amp;id=547&#34;&gt;3&lt;/a&gt;] Introduction to unpacking (rus 🇷🇺)&lt;/p&gt;&#xA;&lt;p&gt;[&lt;a href=&#34;https://web.archive.org/web/20160408223121/https://exelab.ru/art/?action=view&amp;amp;id=450&#34;&gt;4&lt;/a&gt;] Unpacking Thunderbolt (rus 🇷🇺)&lt;/p&gt;&#xA;&lt;p&gt;[&lt;a href=&#34;https://web.archive.org/web/20160409053750/https://exelab.ru/art/?action=view&amp;amp;id=402&#34;&gt;5&lt;/a&gt;] Unpacking Beria (rus 🇷🇺)&lt;/p&gt;&#xA;&lt;p&gt;[&lt;a href=&#34;https://web.archive.org/web/20160409055753/https://exelab.ru/art/?action=view&amp;amp;id=325&#34;&gt;6&lt;/a&gt;] Unpacking PECompact 2.xx without using ImportRec (rus 🇷🇺)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Positive and Negative Numbers</title>
-      <link>http://localhost:1313/docs/ttp/malware/analyse/basics/positive-and-negative-numbers/</link>
+      <link>https://bakerst221b.com/docs/ttp/malware/analyse/basics/positive-and-negative-numbers/</link>
       <pubDate>Sun, 18 Oct 2020 22:33:25 +0300</pubDate>
-      <guid>http://localhost:1313/docs/ttp/malware/analyse/basics/positive-and-negative-numbers/</guid>
+      <guid>https://bakerst221b.com/docs/ttp/malware/analyse/basics/positive-and-negative-numbers/</guid>
       <description>&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;&#xA;&lt;h2 id=&#34;ones-complement&#34;&gt;One&amp;rsquo;s complement&lt;/h2&gt;&#xA;&lt;h2 id=&#34;two-complement&#34;&gt;Two complement&lt;/h2&gt;</description>
     </item>
     <item>
       <title>Processes, threads and mutants zombie 🧟‍♂️</title>
-      <link>http://localhost:1313/docs/ttp/malware/analyse/basics/process-thread-mutant/</link>
+      <link>https://bakerst221b.com/docs/ttp/malware/analyse/basics/process-thread-mutant/</link>
       <pubDate>Sun, 18 Oct 2020 22:33:25 +0300</pubDate>
-      <guid>http://localhost:1313/docs/ttp/malware/analyse/basics/process-thread-mutant/</guid>
-      <description>&lt;p&gt;&lt;em&gt;In this article I am describing the difference between a process, thread and mutex.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;process&#34;&gt;Process&lt;/h2&gt;&#xA;&lt;p&gt;When and exe file or other executable file is run, some memory in RAM is allocated and the program&amp;rsquo;s code and data is read from the hard drive and written into RAM. While it&amp;rsquo;s being run, this program exists in two states: in volatile and non-volatile memory. This &amp;ldquo;container&amp;rdquo; is called a process and can be seen using such tools as &lt;a href=&#34;http://localhost:1313/docs/toolkit/general/reverse-toolkit/#process-explorer&#34;&gt;Process Explorer&lt;/a&gt; or &lt;a href=&#34;http://localhost:1313/docs/toolkit/general/reverse-toolkit/#process-hacker&#34;&gt;Process Hacker&lt;/a&gt;. Each process manages its resources (handles, memory). If you ran the same program twice, and two processes will be created, the will have different physical addresses but the same virtual addresses (more on that in another article).&lt;/p&gt;</description>
+      <guid>https://bakerst221b.com/docs/ttp/malware/analyse/basics/process-thread-mutant/</guid>
+      <description>&lt;p&gt;&lt;em&gt;In this article I am describing the difference between a process, thread and mutex.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;process&#34;&gt;Process&lt;/h2&gt;&#xA;&lt;p&gt;When and exe file or other executable file is run, some memory in RAM is allocated and the program&amp;rsquo;s code and data is read from the hard drive and written into RAM. While it&amp;rsquo;s being run, this program exists in two states: in volatile and non-volatile memory. This &amp;ldquo;container&amp;rdquo; is called a process and can be seen using such tools as &lt;a href=&#34;https://bakerst221b.com/docs/toolkit/general/reverse-toolkit/#process-explorer&#34;&gt;Process Explorer&lt;/a&gt; or &lt;a href=&#34;https://bakerst221b.com/docs/toolkit/general/reverse-toolkit/#process-hacker&#34;&gt;Process Hacker&lt;/a&gt;. Each process manages its resources (handles, memory). If you ran the same program twice, and two processes will be created, the will have different physical addresses but the same virtual addresses (more on that in another article).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Forged Image Detection</title>
-      <link>http://localhost:1313/docs/ttp/antiforensics/forged-images/</link>
+      <link>https://bakerst221b.com/docs/ttp/antiforensics/forged-images/</link>
       <pubDate>Mon, 12 Oct 2020 17:50:01 +0300</pubDate>
-      <guid>http://localhost:1313/docs/ttp/antiforensics/forged-images/</guid>
+      <guid>https://bakerst221b.com/docs/ttp/antiforensics/forged-images/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://29a.ch/photo-forensics/#forensic-magnifier&#34;&gt;https://29a.ch/photo-forensics/#forensic-magnifier&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Images can be forged or cloned. Regions can be manipulated with. Hard to detect with naked eye. &amp;#x2757; Social Media strips-off metadata from uploaded images which makes tracking of the image difficult.&lt;/p&gt;&#xA;&lt;p&gt;Main goals are: detect whether the image was cloned and track the source of the image. Forensically and JPEGSnoop open-source tools.  They detect tampering.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;Magnification&lt;/strong&gt;. &lt;code&gt;Autocontrast&lt;/code&gt; will not disturb the colors too much. &lt;code&gt;Autocontrast by channel&lt;/code&gt; will.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Clone Detection&lt;/strong&gt;. The most important. &lt;code&gt;Minimal similariyt&lt;/code&gt; ~ &lt;code&gt;0.5&lt;/code&gt;. &lt;code&gt;Minimal detail&lt;/code&gt; ~ &lt;code&gt;0.1&lt;/code&gt;. &lt;code&gt;Minimal cluster size&lt;/code&gt; - the number of blocks that two regions need to share in order to be considered clones ~ &lt;code&gt;14&lt;/code&gt;.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Error-level analysis&lt;/strong&gt;. Tells that something was compressed multiple times. For example, when you paste an image on another image and save, the are several compressions in place: for the original image and for the pasted one. Use noise to determine that. Spot the artifacts that have been implanted on an image by compressing it multiple times. Because of the noise these parts can&amp;rsquo;t be compressed much.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Noise analysis&lt;/strong&gt;. Self-explanatory.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;JPEG analysis&lt;/strong&gt;. Computes the Quantization table, which specify the way an image has been compressed. Each cell &lt;code&gt;0-255&lt;/code&gt;.  To compress an image the pixel intestines are modified by the software app in the range of &lt;code&gt;-128&lt;/code&gt; to &lt;code&gt;127&lt;/code&gt; and new quantization table is calculated. The value of standart - &lt;code&gt;95&lt;/code&gt;, which is auto value when the image is not processed. Adobe (Photoshop quality) uses &lt;code&gt;85&lt;/code&gt;. The order of different sections. &lt;code&gt;SOI&lt;/code&gt; - image start,  &lt;code&gt;EOI&lt;/code&gt;- end of image. Multiple &lt;code&gt;SOI&lt;/code&gt; and &lt;code&gt;EOI&lt;/code&gt; are indicative of pasting other images. Application segments, &lt;code&gt;APP0&lt;/code&gt;(JPEG version, screen and printing resolution), &lt;code&gt;APP1&lt;/code&gt; (date/time, focal length, aperture), &lt;code&gt;APP13&lt;/code&gt; (if processed with Adobe Photoshop). &lt;code&gt;SOS&lt;/code&gt; - image was compressed.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Structural and String Analysis&lt;/strong&gt;. When there is no EXIF is useful. &lt;code&gt;FBMD01000a9...&lt;/code&gt; indicated web upload (Facebook).&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;osdf-fakeimages1.png&#34; alt=&#34;osdf-fakeimages1&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>A Few Good Bits</title>
-      <link>http://localhost:1313/docs/blog/2020/10/a-few-good-bits/</link>
+      <link>https://bakerst221b.com/docs/blog/2020/10/a-few-good-bits/</link>
       <pubDate>Sat, 10 Oct 2020 18:53:48 +0300</pubDate>
-      <guid>http://localhost:1313/docs/blog/2020/10/a-few-good-bits/</guid>
-      <description>&lt;p&gt;&lt;em&gt;&lt;strong&gt;Saturday&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;I&amp;rsquo;ve recently have had a severe poisoning (I only hope it&amp;rsquo;s not the rotavirus &amp;#x1f628;) and I&amp;rsquo;ve spent one evening and one day barely moving. Even now, almost two days have passed, but I still feel a little nauseous. But I&amp;rsquo;m not that bad enough now to refresh and learn some assembly (it&amp;rsquo;s always a good medicine for the wicked &amp;#x1f638;). The following chain of thoughts was cut from &lt;a href=&#34;http://localhost:1313/docs/articles/fundamentals/reveng/assembly-operations&#34;&gt;this&lt;/a&gt; article once the critical mass of text for &lt;code&gt;SHL/SHR&lt;/code&gt; has exceeded its maximum.&lt;/em&gt;&lt;/p&gt;</description>
+      <guid>https://bakerst221b.com/docs/blog/2020/10/a-few-good-bits/</guid>
+      <description>&lt;p&gt;&lt;em&gt;&lt;strong&gt;Saturday&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;I&amp;rsquo;ve recently have had a severe poisoning (I only hope it&amp;rsquo;s not the rotavirus &amp;#x1f628;) and I&amp;rsquo;ve spent one evening and one day barely moving. Even now, almost two days have passed, but I still feel a little nauseous. But I&amp;rsquo;m not that bad enough now to refresh and learn some assembly (it&amp;rsquo;s always a good medicine for the wicked &amp;#x1f638;). The following chain of thoughts was cut from &lt;a href=&#34;https://bakerst221b.com/docs/articles/fundamentals/reveng/assembly-operations&#34;&gt;this&lt;/a&gt; article once the critical mass of text for &lt;code&gt;SHL/SHR&lt;/code&gt; has exceeded its maximum.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Reference vs Value</title>
-      <link>http://localhost:1313/docs/ttp/malware/analyse/basics/reference-vs-value/</link>
+      <link>https://bakerst221b.com/docs/ttp/malware/analyse/basics/reference-vs-value/</link>
       <pubDate>Mon, 05 Oct 2020 18:48:46 +0300</pubDate>
-      <guid>http://localhost:1313/docs/ttp/malware/analyse/basics/reference-vs-value/</guid>
+      <guid>https://bakerst221b.com/docs/ttp/malware/analyse/basics/reference-vs-value/</guid>
       <description>&lt;p&gt;Lorem markdownum aequalis strigis. Saetigeri iubeas, vultu huic alvum nondum&#xA;de obside ut laniavit arbor palmis, cum quin. Rupes vetat videndo, armigerae&#xA;crimen habet Priamum nec.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Mutable vs Immutable</title>
-      <link>http://localhost:1313/docs/ttp/malware/analyse/basics/mutable-vs-immutable/</link>
+      <link>https://bakerst221b.com/docs/ttp/malware/analyse/basics/mutable-vs-immutable/</link>
       <pubDate>Mon, 05 Oct 2020 18:48:35 +0300</pubDate>
-      <guid>http://localhost:1313/docs/ttp/malware/analyse/basics/mutable-vs-immutable/</guid>
+      <guid>https://bakerst221b.com/docs/ttp/malware/analyse/basics/mutable-vs-immutable/</guid>
       <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; ctypes&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; a &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; address &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; id(a)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; address&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;4307917216&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; ctypes&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;cast(address, ctypes&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;py_object)&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;value&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; a &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; ctypes&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;cast(address, ctypes&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;py_object)&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;value&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Similarly, regardless of whether you flag some &lt;code&gt;UITextField&lt;/code&gt; as &lt;em&gt;Secure Text Entry&lt;/em&gt; or not, it always returns data in the form of a &lt;code&gt;String&lt;/code&gt; or &lt;code&gt;NSString&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;p&gt;On the other hand, using the overwritten data outside the compiler&amp;rsquo;s scope (e.g., serializing it in a temp file) guarantees that it will be overwritten but obviously impacts performance and maintenance. You should try to overwrite critical objects with random data or content from non-critical objects. This will make it really difficult to construct scanners that can identify sensitive data on the basis of its management. This can be only done by low-level languages because the compilers and just-in-time virtual machines will ignore those operations for performance reasons if the optimization routines detect that the buffer is no longer used after being overwritten.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Evading Antivirus</title>
-      <link>http://localhost:1313/docs/ttp/antiforensics/antivirus/</link>
+      <link>https://bakerst221b.com/docs/ttp/antiforensics/antivirus/</link>
       <pubDate>Thu, 01 Oct 2020 13:01:35 +0300</pubDate>
-      <guid>http://localhost:1313/docs/ttp/antiforensics/antivirus/</guid>
+      <guid>https://bakerst221b.com/docs/ttp/antiforensics/antivirus/</guid>
       <description>&lt;h2 id=&#34;windows&#34;&gt;Windows&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://tyeyeah.github.io/2021/08/02/2021-08-02-Bypass-Anti-Virus/&#34;&gt;https://tyeyeah.github.io/2021/08/02/2021-08-02-Bypass-Anti-Virus/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;macos&#34;&gt;macOS&lt;/h2&gt;&#xA;&lt;h2 id=&#34;linux&#34;&gt;Linux&lt;/h2&gt;</description>
     </item>
     <item>
       <title>Hiding Data</title>
-      <link>http://localhost:1313/docs/ttp/antiforensics/fs-hiding-data/</link>
+      <link>https://bakerst221b.com/docs/ttp/antiforensics/fs-hiding-data/</link>
       <pubDate>Thu, 01 Oct 2020 13:01:35 +0300</pubDate>
-      <guid>http://localhost:1313/docs/ttp/antiforensics/fs-hiding-data/</guid>
-      <description>&lt;h2 id=&#34;alternative-data-stream&#34;&gt;Alternative data stream&lt;/h2&gt;&#xA;&lt;p&gt;Alternate data streams. Specific for Windows. See more &lt;a href=&#34;http://localhost:1313/docs/dfir/forensic-investigation/reference/windows/win-ads&#34;&gt;here&lt;/a&gt;. Are there such streams for other OS? If yes, how to make them and discover them?&lt;/p&gt;&#xA;&lt;p&gt;To ensure compatability between NTFS and HFS. Allows hiding files.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;C:\type C:\mal.exe &amp;gt; C:\readme.txt&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;:&lt;/span&gt;naughty.exe&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;start readme.txt&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;:&lt;/span&gt;naughty.exe&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;C:\mklink innocent.exe readme.txt&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;:&lt;/span&gt;naughty.exe&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# to run&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;innocent.exe&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;But &lt;code&gt;dir /r&lt;/code&gt; - will display &lt;strong&gt;all&lt;/strong&gt; streams. LNS and Sfind will hunt down such files. Also, when you copy files from and to a FAT partition - all residual files will be deleted.&lt;/p&gt;</description>
+      <guid>https://bakerst221b.com/docs/ttp/antiforensics/fs-hiding-data/</guid>
+      <description>&lt;h2 id=&#34;alternative-data-stream&#34;&gt;Alternative data stream&lt;/h2&gt;&#xA;&lt;p&gt;Alternate data streams. Specific for Windows. See more &lt;a href=&#34;https://bakerst221b.com/docs/dfir/forensic-investigation/reference/windows/win-ads&#34;&gt;here&lt;/a&gt;. Are there such streams for other OS? If yes, how to make them and discover them?&lt;/p&gt;&#xA;&lt;p&gt;To ensure compatability between NTFS and HFS. Allows hiding files.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;C:\type C:\mal.exe &amp;gt; C:\readme.txt&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;:&lt;/span&gt;naughty.exe&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;start readme.txt&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;:&lt;/span&gt;naughty.exe&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;C:\mklink innocent.exe readme.txt&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;:&lt;/span&gt;naughty.exe&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# to run&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;innocent.exe&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;But &lt;code&gt;dir /r&lt;/code&gt; - will display &lt;strong&gt;all&lt;/strong&gt; streams. LNS and Sfind will hunt down such files. Also, when you copy files from and to a FAT partition - all residual files will be deleted.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Turning Off Logging</title>
-      <link>http://localhost:1313/docs/ttp/antiforensics/logs-turnoff/</link>
+      <link>https://bakerst221b.com/docs/ttp/antiforensics/logs-turnoff/</link>
       <pubDate>Thu, 01 Oct 2020 13:01:35 +0300</pubDate>
-      <guid>http://localhost:1313/docs/ttp/antiforensics/logs-turnoff/</guid>
+      <guid>https://bakerst221b.com/docs/ttp/antiforensics/logs-turnoff/</guid>
       <description>&lt;h2 id=&#34;macos&#34;&gt;macOS&lt;/h2&gt;&#xA;&lt;p&gt;From Apple&amp;rsquo;s official documentation:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;In some cases, the contents of a volume are sufficiently secret that it is not appropriate to log them. To disable logging on a per-volume basis (for creating a backup volume, for example), you must do the following:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Create a &lt;code&gt;.fseventsd&lt;/code&gt; directory at the top level of the volume.&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Create an empty &lt;code&gt;no_log&lt;/code&gt; file in that directory.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;So if your volume is mounted at &lt;code&gt;/Volumes/MyDisk&lt;/code&gt;, you would create an empty file called &lt;code&gt;/Volumes/MyDisk/.fseventsd/no_log&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Flash Memory Overview</title>
-      <link>http://localhost:1313/docs/artefacts/fs/ssd/</link>
+      <link>https://bakerst221b.com/docs/artefacts/fs/ssd/</link>
       <pubDate>Mon, 28 Sep 2020 13:23:24 +0300</pubDate>
-      <guid>http://localhost:1313/docs/artefacts/fs/ssd/</guid>
+      <guid>https://bakerst221b.com/docs/artefacts/fs/ssd/</guid>
       <description>&lt;p&gt;&lt;em&gt;In this article I&amp;rsquo;m going to give a general overview of how SSD works and how it&amp;rsquo;s different from an HDD.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;SSDs consist of NAND memory chips, a power terminal and a data terminal. Due to its nature, data cannot be overwritten, therefore, it needs to be white clean first.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;🔎 Does it mean that there is no data in the unallocated or slack space?&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;Data is written in pages and deleted in blocks (multiple pages).&lt;/p&gt;</description>
     </item>
     <item>
       <title>HDD Overview</title>
-      <link>http://localhost:1313/docs/artefacts/fs/hdd/</link>
+      <link>https://bakerst221b.com/docs/artefacts/fs/hdd/</link>
       <pubDate>Mon, 28 Sep 2020 13:23:24 +0300</pubDate>
-      <guid>http://localhost:1313/docs/artefacts/fs/hdd/</guid>
+      <guid>https://bakerst221b.com/docs/artefacts/fs/hdd/</guid>
       <description>&lt;p&gt;&lt;em&gt;In this article I&amp;rsquo;m going to give a general overview of how HDDs work.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;floppy&#34;&gt;Floppy&lt;/h2&gt;&#xA;&lt;p&gt;Floppy disks &amp;#x1f4be; are like dinosaurs 🦕. They are ancient, not usually used nowadays. But the mechanism is very much like the one found in an HDD that&amp;rsquo;s why I&amp;rsquo;ve found it useful to start the intro to HDD from a simplier mechanism. In the square brackerts I&amp;rsquo;ll be giving an analogy with a person reading a book (inspired by &lt;a href=&#34;https://www.takeupcode.com/podcast/226-filesystem-chs-vs-lba-modes/&#34;&gt;takeupcode.com&lt;/a&gt;).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Buffer Overflow</title>
-      <link>http://localhost:1313/docs/attacks/binary/exploits/bufferoverflow/</link>
+      <link>https://bakerst221b.com/docs/attacks/binary/exploits/bufferoverflow/</link>
       <pubDate>Sun, 27 Sep 2020 16:31:05 +0300</pubDate>
-      <guid>http://localhost:1313/docs/attacks/binary/exploits/bufferoverflow/</guid>
+      <guid>https://bakerst221b.com/docs/attacks/binary/exploits/bufferoverflow/</guid>
       <description></description>
     </item>
     <item>
       <title>Cracking 🔨</title>
-      <link>http://localhost:1313/docs/ttp/malware/analyse/basics/crack-me-algo/</link>
+      <link>https://bakerst221b.com/docs/ttp/malware/analyse/basics/crack-me-algo/</link>
       <pubDate>Thu, 24 Sep 2020 17:46:43 +0300</pubDate>
-      <guid>http://localhost:1313/docs/ttp/malware/analyse/basics/crack-me-algo/</guid>
+      <guid>https://bakerst221b.com/docs/ttp/malware/analyse/basics/crack-me-algo/</guid>
       <description>&lt;p&gt;&lt;em&gt;Any cracking career is supposed to start with solving simple crackme&amp;rsquo;s. I&amp;rsquo;ve not been doing it all the time, but I&amp;rsquo;ve solved several of them from the simplest to a very hard one which required some math knowledge 😬. This allowed me to craft some sort of algorithm I would like to share.&amp;quot;&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>From Src to Binary</title>
-      <link>http://localhost:1313/docs/ttp/malware/analyse/basics/from-src-to-binary/</link>
+      <link>https://bakerst221b.com/docs/ttp/malware/analyse/basics/from-src-to-binary/</link>
       <pubDate>Thu, 24 Sep 2020 17:46:43 +0300</pubDate>
-      <guid>http://localhost:1313/docs/ttp/malware/analyse/basics/from-src-to-binary/</guid>
+      <guid>https://bakerst221b.com/docs/ttp/malware/analyse/basics/from-src-to-binary/</guid>
       <description>&lt;p&gt;To read&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.airs.com/blog/archives/38&#34;&gt;https://www.airs.com/blog/archives/38&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>USBKill Switch</title>
-      <link>http://localhost:1313/docs/ttp/antiforensics/usbkill-switch/</link>
+      <link>https://bakerst221b.com/docs/ttp/antiforensics/usbkill-switch/</link>
       <pubDate>Sun, 20 Sep 2020 11:04:28 +0300</pubDate>
-      <guid>http://localhost:1313/docs/ttp/antiforensics/usbkill-switch/</guid>
+      <guid>https://bakerst221b.com/docs/ttp/antiforensics/usbkill-switch/</guid>
       <description>&lt;p&gt;A software that could be used for anti-forensics. By default, configs are at &lt;code&gt;/etc&lt;/code&gt; and named &lt;code&gt;usbkill.ini&lt;/code&gt;. The default behaviour - shut the system down. Keeps a whitelist of allowed USB devices. Can also prevent malware from getting on the PC from a USB drive.&lt;/p&gt;&#xA;&lt;p&gt;Analogues: BusKill (set a &lt;code&gt;udev&lt;/code&gt; rule to be triggered if the USB drive is removed: lock, shutdown or self-destruct) and Silk Guardian (Linux Kernel mode switch that&amp;rsquo;s waiting for a change, deletes files on events and shuts the system down).&lt;/p&gt;</description>
     </item>
     <item>
       <title>💱 Symbolic and Concrete Execution</title>
-      <link>http://localhost:1313/docs/ttp/malware/analyse/binary-analysis/</link>
+      <link>https://bakerst221b.com/docs/ttp/malware/analyse/binary-analysis/</link>
       <pubDate>Wed, 09 Sep 2020 19:28:46 +0300</pubDate>
-      <guid>http://localhost:1313/docs/ttp/malware/analyse/binary-analysis/</guid>
+      <guid>https://bakerst221b.com/docs/ttp/malware/analyse/binary-analysis/</guid>
       <description>&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;&#xA;&lt;details&gt;&#xA;    &lt;summary&gt;Expand&amp;hellip;&lt;/summary&gt;&#xA;    &lt;p&gt;[&lt;a href=&#34;https://mobile-security.gitbook.io/mobile-security-testing-guide/android-testing-guide/0x05h-testing-platform-interaction#testing-for-fragment-injection-mstg-platform-2&#34;&gt;1&lt;/a&gt;] Mobile Sec Guide&lt;/p&gt;&#xA;&lt;p&gt;[&lt;a href=&#34;https://www.nowsecure.com/blog/2021/03/10/how-to-perform-symbolic-execution-of-mobile-apps-with-r2frida-esilsolve/&#34;&gt;2&lt;/a&gt;] Symbolic execution on iOS with R2Frida &amp;amp; ESILSolve&lt;/p&gt;&#xA;&lt;p&gt;[&lt;a href=&#34;https://www.nowsecure.com/blog/2021/03/10/how-to-perform-symbolic-execution-of-mobile-apps-with-r2frida-esilsolve/&#34;&gt;3&lt;/a&gt;] Symbolic execution on iOS)] Concrete execution on iOS with Angr.&lt;/p&gt;&#xA;&lt;p&gt;[&lt;a href=&#34;https://www.nowsecure.com/blog/2021/03/10/how-to-perform-symbolic-execution-of-mobile-apps-with-r2frida-esilsolve/&#34;&gt;4&lt;/a&gt;)] Symbolic execution on Android with Angr.&#xA;[&lt;a href=&#34;https://paper.bobylive.com/Security/A%20Bug%20Hunter%20%20039%20s%20Diary%20%20A%20Guided%20Tour%20Through%20the%20Wilds%20of%20Software%20Security.pdf&#34;&gt;5&lt;/a&gt;] A Bug Hunter&amp;rsquo;s Diary: A Guided Tour Through the Wilds of Software Security, by Tobias Klein.&lt;/p&gt;&#xA;&#xA;&lt;/details&gt;</description>
     </item>
   </channel>

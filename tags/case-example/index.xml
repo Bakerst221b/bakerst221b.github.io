@@ -2,101 +2,101 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Case-Example on Analyst</title>
-    <link>http://localhost:1313/tags/case-example/</link>
+    <link>https://bakerst221b.com/tags/case-example/</link>
     <description>Recent content in Case-Example on Analyst</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 20 Sep 2020 11:04:28 +0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/case-example/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bakerst221b.com/tags/case-example/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Case 1. Famous Retailer Data Breach</title>
-      <link>http://localhost:1313/docs/todo/cases/ir/case1/</link>
+      <link>https://bakerst221b.com/docs/todo/cases/ir/case1/</link>
       <pubDate>Wed, 28 Nov 2018 15:14:39 +1000</pubDate>
-      <guid>http://localhost:1313/docs/todo/cases/ir/case1/</guid>
+      <guid>https://bakerst221b.com/docs/todo/cases/ir/case1/</guid>
       <description>&lt;h2 id=&#34;case-overview&#34;&gt;Case Overview&lt;/h2&gt;&#xA;&lt;p&gt;&lt;em&gt;The Target Corporation is an American retailing company,  founded in 1902 and  headquartered in Minneapolis, Minnesota. It&amp;rsquo;s the second largest discount retailer in the United States. Target operates 1,916 stores in the United States, and also began operations in Canada in March of 2013. In December 2013, a data breach of Target&amp;rsquo;s systems effected up to 110 million customers. The attackers stole around 110 million customers&amp;rsquo; PII. They had all the IDS/IPS and stuff and were PCI-DSS compliant.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Case 2. Watering Hole Attack</title>
-      <link>http://localhost:1313/docs/todo/cases/ir/case2/</link>
+      <link>https://bakerst221b.com/docs/todo/cases/ir/case2/</link>
       <pubDate>Wed, 28 Nov 2018 15:14:39 +1000</pubDate>
-      <guid>http://localhost:1313/docs/todo/cases/ir/case2/</guid>
+      <guid>https://bakerst221b.com/docs/todo/cases/ir/case2/</guid>
       <description>&lt;h2 id=&#34;case-overview&#34;&gt;Case Overview&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Watering hole&lt;/strong&gt; is an attack strategy in which an attacker guesses or observes which websites an organization often uses and infects one or more of them with malware. Eventually, some member of the targeted group will become infected [&lt;a href=&#34;https://en.wikipedia.org/wiki/Watering_hole_attack&#34;&gt;1&lt;/a&gt;].&lt;/p&gt;&#xA;&lt;p&gt;July, 2012. Several high-profile institutions (financial and tech sectors) were victimized by a watering hole attack.&lt;/p&gt;&#xA;&lt;h2 id=&#34;layout&#34;&gt;Layout&lt;/h2&gt;&#xA;&lt;h3 id=&#34;step-1-stake-out-watering-hole&#34;&gt;Step 1. Stake out watering hole&lt;/h3&gt;&#xA;&lt;p&gt;Insert an iframe that redirects users to a 0-day malware download (Trojan Gh0st RAT).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Case 3. Phishing against Google and Facebook</title>
-      <link>http://localhost:1313/docs/todo/cases/ir/case3/</link>
+      <link>https://bakerst221b.com/docs/todo/cases/ir/case3/</link>
       <pubDate>Wed, 28 Nov 2018 15:14:39 +1000</pubDate>
-      <guid>http://localhost:1313/docs/todo/cases/ir/case3/</guid>
+      <guid>https://bakerst221b.com/docs/todo/cases/ir/case3/</guid>
       <description>&lt;h2 id=&#34;case-overview&#34;&gt;Case Overview&lt;/h2&gt;&#xA;&lt;p&gt;&lt;em&gt;In summary, according to the US attorney&amp;rsquo;s office for the Southern District of New York, scammers stole over $100 million from Facebook and Google in a creative way. Basically, they e-mailed the tech giants and asked for it. The scheme that included setting up a fake business and sending phishing e-mails to employees of Facebook and Google. The scheme ultimately duped those multi-million dollar companies out of more than a hundred million in total between 2013 and 2015.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Case 4. SANS Mock Case</title>
-      <link>http://localhost:1313/docs/todo/cases/ir/case4/</link>
+      <link>https://bakerst221b.com/docs/todo/cases/ir/case4/</link>
       <pubDate>Wed, 28 Nov 2018 15:14:39 +1000</pubDate>
-      <guid>http://localhost:1313/docs/todo/cases/ir/case4/</guid>
+      <guid>https://bakerst221b.com/docs/todo/cases/ir/case4/</guid>
       <description>&lt;h2 id=&#34;case-overview&#34;&gt;Case Overview&lt;/h2&gt;&#xA;&lt;p&gt;&lt;em&gt;Arya Stark gets an email presumably from Direwolf with an attachment. It looks suspicious and she forwards it to the Security.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;environment&#34;&gt;Environment&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Winterfell Server Network&lt;/strong&gt; (&lt;code&gt;192.168.10.0/24&lt;/code&gt;) consisting of DNS (&lt;code&gt;192.168.10.230&lt;/code&gt;) Centos7 with &lt;code&gt;bind&lt;/code&gt; &lt;code&gt;ns1.winterfell.local&lt;/code&gt; and Mail server (&lt;code&gt;192.168.10.140&lt;/code&gt;) &lt;code&gt;mail.winterfell.local&lt;/code&gt;, Centos7 with Postfix and Dovecot.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Winterfell Desktop Network&lt;/strong&gt; (&lt;code&gt;192.168.11.0/24&lt;/code&gt;), having IPs: &lt;code&gt;192.168.11.101&lt;/code&gt;, &lt;code&gt;192.168.11.102&lt;/code&gt;, &lt;code&gt;192.168.11.103&lt;/code&gt;, &lt;code&gt;192.168.11.104&lt;/code&gt;, &lt;code&gt;192.168.11.105&lt;/code&gt;. &lt;code&gt;192.168.11.105&lt;/code&gt; is Security&amp;rsquo;s IP. All desktops have Win7 SP1 with MOffice 2010 installed. For the machine to be vulnerable for the below attack steps, Windows Firewall should be disabled and macro turned on for Office Docs (Trust Center &amp;gt; Trust Center Settings &amp;gt; Macro Settings). Also, PsExec requires the DWORD called LocalAccountTokenFilterPolicy in the registry under&lt;/p&gt;</description>
     </item>
     <item>
       <title>Case 5. IBM Example</title>
-      <link>http://localhost:1313/docs/todo/cases/ir/case5/</link>
+      <link>https://bakerst221b.com/docs/todo/cases/ir/case5/</link>
       <pubDate>Wed, 28 Nov 2018 15:14:39 +1000</pubDate>
-      <guid>http://localhost:1313/docs/todo/cases/ir/case5/</guid>
+      <guid>https://bakerst221b.com/docs/todo/cases/ir/case5/</guid>
       <description>&lt;h2 id=&#34;case-overview&#34;&gt;Case Overview&lt;/h2&gt;&#xA;&lt;p&gt;&lt;em&gt;Arya Stark gets an email presumably from Direwolf with an attachment. It looks suspicious and she forwards it to the Security.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Identify possible threats. Identify attack vectors: Website hosting malicious content waiting for a vulnerable browser. This can be countered with: Qradar, McAfee ePolicy Orchestrator, Next generation firewall.&lt;/p&gt;&#xA;&lt;p&gt;In Qradar we have several alerts: Malicious URL detected, three possible DDoS and OAS denied access and continued preceded by file infected.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Case 6. Home Depot PoS Attack</title>
-      <link>http://localhost:1313/docs/todo/cases/ir/case6/</link>
+      <link>https://bakerst221b.com/docs/todo/cases/ir/case6/</link>
       <pubDate>Wed, 28 Nov 2018 15:14:39 +1000</pubDate>
-      <guid>http://localhost:1313/docs/todo/cases/ir/case6/</guid>
+      <guid>https://bakerst221b.com/docs/todo/cases/ir/case6/</guid>
       <description>&lt;h2 id=&#34;case-overview&#34;&gt;Case Overview&lt;/h2&gt;&#xA;&lt;p&gt;&lt;em&gt;This attack started from stealing credentials from a vendor, using them to install malware on around 7500 self-checkout POS terminals and then stealing data. Went unnoticed for 5 months (April - Septemper 2014) and grabbed the data from 56 million credit and debit cards (useful for identity theft) and 53 million emails (useful for phishing). Investigation started on September, 2nd and on 8th indicated that the system was breached. They also offered free credit services to affected customers who use their payment card as early as April of 2014, and apologized for the data breach.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Case 7. Atlanta Ransomware Attack</title>
-      <link>http://localhost:1313/docs/todo/cases/ir/case7/</link>
+      <link>https://bakerst221b.com/docs/todo/cases/ir/case7/</link>
       <pubDate>Wed, 28 Nov 2018 15:14:39 +1000</pubDate>
-      <guid>http://localhost:1313/docs/todo/cases/ir/case7/</guid>
+      <guid>https://bakerst221b.com/docs/todo/cases/ir/case7/</guid>
       <description>&lt;h2 id=&#34;case-overview&#34;&gt;Case Overview&lt;/h2&gt;&#xA;&lt;p&gt;22 March, 2018 the City of Atlanta suffered from a ransomware attack. Many devices at City Hall were shutdown. SamSam Ransomware was to blame. Demanded $51000 and the city refused. Shutdown the main devices for 5 days. Many of the operations returned to the traditional handwriting 😊. Atlanta disabled WiFi at the airport up until the 2nd of April.&lt;/p&gt;&#xA;&lt;h2 id=&#34;timeline&#34;&gt;Timeline&lt;/h2&gt;&#xA;&lt;p&gt;22 March, 2018 - ransomware strikes.&lt;/p&gt;&#xA;&lt;p&gt;May - online water bill payment restored.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Case 8. Kaseya Supply Chain Ransomware Attack</title>
-      <link>http://localhost:1313/docs/todo/cases/ir/case8/</link>
+      <link>https://bakerst221b.com/docs/todo/cases/ir/case8/</link>
       <pubDate>Wed, 28 Nov 2018 15:14:39 +1000</pubDate>
-      <guid>http://localhost:1313/docs/todo/cases/ir/case8/</guid>
+      <guid>https://bakerst221b.com/docs/todo/cases/ir/case8/</guid>
       <description>&lt;h2 id=&#34;case-overview&#34;&gt;Case Overview&lt;/h2&gt;&#xA;&lt;h2 id=&#34;timeline&#34;&gt;Timeline&lt;/h2&gt;&#xA;&lt;h2 id=&#34;lessons-learned&#34;&gt;Lessons Learned&lt;/h2&gt;&#xA;&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;&#xA;&lt;p&gt;[&lt;a href=&#34;https://www.zscaler.com/blogs/security-research/kaseya-supply-chain-ransomware-attack-technical-analysis-revil-payload&#34;&gt;1&lt;/a&gt;] Kaseya Supply Chain Ransomware Attack - Technical Analysis of the REvil Payload&lt;/p&gt;&#xA;&lt;p&gt;[&lt;a href=&#34;https://www.huntress.com/blog/rapid-response-kaseya-vsa-mass-msp-ransomware-incident&#34;&gt;2&lt;/a&gt;] Case updates and general informaiton.&lt;/p&gt;</description>
     </item>
     <item>
       <title>A Study in Black</title>
-      <link>http://localhost:1313/docs/todo/cases/forensic-cases/case1/</link>
+      <link>https://bakerst221b.com/docs/todo/cases/forensic-cases/case1/</link>
       <pubDate>Sun, 20 Sep 2020 11:04:28 +0300</pubDate>
-      <guid>http://localhost:1313/docs/todo/cases/forensic-cases/case1/</guid>
-      <description>&lt;p&gt;Someone has violated corporate policy by watching porn using the corp PC.&lt;/p&gt;&#xA;&lt;p&gt;Do you have the authority?&lt;/p&gt;&#xA;&lt;p&gt;What are the expected results?&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Some prohibited internet traffic&lt;/strong&gt;. Check network logs of an application layer firewall 🔥 or content filter (any gateway between the suspect and the network), filter them out. But the user was smart enough to use VPN. What&amp;rsquo;s then? Application layer firewall only sees application traffic, it is not aware of TCPs, Shudipis and etc. Read &lt;a href=&#34;http://localhost:1313/docs/articles/fundamentals/network/osi/overview&#34;&gt;this&lt;/a&gt; article about TCP/IP stack to understand better why application layer firewalls won&amp;rsquo;t see anything other than what&amp;rsquo;s on top.&lt;/p&gt;</description>
+      <guid>https://bakerst221b.com/docs/todo/cases/forensic-cases/case1/</guid>
+      <description>&lt;p&gt;Someone has violated corporate policy by watching porn using the corp PC.&lt;/p&gt;&#xA;&lt;p&gt;Do you have the authority?&lt;/p&gt;&#xA;&lt;p&gt;What are the expected results?&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Some prohibited internet traffic&lt;/strong&gt;. Check network logs of an application layer firewall 🔥 or content filter (any gateway between the suspect and the network), filter them out. But the user was smart enough to use VPN. What&amp;rsquo;s then? Application layer firewall only sees application traffic, it is not aware of TCPs, Shudipis and etc. Read &lt;a href=&#34;https://bakerst221b.com/docs/articles/fundamentals/network/osi/overview&#34;&gt;this&lt;/a&gt; article about TCP/IP stack to understand better why application layer firewalls won&amp;rsquo;t see anything other than what&amp;rsquo;s on top.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Case 1. IP Theft Linux Investigation</title>
-      <link>http://localhost:1313/docs/todo/cases/forensic-cases/case2/</link>
+      <link>https://bakerst221b.com/docs/todo/cases/forensic-cases/case2/</link>
       <pubDate>Sun, 20 Sep 2020 11:04:28 +0300</pubDate>
-      <guid>http://localhost:1313/docs/todo/cases/forensic-cases/case2/</guid>
+      <guid>https://bakerst221b.com/docs/todo/cases/forensic-cases/case2/</guid>
       <description>&lt;blockquote&gt;&#xA;&lt;p&gt;Nearly all IP (intellectual property) are recreated by a competitor. Investigate the development machine&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;Potential data exfiltration.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;code&gt;netstat -lpeanut&lt;/code&gt; shows that there are two dhcp clients running, one using unusual port and user:&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;images/4.png&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;code&gt;ps aux | grep 40500&lt;/code&gt; or &lt;code&gt;ps aux | grep dhclient&lt;/code&gt; shows the running processes and sometimes commands used to run them. This suspicious client was run from &lt;code&gt;/tmp&lt;/code&gt; folder:&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;images/5.png&#34; alt=&#34;img5&#34;&gt;&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;code&gt;ls -la /tmp/&lt;/code&gt; to see the file that was launched. But nothing there. Seems that the file was deleted after being launched:&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;images/6.png&#34; alt=&#34;img6&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Case 3. Yet Another Linux Investigation</title>
-      <link>http://localhost:1313/docs/todo/cases/forensic-cases/case3/</link>
+      <link>https://bakerst221b.com/docs/todo/cases/forensic-cases/case3/</link>
       <pubDate>Sun, 20 Sep 2020 11:04:28 +0300</pubDate>
-      <guid>http://localhost:1313/docs/todo/cases/forensic-cases/case3/</guid>
+      <guid>https://bakerst221b.com/docs/todo/cases/forensic-cases/case3/</guid>
       <description>&lt;ol&gt;&#xA;&lt;li&gt;Running &lt;code&gt;netstat&lt;/code&gt;, see the weird python script with established connection to some remote host:&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;images/10.png&#34; alt=&#34;mg10&#34;&gt;&lt;/p&gt;&#xA;&lt;ol start=&#34;2&#34;&gt;&#xA;&lt;li&gt;Grab the executable: &lt;code&gt;lsof -p 2082&lt;/code&gt; and &lt;code&gt;ps aux  grep 2082&lt;/code&gt;.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;images/11.png&#34; alt=&#34;img11&#34;&gt;&lt;/p&gt;&#xA;&lt;ol start=&#34;3&#34;&gt;&#xA;&lt;li&gt;Let&amp;rsquo;s see the &lt;code&gt;/tmp/&lt;/code&gt; folder for &lt;code&gt;backdoor&lt;/code&gt; executable&lt;/li&gt;&#xA;&lt;li&gt;Check &lt;code&gt;/proc/2082&lt;/code&gt; and &lt;code&gt;ls&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;images/12.png&#34; alt=&#34;img12&#34;&gt;&lt;/p&gt;&#xA;&lt;ol start=&#34;5&#34;&gt;&#xA;&lt;li&gt;Since the executable is a legitimate python, need to explore further. In &lt;code&gt;/proc/2082&lt;/code&gt; run &lt;code&gt;sudo cat cmdline&lt;/code&gt; shows the comand used to launch, &lt;code&gt;cat task/2082/children&lt;/code&gt; shows children PID. &lt;code&gt;sudo cat status&lt;/code&gt; shows  general information. &lt;code&gt;cat environ&lt;/code&gt; shows &amp;hellip; . &lt;code&gt;cat arp&lt;/code&gt; shows MAC addresses of the machines connected:&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;todo/cases/forensic-cases/case3/images/1.png&#34; alt=&#34;img1&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Case 4. Compromised Apache Server</title>
-      <link>http://localhost:1313/docs/todo/cases/forensic-cases/case4/</link>
+      <link>https://bakerst221b.com/docs/todo/cases/forensic-cases/case4/</link>
       <pubDate>Sun, 20 Sep 2020 11:04:28 +0300</pubDate>
-      <guid>http://localhost:1313/docs/todo/cases/forensic-cases/case4/</guid>
+      <guid>https://bakerst221b.com/docs/todo/cases/forensic-cases/case4/</guid>
       <description>&lt;blockquote&gt;&#xA;&lt;p&gt;Compromised Apache Web server with drupal application used for local team. There was some unusual activity noticed between 05/10 and 08/10/19.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;You need to preserve edidence and some commands override artifacts (like &lt;code&gt;find&lt;/code&gt;). Disable access times&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;sudo mount -o remount,noatime /dev/...&lt;/code&gt; or:&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;mkdir /mnt/extdrv/rootvol&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;rootvol=/mnt/extdrv/rootvol&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;sudo mount --bind / $rootvol&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;sudo mount -o remount,ro $rootvol&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;User activity: &lt;code&gt;/etc/passwd&lt;/code&gt;. &lt;code&gt;sudo debugfs -R &#39;stat &amp;lt;1835260&amp;gt;&#39; /dev/...&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;todo/cases/forensic-cases/case4/images/2.png&#34; alt=&#34;img2&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;checking groups. &lt;code&gt;tail -n 4 /etc/group&lt;/code&gt;, &lt;code&gt;grep -E &#39;mail&#39; | php&#39; /etc/group&lt;/code&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Case 5. Kali Linux Data Exfiltration</title>
-      <link>http://localhost:1313/docs/todo/cases/forensic-cases/case5/</link>
+      <link>https://bakerst221b.com/docs/todo/cases/forensic-cases/case5/</link>
       <pubDate>Sun, 20 Sep 2020 11:04:28 +0300</pubDate>
-      <guid>http://localhost:1313/docs/todo/cases/forensic-cases/case5/</guid>
+      <guid>https://bakerst221b.com/docs/todo/cases/forensic-cases/case5/</guid>
       <description>&lt;blockquote&gt;&#xA;&lt;p&gt;IP theft and Kali Linux is a suspect. Has the user exfiltrated pictures or documents?&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;Can look for info in xdg directories:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;~/.cache&lt;/code&gt; ($XDG_CACHE_HOME)&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;~/.local/share&lt;/code&gt; ($XDG_DATA_HOME)&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;~/.config&lt;/code&gt; ($XDG_CONFIG_HOME)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Can look for info in non-xdg dirs:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;~/.&amp;lt;application_name&amp;gt;&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;~&lt;/code&gt; (user home dir)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;code&gt;cat .bash_history&lt;/code&gt; and defaults in &lt;code&gt;./bashrc&lt;/code&gt;. For Kali &lt;code&gt;~/.msf4/history&lt;/code&gt; (doesn&amp;rsquo;t log commands for the remote shell), &lt;code&gt;~/.nc_history&lt;/code&gt; (created if &lt;code&gt;rlwrap &lt;/code&gt; was used to run &lt;code&gt;nc&lt;/code&gt;. Also &lt;code&gt;~/.viminfo&lt;/code&gt;: cmd history, string search history, input-line history, contents of non-empty regs, marks for several files, file marks pointing to locs in files, last search/sub pattern for &amp;rsquo;n&amp;rsquo; or &amp;lsquo;&amp;amp;&amp;rsquo;, buffer list, global vars. &lt;code&gt;~/.cache/sessions&lt;/code&gt; - by xfce-session and only if sessions are saved: list of open progs that were saved from last session (when the user last logged out) for recent Kalis. Xfce-session-[hostname]:0 and &lt;code&gt;.bak&lt;/code&gt; - prev version of it. Client - prog or windows that needs to be opened. At the end of the file the amount of progs that are to be run and last time this session was last saved (not opened by user ). XFWM - xfce window manager.&lt;/p&gt;</description>
     </item>
   </channel>

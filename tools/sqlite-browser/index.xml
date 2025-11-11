@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>SQLite Browser on Analyst</title>
-    <link>http://localhost:1313/tools/sqlite-browser/</link>
+    <link>https://bakerst221b.com/tools/sqlite-browser/</link>
     <description>Recent content in SQLite Browser on Analyst</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 12 Oct 2020 17:50:01 +0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/tools/sqlite-browser/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bakerst221b.com/tools/sqlite-browser/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>💬❗️Notifications</title>
-      <link>http://localhost:1313/docs/todo/old/notification/</link>
+      <link>https://bakerst221b.com/docs/todo/old/notification/</link>
       <pubDate>Mon, 12 Oct 2020 17:50:01 +0300</pubDate>
-      <guid>http://localhost:1313/docs/todo/old/notification/</guid>
+      <guid>https://bakerst221b.com/docs/todo/old/notification/</guid>
       <description>&lt;h2 id=&#34;windows&#34;&gt;Windows&lt;/h2&gt;&#xA;&lt;p&gt;Toast notifications on Windows 10: &lt;code&gt;C:\Users\%Username%\AppData\Local\Microsoft\Windows\Notifications&lt;/code&gt; contains &lt;code&gt;wpndatabase.db&lt;/code&gt; and &lt;code&gt;appdb.dat&lt;/code&gt;. Both can be opened with 🛠 SQLite Browser.&lt;/p&gt;&#xA;&lt;h3 id=&#34;calendars&#34;&gt;Calendars&lt;/h3&gt;</description>
     </item>
   </channel>

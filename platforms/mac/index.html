@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Mac - Analyst</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  <link rel="icon" href="http://localhost:1313/favicon.png">
+  <link rel="icon" href="https://bakerst221b.com/favicon.png">
   <link href="/css/style-classic.css"></link>
   
   
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/style.min.0fd8269b84d57bc40ce18bb200a70ca7e1001ccf31f98dc3a8e47fa25f99b326.css">
   
 
   
@@ -77,14 +77,14 @@
     <div class='header'>
   <div class="container">
     <div class="logo">
-      <a href="http://localhost:1313/"><img alt="Logo" src="/images/logo.png" /></a>
+      <a href="https://bakerst221b.com/"><img alt="Logo" src="/images/logo.png" /></a>
     </div>
     <div class="logo-mobile">
-      <a href="http://localhost:1313/"><img alt="Logo" src="/images/logo-mobile.svg" /></a>
+      <a href="https://bakerst221b.com/"><img alt="Logo" src="/images/logo-mobile.svg" /></a>
     </div>
     
 
-    <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/platforms/mac/index.xml" title="Analyst" />
+    <link rel="alternate" type="application/rss+xml" href="https://bakerst221b.com/platforms/mac/index.xml" title="Analyst" />
     <div id="main-menu" class="main-menu">
   <ul>
     
@@ -182,7 +182,7 @@
  <h1 class="title">Mac</h1> 
  
 
-    <h2><a href="http://localhost:1313/docs/todo/cases/ctf-walkthrough/cybercorp2/"> CyberCorp2</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/todo/cases/ctf-walkthrough/cybercorp2/"> CyberCorp2</a></h2> 
     <p> <p>⛔️  Spoiler alert!</p>
 <h2 id="case-details">Case Details</h2>
 <p>This is not an investigation like the previous one. This is threat hunting. So, we have only logs via Kibana available. To harden my knowledge with this technologies I&rsquo;ve had a very quick overview on ElasticStack website and enrolled in <a href="https://app.pluralsight.com/paths/skills/threat-hunting-with-the-elastic-stack">this</a> course. Basically, I will have to answer questing having a loads of logs and a query engine available.</p>
@@ -190,20 +190,20 @@
 <h3 id="1-wmi-event-consumer-name">1. WMI Event Consumer name?</h3>
 <p>✅ <em>The Threat Hunting process usually starts with the analyst making a hypothesis about a possible compromise vector or techniques used by an attacker. In this scenario, your initial hypothesis is as follows: &ldquo;The attacker used the WMI subscription mechanism to obtain persistence within the infrastructure&rdquo;. Verify this hypothesis and find the name of the WMI Event Consumer used by the attacker to maintain his foothold.</em></p></p>
 
-    <h2><a href="http://localhost:1313/docs/todo/cases/ctf-walkthrough/cybercorp1/"> CyberCorp1</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/todo/cases/ctf-walkthrough/cybercorp1/"> CyberCorp1</a></h2> 
     <p> <p>⛔️  Spoiler alert!</p>
 <h2 id="case-details">Case Details</h2>
 <p><strong>Artefacts in posession</strong>: memory dump, OS event logs, registry files, Prefetch files, $MFT file, ShimCache, AmCache, network traffic dumps. I&rsquo;ve decided to analyse each artefact, what can I get from it in this specific case and how. Then, I am going to outline my strategy in approaching this case.</p>
 <p>We are looking for indicators of compromise.  There are no details as to what is the group and what was its aim. But it’s known that there was abnormal traffic detected that has launched this IR process. So, at least, we must have some suspicious traffic, possibly open or terminated connections. These should have been launched by some process, so we are looking for malware. Also, since the attacker needed an account to get in, I will be looking for an account take over attempts and possibly, new account creation.</p></p>
 
-    <h2><a href="http://localhost:1313/docs/artefacts/fs/partiation-schemas/apm/"> Apple Partition Map</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/artefacts/fs/partiation-schemas/apm/"> Apple Partition Map</a></h2> 
     <p> <p>APFS is not very much described from the forensic perspective. I wonder how much APM is described.</p>
 <p>APM and APFS seem to be unable to live together. APFS requires GUID.</p></p>
 
-    <h2><a href="http://localhost:1313/docs/ttp/sterilisation/"> 🧼 Media Sterilisation</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/ttp/sterilisation/"> 🧼 Media Sterilisation</a></h2> 
     <p> <p><em>Before copying evidence or making a disk image, one needs to sterilise the target media to ensure that data on that disk before this operation would not meddle with the evidence data. Several rounds of writing <code>0</code>s are usually enough.</em></p></p>
 
-    <h2><a href="http://localhost:1313/docs/todo/old/defences/macos-fundamentals/"> 📚 MacOS Basics</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/todo/old/defences/macos-fundamentals/"> 📚 MacOS Basics</a></h2> 
     <p> <h2 id="firewall">Firewall</h2>
 <p>You can set specific rules to limit the traffic.</p>
 <h2 id="filevault">FileVault</h2>
@@ -213,7 +213,7 @@
 <h2 id="disk-utility">Disk Utility</h2>
 <p>When erasing data choose from the three options:</p></p>
 
-    <h2><a href="http://localhost:1313/docs/artefacts/files/executables/macho/"> Apple Mach-O</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/artefacts/files/executables/macho/"> Apple Mach-O</a></h2> 
     <p> <h2 id="binary-info">Binary info</h2>
 <h3 id="otool">otool</h3>
 <p>Using <code>otool</code> we can get general info about the Mach-O file:</p>
@@ -232,7 +232,7 @@ Universal binaries – <code>0xCAFEBABE</code></p>
 <p><code>nm WindTail/Final_Presentation.app/Contents/MacOS/usrnode</code> - view the APIs used.
 SMLoginItemSetEnabled - Wardle, Patrick. The Art of Mac Malware (p. 25). No Starch Press. Kindle Edition.</p></p>
 
-    <h2><a href="http://localhost:1313/docs/ttp/malware/analyse/executables/macho/"> Apple Mach-O</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/ttp/malware/analyse/executables/macho/"> Apple Mach-O</a></h2> 
     <p> <h2 id="binary-info">Binary info</h2>
 <h3 id="otool">otool</h3>
 <p>Using <code>otool</code> we can get general info about the Mach-O file:</p>
@@ -251,10 +251,10 @@ Universal binaries – <code>0xCAFEBABE</code></p>
 <p><code>nm WindTail/Final_Presentation.app/Contents/MacOS/usrnode</code> - view the APIs used.
 SMLoginItemSetEnabled - Wardle, Patrick. The Art of Mac Malware (p. 25). No Starch Press. Kindle Edition.</p></p>
 
-    <h2><a href="http://localhost:1313/docs/artefacts/apple/core/mac-core/"> MacOS Core Processes</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/artefacts/apple/core/mac-core/"> MacOS Core Processes</a></h2> 
     <p> <p><em>There are two broad categories of core processes. Processes that initialize system environment and those that initialize the user environment. Whatever is the category, you need to know them well in order to detect abnormal things.</em></p></p>
 
-    <h2><a href="http://localhost:1313/docs/artefacts/apple/apple-security/"> Apple Platform Security</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/artefacts/apple/apple-security/"> Apple Platform Security</a></h2> 
     <p> <p><em>Applications or even OS itself doesn&rsquo;t know the keys that are protected by Secure Enclave. OS only sees Keychain, but the Security Enclave is separated. It&rsquo;s asked to decrypt the information and it does just that returning the decrypted information.</em></p>
 <h2 id="hardware">Hardware</h2>
 <p>Imagine that there lives a vicious criminal 🦹 who&rsquo;s stealing and deleting puppy photos from a preschool server. It&rsquo;s a nasty bussiness that can get him in jail if he&rsquo;s not cautious. He likes to keep everything on the mobile phone he has with him all the time even in the bathroom 🚽 and while taking a shower 🚿 (he&rsquo;s very careful). He considers the photos to be completely safe since he has set up a PIN for the device only he knows. All his secrets and stuff that can potentially throw him into jail are all on this little piece of harware.</p>
@@ -355,7 +355,7 @@ SMLoginItemSetEnabled - Wardle, Patrick. The Art of Mac Malware (p. 25). No Star
 <p>All entitlements are added before or during signing the application, hence they cannot be changed.</p>
 <p><em>Apple is very well known for its value of security and the advanced security mechanisms. I personally found it hard sometimes to understand specific technical controls. This is why I am writing this little article. Smartphones are known to be more secure than desktops for they are also more MOBILE and tend to get lost a lot. That&rsquo;s why MacBooks tend to get closer and closer to smartphones in terms of security.</em></p></p>
 
-    <h2><a href="http://localhost:1313/docs/todo/cases/ctf-walkthrough/mac-spotlight/"> macOS Spotlight</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/todo/cases/ctf-walkthrough/mac-spotlight/"> macOS Spotlight</a></h2> 
     <p> <p><em>This writeup is about CyberDefenders macOS Spotlight challenge.</em></p></p>
 
 
@@ -466,7 +466,7 @@ h2 {
         <div class="sub-footer-inner">
           <ul>
             <li class="zerostatic"><a href="https://www.zerostatic.io">www.zerostatic.io</a></li>
-            <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/platforms/mac/index.xml" title="Analyst" />
+            <link rel="alternate" type="application/rss+xml" href="https://bakerst221b.com/platforms/mac/index.xml" title="Analyst" />
             </ul>
         </div>
       </div>
@@ -480,9 +480,13 @@ h2 {
   
 
   
-  <script type="text/javascript" src="/js/scripts.js"></script>
+  <script type="text/javascript" src="/js/scripts.min.ec19db7e4836c12e2c5e3697d926bc3e4c22005167d9826aab54feca08f0c093.js"></script>
   
 
+  
+  
+  
+    
   
 
 

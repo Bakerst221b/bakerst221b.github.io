@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Elastic on Analyst</title>
-    <link>http://localhost:1313/tools/elastic/</link>
+    <link>https://bakerst221b.com/tools/elastic/</link>
     <description>Recent content in Elastic on Analyst</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 12 Jan 2022 11:42:21 +0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/tools/elastic/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bakerst221b.com/tools/elastic/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CyberCorp2</title>
-      <link>http://localhost:1313/docs/todo/cases/ctf-walkthrough/cybercorp2/</link>
+      <link>https://bakerst221b.com/docs/todo/cases/ctf-walkthrough/cybercorp2/</link>
       <pubDate>Wed, 12 Jan 2022 11:42:21 +0300</pubDate>
-      <guid>http://localhost:1313/docs/todo/cases/ctf-walkthrough/cybercorp2/</guid>
+      <guid>https://bakerst221b.com/docs/todo/cases/ctf-walkthrough/cybercorp2/</guid>
       <description>&lt;p&gt;⛔️  Spoiler alert!&lt;/p&gt;&#xA;&lt;h2 id=&#34;case-details&#34;&gt;Case Details&lt;/h2&gt;&#xA;&lt;p&gt;This is not an investigation like the previous one. This is threat hunting. So, we have only logs via Kibana available. To harden my knowledge with this technologies I&amp;rsquo;ve had a very quick overview on ElasticStack website and enrolled in &lt;a href=&#34;https://app.pluralsight.com/paths/skills/threat-hunting-with-the-elastic-stack&#34;&gt;this&lt;/a&gt; course. Basically, I will have to answer questing having a loads of logs and a query engine available.&lt;/p&gt;&#xA;&lt;h2 id=&#34;questions&#34;&gt;Questions&lt;/h2&gt;&#xA;&lt;h3 id=&#34;1-wmi-event-consumer-name&#34;&gt;1. WMI Event Consumer name?&lt;/h3&gt;&#xA;&lt;p&gt;✅ &lt;em&gt;The Threat Hunting process usually starts with the analyst making a hypothesis about a possible compromise vector or techniques used by an attacker. In this scenario, your initial hypothesis is as follows: &amp;ldquo;The attacker used the WMI subscription mechanism to obtain persistence within the infrastructure&amp;rdquo;. Verify this hypothesis and find the name of the WMI Event Consumer used by the attacker to maintain his foothold.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
   </channel>

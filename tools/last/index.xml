@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Last on Analyst</title>
-    <link>http://localhost:1313/tools/last/</link>
+    <link>https://bakerst221b.com/tools/last/</link>
     <description>Recent content in Last on Analyst</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 20 Sep 2020 11:04:28 +0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/tools/last/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bakerst221b.com/tools/last/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Case 4. Compromised Apache Server</title>
-      <link>http://localhost:1313/docs/todo/cases/forensic-cases/case4/</link>
+      <link>https://bakerst221b.com/docs/todo/cases/forensic-cases/case4/</link>
       <pubDate>Sun, 20 Sep 2020 11:04:28 +0300</pubDate>
-      <guid>http://localhost:1313/docs/todo/cases/forensic-cases/case4/</guid>
+      <guid>https://bakerst221b.com/docs/todo/cases/forensic-cases/case4/</guid>
       <description>&lt;blockquote&gt;&#xA;&lt;p&gt;Compromised Apache Web server with drupal application used for local team. There was some unusual activity noticed between 05/10 and 08/10/19.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;You need to preserve edidence and some commands override artifacts (like &lt;code&gt;find&lt;/code&gt;). Disable access times&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;sudo mount -o remount,noatime /dev/...&lt;/code&gt; or:&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;mkdir /mnt/extdrv/rootvol&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;rootvol=/mnt/extdrv/rootvol&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;sudo mount --bind / $rootvol&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;sudo mount -o remount,ro $rootvol&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;User activity: &lt;code&gt;/etc/passwd&lt;/code&gt;. &lt;code&gt;sudo debugfs -R &#39;stat &amp;lt;1835260&amp;gt;&#39; /dev/...&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;todo/cases/forensic-cases/case4/images/2.png&#34; alt=&#34;img2&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;checking groups. &lt;code&gt;tail -n 4 /etc/group&lt;/code&gt;, &lt;code&gt;grep -E &#39;mail&#39; | php&#39; /etc/group&lt;/code&gt;&lt;/p&gt;</description>
     </item>
   </channel>

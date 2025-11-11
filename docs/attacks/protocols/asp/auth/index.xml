@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Authentication Protocols on Analyst</title>
-    <link>http://localhost:1313/docs/attacks/protocols/asp/auth/</link>
+    <link>https://bakerst221b.com/docs/attacks/protocols/asp/auth/</link>
     <description>Recent content in Authentication Protocols on Analyst</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 10 Jun 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/docs/attacks/protocols/asp/auth/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bakerst221b.com/docs/attacks/protocols/asp/auth/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Authentication Mechanisms</title>
-      <link>http://localhost:1313/docs/attacks/protocols/asp/auth/mechanisms/</link>
+      <link>https://bakerst221b.com/docs/attacks/protocols/asp/auth/mechanisms/</link>
       <pubDate>Thu, 28 Jul 2022 15:14:39 +1000</pubDate>
-      <guid>http://localhost:1313/docs/attacks/protocols/asp/auth/mechanisms/</guid>
+      <guid>https://bakerst221b.com/docs/attacks/protocols/asp/auth/mechanisms/</guid>
       <description>&lt;p&gt;&lt;em&gt;This article is all about different authentication/authorisation mechanisms such as Basic Auth, SSO, tokens etc.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>📚 Kerberos</title>
-      <link>http://localhost:1313/docs/attacks/protocols/asp/auth/kerberos/</link>
+      <link>https://bakerst221b.com/docs/attacks/protocols/asp/auth/kerberos/</link>
       <pubDate>Wed, 18 Nov 2020 16:47:41 +0300</pubDate>
-      <guid>http://localhost:1313/docs/attacks/protocols/asp/auth/kerberos/</guid>
+      <guid>https://bakerst221b.com/docs/attacks/protocols/asp/auth/kerberos/</guid>
       <description>&lt;h2 id=&#34;structure&#34;&gt;Structure&lt;/h2&gt;&#xA;&lt;h2 id=&#34;the-flow&#34;&gt;The Flow&lt;/h2&gt;&#xA;&lt;p&gt;- Wanna talk&lt;/p&gt;&#xA;&lt;p&gt;- Ok. Let&amp;rsquo;s talk. Here is my public key. Here are the protocols that I support.&lt;/p&gt;&#xA;&lt;p&gt;- Thanks &lt;em&gt;Checks for known hosts locally&lt;/em&gt;. Here&amp;rsquo;s my password.&lt;/p&gt;&#xA;&lt;h2 id=&#34;keys&#34;&gt;Keys&lt;/h2&gt;&#xA;&lt;p&gt;There are several keys that are used in this play. Three keys exist at the very begining. A user has his green key, TGS has its yellow one and the HTTP server has a black one. Each key is private to the party and is not know by other parties. Two more keys are generated during the authentication process: a purple and a crimson one. Keys also need to be printer out: one copy for green, black and yellow keys and two copies for purple and crimson ones. Here is the ininital &amp;ldquo;state&amp;rdquo;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Credential Delegation</title>
-      <link>http://localhost:1313/docs/attacks/protocols/asp/auth/credssp/</link>
+      <link>https://bakerst221b.com/docs/attacks/protocols/asp/auth/credssp/</link>
       <pubDate>Sat, 10 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/attacks/protocols/asp/auth/credssp/</guid>
+      <guid>https://bakerst221b.com/docs/attacks/protocols/asp/auth/credssp/</guid>
       <description>&lt;p&gt;&lt;em&gt;Imagine, I have keys to my place. I also have a friend, and I want this friend to take care of my cat when I am out of town. I can make a copy of my keys and give them to my friend. What I did is called &lt;em&gt;delegating&lt;/em&gt; the access credentials.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
   </channel>

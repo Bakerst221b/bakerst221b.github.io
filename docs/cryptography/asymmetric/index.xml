@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Assymetric Algorithms on Analyst</title>
-    <link>http://localhost:1313/docs/cryptography/asymmetric/</link>
+    <link>https://bakerst221b.com/docs/cryptography/asymmetric/</link>
     <description>Recent content in Assymetric Algorithms on Analyst</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 26 Apr 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/docs/cryptography/asymmetric/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bakerst221b.com/docs/cryptography/asymmetric/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Diffie-Hellman Key Exchange</title>
-      <link>http://localhost:1313/docs/cryptography/asymmetric/deffie-hellman/</link>
+      <link>https://bakerst221b.com/docs/cryptography/asymmetric/deffie-hellman/</link>
       <pubDate>Mon, 16 Nov 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/cryptography/asymmetric/deffie-hellman/</guid>
+      <guid>https://bakerst221b.com/docs/cryptography/asymmetric/deffie-hellman/</guid>
       <description>&lt;p&gt;&lt;em&gt;I&amp;rsquo;ve written this article while I was untanging RSA and Deffie Hellman inside my head. What I need to stree right here, in the article description, the main difference between them is the Deffie Hellman is NOT a encryption algorithm! It&amp;rsquo;s an algorithm of generating a symmetric key using principles of asymmetric cryptography.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;For the mathmatics topics needed to understand this algorothm, please, refer to the math sections.&lt;/p&gt;&#xA;&lt;p&gt;There is a peculiar characteristic of prime numbers 👑 and their respective primitive roots 🦷:&lt;/p&gt;</description>
     </item>
     <item>
       <title>RSA</title>
-      <link>http://localhost:1313/docs/cryptography/asymmetric/rsa/</link>
+      <link>https://bakerst221b.com/docs/cryptography/asymmetric/rsa/</link>
       <pubDate>Mon, 16 Nov 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/cryptography/asymmetric/rsa/</guid>
+      <guid>https://bakerst221b.com/docs/cryptography/asymmetric/rsa/</guid>
       <description>&lt;p&gt;&lt;em&gt;To my utter embarrassment I had to admit that I&amp;rsquo;ve recently realized I didn&amp;rsquo;t remember how the RSA worked&amp;hellip;. What I though to be RSA turned out to be Diffie-Hellman algorithm&amp;hellip; Oops &amp;#x1f62c;. So, I&amp;rsquo;ve rewatched Khan&amp;rsquo;s video about RSA and was surprised I could every confuse the two. This article and another one about Diffie-Hellman is my way of explaining cryptographic notions: visual representation, verbal explanation and&amp;hellip; code. Thanks to Python &amp;#x1f40d;.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
   </channel>

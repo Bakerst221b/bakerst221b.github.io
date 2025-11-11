@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Algorithms on Analyst</title>
-    <link>http://localhost:1313/docs/reference/algorithms/</link>
+    <link>https://bakerst221b.com/docs/reference/algorithms/</link>
     <description>Recent content in Algorithms on Analyst</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 07 May 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/docs/reference/algorithms/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bakerst221b.com/docs/reference/algorithms/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sliding Window</title>
-      <link>http://localhost:1313/docs/reference/algorithms/sliding-window/</link>
+      <link>https://bakerst221b.com/docs/reference/algorithms/sliding-window/</link>
       <pubDate>Sun, 07 May 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/reference/algorithms/sliding-window/</guid>
+      <guid>https://bakerst221b.com/docs/reference/algorithms/sliding-window/</guid>
       <description>&lt;p&gt;&lt;em&gt;Sliding window is a little different from two pointer. I personally found it hard to understand how, thus this article.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Bitwise Magic</title>
-      <link>http://localhost:1313/docs/reference/algorithms/bitwise/</link>
+      <link>https://bakerst221b.com/docs/reference/algorithms/bitwise/</link>
       <pubDate>Thu, 28 Jul 2022 15:14:39 +1000</pubDate>
-      <guid>http://localhost:1313/docs/reference/algorithms/bitwise/</guid>
+      <guid>https://bakerst221b.com/docs/reference/algorithms/bitwise/</guid>
       <description>&lt;p&gt;*## Logical&lt;/p&gt;&#xA;&lt;h2 id=&#34;and&#34;&gt;AND&lt;/h2&gt;&#xA;&lt;h3 id=&#34;zero-n-bits-out&#34;&gt;Zero &lt;code&gt;N&lt;/code&gt; bits out&lt;/h3&gt;&#xA;&lt;p&gt;All you need to do, is to &lt;code&gt;and&lt;/code&gt; it with a &lt;code&gt;0000 0000&lt;/code&gt; mask (for a one byte value in this example).&lt;/p&gt;&#xA;&lt;h3 id=&#34;check-if-an-integer-is-even&#34;&gt;Check if an integer is even&lt;/h3&gt;&#xA;&lt;p&gt;Mask it with &lt;code&gt;0000 0001&lt;/code&gt;. Even numbers have &lt;code&gt;0&lt;/code&gt; at the end, and uneven - &lt;code&gt;1&lt;/code&gt;. &lt;code&gt;and&lt;/code&gt;ing an even number with &lt;code&gt;0000 0001&lt;/code&gt; will result in &lt;code&gt;0&lt;/code&gt; and &lt;code&gt;and&lt;/code&gt;ing an uneven - with &lt;code&gt;1&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;h3 id=&#34;bit-map&#34;&gt;Bit map&lt;/h3&gt;&#xA;&lt;p&gt;AND operation will be used to check if the given bit in the bit map was set already: &lt;code&gt;if bit_vector &amp;amp; (1 &amp;lt;&amp;lt; char_code)&lt;/code&gt;. 1 &amp;laquo; char_code basically does the following (using 8 bit value for simplicity). Say, we checking if either of the numbers appeared more than once in some data (numbers from &lt;code&gt;0&lt;/code&gt; to &lt;code&gt;7&lt;/code&gt;).&lt;/p&gt;</description>
     </item>
   </channel>

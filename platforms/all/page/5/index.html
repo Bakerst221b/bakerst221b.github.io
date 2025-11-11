@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>All - Analyst</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  <link rel="icon" href="http://localhost:1313/favicon.png">
+  <link rel="icon" href="https://bakerst221b.com/favicon.png">
   <link href="/css/style-classic.css"></link>
   
   
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/style.min.0fd8269b84d57bc40ce18bb200a70ca7e1001ccf31f98dc3a8e47fa25f99b326.css">
   
 
   
@@ -77,14 +77,14 @@
     <div class='header'>
   <div class="container">
     <div class="logo">
-      <a href="http://localhost:1313/"><img alt="Logo" src="/images/logo.png" /></a>
+      <a href="https://bakerst221b.com/"><img alt="Logo" src="/images/logo.png" /></a>
     </div>
     <div class="logo-mobile">
-      <a href="http://localhost:1313/"><img alt="Logo" src="/images/logo-mobile.svg" /></a>
+      <a href="https://bakerst221b.com/"><img alt="Logo" src="/images/logo-mobile.svg" /></a>
     </div>
     
 
-    <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/platforms/all/index.xml" title="Analyst" />
+    <link rel="alternate" type="application/rss+xml" href="https://bakerst221b.com/platforms/all/index.xml" title="Analyst" />
     <div id="main-menu" class="main-menu">
   <ul>
     
@@ -182,7 +182,7 @@
  <h1 class="title">All</h1> 
  
 
-    <h2><a href="http://localhost:1313/docs/ttp/malware/analyse/basics/mutable-vs-immutable/"> Mutable vs Immutable</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/ttp/malware/analyse/basics/mutable-vs-immutable/"> Mutable vs Immutable</a></h2> 
     <p> <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#f92672">import</span> ctypes
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> a <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>
@@ -197,13 +197,13 @@
 </span></span></code></pre></div><p>Similarly, regardless of whether you flag some <code>UITextField</code> as <em>Secure Text Entry</em> or not, it always returns data in the form of a <code>String</code> or <code>NSString</code>.</p>
 <p>On the other hand, using the overwritten data outside the compiler&rsquo;s scope (e.g., serializing it in a temp file) guarantees that it will be overwritten but obviously impacts performance and maintenance. You should try to overwrite critical objects with random data or content from non-critical objects. This will make it really difficult to construct scanners that can identify sensitive data on the basis of its management. This can be only done by low-level languages because the compilers and just-in-time virtual machines will ignore those operations for performance reasons if the optimization routines detect that the buffer is no longer used after being overwritten.</p></p>
 
-    <h2><a href="http://localhost:1313/docs/ttp/antiforensics/antivirus/"> Evading Antivirus</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/ttp/antiforensics/antivirus/"> Evading Antivirus</a></h2> 
     <p> <h2 id="windows">Windows</h2>
 <p><a href="https://tyeyeah.github.io/2021/08/02/2021-08-02-Bypass-Anti-Virus/">https://tyeyeah.github.io/2021/08/02/2021-08-02-Bypass-Anti-Virus/</a></p>
 <h2 id="macos">macOS</h2>
 <h2 id="linux">Linux</h2></p>
 
-    <h2><a href="http://localhost:1313/docs/ttp/antiforensics/fs-hiding-data/"> Hiding Data</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/ttp/antiforensics/fs-hiding-data/"> Hiding Data</a></h2> 
     <p> <h2 id="alternative-data-stream">Alternative data stream</h2>
 <p>Alternate data streams. Specific for Windows. See more <a href="/docs/dfir/forensic-investigation/reference/windows/win-ads">here</a>. Are there such streams for other OS? If yes, how to make them and discover them?</p>
 <p>To ensure compatability between NTFS and HFS. Allows hiding files.</p>
@@ -215,7 +215,7 @@
 </span></span><span style="display:flex;"><span>innocent.exe
 </span></span></code></pre></div><p>But <code>dir /r</code> - will display <strong>all</strong> streams. LNS and Sfind will hunt down such files. Also, when you copy files from and to a FAT partition - all residual files will be deleted.</p></p>
 
-    <h2><a href="http://localhost:1313/docs/ttp/antiforensics/logs-turnoff/"> Turning Off Logging</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/ttp/antiforensics/logs-turnoff/"> Turning Off Logging</a></h2> 
     <p> <h2 id="macos">macOS</h2>
 <p>From Apple&rsquo;s official documentation:</p>
 <blockquote>
@@ -226,29 +226,29 @@
 </ul>
 <p>So if your volume is mounted at <code>/Volumes/MyDisk</code>, you would create an empty file called <code>/Volumes/MyDisk/.fseventsd/no_log</code>.</p></p>
 
-    <h2><a href="http://localhost:1313/docs/artefacts/fs/ssd/"> Flash Memory Overview</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/artefacts/fs/ssd/"> Flash Memory Overview</a></h2> 
     <p> <p><em>In this article I&rsquo;m going to give a general overview of how SSD works and how it&rsquo;s different from an HDD.</em></p>
 <p>SSDs consist of NAND memory chips, a power terminal and a data terminal. Due to its nature, data cannot be overwritten, therefore, it needs to be white clean first.</p>
 <blockquote>
 <p>🔎 Does it mean that there is no data in the unallocated or slack space?</p></blockquote>
 <p>Data is written in pages and deleted in blocks (multiple pages).</p></p>
 
-    <h2><a href="http://localhost:1313/docs/artefacts/fs/hdd/"> HDD Overview</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/artefacts/fs/hdd/"> HDD Overview</a></h2> 
     <p> <p><em>In this article I&rsquo;m going to give a general overview of how HDDs work.</em></p>
 <h2 id="floppy">Floppy</h2>
 <p>Floppy disks &#x1f4be; are like dinosaurs 🦕. They are ancient, not usually used nowadays. But the mechanism is very much like the one found in an HDD that&rsquo;s why I&rsquo;ve found it useful to start the intro to HDD from a simplier mechanism. In the square brackerts I&rsquo;ll be giving an analogy with a person reading a book (inspired by <a href="https://www.takeupcode.com/podcast/226-filesystem-chs-vs-lba-modes/">takeupcode.com</a>).</p></p>
 
-    <h2><a href="http://localhost:1313/docs/attacks/binary/exploits/bufferoverflow/"> Buffer Overflow</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/attacks/binary/exploits/bufferoverflow/"> Buffer Overflow</a></h2> 
     <p> </p>
 
-    <h2><a href="http://localhost:1313/docs/ttp/malware/analyse/basics/crack-me-algo/"> Cracking 🔨</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/ttp/malware/analyse/basics/crack-me-algo/"> Cracking 🔨</a></h2> 
     <p> <p><em>Any cracking career is supposed to start with solving simple crackme&rsquo;s. I&rsquo;ve not been doing it all the time, but I&rsquo;ve solved several of them from the simplest to a very hard one which required some math knowledge 😬. This allowed me to craft some sort of algorithm I would like to share.&quot;</em></p></p>
 
-    <h2><a href="http://localhost:1313/docs/ttp/malware/analyse/basics/from-src-to-binary/"> From Src to Binary</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/ttp/malware/analyse/basics/from-src-to-binary/"> From Src to Binary</a></h2> 
     <p> <p>To read</p>
 <p><a href="https://www.airs.com/blog/archives/38">https://www.airs.com/blog/archives/38</a></p></p>
 
-    <h2><a href="http://localhost:1313/docs/ttp/antiforensics/usbkill-switch/"> USBKill Switch</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/ttp/antiforensics/usbkill-switch/"> USBKill Switch</a></h2> 
     <p> <p>A software that could be used for anti-forensics. By default, configs are at <code>/etc</code> and named <code>usbkill.ini</code>. The default behaviour - shut the system down. Keeps a whitelist of allowed USB devices. Can also prevent malware from getting on the PC from a USB drive.</p>
 <p>Analogues: BusKill (set a <code>udev</code> rule to be triggered if the USB drive is removed: lock, shutdown or self-destruct) and Silk Guardian (Linux Kernel mode switch that&rsquo;s waiting for a change, deletes files on events and shuts the system down).</p></p>
 
@@ -369,7 +369,7 @@ h2 {
         <div class="sub-footer-inner">
           <ul>
             <li class="zerostatic"><a href="https://www.zerostatic.io">www.zerostatic.io</a></li>
-            <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/platforms/all/index.xml" title="Analyst" />
+            <link rel="alternate" type="application/rss+xml" href="https://bakerst221b.com/platforms/all/index.xml" title="Analyst" />
             </ul>
         </div>
       </div>
@@ -383,9 +383,13 @@ h2 {
   
 
   
-  <script type="text/javascript" src="/js/scripts.js"></script>
+  <script type="text/javascript" src="/js/scripts.min.ec19db7e4836c12e2c5e3697d926bc3e4c22005167d9826aab54feca08f0c093.js"></script>
   
 
+  
+  
+  
+    
   
 
 

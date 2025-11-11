@@ -2,108 +2,108 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>🏺 Windows Registry on Analyst</title>
-    <link>http://localhost:1313/docs/artefacts/win/registry/</link>
+    <link>https://bakerst221b.com/docs/artefacts/win/registry/</link>
     <description>Recent content in 🏺 Windows Registry on Analyst</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 11 Jul 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/docs/artefacts/win/registry/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bakerst221b.com/docs/artefacts/win/registry/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>🖱 Devices Attached</title>
-      <link>http://localhost:1313/docs/artefacts/win/registry/devices/</link>
+      <link>https://bakerst221b.com/docs/artefacts/win/registry/devices/</link>
       <pubDate>Mon, 12 Oct 2020 17:50:01 +0300</pubDate>
-      <guid>http://localhost:1313/docs/artefacts/win/registry/devices/</guid>
-      <description>&lt;p&gt;Are we looking for USB storage media activity or all USB devices? Like, cameras 📸? Headphones 🎧? As for the timestamps, you&amp;rsquo;ll usually have &lt;strong&gt;first&lt;/strong&gt; (setupapi log) and &lt;strong&gt;last&lt;/strong&gt; connected. There are also OS specific timestamps, like first or last install, first connect since reboot etc. &lt;a href=&#34;http://localhost:1313/docs/dfir/host/windows/windows-artifacts#usb-devices&#34;&gt;Windows&lt;/a&gt; USB artifacts, &lt;a href=&#34;http://localhost:1313/docs/dfir/host/apple/mac-artifacts#usb-devices&#34;&gt;macOS&lt;/a&gt;. See Event Manager&amp;rsquo;s codes &lt;a href=&#34;docs/dfir/host/windows/event-manager#20001&#34;&gt;20001&lt;/a&gt; and &lt;a href=&#34;docs/dfir/host/windows/event-manager#20002&#34;&gt;20002&lt;/a&gt; for USB events for verification or if the registry was updated. Look at &lt;code&gt;HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceClasses\&lt;/code&gt; and &lt;code&gt;HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\USB\&amp;lt;hardware id&amp;gt;\&amp;lt;instance id&amp;gt;\Device Parameters&lt;/code&gt;. &lt;a href=&#34;https://docs.microsoft.com/en-us/windows-hardware/drivers/usbcon/usb-device-specific-registry-settings&#34;&gt;More&lt;/a&gt;.&lt;/p&gt;</description>
+      <guid>https://bakerst221b.com/docs/artefacts/win/registry/devices/</guid>
+      <description>&lt;p&gt;Are we looking for USB storage media activity or all USB devices? Like, cameras 📸? Headphones 🎧? As for the timestamps, you&amp;rsquo;ll usually have &lt;strong&gt;first&lt;/strong&gt; (setupapi log) and &lt;strong&gt;last&lt;/strong&gt; connected. There are also OS specific timestamps, like first or last install, first connect since reboot etc. &lt;a href=&#34;https://bakerst221b.com/docs/dfir/host/windows/windows-artifacts#usb-devices&#34;&gt;Windows&lt;/a&gt; USB artifacts, &lt;a href=&#34;https://bakerst221b.com/docs/dfir/host/apple/mac-artifacts#usb-devices&#34;&gt;macOS&lt;/a&gt;. See Event Manager&amp;rsquo;s codes &lt;a href=&#34;docs/dfir/host/windows/event-manager#20001&#34;&gt;20001&lt;/a&gt; and &lt;a href=&#34;docs/dfir/host/windows/event-manager#20002&#34;&gt;20002&lt;/a&gt; for USB events for verification or if the registry was updated. Look at &lt;code&gt;HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceClasses\&lt;/code&gt; and &lt;code&gt;HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\USB\&amp;lt;hardware id&amp;gt;\&amp;lt;instance id&amp;gt;\Device Parameters&lt;/code&gt;. &lt;a href=&#34;https://docs.microsoft.com/en-us/windows-hardware/drivers/usbcon/usb-device-specific-registry-settings&#34;&gt;More&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Network History</title>
-      <link>http://localhost:1313/docs/artefacts/win/registry/network/</link>
+      <link>https://bakerst221b.com/docs/artefacts/win/registry/network/</link>
       <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/artefacts/win/registry/network/</guid>
+      <guid>https://bakerst221b.com/docs/artefacts/win/registry/network/</guid>
       <description>&lt;p&gt;🔑 &lt;code&gt;SOFTWARE\Microsoft\Windows NT\CurrentVersion\NetworkList\Signatures\Unmanaged&lt;/code&gt;&#xA;🔑 &lt;code&gt;SOFTWARE\Microsoft\WindowsNT\CurrentVersion\NetworkList\Signatures\Managed&lt;/code&gt;&#xA;🔑 &lt;code&gt;SOFTWARE\Microsoft\WindowsNT\CurrentVersion\NetworkList\Nla\Cache&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;Can be used to get the following data:&lt;/p&gt;&#xA;&lt;p&gt;🐾 Identify networks that the computer has been connected to.&#xA;🐾 Networks could be wireless or wired.&#xA;🐾 Identify domain name/intranet name.&#xA;🐾 Identify SSID, MAC address of SSID for Gateway could be physically triangulated.&#xA;🐾 Identify Gateway MAC address.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;❗️This will also list any networks that have been connected to via a VPN.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;&#xA;&lt;details&gt;&#xA;    &lt;summary&gt;Expand&amp;hellip;&lt;/summary&gt;&#xA;    Something here&#xA;&lt;/details&gt;</description>
     </item>
     <item>
       <title>Search History</title>
-      <link>http://localhost:1313/docs/artefacts/win/registry/search/</link>
+      <link>https://bakerst221b.com/docs/artefacts/win/registry/search/</link>
       <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/artefacts/win/registry/search/</guid>
+      <guid>https://bakerst221b.com/docs/artefacts/win/registry/search/</guid>
       <description>&lt;h2 id=&#34;acmru&#34;&gt;ACMRU&lt;/h2&gt;&#xA;&lt;p&gt;“Search History” on the Windows system (via Search Assistant)&lt;/p&gt;&#xA;&lt;p&gt;🔑 &lt;code&gt;NTUSER.DAT\Software\Microsoft\SearchAssistant\ACMru\XXXX&lt;/code&gt;. Possible values of XXXX:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Internet search - 5001&lt;/li&gt;&#xA;&lt;li&gt;All or part of the doc name - 5603&lt;/li&gt;&#xA;&lt;li&gt;A word or phrase in a file - 5604&lt;/li&gt;&#xA;&lt;li&gt;Printers, computers and people - 5647&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;wordwheelquery&#34;&gt;WordWheelQuery&lt;/h2&gt;&#xA;&lt;p&gt;Win7+. Keywords are added in Unicode and listed in temporal order in an MRUlist.&lt;/p&gt;&#xA;&lt;p&gt;🔑 &lt;code&gt;NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\WordWheelQuery&lt;/code&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;&#xA;&lt;details&gt;&#xA;    &lt;summary&gt;Expand&amp;hellip;&lt;/summary&gt;&#xA;    Something here&#xA;&lt;/details&gt;</description>
     </item>
     <item>
       <title>🏺 SAM</title>
-      <link>http://localhost:1313/docs/artefacts/win/registry/sam/</link>
+      <link>https://bakerst221b.com/docs/artefacts/win/registry/sam/</link>
       <pubDate>Wed, 21 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/artefacts/win/registry/sam/</guid>
+      <guid>https://bakerst221b.com/docs/artefacts/win/registry/sam/</guid>
       <description>&lt;p&gt;&lt;em&gt;This is about &amp;hellip; .&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Installed Apps</title>
-      <link>http://localhost:1313/docs/artefacts/win/registry/installed/</link>
+      <link>https://bakerst221b.com/docs/artefacts/win/registry/installed/</link>
       <pubDate>Fri, 02 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/artefacts/win/registry/installed/</guid>
+      <guid>https://bakerst221b.com/docs/artefacts/win/registry/installed/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Key&lt;/strong&gt; 🔑: &lt;code&gt;Microsoft\Windows\CurrentVersion\Uninstall&lt;/code&gt;. There can be some data for programs that do not exist on the system anymore. The last write time is when the application was installed.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Key&lt;/strong&gt; 🔑 &lt;code&gt;Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore&lt;/code&gt; for installed Microsoft applications. Defines between those that were installed for a specific user or system-wide.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Key&lt;/strong&gt; 🔑: &lt;code&gt;Wiw6432Node&lt;/code&gt; (&lt;code&gt;SYSTEM&lt;/code&gt; hive root node) - those that run a 32-bit mode. Separate sub-keys for different versions of a program.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Key&lt;/strong&gt; 🔑: &lt;code&gt;Classes\Installer\Products&lt;/code&gt; - installed using Miscrosoft installer (those with &lt;code&gt;msi&lt;/code&gt; extension).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Jumplist Data</title>
-      <link>http://localhost:1313/docs/artefacts/win/registry/jumplist/</link>
+      <link>https://bakerst221b.com/docs/artefacts/win/registry/jumplist/</link>
       <pubDate>Fri, 02 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/artefacts/win/registry/jumplist/</guid>
+      <guid>https://bakerst221b.com/docs/artefacts/win/registry/jumplist/</guid>
       <description>&lt;p&gt;&lt;em&gt;The Windows 7-10 taskbar (Jump List) is engineered to allow users to “jump” or access items they have frequently or recently used quickly and easily. This functionality not only includes recent media files; it must also include recent tasks. The data stored in the AutomaticDestinations folder will each have a unique file prepended with the AppID of the associated application.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Recents</title>
-      <link>http://localhost:1313/docs/artefacts/win/registry/recents/</link>
+      <link>https://bakerst221b.com/docs/artefacts/win/registry/recents/</link>
       <pubDate>Fri, 02 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/artefacts/win/registry/recents/</guid>
+      <guid>https://bakerst221b.com/docs/artefacts/win/registry/recents/</guid>
       <description>&lt;h2 id=&#34;recentdocs&#34;&gt;RecentDocs&lt;/h2&gt;&#xA;&lt;p&gt;🔑 &lt;code&gt;NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;This key will track the order of the last 150 files or folders opened, keeping track of the temporal order in which each file/folder was opened.&lt;/p&gt;&#xA;&lt;p&gt;🗝️ &lt;code&gt;.XXX&lt;/code&gt; - This subkey stores the last files with a specific extension that were opened.&lt;/p&gt;&#xA;&lt;p&gt;🗝️ &lt;code&gt;Folder&lt;/code&gt; This subkey stores the last folders that were opened. The MRU list will keep track of the temporal order in which each folder was opened.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Uninstalled</title>
-      <link>http://localhost:1313/docs/artefacts/win/registry/uninstalled/</link>
+      <link>https://bakerst221b.com/docs/artefacts/win/registry/uninstalled/</link>
       <pubDate>Fri, 02 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/artefacts/win/registry/uninstalled/</guid>
+      <guid>https://bakerst221b.com/docs/artefacts/win/registry/uninstalled/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Key&lt;/strong&gt; 🔑:  &lt;code&gt;Microsoft\Windows\CurrentVersion\Uninstall&lt;/code&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;&#xA;&lt;details&gt;&#xA;    &lt;summary&gt;Expand&amp;hellip;&lt;/summary&gt;&#xA;    Something here&#xA;&lt;/details&gt;</description>
     </item>
     <item>
       <title>AmCache</title>
-      <link>http://localhost:1313/docs/artefacts/win/registry/amcache/</link>
+      <link>https://bakerst221b.com/docs/artefacts/win/registry/amcache/</link>
       <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/artefacts/win/registry/amcache/</guid>
+      <guid>https://bakerst221b.com/docs/artefacts/win/registry/amcache/</guid>
       <description>&lt;p&gt;&lt;em&gt;And yet another place to check for program execution. It&amp;rsquo;s like a forensic treasure of program execution. You can see installed applications, drivers and unassociated progs. For each entry, you can see loads of metadata. You can even see the SHA1 hashes! How great is that? However, be careful; installed doesn&amp;rsquo;t mean executed!&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>BAM and DAM</title>
-      <link>http://localhost:1313/docs/artefacts/win/registry/bam/</link>
+      <link>https://bakerst221b.com/docs/artefacts/win/registry/bam/</link>
       <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/artefacts/win/registry/bam/</guid>
+      <guid>https://bakerst221b.com/docs/artefacts/win/registry/bam/</guid>
       <description>&lt;p&gt;&lt;em&gt;It provides a full path of the executable file run on the system and the last execution date/time. BAM stands for Background Activity Moderator, and DAM - Desktop Activity Moderator. BAM is a &amp;ldquo;daemon master&amp;rdquo; (controls the background services), whereas DAM moderates desktop services to save energy.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>ShellBag</title>
-      <link>http://localhost:1313/docs/artefacts/win/registry/shell-bag/</link>
+      <link>https://bakerst221b.com/docs/artefacts/win/registry/shell-bag/</link>
       <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/artefacts/win/registry/shell-bag/</guid>
+      <guid>https://bakerst221b.com/docs/artefacts/win/registry/shell-bag/</guid>
       <description>&lt;p&gt;&lt;em&gt;To open a file, one needs to perform a delightful jaunt to a directory where those files reside. Now picture this: imagine if we could keep a journal of all the full paths of the folders visited; wouldn&amp;rsquo;t that be splendid? It so happens that this nice functionality does exist on Windows machines and ShellBags they are called. Since these folders can be located on a remote machine, a USB drive or any other external media, this artefact can be used to make assumptions about remote connections and devices attached.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>ShimCache aka AppCompatCache</title>
-      <link>http://localhost:1313/docs/artefacts/win/registry/shimcache/</link>
+      <link>https://bakerst221b.com/docs/artefacts/win/registry/shimcache/</link>
       <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/artefacts/win/registry/shimcache/</guid>
+      <guid>https://bakerst221b.com/docs/artefacts/win/registry/shimcache/</guid>
       <description>&lt;p&gt;&lt;em&gt;How often has the following happened to you? You want to run a program, but it&amp;rsquo;s not designed to run on this version of OS. Windows has a mechanism to run older programs on newer systems. Even when these &amp;ldquo;compatibility&amp;rdquo; adjustments are not required, Windows still logs the information for all the programs run.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>User Assist</title>
-      <link>http://localhost:1313/docs/artefacts/win/registry/userassist/</link>
+      <link>https://bakerst221b.com/docs/artefacts/win/registry/userassist/</link>
       <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/artefacts/win/registry/userassist/</guid>
+      <guid>https://bakerst221b.com/docs/artefacts/win/registry/userassist/</guid>
       <description>&lt;p&gt;&lt;em&gt;GUI-based programs launched from the desktop are tracked in the launcher on a Windows system.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>⚙️ Windows Registry</title>
-      <link>http://localhost:1313/docs/artefacts/win/registry/anatomy/</link>
+      <link>https://bakerst221b.com/docs/artefacts/win/registry/anatomy/</link>
       <pubDate>Fri, 02 Oct 2020 11:38:32 +0300</pubDate>
-      <guid>http://localhost:1313/docs/artefacts/win/registry/anatomy/</guid>
+      <guid>https://bakerst221b.com/docs/artefacts/win/registry/anatomy/</guid>
       <description>&lt;p&gt;Hives:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;C:&lt;span style=&#34;color:#ae81ff&#34;&gt;\D&lt;/span&gt;ocuments and Settings |*&lt;span style=&#34;color:#ae81ff&#34;&gt;\n&lt;/span&gt;tuser.dat&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;C:&lt;span style=&#34;color:#ae81ff&#34;&gt;\U&lt;/span&gt;sers&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;|*&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;ntuser. dat&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;C: &lt;span style=&#34;color:#ae81ff&#34;&gt;\U&lt;/span&gt;sers&lt;span style=&#34;color:#ae81ff&#34;&gt;\ \*\n&lt;/span&gt;tuser.dat. LOG|*&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;C: &lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;Users&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;|*&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;AppData&lt;span style=&#34;color:#ae81ff&#34;&gt;\L&lt;/span&gt;ocal&lt;span style=&#34;color:#ae81ff&#34;&gt;\M&lt;/span&gt;icrosoft&lt;span style=&#34;color:#ae81ff&#34;&gt;\W&lt;/span&gt;indows| UsrClass.dat&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;C: | Users&lt;span style=&#34;color:#ae81ff&#34;&gt;\|&lt;/span&gt;*&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;AppData&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;Local&lt;span style=&#34;color:#ae81ff&#34;&gt;\M&lt;/span&gt;icrosoft Windows| UsrClass.dat.LOG|*&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;C: &lt;span style=&#34;color:#ae81ff&#34;&gt;\W&lt;/span&gt;indows&lt;span style=&#34;color:#ae81ff&#34;&gt;\S&lt;/span&gt;ystem32&lt;span style=&#34;color:#ae81ff&#34;&gt;\c&lt;/span&gt;onfig&lt;span style=&#34;color:#ae81ff&#34;&gt;\S&lt;/span&gt;AM. LOG|*&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;C: Windows&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;System32&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;config SECURITY. LOG&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;*&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;C: Windows&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;System32&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;config&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;SOFTWARE. LOG| *&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;C: Windows&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;System32&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;config SYSTEM. LOG&lt;span style=&#34;color:#ae81ff&#34;&gt;\*&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; C:&lt;span style=&#34;color:#ae81ff&#34;&gt;\D&lt;/span&gt;ocuments and Settings |*&lt;span style=&#34;color:#ae81ff&#34;&gt;\n&lt;/span&gt;tuser.dat&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; C:&lt;span style=&#34;color:#ae81ff&#34;&gt;\U&lt;/span&gt;sers&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;|*&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;ntuser. dat&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; C: &lt;span style=&#34;color:#ae81ff&#34;&gt;\U&lt;/span&gt;sers&lt;span style=&#34;color:#ae81ff&#34;&gt;\ \*\n&lt;/span&gt;tuser.dat. LOG|*&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; C: &lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;Users&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;|*&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;AppData&lt;span style=&#34;color:#ae81ff&#34;&gt;\L&lt;/span&gt;ocal&lt;span style=&#34;color:#ae81ff&#34;&gt;\M&lt;/span&gt;icrosoft&lt;span style=&#34;color:#ae81ff&#34;&gt;\W&lt;/span&gt;indows| UsrClass.dat&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; C: | Users&lt;span style=&#34;color:#ae81ff&#34;&gt;\|&lt;/span&gt;*&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;AppData&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;Local&lt;span style=&#34;color:#ae81ff&#34;&gt;\M&lt;/span&gt;icrosoft Windows| UsrClass.dat.LOG|*&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; C: &lt;span style=&#34;color:#ae81ff&#34;&gt;\W&lt;/span&gt;indows&lt;span style=&#34;color:#ae81ff&#34;&gt;\S&lt;/span&gt;ystem32&lt;span style=&#34;color:#ae81ff&#34;&gt;\c&lt;/span&gt;onfig&lt;span style=&#34;color:#ae81ff&#34;&gt;\S&lt;/span&gt;AM. LOG|*&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; C: Windows&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;System32&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;config SECURITY. LOG&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;*&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; C: Windows&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;System32&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;config&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;SOFTWARE. LOG| *&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; C: Windows&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;System32&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;config SYSTEM. LOG&lt;span style=&#34;color:#ae81ff&#34;&gt;\*&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;C: &lt;span style=&#34;color:#ae81ff&#34;&gt;\W&lt;/span&gt;indows&lt;span style=&#34;color:#ae81ff&#34;&gt;\S&lt;/span&gt;ystem32&lt;span style=&#34;color:#ae81ff&#34;&gt;\c&lt;/span&gt;onfig&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;SAM&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;C: &lt;span style=&#34;color:#ae81ff&#34;&gt;\W&lt;/span&gt;indows&lt;span style=&#34;color:#ae81ff&#34;&gt;\S&lt;/span&gt;ystem32&lt;span style=&#34;color:#ae81ff&#34;&gt;\c&lt;/span&gt;onfig&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;SECURITY&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;C: &lt;span style=&#34;color:#ae81ff&#34;&gt;\W&lt;/span&gt;indows&lt;span style=&#34;color:#ae81ff&#34;&gt;\S&lt;/span&gt;ystem32&lt;span style=&#34;color:#ae81ff&#34;&gt;\c&lt;/span&gt;onfig&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;SOFTWARE&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;C: &lt;span style=&#34;color:#ae81ff&#34;&gt;\W&lt;/span&gt;indows&lt;span style=&#34;color:#ae81ff&#34;&gt;\S&lt;/span&gt;ystem32&lt;span style=&#34;color:#ae81ff&#34;&gt;\c&lt;/span&gt;onfig&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;SYSTEM&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;C: &lt;span style=&#34;color:#ae81ff&#34;&gt;\W&lt;/span&gt;indows&lt;span style=&#34;color:#ae81ff&#34;&gt;\S&lt;/span&gt;ystem32&lt;span style=&#34;color:#ae81ff&#34;&gt;\c&lt;/span&gt;onfig&lt;span style=&#34;color:#ae81ff&#34;&gt;\R&lt;/span&gt;egBack&lt;span style=&#34;color:#ae81ff&#34;&gt;\\&lt;/span&gt;*. LOG|*&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;C: &lt;span style=&#34;color:#ae81ff&#34;&gt;\W&lt;/span&gt;indows&lt;span style=&#34;color:#ae81ff&#34;&gt;\S&lt;/span&gt;ystem32&lt;span style=&#34;color:#ae81ff&#34;&gt;\c&lt;/span&gt;onfig&lt;span style=&#34;color:#ae81ff&#34;&gt;\R&lt;/span&gt;egBack&lt;span style=&#34;color:#ae81ff&#34;&gt;\S&lt;/span&gt;AM&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;C: &lt;span style=&#34;color:#ae81ff&#34;&gt;\W&lt;/span&gt;indows&lt;span style=&#34;color:#ae81ff&#34;&gt;\S&lt;/span&gt;ystem32&lt;span style=&#34;color:#ae81ff&#34;&gt;\c&lt;/span&gt;onfig&lt;span style=&#34;color:#ae81ff&#34;&gt;\R&lt;/span&gt;egBack&lt;span style=&#34;color:#ae81ff&#34;&gt;\S&lt;/span&gt;ECURITY&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;C: &lt;span style=&#34;color:#ae81ff&#34;&gt;\W&lt;/span&gt;indows&lt;span style=&#34;color:#ae81ff&#34;&gt;\S&lt;/span&gt;ystem32&lt;span style=&#34;color:#ae81ff&#34;&gt;\c&lt;/span&gt;onfig&lt;span style=&#34;color:#ae81ff&#34;&gt;\R&lt;/span&gt;egBack&lt;span style=&#34;color:#ae81ff&#34;&gt;\S&lt;/span&gt;OFTWARE&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;C: &lt;span style=&#34;color:#ae81ff&#34;&gt;\W&lt;/span&gt;indows&lt;span style=&#34;color:#ae81ff&#34;&gt;\S&lt;/span&gt;ystem32&lt;span style=&#34;color:#ae81ff&#34;&gt;\c&lt;/span&gt;onfig&lt;span style=&#34;color:#ae81ff&#34;&gt;\R&lt;/span&gt;egBack&lt;span style=&#34;color:#ae81ff&#34;&gt;\S&lt;/span&gt;YSTEM&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Registryives: Path: C: &lt;span style=&#34;color:#ae81ff&#34;&gt;\W&lt;/span&gt;indows&lt;span style=&#34;color:#ae81ff&#34;&gt;\S&lt;/span&gt;ystem32&lt;span style=&#34;color:#ae81ff&#34;&gt;\c&lt;/span&gt;onfig&lt;span style=&#34;color:#ae81ff&#34;&gt;\R&lt;/span&gt;egBack&lt;span style=&#34;color:#ae81ff&#34;&gt;\S&lt;/span&gt;YSTEMI&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Registry is a repository for settings on a Windows machine. Prior to Windows NT, &lt;code&gt;ini&lt;/code&gt; files were used. These were substituted with Windows registry to keep initialization and configurations. Some changes are also logged by the registry.&lt;/p&gt;</description>
     </item>
   </channel>

@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>🤔 Analysis Tips and Cheatsheets - Analyst</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  <link rel="icon" href="http://localhost:1313/favicon.png">
+  <link rel="icon" href="https://bakerst221b.com/favicon.png">
   <link href="/css/style-classic.css"></link>
   
   
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/style.min.0fd8269b84d57bc40ce18bb200a70ca7e1001ccf31f98dc3a8e47fa25f99b326.css">
   
 
   
@@ -77,14 +77,14 @@
     <div class='header'>
   <div class="container">
     <div class="logo">
-      <a href="http://localhost:1313/"><img alt="Logo" src="/images/logo.png" /></a>
+      <a href="https://bakerst221b.com/"><img alt="Logo" src="/images/logo.png" /></a>
     </div>
     <div class="logo-mobile">
-      <a href="http://localhost:1313/"><img alt="Logo" src="/images/logo-mobile.svg" /></a>
+      <a href="https://bakerst221b.com/"><img alt="Logo" src="/images/logo-mobile.svg" /></a>
     </div>
     
 
-    <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/docs/ttp/cheatsheets/index.xml" title="Analyst" />
+    <link rel="alternate" type="application/rss+xml" href="https://bakerst221b.com/docs/ttp/cheatsheets/index.xml" title="Analyst" />
     <div id="main-menu" class="main-menu">
   <ul>
     
@@ -200,19 +200,19 @@
  <h1 class="title">🤔 Analysis Tips and Cheatsheets</h1> 
  
 
-    <h2><a href="http://localhost:1313/docs/ttp/cheatsheets/remote/"> 🤔 How do I check for remote connections?</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/ttp/cheatsheets/remote/"> 🤔 How do I check for remote connections?</a></h2> 
     <p> <p><em>How to check if the system was accessed remotely? What sort of remote connections is the attacker likely to be using?</em></p></p>
 
-    <h2><a href="http://localhost:1313/docs/ttp/cheatsheets/devices/"> Devices Attached</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/ttp/cheatsheets/devices/"> Devices Attached</a></h2> 
     <p> <p>*Are we looking for USB storage media activity or all USB devices? Like, cameras 📸? Headphones 🎧? As for the timestamps, you&rsquo;ll usually have <strong>first</strong> (setupapi log) and <strong>last</strong> connected. There are also OS specific timestamps, like first or last install, first connect since reboot etc. <a href="/docs/dfir/host/windows/windows-artifacts#usb-devices">Windows</a> USB artifacts, <a href="/docs/dfir/host/apple/mac-artifacts#usb-devices">macOS</a>. See Event Manager&rsquo;s codes <a href="docs/dfir/host/windows/event-manager#20001">20001</a> and <a href="docs/dfir/host/windows/event-manager#20002">20002</a> for USB events for verification or if the registry was updated. Look at <code>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceClasses\</code> and <code>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\USB\&lt;hardware id&gt;\&lt;instance id&gt;\Device Parameters</code>. <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/usbcon/usb-device-specific-registry-settings">More</a>.</p></p>
 
-    <h2><a href="http://localhost:1313/docs/ttp/cheatsheets/mngmt/"> 🤔 How Do I Audit Management Tools?</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/ttp/cheatsheets/mngmt/"> 🤔 How Do I Audit Management Tools?</a></h2> 
     <p> <p><em>Admins on payroll and those &ldquo;magnanimous volunteers&rdquo; often tread the very same path, albeit guided by different compasses of motivation. Once our cunning adversary ascends to the lofty heights of respect usually reserved for the admin on payroll, the misuse of these management tools becomes bound only by the limits of their mischievous imagination.</em></p></p>
 
-    <h2><a href="http://localhost:1313/docs/ttp/cheatsheets/terminal/"> 🤔 How To Investigation Terminal Activity?</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/ttp/cheatsheets/terminal/"> 🤔 How To Investigation Terminal Activity?</a></h2> 
     <p> <p><em>Think of the terminal as a magic wand 🪄 of the attacker. The beauty for them is that they can do all sorts of nasty things remotely, but their beauty also lies with their forensics perks: one can review the history of this activity.</em></p></p>
 
-    <h2><a href="http://localhost:1313/docs/ttp/cheatsheets/clear/"> 🤔 How Do I Check For Logs Clearing?</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/ttp/cheatsheets/clear/"> 🤔 How Do I Check For Logs Clearing?</a></h2> 
     <p> <h2 id="windows">Windows</h2>
 <blockquote>
 <p>❗️These techniques require admin or higher privileges.
@@ -226,7 +226,7 @@
 </ol>
 <p>One can also suspend the event log process or make changes in RAM. However, all of these actions require 👑.</p></p>
 
-    <h2><a href="http://localhost:1313/docs/ttp/cheatsheets/autoruns/"> 🤔 How Do I Check For Malicious Autostarts?</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/ttp/cheatsheets/autoruns/"> 🤔 How Do I Check For Malicious Autostarts?</a></h2> 
     <p> <h2 id="windows">Windows</h2>
 <h3 id="tasks">Tasks</h3>
 <h4 id="event-logs">Event logs</h4>
@@ -270,7 +270,7 @@
 <blockquote>
 <p>✍🏻 On older Win 👴🏼 it&rsquo;s <code>602</code> event. Also, config files are in bin format with <code>.job</code> extension and can be parsed by a <code>jobparser.py</code> script.</p></p>
 
-    <h2><a href="http://localhost:1313/docs/ttp/cheatsheets/recon/"> 🤔 How Do I Check For Reconnaisance Activity?</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/ttp/cheatsheets/recon/"> 🤔 How Do I Check For Reconnaisance Activity?</a></h2> 
     <p> <h2 id="windows">Windows</h2>
 <h3 id="event-logs">Event logs</h3>
 <p>Monitoring for these events will cause a lot of noise and false positives. You need to do it in a smart way:</p>
@@ -283,14 +283,14 @@
 <p><code>4798</code> - user&rsquo;s local group membership enum.
 <code>4799</code> - security-enabled local group membership enum.</p></p>
 
-    <h2><a href="http://localhost:1313/docs/ttp/cheatsheets/execution/"> 🤔 How do I check program execution?</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/ttp/cheatsheets/execution/"> 🤔 How do I check program execution?</a></h2> 
     <p> <h2 id="windows">Windows</h2>
 <p>You can use Prefetch which is the most reliable source. However, if the program is NOT there, it doesn&rsquo;t mean it wasn&rsquo;t executed.</p>
 <p>Another artefact of use is AmCache. What&rsquo;s great about it is that it stores hashes among all. Although it&rsquo;s not proof of the program being executed, it can show the PRESENCE of files (exe and drivers) on the system.</p>
 <h3 id="shimcache">ShimCache</h3>
 <p>It is ok to collect artefacts like that manually, but it&rsquo;s better to do so at scale. Some tools were designed to process these artefacts and put everything in an SQL database.</p></p>
 
-    <h2><a href="http://localhost:1313/docs/ttp/cheatsheets/sysinfo/"> 🤔 How Do I Check System Information?</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/ttp/cheatsheets/sysinfo/"> 🤔 How Do I Check System Information?</a></h2> 
     <p> <h2 id="windows">Windows</h2>
 <p>Registry, of course.</p>
 <h3 id="amcache-registry-">AmCache, Registry 🗄️</h3>
@@ -309,7 +309,7 @@ W-Fi MAC Address for the connected iPhone</p>
     Something here
 </details></p>
 
-    <h2><a href="http://localhost:1313/docs/ttp/cheatsheets/account/"> 🤔 How Do I Find Malicious or Compromised Accounts?</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/ttp/cheatsheets/account/"> 🤔 How Do I Find Malicious or Compromised Accounts?</a></h2> 
     <p> <h2 id="windows">Windows</h2>
 <h3 id="event-logs">Event logs</h3>
 <p>📂 <code>%system root%\System32\config\SecEvent.evt</code>
@@ -419,7 +419,7 @@ h2 {
         <div class="sub-footer-inner">
           <ul>
             <li class="zerostatic"><a href="https://www.zerostatic.io">www.zerostatic.io</a></li>
-            <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/docs/ttp/cheatsheets/index.xml" title="Analyst" />
+            <link rel="alternate" type="application/rss+xml" href="https://bakerst221b.com/docs/ttp/cheatsheets/index.xml" title="Analyst" />
             </ul>
         </div>
       </div>
@@ -433,9 +433,13 @@ h2 {
   
 
   
-  <script type="text/javascript" src="/js/scripts.js"></script>
+  <script type="text/javascript" src="/js/scripts.min.ec19db7e4836c12e2c5e3697d926bc3e4c22005167d9826aab54feca08f0c093.js"></script>
   
 
+  
+  
+  
+    
   
 
 

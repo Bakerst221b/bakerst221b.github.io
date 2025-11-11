@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>📚 Linux on Analyst</title>
-    <link>http://localhost:1313/docs/reference/linux/</link>
+    <link>https://bakerst221b.com/docs/reference/linux/</link>
     <description>Recent content in 📚 Linux on Analyst</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 08 Jun 2020 09:49:24 +0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/docs/reference/linux/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bakerst221b.com/docs/reference/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>📚 Linux OS Primer</title>
-      <link>http://localhost:1313/docs/reference/linux/linux-overview/</link>
+      <link>https://bakerst221b.com/docs/reference/linux/linux-overview/</link>
       <pubDate>Mon, 08 Jun 2020 09:49:24 +0300</pubDate>
-      <guid>http://localhost:1313/docs/reference/linux/linux-overview/</guid>
+      <guid>https://bakerst221b.com/docs/reference/linux/linux-overview/</guid>
       <description>&lt;h2 id=&#34;main-directories&#34;&gt;Main Directories&lt;/h2&gt;&#xA;&lt;p&gt;&lt;code&gt;bin&lt;/code&gt; - for binary executables. Common commands are found here - &lt;code&gt;ps&lt;/code&gt;, &lt;code&gt;ls&lt;/code&gt;, &lt;code&gt;ping&lt;/code&gt;, &lt;code&gt;grep&lt;/code&gt;, &lt;code&gt;cp&lt;/code&gt; etc. These are basic programs for proper OS operation.&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;sbin&lt;/code&gt; - same but more about &lt;strong&gt;system maintainance&lt;/strong&gt; like &lt;code&gt;lptables&lt;/code&gt;, &lt;code&gt;reboot&lt;/code&gt;, &lt;code&gt;fdisk&lt;/code&gt;, &lt;code&gt;ifconfig&lt;/code&gt; etc.&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;etc&lt;/code&gt; - configurations for user accounts and programs.&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;var&lt;/code&gt; - files that expected to grow and change contantly. Contains &lt;code&gt;/var/logs&lt;/code&gt; for surprise-surprise&amp;hellip; wait for it&amp;hellip; logs. Wow! 😯&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;tmp&lt;/code&gt; - contains temprory files, which are deleted on system reboot.&lt;/p&gt;</description>
     </item>
   </channel>

@@ -2,66 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>IR Cases 💼 on Analyst</title>
-    <link>http://localhost:1313/docs/todo/cases/ir/</link>
+    <link>https://bakerst221b.com/docs/todo/cases/ir/</link>
     <description>Recent content in IR Cases 💼 on Analyst</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 28 Nov 2018 15:14:39 +1000</lastBuildDate>
-    <atom:link href="http://localhost:1313/docs/todo/cases/ir/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bakerst221b.com/docs/todo/cases/ir/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Case 1. Famous Retailer Data Breach</title>
-      <link>http://localhost:1313/docs/todo/cases/ir/case1/</link>
+      <link>https://bakerst221b.com/docs/todo/cases/ir/case1/</link>
       <pubDate>Wed, 28 Nov 2018 15:14:39 +1000</pubDate>
-      <guid>http://localhost:1313/docs/todo/cases/ir/case1/</guid>
+      <guid>https://bakerst221b.com/docs/todo/cases/ir/case1/</guid>
       <description>&lt;h2 id=&#34;case-overview&#34;&gt;Case Overview&lt;/h2&gt;&#xA;&lt;p&gt;&lt;em&gt;The Target Corporation is an American retailing company,  founded in 1902 and  headquartered in Minneapolis, Minnesota. It&amp;rsquo;s the second largest discount retailer in the United States. Target operates 1,916 stores in the United States, and also began operations in Canada in March of 2013. In December 2013, a data breach of Target&amp;rsquo;s systems effected up to 110 million customers. The attackers stole around 110 million customers&amp;rsquo; PII. They had all the IDS/IPS and stuff and were PCI-DSS compliant.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Case 2. Watering Hole Attack</title>
-      <link>http://localhost:1313/docs/todo/cases/ir/case2/</link>
+      <link>https://bakerst221b.com/docs/todo/cases/ir/case2/</link>
       <pubDate>Wed, 28 Nov 2018 15:14:39 +1000</pubDate>
-      <guid>http://localhost:1313/docs/todo/cases/ir/case2/</guid>
+      <guid>https://bakerst221b.com/docs/todo/cases/ir/case2/</guid>
       <description>&lt;h2 id=&#34;case-overview&#34;&gt;Case Overview&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Watering hole&lt;/strong&gt; is an attack strategy in which an attacker guesses or observes which websites an organization often uses and infects one or more of them with malware. Eventually, some member of the targeted group will become infected [&lt;a href=&#34;https://en.wikipedia.org/wiki/Watering_hole_attack&#34;&gt;1&lt;/a&gt;].&lt;/p&gt;&#xA;&lt;p&gt;July, 2012. Several high-profile institutions (financial and tech sectors) were victimized by a watering hole attack.&lt;/p&gt;&#xA;&lt;h2 id=&#34;layout&#34;&gt;Layout&lt;/h2&gt;&#xA;&lt;h3 id=&#34;step-1-stake-out-watering-hole&#34;&gt;Step 1. Stake out watering hole&lt;/h3&gt;&#xA;&lt;p&gt;Insert an iframe that redirects users to a 0-day malware download (Trojan Gh0st RAT).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Case 3. Phishing against Google and Facebook</title>
-      <link>http://localhost:1313/docs/todo/cases/ir/case3/</link>
+      <link>https://bakerst221b.com/docs/todo/cases/ir/case3/</link>
       <pubDate>Wed, 28 Nov 2018 15:14:39 +1000</pubDate>
-      <guid>http://localhost:1313/docs/todo/cases/ir/case3/</guid>
+      <guid>https://bakerst221b.com/docs/todo/cases/ir/case3/</guid>
       <description>&lt;h2 id=&#34;case-overview&#34;&gt;Case Overview&lt;/h2&gt;&#xA;&lt;p&gt;&lt;em&gt;In summary, according to the US attorney&amp;rsquo;s office for the Southern District of New York, scammers stole over $100 million from Facebook and Google in a creative way. Basically, they e-mailed the tech giants and asked for it. The scheme that included setting up a fake business and sending phishing e-mails to employees of Facebook and Google. The scheme ultimately duped those multi-million dollar companies out of more than a hundred million in total between 2013 and 2015.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Case 4. SANS Mock Case</title>
-      <link>http://localhost:1313/docs/todo/cases/ir/case4/</link>
+      <link>https://bakerst221b.com/docs/todo/cases/ir/case4/</link>
       <pubDate>Wed, 28 Nov 2018 15:14:39 +1000</pubDate>
-      <guid>http://localhost:1313/docs/todo/cases/ir/case4/</guid>
+      <guid>https://bakerst221b.com/docs/todo/cases/ir/case4/</guid>
       <description>&lt;h2 id=&#34;case-overview&#34;&gt;Case Overview&lt;/h2&gt;&#xA;&lt;p&gt;&lt;em&gt;Arya Stark gets an email presumably from Direwolf with an attachment. It looks suspicious and she forwards it to the Security.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;environment&#34;&gt;Environment&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Winterfell Server Network&lt;/strong&gt; (&lt;code&gt;192.168.10.0/24&lt;/code&gt;) consisting of DNS (&lt;code&gt;192.168.10.230&lt;/code&gt;) Centos7 with &lt;code&gt;bind&lt;/code&gt; &lt;code&gt;ns1.winterfell.local&lt;/code&gt; and Mail server (&lt;code&gt;192.168.10.140&lt;/code&gt;) &lt;code&gt;mail.winterfell.local&lt;/code&gt;, Centos7 with Postfix and Dovecot.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Winterfell Desktop Network&lt;/strong&gt; (&lt;code&gt;192.168.11.0/24&lt;/code&gt;), having IPs: &lt;code&gt;192.168.11.101&lt;/code&gt;, &lt;code&gt;192.168.11.102&lt;/code&gt;, &lt;code&gt;192.168.11.103&lt;/code&gt;, &lt;code&gt;192.168.11.104&lt;/code&gt;, &lt;code&gt;192.168.11.105&lt;/code&gt;. &lt;code&gt;192.168.11.105&lt;/code&gt; is Security&amp;rsquo;s IP. All desktops have Win7 SP1 with MOffice 2010 installed. For the machine to be vulnerable for the below attack steps, Windows Firewall should be disabled and macro turned on for Office Docs (Trust Center &amp;gt; Trust Center Settings &amp;gt; Macro Settings). Also, PsExec requires the DWORD called LocalAccountTokenFilterPolicy in the registry under&lt;/p&gt;</description>
     </item>
     <item>
       <title>Case 5. IBM Example</title>
-      <link>http://localhost:1313/docs/todo/cases/ir/case5/</link>
+      <link>https://bakerst221b.com/docs/todo/cases/ir/case5/</link>
       <pubDate>Wed, 28 Nov 2018 15:14:39 +1000</pubDate>
-      <guid>http://localhost:1313/docs/todo/cases/ir/case5/</guid>
+      <guid>https://bakerst221b.com/docs/todo/cases/ir/case5/</guid>
       <description>&lt;h2 id=&#34;case-overview&#34;&gt;Case Overview&lt;/h2&gt;&#xA;&lt;p&gt;&lt;em&gt;Arya Stark gets an email presumably from Direwolf with an attachment. It looks suspicious and she forwards it to the Security.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Identify possible threats. Identify attack vectors: Website hosting malicious content waiting for a vulnerable browser. This can be countered with: Qradar, McAfee ePolicy Orchestrator, Next generation firewall.&lt;/p&gt;&#xA;&lt;p&gt;In Qradar we have several alerts: Malicious URL detected, three possible DDoS and OAS denied access and continued preceded by file infected.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Case 6. Home Depot PoS Attack</title>
-      <link>http://localhost:1313/docs/todo/cases/ir/case6/</link>
+      <link>https://bakerst221b.com/docs/todo/cases/ir/case6/</link>
       <pubDate>Wed, 28 Nov 2018 15:14:39 +1000</pubDate>
-      <guid>http://localhost:1313/docs/todo/cases/ir/case6/</guid>
+      <guid>https://bakerst221b.com/docs/todo/cases/ir/case6/</guid>
       <description>&lt;h2 id=&#34;case-overview&#34;&gt;Case Overview&lt;/h2&gt;&#xA;&lt;p&gt;&lt;em&gt;This attack started from stealing credentials from a vendor, using them to install malware on around 7500 self-checkout POS terminals and then stealing data. Went unnoticed for 5 months (April - Septemper 2014) and grabbed the data from 56 million credit and debit cards (useful for identity theft) and 53 million emails (useful for phishing). Investigation started on September, 2nd and on 8th indicated that the system was breached. They also offered free credit services to affected customers who use their payment card as early as April of 2014, and apologized for the data breach.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Case 7. Atlanta Ransomware Attack</title>
-      <link>http://localhost:1313/docs/todo/cases/ir/case7/</link>
+      <link>https://bakerst221b.com/docs/todo/cases/ir/case7/</link>
       <pubDate>Wed, 28 Nov 2018 15:14:39 +1000</pubDate>
-      <guid>http://localhost:1313/docs/todo/cases/ir/case7/</guid>
+      <guid>https://bakerst221b.com/docs/todo/cases/ir/case7/</guid>
       <description>&lt;h2 id=&#34;case-overview&#34;&gt;Case Overview&lt;/h2&gt;&#xA;&lt;p&gt;22 March, 2018 the City of Atlanta suffered from a ransomware attack. Many devices at City Hall were shutdown. SamSam Ransomware was to blame. Demanded $51000 and the city refused. Shutdown the main devices for 5 days. Many of the operations returned to the traditional handwriting 😊. Atlanta disabled WiFi at the airport up until the 2nd of April.&lt;/p&gt;&#xA;&lt;h2 id=&#34;timeline&#34;&gt;Timeline&lt;/h2&gt;&#xA;&lt;p&gt;22 March, 2018 - ransomware strikes.&lt;/p&gt;&#xA;&lt;p&gt;May - online water bill payment restored.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Case 8. Kaseya Supply Chain Ransomware Attack</title>
-      <link>http://localhost:1313/docs/todo/cases/ir/case8/</link>
+      <link>https://bakerst221b.com/docs/todo/cases/ir/case8/</link>
       <pubDate>Wed, 28 Nov 2018 15:14:39 +1000</pubDate>
-      <guid>http://localhost:1313/docs/todo/cases/ir/case8/</guid>
+      <guid>https://bakerst221b.com/docs/todo/cases/ir/case8/</guid>
       <description>&lt;h2 id=&#34;case-overview&#34;&gt;Case Overview&lt;/h2&gt;&#xA;&lt;h2 id=&#34;timeline&#34;&gt;Timeline&lt;/h2&gt;&#xA;&lt;h2 id=&#34;lessons-learned&#34;&gt;Lessons Learned&lt;/h2&gt;&#xA;&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;&#xA;&lt;p&gt;[&lt;a href=&#34;https://www.zscaler.com/blogs/security-research/kaseya-supply-chain-ransomware-attack-technical-analysis-revil-payload&#34;&gt;1&lt;/a&gt;] Kaseya Supply Chain Ransomware Attack - Technical Analysis of the REvil Payload&lt;/p&gt;&#xA;&lt;p&gt;[&lt;a href=&#34;https://www.huntress.com/blog/rapid-response-kaseya-vsa-mass-msp-ransomware-incident&#34;&gt;2&lt;/a&gt;] Case updates and general informaiton.&lt;/p&gt;</description>
     </item>
   </channel>

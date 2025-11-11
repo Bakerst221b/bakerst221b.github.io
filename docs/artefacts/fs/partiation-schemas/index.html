@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Partition Schemas - Analyst</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  <link rel="icon" href="http://localhost:1313/favicon.png">
+  <link rel="icon" href="https://bakerst221b.com/favicon.png">
   <link href="/css/style-classic.css"></link>
   
   
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/style.min.0fd8269b84d57bc40ce18bb200a70ca7e1001ccf31f98dc3a8e47fa25f99b326.css">
   
 
   
@@ -77,14 +77,14 @@
     <div class='header'>
   <div class="container">
     <div class="logo">
-      <a href="http://localhost:1313/"><img alt="Logo" src="/images/logo.png" /></a>
+      <a href="https://bakerst221b.com/"><img alt="Logo" src="/images/logo.png" /></a>
     </div>
     <div class="logo-mobile">
-      <a href="http://localhost:1313/"><img alt="Logo" src="/images/logo-mobile.svg" /></a>
+      <a href="https://bakerst221b.com/"><img alt="Logo" src="/images/logo-mobile.svg" /></a>
     </div>
     
 
-    <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/docs/artefacts/fs/partiation-schemas/index.xml" title="Analyst" />
+    <link rel="alternate" type="application/rss+xml" href="https://bakerst221b.com/docs/artefacts/fs/partiation-schemas/index.xml" title="Analyst" />
     <div id="main-menu" class="main-menu">
   <ul>
     
@@ -200,20 +200,20 @@
  <h1 class="title">Partition Schemas</h1> 
  
 
-    <h2><a href="http://localhost:1313/docs/artefacts/fs/partiation-schemas/apm/"> Apple Partition Map</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/artefacts/fs/partiation-schemas/apm/"> Apple Partition Map</a></h2> 
     <p> <p>APFS is not very much described from the forensic perspective. I wonder how much APM is described.</p>
 <p>APM and APFS seem to be unable to live together. APFS requires GUID.</p></p>
 
-    <h2><a href="http://localhost:1313/docs/artefacts/fs/partiation-schemas/gpt/"> GUID Partition Table</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/artefacts/fs/partiation-schemas/gpt/"> GUID Partition Table</a></h2> 
     <p> <p>GUID is an identifier of the following format: 8-4-4-4-12. There is still a protective MBR at 0 so that Windows will not try to format the disk. Up to 128 partitions, each entry is 128 bytes long -&gt; . The header is located in sector 1. Backup copy at the end of the disk. Uses GUID as partition identifiers.</p>
 <p><img src="images/gpt-struct.png" alt="gpt-struct"></p>
 <p>Up to a 128 partitions, all of them can be set as bootable. Will still have a dummy MBR at sector 0 and it&rsquo;s there for backwards compatibility.</p></p>
 
-    <h2><a href="http://localhost:1313/docs/artefacts/fs/partiation-schemas/mbr/"> Master Boot Record</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/artefacts/fs/partiation-schemas/mbr/"> Master Boot Record</a></h2> 
     <p> <p>Stands for <strong>M</strong>aster <strong>B</strong>oot <strong>R</strong>ecord.</p>
 <p>Primary partitions (bootable). Can have at most 4 bootable partitions, since it&rsquo;s limited to 4 partition entries in parition table, each entry 16 bytes in length. 4 bytes for their size, hence max value in hex is <code>0xFF FF FF FF</code>, hence max size of a partition is 2 Tb. It starts at sector <code>0</code>, it&rsquo;s 512 bytes long (one sector) and it ends with <code>0x55 0xAA</code>.</p></p>
 
-    <h2><a href="http://localhost:1313/docs/artefacts/fs/partiation-schemas/overview/"> Partition Schemas Overview</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/artefacts/fs/partiation-schemas/overview/"> Partition Schemas Overview</a></h2> 
     <p> <h2 id="bootcode-and-booting-process">Bootcode and Booting Process</h2>
 <h2 id="partition-tables">Partition tables</h2>
 <p>Partitioning is the address range where the volume with a file system can sit. You create a partition, then you format it to create a volume with a file system. So, <em>partition</em> and <em>volume</em> are not interchangable terms. Usually, a volume occupies the whole partition, but that&rsquo;s not always the case. Sometimes, some little address sapce might be left out of the volume, so that this volume would not occupy the whole partition.</p></p>
@@ -235,7 +235,7 @@
         <div class="sub-footer-inner">
           <ul>
             <li class="zerostatic"><a href="https://www.zerostatic.io">www.zerostatic.io</a></li>
-            <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/docs/artefacts/fs/partiation-schemas/index.xml" title="Analyst" />
+            <link rel="alternate" type="application/rss+xml" href="https://bakerst221b.com/docs/artefacts/fs/partiation-schemas/index.xml" title="Analyst" />
             </ul>
         </div>
       </div>
@@ -249,9 +249,13 @@
   
 
   
-  <script type="text/javascript" src="/js/scripts.js"></script>
+  <script type="text/javascript" src="/js/scripts.min.ec19db7e4836c12e2c5e3697d926bc3e4c22005167d9826aab54feca08f0c093.js"></script>
   
 
+  
+  
+  
+    
   
 
 

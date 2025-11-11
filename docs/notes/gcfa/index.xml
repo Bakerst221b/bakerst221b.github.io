@@ -2,66 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>GCFA on Analyst</title>
-    <link>http://localhost:1313/docs/notes/gcfa/</link>
+    <link>https://bakerst221b.com/docs/notes/gcfa/</link>
     <description>Recent content in GCFA on Analyst</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 18 Nov 2020 10:11:51 +0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/docs/notes/gcfa/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bakerst221b.com/docs/notes/gcfa/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>GCFA Study Plan 🗒</title>
-      <link>http://localhost:1313/docs/notes/gcfa/1-plan/</link>
+      <link>https://bakerst221b.com/docs/notes/gcfa/1-plan/</link>
       <pubDate>Wed, 18 Nov 2020 10:11:51 +0300</pubDate>
-      <guid>http://localhost:1313/docs/notes/gcfa/1-plan/</guid>
+      <guid>https://bakerst221b.com/docs/notes/gcfa/1-plan/</guid>
       <description>&lt;p&gt;&lt;em&gt;This is my GCFA study plan. I hope it will help me in organizing and prioritising the topics to learn and also in estimating the time I need to get ready. There are two plans that I&amp;rsquo;ve used: &lt;a href=&#34;https://www.giac.org/certification/certified-forensic-analyst-gcfa&#34;&gt;exam plan&lt;/a&gt; and the &lt;a href=&#34;https://www.sans.org/cyber-security-courses/advanced-incident-response-threat-hunting-training/#__utma=183869984.1662005416.1609691511.1609691511.1609691511.1&amp;amp;__utmb=183869984.2.9.1609691519154&amp;amp;__utmc=183869984&amp;amp;__utmx=-&amp;amp;__utmz=183869984.1609691511.1.1.utmcsr=google%7Cutmccn=(organic)%7Cutmcmd=organic%7Cutmctr=(not%20provided)&amp;amp;__utmv=-&amp;amp;__utmk=99012638&#34;&gt;official course plan&lt;/a&gt;. On the exam description page there is stated that:&lt;/em&gt;&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;No Specific training is required for any GIAC certification. There are many sources of information available regarding the certification objectives&amp;rsquo; knowledge areas. Practical experience is an option; there are also numerous books on the market covering Computer Information Security. Another option is any relevant courses from training providers, including &lt;a href=&#34;https://www.giac.org/registration/certified-forensic-analyst-gcfa&#34;&gt;SANS&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Advanced Incident Response &amp; Threat Hunting</title>
-      <link>http://localhost:1313/docs/notes/gcfa/2-ir-and-threat-hunting/</link>
+      <link>https://bakerst221b.com/docs/notes/gcfa/2-ir-and-threat-hunting/</link>
       <pubDate>Wed, 18 Nov 2020 10:11:51 +0300</pubDate>
-      <guid>http://localhost:1313/docs/notes/gcfa/2-ir-and-threat-hunting/</guid>
+      <guid>https://bakerst221b.com/docs/notes/gcfa/2-ir-and-threat-hunting/</guid>
       <description>&lt;h2 id=&#34;legend&#34;&gt;Legend&lt;/h2&gt;&#xA;&lt;p&gt;Below is the skeleton from SAN508 course description. I am using it to make up my study plan. For each step of this plan I estimate my current level of training and I am also collecting resourced for this topic under &lt;em&gt;Resources&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;p&gt;🫑 - &lt;strong&gt;level &lt;code&gt;0&lt;/code&gt;&lt;/strong&gt;. I know nothing and not even where to start. I might have some embarrassingly fundamental knowledge which is not good enough even for the start.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Intrusion analysis 🛠️</title>
-      <link>http://localhost:1313/docs/notes/gcfa/3-intrusion-analysis/</link>
+      <link>https://bakerst221b.com/docs/notes/gcfa/3-intrusion-analysis/</link>
       <pubDate>Wed, 18 Nov 2020 10:11:51 +0300</pubDate>
-      <guid>http://localhost:1313/docs/notes/gcfa/3-intrusion-analysis/</guid>
+      <guid>https://bakerst221b.com/docs/notes/gcfa/3-intrusion-analysis/</guid>
       <description>&lt;h2 id=&#34;legend&#34;&gt;Legend&lt;/h2&gt;&#xA;&lt;p&gt;Below is the skeleton from SAN508 course description. I am using it to make up my study plan. For each step of this plan I estimate my current level of training and I am also collecting resourced for this topic under &lt;em&gt;Resources&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;p&gt;🫑 - &lt;strong&gt;level &lt;code&gt;0&lt;/code&gt;&lt;/strong&gt;. I know nothing and not even where to start. I might have some embarrassingly fundamental knowledge which is not good enough even for the start.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Memory Forensics in Incident Response and Thread Hunting 🗓</title>
-      <link>http://localhost:1313/docs/notes/gcfa/4-memory-forensics/</link>
+      <link>https://bakerst221b.com/docs/notes/gcfa/4-memory-forensics/</link>
       <pubDate>Wed, 18 Nov 2020 10:11:51 +0300</pubDate>
-      <guid>http://localhost:1313/docs/notes/gcfa/4-memory-forensics/</guid>
+      <guid>https://bakerst221b.com/docs/notes/gcfa/4-memory-forensics/</guid>
       <description>&lt;h2 id=&#34;legend&#34;&gt;Legend&lt;/h2&gt;&#xA;&lt;p&gt;Below is the skeleton from SAN508 course description. I am using it to make up my study plan. For each step of this plan I estimate my current level of training and I am also collecting resourced for this topic under &lt;em&gt;Resources&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;p&gt;🫑 - &lt;strong&gt;level &lt;code&gt;0&lt;/code&gt;&lt;/strong&gt;. I know nothing and not even where to start. I might have some embarrassingly fundamental knowledge which is not good enough even for the start.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Timeline Analysis ⏱</title>
-      <link>http://localhost:1313/docs/notes/gcfa/5-timeline/</link>
+      <link>https://bakerst221b.com/docs/notes/gcfa/5-timeline/</link>
       <pubDate>Wed, 18 Nov 2020 10:11:51 +0300</pubDate>
-      <guid>http://localhost:1313/docs/notes/gcfa/5-timeline/</guid>
+      <guid>https://bakerst221b.com/docs/notes/gcfa/5-timeline/</guid>
       <description>&lt;h2 id=&#34;legend&#34;&gt;Legend&lt;/h2&gt;&#xA;&lt;p&gt;Below is the skeleton from SAN508 course description. I am using it to make up my study plan. For each step of this plan I estimate my current level of training and I am also collecting resourced for this topic under &lt;em&gt;Resources&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;p&gt;🫑 - &lt;strong&gt;level &lt;code&gt;0&lt;/code&gt;&lt;/strong&gt;. I know nothing and not even where to start. I might have some embarrassingly fundamental knowledge which is not good enough even for the start.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Incident Response &amp; Hunting Across the Enterprise | Advanced Adversary &amp; Anti-Forensics Detection</title>
-      <link>http://localhost:1313/docs/notes/gcfa/6-ir-and-antiforensics/</link>
+      <link>https://bakerst221b.com/docs/notes/gcfa/6-ir-and-antiforensics/</link>
       <pubDate>Wed, 18 Nov 2020 10:11:51 +0300</pubDate>
-      <guid>http://localhost:1313/docs/notes/gcfa/6-ir-and-antiforensics/</guid>
+      <guid>https://bakerst221b.com/docs/notes/gcfa/6-ir-and-antiforensics/</guid>
       <description>&lt;h2 id=&#34;legend&#34;&gt;Legend&lt;/h2&gt;&#xA;&lt;p&gt;Below is the skeleton from SAN508 course description. I am using it to make up my study plan. For each step of this plan I estimate my current level of training and I am also collecting resourced for this topic under &lt;em&gt;Resources&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;p&gt;🫑 - &lt;strong&gt;level &lt;code&gt;0&lt;/code&gt;&lt;/strong&gt;. I know nothing and not even where to start. I might have some embarrassingly fundamental knowledge which is not good enough even for the start.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The APT Threat Group Incident Response Challenge 👯‍♀️</title>
-      <link>http://localhost:1313/docs/notes/gcfa/7-apt/</link>
+      <link>https://bakerst221b.com/docs/notes/gcfa/7-apt/</link>
       <pubDate>Wed, 18 Nov 2020 10:11:51 +0300</pubDate>
-      <guid>http://localhost:1313/docs/notes/gcfa/7-apt/</guid>
+      <guid>https://bakerst221b.com/docs/notes/gcfa/7-apt/</guid>
       <description>&lt;h2 id=&#34;legend&#34;&gt;Legend&lt;/h2&gt;&#xA;&lt;p&gt;Below is the skeleton from SAN508 course description. I am using it to make up my study plan. For each step of this plan I estimate my current level of training and I am also collecting resourced for this topic under &lt;em&gt;Resources&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;p&gt;🫑 - &lt;strong&gt;level &lt;code&gt;0&lt;/code&gt;&lt;/strong&gt;. I know nothing and not even where to start. I might have some embarrassingly fundamental knowledge which is not good enough even for the start.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Sample Questions</title>
-      <link>http://localhost:1313/docs/notes/gcfa/8-sample-questions/</link>
+      <link>https://bakerst221b.com/docs/notes/gcfa/8-sample-questions/</link>
       <pubDate>Wed, 18 Nov 2020 10:11:51 +0300</pubDate>
-      <guid>http://localhost:1313/docs/notes/gcfa/8-sample-questions/</guid>
+      <guid>https://bakerst221b.com/docs/notes/gcfa/8-sample-questions/</guid>
       <description>&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;List of tools&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;List of reg entries&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;List of known malware and ioc&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Terminology&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;List of artefacts (Win and Lin)&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;List of attacks&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;List of scans and their footprint (try map against different OS and log the results)&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Re-read those diaries, might be of help&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Configure laboratory (Wins I have + WinXP + Linux Hacking + Linux Kali)&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Install WinServer VM with AD and learn the basics (Udemy course may be + Hahacking + questions)&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;❓ &lt;strong&gt;Which of the following encryption methods use the RC4 technology?&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
   </channel>

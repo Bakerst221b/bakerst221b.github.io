@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Windows - Analyst</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  <link rel="icon" href="http://localhost:1313/favicon.png">
+  <link rel="icon" href="https://bakerst221b.com/favicon.png">
   <link href="/css/style-classic.css"></link>
   
   
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/style.min.0fd8269b84d57bc40ce18bb200a70ca7e1001ccf31f98dc3a8e47fa25f99b326.css">
   
 
   
@@ -77,14 +77,14 @@
     <div class='header'>
   <div class="container">
     <div class="logo">
-      <a href="http://localhost:1313/"><img alt="Logo" src="/images/logo.png" /></a>
+      <a href="https://bakerst221b.com/"><img alt="Logo" src="/images/logo.png" /></a>
     </div>
     <div class="logo-mobile">
-      <a href="http://localhost:1313/"><img alt="Logo" src="/images/logo-mobile.svg" /></a>
+      <a href="https://bakerst221b.com/"><img alt="Logo" src="/images/logo-mobile.svg" /></a>
     </div>
     
 
-    <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/platforms/windows/index.xml" title="Analyst" />
+    <link rel="alternate" type="application/rss+xml" href="https://bakerst221b.com/platforms/windows/index.xml" title="Analyst" />
     <div id="main-menu" class="main-menu">
   <ul>
     
@@ -182,10 +182,10 @@
  <h1 class="title">Windows</h1> 
  
 
-    <h2><a href="http://localhost:1313/docs/blog/2022/02/jigsaw/"> Game Over</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/blog/2022/02/jigsaw/"> Game Over</a></h2> 
     <p> <p><em>One sunny 😎 day I came to a coworking office very early in the morning. As usual, I&rsquo;ve decided to kick it off with a freshly brewed coffee which we never had, so, I had to go with an instant substitute. Ugh 😣! I was hoping to savour my disgust meditating over the Feedly recents, when I noticed that I was not the only lark that day. Mark, a freelance designer who happened to be a huge fan of Assassin&rsquo;s Creed games (just like me), was sitting in the corner of the shared kitchen with his laptop, looking so gloomy that I was sorry I didn&rsquo;t take my ☔️ with me. When I&rsquo;ve forced the last sip of that potion inside, I wished him good morning and headed to my working nest. He didn&rsquo;t respond though, which was weird, since he usually was very friendly. I thought he needed some time on his own and was about to leave the kitchen when suddenly he hailed me. Long story short, he seemed to get himself a virus and didn&rsquo;t know how to get rid of it. He seemed scared, since lots of important files were encrypted.</em></p></p>
 
-    <h2><a href="http://localhost:1313/docs/todo/cases/ctf-walkthrough/cybercorp2/"> CyberCorp2</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/todo/cases/ctf-walkthrough/cybercorp2/"> CyberCorp2</a></h2> 
     <p> <p>⛔️  Spoiler alert!</p>
 <h2 id="case-details">Case Details</h2>
 <p>This is not an investigation like the previous one. This is threat hunting. So, we have only logs via Kibana available. To harden my knowledge with this technologies I&rsquo;ve had a very quick overview on ElasticStack website and enrolled in <a href="https://app.pluralsight.com/paths/skills/threat-hunting-with-the-elastic-stack">this</a> course. Basically, I will have to answer questing having a loads of logs and a query engine available.</p>
@@ -193,13 +193,13 @@
 <h3 id="1-wmi-event-consumer-name">1. WMI Event Consumer name?</h3>
 <p>✅ <em>The Threat Hunting process usually starts with the analyst making a hypothesis about a possible compromise vector or techniques used by an attacker. In this scenario, your initial hypothesis is as follows: &ldquo;The attacker used the WMI subscription mechanism to obtain persistence within the infrastructure&rdquo;. Verify this hypothesis and find the name of the WMI Event Consumer used by the attacker to maintain his foothold.</em></p></p>
 
-    <h2><a href="http://localhost:1313/docs/todo/cases/ctf-walkthrough/cybercorp1/"> CyberCorp1</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/todo/cases/ctf-walkthrough/cybercorp1/"> CyberCorp1</a></h2> 
     <p> <p>⛔️  Spoiler alert!</p>
 <h2 id="case-details">Case Details</h2>
 <p><strong>Artefacts in posession</strong>: memory dump, OS event logs, registry files, Prefetch files, $MFT file, ShimCache, AmCache, network traffic dumps. I&rsquo;ve decided to analyse each artefact, what can I get from it in this specific case and how. Then, I am going to outline my strategy in approaching this case.</p>
 <p>We are looking for indicators of compromise.  There are no details as to what is the group and what was its aim. But it’s known that there was abnormal traffic detected that has launched this IR process. So, at least, we must have some suspicious traffic, possibly open or terminated connections. These should have been launched by some process, so we are looking for malware. Also, since the attacker needed an account to get in, I will be looking for an account take over attempts and possibly, new account creation.</p></p>
 
-    <h2><a href="http://localhost:1313/docs/attacks/binary/injections/"> Process Injections</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/attacks/binary/injections/"> Process Injections</a></h2> 
     <p> <h2 id="windows">Windows</h2>
 <p>Most information is taken from <a href="!%5Bulr-4%5D(images/ulr-4.png)">here</a>, but more visualisation is added. The screenshots from IDA Pro are also copied from that blog post.</p>
 <h3 id="classic">Classic</h3>
@@ -207,7 +207,7 @@
 <p><img src="images/classic-1.png" alt="classic-1"></p>
 <p>Below is the anatomy of this function call.</p></p>
 
-    <h2><a href="http://localhost:1313/docs/attacks/protocols/asp/auth/kerberos/"> 📚 Kerberos</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/attacks/protocols/asp/auth/kerberos/"> 📚 Kerberos</a></h2> 
     <p> <h2 id="structure">Structure</h2>
 <h2 id="the-flow">The Flow</h2>
 <p>- Wanna talk</p>
@@ -216,20 +216,20 @@
 <h2 id="keys">Keys</h2>
 <p>There are several keys that are used in this play. Three keys exist at the very begining. A user has his green key, TGS has its yellow one and the HTTP server has a black one. Each key is private to the party and is not know by other parties. Two more keys are generated during the authentication process: a purple and a crimson one. Keys also need to be printer out: one copy for green, black and yellow keys and two copies for purple and crimson ones. Here is the ininital &ldquo;state&rdquo;.</p></p>
 
-    <h2><a href="http://localhost:1313/docs/ttp/sterilisation/"> 🧼 Media Sterilisation</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/ttp/sterilisation/"> 🧼 Media Sterilisation</a></h2> 
     <p> <p><em>Before copying evidence or making a disk image, one needs to sterilise the target media to ensure that data on that disk before this operation would not meddle with the evidence data. Several rounds of writing <code>0</code>s are usually enough.</em></p></p>
 
-    <h2><a href="http://localhost:1313/docs/tools/field-manuals/win-rtfm/"> 📕 Windows RTFM</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/tools/field-manuals/win-rtfm/"> 📕 Windows RTFM</a></h2> 
     <p> <p><em>This is about &hellip; .</em></p></p>
 
-    <h2><a href="http://localhost:1313/docs/artefacts/win/ad/"> 🏺 Active Directory</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/artefacts/win/ad/"> 🏺 Active Directory</a></h2> 
     <p> <p>Moving accounts and auth policies to the server side. Azure Active Directory is when instead of having a physical server, you have a server in the cloud ⛅️. Defines a set of rules to restrict users&rsquo; access to resources. PCs that are part of AD usually don&rsquo;t have full access to the systems.</p>
 <p>AD DS store contains db files and processes that manage directory information for users, services and applications. Consists of <code>Ntds.dit</code> file, at <code>%SystemRoot%\	NTDS</code> folder on all DC. Is only accessible thtough the DC&rsquo;s processes and protocols.</p></p>
 
-    <h2><a href="http://localhost:1313/docs/artefacts/win/wmi/"> 🏺 WMI</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/artefacts/win/wmi/"> 🏺 WMI</a></h2> 
     <p> <p><em>In days of yore, there existed a humble batch, whence emerged the WMI, and it didst hold dominion o&rsquo;er the realm of Windows contraptions for a considerable span until it was entwined with the might of PowerShell.</em></p></p>
 
-    <h2><a href="http://localhost:1313/docs/blog/2021/06/toy-story-pd/"> To Carry Out MockInv&#39;estigation. Part 1</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/blog/2021/06/toy-story-pd/"> To Carry Out MockInv&#39;estigation. Part 1</a></h2> 
     <p> <p>❗SPOILER ALERT!</p>
 <p>📆 <code>16/06/2021</code> , <em>Wednesday</em></p>
 <p>🕰 <code>09:21 PM</code>.</p>
@@ -343,7 +343,7 @@ h2 {
         <div class="sub-footer-inner">
           <ul>
             <li class="zerostatic"><a href="https://www.zerostatic.io">www.zerostatic.io</a></li>
-            <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/platforms/windows/index.xml" title="Analyst" />
+            <link rel="alternate" type="application/rss+xml" href="https://bakerst221b.com/platforms/windows/index.xml" title="Analyst" />
             </ul>
         </div>
       </div>
@@ -357,9 +357,13 @@ h2 {
   
 
   
-  <script type="text/javascript" src="/js/scripts.js"></script>
+  <script type="text/javascript" src="/js/scripts.min.ec19db7e4836c12e2c5e3697d926bc3e4c22005167d9826aab54feca08f0c093.js"></script>
   
 
+  
+  
+  
+    
   
 
 

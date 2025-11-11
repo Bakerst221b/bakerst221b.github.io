@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>About Me 🧝‍♀️ on Analyst</title>
-    <link>http://localhost:1313/docs/about/</link>
+    <link>https://bakerst221b.com/docs/about/</link>
     <description>Recent content in About Me 🧝‍♀️ on Analyst</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/docs/about/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bakerst221b.com/docs/about/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About me</title>
-      <link>http://localhost:1313/docs/about/about/</link>
+      <link>https://bakerst221b.com/docs/about/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/about/about/</guid>
-      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;The quieter you become, the more you can hear&amp;hellip; (c)&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;the-story-i-want-to-tell&#34;&gt;The story I want to tell&amp;hellip;&lt;/h2&gt;&#xA;&lt;p&gt;&lt;em&gt;&amp;hellip; or how I entered the InfoSec field&lt;/em&gt;&lt;/p&gt;&#xA;&lt;figure class=&#34;avatar&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/avatar.jpg&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;My name&amp;rsquo;s Veronica Zvereva, and I&amp;rsquo;m a security analyst. I&amp;rsquo;m jolly excited and proud of what I do. My job is my hobby and my passion. My IT education has mostly been self-study since I got my first PC around 2008 or 2009. In those days, I believed ICQ was like a PC number (similar to a phone number) plastered on the desktop. That PC was put together by many IT enthusiasts at our local IT market, and it was an absolute calamity! Every month or so, it would do something outrageous, pushing the boundaries of what I considered the worst PC could be. I could expect any horror from it: sudden shutdowns, throwing me back to square one and forcing me to start again, or freezing so solidly that I felt I was freezing too, but more out of desperation. It could also give me a dreaded &amp;ldquo;blue screen&amp;rdquo;. Every day was a &amp;ldquo;surprise&amp;rdquo;. Not long after this &amp;ldquo;treasure,&amp;rdquo; I purchased my first router (as if one wasn&amp;rsquo;t enough), which was equally frustrating. Soon after buying it, it began demanding daily resets and reconfigurations (almost every day), and neither the IPS nor the router&amp;rsquo;s tech support was of any help. Both (I mean the PC and the router) ended up in our hallway several years later and were snatched up by some unsuspecting neighbour. I often complained about those two precious &amp;ldquo;fellas,&amp;rdquo; but now I appreciate how valuable they became. They both compelled me to delve into IT and laid the foundation for my IT mindset, eventually leading me to become who I am today.&lt;/p&gt;</description>
+      <guid>https://bakerst221b.com/docs/about/about/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;The quieter you become, the more you can hear&amp;hellip; (c)&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;the-story-i-want-to-tell&#34;&gt;The story I want to tell&amp;hellip;&lt;/h2&gt;&#xA;&lt;p&gt;&lt;em&gt;&amp;hellip; or how I entered the InfoSec field&lt;/em&gt;&lt;/p&gt;&#xA;&lt;figure class=&#34;avatar&#34;&gt;&lt;img src=&#34;https://bakerst221b.com/images/avatar.jpg&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;My name&amp;rsquo;s Veronica Zvereva, and I&amp;rsquo;m a security analyst. I&amp;rsquo;m jolly excited and proud of what I do. My job is my hobby and my passion. My IT education has mostly been self-study since I got my first PC around 2008 or 2009. In those days, I believed ICQ was like a PC number (similar to a phone number) plastered on the desktop. That PC was put together by many IT enthusiasts at our local IT market, and it was an absolute calamity! Every month or so, it would do something outrageous, pushing the boundaries of what I considered the worst PC could be. I could expect any horror from it: sudden shutdowns, throwing me back to square one and forcing me to start again, or freezing so solidly that I felt I was freezing too, but more out of desperation. It could also give me a dreaded &amp;ldquo;blue screen&amp;rdquo;. Every day was a &amp;ldquo;surprise&amp;rdquo;. Not long after this &amp;ldquo;treasure,&amp;rdquo; I purchased my first router (as if one wasn&amp;rsquo;t enough), which was equally frustrating. Soon after buying it, it began demanding daily resets and reconfigurations (almost every day), and neither the IPS nor the router&amp;rsquo;s tech support was of any help. Both (I mean the PC and the router) ended up in our hallway several years later and were snatched up by some unsuspecting neighbour. I often complained about those two precious &amp;ldquo;fellas,&amp;rdquo; but now I appreciate how valuable they became. They both compelled me to delve into IT and laid the foundation for my IT mindset, eventually leading me to become who I am today.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Achievements</title>
-      <link>http://localhost:1313/docs/about/achievements/</link>
+      <link>https://bakerst221b.com/docs/about/achievements/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/about/achievements/</guid>
+      <guid>https://bakerst221b.com/docs/about/achievements/</guid>
       <description>&lt;h2 id=&#34;gcfa-certification-scored-90&#34;&gt;GCFA Certification scored 90%&lt;/h2&gt;&#xA;&lt;p&gt;Successfully passed the Certified Forensic Analyst exam on the 20th of July, 2023. Scored 90%, so, now I am on the GIAC advisory board!&lt;/p&gt;&#xA;&lt;h2 id=&#34;incident-response-engineer-at-flo-health-uk&#34;&gt;Incident Response Engineer at Flo Health UK&lt;/h2&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve recently started a new position at Flo Health where I am responsible for Incident Response Managment and some Threat Hunting as well. Good luck to me! Also, I&amp;rsquo;ve recently won a Google Cloud CTF (Threat Hunting) and got myself a cool &lt;a href=&#34;https://www.linkedin.com/posts/veronica-zvereva-3208b2bb_cloud-googlecloud-infosecurityeurope2022-activity-6945415255070027776-5Q54?utm_source=linkedin_share&amp;amp;utm_medium=member_desktop_web&#34;&gt;backpack&lt;/a&gt; 😊&lt;/p&gt;</description>
     </item>
     <item>
       <title>Contact</title>
-      <link>http://localhost:1313/docs/about/contact/</link>
+      <link>https://bakerst221b.com/docs/about/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/about/contact/</guid>
+      <guid>https://bakerst221b.com/docs/about/contact/</guid>
       <description>&lt;ul&gt;&#xA;&lt;li&gt;Email: &lt;a href=&#34;mailto:foo@xyz.com&#34;&gt;bakerst221b.uk@gmail.com&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Phone: [+7929992****]&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;mailing-address&#34;&gt;Mailing Address&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;221B, Baker Street&lt;/p&gt;&#xA;&lt;p&gt;Moscow&lt;/p&gt;&#xA;&lt;p&gt;Russian Federation&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;social&#34;&gt;Social&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.facebook.com/profile.php?id=100010534695390&#34;&gt;Facebook&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://twitter.com/shh01m3s&#34;&gt;Twitter&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
     </item>
   </channel>

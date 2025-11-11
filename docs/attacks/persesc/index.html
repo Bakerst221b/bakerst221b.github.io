@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Persistence and Escalation Mechanisms - Analyst</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  <link rel="icon" href="http://localhost:1313/favicon.png">
+  <link rel="icon" href="https://bakerst221b.com/favicon.png">
   <link href="/css/style-classic.css"></link>
   
   
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/style.min.0fd8269b84d57bc40ce18bb200a70ca7e1001ccf31f98dc3a8e47fa25f99b326.css">
   
 
   
@@ -77,14 +77,14 @@
     <div class='header'>
   <div class="container">
     <div class="logo">
-      <a href="http://localhost:1313/"><img alt="Logo" src="/images/logo.png" /></a>
+      <a href="https://bakerst221b.com/"><img alt="Logo" src="/images/logo.png" /></a>
     </div>
     <div class="logo-mobile">
-      <a href="http://localhost:1313/"><img alt="Logo" src="/images/logo-mobile.svg" /></a>
+      <a href="https://bakerst221b.com/"><img alt="Logo" src="/images/logo-mobile.svg" /></a>
     </div>
     
 
-    <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/docs/attacks/persesc/index.xml" title="Analyst" />
+    <link rel="alternate" type="application/rss+xml" href="https://bakerst221b.com/docs/attacks/persesc/index.xml" title="Analyst" />
     <div id="main-menu" class="main-menu">
   <ul>
     
@@ -200,13 +200,13 @@
  <h1 class="title">Persistence and Escalation Mechanisms</h1> 
  
 
-    <h2><a href="http://localhost:1313/docs/attacks/persesc/collection/"> Collection</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/attacks/persesc/collection/"> Collection</a></h2> 
     <p> <p>*There are a lot of techniques to become persistent on a Windows machine. You can refer to the persistence and escalation mechanisms article or look those up on the MITRE website. Although it&rsquo;s important to know the artefacts themselves and the technique, it would be hard to collect them all manually. *</p></p>
 
-    <h2><a href="http://localhost:1313/docs/attacks/persesc/bios/"> BIOS Persistence</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/attacks/persesc/bios/"> BIOS Persistence</a></h2> 
     <p> <p><em>This is about &hellip; .</em></p></p>
 
-    <h2><a href="http://localhost:1313/docs/attacks/persesc/boot/"> Boot Abuse</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/attacks/persesc/boot/"> Boot Abuse</a></h2> 
     <p> <h2 id="linux">Linux</h2>
 <p><code>Init</code> is the process that spawns other processes and usually has pid <code>1</code>. <code>/etc/inittab</code> can be used to set run level for the systems. <code>/etc/rc.d</code> has a collection of files that define what services are running at what level. This information can also be viewed with a <strong>chkconfig</strong> command.</p>
 <h3 id="run-levels">Run Levels</h3>
@@ -258,10 +258,10 @@
 </table>
 <p>[<a href="https://www.liquidweb.com/kb/linux-runlevels-explained/">1</a>]</p></p>
 
-    <h2><a href="http://localhost:1313/docs/attacks/persesc/startup/"> Config Abuse</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/attacks/persesc/startup/"> Config Abuse</a></h2> 
     <p> <p><em>Some persistence and escalation techniques don&rsquo;t require an exploit but only a little tweaking of some config.</em></p></p>
 
-    <h2><a href="http://localhost:1313/docs/attacks/persesc/elevation/"> Elevation Control Abuse</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/attacks/persesc/elevation/"> Elevation Control Abuse</a></h2> 
     <p> <h2 id="linux--macos">Linux &amp; macOS</h2>
 <h3 id="setuid-and-setgid"><code>setuid</code> and <code>setgid</code></h3>
 <p><strong>Platforms</strong>: macOS, Linux
@@ -269,10 +269,10 @@
 <p><code>setuid</code> or <code>setgid</code> bits set in UNIX. <code>chmod u+s [file]</code> or <code>chmod 4777 [file]</code> to set the bit. To enable the setgid bit, <code>chmod 2775</code> and <code>chmod g+s</code> can be used. Look for the files with the bit set: <code>find / -perm +4000 2&gt;/dev/null</code> and <code>find / -perm +2000 2&gt;/dev/null</code> for the <code>segid</code>.</p>
 <p>When a user runs an executable file with the setuid bit set, the real user ID (RUID) of the process is set to the user ID of the user who ran the file, while the effective user ID (EUID) is set to the user ID of the file owner. This means that the process runs with the privileges of the file owner while still retaining the identity of the user who executed the file.</p></p>
 
-    <h2><a href="http://localhost:1313/docs/attacks/persesc/ipc/"> IPC</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/attacks/persesc/ipc/"> IPC</a></h2> 
     <p> <p><em>This is about &hellip; .</em></p></p>
 
-    <h2><a href="http://localhost:1313/docs/attacks/persesc/kernel/"> Kernel</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/attacks/persesc/kernel/"> Kernel</a></h2> 
     <p> <h2 id="linux">Linux</h2>
 <h3 id="lkm">LKM</h3>
 <p>LKM for Linux. Drivers are one type of kernel extentions.</p>
@@ -284,7 +284,7 @@
 <h3 id="reopen">reopen</h3>
 <p>Remember the &ldquo;Reopen windows when logging back in&rdquo; prompt on macOS? When selected, all applications currently open are added to a property list file named <code>com.apple.loginwindow.[UUID].plist</code> within the <code>~/Library/Preferences/ByHost</code> directory. Applications listed in this file are automatically reopened upon the user’s next logon.</p></p>
 
-    <h2><a href="http://localhost:1313/docs/attacks/persesc/libs/"> Library Abuse</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/attacks/persesc/libs/"> Library Abuse</a></h2> 
     <p> <h2 id="windows">Windows</h2>
 <h3 id="dll-search-order-hijacking">DLL Search Order Hijacking</h3>
 <blockquote>
@@ -303,10 +303,10 @@
 <p><strong>Example</strong>: <code>eplorer.exe</code> loading <code>ntshrui.dll</code>.</p></blockquote>
 <p>Following is the search order for modern Windows systems:</p></p>
 
-    <h2><a href="http://localhost:1313/docs/attacks/persesc/services/"> Services</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/attacks/persesc/services/"> Services</a></h2> 
     <p> <p><em>Services can be abused differently but are often used as escalation and persistence mechanisms.</em></p></p>
 
-    <h2><a href="http://localhost:1313/docs/attacks/persesc/tasks/"> Tasks Abuse</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/attacks/persesc/tasks/"> Tasks Abuse</a></h2> 
     <p> <h2 id="windows">Windows</h2>
 <blockquote>
 <p>❗️ Both <code>at</code> and <code>schtasks.exe</code> can create tasks remotely.</p></blockquote>
@@ -423,7 +423,7 @@ h2 {
         <div class="sub-footer-inner">
           <ul>
             <li class="zerostatic"><a href="https://www.zerostatic.io">www.zerostatic.io</a></li>
-            <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/docs/attacks/persesc/index.xml" title="Analyst" />
+            <link rel="alternate" type="application/rss+xml" href="https://bakerst221b.com/docs/attacks/persesc/index.xml" title="Analyst" />
             </ul>
         </div>
       </div>
@@ -437,9 +437,13 @@ h2 {
   
 
   
-  <script type="text/javascript" src="/js/scripts.js"></script>
+  <script type="text/javascript" src="/js/scripts.min.ec19db7e4836c12e2c5e3697d926bc3e4c22005167d9826aab54feca08f0c093.js"></script>
   
 
+  
+  
+  
+    
   
 
 

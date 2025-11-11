@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Evtxecmd on Analyst</title>
-    <link>http://localhost:1313/tools/evtxecmd/</link>
+    <link>https://bakerst221b.com/tools/evtxecmd/</link>
     <description>Recent content in Evtxecmd on Analyst</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 12 Oct 2020 17:50:01 +0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/tools/evtxecmd/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bakerst221b.com/tools/evtxecmd/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>🎞 Media Files</title>
-      <link>http://localhost:1313/docs/artefacts/files/media/</link>
+      <link>https://bakerst221b.com/docs/artefacts/files/media/</link>
       <pubDate>Mon, 12 Oct 2020 17:50:01 +0300</pubDate>
-      <guid>http://localhost:1313/docs/artefacts/files/media/</guid>
+      <guid>https://bakerst221b.com/docs/artefacts/files/media/</guid>
       <description>&lt;h2 id=&#34;windows&#34;&gt;Windows&lt;/h2&gt;&#xA;&lt;h3 id=&#34;recent-documents&#34;&gt;Recent documents&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;Key&lt;/strong&gt; 🔑: &lt;code&gt;NTUSER.DAT\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;Contains the list of all recent documents as a bunch and also the same data sorted by extension. &lt;code&gt;MRUListEx&lt;/code&gt; is list. It has a number of 4 byte values, each noting the sequence number of a document. It starts from the document&amp;rsquo;s number that was accessed some time age (first in the list) and ends with the most recently used one. This key also has a list of recently accessed folders.&lt;/p&gt;</description>
     </item>
   </channel>

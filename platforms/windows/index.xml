@@ -2,255 +2,255 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Windows on Analyst</title>
-    <link>http://localhost:1313/platforms/windows/</link>
+    <link>https://bakerst221b.com/platforms/windows/</link>
     <description>Recent content in Windows on Analyst</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 28 Jul 2022 15:14:39 +1000</lastBuildDate>
-    <atom:link href="http://localhost:1313/platforms/windows/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bakerst221b.com/platforms/windows/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Game Over</title>
-      <link>http://localhost:1313/docs/blog/2022/02/jigsaw/</link>
+      <link>https://bakerst221b.com/docs/blog/2022/02/jigsaw/</link>
       <pubDate>Tue, 08 Feb 2022 11:42:21 +0300</pubDate>
-      <guid>http://localhost:1313/docs/blog/2022/02/jigsaw/</guid>
+      <guid>https://bakerst221b.com/docs/blog/2022/02/jigsaw/</guid>
       <description>&lt;p&gt;&lt;em&gt;One sunny 😎 day I came to a coworking office very early in the morning. As usual, I&amp;rsquo;ve decided to kick it off with a freshly brewed coffee which we never had, so, I had to go with an instant substitute. Ugh 😣! I was hoping to savour my disgust meditating over the Feedly recents, when I noticed that I was not the only lark that day. Mark, a freelance designer who happened to be a huge fan of Assassin&amp;rsquo;s Creed games (just like me), was sitting in the corner of the shared kitchen with his laptop, looking so gloomy that I was sorry I didn&amp;rsquo;t take my ☔️ with me. When I&amp;rsquo;ve forced the last sip of that potion inside, I wished him good morning and headed to my working nest. He didn&amp;rsquo;t respond though, which was weird, since he usually was very friendly. I thought he needed some time on his own and was about to leave the kitchen when suddenly he hailed me. Long story short, he seemed to get himself a virus and didn&amp;rsquo;t know how to get rid of it. He seemed scared, since lots of important files were encrypted.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>CyberCorp2</title>
-      <link>http://localhost:1313/docs/todo/cases/ctf-walkthrough/cybercorp2/</link>
+      <link>https://bakerst221b.com/docs/todo/cases/ctf-walkthrough/cybercorp2/</link>
       <pubDate>Wed, 12 Jan 2022 11:42:21 +0300</pubDate>
-      <guid>http://localhost:1313/docs/todo/cases/ctf-walkthrough/cybercorp2/</guid>
+      <guid>https://bakerst221b.com/docs/todo/cases/ctf-walkthrough/cybercorp2/</guid>
       <description>&lt;p&gt;⛔️  Spoiler alert!&lt;/p&gt;&#xA;&lt;h2 id=&#34;case-details&#34;&gt;Case Details&lt;/h2&gt;&#xA;&lt;p&gt;This is not an investigation like the previous one. This is threat hunting. So, we have only logs via Kibana available. To harden my knowledge with this technologies I&amp;rsquo;ve had a very quick overview on ElasticStack website and enrolled in &lt;a href=&#34;https://app.pluralsight.com/paths/skills/threat-hunting-with-the-elastic-stack&#34;&gt;this&lt;/a&gt; course. Basically, I will have to answer questing having a loads of logs and a query engine available.&lt;/p&gt;&#xA;&lt;h2 id=&#34;questions&#34;&gt;Questions&lt;/h2&gt;&#xA;&lt;h3 id=&#34;1-wmi-event-consumer-name&#34;&gt;1. WMI Event Consumer name?&lt;/h3&gt;&#xA;&lt;p&gt;✅ &lt;em&gt;The Threat Hunting process usually starts with the analyst making a hypothesis about a possible compromise vector or techniques used by an attacker. In this scenario, your initial hypothesis is as follows: &amp;ldquo;The attacker used the WMI subscription mechanism to obtain persistence within the infrastructure&amp;rdquo;. Verify this hypothesis and find the name of the WMI Event Consumer used by the attacker to maintain his foothold.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>CyberCorp1</title>
-      <link>http://localhost:1313/docs/todo/cases/ctf-walkthrough/cybercorp1/</link>
+      <link>https://bakerst221b.com/docs/todo/cases/ctf-walkthrough/cybercorp1/</link>
       <pubDate>Sat, 08 Jan 2022 11:42:21 +0300</pubDate>
-      <guid>http://localhost:1313/docs/todo/cases/ctf-walkthrough/cybercorp1/</guid>
+      <guid>https://bakerst221b.com/docs/todo/cases/ctf-walkthrough/cybercorp1/</guid>
       <description>&lt;p&gt;⛔️  Spoiler alert!&lt;/p&gt;&#xA;&lt;h2 id=&#34;case-details&#34;&gt;Case Details&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Artefacts in posession&lt;/strong&gt;: memory dump, OS event logs, registry files, Prefetch files, $MFT file, ShimCache, AmCache, network traffic dumps. I&amp;rsquo;ve decided to analyse each artefact, what can I get from it in this specific case and how. Then, I am going to outline my strategy in approaching this case.&lt;/p&gt;&#xA;&lt;p&gt;We are looking for indicators of compromise.  There are no details as to what is the group and what was its aim. But it’s known that there was abnormal traffic detected that has launched this IR process. So, at least, we must have some suspicious traffic, possibly open or terminated connections. These should have been launched by some process, so we are looking for malware. Also, since the attacker needed an account to get in, I will be looking for an account take over attempts and possibly, new account creation.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Process Injections</title>
-      <link>http://localhost:1313/docs/attacks/binary/injections/</link>
+      <link>https://bakerst221b.com/docs/attacks/binary/injections/</link>
       <pubDate>Mon, 12 Oct 2020 17:50:01 +0300</pubDate>
-      <guid>http://localhost:1313/docs/attacks/binary/injections/</guid>
+      <guid>https://bakerst221b.com/docs/attacks/binary/injections/</guid>
       <description>&lt;h2 id=&#34;windows&#34;&gt;Windows&lt;/h2&gt;&#xA;&lt;p&gt;Most information is taken from &lt;a href=&#34;!%5Bulr-4%5D(images/ulr-4.png)&#34;&gt;here&lt;/a&gt;, but more visualisation is added. The screenshots from IDA Pro are also copied from that blog post.&lt;/p&gt;&#xA;&lt;h3 id=&#34;classic&#34;&gt;Classic&lt;/h3&gt;&#xA;&lt;p&gt;This one is one of the simplest to explain and not that simple to actually use in a real attack (see Caveats). A malicious DLL&amp;rsquo;s &lt;strong&gt;path&lt;/strong&gt; is copied in the memory space of a legitimate running process to be loaded in runtime.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;images/classic-1.png&#34; alt=&#34;classic-1&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Below is the anatomy of this function call.&lt;/p&gt;</description>
     </item>
     <item>
       <title>📚 Kerberos</title>
-      <link>http://localhost:1313/docs/attacks/protocols/asp/auth/kerberos/</link>
+      <link>https://bakerst221b.com/docs/attacks/protocols/asp/auth/kerberos/</link>
       <pubDate>Wed, 18 Nov 2020 16:47:41 +0300</pubDate>
-      <guid>http://localhost:1313/docs/attacks/protocols/asp/auth/kerberos/</guid>
+      <guid>https://bakerst221b.com/docs/attacks/protocols/asp/auth/kerberos/</guid>
       <description>&lt;h2 id=&#34;structure&#34;&gt;Structure&lt;/h2&gt;&#xA;&lt;h2 id=&#34;the-flow&#34;&gt;The Flow&lt;/h2&gt;&#xA;&lt;p&gt;- Wanna talk&lt;/p&gt;&#xA;&lt;p&gt;- Ok. Let&amp;rsquo;s talk. Here is my public key. Here are the protocols that I support.&lt;/p&gt;&#xA;&lt;p&gt;- Thanks &lt;em&gt;Checks for known hosts locally&lt;/em&gt;. Here&amp;rsquo;s my password.&lt;/p&gt;&#xA;&lt;h2 id=&#34;keys&#34;&gt;Keys&lt;/h2&gt;&#xA;&lt;p&gt;There are several keys that are used in this play. Three keys exist at the very begining. A user has his green key, TGS has its yellow one and the HTTP server has a black one. Each key is private to the party and is not know by other parties. Two more keys are generated during the authentication process: a purple and a crimson one. Keys also need to be printer out: one copy for green, black and yellow keys and two copies for purple and crimson ones. Here is the ininital &amp;ldquo;state&amp;rdquo;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>🧼 Media Sterilisation</title>
-      <link>http://localhost:1313/docs/ttp/sterilisation/</link>
+      <link>https://bakerst221b.com/docs/ttp/sterilisation/</link>
       <pubDate>Mon, 12 Oct 2020 17:50:01 +0300</pubDate>
-      <guid>http://localhost:1313/docs/ttp/sterilisation/</guid>
+      <guid>https://bakerst221b.com/docs/ttp/sterilisation/</guid>
       <description>&lt;p&gt;&lt;em&gt;Before copying evidence or making a disk image, one needs to sterilise the target media to ensure that data on that disk before this operation would not meddle with the evidence data. Several rounds of writing &lt;code&gt;0&lt;/code&gt;s are usually enough.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>📕 Windows RTFM</title>
-      <link>http://localhost:1313/docs/tools/field-manuals/win-rtfm/</link>
+      <link>https://bakerst221b.com/docs/tools/field-manuals/win-rtfm/</link>
       <pubDate>Thu, 28 Jul 2022 15:14:39 +1000</pubDate>
-      <guid>http://localhost:1313/docs/tools/field-manuals/win-rtfm/</guid>
+      <guid>https://bakerst221b.com/docs/tools/field-manuals/win-rtfm/</guid>
       <description>&lt;p&gt;&lt;em&gt;This is about &amp;hellip; .&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>🏺 Active Directory</title>
-      <link>http://localhost:1313/docs/artefacts/win/ad/</link>
+      <link>https://bakerst221b.com/docs/artefacts/win/ad/</link>
       <pubDate>Thu, 28 Jul 2022 15:14:39 +1000</pubDate>
-      <guid>http://localhost:1313/docs/artefacts/win/ad/</guid>
+      <guid>https://bakerst221b.com/docs/artefacts/win/ad/</guid>
       <description>&lt;p&gt;Moving accounts and auth policies to the server side. Azure Active Directory is when instead of having a physical server, you have a server in the cloud ⛅️. Defines a set of rules to restrict users&amp;rsquo; access to resources. PCs that are part of AD usually don&amp;rsquo;t have full access to the systems.&lt;/p&gt;&#xA;&lt;p&gt;AD DS store contains db files and processes that manage directory information for users, services and applications. Consists of &lt;code&gt;Ntds.dit&lt;/code&gt; file, at &lt;code&gt;%SystemRoot%\&#x9;NTDS&lt;/code&gt; folder on all DC. Is only accessible thtough the DC&amp;rsquo;s processes and protocols.&lt;/p&gt;</description>
     </item>
     <item>
       <title>🏺 WMI</title>
-      <link>http://localhost:1313/docs/artefacts/win/wmi/</link>
+      <link>https://bakerst221b.com/docs/artefacts/win/wmi/</link>
       <pubDate>Thu, 28 Jul 2022 15:14:39 +1000</pubDate>
-      <guid>http://localhost:1313/docs/artefacts/win/wmi/</guid>
+      <guid>https://bakerst221b.com/docs/artefacts/win/wmi/</guid>
       <description>&lt;p&gt;&lt;em&gt;In days of yore, there existed a humble batch, whence emerged the WMI, and it didst hold dominion o&amp;rsquo;er the realm of Windows contraptions for a considerable span until it was entwined with the might of PowerShell.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>To Carry Out MockInv&#39;estigation. Part 1</title>
-      <link>http://localhost:1313/docs/blog/2021/06/toy-story-pd/</link>
+      <link>https://bakerst221b.com/docs/blog/2021/06/toy-story-pd/</link>
       <pubDate>Sun, 25 Apr 2021 17:18:04 +0300</pubDate>
-      <guid>http://localhost:1313/docs/blog/2021/06/toy-story-pd/</guid>
+      <guid>https://bakerst221b.com/docs/blog/2021/06/toy-story-pd/</guid>
       <description>&lt;p&gt;❗SPOILER ALERT!&lt;/p&gt;&#xA;&lt;p&gt;📆 &lt;code&gt;16/06/2021&lt;/code&gt; , &lt;em&gt;Wednesday&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;🕰 &lt;code&gt;09:21 PM&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;It was a very sunny day and a very nice a long walk that my daughter and I had before lunch. I feel uplifted because there is finally enough sun and green grass in my life! Unfortunately, no coffee today, since we don&amp;rsquo;t have BonAcqua, which might be not the best for drinking, but is indeed one of the best to prepare coffee (quoting my husband).&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>To Carry Out MockInv&#39;estigation. Part 2</title>
-      <link>http://localhost:1313/docs/blog/2021/06/magnet/</link>
+      <link>https://bakerst221b.com/docs/blog/2021/06/magnet/</link>
       <pubDate>Sun, 25 Apr 2021 17:18:04 +0300</pubDate>
-      <guid>http://localhost:1313/docs/blog/2021/06/magnet/</guid>
+      <guid>https://bakerst221b.com/docs/blog/2021/06/magnet/</guid>
       <description>&lt;p&gt;📆 &lt;code&gt;16/06/2021&lt;/code&gt; , &lt;em&gt;Wednesday&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;🕰 &lt;code&gt;09:21 PM&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;I had a 7-day license of Magnet AXIOM and I&amp;rsquo;ve decided to try this tool and compare it with others that I had. In 2021 May-June Magnet held a great event of a great value - Magnet SUMMIT with lots of very useful webinars and workshops. One of them was a case study using Magnet. I am going to follow these steps and study another way to solve a crime.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>ExtX</title>
-      <link>http://localhost:1313/docs/artefacts/fs/extx/</link>
+      <link>https://bakerst221b.com/docs/artefacts/fs/extx/</link>
       <pubDate>Sun, 18 Oct 2020 22:35:40 +0300</pubDate>
-      <guid>http://localhost:1313/docs/artefacts/fs/extx/</guid>
+      <guid>https://bakerst221b.com/docs/artefacts/fs/extx/</guid>
       <description>&lt;h2 id=&#34;2&#34;&gt;2&lt;/h2&gt;&#xA;&lt;p&gt;No journaling&lt;/p&gt;&#xA;&lt;h2 id=&#34;3&#34;&gt;3&lt;/h2&gt;&#xA;&lt;p&gt;Same but + journaling&lt;/p&gt;&#xA;&lt;h2 id=&#34;4&#34;&gt;4&lt;/h2&gt;&#xA;&lt;p&gt;New FS&lt;/p&gt;</description>
     </item>
     <item>
       <title>FAT</title>
-      <link>http://localhost:1313/docs/artefacts/fs/fat/</link>
+      <link>https://bakerst221b.com/docs/artefacts/fs/fat/</link>
       <pubDate>Sun, 18 Oct 2020 22:35:40 +0300</pubDate>
-      <guid>http://localhost:1313/docs/artefacts/fs/fat/</guid>
+      <guid>https://bakerst221b.com/docs/artefacts/fs/fat/</guid>
       <description>&lt;p&gt;Any FAT partition has two main parts: system area and data area. System area contains FAT boot record (every file system has a boot record), 1st FAT and 2nd FAT. FAT12 and FAT16 also have Root directory in the system area. Data area consists of Root directory in case of FAT32 and file and subdirectory data in clusters.&lt;/p&gt;&#xA;&lt;h3 id=&#34;versions&#34;&gt;Versions&lt;/h3&gt;&#xA;&lt;h4 id=&#34;fat12&#34;&gt;FAT12&lt;/h4&gt;&#xA;&lt;p&gt;For the cluster addressing there were 12 bits available, which is 2^12 clusters at most (4096 clusters).&lt;/p&gt;</description>
     </item>
     <item>
       <title>NTFS</title>
-      <link>http://localhost:1313/docs/artefacts/fs/ntfs/</link>
+      <link>https://bakerst221b.com/docs/artefacts/fs/ntfs/</link>
       <pubDate>Sun, 18 Oct 2020 22:35:40 +0300</pubDate>
-      <guid>http://localhost:1313/docs/artefacts/fs/ntfs/</guid>
+      <guid>https://bakerst221b.com/docs/artefacts/fs/ntfs/</guid>
       <description>&lt;p&gt;Developed in collaboration with IBM. POSIX compliant. Official docs for NTFS &lt;a href=&#34;http://ntfs.com/ntfs-mft.htm&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;❗️ Everything is a file!&#xA;❗️ All offsets are relative to the start of the data structures.&#xA;❗️ Apple macOS machines can read NTFS devices but do not support writing to them by default.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;The entire logical volume is a data area (in contrast to FAT where there is a system area as well ❓).&lt;/p&gt;&#xA;&lt;p&gt;In a Microsoft NT File System (NTFS), hot fixing of disk sectors &lt;strong&gt;prevents data from being stored in a bad sector or cluster&lt;/strong&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>ReiserFS</title>
-      <link>http://localhost:1313/docs/artefacts/fs/reiser/</link>
+      <link>https://bakerst221b.com/docs/artefacts/fs/reiser/</link>
       <pubDate>Sun, 18 Oct 2020 22:35:40 +0300</pubDate>
-      <guid>http://localhost:1313/docs/artefacts/fs/reiser/</guid>
+      <guid>https://bakerst221b.com/docs/artefacts/fs/reiser/</guid>
       <description>&lt;p&gt;Allows storing multiple files in a single sector. exclamation mark ❗️Unique to this FS!&lt;/p&gt;</description>
     </item>
     <item>
       <title>Windows IPC</title>
-      <link>http://localhost:1313/docs/attacks/binary/ipc/win-ipc/</link>
+      <link>https://bakerst221b.com/docs/attacks/binary/ipc/win-ipc/</link>
       <pubDate>Mon, 12 Oct 2020 17:50:01 +0300</pubDate>
-      <guid>http://localhost:1313/docs/attacks/binary/ipc/win-ipc/</guid>
+      <guid>https://bakerst221b.com/docs/attacks/binary/ipc/win-ipc/</guid>
       <description>&lt;p&gt;&lt;em&gt;COM (Component Object Model) objects are a way to let processes call other processes. A process, that needs to call someone else loads a COM.dll into it&amp;rsquo;s address space.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>🎁 Packed Executables And Unpacking</title>
-      <link>http://localhost:1313/docs/ttp/malware/analyse/packing/</link>
+      <link>https://bakerst221b.com/docs/ttp/malware/analyse/packing/</link>
       <pubDate>Fri, 09 Oct 2020 10:31:32 +0300</pubDate>
-      <guid>http://localhost:1313/docs/ttp/malware/analyse/packing/</guid>
+      <guid>https://bakerst221b.com/docs/ttp/malware/analyse/packing/</guid>
       <description>&lt;p&gt;There are several indicators that the executable is packed. Here they are (this list will be growing as I encounter new indicators):&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Few imports and among these imports are functions like &lt;code&gt;GetProcessAddress&lt;/code&gt; or &lt;code&gt;LoadLibrary&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;Weird names for PE sections&lt;/li&gt;&#xA;&lt;li&gt;Empty Physical addresses for sections (while VA is not empty). More about&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;unpacking-techniques&#34;&gt;Unpacking techniques&lt;/h2&gt;&#xA;&lt;p&gt;A piece of software cannot just run packed (what a challenging world that would be! 😳 ). The thing is that whatever the packing algorithm is, however complex 🧶 it might be, the real code needs to be &lt;em&gt;unpacked into memory&lt;/em&gt; first. So, even with the most sophisticated protection techniques, it all really comes down to waiting for the executable to get unpacked into memory, from where it can be gently and dearly dumped like a 🐝 hive from a tree 🌳 full of hungry and pretty aggressive wild bees with a big and heavy bat 🏃‍♀️. We might want to do some minor other stuff afterwards but let&amp;rsquo;s keep it for now.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Windows PE</title>
-      <link>http://localhost:1313/docs/artefacts/files/executables/win-pe/</link>
+      <link>https://bakerst221b.com/docs/artefacts/files/executables/win-pe/</link>
       <pubDate>Mon, 28 Sep 2020 13:21:43 +0300</pubDate>
-      <guid>http://localhost:1313/docs/artefacts/files/executables/win-pe/</guid>
+      <guid>https://bakerst221b.com/docs/artefacts/files/executables/win-pe/</guid>
       <description></description>
     </item>
     <item>
       <title>Windows PE</title>
-      <link>http://localhost:1313/docs/ttp/malware/analyse/executables/win-pe/</link>
+      <link>https://bakerst221b.com/docs/ttp/malware/analyse/executables/win-pe/</link>
       <pubDate>Mon, 28 Sep 2020 13:21:43 +0300</pubDate>
-      <guid>http://localhost:1313/docs/ttp/malware/analyse/executables/win-pe/</guid>
+      <guid>https://bakerst221b.com/docs/ttp/malware/analyse/executables/win-pe/</guid>
       <description></description>
     </item>
     <item>
       <title>🏺 Windows Core Processes</title>
-      <link>http://localhost:1313/docs/artefacts/win/core/</link>
+      <link>https://bakerst221b.com/docs/artefacts/win/core/</link>
       <pubDate>Mon, 28 Sep 2020 13:21:43 +0300</pubDate>
-      <guid>http://localhost:1313/docs/artefacts/win/core/</guid>
+      <guid>https://bakerst221b.com/docs/artefacts/win/core/</guid>
       <description>&lt;p&gt;&lt;em&gt;There are two broad categories of Windows core processes. Processes that initialize system environment and those that initialize the user environment. Whatever is the category, you need to know them well in order to detect abnormal things.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Calling 🤙 Conventions in x86</title>
-      <link>http://localhost:1313/docs/ttp/malware/analyse/basics/assebly/assembly-calling-conventions/</link>
+      <link>https://bakerst221b.com/docs/ttp/malware/analyse/basics/assebly/assembly-calling-conventions/</link>
       <pubDate>Sun, 27 Sep 2020 16:31:05 +0300</pubDate>
-      <guid>http://localhost:1313/docs/ttp/malware/analyse/basics/assebly/assembly-calling-conventions/</guid>
+      <guid>https://bakerst221b.com/docs/ttp/malware/analyse/basics/assebly/assembly-calling-conventions/</guid>
       <description>&lt;p&gt;&lt;em&gt;In this article I&amp;rsquo;m giving an overview of different calling conventions with examples.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;&#xA;&lt;p&gt;Consider the following code snippet:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;mysteriousFunction&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; a, &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; b)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;{&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; a &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; b &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; c;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;mysteriousFunction&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;);&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;// then the above function is called &#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Let&amp;rsquo;s see the assembly code for each calling convention&lt;/p&gt;&#xA;&lt;h2 id=&#34;cdecl&#34;&gt;CDECL&lt;/h2&gt;&#xA;&lt;p&gt;The output in assemble would be this:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-assembly&#34; data-lang=&#34;assembly&#34;&gt;_mysteriousFunction:&#xA;push ebp&#xA;mov ebp, esp&#xA;mov eax, [ebp + 8]&#xA;mov edx, [ebp + 12]&#xA;add eax, edx&#xA;pop ebp&#xA;ret&#xA;and&#xA;&#xA;;main function&#xA;push 4 ; the second argument is pushed first&#xA;push 2 ; the first argument is pushed second&#xA;call _mysteriousFunction&#xA;add esp, 8&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;As is clearly seen from the above snippet, the arguments to the function are passed in reverse order by means of &lt;code&gt;PUSH&lt;/code&gt; instruction (placed on stack). Observe the &lt;code&gt;_mysteriousFunction&lt;/code&gt;&amp;rsquo;s code: values added to &lt;code&gt;eax&lt;/code&gt;, but nothing seems to be returning, just &lt;code&gt;ret&lt;/code&gt;. That&amp;rsquo;s because this calling convention passes return values in &lt;code&gt;eax&lt;/code&gt; register by default.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Flags</title>
-      <link>http://localhost:1313/docs/ttp/malware/analyse/basics/assebly/assembly-flags/</link>
+      <link>https://bakerst221b.com/docs/ttp/malware/analyse/basics/assebly/assembly-flags/</link>
       <pubDate>Sun, 27 Sep 2020 16:31:05 +0300</pubDate>
-      <guid>http://localhost:1313/docs/ttp/malware/analyse/basics/assebly/assembly-flags/</guid>
+      <guid>https://bakerst221b.com/docs/ttp/malware/analyse/basics/assebly/assembly-flags/</guid>
       <description>&lt;h2 id=&#34;cf&#34;&gt;CF&lt;/h2&gt;&#xA;&lt;p&gt;Its full name is &lt;em&gt;carry flag&lt;/em&gt;. Its main purpose is to tell that the resulting number after some operations is too much to bear for the registry size. For example, the maximum size of a number is 32 bit, but if we add 0xFFFF&lt;/p&gt;&#xA;&lt;h2 id=&#34;zf&#34;&gt;ZF&lt;/h2&gt;&#xA;&lt;h2 id=&#34;of&#34;&gt;OF&lt;/h2&gt;</description>
     </item>
     <item>
       <title>Operations</title>
-      <link>http://localhost:1313/docs/ttp/malware/analyse/basics/assebly/assembly-operations/</link>
+      <link>https://bakerst221b.com/docs/ttp/malware/analyse/basics/assebly/assembly-operations/</link>
       <pubDate>Sun, 27 Sep 2020 16:31:05 +0300</pubDate>
-      <guid>http://localhost:1313/docs/ttp/malware/analyse/basics/assebly/assembly-operations/</guid>
+      <guid>https://bakerst221b.com/docs/ttp/malware/analyse/basics/assebly/assembly-operations/</guid>
       <description>&lt;p&gt;In this article I&amp;rsquo;m describing all assembly operations that I&amp;rsquo;ve encountered myseld and also wasn&amp;rsquo;t lazy anough to put down an explanation about here. However, I won&amp;rsquo;t be paying much attention to some operation that I consider straightforward, like &lt;code&gt;ADD&lt;/code&gt;. I&amp;rsquo;m going to put a flag for each operation indicating corresponding arch: &lt;code&gt;arm&lt;/code&gt; or &lt;code&gt;x86&lt;/code&gt; (just learning ARM myself for iOS analysis).&lt;/p&gt;&#xA;&lt;p&gt;Most of instruction have the following anatomy: &lt;code&gt;instruction &amp;lt;destination operand&amp;gt;, &amp;lt;source operand&amp;gt;&lt;/code&gt;. Some operations look like this: &lt;code&gt;instruction &amp;lt;source operand&amp;gt;&lt;/code&gt; when &lt;code&gt;&amp;lt;destination operand&amp;gt;&lt;/code&gt; is always the same register (default). An example: &lt;code&gt;MUL&lt;/code&gt;. When &lt;code&gt;MUL&lt;/code&gt;ing, you always multiply &lt;code&gt;eax&lt;/code&gt; on some value.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Registers</title>
-      <link>http://localhost:1313/docs/ttp/malware/analyse/basics/assebly/assembly-registers/</link>
+      <link>https://bakerst221b.com/docs/ttp/malware/analyse/basics/assebly/assembly-registers/</link>
       <pubDate>Sun, 27 Sep 2020 16:31:05 +0300</pubDate>
-      <guid>http://localhost:1313/docs/ttp/malware/analyse/basics/assebly/assembly-registers/</guid>
+      <guid>https://bakerst221b.com/docs/ttp/malware/analyse/basics/assebly/assembly-registers/</guid>
       <description>&lt;h2 id=&#34;eax&#34;&gt;EAX&lt;/h2&gt;&#xA;&lt;h2 id=&#34;eip&#34;&gt;EIP&lt;/h2&gt;&#xA;&lt;h2 id=&#34;ebp&#34;&gt;EBP&lt;/h2&gt;&#xA;&lt;h2 id=&#34;rsiesi&#34;&gt;RSI/ESI&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;S&lt;/strong&gt;ource &lt;strong&gt;I&lt;/strong&gt;ndex.&lt;/p&gt;&#xA;&lt;p&gt;RSI - 64 bit, ESI - 32.&lt;/p&gt;&#xA;&lt;h2 id=&#34;rdiedi&#34;&gt;RDI/EDI&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;D&lt;/strong&gt;estination &lt;strong&gt;I&lt;/strong&gt;ndex.&lt;/p&gt;&#xA;&lt;p&gt;RDI - 64 bit, EDI - 32.&lt;/p&gt;&#xA;&lt;p&gt;For ARM Registers here - &lt;a href=&#34;https://azeria-labs.com/arm-data-types-and-registers-part-2/&#34;&gt;https://azeria-labs.com/arm-data-types-and-registers-part-2/&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Assembly Cheatsheet</title>
-      <link>http://localhost:1313/docs/ttp/malware/analyse/basics/assebly/assembly-cheatsheet/</link>
+      <link>https://bakerst221b.com/docs/ttp/malware/analyse/basics/assebly/assembly-cheatsheet/</link>
       <pubDate>Thu, 24 Sep 2020 11:43:54 +0300</pubDate>
-      <guid>http://localhost:1313/docs/ttp/malware/analyse/basics/assebly/assembly-cheatsheet/</guid>
+      <guid>https://bakerst221b.com/docs/ttp/malware/analyse/basics/assebly/assembly-cheatsheet/</guid>
       <description>&lt;p&gt;Lorem markdownum aequalis strigis. Saetigeri iubeas, vultu huic alvum nondum&#xA;de obside ut laniavit arbor palmis, cum quin. Rupes vetat videndo, armigerae&#xA;crimen habet Priamum nec.&lt;/p&gt;</description>
     </item>
     <item>
       <title>ARM Assembly</title>
-      <link>http://localhost:1313/docs/ttp/malware/analyse/basics/assebly/assembly-arm/</link>
+      <link>https://bakerst221b.com/docs/ttp/malware/analyse/basics/assebly/assembly-arm/</link>
       <pubDate>Thu, 24 Sep 2020 11:43:23 +0300</pubDate>
-      <guid>http://localhost:1313/docs/ttp/malware/analyse/basics/assebly/assembly-arm/</guid>
+      <guid>https://bakerst221b.com/docs/ttp/malware/analyse/basics/assebly/assembly-arm/</guid>
       <description>&lt;p&gt;&lt;em&gt;In this article I&amp;rsquo;m giving a quick dive-in into assembly. It&amp;rsquo;s very simple and very difficult at the same time. It takes time and patience to get friendly  with it. And once you do, there will be ARM emerging, which scares the hell out of you again. But it takes less time, once you&amp;rsquo;re familiar with its &amp;ldquo;big brother&amp;rdquo;.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;analogy&#34;&gt;Analogy&lt;/h2&gt;&#xA;&lt;p&gt;Sometimes when I look at assembly code I remember back in the &amp;lsquo;olden days&amp;rsquo; when I worked as office manager. I didn&amp;rsquo;t love my job and used to describe it to a small circle of close friends as &amp;ldquo;moving papers from one place to another&amp;rdquo;. Of course, there was much more to it than just that, but it felt that way. When I left this job and found the one as a C# programmer, I thought, I&amp;rsquo;ll never be doing that again. Surprisingly, I was right&amp;hellip; When I left my job as a C# programmer, I thought I&amp;rsquo;d never have anything to do with HTML again. Here, I was wrong&amp;hellip;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Assembly Intro</title>
-      <link>http://localhost:1313/docs/ttp/malware/analyse/basics/assebly/assembly-intro/</link>
+      <link>https://bakerst221b.com/docs/ttp/malware/analyse/basics/assebly/assembly-intro/</link>
       <pubDate>Thu, 24 Sep 2020 11:43:23 +0300</pubDate>
-      <guid>http://localhost:1313/docs/ttp/malware/analyse/basics/assebly/assembly-intro/</guid>
+      <guid>https://bakerst221b.com/docs/ttp/malware/analyse/basics/assebly/assembly-intro/</guid>
       <description>&lt;p&gt;&lt;em&gt;In this article I&amp;rsquo;m giving a quick dive-in into assembly. It&amp;rsquo;s very simple and very difficult at the same time. It takes time and patience to get friendly  with it. And once you do, there will be ARM emerging, which scares the hell out of you again. But it takes less time, once you&amp;rsquo;re familiar with its &amp;ldquo;big brother&amp;rdquo;.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;analogy&#34;&gt;Analogy&lt;/h2&gt;&#xA;&lt;p&gt;Sometimes when I look at assembly code I remember back in the &amp;lsquo;olden days&amp;rsquo; when I worked as office manager. I didn&amp;rsquo;t love my job and used to describe it to a small circle of close friends as &amp;ldquo;moving papers from one place to another&amp;rdquo;. Of course, there was much more to it than just that, but it felt that way. When I left this job and found the one as a C# programmer, I thought, I&amp;rsquo;ll never be doing that again. Surprisingly, I was right&amp;hellip; When I left my job as a C# programmer, I thought I&amp;rsquo;d never have anything to do with HTML again. Here, I was wrong&amp;hellip;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>📘 Powershell BTFM</title>
-      <link>http://localhost:1313/docs/tools/field-manuals/ps-btfm/</link>
+      <link>https://bakerst221b.com/docs/tools/field-manuals/ps-btfm/</link>
       <pubDate>Wed, 23 Sep 2020 10:26:29 +0300</pubDate>
-      <guid>http://localhost:1313/docs/tools/field-manuals/ps-btfm/</guid>
+      <guid>https://bakerst221b.com/docs/tools/field-manuals/ps-btfm/</guid>
       <description>&lt;h2 id=&#34;settings&#34;&gt;Settings&lt;/h2&gt;&#xA;&lt;h3 id=&#34;association&#34;&gt;Association&lt;/h3&gt;&#xA;&lt;p&gt;It&amp;rsquo;s better to associate powershell scripts with notepad.exe that PowerShell for security reasons.&lt;/p&gt;&#xA;&lt;h3 id=&#34;execution-policy&#34;&gt;Execution Policy&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;Get Execution Policy&lt;/strong&gt;. Powershell execution policy is applied to scripts only. Here are the main policies used:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Get-ExecutionPolicy&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; Restricted &lt;span style=&#34;color:#75715e&#34;&gt;# no scripts are allowed (default for desktop)&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; RemoteSigned &lt;span style=&#34;color:#75715e&#34;&gt;# downloaded scripts should be signed (preferred, default for WinServer). For local scripts no signature is required.&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; Unrestricted &lt;span style=&#34;color:#75715e&#34;&gt;# everything is allowed (dangerous)&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; Undefined &lt;span style=&#34;color:#75715e&#34;&gt;# Restricted for Win and RemoteSigned for WinServer&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; AllSigned &lt;span style=&#34;color:#75715e&#34;&gt;# Signatures are required for local scripts also&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;gt; ByPass &lt;span style=&#34;color:#75715e&#34;&gt;# Nothing is blocked, no warnings and prompts&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Other policies, official doc [&lt;a href=&#34;https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies&#34;&gt;2&lt;/a&gt;].&lt;/p&gt;</description>
     </item>
     <item>
       <title>📘 Windows BTFM</title>
-      <link>http://localhost:1313/docs/tools/field-manuals/win-btfm/</link>
+      <link>https://bakerst221b.com/docs/tools/field-manuals/win-btfm/</link>
       <pubDate>Wed, 23 Sep 2020 10:26:29 +0300</pubDate>
-      <guid>http://localhost:1313/docs/tools/field-manuals/win-btfm/</guid>
+      <guid>https://bakerst221b.com/docs/tools/field-manuals/win-btfm/</guid>
       <description>&lt;h2 id=&#34;fuc&#34;&gt;FUC&lt;/h2&gt;&#xA;&lt;p&gt;(Frequently Used Commands)&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;user&#34;&gt;User&lt;/h2&gt;&#xA;&lt;p&gt;Get user&amp;rsquo;s SID:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;wmic useraccount where name=&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;veronicazvereva&amp;#39;&lt;/span&gt; get sid&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# or&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;whoami /user &lt;span style=&#34;color:#75715e&#34;&gt;# for current user&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;system&#34;&gt;System&lt;/h2&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;usb&#34;&gt;USB&lt;/h3&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;mounting&#34;&gt;Mounting&lt;/h3&gt;&#xA;&lt;p&gt;USB devices on are mounted automatically, but VHD drives might need to be mounted manually. To do so, go to disk management utility, choose &lt;code&gt;Attach VHD&lt;/code&gt; from the top menu, select it, open and ok.&lt;/p&gt;&#xA;&lt;h3 id=&#34;diskpart&#34;&gt;DISKPART&lt;/h3&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;diskpart&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;DISKPART&amp;gt; list volume&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;DISKPART&amp;gt; select disk &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;DISKPART&amp;gt; clean &lt;span style=&#34;color:#75715e&#34;&gt;# wipe the selected disk&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;DISKPART&amp;gt; list partition&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;DISKPART&amp;gt; select partition &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;DISKPART&amp;gt; active &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;DISKPART&amp;gt; format fs=ntfs label=test qiuck&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;DISKPART&amp;gt; delete partition&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;remote&#34;&gt;Remote&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;FTP&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>🧰 Mobile Toolkit</title>
-      <link>http://localhost:1313/docs/attacks/applications/mobile/mobile-toolkit/</link>
+      <link>https://bakerst221b.com/docs/attacks/applications/mobile/mobile-toolkit/</link>
       <pubDate>Wed, 23 Sep 2020 10:26:29 +0300</pubDate>
-      <guid>http://localhost:1313/docs/attacks/applications/mobile/mobile-toolkit/</guid>
-      <description>&lt;h2 id=&#34;debuggers&#34;&gt;Debuggers&lt;/h2&gt;&#xA;&lt;h3 id=&#34;gdb&#34;&gt;&lt;a href=&#34;http://localhost:1313/docs/toolkit/general/reverse-toolkit/#gdb&#34;&gt;gdb&lt;/a&gt;&lt;/h3&gt;&#xA;&lt;h3 id=&#34;radare2&#34;&gt;&lt;a href=&#34;http://localhost:1313/docs/toolkit/general/reverse-toolkit/#radare2&#34;&gt;radare2&lt;/a&gt;&lt;/h3&gt;&#xA;&lt;h3 id=&#34;other&#34;&gt;Other&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/docs/toolkit/general/reverse-toolkit/#ida-pro&#34;&gt;IDA Pro&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;[Hopper Disassembler](/docs/toolkit/general/reverse-toolkit/#hopper disassembler)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;static-code-analysis&#34;&gt;Static code analysis&lt;/h2&gt;&#xA;&lt;h3 id=&#34;ida-pro&#34;&gt;&lt;a href=&#34;http://localhost:1313/docs/toolkit/general/reverse-toolkit/#ida-pro&#34;&gt;IDA Pro&lt;/a&gt;&lt;/h3&gt;&#xA;&lt;h3 id=&#34;hopper-disassembler&#34;&gt;&lt;a href=&#34;http://localhost:1313/docs/toolkit/general/reverse-toolkit/#hopper-disassembler&#34;&gt;Hopper Disassembler&lt;/a&gt;&lt;/h3&gt;&#xA;&lt;h3 id=&#34;radare2-1&#34;&gt;&lt;a href=&#34;http://localhost:1313/docs/toolkit/general/reverse-toolkit/#radare2&#34;&gt;radare2&lt;/a&gt;&lt;/h3&gt;&#xA;&lt;h2 id=&#34;utilities&#34;&gt;Utilities&lt;/h2&gt;&#xA;&lt;h2 id=&#34;activity-analysis&#34;&gt;Activity Analysis&lt;/h2&gt;&#xA;&lt;h2 id=&#34;jailbreakingrooting&#34;&gt;Jailbreaking/Rooting&lt;/h2&gt;&#xA;&lt;h3 id=&#34;something&#34;&gt;Something&lt;/h3&gt;&#xA;&lt;p&gt;Desciption&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Host platforms&lt;/strong&gt;: &amp;#x1f308;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Target platforms&lt;/strong&gt;:  &amp;#x1f308;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Install&lt;/strong&gt;:&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Common commands&lt;/strong&gt;:&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Keywords&lt;/strong&gt;:&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Analogues&lt;/strong&gt;:&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Possible issues:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;multitools&#34;&gt;Multitools&lt;/h2&gt;&#xA;&lt;h3 id=&#34;passionfruit&#34;&gt;Passionfruit&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;Host platforms&lt;/strong&gt;: &amp;#x1f308;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Target platforms&lt;/strong&gt;:  &amp;#x1f308;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Install&lt;/strong&gt;:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;brew install npm&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# install node js - https://nodejs.org/en/download/&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# reopen terminal&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;npm install -g passionfruit    &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;passionfruit&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Common commands&lt;/strong&gt;:&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;passionfruit&lt;/code&gt; to launch&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Keywords&lt;/strong&gt;: multitool, logs&lt;/p&gt;</description>
+      <guid>https://bakerst221b.com/docs/attacks/applications/mobile/mobile-toolkit/</guid>
+      <description>&lt;h2 id=&#34;debuggers&#34;&gt;Debuggers&lt;/h2&gt;&#xA;&lt;h3 id=&#34;gdb&#34;&gt;&lt;a href=&#34;https://bakerst221b.com/docs/toolkit/general/reverse-toolkit/#gdb&#34;&gt;gdb&lt;/a&gt;&lt;/h3&gt;&#xA;&lt;h3 id=&#34;radare2&#34;&gt;&lt;a href=&#34;https://bakerst221b.com/docs/toolkit/general/reverse-toolkit/#radare2&#34;&gt;radare2&lt;/a&gt;&lt;/h3&gt;&#xA;&lt;h3 id=&#34;other&#34;&gt;Other&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://bakerst221b.com/docs/toolkit/general/reverse-toolkit/#ida-pro&#34;&gt;IDA Pro&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;[Hopper Disassembler](/docs/toolkit/general/reverse-toolkit/#hopper disassembler)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;static-code-analysis&#34;&gt;Static code analysis&lt;/h2&gt;&#xA;&lt;h3 id=&#34;ida-pro&#34;&gt;&lt;a href=&#34;https://bakerst221b.com/docs/toolkit/general/reverse-toolkit/#ida-pro&#34;&gt;IDA Pro&lt;/a&gt;&lt;/h3&gt;&#xA;&lt;h3 id=&#34;hopper-disassembler&#34;&gt;&lt;a href=&#34;https://bakerst221b.com/docs/toolkit/general/reverse-toolkit/#hopper-disassembler&#34;&gt;Hopper Disassembler&lt;/a&gt;&lt;/h3&gt;&#xA;&lt;h3 id=&#34;radare2-1&#34;&gt;&lt;a href=&#34;https://bakerst221b.com/docs/toolkit/general/reverse-toolkit/#radare2&#34;&gt;radare2&lt;/a&gt;&lt;/h3&gt;&#xA;&lt;h2 id=&#34;utilities&#34;&gt;Utilities&lt;/h2&gt;&#xA;&lt;h2 id=&#34;activity-analysis&#34;&gt;Activity Analysis&lt;/h2&gt;&#xA;&lt;h2 id=&#34;jailbreakingrooting&#34;&gt;Jailbreaking/Rooting&lt;/h2&gt;&#xA;&lt;h3 id=&#34;something&#34;&gt;Something&lt;/h3&gt;&#xA;&lt;p&gt;Desciption&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Host platforms&lt;/strong&gt;: &amp;#x1f308;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Target platforms&lt;/strong&gt;:  &amp;#x1f308;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Install&lt;/strong&gt;:&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Common commands&lt;/strong&gt;:&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Keywords&lt;/strong&gt;:&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Analogues&lt;/strong&gt;:&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Possible issues:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;multitools&#34;&gt;Multitools&lt;/h2&gt;&#xA;&lt;h3 id=&#34;passionfruit&#34;&gt;Passionfruit&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;Host platforms&lt;/strong&gt;: &amp;#x1f308;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Target platforms&lt;/strong&gt;:  &amp;#x1f308;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Install&lt;/strong&gt;:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;brew install npm&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# install node js - https://nodejs.org/en/download/&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# reopen terminal&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;npm install -g passionfruit    &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;passionfruit&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Common commands&lt;/strong&gt;:&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;passionfruit&lt;/code&gt; to launch&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Keywords&lt;/strong&gt;: multitool, logs&lt;/p&gt;</description>
     </item>
     <item>
       <title>Undesirable Mail</title>
-      <link>http://localhost:1313/docs/blog/2018/07/undesirable-mail/</link>
+      <link>https://bakerst221b.com/docs/blog/2018/07/undesirable-mail/</link>
       <pubDate>Thu, 19 Jul 2018 14:19:03 +0300</pubDate>
-      <guid>http://localhost:1313/docs/blog/2018/07/undesirable-mail/</guid>
+      <guid>https://bakerst221b.com/docs/blog/2018/07/undesirable-mail/</guid>
       <description>&lt;p&gt;&lt;em&gt;&lt;strong&gt;Thursday&lt;/strong&gt;&lt;/em&gt;, &lt;em&gt;&lt;strong&gt;Warm and cloudy.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;&amp;ldquo;Open me! I am a payment order! I am important, I swear!&amp;rdquo;, - some RTF-file was yelling. I wasn&amp;rsquo;t expecting any bills so this slyboots did not maim my poor little laptop. Phew ! Lucky me! But since this was a social engineering attack (not very crafty but still), someone less concerned with his or her safety could have opened it and cause him- or herself a lot of trouble. What I am trying to say (very inarticulately ) is that simply opening a small RTF document could result in absolute disaster for your machine! In this post I am telling the story how exactly does it happen&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>How I Met Dot NET Confuser</title>
-      <link>http://localhost:1313/docs/blog/2018/04/dot-net-confuser/</link>
+      <link>https://bakerst221b.com/docs/blog/2018/04/dot-net-confuser/</link>
       <pubDate>Sun, 04 Mar 2018 14:45:49 +0300</pubDate>
-      <guid>http://localhost:1313/docs/blog/2018/04/dot-net-confuser/</guid>
+      <guid>https://bakerst221b.com/docs/blog/2018/04/dot-net-confuser/</guid>
       <description>&lt;p&gt;&lt;em&gt;Вторник, прохладно, как будто вот-вот пойдет дождь, но нет&amp;hellip;. Приятно бывает встретиться лицом к лицу с сильным противником, потому что именно в такие моменты, после таких &amp;ldquo;битв&amp;rdquo;, становишься сильнее. Прошедший вторник оказался настоящим вызовом для моей смекалки. Ну здравствуй, Confuser! Очень надеюсь, что вам понравится статья точно так же, как мне понравилось ковырять этот код и писать эту скромную статью. Все началось одним облачным утром&amp;hellip;.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Среда&lt;/strong&gt;: VBox Version 5.2.12 r122591 (Qt5.6.2), Win7x64 SP1&lt;/p&gt;</description>
     </item>
     <item>
       <title>⚙️ Windows Registry</title>
-      <link>http://localhost:1313/docs/artefacts/win/registry/anatomy/</link>
+      <link>https://bakerst221b.com/docs/artefacts/win/registry/anatomy/</link>
       <pubDate>Fri, 02 Oct 2020 11:38:32 +0300</pubDate>
-      <guid>http://localhost:1313/docs/artefacts/win/registry/anatomy/</guid>
+      <guid>https://bakerst221b.com/docs/artefacts/win/registry/anatomy/</guid>
       <description>&lt;p&gt;Hives:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;C:&lt;span style=&#34;color:#ae81ff&#34;&gt;\D&lt;/span&gt;ocuments and Settings |*&lt;span style=&#34;color:#ae81ff&#34;&gt;\n&lt;/span&gt;tuser.dat&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;C:&lt;span style=&#34;color:#ae81ff&#34;&gt;\U&lt;/span&gt;sers&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;|*&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;ntuser. dat&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;C: &lt;span style=&#34;color:#ae81ff&#34;&gt;\U&lt;/span&gt;sers&lt;span style=&#34;color:#ae81ff&#34;&gt;\ \*\n&lt;/span&gt;tuser.dat. LOG|*&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;C: &lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;Users&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;|*&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;AppData&lt;span style=&#34;color:#ae81ff&#34;&gt;\L&lt;/span&gt;ocal&lt;span style=&#34;color:#ae81ff&#34;&gt;\M&lt;/span&gt;icrosoft&lt;span style=&#34;color:#ae81ff&#34;&gt;\W&lt;/span&gt;indows| UsrClass.dat&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;C: | Users&lt;span style=&#34;color:#ae81ff&#34;&gt;\|&lt;/span&gt;*&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;AppData&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;Local&lt;span style=&#34;color:#ae81ff&#34;&gt;\M&lt;/span&gt;icrosoft Windows| UsrClass.dat.LOG|*&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;C: &lt;span style=&#34;color:#ae81ff&#34;&gt;\W&lt;/span&gt;indows&lt;span style=&#34;color:#ae81ff&#34;&gt;\S&lt;/span&gt;ystem32&lt;span style=&#34;color:#ae81ff&#34;&gt;\c&lt;/span&gt;onfig&lt;span style=&#34;color:#ae81ff&#34;&gt;\S&lt;/span&gt;AM. LOG|*&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;C: Windows&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;System32&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;config SECURITY. LOG&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;*&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;C: Windows&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;System32&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;config&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;SOFTWARE. LOG| *&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;C: Windows&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;System32&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;config SYSTEM. LOG&lt;span style=&#34;color:#ae81ff&#34;&gt;\*&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; C:&lt;span style=&#34;color:#ae81ff&#34;&gt;\D&lt;/span&gt;ocuments and Settings |*&lt;span style=&#34;color:#ae81ff&#34;&gt;\n&lt;/span&gt;tuser.dat&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; C:&lt;span style=&#34;color:#ae81ff&#34;&gt;\U&lt;/span&gt;sers&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;|*&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;ntuser. dat&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; C: &lt;span style=&#34;color:#ae81ff&#34;&gt;\U&lt;/span&gt;sers&lt;span style=&#34;color:#ae81ff&#34;&gt;\ \*\n&lt;/span&gt;tuser.dat. LOG|*&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; C: &lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;Users&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;|*&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;AppData&lt;span style=&#34;color:#ae81ff&#34;&gt;\L&lt;/span&gt;ocal&lt;span style=&#34;color:#ae81ff&#34;&gt;\M&lt;/span&gt;icrosoft&lt;span style=&#34;color:#ae81ff&#34;&gt;\W&lt;/span&gt;indows| UsrClass.dat&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; C: | Users&lt;span style=&#34;color:#ae81ff&#34;&gt;\|&lt;/span&gt;*&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;AppData&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;Local&lt;span style=&#34;color:#ae81ff&#34;&gt;\M&lt;/span&gt;icrosoft Windows| UsrClass.dat.LOG|*&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; C: &lt;span style=&#34;color:#ae81ff&#34;&gt;\W&lt;/span&gt;indows&lt;span style=&#34;color:#ae81ff&#34;&gt;\S&lt;/span&gt;ystem32&lt;span style=&#34;color:#ae81ff&#34;&gt;\c&lt;/span&gt;onfig&lt;span style=&#34;color:#ae81ff&#34;&gt;\S&lt;/span&gt;AM. LOG|*&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; C: Windows&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;System32&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;config SECURITY. LOG&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;*&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; C: Windows&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;System32&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;config&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;SOFTWARE. LOG| *&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; C: Windows&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;System32&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;config SYSTEM. LOG&lt;span style=&#34;color:#ae81ff&#34;&gt;\*&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;C: &lt;span style=&#34;color:#ae81ff&#34;&gt;\W&lt;/span&gt;indows&lt;span style=&#34;color:#ae81ff&#34;&gt;\S&lt;/span&gt;ystem32&lt;span style=&#34;color:#ae81ff&#34;&gt;\c&lt;/span&gt;onfig&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;SAM&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;C: &lt;span style=&#34;color:#ae81ff&#34;&gt;\W&lt;/span&gt;indows&lt;span style=&#34;color:#ae81ff&#34;&gt;\S&lt;/span&gt;ystem32&lt;span style=&#34;color:#ae81ff&#34;&gt;\c&lt;/span&gt;onfig&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;SECURITY&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;C: &lt;span style=&#34;color:#ae81ff&#34;&gt;\W&lt;/span&gt;indows&lt;span style=&#34;color:#ae81ff&#34;&gt;\S&lt;/span&gt;ystem32&lt;span style=&#34;color:#ae81ff&#34;&gt;\c&lt;/span&gt;onfig&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;SOFTWARE&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;C: &lt;span style=&#34;color:#ae81ff&#34;&gt;\W&lt;/span&gt;indows&lt;span style=&#34;color:#ae81ff&#34;&gt;\S&lt;/span&gt;ystem32&lt;span style=&#34;color:#ae81ff&#34;&gt;\c&lt;/span&gt;onfig&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;SYSTEM&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;C: &lt;span style=&#34;color:#ae81ff&#34;&gt;\W&lt;/span&gt;indows&lt;span style=&#34;color:#ae81ff&#34;&gt;\S&lt;/span&gt;ystem32&lt;span style=&#34;color:#ae81ff&#34;&gt;\c&lt;/span&gt;onfig&lt;span style=&#34;color:#ae81ff&#34;&gt;\R&lt;/span&gt;egBack&lt;span style=&#34;color:#ae81ff&#34;&gt;\\&lt;/span&gt;*. LOG|*&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;C: &lt;span style=&#34;color:#ae81ff&#34;&gt;\W&lt;/span&gt;indows&lt;span style=&#34;color:#ae81ff&#34;&gt;\S&lt;/span&gt;ystem32&lt;span style=&#34;color:#ae81ff&#34;&gt;\c&lt;/span&gt;onfig&lt;span style=&#34;color:#ae81ff&#34;&gt;\R&lt;/span&gt;egBack&lt;span style=&#34;color:#ae81ff&#34;&gt;\S&lt;/span&gt;AM&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;C: &lt;span style=&#34;color:#ae81ff&#34;&gt;\W&lt;/span&gt;indows&lt;span style=&#34;color:#ae81ff&#34;&gt;\S&lt;/span&gt;ystem32&lt;span style=&#34;color:#ae81ff&#34;&gt;\c&lt;/span&gt;onfig&lt;span style=&#34;color:#ae81ff&#34;&gt;\R&lt;/span&gt;egBack&lt;span style=&#34;color:#ae81ff&#34;&gt;\S&lt;/span&gt;ECURITY&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;C: &lt;span style=&#34;color:#ae81ff&#34;&gt;\W&lt;/span&gt;indows&lt;span style=&#34;color:#ae81ff&#34;&gt;\S&lt;/span&gt;ystem32&lt;span style=&#34;color:#ae81ff&#34;&gt;\c&lt;/span&gt;onfig&lt;span style=&#34;color:#ae81ff&#34;&gt;\R&lt;/span&gt;egBack&lt;span style=&#34;color:#ae81ff&#34;&gt;\S&lt;/span&gt;OFTWARE&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;C: &lt;span style=&#34;color:#ae81ff&#34;&gt;\W&lt;/span&gt;indows&lt;span style=&#34;color:#ae81ff&#34;&gt;\S&lt;/span&gt;ystem32&lt;span style=&#34;color:#ae81ff&#34;&gt;\c&lt;/span&gt;onfig&lt;span style=&#34;color:#ae81ff&#34;&gt;\R&lt;/span&gt;egBack&lt;span style=&#34;color:#ae81ff&#34;&gt;\S&lt;/span&gt;YSTEM&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Registryives: Path: C: &lt;span style=&#34;color:#ae81ff&#34;&gt;\W&lt;/span&gt;indows&lt;span style=&#34;color:#ae81ff&#34;&gt;\S&lt;/span&gt;ystem32&lt;span style=&#34;color:#ae81ff&#34;&gt;\c&lt;/span&gt;onfig&lt;span style=&#34;color:#ae81ff&#34;&gt;\R&lt;/span&gt;egBack&lt;span style=&#34;color:#ae81ff&#34;&gt;\S&lt;/span&gt;YSTEMI&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Registry is a repository for settings on a Windows machine. Prior to Windows NT, &lt;code&gt;ini&lt;/code&gt; files were used. These were substituted with Windows registry to keep initialization and configurations. Some changes are also logged by the registry.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How I Met Hugo</title>
-      <link>http://localhost:1313/docs/blog/2020/09/how-i-met-hugo/</link>
+      <link>https://bakerst221b.com/docs/blog/2020/09/how-i-met-hugo/</link>
       <pubDate>Wed, 09 Sep 2020 13:45:07 +0300</pubDate>
-      <guid>http://localhost:1313/docs/blog/2020/09/how-i-met-hugo/</guid>
+      <guid>https://bakerst221b.com/docs/blog/2020/09/how-i-met-hugo/</guid>
       <description>&lt;p&gt;There was a time when I was desperately trying to become a web programmer (those wonderful days of naïve curiosity🤦‍♀️). I’ve even attended a course (which turned out to be useless&amp;hellip; If only I knew back then, that I could better learn it all for free on my own. Alas!😭).&lt;/p&gt;&#xA;&lt;p&gt;So I created some repulsive HTML pages with a crappy JavaScript🤮. I remember one of the first projects: a page with a binary converter🙌. Some time later, when I’ve found a job as a C# programmer, I’ve met the beauty of asp.net (&lt;a href=&#34;http://asp.net/&#34;&gt;http://asp.net/&lt;/a&gt;) and realized I don’t have to deal with php (which my soft mental constitution could not bear 👸) and that I don’t always have to write  websites from scratch and what’s more, to develop the design for it myself&amp;hellip; After I’ve started my career in InfoSec field, I’ve stumbled upon a task which I managed to solve with .net web engine and my beloved C#. But the site was as usual, not very pretty, to say the least&amp;hellip; Actually, I’ve tried to copy VisualStudio styles and managed partly, but it was like a 5 year old trying to copy Tician. Almost.&lt;/p&gt;</description>
     </item>
     <item>
       <title>📚 Windows OS Primer</title>
-      <link>http://localhost:1313/docs/reference/windows/win-overview/</link>
+      <link>https://bakerst221b.com/docs/reference/windows/win-overview/</link>
       <pubDate>Mon, 08 Jun 2020 09:49:24 +0300</pubDate>
-      <guid>http://localhost:1313/docs/reference/windows/win-overview/</guid>
+      <guid>https://bakerst221b.com/docs/reference/windows/win-overview/</guid>
       <description>&lt;h1 id=&#34;plan-for-windows-forensics&#34;&gt;Plan for Windows Forensics&lt;/h1&gt;&#xA;&lt;p&gt;Done (Udemy watched, tools installed and used, conclusions made) is &lt;strong&gt;bolded&lt;/strong&gt;:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Prefetch&lt;/li&gt;&#xA;&lt;li&gt;LNK&lt;/li&gt;&#xA;&lt;li&gt;Shellbag&lt;/li&gt;&#xA;&lt;li&gt;Memory&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;useful-commands&#34;&gt;Useful commands&lt;/h2&gt;&#xA;&lt;p&gt;Potentially to BTFM or RTFM&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;net user administrator /active:yes&lt;/code&gt; - activate default admin or &lt;code&gt;lnsrmgr.msc&lt;/code&gt; -&amp;gt; enable.&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;psexec -i -s cmd.exe&lt;/code&gt; - escalate to System priviledges.&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;pwdump7 -d &amp;lt;path_to_protected_file&amp;gt; &amp;lt;where_to_copy&amp;gt;&lt;/code&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;services&#34;&gt;Services&lt;/h2&gt;&#xA;&lt;p&gt;Processes running in the background and sometimes have SYSTEM privileges. May not even be listed in Task Manager, but Autorun tool will probably show them.&lt;/p&gt;</description>
     </item>
   </channel>

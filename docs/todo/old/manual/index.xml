@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Misc on Analyst</title>
-    <link>http://localhost:1313/docs/todo/old/manual/</link>
+    <link>https://bakerst221b.com/docs/todo/old/manual/</link>
     <description>Recent content in Misc on Analyst</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 26 May 2023 10:14:39 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/docs/todo/old/manual/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bakerst221b.com/docs/todo/old/manual/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DFIR Methodology</title>
-      <link>http://localhost:1313/docs/todo/old/manual/dfir-methodology/</link>
+      <link>https://bakerst221b.com/docs/todo/old/manual/dfir-methodology/</link>
       <pubDate>Thu, 28 Jul 2022 15:14:39 +0100</pubDate>
-      <guid>http://localhost:1313/docs/todo/old/manual/dfir-methodology/</guid>
+      <guid>https://bakerst221b.com/docs/todo/old/manual/dfir-methodology/</guid>
       <description>&lt;h2 id=&#34;-ir-methodology&#34;&gt;🥷🏼 IR Methodology&lt;/h2&gt;&#xA;&lt;p&gt;For the most relevant scenarios, keeping playbooks and runbooks at your disposal is crucial. This will help you stay less stressed and be prepared for various outcomes. I have created a &lt;a href=&#34;https://www.canva.com/design/DAFfIbPpEuo/Frhvq9uiLJssDby2MJtXJA/view?utm_content=DAFfIbPpEuo&amp;amp;utm_campaign=designshare&amp;amp;utm_medium=link2&amp;amp;utm_source=sharebutton&#34;&gt;high-level overview of potential playbooks&lt;/a&gt; based on the MITRE ATTACK matrix, which includes guidelines for detection, investigation, and cleanup techniques. Runbooks, on the other hand, are highly detailed and technical instructions, such as &amp;ldquo;How to reset an account password&amp;rdquo; or &amp;ldquo;How to change an AWS EC2 inline policy.&amp;rdquo; One runbook can be referred to by several playbooks, which is perfectly fine. Consider playbooks as constructors with a relatively unique plan and runbooks as the specific steps linked to some or all of the described plan&amp;rsquo;s stages. Below is a part of the table I have mentioned above.&lt;/p&gt;</description>
     </item>
     <item>
       <title>DFIR Checklists</title>
-      <link>http://localhost:1313/docs/todo/old/manual/dfir-checklists/</link>
+      <link>https://bakerst221b.com/docs/todo/old/manual/dfir-checklists/</link>
       <pubDate>Fri, 26 May 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/todo/old/manual/dfir-checklists/</guid>
+      <guid>https://bakerst221b.com/docs/todo/old/manual/dfir-checklists/</guid>
       <description>&lt;p&gt;&lt;em&gt;Here I am collecting checklists that might be helpful when conducting an investigation.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
   </channel>

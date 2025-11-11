@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Wireshark on Analyst</title>
-    <link>http://localhost:1313/tools/wireshark/</link>
+    <link>https://bakerst221b.com/tools/wireshark/</link>
     <description>Recent content in Wireshark on Analyst</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 08 Jan 2022 11:42:21 +0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/tools/wireshark/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bakerst221b.com/tools/wireshark/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CyberCorp1</title>
-      <link>http://localhost:1313/docs/todo/cases/ctf-walkthrough/cybercorp1/</link>
+      <link>https://bakerst221b.com/docs/todo/cases/ctf-walkthrough/cybercorp1/</link>
       <pubDate>Sat, 08 Jan 2022 11:42:21 +0300</pubDate>
-      <guid>http://localhost:1313/docs/todo/cases/ctf-walkthrough/cybercorp1/</guid>
+      <guid>https://bakerst221b.com/docs/todo/cases/ctf-walkthrough/cybercorp1/</guid>
       <description>&lt;p&gt;⛔️  Spoiler alert!&lt;/p&gt;&#xA;&lt;h2 id=&#34;case-details&#34;&gt;Case Details&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Artefacts in posession&lt;/strong&gt;: memory dump, OS event logs, registry files, Prefetch files, $MFT file, ShimCache, AmCache, network traffic dumps. I&amp;rsquo;ve decided to analyse each artefact, what can I get from it in this specific case and how. Then, I am going to outline my strategy in approaching this case.&lt;/p&gt;&#xA;&lt;p&gt;We are looking for indicators of compromise.  There are no details as to what is the group and what was its aim. But it’s known that there was abnormal traffic detected that has launched this IR process. So, at least, we must have some suspicious traffic, possibly open or terminated connections. These should have been launched by some process, so we are looking for malware. Also, since the attacker needed an account to get in, I will be looking for an account take over attempts and possibly, new account creation.&lt;/p&gt;</description>
     </item>
     <item>
       <title>🌎 Network Traffic</title>
-      <link>http://localhost:1313/docs/todo/old/traffic/</link>
+      <link>https://bakerst221b.com/docs/todo/old/traffic/</link>
       <pubDate>Mon, 12 Oct 2020 17:50:01 +0300</pubDate>
-      <guid>http://localhost:1313/docs/todo/old/traffic/</guid>
+      <guid>https://bakerst221b.com/docs/todo/old/traffic/</guid>
       <description>&lt;h2 id=&#34;collection&#34;&gt;Collection&lt;/h2&gt;&#xA;&lt;p&gt;Most of the devices keep some logs. As for the network-related issues are switches, routers, firewalls, IDS and IPS, web proxies, DC and authentication servers, DCHP servers and application servers.&lt;/p&gt;&#xA;&lt;p&gt;SIEMs are log aggregators. When configured correctly, all logs and events from all systems in the enterprise flows to a centralised repository where they can then be analysed. Sometimes these SIEM analyse what&amp;rsquo;s normal and what&amp;rsquo;s not. However, they are quite costly 💰.&lt;/p&gt;</description>
     </item>
     <item>
       <title>To Carry Out MockInv&#39;estigation. Part 1</title>
-      <link>http://localhost:1313/docs/blog/2021/06/toy-story-pd/</link>
+      <link>https://bakerst221b.com/docs/blog/2021/06/toy-story-pd/</link>
       <pubDate>Sun, 25 Apr 2021 17:18:04 +0300</pubDate>
-      <guid>http://localhost:1313/docs/blog/2021/06/toy-story-pd/</guid>
+      <guid>https://bakerst221b.com/docs/blog/2021/06/toy-story-pd/</guid>
       <description>&lt;p&gt;❗SPOILER ALERT!&lt;/p&gt;&#xA;&lt;p&gt;📆 &lt;code&gt;16/06/2021&lt;/code&gt; , &lt;em&gt;Wednesday&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;🕰 &lt;code&gt;09:21 PM&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;It was a very sunny day and a very nice a long walk that my daughter and I had before lunch. I feel uplifted because there is finally enough sun and green grass in my life! Unfortunately, no coffee today, since we don&amp;rsquo;t have BonAcqua, which might be not the best for drinking, but is indeed one of the best to prepare coffee (quoting my husband).&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>📚 TCP</title>
-      <link>http://localhost:1313/docs/attacks/protocols/transport/tcp/</link>
+      <link>https://bakerst221b.com/docs/attacks/protocols/transport/tcp/</link>
       <pubDate>Sun, 20 Sep 2020 11:28:16 +0300</pubDate>
-      <guid>http://localhost:1313/docs/attacks/protocols/transport/tcp/</guid>
-      <description>&lt;p&gt;&lt;em&gt;This article collects the basics of TCP protocol. Its friend UDP (transport layer protocol as well) is faster but less reliable.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;segment-structure&#34;&gt;Segment structure&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;attacks/protocols/transport/tcp/images/1.png&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;intro&#34;&gt;Intro&lt;/h3&gt;&#xA;&lt;p&gt;The desired prerequisite for this article is &lt;a href=&#34;http://localhost:1313/docs/articles/fundamentals/network/osi/overview&#34;&gt;this&lt;/a&gt;. It&amp;rsquo;s also recommended to read about &lt;strong&gt;data structures&lt;/strong&gt;.  A very good book that I&amp;rsquo;ve accidenatlly stumbled upon is Brian Carrier&amp;rsquo;s &lt;em&gt;File System Forensic Analysis&lt;/em&gt; [&lt;a href=&#34;#references&#34;&gt;3&lt;/a&gt;]. I also strongly believe, that the best way to learn is to activate different parts of the brain. Simple reading is not enough, that&amp;rsquo;s why I&amp;rsquo;m trying to mix in pictures and emoji. Also, metaphors help and analogies which I also try to provide. But it would really help, if you installed some packet capture program (&lt;a href=&#34;https://www.wireshark.org/download.html&#34;&gt;Wireshark&lt;/a&gt; is an example), opened some network interface and observed the stuff I&amp;rsquo;m talking about yourself.&lt;/p&gt;</description>
+      <guid>https://bakerst221b.com/docs/attacks/protocols/transport/tcp/</guid>
+      <description>&lt;p&gt;&lt;em&gt;This article collects the basics of TCP protocol. Its friend UDP (transport layer protocol as well) is faster but less reliable.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;segment-structure&#34;&gt;Segment structure&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;attacks/protocols/transport/tcp/images/1.png&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;intro&#34;&gt;Intro&lt;/h3&gt;&#xA;&lt;p&gt;The desired prerequisite for this article is &lt;a href=&#34;https://bakerst221b.com/docs/articles/fundamentals/network/osi/overview&#34;&gt;this&lt;/a&gt;. It&amp;rsquo;s also recommended to read about &lt;strong&gt;data structures&lt;/strong&gt;.  A very good book that I&amp;rsquo;ve accidenatlly stumbled upon is Brian Carrier&amp;rsquo;s &lt;em&gt;File System Forensic Analysis&lt;/em&gt; [&lt;a href=&#34;#references&#34;&gt;3&lt;/a&gt;]. I also strongly believe, that the best way to learn is to activate different parts of the brain. Simple reading is not enough, that&amp;rsquo;s why I&amp;rsquo;m trying to mix in pictures and emoji. Also, metaphors help and analogies which I also try to provide. But it would really help, if you installed some packet capture program (&lt;a href=&#34;https://www.wireshark.org/download.html&#34;&gt;Wireshark&lt;/a&gt; is an example), opened some network interface and observed the stuff I&amp;rsquo;m talking about yourself.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

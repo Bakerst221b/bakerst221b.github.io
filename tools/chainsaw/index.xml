@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Chainsaw on Analyst</title>
-    <link>http://localhost:1313/tools/chainsaw/</link>
+    <link>https://bakerst221b.com/tools/chainsaw/</link>
     <description>Recent content in Chainsaw on Analyst</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 08 Feb 2022 11:42:21 +0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/tools/chainsaw/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bakerst221b.com/tools/chainsaw/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Game Over</title>
-      <link>http://localhost:1313/docs/blog/2022/02/jigsaw/</link>
+      <link>https://bakerst221b.com/docs/blog/2022/02/jigsaw/</link>
       <pubDate>Tue, 08 Feb 2022 11:42:21 +0300</pubDate>
-      <guid>http://localhost:1313/docs/blog/2022/02/jigsaw/</guid>
+      <guid>https://bakerst221b.com/docs/blog/2022/02/jigsaw/</guid>
       <description>&lt;p&gt;&lt;em&gt;One sunny 😎 day I came to a coworking office very early in the morning. As usual, I&amp;rsquo;ve decided to kick it off with a freshly brewed coffee which we never had, so, I had to go with an instant substitute. Ugh 😣! I was hoping to savour my disgust meditating over the Feedly recents, when I noticed that I was not the only lark that day. Mark, a freelance designer who happened to be a huge fan of Assassin&amp;rsquo;s Creed games (just like me), was sitting in the corner of the shared kitchen with his laptop, looking so gloomy that I was sorry I didn&amp;rsquo;t take my ☔️ with me. When I&amp;rsquo;ve forced the last sip of that potion inside, I wished him good morning and headed to my working nest. He didn&amp;rsquo;t respond though, which was weird, since he usually was very friendly. I thought he needed some time on his own and was about to leave the kitchen when suddenly he hailed me. Long story short, he seemed to get himself a virus and didn&amp;rsquo;t know how to get rid of it. He seemed scared, since lots of important files were encrypted.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>CyberCorp1</title>
-      <link>http://localhost:1313/docs/todo/cases/ctf-walkthrough/cybercorp1/</link>
+      <link>https://bakerst221b.com/docs/todo/cases/ctf-walkthrough/cybercorp1/</link>
       <pubDate>Sat, 08 Jan 2022 11:42:21 +0300</pubDate>
-      <guid>http://localhost:1313/docs/todo/cases/ctf-walkthrough/cybercorp1/</guid>
+      <guid>https://bakerst221b.com/docs/todo/cases/ctf-walkthrough/cybercorp1/</guid>
       <description>&lt;p&gt;⛔️  Spoiler alert!&lt;/p&gt;&#xA;&lt;h2 id=&#34;case-details&#34;&gt;Case Details&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Artefacts in posession&lt;/strong&gt;: memory dump, OS event logs, registry files, Prefetch files, $MFT file, ShimCache, AmCache, network traffic dumps. I&amp;rsquo;ve decided to analyse each artefact, what can I get from it in this specific case and how. Then, I am going to outline my strategy in approaching this case.&lt;/p&gt;&#xA;&lt;p&gt;We are looking for indicators of compromise.  There are no details as to what is the group and what was its aim. But it’s known that there was abnormal traffic detected that has launched this IR process. So, at least, we must have some suspicious traffic, possibly open or terminated connections. These should have been launched by some process, so we are looking for malware. Also, since the attacker needed an account to get in, I will be looking for an account take over attempts and possibly, new account creation.&lt;/p&gt;</description>
     </item>
   </channel>

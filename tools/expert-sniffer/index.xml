@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Expert Sniffer on Analyst</title>
-    <link>http://localhost:1313/tools/expert-sniffer/</link>
+    <link>https://bakerst221b.com/tools/expert-sniffer/</link>
     <description>Recent content in Expert Sniffer on Analyst</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 29 Nov 2020 15:20:08 +0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/tools/expert-sniffer/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bakerst221b.com/tools/expert-sniffer/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>📚 Overview</title>
-      <link>http://localhost:1313/docs/attacks/protocols/phys/overview/</link>
+      <link>https://bakerst221b.com/docs/attacks/protocols/phys/overview/</link>
       <pubDate>Sun, 29 Nov 2020 15:20:08 +0300</pubDate>
-      <guid>http://localhost:1313/docs/attacks/protocols/phys/overview/</guid>
+      <guid>https://bakerst221b.com/docs/attacks/protocols/phys/overview/</guid>
       <description>&lt;p&gt;&lt;em&gt;This article is about  some general stuff that happens on the physical layer.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;CSMA/CD&lt;/code&gt; =&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;C&lt;/strong&gt;arrier &lt;strong&gt;S&lt;/strong&gt;ense - Who gets to talk? Wait for your turn&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;M&lt;/strong&gt;ultiple &lt;strong&gt;A&lt;/strong&gt;ccess - When you are done, you can immediately send another request. Like, to ask. a doctor check your nose after throat examination you don&amp;rsquo;t need another appointment, just ask right away.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;C&lt;/strong&gt;ollision &lt;strong&gt;D&lt;/strong&gt;etection - NICs have a module that detect abnormal voltage (collision).&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Domain&lt;/strong&gt; - area in within which all devices hear or see everything (not necesarily respond).&lt;/p&gt;</description>
     </item>
   </channel>

@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>⚔️ Attacks DB - Analyst</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  <link rel="icon" href="http://localhost:1313/favicon.png">
+  <link rel="icon" href="https://bakerst221b.com/favicon.png">
   <link href="/css/style-classic.css"></link>
   
   
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/style.min.0fd8269b84d57bc40ce18bb200a70ca7e1001ccf31f98dc3a8e47fa25f99b326.css">
   
 
   
@@ -77,14 +77,14 @@
     <div class='header'>
   <div class="container">
     <div class="logo">
-      <a href="http://localhost:1313/"><img alt="Logo" src="/images/logo.png" /></a>
+      <a href="https://bakerst221b.com/"><img alt="Logo" src="/images/logo.png" /></a>
     </div>
     <div class="logo-mobile">
-      <a href="http://localhost:1313/"><img alt="Logo" src="/images/logo-mobile.svg" /></a>
+      <a href="https://bakerst221b.com/"><img alt="Logo" src="/images/logo-mobile.svg" /></a>
     </div>
     
 
-    <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/docs/attacks/index.xml" title="Analyst" />
+    <link rel="alternate" type="application/rss+xml" href="https://bakerst221b.com/docs/attacks/index.xml" title="Analyst" />
     <div id="main-menu" class="main-menu">
   <ul>
     
@@ -196,32 +196,32 @@
  <h1 class="title">⚔️ Attacks DB</h1> 
  
 
-    <h2><a href="http://localhost:1313/docs/attacks/evasion/"> Evasion Techniques</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/attacks/evasion/"> Evasion Techniques</a></h2> 
     <p> <p><em>This is about &hellip; .</em></p></p>
 
-    <h2><a href="http://localhost:1313/docs/attacks/cloud/"> 📚 Cloud</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/attacks/cloud/"> 📚 Cloud</a></h2> 
     <p> </p>
 
-    <h2><a href="http://localhost:1313/docs/attacks/containers/"> 📚 Containers</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/attacks/containers/"> 📚 Containers</a></h2> 
     <p> </p>
 
-    <h2><a href="http://localhost:1313/docs/attacks/ids-ips/"> Host-based IDP/IPS</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/attacks/ids-ips/"> Host-based IDP/IPS</a></h2> 
     <p> <p>Host-based IDS look for local system configurations and behaviour, while network-based IDS look for network connections and looks for anomalies and common signatures.</p>
 <p>IDS and IPS as firewall&rsquo;s filters. There are Control Plane (looks after the OS and routing table) and the Forwarding Plane (makes decisions on routing and discarding). If something happens to the Control Plane, the device will still forward the traffic (really???).</p>
 <p>By default IDS only <strong>listens 👂</strong> the traffic. It&rsquo;s usually connected to the span port on a switch. Looks for anomalies and sends alerts. Won&rsquo;t take any actions by default, but can be configured in such a way. If the IDS is down, nothing is changed for the rest of the network, it&rsquo;s still operating.</p>
 <p>IPS takes actions on its own. It is not connected to the span port, but rather is a gateway. Before it inspects and allows a packet through, nothing can move forward. So, if IPS is down, everyone is down (unless there is some load balancing enabled or may be some policy for such cases). Positioned right after the router, edge device or a firewall.</p></p>
 
-    <h2><a href="http://localhost:1313/docs/attacks/recon/"> Network Recon</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/attacks/recon/"> Network Recon</a></h2> 
     <p> <h2 id="traceroute-tracert"><code>traceroute</code>, <code>tracert</code></h2>
 <p>On Windows, it&rsquo;s <code>tracert</code> (due to some legacy max-name-size limitations). On Linux and macOS - <code>traceroute</code>. Windows uses ICMP protocol by default, while macOS and Linux - <code>UDP</code>. You can, however, make <code>tracerout</code> on UNIX operate over ICMP by specifying <code>-I</code> switch.</p>
 <blockquote>
 <p>🧪 There is an extraordinary thing that I have noticed. I was trying to capture the traceroute and tracert traffic to show the screenshots.</p>
 <p>I launched traceroute on macOS, and I got a bizarre response: 64 lines of 3 wildcards that could indicate a firewall blocking ICMP/UDP requests. I googled and googled and decided to check the Windows tracert on a VM on the same machine. And strangely, I got a normal response. That led me to believe that the macOS traceroute is buggy since the machine is the same and all traffic is routed through the same nodes.</p></p>
 
-    <h2><a href="http://localhost:1313/docs/attacks/port-scanning/"> Port Scanning</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/attacks/port-scanning/"> Port Scanning</a></h2> 
     <p> <p><em>There are several techniques for port scanning. Some of them work for one OS only.</em></p></p>
 
-    <h2><a href="http://localhost:1313/docs/attacks/net-btfm/"> 📘 BTFM</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/attacks/net-btfm/"> 📘 BTFM</a></h2> 
     <p> <h2 id="dshell">dshell</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># MacOSX path to directory with pyenv (example):</span>
 </span></span><span style="display:flex;"><span>/Users/<span style="color:#f92672">[</span>user_name<span style="color:#f92672">]</span>/.pyenv/versions/3.8.5/envs/python3/lib/python3.8/site-packages/dshell/
@@ -237,7 +237,7 @@
 </span></span></code></pre></div><h3 id="analysis-example-1">Analysis example 1</h3>
 <p>Downloading some <code>(p)cap</code> file from <a href="https://wiki.wireshark.org/SampleCaptures#Server_Message_Block_.28SMB.29.2FCommon_Internet_File_System_.28CIFS.29">here</a>. Chose some <code>smb</code> file <a href="https://wiki.wireshark.org/SampleCaptures?action=AttachFile&amp;do=get&amp;target=smbtorture.cap.gz">smbtorture.cap.gz</a>. This sample&rsquo;s info: <em>&ldquo;Capture showing a wide range of SMB features. The capture was made using the Samba4 smbtorture suite, against a Windows Vista beta2 server.&rdquo;</em></p></p>
 
-    <h2><a href="http://localhost:1313/docs/attacks/protocols/"> 📚 Network Protocols</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/attacks/protocols/"> 📚 Network Protocols</a></h2> 
     <p> <p><em>This set of articles describe network protocols for each layer separately. Each article may contain an attack description and how to metigate it.</em></p></p>
 
 
@@ -339,7 +339,7 @@ h2 {
         <div class="sub-footer-inner">
           <ul>
             <li class="zerostatic"><a href="https://www.zerostatic.io">www.zerostatic.io</a></li>
-            <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/docs/attacks/index.xml" title="Analyst" />
+            <link rel="alternate" type="application/rss+xml" href="https://bakerst221b.com/docs/attacks/index.xml" title="Analyst" />
             </ul>
         </div>
       </div>
@@ -353,9 +353,13 @@ h2 {
   
 
   
-  <script type="text/javascript" src="/js/scripts.js"></script>
+  <script type="text/javascript" src="/js/scripts.min.ec19db7e4836c12e2c5e3697d926bc3e4c22005167d9826aab54feca08f0c093.js"></script>
   
 
+  
+  
+  
+    
   
 
 

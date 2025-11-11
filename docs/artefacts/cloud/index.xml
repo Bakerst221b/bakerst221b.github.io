@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>☁️ Cloud Artefacts on Analyst</title>
-    <link>http://localhost:1313/docs/artefacts/cloud/</link>
+    <link>https://bakerst221b.com/docs/artefacts/cloud/</link>
     <description>Recent content in ☁️ Cloud Artefacts on Analyst</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 02 Jun 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/docs/artefacts/cloud/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bakerst221b.com/docs/artefacts/cloud/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cloud Logs</title>
-      <link>http://localhost:1313/docs/artefacts/cloud/logs/</link>
+      <link>https://bakerst221b.com/docs/artefacts/cloud/logs/</link>
       <pubDate>Fri, 02 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/artefacts/cloud/logs/</guid>
+      <guid>https://bakerst221b.com/docs/artefacts/cloud/logs/</guid>
       <description>&lt;h2 id=&#34;audit&#34;&gt;Audit&lt;/h2&gt;&#xA;&lt;h3 id=&#34;login-activity&#34;&gt;Login activity&lt;/h3&gt;&#xA;&lt;p&gt;For admin account go to IAM -&amp;gt; Credential report to see all the users and the following information:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;user name&lt;/li&gt;&#xA;&lt;li&gt;arn (acc N + username)&lt;/li&gt;&#xA;&lt;li&gt;user_creation_time&lt;/li&gt;&#xA;&lt;li&gt;password_enabled&lt;/li&gt;&#xA;&lt;li&gt;password_last_used&lt;/li&gt;&#xA;&lt;li&gt;password_last_changed&lt;/li&gt;&#xA;&lt;li&gt;password_next_rotation&lt;/li&gt;&#xA;&lt;li&gt;mfa_active&lt;/li&gt;&#xA;&lt;li&gt;access_key_1_active&lt;/li&gt;&#xA;&lt;li&gt;access_key_1_last_rotated&lt;/li&gt;&#xA;&lt;li&gt;access_key_1_last_used_date&lt;/li&gt;&#xA;&lt;li&gt;access_key_1_last_used_region&lt;/li&gt;&#xA;&lt;li&gt;access_key_1_last_used_service&lt;/li&gt;&#xA;&lt;li&gt;access_key_2_active&lt;/li&gt;&#xA;&lt;li&gt;access_key_2_last_rotated&lt;/li&gt;&#xA;&lt;li&gt;access_key_2_last_used_date&lt;/li&gt;&#xA;&lt;li&gt;access_key_2_last_used_region&lt;/li&gt;&#xA;&lt;li&gt;access_key_2_last_used_service&lt;/li&gt;&#xA;&lt;li&gt;cert_1_active&lt;/li&gt;&#xA;&lt;li&gt;cert_1_last_rotated&lt;/li&gt;&#xA;&lt;li&gt;cert_2_active&lt;/li&gt;&#xA;&lt;li&gt;cert_2_last_rotated&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;service-usage-activity&#34;&gt;Service usage activity&lt;/h3&gt;&#xA;&lt;p&gt;Also, you can go to IAM -&amp;gt; username -&amp;gt; Access Advisor tab to see the services that this user has access to and when these were last used.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Cloud Users And Policies</title>
-      <link>http://localhost:1313/docs/artefacts/cloud/users/</link>
+      <link>https://bakerst221b.com/docs/artefacts/cloud/users/</link>
       <pubDate>Fri, 02 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/artefacts/cloud/users/</guid>
+      <guid>https://bakerst221b.com/docs/artefacts/cloud/users/</guid>
       <description>&lt;h2 id=&#34;iam&#34;&gt;IAM&lt;/h2&gt;&#xA;&lt;p&gt;Stands for &lt;strong&gt;I&lt;/strong&gt;dentity &lt;strong&gt;A&lt;/strong&gt;ccess &lt;strong&gt;M&lt;/strong&gt;anagement.&#xA;There are several types of IAM identities. They are usually called &amp;ldquo;Principal&amp;rdquo;. This can be either a User or a Role. It can even be a service or an account. Users can assume Roles. Instance Profile is basically a separate IAM Role assumed by this particular instance.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;IAM role&lt;/strong&gt;. Some entity (principal in AWS language) that can be assumed by others (users, services, instances, accounts). However assumes the role, is provided with temporary credentials.&lt;/p&gt;</description>
     </item>
     <item>
       <title>AWS Configuration</title>
-      <link>http://localhost:1313/docs/artefacts/cloud/config/</link>
+      <link>https://bakerst221b.com/docs/artefacts/cloud/config/</link>
       <pubDate>Fri, 02 Oct 2020 11:38:32 +0300</pubDate>
-      <guid>http://localhost:1313/docs/artefacts/cloud/config/</guid>
+      <guid>https://bakerst221b.com/docs/artefacts/cloud/config/</guid>
       <description>&lt;h2 id=&#34;default-configurations&#34;&gt;Default Configurations&lt;/h2&gt;&#xA;&lt;p&gt;By default, SSH 22 and RDP 3389 are closed, but these are suggested to be opened when creaing them, warning how dangeroud this is. What&amp;rsquo;s &lt;a href=&#34;https://docs.aws.amazon.com/vpc/latest/mirroring/what-is-traffic-mirroring.html&#34;&gt;traffic mirroring&lt;/a&gt;? Using &lt;a href=&#34;https://docs.aws.amazon.com/vpc/latest/mirroring/tm-example-open-source.html&#34;&gt;this functionality with&lt;/a&gt; open-source tools.&lt;/p&gt;&#xA;&lt;h2 id=&#34;custom-config&#34;&gt;Custom Config&lt;/h2&gt;&#xA;&lt;p&gt;If SSM is enabled (System Manager Service), then activity is logged in CloudTrail. At least,  &lt;code&gt;AmazonSSMManagedInstanceCore&lt;/code&gt; needs to be attached to the instance profile role. Look at the policies and which users are granted the access. Also, commands run can be also restricted.&lt;/p&gt;</description>
     </item>
   </channel>

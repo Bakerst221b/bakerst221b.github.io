@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>AWS on Analyst</title>
-    <link>http://localhost:1313/tools/aws/</link>
+    <link>https://bakerst221b.com/tools/aws/</link>
     <description>Recent content in AWS on Analyst</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 07 Mar 2021 11:42:21 +0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/tools/aws/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bakerst221b.com/tools/aws/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How I Got Started With AWS</title>
-      <link>http://localhost:1313/docs/blog/2021/03/how-i-got-started-with-aws/</link>
+      <link>https://bakerst221b.com/docs/blog/2021/03/how-i-got-started-with-aws/</link>
       <pubDate>Sun, 07 Mar 2021 11:42:21 +0300</pubDate>
-      <guid>http://localhost:1313/docs/blog/2021/03/how-i-got-started-with-aws/</guid>
+      <guid>https://bakerst221b.com/docs/blog/2021/03/how-i-got-started-with-aws/</guid>
       <description>&lt;p&gt;&lt;em&gt;In this blog post I am exploring AWS services (EC2). I am currently using a Free Tier license and I am trying to learn how to use. Why? Well, knowing AWS seems to be a very useful skill on the market. And the second reason for that is that I used to have different VMs that cosumed too much memory (HDD and RAM). Now I am also using M1 MacBook Pro and that&amp;rsquo;s why having so many VMs locally is impossible since there are only some Linux and Windows 10 Machines available for ARM platform. Besides, I&amp;rsquo;ve notices that I don&amp;rsquo;t really use them much so having 60 GB of space occupied for occasional usage is weird. Everything speaks in the favour of AWS.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
   </channel>

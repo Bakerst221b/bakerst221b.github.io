@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Fseventsd on Analyst</title>
-    <link>http://localhost:1313/tools/fseventsd/</link>
+    <link>https://bakerst221b.com/tools/fseventsd/</link>
     <description>Recent content in Fseventsd on Analyst</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 01 Oct 2020 13:01:35 +0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/tools/fseventsd/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bakerst221b.com/tools/fseventsd/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Turning Off Logging</title>
-      <link>http://localhost:1313/docs/ttp/antiforensics/logs-turnoff/</link>
+      <link>https://bakerst221b.com/docs/ttp/antiforensics/logs-turnoff/</link>
       <pubDate>Thu, 01 Oct 2020 13:01:35 +0300</pubDate>
-      <guid>http://localhost:1313/docs/ttp/antiforensics/logs-turnoff/</guid>
+      <guid>https://bakerst221b.com/docs/ttp/antiforensics/logs-turnoff/</guid>
       <description>&lt;h2 id=&#34;macos&#34;&gt;macOS&lt;/h2&gt;&#xA;&lt;p&gt;From Apple&amp;rsquo;s official documentation:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;In some cases, the contents of a volume are sufficiently secret that it is not appropriate to log them. To disable logging on a per-volume basis (for creating a backup volume, for example), you must do the following:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Create a &lt;code&gt;.fseventsd&lt;/code&gt; directory at the top level of the volume.&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Create an empty &lt;code&gt;no_log&lt;/code&gt; file in that directory.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;So if your volume is mounted at &lt;code&gt;/Volumes/MyDisk&lt;/code&gt;, you would create an empty file called &lt;code&gt;/Volumes/MyDisk/.fseventsd/no_log&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
   </channel>

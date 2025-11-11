@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>👀 Browser Activity on Analyst</title>
-    <link>http://localhost:1313/docs/artefacts/applications/browser/</link>
+    <link>https://bakerst221b.com/docs/artefacts/applications/browser/</link>
     <description>Recent content in 👀 Browser Activity on Analyst</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 11 Jul 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/docs/artefacts/applications/browser/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bakerst221b.com/docs/artefacts/applications/browser/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Chromesque</title>
-      <link>http://localhost:1313/docs/artefacts/applications/browser/chromesque/</link>
+      <link>https://bakerst221b.com/docs/artefacts/applications/browser/chromesque/</link>
       <pubDate>Mon, 12 Oct 2020 17:50:01 +0300</pubDate>
-      <guid>http://localhost:1313/docs/artefacts/applications/browser/chromesque/</guid>
+      <guid>https://bakerst221b.com/docs/artefacts/applications/browser/chromesque/</guid>
       <description>&lt;p&gt;&lt;em&gt;In the process of investigating Toy PD &lt;a href=&#34;&#34;&gt;case&lt;/a&gt;, I’ve realised I lack the information about different browser files. This is an attempt to fill that gap.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Many browsers are based on Chromium engine, that’s why they will have similar artifacts: Chrome, Opera, new Edge, Brave, Vivaldi. Also, there are lots of Electron applications that share some artifacts with them. Chrome is the point of convergence for all these application. On Magnet Summit it was suggested to explore and learn Chrome and it’s artifacts as well as OS common artifacts due to its popularity and reusing some of its components.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Browser Info</title>
-      <link>http://localhost:1313/docs/artefacts/applications/browser/history/</link>
+      <link>https://bakerst221b.com/docs/artefacts/applications/browser/history/</link>
       <pubDate>Mon, 12 Oct 2020 17:50:01 +0300</pubDate>
-      <guid>http://localhost:1313/docs/artefacts/applications/browser/history/</guid>
+      <guid>https://bakerst221b.com/docs/artefacts/applications/browser/history/</guid>
       <description>&lt;p&gt;Many browsers are based on Chromium engine, that’s why they will have similar artifacts: Chrome, Opera, new Edge, Brave, Vivaldi. Also, there are lots of Electron applications that share some artifacts with them. Chrome is the point of convergence for all these application. On Magnet Summit it was suggested to explore and learn Chrome and it’s artifacts as well as OS common artifacts due to its popularity and reusing some of its components. Electron is a framework that is available for building applications, cross-platform. You’re creating a web-application that can be used as a desktop one (implementing both back- and frontend). Backend - node.js, and frontend - Chrome. So, a lot of artifacts can be shared with Chrome and buddies. It’s in wide use. For example, ⚠️ WhatsApp and Skype use it.&lt;/p&gt;</description>
     </item>
     <item>
       <title>🍪 Cookies</title>
-      <link>http://localhost:1313/docs/artefacts/applications/browser/cookies/</link>
+      <link>https://bakerst221b.com/docs/artefacts/applications/browser/cookies/</link>
       <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/artefacts/applications/browser/cookies/</guid>
+      <guid>https://bakerst221b.com/docs/artefacts/applications/browser/cookies/</guid>
       <description>&lt;h2 id=&#34;ie&#34;&gt;IE&lt;/h2&gt;&#xA;&lt;p&gt;📂 &lt;code&gt;%userprofile%\Cookies&lt;/code&gt; (Win XP)&#xA;📂 &lt;code&gt;%userprofile%\AppData\Roaming\Microsoft\Windows\Cookies&lt;/code&gt; Win7- 10&#xA;📂 &lt;code&gt;%userprofile%\AppData\Roaming\Microsoft\Windows\Cookies\Low&lt;/code&gt; Win7- 10&lt;/p&gt;&#xA;&lt;p&gt;Local Stored Objects (LSOs), or Flash Cookies, have become ubiquitous on most systems due to the extremely high penetration of Flash applications across the internet. LSOs allow a web application to store information that can later be accessed by that same application (or domain). They tend to be much more persistent because they do not expire and there is no built-in mechanism within the browser to remove them. In fact, many sites have begun using LSOs for their tracking mechanisms because they rarely get cleared like traditional cookies.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Cache</title>
-      <link>http://localhost:1313/docs/artefacts/applications/browser/cache/</link>
+      <link>https://bakerst221b.com/docs/artefacts/applications/browser/cache/</link>
       <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/artefacts/applications/browser/cache/</guid>
+      <guid>https://bakerst221b.com/docs/artefacts/applications/browser/cache/</guid>
       <description>&lt;p&gt;&lt;em&gt;The cache is where webpage components can be stored locally to speed up subsequent visits.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Session Restore</title>
-      <link>http://localhost:1313/docs/artefacts/applications/browser/restore/</link>
+      <link>https://bakerst221b.com/docs/artefacts/applications/browser/restore/</link>
       <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/artefacts/applications/browser/restore/</guid>
+      <guid>https://bakerst221b.com/docs/artefacts/applications/browser/restore/</guid>
       <description>&lt;p&gt;&lt;em&gt;Automatic crash recovery features built into the browser.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
   </channel>

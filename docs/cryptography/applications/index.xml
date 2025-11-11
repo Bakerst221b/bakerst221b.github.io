@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Applications of Cryptography on Analyst</title>
-    <link>http://localhost:1313/docs/cryptography/applications/</link>
+    <link>https://bakerst221b.com/docs/cryptography/applications/</link>
     <description>Recent content in Applications of Cryptography on Analyst</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 28 Jul 2022 15:14:39 +1000</lastBuildDate>
-    <atom:link href="http://localhost:1313/docs/cryptography/applications/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bakerst221b.com/docs/cryptography/applications/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Best Practices</title>
-      <link>http://localhost:1313/docs/cryptography/applications/best-practices/</link>
+      <link>https://bakerst221b.com/docs/cryptography/applications/best-practices/</link>
       <pubDate>Thu, 28 Jul 2022 15:14:39 +1000</pubDate>
-      <guid>http://localhost:1313/docs/cryptography/applications/best-practices/</guid>
+      <guid>https://bakerst221b.com/docs/cryptography/applications/best-practices/</guid>
       <description>&lt;p&gt;&lt;em&gt;This is about &amp;hellip; .&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Encryption Software</title>
-      <link>http://localhost:1313/docs/cryptography/applications/software/</link>
+      <link>https://bakerst221b.com/docs/cryptography/applications/software/</link>
       <pubDate>Mon, 16 Nov 2020 17:42:00 +0300</pubDate>
-      <guid>http://localhost:1313/docs/cryptography/applications/software/</guid>
+      <guid>https://bakerst221b.com/docs/cryptography/applications/software/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://xakep.ru/2016/03/08/encryption-speed-test/&#34;&gt;https://xakep.ru/2016/03/08/encryption-speed-test/&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Symmetric vs Asymmetric</title>
-      <link>http://localhost:1313/docs/cryptography/applications/symmetric-vs-asymmetric/</link>
+      <link>https://bakerst221b.com/docs/cryptography/applications/symmetric-vs-asymmetric/</link>
       <pubDate>Mon, 16 Nov 2020 17:40:23 +0300</pubDate>
-      <guid>http://localhost:1313/docs/cryptography/applications/symmetric-vs-asymmetric/</guid>
+      <guid>https://bakerst221b.com/docs/cryptography/applications/symmetric-vs-asymmetric/</guid>
       <description>&lt;p&gt;Lorem markdownum aequalis strigis. Saetigeri iubeas, vultu huic alvum nondum&#xA;de obside ut laniavit arbor palmis, cum quin. Rupes vetat videndo, armigerae&#xA;crimen habet Priamum nec.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Randomness</title>
-      <link>http://localhost:1313/docs/cryptography/applications/random/</link>
+      <link>https://bakerst221b.com/docs/cryptography/applications/random/</link>
       <pubDate>Mon, 16 Nov 2020 17:36:22 +0300</pubDate>
-      <guid>http://localhost:1313/docs/cryptography/applications/random/</guid>
+      <guid>https://bakerst221b.com/docs/cryptography/applications/random/</guid>
       <description>&lt;p&gt;&lt;em&gt;In this article I am assembling information about randomness in computer science: how it is implemented, used and how it can be attacked.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;i&#34;&gt;I&lt;/h2&gt;</description>
     </item>
   </channel>

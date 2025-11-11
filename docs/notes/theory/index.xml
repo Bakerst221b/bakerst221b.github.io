@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Theory on Analyst</title>
-    <link>http://localhost:1313/docs/notes/theory/</link>
+    <link>https://bakerst221b.com/docs/notes/theory/</link>
     <description>Recent content in Theory on Analyst</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 27 Sep 2020 16:31:05 +0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/docs/notes/theory/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bakerst221b.com/docs/notes/theory/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Key Terms</title>
-      <link>http://localhost:1313/docs/notes/theory/key-terms/</link>
+      <link>https://bakerst221b.com/docs/notes/theory/key-terms/</link>
       <pubDate>Sun, 27 Sep 2020 16:31:05 +0300</pubDate>
-      <guid>http://localhost:1313/docs/notes/theory/key-terms/</guid>
+      <guid>https://bakerst221b.com/docs/notes/theory/key-terms/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Information security&lt;/strong&gt; means protecting information and information systems from unauthorized access, use, disclosure, disruption, modification, or destruction in order to provide: A.  Integrity, which means guarding against improper information modification or destruction, and includes ensuring information nonrepudiation and authenticity; B.  Confidentiality, which means preserving authorized restrictions on access and disclosure, including means for protecting personal privacy and proprietary information; and C.  Availability, which means ensuring timely and reliable access to and use of information.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Resources</title>
-      <link>http://localhost:1313/docs/notes/theory/resources/</link>
+      <link>https://bakerst221b.com/docs/notes/theory/resources/</link>
       <pubDate>Sun, 27 Sep 2020 16:31:05 +0300</pubDate>
-      <guid>http://localhost:1313/docs/notes/theory/resources/</guid>
+      <guid>https://bakerst221b.com/docs/notes/theory/resources/</guid>
       <description>&lt;p&gt;Assignment - &lt;a href=&#34;https://www.sans.org/blog/cis-controls-v8/&#34;&gt;https://www.sans.org/blog/cis-controls-v8/&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://cybersecurityventures.com/&#34;&gt;https://cybersecurityventures.com/&lt;/a&gt; - News&lt;/p&gt;&#xA;&lt;p&gt;Education:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.uscybersecurity.net/WiCys-resource-guide/mobile/index.html&#34;&gt;https://www.uscybersecurity.net/WiCys-resource-guide/mobile/index.html&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://teachcyber.tk/defense/&#34;&gt;https://teachcyber.tk/defense/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://teachcyber.tk/defense/&#34;&gt;https://teachcyber.tk/defense/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.first.org/resources/papers/&#34;&gt;https://www.first.org/resources/papers/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://cybersecurityventures.com/top-5-cybersecurity-facts-figures-predictions-and-statistics-for-2019-to-2021/&#34;&gt;https://cybersecurityventures.com/top-5-cybersecurity-facts-figures-predictions-and-statistics-for-2019-to-2021/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
   </channel>

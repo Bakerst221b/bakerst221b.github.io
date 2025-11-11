@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Impacket on Analyst</title>
-    <link>http://localhost:1313/tools/impacket/</link>
+    <link>https://bakerst221b.com/tools/impacket/</link>
     <description>Recent content in Impacket on Analyst</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 28 Sep 2020 12:21:05 +0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/tools/impacket/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bakerst221b.com/tools/impacket/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>📘 BTFM</title>
-      <link>http://localhost:1313/docs/attacks/net-btfm/</link>
+      <link>https://bakerst221b.com/docs/attacks/net-btfm/</link>
       <pubDate>Mon, 28 Sep 2020 12:21:05 +0300</pubDate>
-      <guid>http://localhost:1313/docs/attacks/net-btfm/</guid>
+      <guid>https://bakerst221b.com/docs/attacks/net-btfm/</guid>
       <description>&lt;h2 id=&#34;dshell&#34;&gt;dshell&lt;/h2&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# MacOSX path to directory with pyenv (example):&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/Users/&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;user_name&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;/.pyenv/versions/3.8.5/envs/python3/lib/python3.8/site-packages/dshell/&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;decode -l &lt;span style=&#34;color:#75715e&#34;&gt;# list decoders&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;decode -d &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;decoder_name&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# decoder info&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# who talked to whom&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;decode -d ip &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;capture_file_name&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;.&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;p&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;cap&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# by what means (transport layer) i.e. not tcp,udp or icmp&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;decode -d protocol &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;capture_file_name&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;.&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;p&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;cap&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;analysis-example-1&#34;&gt;Analysis example 1&lt;/h3&gt;&#xA;&lt;p&gt;Downloading some &lt;code&gt;(p)cap&lt;/code&gt; file from &lt;a href=&#34;https://wiki.wireshark.org/SampleCaptures#Server_Message_Block_.28SMB.29.2FCommon_Internet_File_System_.28CIFS.29&#34;&gt;here&lt;/a&gt;. Chose some &lt;code&gt;smb&lt;/code&gt; file &lt;a href=&#34;https://wiki.wireshark.org/SampleCaptures?action=AttachFile&amp;amp;do=get&amp;amp;target=smbtorture.cap.gz&#34;&gt;smbtorture.cap.gz&lt;/a&gt;. This sample&amp;rsquo;s info: &lt;em&gt;&amp;ldquo;Capture showing a wide range of SMB features. The capture was made using the Samba4 smbtorture suite, against a Windows Vista beta2 server.&amp;rdquo;&lt;/em&gt;&lt;/p&gt;</description>
     </item>
   </channel>

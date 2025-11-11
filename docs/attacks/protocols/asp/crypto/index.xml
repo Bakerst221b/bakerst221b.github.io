@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Crypto Protocols on Analyst</title>
-    <link>http://localhost:1313/docs/attacks/protocols/asp/crypto/</link>
+    <link>https://bakerst221b.com/docs/attacks/protocols/asp/crypto/</link>
     <description>Recent content in Crypto Protocols on Analyst</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 16 May 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/docs/attacks/protocols/asp/crypto/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bakerst221b.com/docs/attacks/protocols/asp/crypto/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SSH Protocol</title>
-      <link>http://localhost:1313/docs/attacks/protocols/asp/crypto/ssh/</link>
+      <link>https://bakerst221b.com/docs/attacks/protocols/asp/crypto/ssh/</link>
       <pubDate>Tue, 16 May 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/attacks/protocols/asp/crypto/ssh/</guid>
+      <guid>https://bakerst221b.com/docs/attacks/protocols/asp/crypto/ssh/</guid>
       <description>&lt;p&gt;&lt;em&gt;This is about &amp;hellip; .&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>📚 SSL and TLS</title>
-      <link>http://localhost:1313/docs/attacks/protocols/asp/crypto/ssl-tls/</link>
+      <link>https://bakerst221b.com/docs/attacks/protocols/asp/crypto/ssl-tls/</link>
       <pubDate>Mon, 16 Nov 2020 17:42:00 +0300</pubDate>
-      <guid>http://localhost:1313/docs/attacks/protocols/asp/crypto/ssl-tls/</guid>
+      <guid>https://bakerst221b.com/docs/attacks/protocols/asp/crypto/ssl-tls/</guid>
       <description>&lt;p&gt;&lt;em&gt;This article explains how SSL and its successsor work.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;&#xA;&lt;p&gt;SSL makes use of assymmetric encryption for verification and symmetric encryption for data exchanging. Common ports: &lt;code&gt;443&lt;/code&gt;, sometimes &lt;code&gt;5443&lt;/code&gt;. TLS is an improvement. SSL is not being used too much since it&amp;rsquo;s not very secure (exploiting it requires a lot of knowledge and effort though), however, the protocol scheme is still called SSL/TLS.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.comparitech.com/net-admin/decrypt-ssl-with-wireshark/#:~:text=Configure%20Wireshark%20to%20decrypt%20SSL&amp;amp;text=Open%20Wireshark%20and%20click%20Edit,)%2DMaster%2DSecret%20log%20filename&#34;&gt;https://www.comparitech.com/net-admin/decrypt-ssl-with-wireshark/#:~:text=Configure%20Wireshark%20to%20decrypt%20SSL&amp;amp;text=Open%20Wireshark%20and%20click%20Edit,)%2DMaster%2DSecret%20log%20filename&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;preamble&#34;&gt;Preamble&lt;/h2&gt;&#xA;&lt;p&gt;Bob 🐝  salutes the 🌺  server . This message is called &lt;code&gt;Client Hello&lt;/code&gt;. It contains the following things:&lt;/p&gt;</description>
     </item>
   </channel>

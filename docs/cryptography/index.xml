@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cryptography 🔐 on Analyst</title>
-    <link>http://localhost:1313/docs/cryptography/</link>
+    <link>https://bakerst221b.com/docs/cryptography/</link>
     <description>Recent content in Cryptography 🔐 on Analyst</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 17 May 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/docs/cryptography/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bakerst221b.com/docs/cryptography/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>HMAC</title>
-      <link>http://localhost:1313/docs/cryptography/hmac/</link>
+      <link>https://bakerst221b.com/docs/cryptography/hmac/</link>
       <pubDate>Wed, 17 May 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/cryptography/hmac/</guid>
+      <guid>https://bakerst221b.com/docs/cryptography/hmac/</guid>
       <description>&lt;p&gt;&lt;em&gt;In this article I will try to unravel the HMAC algo, how it&amp;rsquo;s used, and how it can be attacked.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>PKCS#5 padding</title>
-      <link>http://localhost:1313/docs/cryptography/pkcs/</link>
+      <link>https://bakerst221b.com/docs/cryptography/pkcs/</link>
       <pubDate>Thu, 27 Apr 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/cryptography/pkcs/</guid>
+      <guid>https://bakerst221b.com/docs/cryptography/pkcs/</guid>
       <description>&lt;p&gt;&lt;em&gt;This article describes how PKCS#5 padding works and how it can be exploited. This method is often used with block cyphers such as AES or DES.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Quantum Computers And Cryptography</title>
-      <link>http://localhost:1313/docs/cryptography/quantum/</link>
+      <link>https://bakerst221b.com/docs/cryptography/quantum/</link>
       <pubDate>Thu, 28 Jul 2022 15:14:39 +1000</pubDate>
-      <guid>http://localhost:1313/docs/cryptography/quantum/</guid>
+      <guid>https://bakerst221b.com/docs/cryptography/quantum/</guid>
       <description>&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;&#xA;&lt;details&gt;&#xA;    &lt;summary&gt;Expand&amp;hellip;&lt;/summary&gt;&#xA;    &lt;h3 id=&#34;1&#34;&gt;1&lt;/h3&gt;&#xA;&lt;p&gt;Shor&amp;rsquo;s Algorithm - &lt;a href=&#34;https://qiskit.org/textbook/ch-algorithms/shor.html&#34;&gt;https://qiskit.org/textbook/ch-algorithms/shor.html&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/details&gt;</description>
     </item>
     <item>
       <title>Steganography</title>
-      <link>http://localhost:1313/docs/cryptography/steganography/</link>
+      <link>https://bakerst221b.com/docs/cryptography/steganography/</link>
       <pubDate>Thu, 28 Jul 2022 15:14:39 +1000</pubDate>
-      <guid>http://localhost:1313/docs/cryptography/steganography/</guid>
+      <guid>https://bakerst221b.com/docs/cryptography/steganography/</guid>
       <description>&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;&#xA;&lt;details&gt;&#xA;    &lt;summary&gt;Expand&amp;hellip;&lt;/summary&gt;&#xA;    Something here&#xA;&lt;/details&gt;</description>
     </item>
   </channel>

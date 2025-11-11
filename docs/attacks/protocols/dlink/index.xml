@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>📚 Data Link Layer Protocols on Analyst</title>
-    <link>http://localhost:1313/docs/attacks/protocols/dlink/</link>
+    <link>https://bakerst221b.com/docs/attacks/protocols/dlink/</link>
     <description>Recent content in 📚 Data Link Layer Protocols on Analyst</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 29 Nov 2020 13:55:56 +0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/docs/attacks/protocols/dlink/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bakerst221b.com/docs/attacks/protocols/dlink/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>📚 Overview</title>
-      <link>http://localhost:1313/docs/attacks/protocols/dlink/overview/</link>
+      <link>https://bakerst221b.com/docs/attacks/protocols/dlink/overview/</link>
       <pubDate>Sun, 20 Sep 2020 11:28:16 +0300</pubDate>
-      <guid>http://localhost:1313/docs/attacks/protocols/dlink/overview/</guid>
+      <guid>https://bakerst221b.com/docs/attacks/protocols/dlink/overview/</guid>
       <description>&lt;p&gt;&lt;em&gt;This is a protocol of TCP/IP suite, Data Link Layer. The first layer after physical layer is a data link layer and the protocol in use here is Ethernet II. Other protocols of this layer (not TCP/IP): . Network devices, protocols and attacks of the Data Link layer use a &lt;strong&gt;frame&lt;/strong&gt; as a unit of information. The devices of this layer know nothing about IP addresses or TCP/UDP ports. They wouldn&amp;rsquo;t know what to do with them since the protocols&amp;rsquo; headers only contain MAC addresses.  MAC addresses is all they know and care about.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>📚 Ethernet</title>
-      <link>http://localhost:1313/docs/attacks/protocols/dlink/ethernet/</link>
+      <link>https://bakerst221b.com/docs/attacks/protocols/dlink/ethernet/</link>
       <pubDate>Sun, 29 Nov 2020 13:55:56 +0300</pubDate>
-      <guid>http://localhost:1313/docs/attacks/protocols/dlink/ethernet/</guid>
+      <guid>https://bakerst221b.com/docs/attacks/protocols/dlink/ethernet/</guid>
       <description>&lt;h2 id=&#34;arp-protocol&#34;&gt;ARP Protocol&lt;/h2&gt;&#xA;&lt;p&gt;This is not a protocol of a data link layer of TCP/IP stack. It&amp;rsquo;s not on any layer per se. However, I&amp;rsquo;m putting this paragraph here because ARP is needed for filling in Ethernet header details.&lt;/p&gt;&#xA;&lt;h2 id=&#34;attacks&#34;&gt;Attacks&lt;/h2&gt;&#xA;&lt;p&gt;CAM (Content Addressable Memory) - switch keeps a record of all MACs of connected devices and their assigned virtual ports on that switch in a table:&lt;/p&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;MAC&lt;/th&gt;&#xA;          &lt;th&gt;Switch port&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;code&gt;1111:1111:0000:2222&lt;/code&gt;&lt;/td&gt;&#xA;          &lt;td&gt;&lt;code&gt;12&lt;/code&gt;&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h3 id=&#34;flooding-with-1-mac&#34;&gt;Flooding with 1 MAC&lt;/h3&gt;&#xA;&lt;p&gt;Send lots of ARP reply to constantly update 1 entry (race condition). Whenever the MAC in CAM table is substututed with the attacker&amp;rsquo;s MAC, the responses will be redirected to the attacker. As soon as the victim sends a new request to some server through the switch, its MAC overwrites the attacker&amp;rsquo;s. So it looks like a battle for 1 &amp;ldquo;seat&amp;rdquo;.&lt;/p&gt;</description>
     </item>
   </channel>

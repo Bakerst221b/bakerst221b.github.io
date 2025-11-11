@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>All - Analyst</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  <link rel="icon" href="http://localhost:1313/favicon.png">
+  <link rel="icon" href="https://bakerst221b.com/favicon.png">
   <link href="/css/style-classic.css"></link>
   
   
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/style.min.0fd8269b84d57bc40ce18bb200a70ca7e1001ccf31f98dc3a8e47fa25f99b326.css">
   
 
   
@@ -77,14 +77,14 @@
     <div class='header'>
   <div class="container">
     <div class="logo">
-      <a href="http://localhost:1313/"><img alt="Logo" src="/images/logo.png" /></a>
+      <a href="https://bakerst221b.com/"><img alt="Logo" src="/images/logo.png" /></a>
     </div>
     <div class="logo-mobile">
-      <a href="http://localhost:1313/"><img alt="Logo" src="/images/logo-mobile.svg" /></a>
+      <a href="https://bakerst221b.com/"><img alt="Logo" src="/images/logo-mobile.svg" /></a>
     </div>
     
 
-    <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/platforms/all/index.xml" title="Analyst" />
+    <link rel="alternate" type="application/rss+xml" href="https://bakerst221b.com/platforms/all/index.xml" title="Analyst" />
     <div id="main-menu" class="main-menu">
   <ul>
     
@@ -182,7 +182,7 @@
  <h1 class="title">All</h1> 
  
 
-    <h2><a href="http://localhost:1313/docs/attacks/access-controls/"> ⛔️ Access Controls</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/attacks/access-controls/"> ⛔️ Access Controls</a></h2> 
     <p> <h2 id="dac">DAC</h2>
 <p><em>I am the leader! I&rsquo;m the one that says when we go.</em></p>
 <p><img src="images/2d4291be7475640044ecfbfc6577a369.jpeg" alt="img"></p>
@@ -192,37 +192,37 @@
 <p>A. Discretionary Access Control (DAC):</p>
 <p>Discretionary Access Control is an access control model where the owner of a resource has full control over granting or restricting access permissions to that resource. In DAC, the owner can decide who can access the resource and what actions they can perform on it (e.g., read, write, or execute).</p></p>
 
-    <h2><a href="http://localhost:1313/docs/artefacts/console/"> ⬛️ Console Activity Analysis</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/artefacts/console/"> ⬛️ Console Activity Analysis</a></h2> 
     <p> <p>Remote vs local commands?</p>
 <h2 id="windows">Windows</h2>
 <h2 id="macos">macOS</h2>
 <h2 id="linux">Linux</h2></p>
 
-    <h2><a href="http://localhost:1313/docs/artefacts/applications/browser/chromesque/"> Chromesque</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/artefacts/applications/browser/chromesque/"> Chromesque</a></h2> 
     <p> <p><em>In the process of investigating Toy PD <a href="">case</a>, I’ve realised I lack the information about different browser files. This is an attempt to fill that gap.</em></p>
 <p>Many browsers are based on Chromium engine, that’s why they will have similar artifacts: Chrome, Opera, new Edge, Brave, Vivaldi. Also, there are lots of Electron applications that share some artifacts with them. Chrome is the point of convergence for all these application. On Magnet Summit it was suggested to explore and learn Chrome and it’s artifacts as well as OS common artifacts due to its popularity and reusing some of its components.</p></p>
 
-    <h2><a href="http://localhost:1313/docs/ttp/data-recovery/carving/"> Data Carving</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/ttp/data-recovery/carving/"> Data Carving</a></h2> 
     <p> <p><em>Below are the techniques, tools and instructions regarding data recovery from various file systems and devices. Most of the below techniques apply to HDDs only. Those that are for SDDs or other flash memory devices will be specified in the last section.</em></p></p>
 
-    <h2><a href="http://localhost:1313/docs/artefacts/fs/partiation-schemas/gpt/"> GUID Partition Table</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/artefacts/fs/partiation-schemas/gpt/"> GUID Partition Table</a></h2> 
     <p> <p>GUID is an identifier of the following format: 8-4-4-4-12. There is still a protective MBR at 0 so that Windows will not try to format the disk. Up to 128 partitions, each entry is 128 bytes long -&gt; . The header is located in sector 1. Backup copy at the end of the disk. Uses GUID as partition identifiers.</p>
 <p><img src="images/gpt-struct.png" alt="gpt-struct"></p>
 <p>Up to a 128 partitions, all of them can be set as bootable. Will still have a dummy MBR at sector 0 and it&rsquo;s there for backwards compatibility.</p></p>
 
-    <h2><a href="http://localhost:1313/docs/artefacts/fs/partiation-schemas/mbr/"> Master Boot Record</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/artefacts/fs/partiation-schemas/mbr/"> Master Boot Record</a></h2> 
     <p> <p>Stands for <strong>M</strong>aster <strong>B</strong>oot <strong>R</strong>ecord.</p>
 <p>Primary partitions (bootable). Can have at most 4 bootable partitions, since it&rsquo;s limited to 4 partition entries in parition table, each entry 16 bytes in length. 4 bytes for their size, hence max value in hex is <code>0xFF FF FF FF</code>, hence max size of a partition is 2 Tb. It starts at sector <code>0</code>, it&rsquo;s 512 bytes long (one sector) and it ends with <code>0x55 0xAA</code>.</p></p>
 
-    <h2><a href="http://localhost:1313/docs/attacks/binary/exploits/bufferoverflow/overview/"> Overview</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/attacks/binary/exploits/bufferoverflow/overview/"> Overview</a></h2> 
     <p> <p><em>The idea of a buffer overflow attack is quite simple, though the implementation might initially be difficult to digest. I am exploring this notion and visualising it in this article.</em> <!-- more --></p>
 <h2 id="mechanics">Mechanics</h2>
 <p>Imagine you have a job you don&rsquo;t really like (I think most of us have had such an experience at least once in our life 😢). And also, imagine that you are being highly underpaid. Your job is simple and ridiculous: place rabbits 🐇 into one set of boxes and foxes 🦊 - into another. You happen to have 6 boxes 📦📦📦📦📦📦 for foxes 🦊 and 4 📦📦📦📦 for rabbits 🐇. However, you were given 4 rabbits 🐇🐇🐇🐇 and 7 foxes 🦊🦊🦊🦊🦊🦊🦊. So, one fox 🦊 doesn&rsquo;t have its fox box 📦. However, there are also rabbit 🐇 boxes 📦 right nearby. So, even though you were explicitly told not to place foxes into rabbit boxes and vice versa since you don&rsquo;t give a shit, you put a fox into a rabbit fox. What happens? One can only guess&hellip; 🤔. Long story short: the fox eats the rabbit, and now you have 7 foxes and only 3 rabbits 🐇. Alas! If only you&rsquo;d followed the manual 📖&hellip;. Most likely, one would get fired after such a mistake, but we can&rsquo;t fire the compiler, so that would happen if the developer was not using a memory-safe language or wasn&rsquo;t careful enough. Now, to the technicalities.</p></p>
 
-    <h2><a href="http://localhost:1313/docs/attacks/binary/exploits/bin/"> Binary Vulnerabilities And Exploits</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/attacks/binary/exploits/bin/"> Binary Vulnerabilities And Exploits</a></h2> 
     <p> <p><em>In this article I will collect common binary vulnerability (expept for the bufferoverflow which has its own dedicated article) &hellip; .</em></p></p>
 
-    <h2><a href="http://localhost:1313/docs/artefacts/applications/communication/slack/"> 💬 Slack</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/artefacts/applications/communication/slack/"> 💬 Slack</a></h2> 
     <p> <p><em>These are primarily my course notes from <a href="https://www.magnetforensics.com/resources/slacking-on-insider-threats-investigative-and-monitoring-approaches-to-use-within-slack-to-locate-bad-actors-webinar/">Slacking on insider threat</a> by Magnet Forensics. Thank you, guys, for sharing! I will put a quote paragraph with a 💡at the beginning whenever I have some ideas or thoughts along the way.</em></p>
 <p>Instant messaging with channels and file sharing. Also, provides logs and eDiscovery.</p>
 <p>Cloud-based, collection is not enough (non reviewable format), your plan matters, tons of functionality.</p>
@@ -233,7 +233,7 @@
 </ul>
 <p>With certain settings users of workspace can override retention settings. It’s recommended to turn this feature off, so that all logs are preserved.</p></p>
 
-    <h2><a href="http://localhost:1313/docs/ttp/imaging/"> 💿 Imaging</a></h2> 
+    <h2><a href="https://bakerst221b.com/docs/ttp/imaging/"> 💿 Imaging</a></h2> 
     <p> <p><em>There are two types of acquisitions: live 🍀 and dead ☠️. Choosing based on the system&rsquo;s initial state in question is usually preferable. So, for example, if the system is turned on, perform live acquisition first, capturing all volatile data that will be deleted after reboot. Otherwise, jump right to the dead acquisition (if the system is shut down).</em></p></p>
 
 
@@ -348,7 +348,7 @@ h2 {
         <div class="sub-footer-inner">
           <ul>
             <li class="zerostatic"><a href="https://www.zerostatic.io">www.zerostatic.io</a></li>
-            <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/platforms/all/index.xml" title="Analyst" />
+            <link rel="alternate" type="application/rss+xml" href="https://bakerst221b.com/platforms/all/index.xml" title="Analyst" />
             </ul>
         </div>
       </div>
@@ -362,9 +362,13 @@ h2 {
   
 
   
-  <script type="text/javascript" src="/js/scripts.js"></script>
+  <script type="text/javascript" src="/js/scripts.min.ec19db7e4836c12e2c5e3697d926bc3e4c22005167d9826aab54feca08f0c093.js"></script>
   
 
+  
+  
+  
+    
   
 
 
